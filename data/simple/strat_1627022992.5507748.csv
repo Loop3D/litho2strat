@@ -1,0 +1,11 @@
+strat,num units,lithologies
+0,2,"['Pyxen_Hbnd', 'Sandstone']"
+1,2,"['Conglomerate', 'Pyxen_Hbnd']"
+2,4,"['Peridotite', 'Sandstone', 'Limestone', 'Pelite']"
+3,3,"['Sandstone', 'Pelite', 'Gabbro']"
+4,2,"['Conglomerate', 'Maf_Dyke_Sill']"
+5,4,"['Sandstone', 'Fels_Dyke_Sill', 'Greywacke', 'Pelite']"
+6,2,"['Fels_Dyke_Sill', 'Phyllite']"
+7,3,"['Sandstone', 'Fels_Dyke_Sill', 'Pelite']"
+8,2,"['Greywacke', 'Phyllite']"
+9,3,"['Peridotite', 'Fels_Dyke_Sill', 'Maf_Dyke_Sill']"
