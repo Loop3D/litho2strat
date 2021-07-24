@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pylab as pl
 
 #==============================================================================
 '''
@@ -221,6 +222,19 @@ def print_unique_routes(all_routes):
     print("Number of unique routes = ", len(unique_routes))
     for route in unique_routes:
         print(route)
+
+#=============================================================================
+def plot_routes(depth_data, routes):
+    '''
+    Plot and display the routes.
+    '''
+    for route in routes:
+        pl.plot(depth_data, route.path, '.-')
+
+    pl.xlabel('Depth')
+    pl.ylabel('Strata unit index')
+    pl.show()
+
 #=============================================================================
 
 def main():
@@ -244,8 +258,12 @@ def main():
     print_unique_routes(all_routes)
 
     # Write results to the file.
-    write_routes_to_file("strata.txt", drillsample_data, all_routes)
+    #write_routes_to_file("strata.txt", drillsample_data, all_routes)
 
+    # Plot the results.
+    plot_routes(drillsample_data["from"], all_routes)
+
+#=============================================================================
 if __name__ == "__main__":
     main()
 
