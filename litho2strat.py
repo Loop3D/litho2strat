@@ -79,12 +79,15 @@ class StrataRoute:
 #==============================================================================
 def get_thickness_change(drillsample_data, row):
     '''
-    Returns a thickness change for a given row in the drillhole sample..
+    Returns a thickness change for a given row in the drillhole sample.
     '''
     return drillsample_data["to"][row] - drillsample_data["from"][row]
 
 #==============================================================================
 def get_strata_thickness(thickness_data, strat_index):
+    '''
+    Returns the thickness of a given strata unit.
+    '''
     mean = thickness_data["thickness_mean"][strat_index]
     range = thickness_data["thickess_range"][strat_index]
     thickness = {
@@ -94,15 +97,21 @@ def get_strata_thickness(thickness_data, strat_index):
     return thickness
 
 #==============================================================================
-def can_stay_in_strata(current_thickness, thickness_data, strat_index):
+def max_thickness_reached(route, thickness_data, strat_index):
+    '''
+    Checks if the maximum unit thickess was reached.
+    '''
     strata_thickness = get_strata_thickness(thickness_data, strat_index)
-    if (current_thickness < strata_thickness["max"]):
+    if (route.current_thickness >= strata_thickness["max"]):
         return True
     else:
         False
 
 #==============================================================================
-def can_change_strata(route, thickness_data, strat_index):
+def min_thickness_reached(route, thickness_data, strat_index):
+    '''
+    Checks if the minimum unit thickess was reached.
+    '''
     if (route.num_units == 1):
         # Ignore thickness for the top unit.
         return True
@@ -115,7 +124,11 @@ def can_change_strata(route, thickness_data, strat_index):
         False
 
 #==============================================================================
-def generate_strat_routes(stratTable, drillsample_data, thickness_data):
+def strata_path_exists(stratTable, row, col):
+    return stratTable[row][col]
+
+#==============================================================================
+def generate_strat_routes(stratTable, drillsample_data, thickness_data, add_thickness_constraints):
     '''
     Generating stratigraphic routes.
     '''
@@ -129,7 +142,7 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data):
     thickness_change = get_thickness_change(drillsample_data, row)
 
     for strat in range(nStrat):
-        if (stratTable[row][strat]):
+        if (strata_path_exists(stratTable, row, strat)):
             new_route = StrataRoute()
             new_route.path = [strat]
             new_route.current_thickness = thickness_change
@@ -156,13 +169,17 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data):
             #-----------------------------------------------------------------
             # First check if we can go down the same srata unit.
             #-----------------------------------------------------------------
-            strat = strat0
-            # Apply unit thickness constraints.
-            can_stay = can_stay_in_strata(route.current_thickness, thickness_data, strat)
+            can_stay = True
 
-            if (can_stay and stratTable[row][strat]):
+            if (add_thickness_constraints):
+                # Apply unit thickness constraints.
+                can_stay = can_stay and not max_thickness_reached(route, thickness_data, strat0)
+
+            can_stay = can_stay and strata_path_exists(stratTable, row, strat0)
+
+            if (can_stay):
                 # Adding new route position.
-                route.add_new_position(strat)
+                route.add_new_position(strat0)
                 route.current_thickness += thickness_change
             else:
                 if (row < rowMax - 1):
@@ -173,12 +190,16 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data):
             #-----------------------------------------------------------------
             # Check if we can go down in other stratas.
             #-----------------------------------------------------------------
-            # Apply unit thickness constraints.
-            can_change = can_change_strata(route_old, thickness_data, strat0)
+            can_change = True
 
-            if (can_change): 
+            if (add_thickness_constraints):
+                # Apply unit thickness constraints.
+                can_change = can_change and min_thickness_reached(route_old, thickness_data, strat0)
+
+            if (can_change):
+                # Looking to which strata unit we can change.
                 for strat in range(strat0 + 1, nStrat):
-                    if (stratTable[row][strat]):
+                    if (strata_path_exists(stratTable, row, strat)):
                         # ADDING new route.
                         new_route = StrataRoute(route_old)
                         new_route.add_new_position(strat)
@@ -250,7 +271,9 @@ def main():
     drillsample_data = read_drillsample_data(drillsample_filename)
 
     stratTable = generate_strata_table(drillsample_data, strat_data)
-    all_routes = generate_strat_routes(stratTable, drillsample_data, thickness_data)
+
+    add_thickness_constraints = True
+    all_routes = generate_strat_routes(stratTable, drillsample_data, thickness_data, add_thickness_constraints)
 
     print("Total number of routes = ", len(all_routes))
 
