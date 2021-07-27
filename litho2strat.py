@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pylab as pl
 
-max_num_foreign_litho = 3
+max_num_foreign_litho = 6
 
 #==============================================================================
 '''
@@ -122,10 +122,6 @@ def min_thickness_reached(route, min_strata_thickness, strat_index):
     '''
     Checks if the minimum unit thickess was reached.
     '''
-    if (route.num_units == 1):
-        # Ignore thickness for the top unit.
-        return True
-
     if (route.current_thickness >= min_strata_thickness[strat_index]):
         return True
     else:
@@ -190,9 +186,11 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
             #-----------------------------------------------------------------
             can_change = True
 
+            # Apply unit thickness constraints.
             if (add_thickness_constraints):
-                # Apply unit thickness constraints.
-                can_change = can_change and min_thickness_reached(route, min_strata_thickness, strat0)
+                # Ignore thickness for the top unit
+                if (route.num_units > 1):
+                    can_change = can_change and min_thickness_reached(route, min_strata_thickness, strat0)
 
             if (can_change):
                 # Looking to which strata unit we can change.
@@ -329,7 +327,7 @@ def main():
     #write_routes_to_file("strata.txt", drillsample_data, all_routes)
 
     # Plot the results.
-    plot_routes(drillsample_data["from"], all_routes)
+    #plot_routes(drillsample_data["from"], all_routes)
 
 #=============================================================================
 if __name__ == "__main__":
