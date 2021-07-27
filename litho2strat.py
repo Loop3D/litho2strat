@@ -182,13 +182,44 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
 
         # NOTE: We iterate over the COPY of the list (slice)!
         for route in all_routes[:]:
-            route_old = StrataRoute(route)
             # The current strata index.
             strat0 = route.get_last_position()
             thickness_change = get_thickness_change(drillsample_data, row)
 
             #-----------------------------------------------------------------
-            # First check if we can go down the same srata unit.
+            # Check if we can go down in other stratas (and create new routes).
+            #-----------------------------------------------------------------
+            can_change = True
+
+            if (add_thickness_constraints):
+                # Apply unit thickness constraints.
+                can_change = can_change and min_thickness_reached(route, thickness_data, strat0)
+
+            if (can_change):
+                # Looking to which strata unit we can change.
+                for strat in range(strat0 + 1, nStrat):
+                    path_exists = strata_path_exists(stratTable, row, strat)
+
+                    # Processing "foreign" litho constraints.
+                    foreign_litho_added = False
+                    if (add_foreign_lithology):
+                        if (not path_exists and can_add_foreign_litho(route)):
+                            foreign_litho_added = True
+
+                    if (path_exists or foreign_litho_added):
+                        # ADDING new route.
+                        new_route = StrataRoute(route)
+                        new_route.add_new_position(strat)
+                        new_route.current_thickness = thickness_change
+                        new_route.num_units += 1
+                        if (foreign_litho_added):
+                            new_route.current_num_foreign_litho += 1
+                        else:
+                            new_route.current_num_foreign_litho = 0
+                        all_routes.append(new_route)
+
+            #-----------------------------------------------------------------
+            # Check if we can go down the same srata unit (if cannot -- remove the current route).
             #-----------------------------------------------------------------
             can_stay = True
 
@@ -217,38 +248,6 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
                 # Did not reach the end of a drillhole, and cannot go down the same unit.
                     # REMOVE the route.
                     all_routes.remove(route)
-
-            #-----------------------------------------------------------------
-            # Check if we can go down in other stratas.
-            #-----------------------------------------------------------------
-            can_change = True
-
-            if (add_thickness_constraints):
-                # Apply unit thickness constraints.
-                can_change = can_change and min_thickness_reached(route_old, thickness_data, strat0)
-
-            if (can_change):
-                # Looking to which strata unit we can change.
-                for strat in range(strat0 + 1, nStrat):
-                    path_exists = strata_path_exists(stratTable, row, strat)
-
-                    # Processing "foreign" litho constraints.
-                    foreign_litho_added = False
-                    if (add_foreign_lithology):
-                        if (not path_exists and can_add_foreign_litho(route_old)):
-                            foreign_litho_added = True
-
-                    if (path_exists or foreign_litho_added):
-                        # ADDING new route.
-                        new_route = StrataRoute(route_old)
-                        new_route.add_new_position(strat)
-                        new_route.current_thickness = thickness_change
-                        new_route.num_units += 1
-                        if (foreign_litho_added):
-                            new_route.current_num_foreign_litho += 1
-                        else:
-                            new_route.current_num_foreign_litho = 0
-                        all_routes.append(new_route)
 
     return all_routes
 
