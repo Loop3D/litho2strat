@@ -98,31 +98,27 @@ def get_thickness_change(drillsample_data, row):
     return drillsample_data["to"][row] - drillsample_data["from"][row]
 
 #==============================================================================
-def get_strata_thickness(thickness_data, strat_index):
-    '''
-    Returns the thickness of a given strata unit.
-    '''
-    mean = thickness_data["thickness_mean"][strat_index]
-    range = thickness_data["thickess_range"][strat_index]
-    thickness = {
-        "min": mean - range,
-        "max": mean + range
-    }
-    return thickness
+def get_min_strata_thickness(thickness_data):
+    nStrat = thickness_data.shape[0]
+    return [thickness_data["thickness_mean"][i] - thickness_data["thickess_range"][i] for i in range(nStrat)]
 
 #==============================================================================
-def max_thickness_reached(route, thickness_data, strat_index):
+def get_max_strata_thickness(thickness_data):
+    nStrat = thickness_data.shape[0]
+    return [thickness_data["thickness_mean"][i] + thickness_data["thickess_range"][i] for i in range(nStrat)]
+
+#==============================================================================
+def max_thickness_reached(route, max_strata_thickness, strat_index):
     '''
     Checks if the maximum unit thickess was reached.
     '''
-    strata_thickness = get_strata_thickness(thickness_data, strat_index)
-    if (route.current_thickness >= strata_thickness["max"]):
+    if (route.current_thickness >= max_strata_thickness[strat_index]):
         return True
     else:
         False
 
 #==============================================================================
-def min_thickness_reached(route, thickness_data, strat_index):
+def min_thickness_reached(route, min_strata_thickness, strat_index):
     '''
     Checks if the minimum unit thickess was reached.
     '''
@@ -130,9 +126,7 @@ def min_thickness_reached(route, thickness_data, strat_index):
         # Ignore thickness for the top unit.
         return True
 
-    strata_thickness = get_strata_thickness(thickness_data, strat_index)
-
-    if (route.current_thickness >= strata_thickness["min"]):
+    if (route.current_thickness >= min_strata_thickness[strat_index]):
         return True
     else:
         False
@@ -153,6 +147,10 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
     '''
     nRows = stratTable.shape[0]
     nStrat = stratTable.shape[1]
+
+    # Extract strata thikcness to lists (faster data structures).
+    min_strata_thickness = get_min_strata_thickness(thickness_data)
+    max_strata_thickness = get_max_strata_thickness(thickness_data)
 
     all_routes = []
 
@@ -194,7 +192,7 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
 
             if (add_thickness_constraints):
                 # Apply unit thickness constraints.
-                can_change = can_change and min_thickness_reached(route, thickness_data, strat0)
+                can_change = can_change and min_thickness_reached(route, min_strata_thickness, strat0)
 
             if (can_change):
                 # Looking to which strata unit we can change.
@@ -224,7 +222,7 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
 
             if (add_thickness_constraints):
                 # Apply unit thickness constraints.
-                can_stay = can_stay and not max_thickness_reached(route, thickness_data, strat0)
+                can_stay = can_stay and not max_thickness_reached(route, max_strata_thickness, strat0)
 
             path_exists = strata_path_exists(stratTable, row, strat0)
 
