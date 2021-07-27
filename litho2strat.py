@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pylab as pl
 
-max_num_foreign_litho = 6
+max_num_foreign_litho = 3
 
 #==============================================================================
 '''
@@ -88,7 +88,10 @@ class StrataRoute:
         return self.path.append(position)
 
     def get_strata_sequence(self):
-        return tuple(set(self.path))
+        '''
+        Returns a sequence of strata units in the route excluding consequtive dublicates.
+        '''
+        return tuple([v for i, v in enumerate(self.path) if i == 0 or v != self.path[i - 1]])
 
 #==============================================================================
 def get_thickness_change(drillsample_data, row):
@@ -195,6 +198,7 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
             if (can_change):
                 # Looking to which strata unit we can change.
                 for strat in range(strat0 + 1, nStrat):
+                #for strat in [i for i in range(nStrat) if i != strat0]:
                     path_exists = strata_path_exists(stratTable, row, strat)
 
                     # Processing "foreign" litho constraints.
@@ -327,7 +331,7 @@ def main():
     #write_routes_to_file("strata.txt", drillsample_data, all_routes)
 
     # Plot the results.
-    #plot_routes(drillsample_data["from"], all_routes)
+    plot_routes(drillsample_data["from"], all_routes)
 
 #=============================================================================
 if __name__ == "__main__":
