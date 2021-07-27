@@ -140,7 +140,7 @@ def can_add_foreign_litho(route):
 
 #==============================================================================
 def generate_strat_routes(stratTable, drillsample_data, thickness_data, 
-                          add_thickness_constraints, add_foreign_lithology):
+                          add_thickness_constraints, add_foreign_lithology, can_return_to_unit):
     '''
     Generating stratigraphic routes.
     '''
@@ -196,9 +196,16 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
                     can_change = can_change and min_thickness_reached(route, min_strata_thickness, strat0)
 
             if (can_change):
+                strataList = []
+                if can_return_to_unit:
+                    # All strata units excluding the current one.
+                    strataList = [strat for strat in range(nStrat) if strat != strat0]
+                else:
+                    # Only units older than the current one.
+                    strataList = range(strat0 + 1, nStrat)
+
                 # Looking to which strata unit we can change.
-                for strat in range(strat0 + 1, nStrat):
-                #for strat in [i for i in range(nStrat) if i != strat0]:
+                for strat in strataList:
                     path_exists = strata_path_exists(stratTable, row, strat)
 
                     # Processing "foreign" litho constraints.
@@ -319,8 +326,10 @@ def main():
 
     add_thickness_constraints = True
     add_foreign_lithology = True
+    can_return_to_unit = True
+
     all_routes = generate_strat_routes(stratTable, drillsample_data, thickness_data, 
-                                       add_thickness_constraints, add_foreign_lithology)
+                                       add_thickness_constraints, add_foreign_lithology, can_return_to_unit)
 
     print("Total number of routes = ", len(all_routes))
 
