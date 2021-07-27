@@ -10,7 +10,7 @@ Helper functions for reading the input data.
 '''
 def read_strat_data(filename):
     # Converter from string to list.
-    str2list = lambda x: x.strip("[]").replace("'","").split(", ")
+    str2list = lambda x: x.strip("[]").replace("'", "").split(", ")
     data = pd.read_csv(filename, converters={"lithologies": str2list})
     return data
 
@@ -180,11 +180,12 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
         if (len(all_routes) == 0):
             break
 
+        thickness_change = get_thickness_change(drillsample_data, row)
+
         # NOTE: We iterate over the COPY of the list (slice)!
         for route in all_routes[:]:
             # The current strata index.
             strat0 = route.get_last_position()
-            thickness_change = get_thickness_change(drillsample_data, row)
 
             #-----------------------------------------------------------------
             # Check if we can go down in other stratas (and create new routes).
