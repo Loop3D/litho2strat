@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pylab as pl
 
-max_num_foreign_litho = 1
+max_num_foreign_litho = 3
 
 #==============================================================================
 '''
@@ -66,14 +66,14 @@ class StrataRoute:
             self.current_thickness = 0.
             # The number of strata units.
             self.num_units = 0
-            # The number of "foreign" lithologies in current unit.
-            self.current_num_foreign_litho = 0
+            # The number of "foreign" lithologies.
+            self.num_foreign_litho = 0
         else:
         # Copy constructor.
             self.path = orig.path.copy()
             self.current_thickness = orig.current_thickness
             self.num_units = orig.num_units
-            self.current_num_foreign_litho = orig.current_num_foreign_litho
+            self.num_foreign_litho = orig.num_foreign_litho
 
     def __str__(self):
         return str(self.path)
@@ -143,7 +143,7 @@ def strata_path_exists(stratTable, row, col):
 
 #==============================================================================
 def can_add_foreign_litho(route):
-    return route.current_num_foreign_litho < max_num_foreign_litho
+    return route.num_foreign_litho < max_num_foreign_litho
 
 #==============================================================================
 def generate_strat_routes(stratTable, drillsample_data, thickness_data, 
@@ -213,9 +213,7 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
                         new_route.current_thickness = thickness_change
                         new_route.num_units += 1
                         if (foreign_litho_added):
-                            new_route.current_num_foreign_litho += 1
-                        else:
-                            new_route.current_num_foreign_litho = 0
+                            new_route.num_foreign_litho += 1
                         all_routes.append(new_route)
 
             #-----------------------------------------------------------------
@@ -242,7 +240,7 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
                 route.add_new_position(strat0)
                 route.current_thickness += thickness_change
                 if (foreign_litho_added):
-                    route.current_num_foreign_litho += 1
+                    route.num_foreign_litho += 1
             else:
                 if (row < rowMax - 1):
                 # Did not reach the end of a drillhole, and cannot go down the same unit.
