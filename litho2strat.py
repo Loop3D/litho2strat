@@ -111,10 +111,6 @@ def get_max_strata_thickness(thickness_data):
     return [thickness_data["thickness_mean"][i] + thickness_data["thickess_range"][i] for i in range(nStrat)]
 
 #==============================================================================
-def can_add_foreign_litho(route):
-    return route.num_foreign_litho < max_num_foreign_litho
-
-#==============================================================================
 def generate_strat_routes(stratTable, drillsample_data, thickness_data, 
                           add_thickness_constraints, add_foreign_lithology, can_return_to_unit):
     '''
@@ -162,6 +158,7 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
             # The current strata index.
             strat0 = route.path[-1]
             current_thickness = route.current_thickness
+            can_add_foreign_litho = (route.num_foreign_litho < max_num_foreign_litho)
 
             #-----------------------------------------------------------------
             # Check if we can go down in other stratas (and create new routes).
@@ -190,7 +187,7 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
                     # Processing "foreign" litho constraints.
                     foreign_litho_added = False
                     if (add_foreign_lithology):
-                        if (not path_exists and can_add_foreign_litho(route)):
+                        if (not path_exists and can_add_foreign_litho):
                             foreign_litho_added = True
 
                     if (path_exists or foreign_litho_added):
@@ -221,7 +218,7 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
             # Processing "foreign" litho constraints.
             foreign_litho_added = False
             if (add_foreign_lithology):
-                if (not path_exists and can_add_foreign_litho(route)):
+                if (not path_exists and can_add_foreign_litho):
                     foreign_litho_added = True
 
             can_stay = can_stay and (path_exists or foreign_litho_added)
@@ -325,7 +322,7 @@ def main():
     print("Total number of routes = ", len(all_routes))
 
     # Print all unique routes (i.e., unique strata sequence).
-    print_unique_routes(all_routes, False)
+    #print_unique_routes(all_routes, False)
 
     # Write results to the file.
     #write_routes_to_file("strata.txt", drillsample_data, all_routes)
