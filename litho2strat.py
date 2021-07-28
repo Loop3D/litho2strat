@@ -185,9 +185,10 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
             break
 
         thickness_change = get_thickness_change(drillsample_data, row)
+        new_routes = []
 
-        # NOTE: We iterate over the COPY of the list (slice)!
-        for route in all_routes[:]:
+        # Iterate over all routes.
+        for route in all_routes:
             # The current strata index.
             strat0 = route.get_last_position()
 
@@ -233,7 +234,7 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
                                 new_route.num_foreign_litho += 1
                                 new_route.last_foreign_litho = current_litho
                         # Add new route into the list.
-                        all_routes.append(new_route)
+                        new_routes.append(new_route)
 
             #-----------------------------------------------------------------
             # Check if we can go down the same srata unit (if cannot -- remove the current route).
@@ -270,6 +271,8 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
 
         # Remove the routes marked for removal.
         all_routes = [route for route in all_routes if not route.to_remove]
+        # Addig new routes.
+        all_routes.extend(new_routes)
 
     return all_routes
 
