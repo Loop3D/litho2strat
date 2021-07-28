@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pylab as pl
 
-max_num_foreign_litho = 3
+max_num_foreign_litho = 4
 
 #==============================================================================
 '''
@@ -70,6 +70,8 @@ class StrataRoute:
             self.num_foreign_litho = 0
             # The last "foreign" lithology name.
             self.last_foreign_litho = ""
+            # Flag for removal.
+            self.to_remove = False
         else:
         # Copy constructor.
             self.path = orig.path.copy()
@@ -77,6 +79,7 @@ class StrataRoute:
             self.num_units = orig.num_units
             self.num_foreign_litho = orig.num_foreign_litho
             self.last_foreign_litho = orig.last_foreign_litho
+            self.to_remove = orig.to_remove
 
     def __str__(self):
         return str(self.path)
@@ -262,8 +265,11 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
                         route.last_foreign_litho = current_litho
             else:
             # Did not reach the end of a drillhole, and cannot go down the same unit.
-                # REMOVE the route.
-                all_routes.remove(route)
+                # Mark the route for removal.
+                route.to_remove = True
+
+        # Remove the routes marked for removal.
+        all_routes = [route for route in all_routes if not route.to_remove]
 
     return all_routes
 
@@ -290,7 +296,7 @@ def write_routes_to_file(filename, drillsample_data, all_routes):
     f.close()
 
 #==============================================================================
-def print_unique_routes(all_routes):
+def print_unique_routes(all_routes, print_paths):
     '''
     Print all unique routes (i.e., with unique strata sequence).
     '''
@@ -299,14 +305,16 @@ def print_unique_routes(all_routes):
         unique_routes.add(route.get_strata_sequence())
 
     print("Number of unique routes = ", len(unique_routes))
-    for route in unique_routes:
-        print(route)
+    if (print_paths):
+        for route in unique_routes:
+            print(route)
 
 #=============================================================================
 def plot_routes(depth_data, routes):
     '''
     Plot and display the routes.
     '''
+    print("Plotting the routes...")
     for route in routes:
         pl.plot(depth_data, route.path, '.-')
 
@@ -344,13 +352,13 @@ def main():
     print("Total number of routes = ", len(all_routes))
 
     # Print all unique routes (i.e., unique strata sequence).
-    print_unique_routes(all_routes)
+    print_unique_routes(all_routes, False)
 
     # Write results to the file.
     #write_routes_to_file("strata.txt", drillsample_data, all_routes)
 
     # Plot the results.
-    plot_routes(drillsample_data["from"], all_routes)
+    #plot_routes(drillsample_data["from"], all_routes)
 
 #=============================================================================
 if __name__ == "__main__":
