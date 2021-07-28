@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pylab as pl
 
-max_num_foreign_litho = 4
+max_num_foreign_litho = 3
 
 #==============================================================================
 '''
@@ -284,13 +284,12 @@ def write_routes_to_file(filename, drillsample_data, all_routes):
         depth = drillsample_data["from"][row]
         f.write("%f " % depth)
         # Calculate the number of unique strata for this depth.
-        unique_lithos = set([])
+        unique_units = set([])
         for route in all_routes:
-            unique_lithos.add(route.path[row])
-        f.write("%d " % len(unique_lithos))
+            unique_units.add(route.path[row])
+        f.write("%d " % len(unique_units))
 
         for route in all_routes:
-            unique_lithos
             f.write("%d " % route.path[row])
         f.write("\n")
     f.close()
@@ -359,6 +358,33 @@ def main():
 
     # Plot the results.
     #plot_routes(drillsample_data["from"], all_routes)
+
+    #--------------------------------------------------------------------
+    # Plot route statistics.
+    nRows = drillsample_data.shape[0]
+    nUnits = strat_data.shape[0]
+    strat_distr = np.zeros((nRows, nUnits))
+    # Building the distribution of unit presence at every depth.
+    for route in all_routes:
+        for row in range(nRows):
+            unit_index = route.path[row]
+            strat_distr[row, unit_index] += 1
+    # Normalize.
+    strat_distr = strat_distr / len(all_routes)
+
+    # Generating the plots.
+    # Increasing the figure size.
+    pl.rcParams["figure.figsize"] = (12.8, 9.6) # Default size = (6.4, 4.8)
+    x_data = drillsample_data["from"]
+    fig, axs = pl.subplots(nUnits, sharey=True)
+    fig.suptitle('Probability for each unit. Max foreign lithos = ' + str(max_num_foreign_litho))
+    for i in range(nUnits):
+        axs[i].plot(x_data, strat_distr[:, i])
+        axs[i].set(ylabel=str(i))
+ 
+    pl.xlabel('Depth')
+    pl.show()
+    #--------------------------------------------------------------------
 
 #=============================================================================
 if __name__ == "__main__":
