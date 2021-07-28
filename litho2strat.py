@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pylab as pl
 
-max_num_foreign_litho = 3
+max_num_foreign_litho = 4
 
 #==============================================================================
 '''
@@ -41,14 +41,14 @@ def generate_strata_table(drillsample_data, strat_data):
         for strat in range(nStrat):
             if (litho in strat_data["lithologies"][strat]):
                 litho_found = True
-                stratTable[row][strat] = True
+                stratTable[row, strat] = True
 
         if (not litho_found):
         # Lithology not found in stratas.
             print("Not found litho: ", litho)
             # Allow this lithology to be present in any strata.
             for strat in range(nStrat):
-                stratTable[row][strat] = True
+                stratTable[row, strat] = True
 
     return stratTable
 
@@ -138,7 +138,7 @@ def min_thickness_reached(route, min_strata_thickness, strat_index):
 
 #==============================================================================
 def strata_path_exists(stratTable, row, col):
-    return stratTable[row][col]
+    return stratTable[row, col]
 
 #==============================================================================
 def can_add_foreign_litho(route):
@@ -361,6 +361,7 @@ def main():
 
     #--------------------------------------------------------------------
     # Plot route statistics.
+    #'''
     nRows = drillsample_data.shape[0]
     nUnits = strat_data.shape[0]
     strat_distr = np.zeros((nRows, nUnits))
@@ -384,6 +385,7 @@ def main():
  
     pl.xlabel('Depth')
     pl.show()
+    #'''
     #--------------------------------------------------------------------
 
 #=============================================================================
