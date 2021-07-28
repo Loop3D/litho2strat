@@ -68,12 +68,15 @@ class StrataRoute:
             self.num_units = 0
             # The number of "foreign" lithologies.
             self.num_foreign_litho = 0
+            # The last "foreign" lithology name.
+            self.last_foreign_litho = ""
         else:
         # Copy constructor.
             self.path = orig.path.copy()
             self.current_thickness = orig.current_thickness
             self.num_units = orig.num_units
             self.num_foreign_litho = orig.num_foreign_litho
+            self.last_foreign_litho = orig.last_foreign_litho
 
     def __str__(self):
         return str(self.path)
@@ -173,7 +176,8 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
 
     # Going through the strata table and generating the routes.
     for row in range(1, rowMax):
-        print("ROW = ", row, drillsample_data["lithology"][row], len(all_routes))
+        current_litho = drillsample_data["lithology"][row]
+        print("ROW = ", row, current_litho, len(all_routes))
         if (len(all_routes) == 0):
             break
 
@@ -215,13 +219,17 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
                             foreign_litho_added = True
 
                     if (path_exists or foreign_litho_added):
-                        # ADDING new route.
+                        # Making the new route.
                         new_route = StrataRoute(route)
                         new_route.add_new_position(strat)
                         new_route.current_thickness = thickness_change
                         new_route.num_units += 1
+                        # Processing the "foreign" lithology.
                         if (foreign_litho_added):
-                            new_route.num_foreign_litho += 1
+                            if (route.last_foreign_litho != current_litho):
+                                new_route.num_foreign_litho += 1
+                                new_route.last_foreign_litho = current_litho
+                        # Add new route into the list.
                         all_routes.append(new_route)
 
             #-----------------------------------------------------------------
@@ -247,13 +255,15 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
                 # Adding new route position.
                 route.add_new_position(strat0)
                 route.current_thickness += thickness_change
+                # Processing the "foreign" lithology.
                 if (foreign_litho_added):
-                    route.num_foreign_litho += 1
+                    if (route.last_foreign_litho != current_litho):
+                        route.num_foreign_litho += 1
+                        route.last_foreign_litho = current_litho
             else:
-                if (row < rowMax - 1):
-                # Did not reach the end of a drillhole, and cannot go down the same unit.
-                    # REMOVE the route.
-                    all_routes.remove(route)
+            # Did not reach the end of a drillhole, and cannot go down the same unit.
+                # REMOVE the route.
+                all_routes.remove(route)
 
     return all_routes
 
