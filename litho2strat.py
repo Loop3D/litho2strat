@@ -361,6 +361,10 @@ def main():
     for i in range(nUnits):
         axs[i].plot(x_data, strat_distr[:, i])
         axs[i].set(ylabel=str(i))
+        if (i != nUnits - 1):
+            # Hide tick labels.
+            axs[i].set_xticklabels([])
+        axs[i].xaxis.grid(True)
  
     pl.xlabel('Depth')
     pl.show()
