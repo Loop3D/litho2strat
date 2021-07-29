@@ -301,7 +301,40 @@ def plot_routes(depth_data, routes):
     pl.show()
 
 #=============================================================================
+def plot_unit_probabilities(all_routes, drillsample_data, num_units):
+    '''
+    Generate a plot with probability of occurence for each unit.
+    '''
+    num_rows = drillsample_data.shape[0]
+    strat_distr = np.zeros((num_rows, num_units))
 
+    # Building the distribution of unit presence at every depth.
+    for route in all_routes:
+        for row in range(num_rows):
+            unit_index = route.path[row]
+            strat_distr[row, unit_index] += 1
+    # Normalize.
+    strat_distr = strat_distr / len(all_routes)
+
+    # Generating the plots.
+    # Increasing the figure size.
+    pl.rcParams["figure.figsize"] = (12.8, 9.6) # Default size = (6.4, 4.8)
+    fig, axs = pl.subplots(num_units, sharey=True)
+    fig.suptitle('Probability for each unit. Max foreign lithos = ' + str(max_num_foreign_litho))
+
+    x_data = drillsample_data["from"]
+    for i in range(num_units):
+        axs[i].plot(x_data, strat_distr[:, i])
+        axs[i].set(ylabel=str(i))
+        if (i != num_units - 1):
+            # Hide tick labels.
+            axs[i].set_xticklabels([])
+        axs[i].xaxis.grid(True)
+ 
+    pl.xlabel('Depth')
+    pl.show()
+
+#=============================================================================
 def main():
     print('Started litho2strat')
 
@@ -335,41 +368,12 @@ def main():
     # Write results to the file.
     #write_routes_to_file("strata.txt", drillsample_data, all_routes)
 
-    # Plot the results.
+    # Plot the routes.
     #plot_routes(drillsample_data["from"], all_routes)
 
-    #--------------------------------------------------------------------
-    # Plot route statistics.
-    #'''
-    nRows = drillsample_data.shape[0]
-    nUnits = strat_data.shape[0]
-    strat_distr = np.zeros((nRows, nUnits))
-    # Building the distribution of unit presence at every depth.
-    for route in all_routes:
-        for row in range(nRows):
-            unit_index = route.path[row]
-            strat_distr[row, unit_index] += 1
-    # Normalize.
-    strat_distr = strat_distr / len(all_routes)
-
-    # Generating the plots.
-    # Increasing the figure size.
-    pl.rcParams["figure.figsize"] = (12.8, 9.6) # Default size = (6.4, 4.8)
-    x_data = drillsample_data["from"]
-    fig, axs = pl.subplots(nUnits, sharey=True)
-    fig.suptitle('Probability for each unit. Max foreign lithos = ' + str(max_num_foreign_litho))
-    for i in range(nUnits):
-        axs[i].plot(x_data, strat_distr[:, i])
-        axs[i].set(ylabel=str(i))
-        if (i != nUnits - 1):
-            # Hide tick labels.
-            axs[i].set_xticklabels([])
-        axs[i].xaxis.grid(True)
- 
-    pl.xlabel('Depth')
-    pl.show()
-    #'''
-    #--------------------------------------------------------------------
+    # Plot unit probabilities.
+    num_units = strat_data.shape[0]
+    plot_unit_probabilities(all_routes, drillsample_data, num_units)
 
 #=============================================================================
 if __name__ == "__main__":
