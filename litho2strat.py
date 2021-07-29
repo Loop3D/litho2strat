@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pylab as pl
 
-max_num_foreign_litho = 5
+max_num_foreign_litho = 4
 
 #==============================================================================
 '''
@@ -68,10 +68,8 @@ class StrataRoute:
             self.num_units = 0
             # The number of "foreign" lithologies.
             self.num_foreign_litho = 0
-            # The last "foreign" lithology name.
-            self.last_foreign_litho = ""
-            # The last "foreign" lithology row number.
-            self.last_foreign_litho_row = -1
+            # The list of "foreign" lithologies for current unit.
+            self.current_foreign_lithos = []
             # Flag for removal.
             self.to_remove = False
         else:
@@ -80,8 +78,7 @@ class StrataRoute:
             self.current_thickness = orig.current_thickness
             self.num_units = orig.num_units
             self.num_foreign_litho = orig.num_foreign_litho
-            self.last_foreign_litho = orig.last_foreign_litho
-            self.last_foreign_litho_row = orig.last_foreign_litho_row
+            #self.current_foreign_lithos = []
             self.to_remove = orig.to_remove
 
     def __str__(self):
@@ -114,21 +111,15 @@ def get_max_strata_thickness(thickness_data):
     return [thickness_data["thickness_mean"][i] + thickness_data["thickess_range"][i] for i in range(nStrat)]
 
 #==============================================================================
-def process_foreign_lithology(route, current_litho, row, is_new_unit):
+def process_foreign_lithology(route, current_litho, row):
     '''
     Process the "foreign" lithology on the route.
     '''
-    if (is_new_unit):
-        # When unit is changed count it as a new "foreign" lithology, regardless of its name.
+    # Do not count lighology as 'new' if it was already present in this unit.
+    if (current_litho not in route.current_foreign_lithos):
+        # Count it as new "foreign" lithology.
         route.num_foreign_litho += 1
-        route.last_foreign_litho = current_litho
-    else:
-        # Changed lithology name or there is a gap in lithology sequence.
-        if (route.last_foreign_litho != current_litho or route.last_foreign_litho_row != row - 1):
-            # Count it as new "foreign" lithology.
-            route.num_foreign_litho += 1
-            route.last_foreign_litho = current_litho
-    route.last_foreign_litho_row = row
+        route.current_foreign_lithos.append(current_litho)
 
 #==============================================================================
 def generate_strat_routes(stratTable, drillsample_data, thickness_data, 
@@ -216,9 +207,10 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
                         new_route.path.append(strat)
                         new_route.current_thickness = thickness_change
                         new_route.num_units += 1
+                        new_route.current_foreign_lithos = []
                         # Processing the "foreign" lithology.
                         if (foreign_litho_added):
-                            process_foreign_lithology(new_route, current_litho, row, True)
+                            process_foreign_lithology(new_route, current_litho, row)
                         # Add new route into the list.
                         new_routes.append(new_route)
 
@@ -247,7 +239,7 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
                 route.current_thickness += thickness_change
                 # Processing the "foreign" lithology.
                 if (foreign_litho_added):
-                    process_foreign_lithology(route, current_litho, row, False)
+                    process_foreign_lithology(route, current_litho, row)
             else:
             # Did not reach the end of a drillhole, and cannot go down the same unit.
                 # Mark the route for removal.
