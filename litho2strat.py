@@ -319,11 +319,19 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
 
     x_data = drillsample_data["from"]
     for i in range(num_units):
-        axs[i].plot(x_data, strat_distr[:, i])
+        # Plot lines.
+        axs[i].plot(x_data, strat_distr[:, i], zorder=1)
+
+        # Set red color for zero data.
+        color = ['red' if d <= 0 else 'blue' for d in strat_distr[:, i]]
+        # Plot dots.
+        axs[i].scatter(x_data, strat_distr[:, i], s=5, c=color, zorder=2)
+
         axs[i].set(ylabel=str(i))
         if (i != num_units - 1):
             # Hide tick labels.
             axs[i].set_xticklabels([])
+        # Add vertical lines.
         axs[i].xaxis.grid(True)
  
     pl.xlabel('Depth')
@@ -334,8 +342,8 @@ def main():
     print('Started litho2strat')
 
     # Paths to data.
-#     strat_filename = "data/simple/strat_1627022992.5507748.csv"
-#     thickness_filename = "data/simple/thickness_mean_1627022992.5507748.csv"
+#     strat_filename       = "data/simple/strat_1627022992.5507748.csv"
+#     thickness_filename   = "data/simple/thickness_mean_1627022992.5507748.csv"
 #     drillsample_filename = "data/simple/drill_sample_1627022992.5507748.csv"
 
     strat_filename       = "data/foreign_litho/strat_1627025194.6300328.csv"
