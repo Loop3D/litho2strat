@@ -152,11 +152,14 @@ def process_foreign_lithology(route, current_litho, row):
         route.current_foreign_lithos.append(current_litho)
 
 #==============================================================================
-def generate_strat_routes(stratTable, drillsample_data, thickness_data, 
+def generate_strat_routes(strat_data, drillsample_data, thickness_data,
                           add_thickness_constraints, add_foreign_lithology, can_return_to_unit):
     '''
     Generating stratigraphic routes.
     '''
+    # Generating the table of possible strata paths.
+    stratTable = generate_strata_table(drillsample_data, strat_data)
+
     nRows = stratTable.shape[0]
     nStrat = stratTable.shape[1]
 
@@ -395,13 +398,11 @@ def main():
     drillsample_data = read_drillsample_data(drillsample_filename)
     thickness_data = read_thickness_data(thickness_filename)
 
-    stratTable = generate_strata_table(drillsample_data, strat_data)
-
     add_thickness_constraints = True
     add_foreign_lithology = True
     can_return_to_unit = True
 
-    all_routes = generate_strat_routes(stratTable, drillsample_data, thickness_data, 
+    all_routes = generate_strat_routes(strat_data, drillsample_data, thickness_data,
                                        add_thickness_constraints, add_foreign_lithology, can_return_to_unit)
 
     print("Total number of routes = ", len(all_routes))
