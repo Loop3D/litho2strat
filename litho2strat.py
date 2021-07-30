@@ -342,6 +342,9 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
     '''
     Generate a plot with probability of occurence for each unit.
     '''
+    if (len(all_routes) == 0):
+        return
+
     num_rows = len(drillsample_data)
     strat_distr = np.zeros((num_rows, num_units))
 
@@ -351,7 +354,25 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
             unit_index = route.path[row]
             strat_distr[row, unit_index] += 1
     # Normalize.
-    strat_distr = strat_distr / len(all_routes)
+    strat_distr = strat_distr / float(len(all_routes))
+
+    #------------------------------------------
+    # Plot distribution of the route scores (based on path probability).
+    route_scores = np.zeros(len(all_routes), dtype=float)
+    route_index = 0
+    for route in all_routes:
+        for row in range(num_rows):
+            unit_index = route.path[row]
+            route_scores[route_index] += strat_distr[row, unit_index]
+        route_scores[route_index] = route_scores[route_index] / float(num_rows)
+        route_index += 1
+
+    pl.hist(route_scores, bins = 50)
+    pl.title('Max foreign lithos = ' + str(max_num_foreign_litho))
+    pl.xlabel('Route score')
+    pl.ylabel('Frequency')
+    pl.show()
+    #------------------------------------------
 
     # Generating the plots.
     # Increasing the figure size.
