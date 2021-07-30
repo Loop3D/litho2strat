@@ -1,25 +1,63 @@
+import csv
 import numpy as np
-import pandas as pd
 import matplotlib.pylab as pl
 
 max_num_foreign_litho = 4
 
 #==============================================================================
-'''
-Helper functions for reading the input data.
-'''
 def read_strat_data(filename):
+    '''
+    Reading lithologies for every unit from csv file.
+    '''
     # Converter from string to list.
     str2list = lambda x: x.strip("[]").replace("'", "").split(", ")
-    data = pd.read_csv(filename, converters={"lithologies": str2list})
+
+    data = []
+    with open(filename, 'r') as csvfile:
+        # Reading the csv data.
+        csvreader = csv.reader(csvfile, delimiter=',')
+        # Skipping the header.
+        next(csvreader)
+        # Extracting the lighology list for every csv row (strata unit).
+        for row in csvreader:
+            # The lithologies are stored in the third column!
+            lithos = str2list(row[2])
+            data.append(lithos)
     return data
 
-def read_thickness_data(filename):
-    data = pd.read_csv(filename)
-    return data
-
+#==============================================================================
 def read_drillsample_data(filename):
-    data = pd.read_csv(filename)
+    '''
+    Reading drill sample data from csv file.
+    '''
+    data = []
+    with open(filename, 'r') as csvfile:
+        # Reading the csv data.
+        csvreader = csv.reader(csvfile, delimiter=',')
+        # Skipping the header.
+        next(csvreader)
+        # Extracting the data for every csv row.
+        for row in csvreader:
+            data.append(row)
+    return data
+
+#==============================================================================
+def read_thickness_data(filename):
+    '''
+    Reading thickness data from csv file.
+    '''
+    data = []
+    with open(filename, 'r') as csvfile:
+        # Reading the csv data.
+        csvreader = csv.reader(csvfile, delimiter=',')
+        # Skipping the header.
+        next(csvreader)
+        # Extracting the data for every csv row.
+        for row in csvreader:
+            thickness = np.array([0, 0], dtype='f')
+            thickness[0] = float(row[1]) # "thickness_mean".
+            thickness[1] = float(row[2]) # "thickess_range".
+            data.append(thickness)
     return data
 
 #==============================================================================
@@ -27,8 +65,8 @@ def generate_strata_table(drillsample_data, strat_data):
     '''
     Generates the stratigraphic table.
     '''
-    nRows = drillsample_data.shape[0] # Corresponds to lithology in drillhole sample.
-    nStrat = strat_data.shape[0]
+    nRows = len(drillsample_data)
+    nStrat = len(strat_data)
 
     print("nRows = ", nRows)
     print("nStrat = ", nStrat)
@@ -36,10 +74,10 @@ def generate_strata_table(drillsample_data, strat_data):
     stratTable = np.full((nRows, nStrat), False)
 
     for row in range(nRows):
-        litho = drillsample_data["lithology"][row]
+        litho = drillsample_data[row][2]
         litho_found = False
         for strat in range(nStrat):
-            if (litho in strat_data["lithologies"][strat]):
+            if (litho in strat_data[strat]):
                 litho_found = True
                 stratTable[row, strat] = True
 
@@ -89,17 +127,18 @@ def get_thickness_change(drillsample_data, row):
     '''
     Returns a thickness change for a given row in the drillhole sample.
     '''
-    return drillsample_data["to"][row] - drillsample_data["from"][row]
+    # "To" - "From"
+    return float(drillsample_data[row][1]) - float(drillsample_data[row][0])
 
 #==============================================================================
 def get_min_strata_thickness(thickness_data):
-    nStrat = thickness_data.shape[0]
-    return [thickness_data["thickness_mean"][i] - thickness_data["thickess_range"][i] for i in range(nStrat)]
+    # "thickness_mean" - "thickess_range"
+    return [data[0] - data[1] for data in thickness_data]
 
 #==============================================================================
 def get_max_strata_thickness(thickness_data):
-    nStrat = thickness_data.shape[0]
-    return [thickness_data["thickness_mean"][i] + thickness_data["thickess_range"][i] for i in range(nStrat)]
+    # "thickness_mean" + "thickess_range"
+    return [data[0] + data[1] for data in thickness_data]
 
 #==============================================================================
 def process_foreign_lithology(route, current_litho, row):
@@ -147,7 +186,7 @@ def generate_strat_routes(stratTable, drillsample_data, thickness_data,
 
     # Going through the strata table and generating the routes.
     for row in range(1, rowMax):
-        current_litho = drillsample_data["lithology"][row]
+        current_litho = drillsample_data[row][2] # Third row stores the lithology!
         print("ROW = ", row, current_litho, len(all_routes))
         if (len(all_routes) == 0):
             break
@@ -253,9 +292,9 @@ def write_routes_to_file(filename, drillsample_data, all_routes):
     Writing stratigraphic routes to file.
     '''
     f = open(filename, "w")
-    nRows = drillsample_data.shape[0]
+    nRows = len(drillsample_data)
     for row in range(nRows):
-        depth = drillsample_data["from"][row]
+        depth = float(drillsample_data[row][0])
         f.write("%f " % depth)
         # Calculate the number of unique strata for this depth.
         unique_units = set([])
@@ -300,7 +339,7 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
     '''
     Generate a plot with probability of occurence for each unit.
     '''
-    num_rows = drillsample_data.shape[0]
+    num_rows = len(drillsample_data)
     strat_distr = np.zeros((num_rows, num_units))
 
     # Building the distribution of unit presence at every depth.
@@ -317,7 +356,9 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
     fig, axs = pl.subplots(num_units, sharey=True)
     fig.suptitle('Probability for each unit. Max foreign lithos = ' + str(max_num_foreign_litho))
 
-    x_data = drillsample_data["from"]
+    # Using the "From" column.
+    x_data = [float(d[0]) for d in drillsample_data]
+
     for i in range(num_units):
         # Plot lines.
         axs[i].plot(x_data, strat_distr[:, i], zorder=1)
@@ -351,8 +392,8 @@ def main():
     drillsample_filename = "data/foreign_litho/drill_sample_1627025194.6300328.csv"
 
     strat_data = read_strat_data(strat_filename)
-    thickness_data = read_thickness_data(thickness_filename)
     drillsample_data = read_drillsample_data(drillsample_filename)
+    thickness_data = read_thickness_data(thickness_filename)
 
     stratTable = generate_strata_table(drillsample_data, strat_data)
 
@@ -375,7 +416,7 @@ def main():
     #plot_routes(drillsample_data["from"], all_routes)
 
     # Plot unit probabilities.
-    num_units = strat_data.shape[0]
+    num_units = len(strat_data)
     plot_unit_probabilities(all_routes, drillsample_data, num_units)
 
 #=============================================================================
