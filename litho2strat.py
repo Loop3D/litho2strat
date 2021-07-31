@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pylab as pl
 
 max_num_foreign_litho = 4
+max_num_unit_visited = 2
 
 #==============================================================================
 def read_strat_data(filename):
@@ -65,18 +66,18 @@ def generate_strata_table(drillsample_data, strat_data):
     '''
     Generates the stratigraphic table.
     '''
-    nRows = len(drillsample_data)
-    nStrat = len(strat_data)
+    num_rows = len(drillsample_data)
+    num_units = len(strat_data)
 
-    print("nRows = ", nRows)
-    print("nStrat = ", nStrat)
+    print("num_rows = ", num_rows)
+    print("num_units = ", num_units)
 
-    stratTable = np.full((nRows, nStrat), False)
+    stratTable = np.full((num_rows, num_units), False)
 
-    for row in range(nRows):
+    for row in range(num_rows):
         litho = drillsample_data[row][2]
         litho_found = False
-        for strat in range(nStrat):
+        for strat in range(num_units):
             if (litho in strat_data[strat]):
                 litho_found = True
                 stratTable[row, strat] = True
@@ -85,7 +86,7 @@ def generate_strata_table(drillsample_data, strat_data):
         # Lithology not found in stratas.
             print("Not found litho: ", litho)
             # Allow this lithology to be present in any strata.
-            for strat in range(nStrat):
+            for strat in range(num_units):
                 stratTable[row, strat] = True
 
     return stratTable
@@ -96,7 +97,7 @@ A class for storing the stratigraphic route.
 '''
 class StrataRoute:
     # Constructor.
-    def __init__(self):
+    def __init__(self, num_units):
         # Strata index for every drillhole depth (defined by list index).
         self.path = []
         # The thickness of the last strata unit.
@@ -107,6 +108,8 @@ class StrataRoute:
         self.num_foreign_litho = 0
         # The list of "foreign" lithologies for current unit.
         self.current_foreign_lithos = []
+        # Containts the number of times each unit was visited.
+        self.unit_visited = np.zeros((num_units), dtype=int)
         # Flag for removal.
         self.to_remove = False
 
@@ -153,15 +156,15 @@ def process_foreign_lithology(route, current_litho, row):
 
 #==============================================================================
 def generate_strat_routes(strat_data, drillsample_data, thickness_data,
-                          add_thickness_constraints, add_foreign_lithology, can_return_to_unit):
+                          add_thickness_constraints, add_foreign_lithology):
     '''
     Generating stratigraphic routes.
     '''
     # Generating the table of possible strata paths.
     stratTable = generate_strata_table(drillsample_data, strat_data)
 
-    nRows = stratTable.shape[0]
-    nStrat = stratTable.shape[1]
+    num_rows = stratTable.shape[0]
+    num_units = stratTable.shape[1]
 
     # Extract strata thikcness to lists (faster data structures).
     min_strata_thickness = get_min_strata_thickness(thickness_data)
@@ -173,18 +176,19 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
     row = 0
     thickness_change = get_thickness_change(drillsample_data, row)
 
-    for strat in range(nStrat):
+    for strat in range(num_units):
         if (stratTable[row, strat]):
-            new_route = StrataRoute()
+            new_route = StrataRoute(num_units)
             new_route.path = [strat]
             new_route.current_thickness = thickness_change
             new_route.num_units = 1
+            new_route.unit_visited[strat] += 1
             all_routes.append(new_route)
 
     print("Starting routes:")
     print(all_routes)
 
-    rowMax = nRows
+    rowMax = num_rows
     print("rowMax = ", rowMax)
 
     # Going through the strata table and generating the routes.
@@ -216,13 +220,8 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
                     can_change = can_change and (current_thickness >= min_strata_thickness[strat0])
 
             if (can_change):
-                strataList = []
-                if can_return_to_unit:
-                    # All strata units excluding the current one.
-                    strataList = [strat for strat in range(nStrat) if strat != strat0]
-                else:
-                    # Only units older than the current one.
-                    strataList = range(strat0 + 1, nStrat)
+                # Strata units excluding the current one, and those visited the maximum number of times.
+                strataList = [strat for strat in range(num_units) if (strat != strat0 and route.unit_visited[strat] < max_num_unit_visited)]
 
                 # Looking to which strata unit we can change.
                 for strat in strataList:
@@ -236,12 +235,15 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
 
                     if (path_exists or foreign_litho_added):
                         # Making the new route.
-                        new_route = StrataRoute()
+                        new_route = StrataRoute(num_units)
                         new_route.path = route.path.copy()
                         new_route.current_thickness = thickness_change
                         new_route.num_units = route.num_units + 1
                         new_route.num_foreign_litho = route.num_foreign_litho
                         new_route.current_foreign_lithos = []
+                        new_route.unit_visited = np.array(route.unit_visited)
+                        # Count this unit as visited.
+                        new_route.unit_visited[strat] += 1
                         # Adding new route position.
                         new_route.path.append(strat)
 
@@ -295,8 +297,8 @@ def write_routes_to_file(filename, drillsample_data, all_routes):
     Writing stratigraphic routes to file.
     '''
     f = open(filename, "w")
-    nRows = len(drillsample_data)
-    for row in range(nRows):
+    num_rows = len(drillsample_data)
+    for row in range(num_rows):
         depth = float(drillsample_data[row][0])
         f.write("%f " % depth)
         # Calculate the number of unique strata for this depth.
@@ -421,10 +423,9 @@ def main():
 
     add_thickness_constraints = True
     add_foreign_lithology = True
-    can_return_to_unit = True
 
     all_routes = generate_strat_routes(strat_data, drillsample_data, thickness_data,
-                                       add_thickness_constraints, add_foreign_lithology, can_return_to_unit)
+                                       add_thickness_constraints, add_foreign_lithology)
 
     print("Total number of routes = ", len(all_routes))
 
