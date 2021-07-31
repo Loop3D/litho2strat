@@ -2,18 +2,20 @@ import csv
 import numpy as np
 import matplotlib.pylab as pl
 
-max_num_foreign_litho = 4
-max_num_unit_visited = 2
+max_num_foreign_litho = 1
+max_num_unit_visited = 1
+
+
+#==============================================================================
+# Converter from string to list.
+str2list = lambda x: x.strip("[]").replace("'", "").split(", ")
 
 #==============================================================================
 def read_strat_data(filename):
     '''
     Reading lithologies for every unit from csv file.
     '''
-    # Converter from string to list.
-    str2list = lambda x: x.strip("[]").replace("'", "").split(", ")
-
-    data = []
+    strat_data = []
     with open(filename, 'r') as csvfile:
         # Reading the csv data.
         csvreader = csv.reader(csvfile, delimiter=',')
@@ -23,8 +25,45 @@ def read_strat_data(filename):
         for row in csvreader:
             # The lithologies are stored in the third column!
             lithos = str2list(row[2])
-            data.append(lithos)
-    return data
+            strat_data.append(lithos)
+
+    return strat_data
+
+#==============================================================================
+def read_strat_data2(all_strat_filename, unit_list_filename):
+    '''
+    Building lithologies list for every unit from csv files data.
+    '''
+    # Reading all units description.
+    strat_all = dict()
+    with open(all_strat_filename, 'r') as csvfile:
+        # Reading the csv data.
+        csvreader = csv.reader(csvfile, delimiter=',')
+        # Skipping the header.
+        next(csvreader)
+        # Extracting the lighology list for every csv row (strata unit).
+        for row in csvreader:
+            # The lithologies are stored in the third column!
+            lithos = str2list(row[1])
+            strat_all[row[0]] = lithos
+
+    # Building unit list for a partial set of units..
+    strat_data = []
+    with open(unit_list_filename, 'r') as csvfile:
+        # Reading the csv data.
+        csvreader = csv.reader(csvfile, delimiter=',')
+        # Skipping the header.
+        next(csvreader)
+        # Go through the list of units and form its lithology list.
+        for row in csvreader:
+            unit_name = row[0]
+            if (unit_name in strat_all):
+                strat_data.append(strat_all[unit_name])
+            else:
+                print("Error! No unit description found in 'all strat' list for unit name: " + unit_name)
+                exit()
+
+    return strat_data
 
 #==============================================================================
 def read_drillsample_data(filename):
@@ -413,17 +452,43 @@ def main():
 #     thickness_filename   = "data/simple/thickness_mean_1627022992.5507748.csv"
 #     drillsample_filename = "data/simple/drill_sample_1627022992.5507748.csv"
 
-    strat_filename       = "data/foreign_litho/strat_1627025194.6300328.csv"
-    thickness_filename   = "data/foreign_litho/thickness_mean_1627025194.6300328.csv"
-    drillsample_filename = "data/foreign_litho/drill_sample_1627025194.6300328.csv"
+#     strat_filename       = "data/foreign_litho/strat_1627025194.6300328.csv"
+#     thickness_filename   = "data/foreign_litho/thickness_mean_1627025194.6300328.csv"
+#     drillsample_filename = "data/foreign_litho/drill_sample_1627025194.6300328.csv"
 
-    strat_data = read_strat_data(strat_filename)
-    drillsample_data = read_drillsample_data(drillsample_filename)
-    thickness_data = read_thickness_data(thickness_filename)
 
-    add_thickness_constraints = True
+    all_strat_filename   = "data/real/ALL_Strat descriptions.csv"
+    #drillsample_filename = "data/real/MtGibson_drillhole.csv"
+    #unit_list_filename   = "data/real/MtGibson_strat.csv"
+    drillsample_filename = "data/real/Hill_drillhole.csv"
+    unit_list_filename   = "data/real/Hill_strat2.csv"
+
+    #--------------------------------------------------------------
+    new_file_format = True
+
+    add_thickness_constraints = False
     add_foreign_lithology = True
 
+    #--------------------------------------------------------------
+    # Reading input data.
+    #--------------------------------------------------------------
+    # Drill sample data.
+    drillsample_data = read_drillsample_data(drillsample_filename)
+
+    # Unit lithologies data..
+    strat_data = []
+    if (new_file_format):
+        strat_data = read_strat_data2(all_strat_filename, unit_list_filename)
+    else:
+        strat_data = read_strat_data(strat_filename)
+
+    # Thickness data.
+    thickness_data = []
+    if (add_thickness_constraints):
+        thickness_data = read_thickness_data(thickness_filename)
+
+    #--------------------------------------------------------------
+    # Generating the stratigraphy routes.
     all_routes = generate_strat_routes(strat_data, drillsample_data, thickness_data,
                                        add_thickness_constraints, add_foreign_lithology)
 
