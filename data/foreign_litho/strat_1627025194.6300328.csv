@@ -1,0 +1,11 @@
+strat,num units,lithologies
+0,4,"['Conglomerate', 'Porphyry', 'Pelite', 'Gabbro']"
+1,4,"['Conglomerate', 'Syenite', 'Greywacke', 'Sandstone']"
+2,3,"['Greywacke', 'Limestone', 'V_Sandstone']"
+3,2,"['Peridotite', 'Porphyry']"
+4,3,"['Sandstone', 'Limestone', 'V_Breccia']"
+5,3,"['V_Conglomerate', 'Granite', 'Conglomerate']"
+6,3,"['Porphyry', 'Pelite', 'V_Sandstone']"
+7,2,"['Granite', 'Porphyry']"
+8,4,"['Phyllite', 'Porphyry', 'Pelite', 'V_Sandstone']"
+9,3,"['Granite', 'Porphyry', 'V_Breccia']"
