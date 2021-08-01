@@ -205,8 +205,8 @@ def process_foreign_lithology(route, current_litho, strat):
 
 #==============================================================================
 def generate_strat_routes(strat_data, drillsample_data, thickness_data,
-                          add_thickness_constraints, add_foreign_lithology, can_join_last_unit, 
-                          can_change_to_same_litho):
+                          add_thickness_constraints, can_join_last_unit, 
+                          keep_continuous_lithos):
     '''
     Generating stratigraphic routes.
     '''
@@ -263,7 +263,7 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
             can_change = True
 
             # Add 'continous lithology' constraints.
-            if (not can_change_to_same_litho):
+            if (keep_continuous_lithos):
                 previous_litho = drillsample_data[row - 1][2]
                 if (current_litho == previous_litho):
                     can_change = False
@@ -518,12 +518,11 @@ def main():
     new_file_format = False
 
     add_thickness_constraints = True
-    add_foreign_lithology = True
 
-    # Flag whether we can add lithologies from the last unit to any other unit.
+    # Flag for whether we can add lithologies from the last unit to any other unit.
     can_join_last_unit = False
-    # Flag whether we can change the unit on the route when the lithology name was not changed.
-    can_change_to_same_litho = True
+    # Flag for whether we should stay in the unit until the lithology name is changed.
+    keep_continuous_lithos = False
 
     #--------------------------------------------------------------
     # Reading input data.
@@ -546,8 +545,8 @@ def main():
     #--------------------------------------------------------------
     # Generating the stratigraphy routes.
     all_routes = generate_strat_routes(strat_data, drillsample_data, thickness_data,
-                                       add_thickness_constraints, add_foreign_lithology, can_join_last_unit,
-                                       can_change_to_same_litho)
+                                       add_thickness_constraints, can_join_last_unit,
+                                       keep_continuous_lithos)
 
     print("Total number of routes = ", len(all_routes))
 
