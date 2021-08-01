@@ -455,8 +455,10 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
         route_scores[route_index] = route_scores[route_index] / float(num_rows)
         route_index += 1
 
+    title_params = 'Max foreign lithos = ' + str(max_num_foreign_litho) + ', max returns = ' + str(max_num_returns)
+
     pl.hist(route_scores, bins = 50)
-    pl.title('Max foreign lithos = ' + str(max_num_foreign_litho) + ', max returns = ' + str(max_num_returns))
+    pl.title(title_params)
     pl.xlabel('Route score')
     pl.ylabel('Frequency')
     pl.show()
@@ -466,7 +468,7 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
     # Increasing the figure size.
     pl.rcParams["figure.figsize"] = (12.8, 9.6) # Default size = (6.4, 4.8)
     fig, axs = pl.subplots(num_units, sharey=True)
-    fig.suptitle('Probability for each unit. Max foreign lithos = ' + str(max_num_foreign_litho))
+    fig.suptitle('Probability for each unit. ' + title_params)
 
     # Using the "From" column.
     x_data = [float(d[0]) for d in drillsample_data]
