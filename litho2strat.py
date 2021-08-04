@@ -71,6 +71,7 @@ def read_drillsample_data(filename):
     Reading drill sample data from csv file.
     '''
     data = []
+    lithos = set()
     with open(filename, 'r') as csvfile:
         # Reading the csv data.
         csvreader = csv.reader(csvfile, delimiter=',')
@@ -79,6 +80,8 @@ def read_drillsample_data(filename):
         # Extracting the data for every csv row.
         for row in csvreader:
             data.append(row)
+            lithos.add(row[2])
+    print("The number of drillhole lithologies: " + str(len(lithos)))
     return data
 
 #==============================================================================
@@ -108,25 +111,33 @@ def generate_strata_table(drillsample_data, strat_data):
     num_rows = len(drillsample_data)
     num_units = len(strat_data)
 
-    print("num_rows = ", num_rows)
+    print("num_rows (before) = ", num_rows)
     print("num_units = ", num_units)
 
     stratTable = np.full((num_rows, num_units), False)
+    new_row_index = 0
 
-    for row in range(num_rows):
-        litho = drillsample_data[row][2]
+    for row in drillsample_data[:]:
+        litho = row[2]
         litho_found = False
         for strat in range(num_units):
             if (litho in strat_data[strat]):
                 litho_found = True
-                stratTable[row, strat] = True
+                stratTable[new_row_index, strat] = True
 
         if (not litho_found):
-        # Lithology not found in stratas.
-            print("WARNING: Not found lithology: ", litho)
-            # Allow this lithology to be present in any strata.
-            for strat in range(num_units):
-                stratTable[row, strat] = True
+        # Lithology not found in units.
+            print("WARNING: Not found lithology: ", row)
+            # Treat this as "no data".
+            drillsample_data.remove(row)
+        else:
+            new_row_index += 1
+
+    num_rows = len(drillsample_data)
+    print("num_rows (after) = ", num_rows)
+
+    # Remove rows due to missing lithologies.
+    stratTable = stratTable[0:num_rows, :]
 
     return stratTable
 
@@ -505,12 +516,12 @@ def main():
     thickness_filename   = "data/foreign_litho/thickness_mean_1627025194.6300328.csv"
     drillsample_filename = "data/foreign_litho/drill_sample_1627025194.6300328.csv"
 
-
 #     all_strat_filename   = "data/real/ALL_Strat descriptions.csv"
 #     drillsample_filename = "data/real/MtGibson_drillhole.csv"
 #     unit_list_filename   = "data/real/MtGibson_strat.csv"
-    #drillsample_filename = "data/real/Hill_drillhole.csv"
-    #unit_list_filename   = "data/real/Hill_strat.csv"
+
+#     drillsample_filename = "data/real/Hill_drillhole.csv"
+#     unit_list_filename   = "data/real/Hill_strat.csv"
 
 #     all_strat_filename = "data/test/ALL_strat.csv"
 #     drillsample_filename = "data/test/drill.csv"
@@ -553,7 +564,7 @@ def main():
     print("Total number of routes = ", len(all_routes))
 
     # Print all unique routes (i.e., unique strata sequence).
-    #print_unique_routes(all_routes, 10)
+    print_unique_routes(all_routes, 10)
 
     # Write results to the file.
     #write_routes_to_file("strata.txt", drillsample_data, all_routes)
