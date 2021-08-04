@@ -216,8 +216,7 @@ def process_foreign_lithology(route, current_litho, strat):
 
 #==============================================================================
 def generate_strat_routes(strat_data, drillsample_data, thickness_data,
-                          add_thickness_constraints, can_join_last_unit, 
-                          keep_continuous_lithos):
+                          add_thickness_constraints, keep_continuous_lithos):
     '''
     Generating stratigraphic routes.
     '''
@@ -344,21 +343,14 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
                 # Apply unit thickness constraints.
                 can_stay = can_stay and (current_thickness < max_strata_thickness[strat0])
 
-            join_last_unit = (can_join_last_unit and (strat0 != num_units - 1) and (current_litho in strat_data[-1]))
-            if (join_last_unit):
-            # Joining last unit.
-                can_stay = can_stay and join_last_unit
+            path_exists = stratTable[row, strat0]
 
-            else:
-            # Regular path.
-                path_exists = stratTable[row, strat0]
-    
-                # Processing "foreign" litho constraints.
-                foreign_litho_added = False
-                if (not path_exists):
-                    foreign_litho_added = can_add_foreign_lithology(route, current_litho, strat0)
+            # Processing "foreign" litho constraints.
+            foreign_litho_added = False
+            if (not path_exists):
+                foreign_litho_added = can_add_foreign_lithology(route, current_litho, strat0)
 
-                can_stay = can_stay and (path_exists or foreign_litho_added)
+            can_stay = can_stay and (path_exists or foreign_litho_added)
 
             # Processing the route.
             if (can_stay):
@@ -532,8 +524,6 @@ def main():
 
     add_thickness_constraints = True
 
-    # Flag for whether we can add lithologies from the last unit to any other unit.
-    can_join_last_unit = False
     # Flag for whether we should stay in the unit until the lithology name is changed.
     keep_continuous_lithos = False
 
@@ -558,8 +548,7 @@ def main():
     #--------------------------------------------------------------
     # Generating the stratigraphy routes.
     all_routes = generate_strat_routes(strat_data, drillsample_data, thickness_data,
-                                       add_thickness_constraints, can_join_last_unit,
-                                       keep_continuous_lithos)
+                                       add_thickness_constraints, keep_continuous_lithos)
 
     print("Total number of routes = ", len(all_routes))
 
