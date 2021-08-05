@@ -376,8 +376,11 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
         all_routes = [route for route in all_routes if not route.to_remove]
         # Addig new routes.
         all_routes.extend(new_routes)
+    
+    # Adding the final number of routes.
+    all_routes_number.append(len(all_routes))
 
-    return all_routes
+    return all_routes, all_routes_number
 
 #==============================================================================
 def write_routes_to_file(filename, drillsample_data, all_routes):
@@ -554,10 +557,17 @@ def main():
 
     #--------------------------------------------------------------
     # Generating the stratigraphy routes.
-    all_routes = generate_strat_routes(strat_data, drillsample_data, thickness_data,
+    all_routes, all_routes_number = generate_strat_routes(strat_data, drillsample_data, thickness_data,
                                        add_thickness_constraints, keep_continuous_lithos)
 
     print("Total number of routes = ", len(all_routes))
+
+    #--------------------------------------------------------------
+    # Plot the number of processed routes at each row.
+    pl.xlabel('Row number')
+    pl.ylabel('Number of routes')
+    pl.plot(all_routes_number)
+    pl.show()
 
     # Print all unique routes (i.e., unique strata sequence).
     print_unique_routes(all_routes, 10)
