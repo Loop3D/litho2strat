@@ -475,7 +475,12 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
     pl.xlabel('Route score')
     pl.ylabel('Frequency')
     pl.show()
+
     #------------------------------------------
+    # Index of the route with highest score. (Note: can be several such routes)
+    index_max = np.argmax(route_scores)
+    print('Max index = ', index_max)
+    print('Max score = ', route_scores[index_max])
 
     # Generating the plots.
     # Increasing the figure size.
@@ -488,10 +493,16 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
 
     for i in range(num_units):
         # Plot lines.
-        axs[i].plot(x_data, strat_distr[:, i], zorder=1)
+        axs[i].plot(x_data, strat_distr[:, i], zorder=1, c='lightblue')
 
         # Set red color for zero data.
         color = ['red' if d <= 0 else 'blue' for d in strat_distr[:, i]]
+
+        # Set green color for the route with the highest score.
+        for row in range(num_rows):
+            if (all_routes[index_max].path[row] == i):
+                color[row] = 'green'
+
         # Plot dots.
         axs[i].scatter(x_data, strat_distr[:, i], s=5, c=color, zorder=2)
 
