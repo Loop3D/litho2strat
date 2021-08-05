@@ -2,8 +2,8 @@ import csv
 import numpy as np
 import matplotlib.pylab as pl
 
-max_num_foreign_litho = 4
-max_num_foreign_litho_per_unit = 1
+max_num_foreign_lithos = 4
+max_num_foreign_lithos_per_unit = 1
 max_num_returns = 0
 
 
@@ -156,7 +156,7 @@ class StrataRoute:
         # The number of strata units.
         self.num_units = 0
         # The number of "foreign" lithologies.
-        self.num_foreign_litho = 0
+        self.num_foreign_lithos = 0
         # Containts the list of "foreign" lithologies for every unit.
         self.foreign_lithos = [[] for i in range(num_units)]
         # Containts the number of times each unit was visited.
@@ -200,8 +200,8 @@ def can_add_foreign_lithology(route, current_litho, strat):
     # If this lithology was already added to this unit, 
     # or if the maximum number of foreign lithologies is not exceeded then set can_add to True.
     num_foreign_lithos_in_unit = len(route.foreign_lithos[strat])
-    if ((route.num_foreign_litho < max_num_foreign_litho 
-         and num_foreign_lithos_in_unit < max_num_foreign_litho_per_unit)
+    if ((route.num_foreign_lithos < max_num_foreign_lithos 
+         and num_foreign_lithos_in_unit < max_num_foreign_lithos_per_unit)
         or current_litho in route.foreign_lithos[strat]):
         can_add = True
 
@@ -214,7 +214,7 @@ def process_foreign_lithology(route, current_litho, strat):
     '''
     # Do not count lighology as 'new' if it was already present in this unit.
     if (current_litho not in route.foreign_lithos[strat]):
-        route.num_foreign_litho += 1
+        route.num_foreign_lithos += 1
         route.foreign_lithos[strat].append(current_litho)
 
 #==============================================================================
@@ -328,7 +328,7 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
                         new_route.path = route.path.copy()
                         new_route.current_thickness = thickness_change
                         new_route.num_units = route.num_units + 1
-                        new_route.num_foreign_litho = route.num_foreign_litho
+                        new_route.num_foreign_lithos = route.num_foreign_lithos
                         new_route.foreign_lithos = [x[:] for x in route.foreign_lithos]
                         new_route.unit_visited = np.array(route.unit_visited)
                         # Count this unit as visited.
@@ -468,7 +468,7 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
         route_scores[route_index] = route_scores[route_index] / float(num_rows)
         route_index += 1
 
-    title_params = 'Max foreign lithos = ' + str(max_num_foreign_litho) + ', max returns = ' + str(max_num_returns)
+    title_params = 'Max foreign lithos = ' + str(max_num_foreign_lithos) + ', max returns = ' + str(max_num_returns)
 
     pl.hist(route_scores, bins = 50)
     pl.title(title_params)
@@ -510,6 +510,9 @@ def main():
     print('Started litho2strat')
 
     # Paths to data.
+    all_strat_filename = ""
+    unit_list_filename = ""
+
 #     strat_filename       = "data/simple/strat_1627022992.5507748.csv"
 #     thickness_filename   = "data/simple/thickness_mean_1627022992.5507748.csv"
 #     drillsample_filename = "data/simple/drill_sample_1627022992.5507748.csv"
