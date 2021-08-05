@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pylab as pl
 
 max_num_foreign_litho = 4
+max_num_foreign_litho_per_unit = 1
 max_num_returns = 0
 
 
@@ -198,8 +199,10 @@ def can_add_foreign_lithology(route, current_litho, strat):
     can_add = False
     # If this lithology was already added to this unit, 
     # or if the maximum number of foreign lithologies is not exceeded then set can_add to True.
-    if (route.num_foreign_litho < max_num_foreign_litho or
-        current_litho in route.foreign_lithos[strat]):
+    num_foreign_lithos_in_unit = len(route.foreign_lithos[strat])
+    if ((route.num_foreign_litho < max_num_foreign_litho 
+         and num_foreign_lithos_in_unit < max_num_foreign_litho_per_unit)
+        or current_litho in route.foreign_lithos[strat]):
         can_add = True
 
     return can_add
@@ -231,6 +234,7 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
     max_strata_thickness = get_max_strata_thickness(thickness_data)
 
     all_routes = []
+    all_routes_number = []
 
     # Set the initial routes.
     row = 0
@@ -254,8 +258,11 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
     # Going through the strata table and generating the routes.
     for row in range(1, rowMax):
         current_litho = drillsample_data[row][2] # Third row stores the lithology!
-        print("ROW = ", row, current_litho, len(all_routes))
-        if (len(all_routes) == 0):
+        num_routes = len(all_routes)
+        all_routes_number.append(num_routes)
+
+        print("ROW = ", row, current_litho, num_routes)
+        if (num_routes == 0):
             break
 
         thickness_change = get_thickness_change(drillsample_data, row)
