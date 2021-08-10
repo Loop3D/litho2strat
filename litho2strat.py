@@ -148,20 +148,7 @@ def generate_strata_table(drillsample_data, strat_data):
 A class for storing the stratigraphic route.
 '''
 class StrataRoute:
-    # Constructor.
-    def __init__(self, num_units):
-        # Strata index for every drillhole depth (defined by list index).
-        self.path = []
-        # The thickness of the last strata unit.
-        self.current_thickness = 0.
-        # The number of strata units.
-        self.num_units = 0
-        # The number of "foreign" lithologies.
-        self.num_foreign_lithos = 0
-        # Containts the list of "foreign" lithologies for every unit.
-        self.foreign_lithos = [[] for i in range(num_units)]
-        # Containts the number of times each unit was visited.
-        self.unit_visited = np.zeros((num_units), dtype=int)
+    def __init__(self):
         # Flag for removal.
         self.to_remove = False
 
@@ -243,11 +230,21 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
 
     for strat in range(num_units):
         if (stratTable[row, strat]):
-            new_route = StrataRoute(num_units)
+            new_route = StrataRoute()
+            # Unit index for every drillhole data.
             new_route.path = [strat]
+            # The thickness of the last strata unit.
             new_route.current_thickness = thickness_change
+            # The number of strata units.
             new_route.num_units = 1
+            # The number of "foreign" lithologies.
+            new_route.num_foreign_lithos = 0
+            # Containts the list of "foreign" lithologies for every unit.
+            new_route.foreign_lithos = [[] for i in range(num_units)]
+            # Containts the number of times each unit was visited.
+            new_route.unit_visited = np.zeros((num_units), dtype=int)
             new_route.unit_visited[strat] += 1
+            # Adding new route into the list.
             all_routes.append(new_route)
 
     print("Starting routes:")
@@ -325,8 +322,10 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
 
                     if (path_exists or foreign_litho_added):
                         # Making the new route.
-                        new_route = StrataRoute(num_units)
+                        new_route = StrataRoute()
                         new_route.path = route.path.copy()
+                        # Adding new route position.
+                        new_route.path.append(strat)
                         new_route.current_thickness = thickness_change
                         new_route.num_units = route.num_units + 1
                         new_route.num_foreign_lithos = route.num_foreign_lithos
@@ -334,12 +333,10 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
                         new_route.unit_visited = np.array(route.unit_visited)
                         # Count this unit as visited.
                         new_route.unit_visited[strat] += 1
-                        # Adding new route position.
-                        new_route.path.append(strat)
                         # Processing the "foreign" lithology.
                         if (foreign_litho_added):
                             process_foreign_lithology(new_route, current_litho, strat)
-                        # Add new route into the list.
+                        # Adding new route into the list.
                         new_routes.append(new_route)
 
             #-----------------------------------------------------------------
