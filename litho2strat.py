@@ -152,6 +152,23 @@ class StrataRoute:
         # Flag for removal.
         self.to_remove = False
 
+    # Adding the first position to the route.
+    # This method essentially initializes the route.
+    def add_first_position(self, strat, thickness_change, num_units):
+        # Unit index for every drillhole data.
+        self.path = [strat]
+        # The thickness of the last strata unit.
+        self.current_thickness = thickness_change
+        # The number of strata units.
+        self.num_units = 1
+        # The number of "foreign" lithologies.
+        self.num_foreign_lithos = 0
+        # Containts the list of "foreign" lithologies for every unit.
+        self.foreign_lithos = [[] for i in range(num_units)]
+        # Containts the number of times each unit was visited.
+        self.unit_visited = np.zeros((num_units), dtype=int)
+        self.unit_visited[strat] += 1
+
     def __str__(self):
         return str(self.path)
 
@@ -250,19 +267,7 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
     for strat in range(num_units):
         if (strata_table[row, strat]):
             new_route = StrataRoute()
-            # Unit index for every drillhole data.
-            new_route.path = [strat]
-            # The thickness of the last strata unit.
-            new_route.current_thickness = thickness_change
-            # The number of strata units.
-            new_route.num_units = 1
-            # The number of "foreign" lithologies.
-            new_route.num_foreign_lithos = 0
-            # Containts the list of "foreign" lithologies for every unit.
-            new_route.foreign_lithos = [[] for i in range(num_units)]
-            # Containts the number of times each unit was visited.
-            new_route.unit_visited = np.zeros((num_units), dtype=int)
-            new_route.unit_visited[strat] += 1
+            new_route.add_first_position(strat, thickness_change, num_units)
             # Adding new route into the list.
             all_routes.append(new_route)
 
