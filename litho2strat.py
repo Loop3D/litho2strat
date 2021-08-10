@@ -3,8 +3,8 @@ import numpy as np
 import matplotlib.pylab as pl
 import tracemalloc
 
-max_num_foreign_lithos = 4
-max_num_foreign_lithos_per_unit = 1
+max_num_foreign_lithos = 5
+max_num_foreign_lithos_per_unit = 2
 max_num_returns = 0
 
 
@@ -221,6 +221,13 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
     min_strata_thickness = get_min_strata_thickness(thickness_data)
     max_strata_thickness = get_max_strata_thickness(thickness_data)
 
+    # Generate a list of all lithologies (to be able to map them to integers).
+    all_lithos = []
+    for row in drillsample_data:
+        litho_name = row[2]
+        if (litho_name not in all_lithos):
+            all_lithos.append(litho_name)
+
     all_routes = []
     all_routes_number = []
 
@@ -255,7 +262,8 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
 
     # Going through the strata table and generating the routes.
     for row in range(1, rowMax):
-        current_litho = drillsample_data[row][2] # Third row stores the lithology!
+        current_litho = drillsample_data[row][2]
+        current_litho_index = all_lithos.index(current_litho)
         num_routes = len(all_routes)
         all_routes_number.append(num_routes)
 
@@ -318,7 +326,7 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
                     # Processing "foreign" litho constraints.
                     foreign_litho_added = False
                     if (not path_exists):
-                        foreign_litho_added = can_add_foreign_lithology(route, current_litho, strat)
+                        foreign_litho_added = can_add_foreign_lithology(route, current_litho_index, strat)
 
                     if (path_exists or foreign_litho_added):
                         # Making the new route.
@@ -329,13 +337,13 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
                         new_route.current_thickness = thickness_change
                         new_route.num_units = route.num_units + 1
                         new_route.num_foreign_lithos = route.num_foreign_lithos
-                        new_route.foreign_lithos = [x[:] for x in route.foreign_lithos]
+                        new_route.foreign_lithos = [x[:] for x in route.foreign_lithos] # Deep copy.
                         new_route.unit_visited = np.array(route.unit_visited)
                         # Count this unit as visited.
                         new_route.unit_visited[strat] += 1
                         # Processing the "foreign" lithology.
                         if (foreign_litho_added):
-                            process_foreign_lithology(new_route, current_litho, strat)
+                            process_foreign_lithology(new_route, current_litho_index, strat)
                         # Adding new route into the list.
                         new_routes.append(new_route)
 
@@ -353,7 +361,7 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
             # Processing "foreign" litho constraints.
             foreign_litho_added = False
             if (not path_exists):
-                foreign_litho_added = can_add_foreign_lithology(route, current_litho, strat0)
+                foreign_litho_added = can_add_foreign_lithology(route, current_litho_index, strat0)
 
             can_stay = can_stay and (path_exists or foreign_litho_added)
 
@@ -364,7 +372,7 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
                 route.current_thickness += thickness_change
                 # Processing the "foreign" lithology.
                 if (foreign_litho_added):
-                    process_foreign_lithology(route, current_litho, strat0)
+                    process_foreign_lithology(route, current_litho_index, strat0)
             else:
             # Did not reach the end of a drillhole, and cannot go down the same unit.
                 # Mark the route for removal.
