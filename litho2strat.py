@@ -206,6 +206,18 @@ def process_foreign_lithology(route, current_litho, strat):
         route.foreign_lithos[strat].append(current_litho)
 
 #==============================================================================
+def flatten(S):
+    '''
+    Flattens the multilevel list of lists.
+    For example, it will convert [[[1,1],2,2],3,3] to [1,1,2,2,3,3].
+    '''
+    if S == []:
+        return S
+    if isinstance(S[0], list):
+        return flatten(S[0]) + flatten(S[1:])
+    return S[:1] + flatten(S[1:])
+
+#==============================================================================
 def generate_strat_routes(strat_data, drillsample_data, thickness_data,
                           add_thickness_constraints, keep_continuous_lithos):
     '''
@@ -319,33 +331,37 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
                         strataList.remove(strat)
                 #---------------------------------------------------------------
 
-                # Looking to which strata unit we can change.
-                for strat in strataList:
-                    path_exists = stratTable[row, strat]
+                if (len(strataList) != 0):
+                    # Copy the route to create references to it below.
+                    old_path = route.path.copy()
 
-                    # Processing "foreign" litho constraints.
-                    foreign_litho_added = False
-                    if (not path_exists):
-                        foreign_litho_added = can_add_foreign_lithology(route, current_litho_index, strat)
+                    # Looking to which strata unit we can change.
+                    for strat in strataList:
+                        path_exists = stratTable[row, strat]
 
-                    if (path_exists or foreign_litho_added):
-                        # Making the new route.
-                        new_route = StrataRoute()
-                        new_route.path = route.path.copy()
-                        # Adding new route position.
-                        new_route.path.append(strat)
-                        new_route.current_thickness = thickness_change
-                        new_route.num_units = route.num_units + 1
-                        new_route.num_foreign_lithos = route.num_foreign_lithos
-                        new_route.foreign_lithos = [x[:] for x in route.foreign_lithos] # Deep copy.
-                        new_route.unit_visited = np.array(route.unit_visited)
-                        # Count this unit as visited.
-                        new_route.unit_visited[strat] += 1
-                        # Processing the "foreign" lithology.
-                        if (foreign_litho_added):
-                            process_foreign_lithology(new_route, current_litho_index, strat)
-                        # Adding new route into the list.
-                        new_routes.append(new_route)
+                        # Processing "foreign" litho constraints.
+                        foreign_litho_added = False
+                        if (not path_exists):
+                            foreign_litho_added = can_add_foreign_lithology(route, current_litho_index, strat)
+
+                        if (path_exists or foreign_litho_added):
+                            # Making the new route.
+                            new_route = StrataRoute()
+                            # New path contains the reference to the old path, and the new route position.
+                            # Note: we are not copying the full old path, but only store a reference to it to save memory.
+                            new_route.path = [old_path, strat]
+                            new_route.current_thickness = thickness_change
+                            new_route.num_units = route.num_units + 1
+                            new_route.num_foreign_lithos = route.num_foreign_lithos
+                            new_route.foreign_lithos = [x[:] for x in route.foreign_lithos] # Deep copy.
+                            new_route.unit_visited = np.array(route.unit_visited)
+                            # Count this unit as visited.
+                            new_route.unit_visited[strat] += 1
+                            # Processing the "foreign" lithology.
+                            if (foreign_litho_added):
+                                process_foreign_lithology(new_route, current_litho_index, strat)
+                            # Adding new route into the list.
+                            new_routes.append(new_route)
 
             #-----------------------------------------------------------------
             # Check if we can go down the same srata unit (if cannot -- remove the current route).
@@ -382,9 +398,13 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
         all_routes = [route for route in all_routes if not route.to_remove]
         # Addig new routes.
         all_routes.extend(new_routes)
-    
+
     # Adding the final number of routes.
     all_routes_number.append(len(all_routes))
+
+    # Flatten the multilevel list of lists: convert [[[1,1],2,2],3,3] to [1,1,2,2,3,3].
+    for route in all_routes:
+        route.path = flatten(route.path)
 
     return all_routes, all_routes_number
 
