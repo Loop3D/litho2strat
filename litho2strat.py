@@ -236,6 +236,32 @@ def flatten(S):
     return S[:1] + flatten(S[1:])
 
 #==============================================================================
+def apply_max_num_returns_constraint(route, strata_list):
+    '''
+    Applies the "maximum number of returns to a unit" constraint:
+    removes from the input unit list the units where the route cannot return anymore.
+    '''
+    # Calculate the current global number of returns to the same unit.
+    num_returns0 = 0
+    for visited in route.unit_visited:
+        if (visited > 0):
+            num_returns0 += visited - 1
+
+    # Apply the "max number of returns" constraint.
+    for strat in strata_list[:]:
+        if (route.unit_visited[strat] - 1 >= max_num_returns_per_unit):
+        # Reached the maximum numer of local returns (to this unit).
+            strata_list.remove(strat)
+        else:
+        # Calculate the global number of returns, if we visit this strat again.
+            num_returns = num_returns0
+            if (route.unit_visited[strat] > 0):
+                num_returns += 1
+            if (num_returns > max_num_returns):
+                # Skip this unit.
+                strata_list.remove(strat)
+
+#==============================================================================
 def generate_strat_routes(strat_data, drillsample_data, thickness_data,
                           add_thickness_constraints, keep_continuous_lithos):
     '''
@@ -318,28 +344,8 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
             if (can_change):
                 # Strata units excluding the current one, and those visited the maximum number of times.
                 strata_list = [strat for strat in range(num_units) if (strat != strat0)]
-
-                #---------------------------------------------------------------
-                # Calculate the current global number of returns to the same unit.
-                num_returns0 = 0
-                for visited in route.unit_visited:
-                    if (visited > 0):
-                        num_returns0 += visited - 1
-
-                # Apply the "max number of returns" constraint.
-                for strat in strata_list[:]:
-                    if (route.unit_visited[strat] - 1 >= max_num_returns_per_unit):
-                    # Reached the maximum numer of local returns (to this unit).
-                        strata_list.remove(strat)
-                    else:
-                    # Calculate the global number of returns, if we visit this strat again.
-                        num_returns = num_returns0
-                        if (route.unit_visited[strat] > 0):
-                            num_returns += 1
-                        if (num_returns > max_num_returns):
-                            # Skip this unit.
-                            strata_list.remove(strat)
-                #---------------------------------------------------------------
+                # Applying the "maximum umber of returns to a unit" constraint.
+                apply_max_num_returns_constraint(route, strata_list)
 
                 if (len(strata_list) != 0):
                     # Copy the route to create references to it below.
