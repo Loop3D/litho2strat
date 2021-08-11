@@ -3,9 +3,9 @@ import numpy as np
 import matplotlib.pylab as pl
 import tracemalloc
 
-max_num_foreign_lithos = 5
+max_num_foreign_lithos = 4
 max_num_foreign_lithos_per_unit = 1
-max_num_returns = 2
+max_num_returns = 0
 max_num_returns_per_unit = 1
 
 
@@ -201,22 +201,28 @@ def get_max_strata_thickness(thickness_data):
     return [data[0] + data[1] for data in thickness_data]
 
 #==============================================================================
-def can_add_foreign_lithology(route, current_litho, strat):
-    can_add = False
-    # If this lithology was already added to this unit, 
-    # or if the maximum number of foreign lithologies is not exceeded then set can_add to True.
-    num_foreign_lithos_in_unit = len(route.foreign_lithos[strat])
-    if ((route.num_foreign_lithos < max_num_foreign_lithos 
-         and num_foreign_lithos_in_unit < max_num_foreign_lithos_per_unit)
-        or current_litho in route.foreign_lithos[strat]):
-        can_add = True
+def can_add_foreign_lithology(path_exists, route, current_litho, strat):
+    '''
+    Checks if a 'foreign' lithology can be added to the route.
+    '''
+    if (path_exists):
+        return False
+    else:
+        can_add = False
+        # If this lithology was already added to this unit, 
+        # or if the maximum number of foreign lithologies is not exceeded then set can_add to True.
+        num_foreign_lithos_in_unit = len(route.foreign_lithos[strat])
+        if ((route.num_foreign_lithos < max_num_foreign_lithos 
+             and num_foreign_lithos_in_unit < max_num_foreign_lithos_per_unit)
+            or current_litho in route.foreign_lithos[strat]):
+            can_add = True
 
-    return can_add
+        return can_add
 
 #==============================================================================
 def process_foreign_lithology(route, current_litho, strat):
     '''
-    Process the "foreign" lithology on the route.
+    Adding the "foreign" lithology to the route.
     '''
     # Do not count lighology as 'new' if it was already present in this unit.
     if (current_litho not in route.foreign_lithos[strat]):
@@ -356,9 +362,7 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
                         path_exists = strata_table[row, strat]
 
                         # Processing "foreign" litho constraints.
-                        foreign_litho_added = False
-                        if (not path_exists):
-                            foreign_litho_added = can_add_foreign_lithology(route, current_litho_index, strat)
+                        foreign_litho_added = can_add_foreign_lithology(path_exists, route, current_litho_index, strat)
 
                         if (path_exists or foreign_litho_added):
                             # Making the new route.
@@ -391,9 +395,7 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
             path_exists = strata_table[row, strat0]
 
             # Processing "foreign" litho constraints.
-            foreign_litho_added = False
-            if (not path_exists):
-                foreign_litho_added = can_add_foreign_lithology(route, current_litho_index, strat0)
+            foreign_litho_added = can_add_foreign_lithology(path_exists, route, current_litho_index, strat0)
 
             can_stay = can_stay and (path_exists or foreign_litho_added)
 
