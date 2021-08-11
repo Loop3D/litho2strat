@@ -4,8 +4,9 @@ import matplotlib.pylab as pl
 import tracemalloc
 
 max_num_foreign_lithos = 5
-max_num_foreign_lithos_per_unit = 2
-max_num_returns = 0
+max_num_foreign_lithos_per_unit = 1
+max_num_returns = 2
+max_num_returns_per_unit = 1
 
 
 #==============================================================================
@@ -319,7 +320,7 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
                 strata_list = [strat for strat in range(num_units) if (strat != strat0)]
 
                 #---------------------------------------------------------------
-                # Calculate the current number of returns to the same unit.
+                # Calculate the current global number of returns to the same unit.
                 num_returns0 = 0
                 for visited in route.unit_visited:
                     if (visited > 0):
@@ -327,13 +328,17 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
 
                 # Apply the "max number of returns" constraint.
                 for strat in strata_list[:]:
-                    # Calculate the "would be" number of returns, if we visit this strat again.
-                    num_returns = num_returns0
-                    if (route.unit_visited[strat] > 0):
-                        num_returns += 1
-                    if (num_returns > max_num_returns):
-                        # Skip this unit.
+                    if (route.unit_visited[strat] - 1 >= max_num_returns_per_unit):
+                    # Reached the maximum numer of local returns (to this unit).
                         strata_list.remove(strat)
+                    else:
+                    # Calculate the global number of returns, if we visit this strat again.
+                        num_returns = num_returns0
+                        if (route.unit_visited[strat] > 0):
+                            num_returns += 1
+                        if (num_returns > max_num_returns):
+                            # Skip this unit.
+                            strata_list.remove(strat)
                 #---------------------------------------------------------------
 
                 if (len(strata_list) != 0):
