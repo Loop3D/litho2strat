@@ -8,6 +8,8 @@ max_num_foreign_lithos_per_unit = 1
 max_num_returns = 0
 max_num_returns_per_unit = 1
 
+# List of all lithologies.
+all_lithos = []
 
 #==============================================================================
 # Converter from string to list.
@@ -85,6 +87,7 @@ def read_drillsample_data(filename):
             data.append(row)
             lithos.add(row[2])
     print("The number of drillhole lithologies: " + str(len(lithos)))
+
     return data
 
 #==============================================================================
@@ -105,6 +108,18 @@ def read_thickness_data(filename):
             thickness[1] = float(row[2]) # "thickess_range".
             data.append(thickness)
     return data
+
+#==============================================================================
+def generate_all_lithos_list(drillsample_data):
+    '''
+    Generate a list of all lithologies (to be able to map them to integers).
+    '''
+    for row in drillsample_data:
+        litho_name = row[2]
+        if (litho_name not in all_lithos):
+            all_lithos.append(litho_name)
+
+    return all_lithos
 
 #==============================================================================
 def generate_strata_table(drillsample_data, strat_data):
@@ -282,13 +297,6 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
     # Extract strata thikcness to lists (faster data structures).
     min_strata_thickness = get_min_strata_thickness(thickness_data)
     max_strata_thickness = get_max_strata_thickness(thickness_data)
-
-    # Generate a list of all lithologies (to be able to map them to integers).
-    all_lithos = []
-    for row in drillsample_data:
-        litho_name = row[2]
-        if (litho_name not in all_lithos):
-            all_lithos.append(litho_name)
 
     all_routes = []
     all_routes_number = []
@@ -483,6 +491,21 @@ def plot_routes(drillsample_data, routes):
     pl.show()
 
 #=============================================================================
+def print_foreign_lithos(route):
+    '''
+    Print a list of foreign lithos in the route.
+    '''
+    unit_index = 0
+    for lithos in route.foreign_lithos:
+        if (len(lithos) != 0):
+            print(str(unit_index) + ": ", end='')
+            for litho_index in lithos:
+                litho_name = all_lithos[litho_index]
+                print(litho_name, end='')
+            print()
+        unit_index += 1
+
+#=============================================================================
 def plot_unit_probabilities(all_routes, drillsample_data, num_units):
     '''
     Generate a plot with probability of occurence for each unit.
@@ -525,7 +548,9 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
     index_max = np.argmax(route_scores)
     print('Max index = ', index_max)
     print('Max score = ', route_scores[index_max])
+    print_foreign_lithos(all_routes[index_max])
 
+    #------------------------------------------
     # Generating the plots.
     # Increasing the figure size.
     pl.rcParams["figure.figsize"] = (12.8, 9.6) # Default size = (6.4, 4.8)
@@ -600,6 +625,7 @@ def main():
     #--------------------------------------------------------------
     # Drill sample data.
     drillsample_data = read_drillsample_data(drillsample_filename)
+    generate_all_lithos_list(drillsample_data)
 
     # Unit lithologies data..
     strat_data = []
