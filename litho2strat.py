@@ -307,11 +307,11 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
     print("Starting routes:")
     print(all_routes)
 
-    rowMax = num_rows
-    print("rowMax = ", rowMax)
+    row_max = num_rows
+    print("row_max = ", row_max)
 
     # Going through the strata table and generating the routes.
-    for row in range(1, rowMax):
+    for row in range(1, row_max):
         current_litho = drillsample_data[row][2]
         current_litho_index = all_lithos.index(current_litho)
         num_routes = len(all_routes)
@@ -490,7 +490,7 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
     if (len(all_routes) == 0):
         return
 
-    num_rows = len(drillsample_data)
+    num_rows = len(all_routes[0].path)
     strat_distr = np.zeros((num_rows, num_units))
 
     # Building the distribution of unit presence at every depth.
@@ -533,7 +533,7 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
     fig.suptitle('Probability for each unit. ' + title_params)
 
     # Using the "From" column.
-    x_data = [float(d[0]) for d in drillsample_data]
+    x_data = [float(d[0]) for d in drillsample_data[0:num_rows]]
 
     for i in range(num_units):
         # Plot lines.
