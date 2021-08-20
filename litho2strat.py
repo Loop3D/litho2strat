@@ -76,7 +76,6 @@ def read_drillsample_data(filename):
     Reading drill sample data from csv file.
     '''
     data = []
-    lithos = set()
     with open(filename, 'r') as csvfile:
         # Reading the csv data.
         csvreader = csv.reader(csvfile, delimiter=',')
@@ -85,8 +84,10 @@ def read_drillsample_data(filename):
         # Extracting the data for every csv row.
         for row in csvreader:
             data.append(row)
-            lithos.add(row[2])
-    print("The number of drillhole lithologies: " + str(len(lithos)))
+            litho_name = row[2]
+            if (litho_name not in all_lithos):
+                all_lithos.append(litho_name)
+    print("The number of drillhole lithologies: " + str(len(all_lithos)))
 
     return data
 
@@ -108,18 +109,6 @@ def read_thickness_data(filename):
             thickness[1] = float(row[2]) # "thickess_range".
             data.append(thickness)
     return data
-
-#==============================================================================
-def generate_all_lithos_list(drillsample_data):
-    '''
-    Generate a list of all lithologies (to be able to map them to integers).
-    '''
-    for row in drillsample_data:
-        litho_name = row[2]
-        if (litho_name not in all_lithos):
-            all_lithos.append(litho_name)
-
-    return all_lithos
 
 #==============================================================================
 def generate_strata_table(drillsample_data, strat_data):
@@ -625,7 +614,6 @@ def main():
     #--------------------------------------------------------------
     # Drill sample data.
     drillsample_data = read_drillsample_data(drillsample_filename)
-    generate_all_lithos_list(drillsample_data)
 
     # Unit lithologies data..
     strat_data = []
