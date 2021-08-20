@@ -9,9 +9,9 @@ max_num_returns = 1
 max_num_returns_per_unit = 1
 
 '''
-# Constants for discaring low frequency routes while calculating the routes.
-# This heuristic reduces the number of routes allowing faster calculation in the case of many route combinations. 
-# Note: this is a heuristic, thus the final result is not necessarily accurate.
+Constants for discaring low frequency routes while calculating the routes.
+This heuristic reduces the number of routes allowing faster calculation in the case of many route combinations. 
+Note: this is a heuristic, thus the final result is not necessarily accurate.
 '''
 discard_low_score_routes = False
 # Determines how often we discard te routes.
