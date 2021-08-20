@@ -3,10 +3,22 @@ import numpy as np
 import matplotlib.pylab as pl
 import tracemalloc
 
-max_num_foreign_lithos = 4
-max_num_foreign_lithos_per_unit = 1
-max_num_returns = 0
+max_num_foreign_lithos = 5
+max_num_foreign_lithos_per_unit = 2
+max_num_returns = 1
 max_num_returns_per_unit = 1
+
+'''
+# Constants for discaring low frequency routes while calculating the routes.
+# This heuristic reduces the number of routes allowing faster calculation in the case of many route combinations. 
+# Note: this is a heuristic, thus the final result is not necessarily accurate.
+'''
+discard_low_score_routes = False
+# Determines how often we discard te routes.
+discard_frequency = 20
+# Determines how many routes to keep when discarding.
+num_routes_keep = 1000
+
 
 # List of all lithologies.
 all_lithos = []
@@ -273,7 +285,7 @@ def apply_max_num_returns_constraint(route, strata_list):
 
 #==============================================================================
 def generate_strat_routes(strat_data, drillsample_data, thickness_data,
-                          add_thickness_constraints, keep_continuous_lithos):
+                          add_thickness_constraints, keep_continuous_lithos, discard_low_score_routes):
     '''
     Generating stratigraphic routes.
     '''
@@ -327,9 +339,9 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
             strat0 = route.path[-1]
             current_thickness = route.current_thickness
 
-            #-----------------------------------------------------------------
+            #--------------------------------------------------------------------
             # Check if we can go down in other stratas (and create new routes).
-            #-----------------------------------------------------------------
+            #--------------------------------------------------------------------
             can_change = True
 
             # Add 'continous lithology' constraints.
@@ -414,6 +426,12 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
         # Addig new routes.
         all_routes.extend(new_routes)
 
+        if (discard_low_score_routes):
+        # Applying the heuristic to reduce the number of routes.
+            if (row % discard_frequency == 0):
+                remove_low_score_routes(all_routes, num_units, num_routes_keep)
+
+    #------------------------------------------------------------------
     # Adding the final number of routes.
     all_routes_number.append(len(all_routes))
 
@@ -422,6 +440,43 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
         route.path = flatten(route.path)
 
     return all_routes, all_routes_number
+
+#==============================================================================
+def remove_low_score_routes(all_routes, num_units, num_routes_keep):
+    if (len(all_routes) <= num_routes_keep):
+        return
+
+    # Flatten the multilevel list of lists.
+    for route in all_routes:
+        route.path = flatten(route.path)
+
+    # Building the distribution of unit presence at every depth.
+    strat_distr = get_strat_distr(all_routes, num_units)
+
+    # Building the route scores (based on path probability).
+    route_scores = get_route_scores(all_routes, strat_distr)
+
+    # Determine the minimum score for the route to keep it.
+    route_scores_sorted = np.sort(route_scores)
+    min_score = route_scores_sorted[-num_routes_keep]
+
+    print("min_score = " + str(min_score))
+
+    # Building the filtered routes list.
+    all_routes_filtered = []
+    route_index = 0
+    for route in all_routes:
+        if (route_scores[route_index] >= min_score):
+            all_routes_filtered.append(route)
+        route_index += 1
+
+    old_length = len(all_routes)
+
+    all_routes[:] = all_routes_filtered
+
+    new_length = len(all_routes)
+
+    print("Removed routes: " + str(old_length - new_length))
 
 #==============================================================================
 def write_routes_to_file(filename, drillsample_data, all_routes):
@@ -653,7 +708,7 @@ def main():
     tracemalloc.start()
 
     all_routes, all_routes_number = generate_strat_routes(strat_data, drillsample_data, thickness_data,
-                                       add_thickness_constraints, keep_continuous_lithos)
+                                       add_thickness_constraints, keep_continuous_lithos, discard_low_score_routes)
 
     print("Total number of routes = ", len(all_routes))
 
