@@ -1,0 +1,827 @@
+UNITNAME,DESCRIPTN,MAX_AGE_MA,MIN_AGE_MA,DESCRIPTN_DH2LOOP,DH2LOOP_SCORE
+Abydos Monzogranite,Porphyritic biotite--titanite metamonzogranite; feldspar and quartz phenocryts; moderate to strong foliation,2945.0,2919.0,"monzogranite,metasomatic_rock,vein","101,59,100"
+Ahern Formation,"Fine- to coarse-grained quartz sandstone; minor pebbly sandstone, conglomerate, and siltstone",1000.0,720.0,"sandstone,sandstone,conglomerate,mudstone","101,101,101,101"
+Aileron Province granitic unit,Granitic rock,1840.0,1630.0,granitoid,89
+Albert Edward Group,"Siltstone, mudstone, dolostone, and conglomerate",635.0,541.0,"mudstone,mudstone,dolostone,conglomerate","101,101,101,101"
+Alcurra Dolerite,"Dolerite in dykes, sills, or plugs, with olivine gabbro, olivine norite, ferronorite, and ferrodiorite",1068.0,1067.0,"dolerite,mud,gabbro,gabbroid,gabbroid,granodiorite","100,75,101,101,71,75"
+Alexander Formation,"Fine- to medium-grained sandstone, mudstone",163.5,152.1,"sandstone,mudstone","101,101"
+Allanson Sandstone,"Poorly sorted feldspathic sandstone; lesser pebble conglomerate, siltstone, carbonaceous; local coal",290.1,283.5,"sandstone,conglomerate,mudstone,carbonate,coal","101,101,101,76,101"
+Amhurst Metamorphics,Granitic gneiss and metasedimentary rock,1872.0,1860.0,"gneiss,iron_sediment","101,67"
+Andover Intrusion,"Gabbro, leucogabbro, serpentinized peridotite and dunite, pyroxenite, and minor anorthosite; metamorphosed",3020.0,3012.0,"gabbro,dolerite,peridotite,dacite,pyroxenite,anorthosite","101,73,101,80,101,101"
+Angas Hill Formation,"Interbedded conglomerate and sandstone, minor mudstone",635.0,510.0,"conglomerate,sandstone,mudstone","101,101,101"
+Anketell Formation,Fine-grained sandstone and siltstone; lesser coarse-grained sandstone and conglomerate,145.0,113.0,"sandstone,mudstone,sandstone,conglomerate","101,101,101,101"
+Annabelle Volcanics,Metamorphosed dacitic and andesitic volcaniclastic and volcanic rocks; minor basalt and rhyolite,2958.0,2958.0,"dacitoid,andesite,felsic,basalt,rhyolite","80,84,62,101,101"
+Annean Supersuite,"tonalite, pegmatites",2820.0,2733.0,"granodiorite, pegmatites, dolerite, sedimentary_rock, tonalite, peridotite, granite",-1
+Antrim Plateau Volcanics,"Vesicular, amygdaloidal, and porphyritic basalt and basaltic breccia; minor interbedded conglomerate, sandstone, siltstone, limestone, and localised stromatolitic and laminated chert",508.0,505.0,"basaltoid,basalt,breccia,conglomerate,sandstone,mudstone,limestone,migmatite,chert","57,101,101,101,101,101,101,55,101"
+Antrim Plateau Volcanics and Lally Conglomerate,Flood basalts with lesser siliciclastic sedimentary rocks,521.0,505.0,"basalt,conglomerate","101,56"
+Apex Basalt,"Basalt, komatiitic basalt, serpentinized peridotite; local dolerite sills; minor felsic volcaniclastic rocks and chert; metamorphosed",3459.0,3448.0,"basalt,basalt,peridotite,dolerite,felsic,chert","101,101,101,100,100,000"
+Archean--Proterozoic metasiliciclastic unit,Quartzite and quartz-rich metasedimentary rock,4000.0,541.0,"quartzite,iron_sediment","101,67"
+Archean-Proterozoic metasiliciclastic unit,"quartzite, sedimentary rock",4000.0,541.0,"quartzite, sedimentary rock",-1
+Archean-Proterozoic sedimentary siliciclastic unit,"shale, siltstone",4000.0,541.0,"shale, siltstone",-1
+Argus Igneous Complex,"Amphibolite derived from gabbro and meta-anorthosite, and locally interleaved talc-serpentine-chlorite schist",2763.0,2711.0,"amphibolite,schist","101,101"
+Argyle Lamproite,Volcaniclastic olivine lamproite intruded by olivine--phlogopite lamproite dykes,1177.0,1177.0,"lamproite,lamproite","101,100"
+Arid Basin unit,"Psammitic and semipelitic gneiss, locally garnet-rich; interlayered with mafic amphibolite to granulite and granitic gneiss",1600.0,1305.0,"pisolith,gneiss,amphibolite,granulite,gneiss","75,101,101,101,101"
+Ashburton Formation,"Basaltic pillow lava and pillow breccia, massive lava, and fine- to coarse-grained mafic volcaniclastic sandstone",2008.0,1796.0,"basalt, chert, gravel, felsic, bituminous_coal, sandstone, breccia, mafic, dolostone, greenschist, lag, mudstone","74,82,57,101"
+Atley Igneous Complex,gabbro,2813.0,2813.0,"pyroxenite, coarse_grained_plutonic_crystalline_igneous_rock, gabbroid, dolerite, gabbro",-1
+Atley Igneous Complex  border zone,"dolerite, gabbro, gabbronorite",2813.0,2813.0,"dolerite, gabbro, gabbronorite",-1
+Atley Igneous Complex  middle zone,"dolerite, gabbro",2813.0,2813.0,"pyroxenite, dolerite, gabbro, serpentinite",-1
+Atley Igneous Complex  upper zone,"gabbro, gabbro, leucogabbro, gabbronorite",2813.0,2813.0,"gabbronorite, gabbroid, spilite, dolerite, leucogabbro, magnetitite, gabbro",-1
+Badgeradda Basin metamorphosed unit,Metamorphosed siliciclastic rock and minor ?mafic volcanic rock; may correlate with Badgeradda Group and Nilling Formation,1600.0,541.0,"siliciclastic_sediment,mafic","63,100"
+Balpe Lakes Monzogranite,"Monzogranite; fine to medium-grained, equigranular; massive to weakly foliated; margins may be strongly foliated",2643.0,2643.0,"monzogranite,bituminous_coal","101,62"
+Balwina Granite,Muscovite and biotite monzogranite; locally porphyritic; minor biotite granodiorite; highly magnetic,1795.0,1795.0,"carbonatite,monzogranite,granodiorite","71,101,101"
+Bamboo Springs Monzogranite,Biotite monzogranite; K-feldspar porphyritic; coarse grained; magmatic foliation,2927.0,2927.0,"monzogranite,migmatite","101,75"
+Bandalup Ultramafics,Metamorphosed komatiitic basalt and pyroxenite; minor high-Mg basalt; tremolite- and talc-rich schist,3131.0,2958.0,"basalt,pyroxenite,basalt,gabbroid,schist","101,101,101,74,101"
+Barbwire Sandstone,"Sandstone, lesser conglomerate; minor siltstone",174.1,157.3,"sandstone,conglomerate,mudstone","101,101,101"
+Barlangi Granophyre,"monzogranite, granite",2229.0,2229.0,"alkali_feldspar_syenite, granite, monzogranite",-1
+Barrambie Igneous Complex,peridotite,2814.0,2814.0,"pyroxenite, peridotite, magnetitite, gabbro, anorthosite",-1
+Baseline Orthogneiss,Migmatitic orthogneiss,2769.0,2765.0,orthogneiss,101
+Bassetts Volcanic Member,"basalt, boninitic",2800.0,2760.0,"basalt, boninitic",-1
+Bastion Group,"Sandstone, siltstone, and mudstone",1797.0,1640.0,"sandstone,mudstone,mudstone","101,101,101"
+Beabea Monzogranite,Biotite monzogranite; equigranular to feldspar porphyritic; weakly to moderately foliated,2941.0,2941.0,"monzogranite,metasomatic_rock","101,59"
+Beasley River Quartzite,"Fine- to coarse-grained, silicified quartz sandstone; ferruginous conglomerate, sandstone, and pebbly sandstone; siltstone and dolostone; intruded by Balgara Dolerite sills",2208.0,2208.0,"sandstone,conglomerate,sandstone,sandstone,mudstone,dolostone,dolerite","101,101,101,101,101,000,000"
+Bellary Formation,Siliciclastic sedimentary and basaltic volcanic rocks; metamorphosed,2775.0,2775.0,"conglomerate,basaltoid","64,67"
+Bertibubba Supersuite,Granite and metagranitic rocks,1961.0,1945.0,"granite,granitoid","101,89"
+Big Bell Suite,"monzogranite, dolerite",2690.0,2686.0,"granodiorite, monzogranite, syenogranite, dolerite, granite, migmatite",-1
+Bililly Formation,"Medium- to coarse-grained arkosic sandstone, locally pebbly, overlain by micaceous siltstone to silty sandstone",1000.0,541.0,"sandstone,mudstone,sandstone","101,101,101"
+Billeranga Subgroup,"Sandstone, siltstone, basalt and volcaniclastic sandstone",1600.0,1000.0,"sandstone,mudstone,basalt,sandstone","101,101,101,101"
+Billinooka Inlier granitic unit,Granite to granodiorite; metamorphosed and variably foliated,3530.0,2895.0,"granite,granodiorite","101,101"
+Bindoo Sandstone,Ultramafic volcanic rock; metamorphosed,443.4,358.9,ultrabasic_volcanic_rock,65
+Binneringie Dyke,Dolerite and gabbro; includes cumulate and granophyric differentiates,2420.0,2400.0,"dolerite,gabbro,felsic","101,101,65"
+Biranup Zone metagranitic unit,Granitic gneiss interlayered with mafic amphibolite,1806.0,1600.0,"garnetite, micaite, hornblendite, syenogranite, unclassified_rock, acid_plutonic_rock, gabbroid, monzogranite, gabbro, vein, pyroxenite, granodiorite, dioritoid, granitoid, granite, gneiss, migmatite, intermediate, amphibolite","101,101"
+Birrindudu Group,"Sandstone, lesser siltstone, shale, and conglomerate; minor stromatolitic chert, limestone",1735.0,1640.0,"sandstone,mudstone,mudstone,conglomerate,chert,limestone","101,101,101,101,101,000"
+Bishop Creek Monzogranite,Biotite monzogranite to granodiorite and syenogranite; fine to coarse grained; locally seriate and porphyritic; rare pegmatite dykes; weakly metamorphosed,3246.0,3223.0,"monzogranite,granodiorite,syenogranite,pegmatite","101,101,101,100"
+Bitter Springs Group,"Dolomite, stromatolitic dolomite, siltstone, sandstone; evaporitic in subsurface",1000.0,720.0,"dolostone,dolostone,mudstone,sandstone,evaporite","101,101,101,101,60"
+Black Dragon Gneiss,Metagranodiorite and metadiorite; may include remnants of Archean rocks and Tropicana Gneiss,1815.0,1790.0,"granodiorite,diorite,intermediate,gneiss","101,101,49,101"
+Black Hill Well Monzogranite,Weakly foliated monzogranite; leucocratic veins; metamorphosed,3018.0,3018.0,"monzogranite,vein","101,101"
+Black Range Dolerite Suite,Dolerite dyke; local gabbro; weakly metamorphosed,2772.0,2772.0,"dolerite,gabbro","100,101"
+Blina Shale,Siltstone and shale; minor phosphatic horizons,252.17,247.2,"mudstone,mudstone,phosphate","101,101,59"
+Bloods Range Formation,"Metamorphosed sandstone and siltstone, and felsic and mafic schist derived from volcanic rock",1085.0,1040.0,"sandstone,mudstone,felsic,schist","101,101,101,100"
+Bobbie Point Metasyenogranite,"Metasyenogranite; weakly foliated to mylonitic; includes minor mingled mafic rocks and rafts of banded iron-formation; may include remnants of McKay Creek Metasyenogranite, and Tropicana or Hercules Gneiss",1708.0,1708.0,"syenogranite,mylonite,mafic,syenogranite,gneiss","101,82,100,101,101"
+Bonney Downs Monzogranite,Monzogranite; medium grained; locally sparsely porphyritic; locally muscovite bearing,2838.0,2838.0,monzogranite,101
+Booanya Suite,Undeformed to weakly deformed granites; typically porphyritic,1198.0,1140.0,granite,101
+Boobina Porphyry,Porphyritic fine-grained monzogranite; minor hornblende; weakly metamorphosed,3324.0,3307.0,"monzogranite,hornblendite","101,91"
+Bookargemoona Tonalite,Metamorphosed biotite tonalite; foliated to gneissic; local xenoliths of amphibolite,3427.0,3427.0,"tonalite,gneiss,amphibolite","101,86,101"
+Boolgeeda Iron Formation,"Fine-grained, finely laminated iron-formation, mudstone, siltstone, and chert; metamorphosed",2445.0,2445.0,"lamalginite,mudstone,mudstone,chert","61,101,101,101"
+Boondawari Formation,"Diamictite, conglomerate, sandstone, siltstone, dolomite; fluvial, coastal and fluvioglacial origin",720.0,541.0,"diamictite,conglomerate,sandstone,mudstone,dolostone,alluvium,coal,glacial_diamicton","101,101,101,101,101,80,73,54"
+Boongal Formation,"Pillowed and massive basaltic flows with basaltic breccia, siltstone and mudstone; minor chert; metamorphosed",2745.0,2730.0,"basalt,breccia,mudstone,mudstone,chert","75,101,101,101,101"
+Bottle Creek Microgranite,Feldspar- and quartz-phyric microgranite; metamorphosed,2700.0,2700.0,"metasomatic_rock,monzogranite","59,75"
+Bradley Basalt,"Pillow basalt, massive basalt, dolerite sills, and minor felsic tuff, sandstone, shale and chert; metamorphosed",3118.0,3115.0,"basalt,basalt,dolerite,tuff,sandstone,mudstone,chert","80,101,100,101,101,100,000"
+Brassey Range Formation,Sandstone; lesser siltstone and shale,1229.0,1080.0,"sandstone,mudstone,mudstone","101,101,101"
+Bresnahan Group,"Sandstone, pebbly sandstone, pebble- to boulder-conglomerate, and siltstone",1786.0,1610.0,"sandstone,sandstone,gravel,mudstone","101,101,92,101"
+Bridget Suite,Hornblende monzogranite and granodiorite,1803.0,1803.0,"monzogranite,granodiorite","101,101"
+Brill Monzogranite,"Porphyritic monzogranite and lesser granodiorite; microcline phenocrysts, weakly foliated; metamorphosed",3000.0,2982.0,"monzogranite,granodiorite,micrite","101,101,71"
+Broadhurst Formation,"Carbonaceous shale and siltstone, pyritic and pyrrhotitic shale, siltstone, and fine-grained sandstone",911.0,650.0,"mudstone,mudstone,massive_sulphide,mudstone,mudstone,sandstone","101,101,77,101,101,101"
+Brockman Iron Formation,"Banded iron-formation, chert, mudstone, and siltstone; metamorphosed",2494.0,2451.0,"bituminous_coal,chert,mudstone,mudstone","71,101,101,101"
+Broome  Mowla and Melligo Sandstones,Fine- to coarse-grained sandstone; minor mudstone and conglomerate,145.0,113.0,"sandstone,mudstone,conglomerate","101,101,101"
+Brownrigg Sandstone,"Quartz sandstone, fine to coarse grained, moderately to well sorted, flaggy to cross-bedded; scattered pebbles of vein quartz",1000.0,635.0,"sandstone,vein","101,101"
+Browns Range Metamorphics,Feldspathic psammite and subordinate psephite; amphibolite to granulite facies,1874.0,1838.0,"feldspathic_arenite,tephrite,amphibolite,granulite","81,75,101,100"
+Buddadoo Gabbro,"gabbro, magnetitite, diorite",2813.0,2813.0,"gabbro, magnetitite, diorite",-1
+Budjan Creek Formation,Siliciclastic and felsic volcaniclastic rocks; local basalt; metamorphosed,3228.0,3190.0,"siliciclastic_sediment,felsic,basalt","74,100,101"
+Buldya Group,"Undivided sedimentary rocks; sandstone, siltstone, shale, dolomite, limestone, evaporites (halite, gypsum, anhydrite) in subsurface and diapirs",1000.0,720.0,"iron_sediment,sandstone,mudstone,mudstone,dolostone,limestone,evaporite,diaphthorite","58,101,101,101,101,101,100,56"
+Buldya Group  lower,"Siltstone, limestone, dolomite, sandstone, evaporites in subsurface and diapirs, basal sandstone; includes Townsend Quartzite, Lefroy Formation, and Browne Formation",1000.0,720.0,"mudstone,limestone,dolostone,sandstone,evaporite,diaphthorite,sandstone,quartzite","101,101,101,101,100,56,101,101"
+Buldya Group  upper,"Siltstone, sandstone, dolomite, limestone, evaporites (halite, gypsum, anhydrite) in subsurface and diapirs; stromatolitic; includes Hussar, Kanpa, and Steptoe Formations",850.0,720.0,"mudstone,sandstone,dolostone,limestone,evaporite,diaphthorite,migmatite,hornfels","101,101,101,101,100,56,78,60"
+Bullgarina Monzogranite,Biotite(--muscovite) monzogranite; medium to coarse grained; weakly metamorphosed,3274.0,3224.0,monzogranite,101
+Bullock Hide Intrusion,"Gabbro, leucogabbro, serpentinized peridotite and dunite, pyroxenite, and minor anorthosite; metamorphosed",3122.0,3122.0,"gabbro,dolerite,peridotite,dacite,pyroxenite,anorthosite","101,73,101,80,101,101"
+Bunbury Basalt,Porphyritic and microporphyritic basalt in multiple flows; minor dolerite and basalt sills,132.0,123.0,"basalt,dolerite,basalt","100,101,100"
+Bungarra Igneous Complex,Layered mafic and ultramafic intrusive rocks; metamorphosed,2820.0,2735.0,coarse_grained_plutonic_crystalline_igneous_rock,100
+Bungle Bungle Dolomite,"Dolarenite, dololutite, and dolorudite and chert breccia; commonly stromatolitic; minor dolomitic sandstone, siltstone, mudstone, and stromatolitic chert",1797.0,541.0,"arenite,dolostone,dolerite,breccia,migmatite,sandstone,mudstone,mudstone,chert","82,78,78,101,78,101,101,101,101"
+Bunjinah Formation,Pillowed and massive basaltic flows; basaltic breccia and basaltic volcanic sandstone; minor chert; amygdaloidal basalt flows occur in upper parts of formation; metamorphosed,2718.0,2715.0,"basalt,breccia,sandstone,chert,basalt","75,101,101,101,100"
+Burtville Terrane greenstones,Amphibolite,2960.0,2660.0,"basalt, ferruginous_deposits, chert, ultramafic_rock, mafic, conglomerate, coarse_grained_ultramafic_rock, gabbroid, monzogranite, mudstone, peridotite, volcaniclastic_mud, mud, gabbro, vein, pyroxenite, andesite, coarse_grained_plutonic_crystalline_igneous_rock, ultrabasic_volcanic_rock, schist, sandstone, dolerite, granitoid, granite, gneiss, serpentinite, amphibolite, felsic, bituminous_coal, sedimentary_rock, siliciclastic_sediment, iron_sediment, talc_rock, slate",101
+Butcher Bird Monzogranite,Fine- to medium-grained monzogranite; typically granophyric; metamorphosed,2730.0,2730.0,"monzogranite,granodiorite","101,61"
+Byro Group  lower,"Fine-grained, bioturbated sandstone overlying interbedded sandstone, siltstone, and mudstone",286.0,272.3,"sandstone,sandstone,mudstone,mudstone","100,101,101,101"
+Byro Group  middle,Black shale and siltstone overlain by fine-grained sandstone; hummocky and swaley cross-stratified,283.5,272.3,"mudstone,mudstone,sandstone","101,101,101"
+Byro Group  upper,"Intercalated siltstone, shale, and sandstone",283.5,272.3,"mudstone,mudstone,sandstone","101,101,101"
+Cadda Formation,"Grey shale, siltstone and sandstone; scattered carbonate lenses",170.3,166.1,"mudstone,mudstone,sandstone,carbonate","101,101,101,100"
+Cadjebut Formation,"Siltstone, shale, dolomite, evaporites (leached in outcrop), and sandstone",387.7,382.7,"mudstone,mudstone,dolostone,evaporite,sandstone","101,101,101,101,101"
+Caines Monzogranite,Biotite(--hornblende) monzogranite; foliated; local xenoliths of granitic gneiss; metamorphosed,2990.0,2990.0,"monzogranite,gneiss","101,101"
+Callawa Formation,"Very fine-grained to coarse-grained sandstone, and conglomerate",145.0,113.0,"sandstone,conglomerate","101,101"
+Callina Supersuite,Metadiorite to metasyenogranite; massive to gneissic,3484.0,3462.0,"diorite,syenogranite,gneiss","101,101,86"
+Callytharra Formation,"Fossiliferous, calcareous siltstone to calcisiltite; interbedded, hard, fossiliferous calcarenite",295.0,290.1,"siliceous_ooze,mudstone,calcilutite,calcarenite","59,101,87,101"
+Cambrian--Ordovician sedimentary rocks  Ord Basin,"Sandstone, siltstone, limestone",510.0,470.0,"sandstone,mudstone,limestone","101,101,101"
+Cambrian--Ordovician sedimentary siliciclastic units  Amadeus Basin,"Siltstone and mudstone, sandstone, conglomerate, minor dolomite, shallow marine to fluvial",541.0,443.4,"mudstone,mudstone,sandstone,conglomerate,dolostone,alluvium","101,101,101,101,101,80"
+Camel Hills Metamorphics,"Pelite, calc-silicate rock, quartzite, metamorphosed banded iron-formation and amphibolite",2001.0,1955.0,"mudstone,fine_crystalline_sedimentary,quartzite,amphibolite","101,101,101,101"
+Campbell Well Granodiorite,Biotite granodiorite; medium to coarse grained; foliated; weakly metamorphosed,3310.0,3310.0,granodiorite,101
+Capricorn Group,"Ferruginous lithic and dolomitic quartz sandstone, ferruginous siltstone and mudstone, conglomerate, dolostone, and felsic volcanic rock",1804.0,1738.0,"ferruginous_deposits,sandstone,mudstone,mudstone,conglomerate,dolostone,felsic","68,101,101,101,101,100,000"
+Capricorn Orogen metamorphosed mafic intrusive unit,Metadolerite; massive to schistose,2500.0,1600.0,"dolerite,schist","101,80"
+Carawine Dolomite,"Massive- to well-bedded, recrystallized dolomite, and stromatolitic dolomite; minor chert",2629.0,2504.0,"dolostone,dolostone,chert","101,101,101"
+Carbana Monzogranite,Biotite monzogranite; feldspar porphyritic; common mafic xenoliths; weakly metamorphosed,3317.0,3310.0,"monzogranite,metasomatic_rock,mafic","101,59,100"
+Carboniferous sedimentary rocks  Southern Carnarvon Basin,"Limestone, dolomite, sandstone, siltstone; lesser conglomerate",358.9,298.9,"limestone,dolostone,sandstone,mudstone,conglomerate","101,101,101,101,101"
+Cardinal Formation,"Black shale with minor siltstone; local banded iron-formation, chert, sandstone, and conglomerate; metamorphosed",3228.0,3176.0,"mudstone,mudstone,bituminous_coal,chert,sandstone,conglomerate","101,101,78,101,101,101"
+Cardup Group,"Predominantly white to black shale with bands of conglomerate, quartz sandstone, and sandstone",1600.0,541.0,"mudstone,conglomerate,sandstone,sandstone","101,101,101,101"
+Carlton Group,"Sandstone, siltstone, shale, and stromatolitic dolomite",508.0,470.0,"sandstone,mudstone,mudstone,dolostone","101,101,101,101"
+Carnegie Formation,"Quartz wacke, sandstone, siltstone, shale",635.0,510.0,"wacke,sandstone,mudstone,mudstone","101,101,101,101"
+Carr Boyd Group,"Sandstone, ferruginous sandstone, siltstone, and mudstone",1200.0,1177.0,"sandstone,sandstone,mudstone,mudstone","101,101,101,101"
+Carranya Formation,Sandstone and polymictic conglomerate; fossiliferous,485.4,470.0,"sandstone,conglomerate,siliceous_ooze","101,101,59"
+Carrington Suite,Weakly porphyritic to equigranular biotite metagranite,1779.0,1767.0,granite,101
+Carson Volcanics,"Massive and amygdaloidal basalt and basaltic volcaniclastic rock; interbedded quartz sandstone, feldspathic sandstone, siltstone, and chert",1835.0,1797.0,"basalt,volcaniclastic_breccia,sandstone,sandstone,mudstone,chert","101,73,101,101,101,101"
+Carynginia Formation,"Micaceous siltstone and quartz sandstone, minor granule to pebble conglomerate, limestone",286.0,272.3,"mudstone,sandstone,gravel,conglomerate,limestone","101,101,93,101,101"
+Cassidy Group,Massive to vesicular and amygdaloidal basalt and porphyritic rhyolite; locally common volcanolithic conglomerate and sandstone,1077.0,1047.0,"basalt,rhyolite,conglomerate,sandstone","101,101,101,101"
+Cattamarra Coal Measures,"Carbonaceous siltstone, shale, claystone, coal, sandstone",201.3,166.1,"mudstone,mudstone,mudstone,coal,sandstone","101,101,101,101,101"
+Cattle Well Formation,"Sandstone, siltstone, shale, and wacke; minor felsic volcaniclastic rocks; local chert replacing stromatolitic carbonate rocks; metamorphosed",2988.0,2988.0,"sandstone,mudstone,mudstone,wacke,felsic,carbonate","101,101,101,101,100,000"
+Charteris Basalt,"Basalt and basaltic komatiite; minor dolerite sills, chert and felsic volcanic rocks; metamorphosed",3325.0,3315.0,"basalt,kalsilitic_rock,dolerite,chert,felsic","101,101,100,101,100"
+Chatarie Well Granite,Coarse-grained monzogranite; metamorphosed,2698.0,2698.0,monzogranite,101
+Cheearra Monzogranite,Metamonzogranite; weakly to strongly foliated; locally well-developed banding; includes pegmatite and granite dykes,2937.0,2933.0,"monzogranite,pegmatite,granite","101,101,100"
+Cheela Springs Basalt,"Amygdaloidal basalt and minor volcaniclastic rock; immature sandstone, siltstone, and mudstone; intruded by Balgara Dolerite sills",2208.0,2031.0,"basalt,volcaniclastic_mud,sandstone,mudstone,mudstone,dolerite","101,74,101,101,101,100"
+Chessman Granodiorite,Metamorphosed biotite granodiorite and metatonalite; medium to coarse grained; strongly foliated to gneissic,3318.0,3314.0,"granodiorite,tonalite,gneiss","101,101,86"
+Chester Formation,"Pelite with minor psammite and psephite; minor metamorphosed felsic volcanic and volcaniclastic rocks, and banded iron-formation",3131.0,2958.0,"mudstone,sandstone,tephrite,felsic,volcaniclastic_mud,bituminous_coal","101,86,75,100,74,71"
+Chiall Formation,"Sandstone and siltstone, minor conglomerate; glauconitic in lower part",1876.0,1650.0,"sandstone,mudstone,conglomerate,glaucophanite","101,101,101,56"
+Chillerina Granodiorite,Hornblende biotite granodiorite to K-feldspar porphyritic monzogranite; massive to moderately foliated; weakly metamorphosed,2946.0,2945.0,"granodiorite,monzogranite","101,101"
+Chimingadgi Trondhjemite,"Biotite trondhjemite; medium grained, massive, seriate textured; weakly metamorphosed",3324.0,3277.0,tonalite,101
+Choorun Formation,"Pebble to cobble conglomerate, pebbly sandstone, medium- to coarse-grained sandstone",1000.0,635.0,"gravel,conglomerate,sandstone,sandstone","92,101,101,101"
+Chunderloo Monzogranite,"monzogranite, amphibolite",2665.0,2640.0,"andesite, monzogranite, amphibolite, mylonite",-1
+Cistern Formation,Siliciclastic and felsic volcaniclastic rocks; metamorphosed,2955.0,2943.0,"siliciclastic_sediment,felsic","74,100"
+Cleaverville Formation,"Banded iron-formation, ferruginous chert, sandstone, siltstone and shale; minor grey-white chert and felsic volcaniclastic rock; metamorphosed",3022.0,3016.0,"bituminous_coal,chert,sandstone,mudstone,mudstone,chert,felsic","71,101,101,101,101,100,000"
+Cleland Supersuite,"Monzogranite, granodiorite, and tonalite; local gabbro and dolerite; variably metamorphosed",3274.0,3223.0,"orthogneiss, granodiorite, monzogranite, dolerite, pegmatite, tonalite, greenstone, gabbro","101,101,101,101,101"
+Cliff Pool Tonalite,Weakly foliated to gneissic biotite metatonalite,3068.0,3068.0,tonalite,101
+Clutterbuck Formation,"Fine- to coarse-grained feldspathic sandstone, conglomerate and siltstone interbeds",635.0,510.0,"sandstone,conglomerate,mudstone","101,101,100"
+Cockatoo Group,"Sandstone, conglomerate, and limestone; minor dolostone and siltstone",382.7,358.9,"sandstone,conglomerate,limestone,dolostone,mudstone","101,101,101,101,101"
+Cockeraga Leucogranite,"Leucocratic biotite(--hornblende) tonalite, granodiorite and subordinate monzogranite; local pegmatite, and greenstone and granitic gneiss xenoliths; weakly metamorphosed",3068.0,3066.0,"tonalite,granodiorite,monzogranite,pegmatite,greenstone,gneiss","101,101,101,101,101,000"
+Collie Group,"Sandstone, carbonaceous shale, coal, pebble conglomerate",295.0,258.5,"sandstone,mudstone,coal,conglomerate","101,101,101,101"
+Collier Group  Depositional package 5,"Siltstone, mudstone, sandstone; minor dolostone, chert, and conglomerate",1171.0,1067.0,"mudstone,mudstone,sandstone,dolostone,chert,conglomerate","101,101,101,101,101,000"
+Collier Group  Depositional package 6,"Siltstone, mudstone, and fine-grained sandstone",1171.0,1067.0,"mudstone,mudstone,sandstone","101,101,101"
+Colombo Sandstone,Sandstone and pebble breccia,1000.0,541.0,"sandstone,breccia","101,101"
+Connaughton Zone metamorphosed mafic volcanic unit,"Amphibolite, metamorphosed banded iron-formation, metachert, metamorphosed carbonate rock, quartzite, pelitic schist, and metamorphosed ultramafic rock",2500.0,1760.0,"amphibolite,chert,carbonate,quartzite,schist,ultramafic_rock","101,101,100,101,101,65"
+Connaughtone Zone metamorphosed ultramafic unit,Metamorphosed ultramafic rock; mainly serpentinite,2500.0,1760.0,"ultramafic_rock,serpentinite","65,101"
+Constantine Sandstone,"Sandstone and wacke, locally arkosic; local conglomerate; includes quartzite; metamorphosed",3015.0,2948.0,"sandstone,wacke,sandstone,conglomerate,quartzite","101,101,77,101,101"
+Coodardy Pool Formation,banded_iron_formation,2800.0,2790.0,"quartzite, till, banded_iron_formation",-1
+Cooglegong Monzogranite,"Monzogranite, coarse grained and commonly porphyritic; locally fine grained or pegmatitic; local igneous layering; metamorphosed",2851.0,2831.0,"monzogranite,pegmatite,igneous_rock","101,84,59"
+Cookes Creek Monzogranite,Biotite monzogranite; seriate to feldspar porphyritic; fine to medium grained; weakly metamorphosed,2837.0,2837.0,"monzogranite,metasomatic_rock","101,59"
+Coolbro Sandstone,Massive to thick-bedded quartz sandstone and minor siltstone and shale; local basal conglomerate,911.0,650.0,"sandstone,mudstone,mudstone,conglomerate","101,101,101,101"
+Coolyena Group,"Chalk, greensand, glauconitic sandstone, siltstone, marl; characteristically glauconitic",113.0,66.0,"chalk,greenstone,sandstone,mudstone,marl","101,74,101,101,101"
+Coolyia Creek Granodiorite,Metagranodiorite to metatonalite; clotty hornblende texture; strongly foliated,3469.0,3469.0,"granodiorite,tonalite,hornblendite","101,101,59"
+Coomb Bore Monzogranite,"Medium- to coarse-grained, foliated metamonzogranite; includes minor syenogranite and granodiorite",2691.0,2686.0,"monzogranite,syenogranite,granodiorite","101,101,101"
+Coomberarie Formation,"Silty sandstone, siltstone",1000.0,541.0,"sandstone,mudstone","101,101"
+Coomberdale Subgroup,"Sandstone, siltstone, dolostone, stromatolitic dolostone and silicified dolostone",1600.0,541.0,"sandstone,mudstone,dolostone,dolostone,dolostone","101,101,101,101,101"
+Coonabildie Formation,"Sandstone, micaceous siltstone and shale",1229.0,1080.0,"sandstone,mudstone,mudstone","101,101,101"
+Coondamar Formation,Metamorphosed siliciclastic and mafic igneous rocks,3200.0,3176.0,"siliciclastic_sediment,mafic","74,100"
+Coondina Monzogranite,Biotite monzogranite; leucocratic; medium grained to weakly porphyritic,2945.0,2919.0,"monzogranite,leucitic_rock","101,74"
+Coondra Formation,"Coarse-grained sandstone, pebble to boulder conglomerate",1000.0,720.0,"sandstone,gravel,conglomerate","101,92,101"
+Coonieena Basalt,Massive and pillowed basalt and komatiitic basalt; local silicified basaltic andesite and hyaloclastic breccia; metamorphosed,3016.0,2988.0,"basalt,basalt,andesite,breccia","101,101,101,101"
+Cooninia Inlier granitic unit,Granite to granodiorite; metamorphosed and variably foliated,3530.0,2895.0,"granite,granodiorite","101,101"
+Coor-de-wandy Formation,Siliciclastic sedimentary rock; metamorphosed,2500.0,1600.0,conglomerate,56
+Cootharra Monzogranite,monzogranite,2650.0,2600.0,monzogranite,-1
+Cooya Pooya Dolerite,Fine- to medium-grained dolerite sill; locally forms dykes within Hardey Formation,2749.0,2735.0,"dolerite,till","100,60"
+Copperfield Monzogranite,Biotite metamonzogranite with prominent mineral lineation,3010.0,2600.0,"monzogranite,glaciomarine_deposit","101,51"
+Coppin Gap Granodiorite,"Biotite granodiorite and tonalite; medium grained, massive to seriate, weakly foliated; local mafic xenoliths; weakly metamorphosed",3317.0,3314.0,"granodiorite,tonalite,mafic","101,101,100"
+Corboy Formation,Siliciclastic sedimentary rocks; metamorphosed,3228.0,3190.0,conglomerate,56
+Corner Well Gabbro,"Modally layered olivine gabbro grading into olivine gabbronorite interlayered with lherzolite, dunite, pyroxenite, and minor anorthosite; metamorphosed",2813.0,2813.0,"gabbro,gabbroid,peridotite,dacite,pyroxenite,anorthosite","101,101,101,80,101,101"
+Corner Well Gabbro Member,gabbro,2813.0,2813.0,gabbro,-1
+Cotton Well Granodiorite,Muscovite granodiorite; fine to medium grained; weakly foliated; metamorphosed,3318.0,3309.0,granodiorite,101
+Coucal Formation,Felsic volcanic rocks; local felsic volcanic breccia; metamorphosed,3515.0,3498.0,"felsic,breccia","100,101"
+Courin Granodiorite,"tonalite, monzogranite, diorite",2742.0,2742.0,"tonalite, monzogranite, diorite",-1
+Courlbarloo Tonalite,tonalite,2813.0,2813.0,tonalite,-1
+Cover,"mud, ferricrete, colluvium, alluvium",10.0,0.0,"mud, ferricrete, colluvium, alluvium",-1
+Crossroads Granodiorite,"granodiorite, monzogranite",2724.0,2724.0,"monzogranite, granodiorite",-1
+Crowhurst Group,"Siltstone, shale, dolomite, stromatolitic dolomite, and sandstone",1797.0,1640.0,"mudstone,mudstone,dolostone,dolostone,sandstone","101,101,101,101,101"
+Cue Tonalite,tonalite,2759.0,2759.0,tonalite,-1
+Cullculli Suite,tonalite,2787.0,2733.0,"mafic, tonalite, exotic_crystalline_igneous_rock, granodiorite",-1
+Cundaline Formation,"Shale, siltstone, and wacke; local sandstone and conglomerate; metamorphosed",3022.0,3015.0,"mudstone,mudstone,wacke,sandstone,conglomerate","101,101,101,101,101"
+Cundimurra Monzogranite,monzogranite,2670.0,2670.0,"migmatite, monzogranite, syenogranite",-1
+Dalgaringa Supersuite,Metagranite and granitic gneiss,2002.0,1974.0,"granite,gneiss","101,101"
+Dalton Suite,Metamorphosed ultramafic intrusive rock,3185.0,3185.0,"mafic, coarse_grained_plutonic_crystalline_igneous_rock",100
+Davis Dolerite,Dolerite in sills and dykes; fine to medium grained,523.0,523.0,"dolerite,felsic","100,53"
+Davitt Syenogranite,"Muscovite--garnet syenogranite; medium grained, foliated; weakly metamorphosed",3324.0,3277.0,syenogranite,101
+Day Rock Granodiorite,Granodiorite; metamorphosed,2676.0,2676.0,granodiorite,101
+Deception Hill Microgranite,"Massive, quartz- and feldspar-phyric microgranite; metamorphosed",2787.0,2700.0,"vein,monzogranite","101,75"
+Despair Granite,"Biotite monzogranite, foliated to locally massive; includes lenses of biotite schist, quartzite, metamorphosed banded iron-formation, amphibolite, and quartzite",2800.0,2500.0,"monzogranite,schist,quartzite,amphibolite,quartzite","101,101,101,101,101"
+Devonian conglomerates associated with reef complexes,Frasnian and Famennian (locally ?Givetian) boulder to cobble conglomerate and sandstone,387.7,358.9,"gravel,conglomerate,sandstone","56,101,101"
+Devonian sedimentary rocks  Southern Carnarvon Basin,"Sandstone, limestone, conglomerate",387.7,358.9,"sandstone,limestone,conglomerate","101,101,101"
+Diemals Formation,Sedimentary siliciclastic rocks; metamorphosed,2701.0,2654.0,conglomerate,56
+Dingo Intrusion,"Gabbro, leucogabbro, serpentinized peridotite and dunite, pyroxenite, and minor anorthosite; metamorphosed",2930.0,2924.0,"gabbro,dolerite,peridotite,dacite,pyroxenite,anorthosite","101,73,101,80,101,101"
+Doolgunna Formation,"Arkosic sandstone and quartz wacke; minor conglomerate, quartz siltstone, and laminated quartz sandstone",2170.0,1600.0,"sandstone,wacke,conglomerate,mudstone,sandstone","101,101,101,101,101"
+Double Bar Formation,Basalt; massive or pillowed; locally schistose; metamorphosed,3515.0,3490.0,basalt,101
+Dougalls Suite,Foliated metatonalite and minor metagranodiorite with abundant inclusions of amphibolite and mafic granulite; interlayered mafic granulite and amphibolite,1849.0,1849.0,"tonalite,granodiorite,amphibolite,granulite,granulite,amphibolite","101,101,101,101,101,000"
+Dresser Formation,Chert and mafic volcanic rock; metamorphosed,3481.0,3477.0,"chert,mafic","101,100"
+Dromedary Bore Granite,granodiorite,2945.0,2945.0,"gneiss, agate, micaite, granodiorite",-1
+Duck Creek Dolomite,"Thin- to very thick-bedded dolostone, commonly stromatolitic or brecciated; locally silicified",2008.0,1799.0,"dolostone,migmatite,breccia","101,78,82"
+Duerdin Group,"Polymictic conglomerate, siltstone, mudstone, lithic and feldspathic sandstone, quartz sandstone, dolomite, and tillite",720.0,541.0,"conglomerate,mudstone,mudstone,pisolith,sandstone,sandstone,dolostone,till","101,101,101,75,101,101,101,101"
+Duffer Formation,"Felsic volcanic rock; local basalt, chert, and felsic schist; metamorphosed",3474.0,3459.0,"felsic,basalt,chert,schist","100,101,101,101"
+Durba Sandstone,"Sandstone, lesser pebble congomerate; characteristically purplish red-brown colour",635.0,485.4,"sandstone,conglomerate","101,73"
+Durlacher Supersuite,Massive metagabbro with xenocrysts of quartz and K-feldspar,1677.0,1674.0,"granite, gabbro",101
+Dwarf Well Granite,Coarse-grained biotite metamonzogranite,1773.0,1773.0,monzogranite,101
+Eastern Goldfields Superterrane greenstones,Amphibolite,2960.0,2650.0,"chloritolite, basalt, chert, ultramafic_rock, mafic, conglomerate, gravel, fine_grained_volcanic_normal_crystalline_igneous_rock, peridotite, volcaniclastic_mud, mud, gabbro, subtidal_deposits, vein, pyroxenite, andesite, coarse_grained_plutonic_crystalline_igneous_rock, schist, ultrabasic_volcanic_rock, sandstone, dolerite, magnetitite, gneiss, dacite, rhyolite, norite, serpentinite, kalsilitic_rock, amphibolite, iron_sediment, felsic, bituminous_coal, mudstone, talc_rock, slate",101
+Eastman Granite,"Medium- to coarse-grained, leucocratic biotite syenogranite and monzogranite",1804.0,1804.0,"syenogranite,monzogranite","101,101"
+Edamurta Gabbro,"anorthosite, leucogabbro",2820.0,2733.0,"anorthosite, leucogabbro",-1
+Eddy Suite,"Metagranodiorite, metadiorite and metagabbro, granitic gneiss, lenses of metasedimentary rocks, and pegmatite",1671.0,1660.0,"granodiorite,diorite,gabbro,gneiss,clastic_sedimentary_rock,pegmatite","101,101,101,101,61,101"
+Ediacaran--Cambrian sedimentary rocks  Officer Basin,"Sandstone, conglomerate, and siltstone, undifferentiated; Centralian Superbasin Supersequence 4",635.0,510.0,"sandstone,conglomerate,mudstone","101,101,101"
+Edmund Group  Depositional package 1,"Stromatolitic and non-stromatolitic dolostone, dolomitic siltstone, sandstone, siltstone, and conglomerate",1679.0,1610.0,"migmatite,dolostone,mudstone,sandstone,mudstone,conglomerate","78,101,101,101,101,100"
+Edmund Group  Depositional package 2,"Siltstone and mudstone; sandstone, and dolostone; locally sulfidic",1679.0,1517.0,"mudstone,mudstone,sandstone,dolostone","101,101,101,101"
+Edmund Group  Depositional package 3,"Siltstone and mudstone; sandstone, and dolostone, minor conglomerate",1590.0,1465.0,"mudstone,mudstone,sandstone,dolostone,conglomerate","101,101,101,101,101"
+Edmund Group  Depositional package 4,"Siltstone and mudstone; sandstone, dolostone, dolomitic mudstone, chert, and minor conglomerate",1590.0,1455.0,"mudstone,mudstone,sandstone,dolostone,mudstone,chert,conglomerate","101,101,101,101,101,000,000"
+Eel Creek Formation,"Mudstone, shale, siltstone, and sandstone; locally intruded by dolerite sills and dykes",2930.0,1050.0,"mudstone,mudstone,mudstone,sandstone,dolerite,felsic","101,101,101,101,100,53"
+Eley Monzogranite,Porphyritic biotite monzogranite; numerous K-feldspar phenocrysts; weakly foliated; metamorphosed,2945.0,2919.0,"monzogranite,made_ground","101,53"
+Elgee Siltstone,"Red-brown and grey siltstone and mudstone, stromatolitic dolostone, sandy dolostone, oolitic dolostone, and sandstone",1835.0,1740.0,"mudstone,mudstone,dolostone,dolostone,dolostone,sandstone","101,101,101,101,101,000"
+Eliza Formation,"Rhyolite lava flows, subvolcanic sills, and pyroclastic rocks; locally interlayered with volcanic sandstone and siltstone, and minor basalt",1077.0,1047.0,"rhyolite,felsic,pyroclastic_rock,sandstone,mudstone,basalt","100,65,91,101,101,101"
+Elizabeth Hill Supersuite,Leucogranite; medium to coarse grained; abundant pegmatite and local greenstone and granitic gneiss xenoliths,3068.0,3066.0,"orthogneiss, syenogranite, pegmatite, tonalite, greenstone, gneiss","75,101,101,100"
+Elsie Creek Tonalite,Metatonalite and metagranodiorite; local sills of monzogranite and orthogneiss xenoilths; strongly foliated to gneissic,3292.0,3277.0,"tonalite,granodiorite,monzogranite,orthogneiss,gneiss","101,101,101,100,86"
+Emeriau Sandstone,Fine- to coarse-grained sandstone; minor conglomerate,145.0,2.58,"sandstone,conglomerate","101,101"
+Emu Pool Supersuite,Monzogranite and granodiorite; minor trondhjemite; metamorphosed,3324.0,3277.0,"monzogranite,granodiorite,tonalite","101,101,101"
+Eneabba Formation,Interbedded red-bed sandstone and siltstone,201.3,174.1,"sandstone,mudstone","101,101"
+Eramurra Monzogranite,Seriate biotite monzogranite containing mafic schlieren and veins of pegmatite; metamorphosed,2982.0,2982.0,"monzogranite,pegmatite","100,101"
+Errabiddy Formation,Feldspathic sandstone; minor pebble conglomerate lenses,1000.0,541.0,"sandstone,conglomerate","101,100"
+Erskine Sandstone,"Fine-grained sandstone; lesser sandy shale, minor conglomerate",250.0,237.0,"sandstone,mudstone,conglomerate","101,101,101"
+Esperance Supersuite,Granitic rock; undeformed to moderately deformed,1198.0,1140.0,"granitoid, syenogranite",89
+Euro Basalt,"Basalt, komatiitic basalt, serpentinized peridotite; local dolerite and gabbro sills; minor felsic volcaniclastic rocks and chert; metamorphosed",3350.0,3335.0,"basalt,basalt,peridotite,dolerite,gabbro,felsic,chert","101,101,101,101,100,000,000"
+Ewington Coal Measures,"Interbedded poorly sorted feldspathic sandstone, carbonaceus shale, coal; conglomerate",290.1,283.5,"sandstone,mudstone,coal,conglomerate","101,101,101,101"
+Fairfield Group,"Limestone, shale, siltstone, sandstone",362.0,346.7,"limestone,mudstone,mudstone,sandstone","101,101,101,101"
+Famennian reef complexes  marginal slope and basin facies,"Limestone, calcareous sandstone and mudstone; lesser siliciclastic sandstone and conglomerate",372.2,358.9,"limestone,sandstone,mudstone,sandstone,conglomerate","101,101,101,101,101"
+Famennian reef complexes  platform facies,"Limestone, lesser sandstone and siltstone, bedded (backreef) to massive (reef); includes Windjana and Nullara Limestones",372.2,358.9,"limestone,sandstone,mudstone,limestone","101,101,101,101"
+Farrel Quartzite,Quartz sandstone and quartzite; locally fuchsitic; minor conglomerate and chert; metamorphosed,3066.0,3022.0,"sandstone,quartzite,leucitic_rock,conglomerate,chert","101,101,71,101,101"
+Fields Find Igneous Complex,"dolerite, gabbro, ",2799.0,2799.0,"dolerite, gabbro, ",-1
+Fig Tree Gneiss,"Banded metatonalite and metagranodiorite gneiss; local metatrondhjemite, metamonzogranite and metasyenogranite gneiss, and migmatite",3448.0,3416.0,"tonalite,gneiss,tonalite,monzogranite,gneiss,migmatite","101,101,101,101,101,000"
+Finlayson Member,"arenite, conglomerate, siltstone",2170.0,1600.0,"arenite, conglomerate, siltstone",-1
+Fitzgerald Peaks Syenite,Syenite and quartz syenite,2655.0,2655.0,"syenite,syenite","101,101"
+Fitzroy Volcanics,Lamproite and associated pyroclastic rock,22.0,18.0,"lamproite,pyroclastic_rock","101,68"
+Flat Rocks Tonalite,"Biotite metatonalite, strongly foliated and interleaved with K-feldspar porphyritic monzogranite",3166.0,3164.0,"tonalite,monzogranite","101,101"
+Fleece Pool Gabbro,"leucogabbro, gabbro, gabbronorite",2735.0,2735.0,"leucogabbro, gabbro, gabbronorite",-1
+Fly Dam Formation,Interbedded psammitic to pelitic gneiss with leucosomes; pelitic garnet- and biotite-rich layers,1617.0,1600.0,"pisolith,gneiss,limestone,garnetite","75,101,60,70"
+Forest Belle Gabbro,Coarse-grained gabbro with clinopyroxene oikocrysts; metamorphosed,2704.0,2665.0,"gabbro,norite","101,73"
+Forestier Bay Granodiorite,Biotite granodiorite and monzogranite; sparsely porphyritic; metamorphosed,3014.0,3014.0,"granodiorite,monzogranite","101,101"
+Fortescue Group,"Basalt, basaltic andesite, and felsic volcanic rocks with locally thick siliciclastic sedimentary rocks; local carbonate rocks, komatiitic basalt and dolerite sills",2775.0,2629.0,"pyroxenite, andesite, basalt, serpentinite, ultramafic_rock, felsic, dolerite, conglomerate, gabbro, mud, carbonate","101,101,100,50,100,101,100"
+Fraser Range Metamorphics,"Sheeted and mostly strongly deformed metagabbro, metagranite, and minor metasedimentary rocks; includes hybrid rocks and mafic and felsic granulite",1310.0,1283.0,"gabbro,granite,iron_sediment,unclassified_rock,mafic,granulite","101,101,67,63,101,101"
+Fraser Zone unit,"Interlayered metagabbro and metagranite, locally with metasedimentary rocks; may include mafic and felsic granulite",1305.0,1290.0,"granite, granulite, gabbroid, granitoid, iron_sediment, gabbro","101,101,67,101"
+Frere Formation,"Peloidal chert, granular iron-formation, granular siliceous iron-formation, siltstone, and sandstone",2027.0,1650.0,"chert,gravel,gravel,mudstone,sandstone","101,75,62,101,101"
+Frezier Sandstone,Fine- to coarse-grained sandstone; minor granule conglomerate,145.0,113.0,"sandstone,conglomerate","101,101"
+Gap Intrusion,"Serpentinized peridotite, dunite, and pyroxenite",3460.0,3449.0,"peridotite,dacite,pyroxenite","101,80,101"
+Garden Creek Monzogranite,Metamorphosed biotite monzogranite; tectonically foliated; leucocratic; minor pegmatitic granitic sheets,3274.0,3224.0,"monzogranite,leucitic_rock,pegmatite","101,74,57"
+Garden Rock Monzogranite,"monzogranite, syenogranite",2650.0,2617.0,"migmatite, monzogranite, syenogranite",-1
+Gascoyne Province metamorphosed mafic intrusive unit,Massive metadolerite and foliated amphibolite; fine and medium grained,1648.0,1321.0,"dolerite,amphibolite","101,101"
+Gidley Granophyre,Gabbro; locally with large pyroxene crystals,2725.0,2725.0,"pyroxenite, gabbro, lamprophyre","101,67"
+Giles Suite 1,Layered mafic--ultramafic intrusions; undivided,1078.0,1075.0,"pyroxenite, garnetite, fine_grained_ultramafic_rock, peridotite, gabbro",62
+Giles Suite 2,Moderately to strongly foliated amphibolite after fine- to medium-grained gabbro; strongly epidotized and cut by abundant quartz and pegmatite veins; locally mylonitic,1078.0,1074.0,"coarse_grained_plutonic_crystalline_igneous_rock, syenogranite, gabbro, amphibolite, vein","101,101,101,101"
+Gillam Monzogranite,"Biotite(--muscovite) monzogranite, weakly feldspar-porphyritic; locally with magnetite phenocrysts; massive to weakly foliated; weakly metamorphosed",2851.0,2831.0,"monzogranite,magnetitite","101,90"
+Givetian--Frasnian reef complexes  marginal slope and basinal facies,"Limestone, calcareous sandstone, and mudstone; common breccia and mass flow deposits; lesser siliciclastic sandstone and conglomerate",387.7,372.2,"limestone,sandstone,mudstone,breccia,fluvial_deposit,sandstone,conglomerate","101,101,101,101,60,101,101"
+Givetian--Frasnian reef complexes  platform facies,"Limestone with lesser siltstone and sandstone, commonly cyclic; includes Pillara Limestone and Cadjebut Formation (reefal precursor)",387.7,372.2,"limestone,mudstone,sandstone,limestone","101,101,101,101"
+Glass Spring Formation,Sandstone; minor conglomerate and siltstone,1229.0,1080.0,"sandstone,conglomerate,mudstone","101,101,101"
+Glasse Formation,Aphyric to fine-grained basalt; locally amygdaloidal; metamorphosed,2920.0,2718.0,"massive_sulphide,basalt,basaltoid","62,101,57"
+Glen Group,basalt,2735.0,2700.0,basalt,-1
+Glenburgh Terrane Proterozoic unit,Amphibolite,2125.0,1965.0,"gabbro, gneiss, amphibolite, schist",101
+Glidden Group,"Sandstone, quartz wacke, shale, and siltstone",1797.0,635.0,"sandstone,wacke,mudstone,mudstone","101,101,101,101"
+Glyde Formation,"Typically vesicular and amygdaloidal basalt, and minor basaltic andesite; interbedded with fine- to coarse-grained siliciclastic rocks; epidotized",1077.0,1047.0,"basalt,andesite,siliciclastic_sediment,peridotite","101,101,63,70"
+Gnanagooragoo Igneous Complex,"ultramafic, serpentinite",2792.0,2792.0,"ultramafic, coarse_grained_plutonic_crystalline_igneous_rock, serpentinite, dolerite, gabbro",-1
+Gnows Nest Granodiorite,"granodiorite, tonalite",2951.0,2951.0,"granodiorite, tonalite",-1
+Gobbos Granodiorite,"Biotite granodiorite and monzogranite, with minor hornblende; medium grained, seriate to locally porphyritic; weakly metamorphosed",3313.0,3313.0,"granodiorite,monzogranite,hornblendite","101,101,91"
+Golden Eagle Orthogneiss,"Layered orthogneiss derived from tonalite, granodiorite, monzogranite, and pegmatite; includes layers and lenses of amphibolite and ultramafic schist",3199.0,3178.0,"granodiorite,monzogranite,pegmatite,amphibolite,schist","101,101,101,101,101"
+Golden Grove Member,"rhyodacite, dacite, felsic volcaniclastic",2963.0,2963.0,"rhyodacite, dacite, felsic volcaniclastic",-1
+Goodin Inlier granitic unit,"Granitic rock, undivided; metamorphosed",3010.0,2600.0,granitoid,89
+Googhenama Formation,Granule to pebble conglomerate interbedded with fine- to coarse-grained sandstone,1000.0,635.0,"gravel,conglomerate,sandstone","93,101,101"
+Goonetarra Granodiorite,"monzogranite, syenogranite",2763.0,2749.0,"monzogranite, syenogranite",-1
+Goose Hole Group,"Sandstone, siltstone, minor limestone (in part stromatolitic) and mudstone",508.0,485.4,"sandstone,mudstone,limestone,mudstone","101,101,101,101"
+Gorge Creek Group,Banded iron-formation and siliciclastic rocks,3066.0,3015.0,"bituminous_coal,siliciclastic_sediment","71,63"
+Gossan Hill Formation,"rhyolite, dacitic",2963.0,2947.0,"rhyolite, dacitic",-1
+Gossan Valley Member,"rhyolite, felsic volcaniclastic",2959.0,2959.0,"rhyolite, felsic volcaniclastic",-1
+Granites-Tanami Orogen granitic unit,Biotite monzogranite,2500.0,1600.0,monzogranite,101
+Granites-Tanami Orogen metamorphosed igneous felsic unit,Foliated biotite--muscovite--quartz--plagioclase--K-feldspar orthogneiss with thin leucocratic quartz--feldspar interlayers,2800.0,2500.0,"orthogneiss,vein","101,100"
+Granites-Tanami Orogen metamorphosed intrusive mafic unit,Metadolerite; greenschist to amphibolite facies,2500.0,1600.0,"dolerite,greenschist,amphibolite","101,101,100"
+Granites-Tanami Orogen metasedimentary siliciclastic unit,"Feldspathic wacke, sandstone, siltstone, and mudstone; minor quartzite, banded chert, basalt, dolerite, gabbro, and felsic porphyry; metamorphosed at very low to low grade",1864.0,1835.0,"wacke,sandstone,mudstone,mudstone,quartzite,chert,basalt,dolerite,gabbro,porphyry","101,101,101,101,101,000,000,000,000,000"
+Grant Group,"Sandstone, siltstone, diamictite, conglomerate, and shale; largely glacigene",323.2,290.1,"sandstone,mudstone,diamictite,conglomerate,mudstone,glacial_deposit","101,101,101,101,101,58"
+Grass Flat Gabbro,"Gabbro; minor leucogabbro, quartz gabbro and pegmatoidal components; metamorphosed",2796.0,2796.0,"gabbro,dolerite,gabbro,clinopyroxene_gabbro","101,73,101,49"
+Greenbushes Pegmatite,"Zoned pegmatite; tantalite-, spodumene-, and cassiterite-bearing",2527.0,2527.0,"pegmatite,tonalite,syenite","101,82,62"
+Greensleeves Formation,rhyolite,2760.0,2735.0,"rhyolite, andesitoid, ultramafic_rock, rhyolitoid, volcaniclastic_mud",-1
+Gregory Range Suite,Metamorphosed granitic rocks; moderate to strong tectonic foliation,2763.0,2757.0,"andesite, granitoid, gneiss, lamprophyre",89
+Gwynne Creek Gneiss,"Psammitic gneiss with minor semipelitic layers; includes minor metagranitic rocks, metamafic, and meta-ultramafic rocks",1483.0,1297.0,"gneiss,mudstone,granitoid,mafic,fine_crystalline_sedimentary","101,86,89,101,101"
+Halfway Gneiss,"Interlayered leucocratic and mesocratic granitic gneiss, pale-grey granitic gneiss and foliated metagranite, and gneissic to foliated porphyritic metagranodiorite",2555.0,2429.0,"leucitic_rock,gneiss,gneiss,granite,gneiss,granodiorite","74,101,101,101,86,101"
+Halls Creek Group,Pelite and psammite with basaltic and andesitic to trachytic metavolcanic and metavolcaniclastic rock,1909.0,1808.0,"mudstone,sandstone,basalt,andesitoid,trachytic_rock,volcaniclastic_mud","101,86,86,84,69,74"
+Hanns Jasper Formation,Dacitic volcaniclastic sandstone; crystal and lithic rich; metamorphosed,2774.0,2774.0,"sandstone,lithic_arenite","101,64"
+Hardey Formation,Sedimentary and felsic volcanic rocks; local intrusive rocks,2766.0,2749.0,"sediment,felsic,coarse_grained_plutonic_crystalline_igneous_rock","84,100,100"
+Hart Dolerite,"Dark-grey dolerite and gabbro, and pink to pale-grey, medium- to coarse-grained granophyre",1799.0,1791.0,"dolerite,gabbro,lamprophyre","101,101,67"
+Hatfield Formation,Metasedimentary clastic rocks; minor dacitic volcanic and volcaniclastic rocks,3131.0,2958.0,"clastic_sediment,andesite,volcaniclastic_mud","73,76,74"
+Hearson Cove Monzogranite,Monzogranite and syenogranite containing microcline megacrysts; metamorphosed,2999.0,2999.0,"monzogranite,syenogranite","101,100"
+Heavitree Formation and Bitter Springs Group,"Quartz sandstone, sandstone and conglomerate, dolomite, stromatolitic dolomite and siltstone",1000.0,720.0,"sandstone,sandstone,conglomerate,dolostone,dolostone,mudstone","101,101,101,101,101,000"
+Helicopter Siltstone,"Green and grey micaceous siltstone, fine- to medium-grained quartz sandstone, and mudstone",1000.0,720.0,"metasomatic_rock,mudstone,sandstone,mudstone","83,101,101,101"
+Hercules Gneiss,Metadiorite and quartz metamonzodiorite gneiss; locally intruded by Paleoproterozoic granite and mafic rocks,2795.0,1783.0,"diorite,gneiss,granite,mafic","101,101,101,100"
+Hickey Ricken Granite,"Granite, undivided",2654.0,2600.0,granite,101
+Hidden Basin beds,"Quartz sandstone, sublithic sandstone, shale and siltstone",1630.0,810.0,"sandstone,sandstone,mudstone,mudstone","101,101,101,101"
+High Cliff Sandstone,"Fine-grained quartz sandstone, subordinate interbeds of coarse-grained sandstone, conglomerate, and shale",290.1,283.5,"sandstone,sandstone,conglomerate,mudstone","101,101,101,101"
+Holmwood Shale,"Grey shale, well-bedded clayey siltstone, interbedded limestone",292.0,290.1,"mudstone,mudstone,limestone","101,101,101"
+Homeward Bound Granite,Alkali-feldspar granite; medium to coarse grained; includes local diorite and granodiorite; massive to weakly foliated; weakly metamorphosed,3466.0,3466.0,"granite,diorite,granodiorite","101,101,101"
+Honeyeater Basalt,Massive and pillowed basalt and komatiitic basalt; locally vesicular; metamorphosed,3228.0,3176.0,"basalt,basalt","101,101"
+Honman Formation,Chert and banded iron-formation; metamorphosed,2920.0,2718.0,"chert, conglomerate, bituminous_coal","101,71"
+Hope Campbell Orthogneiss,Migmatitic quartz--biotite orthogneiss,2769.0,2765.0,orthogneiss,101
+Horseshoe Formation,"Ferruginous, chloritic shale, and quartz--feldspar wacke; partly manganiferous and calcareous; includes iron formation and chert",2014.0,1920.0,"ferruginous_deposits,mudstone,wacke,manganiferous_deposits,travertine,till,chert","81,101,101,71,74,67,101"
+Hydrothermal unit,Quartz vein breccia with goethite--hematite infill; age uncertain,1171.0,0.0,"iron_sediment, breccia, vein","101,59"
+Illaara Formation,Quartzite and quartz-rich metasedimentary rock; locally fuchsitic; includes subordinate quartz--muscovite schist and ferruginous intercalations,3131.0,2700.0,"quartzite,iron_sediment,leucitic_rock,schist,ferruginous_deposits","101,67,71,101,81"
+Illgalara Monzogranite,granite,2665.0,2640.0,"monzogranite, granite, granitoid",-1
+Ilma Formation,"Oolitic dolomite, stromatolitic and sandy; minor limestone, chert, and sandstone, shaly with evaporite pseudomorphs in subsurface",1000.0,720.0,"dolostone,migmatite,sand,limestone,chert,sandstone,mudstone,evaporite","101,78,89,101,101,101,80,100"
+Imbin Inlier felsic volcanic unit,Porphyritic rhyodacite,1990.0,1990.0,rhyolite,101
+Ininti Granite,"Foliated, porphyritic granitic gneiss; may include syenogranitic gneiss with metasedimentary xenoliths",1695.0,1683.0,"gneiss,gneiss,sedimentary_rock","101,101,67"
+Irwin River Coal Measures,"Interbedded very coarse to fine grained sandstone, claystone, siltstone, shale (commonly carbonaceous), and coal",290.1,283.5,"sandstone,mudstone,mudstone,mudstone,coal","101,101,101,101,101"
+Isdell Formation,"Thinly bedded dolomitic limestone, calcareous siltstone, and minor shale; locally sulfidic",1000.0,858.0,"limestone,mudstone,mudstone","101,101,101"
+Jallagnoonina Granodiorite,Hornblende--biotite granodiorite; medium- to coarse-grained; metamorphosed,2954.0,2945.0,granodiorite,101
+Jarlemai Siltstone,"Mudstone, siltstone; minor sandstone locally",157.3,145.0,"mudstone,mudstone,sandstone","101,101,101"
+Jean Well Granodiorite,Granodiorite and lesser monzogranite; foliated and weakly compositionally banded; locally sparsely porphyritic; metamorphosed,2990.0,2985.0,"granodiorite,monzogranite","101,101"
+Jeerinah Formation,"Siliciclastic sedimentary rocks, local volcanic rocks, and dolerite sills",2713.0,2629.0,"chert, felsic, dolerite, mafic, conglomerate, carbonate","56,57,100"
+Jenkin Granodiorite,Biotite granodiorite; medium to coarse grained; foliated; metamorphosed,3313.0,3307.0,granodiorite,101
+Jilyili Formation,"Sandstone and siltstone; minor shale, mudstone, and conglomerate",1229.0,1080.0,"sandstone,mudstone,mudstone,mudstone,conglomerate","101,101,101,101,101"
+Jimberlana Norite,"Mafic to ultramafic intrusive rocks, undifferentiated; locally abundant carbonate",2420.0,2400.0,"mafic,coarse_grained_plutonic_crystalline_igneous_rock,carbonate","101,100,101"
+Johansen Monzogranite,Biotite monzogranite; medium to coarse grained; locally foliated; metamorphosed,3315.0,3303.0,monzogranite,101
+Johnson Cairn Formation,"Shale and siltstone; minor quartz arenite, feldspathic sandstone, and thin-bedded dolomite and marl",2170.0,1600.0,"mudstone,mudstone,arenite,sandstone,dolostone,marl","101,101,101,101,101,000"
+Jones Creek Conglomerate,Conglomerate and sandstone; metamorphosed,2665.0,2640.0,"conglomerate,sandstone","101,101"
+Joorina Granodiorite,Biotite granodiorite; local tonalite and monzogranite; locally porphyritic; variably foliated; metamorphosed,3321.0,3304.0,"granodiorite,tonalite,monzogranite","101,101,101"
+Juderina Formation,"sandstone, shale, siltstone, chert, breccia, conglomerate",2170.0,1600.0,"chert, breccia, sandstone, siltstone, conglomerate, mudstone, shale",-1
+June Hill Volcanics,"Mafic, intermediate, and felsic volcanic rock; minor interbedded sedimentary rocks",1799.0,1799.0,"mafic,felsic,iron_sediment","101,100,67"
+Jungar Suite,"monzogranite, granodiorite, syenogranite, pegmatite",2648.0,2648.0,"granodiorite, monzogranite, syenogranite, pegmatite, mafic, granitoid, granite, gneiss",-1
+Kaarnka Group,"Rhyolitic and trachytic lavas, subvolcanic sills, and pyroclastic rocks, locally interlayered with volcanic sandstones and siltstones and minor basalt",1077.0,1047.0,"rhyolitoid,trachytoid,felsic,pyroclastic_rock,sandstone,mudstone,basalt","84,67,65,91,101,101,101"
+Kadgewarrina Monzogranite,Muscovite--biotite(--garnet) monzogranite; equigranular to weakly porphyritic; massive to layered,2851.0,2831.0,monzogranite,101
+Kaluweerie Conglomerate,Polymictic conglomerate and lithic sandstone,2500.0,541.0,"conglomerate,sandstone","101,101"
+Kangaroo Caves Formation,"Felsic and mafic volcanic rocks, and siliciclastic sedimentary rocks; metamorphosed",3253.0,3235.0,"felsic,mafic,conglomerate","101,100,56"
+Kantie Murdana Volcanics Member,"psammitic, pelitic schist",2813.0,2813.0,"andesite, rhyolitoid, volcaniclastic_mud, psammitic, peliticschist",-1
+Karalundi Formation,Sandstone; minor shale and conglomerate,2014.0,1920.0,"sandstone,mudstone,conglomerate","101,101,101"
+Karara Formation,"Fine-grained sandstone, pebble conglomerate, minor siltstone and shale",1000.0,635.0,"sandstone,conglomerate,mudstone,mudstone","101,101,101,101"
+Karbar Monzogranite,monzogranite,2697.0,2665.0,monzogranite,-1
+Karratha Granodiorite,Granodiorite and tonalite; foliated with local compositional banding; metamorphosed,3270.0,3261.0,"granodiorite,tonalite","101,101"
+Kathleen Ignimbrite,Volcaniclastic rhyolite,1077.0,1047.0,rhyolite,101
+Kathleen Valley Gabbro,"Gabbro, quartz gabbro, and pyroxenitic gabbro; minor anorthosite and tonalite; metamorphosed",2735.0,2735.0,"gabbro,gabbro,gabbro,anorthosite,tonalite","101,101,101,101,101"
+Kavir Granodiorite,Metamoprhosed biotite granodiorite and minor pegmatitic granite; fine to medium grained; foliated,3240.0,3240.0,"granodiorite,granite","101,101"
+Kazput Formation,"Argillite, sandstone, and conglomerate; minor grey recrystallized dolomite and limestone, and thin beds of iron formation",2420.0,2208.0,"mudstone,sandstone,conglomerate,dolostone,limestone,till","101,101,101,101,101,65"
+Keep Inlet Formation,"Sandstone, mudstone, conglomerate (including diamictite); minor coal; in part glacigene",298.9,290.1,"sandstone,mudstone,conglomerate,coal,glacigenic_deposit","101,101,101,101,69"
+Keep It Dark Monzogranite,Porphyritic monzogranite; locally equigranular; metamorphosed,2936.0,2936.0,monzogranite,101
+Kennedy Group,"Sandstone, shale, siltstone, claystone",272.3,259.8,"sandstone,mudstone,mudstone,mudstone","101,101,101,101"
+Kennell Granodiorite,Biotite--hornblende granodiorite; local monzogranite and tonalite; foliated; local mafic xenoliths and schlieren; metamorphosed,3315.0,3312.0,"granodiorite,monzogranite,tonalite,mafic,clinker","101,101,101,100,62"
+Kialrah Rhyolite,Flow-banded porphyritic rhyolite and minor dacite; metamorphosed,2948.0,2941.0,"rhyolite,dacite","101,101"
+Killara Formation,Tholeiitic basalt; locally intercalated with dolerite sills; local lithic sandstone and chert breccia,2170.0,1600.0,"basalt,dolerite,sandstone,breccia","101,100,101,101"
+Killi Killi Formation,"Feldspathic metawacke, metasandstone, metasiltstone, metamudstone, metadolerite, and metagabbro; minor quartzite, banded metachert, and metabasalt",1864.0,1830.0,"wacke,sandstone,mudstone,mudstone,dolerite,gabbro,quartzite,chert,basalt","101,101,101,101,101,000,000,000,000"
+Kimberley Group  lower,Quartz sandstone and feldspathic sandstone; siltstone and mudstone; basalt; minor dolostone and conglomerate; includes King Leopold Sandstone and Carson Volcanics,1835.0,1797.0,"sandstone,sandstone,mudstone,mudstone,basalt,dolostone,conglomerate,sandstone,andesite","101,101,101,101,101,101,101,101,63"
+Kimmys Bore Monzogranite,"Biotite monzogranite; homogeneous, equigranular to seriate",2851.0,2831.0,monzogranite,101
+King Leopold Sandstone,"White to pale-brown, medium- to coarse-grained quartz sandstone and pebbly quartz sandstone; minor siltstone and granule to pebble conglomerate",1835.0,1797.0,"sandstone,sandstone,mudstone,gravel,conglomerate","101,101,101,93,101"
+Kiwirrkurra Formation,"Red-weathering lithic sandstone, quartz sandstone, and conglomerate",1633.0,1000.0,"sandstone,sandstone,conglomerate","101,101,101"
+Knobby Sandstone,"Sandstone, siltstone, and conglomerate",382.7,358.9,"sandstone,mudstone,conglomerate","101,101,101"
+Kockatea Shale,Shale; minor siltstone and sandstone; in places calcareous; sandstone members at base,252.17,247.2,"mudstone,mudstone,sandstone,travertine,sandstone","101,101,101,67,100"
+Koolbye Formation,Fine- to coarse-grained quartzitic sandstone; minor argillite and conglomerate,2420.0,2208.0,"sandstone,mudstone,conglomerate","101,101,101"
+Koongie Park Formation,"Low- to high-grade felsic metavolcanic and metavolcaniclastic rock, metasedimentary rock, metabasalt, and hornfels;  locally migmatitic; minor metachert, metamorphosed banded iron-formation, and metacarbonate",1845.0,1840.0,"felsic,volcaniclastic_mud,iron_sediment,basalt,hornfels,chert,carbonate","100,74,67,101,101,101,101"
+Kulail Sandstone  Dean Quartzite  Heavitree Quartzite  and Vaughan Springs Quartzite,"Quartz sandstone, sandstone, and conglomerate; kyanite schist locally",1000.0,800.0,"sandstone,sandstone,conglomerate,schist","101,101,101,101"
+Kulele Limestone,"Stromatolitic limestone, micaceous siltstone, mudstone, and fine-grained sandstone; common metre-scale cyclicity",1876.0,1650.0,"limestone,mudstone,mudstone,sandstone,coorongite","101,101,101,101,50"
+Kulkatharra Dolerite,Dolerite and gabbro sills intruded into Edmund Group and Collier Group,1084.0,1067.0,"dolerite,gabbro","101,100"
+Kunagunarrina Formation,"Basaltic rocks with komatiitic basalt; minor komatiite, siliciclastic rocks and chert; metamorphosed",3275.0,3255.0,"basaltoid,basalt,kalsilitic_rock,siliciclastic_sediment,chert","89,101,101,63,101"
+Kungarra Formation,"Argillite and subordinate thin- to thick-bedded sandstone; local stromatolitic dolomite, diamictite, iron formation; intruded by Balgara Dolerite sills",2445.0,2208.0,"mudstone,sandstone,dolostone,diamictite,till,dolerite","101,101,101,101,67,100"
+Kuniandi Group,"Siltstone, sandstone, shale, feldspathic wacke, dolomite, and tillite",720.0,541.0,"mudstone,sandstone,mudstone,wacke,dolostone,till","101,101,101,101,101,000"
+Kunmarnara Group,Unassigned metamorphosed siliciclastic and mafic volcanic rocks,1085.0,1075.0,"mafic, siliciclastic_sediment, felsic","74,100"
+Kurrawang Formation,"Conglomerate, sandy conglomerate, pebbly sandstone to sandstone; polymictic with clasts of banded iron-formation, granite, quartzite and mafic volcanic; planar- and cross-bedding; metamorphosed",2657.0,2640.0,"conglomerate,conglomerate,sandstone,sandstone,bituminous_coal,granite,quartzite,mafic","101,101,101,101,70,101,101,100"
+Kylena Formation,"Massive, amygdaloidal, and vesicular basalt and basaltic andesite; local komatiitic basalt, dacite, and rhyolite",2749.0,2735.0,"basaltoid,basalt,andesite,basalt,dacite,rhyolite","57,101,101,101,101,100"
+Kynea Migmatite,"gneiss, monzogranite",2950.0,2950.0,"gneiss, monzogranite",-1
+Labouchere Formation,"Quartz wacke and siltstone with local quartz-pebble conglomerate beds; includes quartz schist, quartz--muscovite schist, and minor biotite--muscovite schist, locally with chloritoid, staurolite, and/or andalusite",1983.0,1811.0,"wacke,mudstone,conglomerate,schist,schist,schist,chloritolite,saprolite,andesite","101,101,100,101,101,101,82,84,78"
+Lady Adelaide Orthogneiss,Gneissose leucocratic metagranodiorite; homogeneous to schlieric-textured,3451.0,3416.0,granodiorite,101
+Lady Alma Igneous Complex,magnetitite,2813.0,2813.0,"magnetitite, dolerite, gabbro",-1
+Lake Mackay Quartzite,Interbedded quartzite and quartz--mica schist,1750.0,1640.0,"quartzite,schist","101,101"
+Lake Medcalf Igneous Complex,Gabbro with minor dolerite; metamorphosed,2920.0,2718.0,"gabbro,dolerite","101,101"
+Lalla Rookh Sandstone,"Sandstone with beds of conglomerate, and minor siltstone and shale; metamorphosed",2988.0,2931.0,"sandstone,conglomerate,mudstone,mudstone","101,101,101,101"
+Lamboo Province granitic unit,Medium-grained leucocratic granite,1864.0,1788.0,granite,101
+Lamboo Province mafic--ultramafic intrusive unit,Undivided mafic--ultramafic rock,1864.0,1805.0,mafic,100
+Lamboo Province ultramafic intrusive unit,Undivided ultramafic intrusive rocks,1864.0,1805.0,"coarse_grained_plutonic_crystalline_igneous_rock, peridotite",100
+Lamil Group,"Quartz sandstone, conglomerate, carbonate, siltstone, and shale; minor pyritic shale",950.0,630.0,"sandstone,conglomerate,carbonate,mudstone,mudstone,mudstone","101,101,101,101,101,000"
+Lancelin Formation,"Glauconitic chalk, marl, and calcareous mudstone",86.3,66.0,"chalk,marl,mudstone","101,101,101"
+Lander Rock Formation,Interbedded psammite and pelite; quartz--muscovite schist; may include metamorphosed banded iron-formation and metavolcanic rocks,1840.0,1830.0,"sandstone,mudstone,schist,adinole,felsic","86,101,101,57,62"
+Langfield Group,"Sandstone, limestone, shale, and siltstone",358.9,346.7,"sandstone,limestone,mudstone,mudstone","101,101,101,101"
+Larranganni Formation,"Sandstone, minor siltstone, and conglomerate",252.17,66.0,"sandstone,mudstone,conglomerate","101,101,101"
+Leake Spring Metamorphics,Pelitic and psammitic schist; calc-silicate rock; minor amphibolite,1842.0,1807.0,"mudstone,schist,fine_crystalline_sedimentary,amphibolite","77,101,101,101"
+Leederville Formation,Interbedded sandstone and siltstone; minor conglomerate; scattered thin coal seams,132.9,113.0,"sandstone,mudstone,conglomerate,coal","101,101,101,100"
+Leeuwin Inlier metagranitic unit,Granitic gneiss,1091.0,515.0,gneiss,101
+Leeuwin Inlier metamorphosed mafic intrusive unit,"gneiss, granite, anorthosite, leucogabbro",688.0,681.0,"gneiss, granite, anorthosite, leucogabbro",-1
+Leilira Formation,"Siliciclastic sedimentary rocks, minor felsic volcanic rocks, and chert; metamorphosed",3275.0,3255.0,"conglomerate,felsic,chert","56,100,101"
+Lennis Sandstone,"Fine- to medium-grained feldspathic micaceous sandstone, minor siltstone; giant cross beds, possibly eolian",508.0,443.4,"sandstone,mudstone,aeolian_deposit","101,101,67"
+Lesueur Sandstone,Very fine to very coarse grained quartz sandstone; subordinate granule conglomerate; minor siltstone,247.2,201.3,"sandstone,conglomerate,mudstone","101,101,101"
+Lewis Granite,Muscovite and biotite monzogranite; locally porphyritic; minor biotite granodiorite,1796.0,1796.0,"carbonatite, monzogranite, granodiorite","71,101,101"
+Lillybooroora Conglomerate,Boulder and cobble conglomerate; minor sandstone and siltstone,382.7,350.0,"gravel,conglomerate,sandstone,mudstone","93,101,101,101"
+Lindsay Hill Formation,"Quartzite and metasandstone, interbedded with metasiltstone; locally interbedded with metaconglomerate and pebbly metasandstone",1752.0,1600.0,"quartzite,sandstone,mudstone,conglomerate,sandstone","101,101,101,101,101"
+Liveringa Group,"Sandstone and siltstone, minor conglomerate, and coal",272.3,252.17,"sandstone,mudstone,conglomerate,coal","101,101,101,101"
+Lordy Basalt Member,"maficvolcanic, komatiitic basalt",2800.0,2760.0,"maficvolcanic, komatiitic basalt",-1
+Louden Volcanic Member,"Basalt and komatiite, with locally thick siliciclastic sedimentary intercalations; metamorphosed",2950.0,2948.0,"basalt,kalsilitic_rock,conglomerate","101,101,56"
+Louisa Downs Group,"Siltstone, sandstone, quartzwacke, pebble conglomerate, shale, dolomite, stromatolitic dolomite, limestone, and tillite",635.0,541.0,"mudstone,sandstone,quartz_wacke,conglomerate,mudstone,dolostone,dolostone,limestone,till","101,101,96,101,101,101,101,101,101"
+Lucas Formation,"Sandstone (partly calcareous), siltstone, and mudstone; minor limestone and conglomerate",541.0,252.17,"sandstone,mudstone,mudstone,limestone,conglomerate","101,101,101,101,101"
+Lupton Formation,Diamictite and sandstone,720.0,635.0,"diamictite,sandstone","101,101"
+Lyons Group,"Diamictite, sandstone and siltstone (locally calcareous), shale, and boulder beds and lags; glacigene",323.2,290.1,"diamictite,sandstone,mudstone,mudstone,gravel,lag,glacitectonite","101,101,101,101,74,101,70"
+MacDougall Formation,Quartz-pebble conglomerate and sandstone,1085.0,1075.0,"conglomerate,sandstone","101,101"
+Maddina Formation,"Massive, amygdaloidal, or vesicular basalt and basaltic andesite; local komatiitic basalt, dacite, and rhyolite",2718.0,2713.0,"basaltoid,basalt,andesite,basalt,dacite,rhyolite","57,101,101,101,101,100"
+Madoonga Formation,"rhyolite, psammite",2979.0,2969.0,"rhyolite, psammite",-1
+Madura Formation,"Carbonaceous sandstone, siltstone, claystone and shale; commonly pyritic",129.4,113.0,"sandstone,mudstone,mudstone,mudstone,massive_sulphide","101,101,101,101,77"
+Madura Province metagranitic unit,"Metagranitic and metamorphosed mafic rocks, undivided; may include metasedimentary rocks",1600.0,1100.0,"granitoid,mafic,fine_crystalline_sedimentary","82,100,60"
+Mafic intrusive unit,"Dolerite dykes, sills, or plugs; fine- to medium-grained dolerite; age uncertain",4000.0,0.0,"dolerite,mud,dolerite","100,75,101"
+Maggie Hays Formation,Basalt and siliciclastic sedimentary rocks; metamorphosed,3131.0,2920.0,"basalt,conglomerate","101,56"
+Mahony Group,"Sandstone (pebbly in places), and pebble to boulder conglomerate",382.7,372.2,"sandstone,gravel,conglomerate","101,92,101"
+Maitland Intrusion,"Gabbro, leucogabbro, serpentinized peridotite and dunite, pyroxenite, and minor anorthosite; metamorphosed",2930.0,2924.0,"gabbro,dolerite,peridotite,dacite,pyroxenite,anorthosite","101,73,101,80,101,101"
+Maitland River Supersuite,"Tonalite, granodiorite, and monzogranite; K-feldspar phenocrysts in most intrusions; variably foliated; metamorphosed",3006.0,2982.0,"tonalite,granodiorite,monzogranite,coarse_grained_plutonic_crystalline_igneous_rock","101,101,101,78"
+Malcolm Metamorphics,Interbedded psammitic and pelitic schist; basalt schist locally altered to calcareous rock; intruded by Recherche Supersuite,1455.0,1313.0,"pisolith,schist,schist,travertine","75,101,100,67"
+Mallina Formation,"Interbedded shale, siltstone, sandstone, and medium- to fine-grained wacke; metamorphosed",3015.0,2931.0,"mudstone,mudstone,sandstone,wacke","101,101,101,101"
+Mallindra Well Granodiorite,Hornblende--biotite granodiorite and tonalite; massive to moderately foliated; locally inclusion-rich; weakly metamorphosed,2946.0,2946.0,"granodiorite,tonalite","101,101"
+Malmac Granite,Weathered monzogranite,2600.0,2500.0,monzogranite,101
+Malu Formation,Fine- to medium-grained quartz sandstone,950.0,630.0,sandstone,101
+Manganese Group,"Sandstone, siltstone, mudstone, conglomerate, chert, and dolostone",1317.0,1070.0,"sandstone,mudstone,mudstone,conglomerate,chert,dolostone","101,101,101,101,101,000"
+Manyutup Tonalite,Tonalite; minor phases of diorite and granodiorite; metamorphosed,2989.0,2965.0,"tonalite,diorite,granodiorite","101,101,101"
+Mapa Igneous Complex,"Layered gabbro and dolerite with minor pyroxenite; generally weakly metamorphosed, locally up to amphibolite facies; locally schistose",2755.0,2755.0,"gabbro,dolerite,pyroxenite,amphibolite","101,101,101,100"
+Maraloou Formation,"Siltstone, ferruginous shale, in part calcareous; basal intercalated tholeliitic basalt pillow lava, dolerite sills",2170.0,1600.0,"mudstone,mudstone,travertine,basalt,basalt,dolerite","101,101,69,91,100,100"
+Marble Bar Chert Member,"Layered grey, red, and white chert; metamorphosed",3463.0,3459.0,chert,101
+Marboo Formation,"Thin-bedded, turbiditic metasandstone and quartz--chlorite--muscovite phyllite; hornfelsed adjacent to granite intrusions",1872.0,1864.0,"sandstone,phyllite,hornfels,granite","101,101,89,100"
+Marda Complex,Felsic volcanic and volcaniclastic rocks; metamorphosed,2734.0,2730.0,"volcaniclastic_mud, felsic, volcaniclastic_breccia","100,74"
+Marlomumbah Granite,granite,2606.0,2606.0,"tuffaceous_sedimentary_rock, granite",-1
+Marra Mamba Iron Formation,"Chert, banded iron-formation, mudstone, and siltstone; minor carbonate; metamorphosed",2629.0,2597.0,"chert,bituminous_coal,mudstone,mudstone,carbonate","101,71,101,101,101"
+Marymia Inlier granitic unit,"Granitic rock, undivided; metamorphosed",3010.0,2600.0,granitoid,89
+Mason Knob Monzogranite,"Porphyritic monzogranite; fine- to coarse-grained with feldspar megacrysts, locally seriate; metamorphosed",2660.0,2660.0,"monzogranite,alkali_feldspar_trachyte","101,56"
+Maurice Formation,"Lithic and feldspathic sandstone, very fine to medium grained; cross-bedded; minor laminated, micaceous siltstone; commonly silicified",635.0,510.0,"pisolith,sandstone,mudstone","75,101,101"
+Maydon Basalt,"Metabasalt, commonly pillowed with minor interflow sedimentary rocks; minor dolerite and amphibolite",3131.0,2958.0,"basalt,sedimentary_rock,dolerite,amphibolite","101,80,101,101"
+McFadden Formation,"Quartz sandstone, commonly giant-scale cross-bedded; minor siltstone and conglomerate; largely eolian",635.0,541.0,"sandstone,mudstone,conglomerate,colluvium","101,101,101,53"
+McKay Creek Metasyenogranite,"Metasyenogranite, mingled with metagabbro; may include intrusions of Bobbie Point Metasyenogranite, and remnants of Voodoo Child Formation and Hercules or Tropicana Gneiss",1761.0,1761.0,"syenogranite,gabbro,syenogranite,gravel,gneiss","101,101,101,62,101"
+McPhee Formation,"Ultramafic volcanic rock, siliciclastic sedimentary rock, basalt, and chert; local felsic volcanic rock; metamorphosed",3477.0,3477.0,"ultrabasic_volcanic_rock,conglomerate,basalt,chert,felsic","65,56,101,101,100"
+Meekatharra Formation,"basalt, amphibolite",2800.0,2760.0,"felsic, basalt, amphibolite",-1
+Mereenie Sandstone,Quartz sandstone; minor siltstone; largely eolian,443.4,393.3,"sandstone,mudstone,colluvium","101,101,53"
+Merlinleigh Sandstone,"Coarse-grained sandstone; lesser siltstone, conglomerate, and claystone; commonly intensely silicified",41.2,33.9,"sandstone,mudstone,conglomerate,mudstone,coarse_grained_plutonic_crystalline_igneous_rock","101,101,101,101,56"
+Merougil Formation,"Biotite-bearing pebbly sandstone, sandstone, and siltstone; minor polymictic conglomerate; metamorphosed",2664.0,2640.0,"sandstone,sandstone,mudstone,conglomerate","101,101,101,101"
+Mesozoic siliciclastic units  eastern Canning Basin,"Sandstone, siltstone, claystone, and conglomerate; undivided",252.17,66.0,"sandstone,mudstone,mudstone,conglomerate","101,101,101,101"
+Metamorphic unit,"Mylonite, silicified",4000.0,0.0,mylonite,101
+Metawandy Granite,Monzogranite; locally abundant mafic xenoliths,2893.0,2893.0,"monzogranite,mafic","101,100"
+Miaree Granite,Monzogranite and syenogranite; foliated; metamorphosed,2997.0,2997.0,"monzogranite,syenogranite","101,101"
+Millars Monzogranite,Quartz-rich monzogranite,2654.0,2600.0,monzogranite,101
+Milli Milli Inlier greenstones,"Basaltic and andesitic flows, and associated volcaniclastic rocks; metamorphosed",3530.0,3225.0,"basalt, chert, andesitoid, iron_sediment, volcaniclastic_breccia, sandstone, conglomerate, mudstone, dolomicrite","86,76,61"
+Milli Milli Inlier metagranitc unit,"Foliated, gneissic, or migmatitic metagranitic rock",3225.0,2890.0,"gneiss,granitoid","86,63"
+Millidie Creek Formation,Sandstone and shale; minor granular iron-formation,1983.0,1811.0,"sandstone,mudstone,gravel","101,101,75"
+Millindinna Intrusion,"Gabbro, pyroxenite, and peridotite; metamorphosed",2954.0,2948.0,"gabbro,pyroxenite,peridotite","101,101,101"
+Millury Formation,"Quartz sandstone; minor siltstone, local evaporite pseudomorphs",1620.0,1455.0,"sandstone,mudstone,evaporite","101,101,100"
+Millyit Sandstone,Fine- to coarse-grained sandstone; minor conglomerate,252.17,247.2,"sandstone,conglomerate","101,101"
+Mingenew Formation,"Fine- to coarse-grained sandstone, micaceous siltstone",286.0,272.3,"sandstone,mudstone","101,101"
+Minjar Member,"felsic volcaniclastic, basalt, sedimentary rock",2947.0,2947.0,"felsic volcaniclastic, basalt, sedimentary rock",-1
+Minnamonica Monzogranite,Quartz and K-feldspar porphyritic muscovite(--biotite) monzogranite; fine to coarse grained; massive to weakly foliated,2851.0,2831.0,"vein,monzogranite","101,101"
+Mission Group,"Vesicular and amygdaloidal basalt and basaltic andesite, interlayered with fine- to coarse-grained siliciclastic rocks and minor dolomite, chert, and microbialite",1057.0,1040.0,"basalt,andesite,siliciclastic_sediment,dolostone,chert,dolerite","101,101,63,101,101,75"
+Mondana Monzogranite,"Massive leucocratic monzogranite; very fine to medium grained; quartz-rich, minor biotite; equigranular to sparsely feldspar-porphyritic; weakly metamorphosed",2851.0,2831.0,"monzogranite,micaite","101,88"
+Moodini Supersuite,Granitic and gabbroic rocks; typically undeformed,1200.0,1100.0,"granitoid,gabbroid","82,89"
+Moogie Metamorphics,"Psammitic and pelitic schist; calc-silicate rock; minor quartzite, marble, amphibolites, and ultramafic schist",2240.0,2125.0,"pisolith,schist,fine_crystalline_sedimentary,quartzite,marble,amphibolite,schist","75,101,101,101,101,100,000"
+Moola Bulla Formation,"Sandstone, mudstone, and granule to cobble conglomerate",2500.0,1600.0,"sandstone,mudstone,gravel,conglomerate","101,101,93,101"
+Moolyella Monzogranite,Muscovite--biotite monzogranite; medium grained; massive to weakly foliated,2831.0,2831.0,monzogranite,101
+Moora Group,"Sandstone, siltstone; basalt (in lower part), and dolomite and silicified dolomite (in upper part)",1600.0,541.0,"sandstone,mudstone,basalt","101,101,101"
+Moorarie Supersuite,"Massive, subophitic metagabbro; medium grained; amphibolite; minor hornblende schist",1806.0,1776.0,"amphibolite, granite, gabbro, schist","101,101,101"
+Mosquito Creek Formation,Interlayered psammite and pelite; graded bedding and local cross-bedding preserved; includes metamorphosed turbidite deposits,2980.0,2930.0,"sandstone,mudstone,turbidites","86,101,67"
+Motherin Monzogranite,"Interleaved metamonzogranite, metagranodiorite, gneiss, and pegmatite; moderately to strongly foliated; intruded by abundant sheets of massive to weakly foliated muscovite-bearing metamonzogranite and pegmatite",3484.0,3462.0,"monzogranite,granodiorite,gneiss,pegmatite,monzogranite,pegmatite","101,101,101,101,101,000"
+Mougooderra Formation,"siltstone, sandstone",2758.0,2700.0,"siltstone, sandstone",-1
+Mount Ada Basalt,Mafic volcanic rock; local ultramafic rock; metamorphosed,3470.0,3469.0,"mafic,ultramafic_rock","100,54"
+Mount Augustus Sandstone,"Sandstone, pebbly sandstone, and conglomerate; minor siltstone",1679.0,1610.0,"sandstone,sandstone,conglomerate,mudstone","101,101,101,101"
+Mount Barren Group,"Phyllite, pelite and psammite schist; quartzite and metacarbonate",2000.0,1690.0,"phyllite,mudstone,schist,quartzite,carbonate","101,101,101,101,101"
+Mount Crofton Granite,Syenogranite and monzogranite,633.0,621.0,"syenogranite,monzogranite","101,101"
+Mount Gregory Monzodiorite,"Monzodiorite; massive, medium- to coarse-grained; metamorphosed",3016.0,3016.0,monzodiorite,101
+Mount Harris Basalt,"Metamorphosed basalt, basaltic tuff, conglomerate, and quartzite",1085.0,1040.0,"basalt,tuff,conglomerate,quartzite","101,101,101,101"
+Mount Holmes Gabbro,Gabbro; metamorphosed,1070.0,1070.0,gabbro,101
+Mount House Group,"Tillite, sandstone, siltstone, and minor stromatolitic dolomite",720.0,541.0,"till,sandstone,mudstone,dolostone","101,101,101,101"
+Mount James Subgroup,"Pelitic and psammitic schist, metamorphosed quartz sandstone, feldspathic metasandstone and metaconglomerate",1758.0,1682.0,"mudstone,schist,sandstone,sandstone,conglomerate","77,101,101,101,101"
+Mount Joseph Migmatite,Psammitic and pelitic migmatite and granofels; quartz--K-feldspar--plagioclase--biotite--sillimanite--muscovite(--cordierite--garnet--andalusite) rock; anatectic granite,1872.0,1864.0,"pisolith,migmatite,granofels,vein,granite","75,101,101,100,101"
+Mount Kenneth Suite,granite,2815.0,2800.0,"quartzite, hornblendite, sandstone, sedimentary_rock, tonalite, granitoid, mudstone, granite, amphibolite",-1
+Mount Leake Formation,Quartz arenite; locally glauconitic,1785.0,1000.0,"arenite,glaucophanite","101,75"
+Mount McGrath Formation,"Ferruginous sandstone, conglomerate and pebbly sandstone; quartz sandstone, siltstone, dolomitic siltstone, and dolostone",2008.0,1799.0,"sandstone,conglomerate,sandstone,sandstone,mudstone,mudstone,dolostone","101,101,101,101,101,000,000"
+Mount McRae Shale and Mount Sylvia Formation,"Mudstone, siltstone, chert, banded iron-formation, and dolomite; metamorphosed",2541.0,2501.0,"mudstone,mudstone,chert,bituminous_coal,dolostone","101,101,101,71,101"
+Mount Minnie Group,"Quartz sandstone, conglomerate, siltstone and mudstone",1799.0,1620.0,"sandstone,conglomerate,mudstone,mudstone","101,101,101,101"
+Mount Negri Volcanic Member,"Basalt, komatiitic basalt, and basaltic andesite; local siliciclastic sedimentary rocks; metamorphosed",2950.0,2948.0,"basalt,basalt,andesite,carbonate_sediment","101,101,101,54"
+Mount Palgrave Group,"Felsic volcanic and volcaniclastic rocks, sandstone, siltstone, and mudstone; minor mafic volcanic rocks",1077.0,1047.0,"felsic,volcaniclastic_mud,sandstone,mudstone,mudstone,mafic","100,74,101,101,101,100"
+Mount Parker Formation,"Sandstone, pebbly sandstone, conglomerate, siltstone, mudstone, and breccia",1797.0,541.0,"sandstone,sandstone,conglomerate,mudstone,mudstone,breccia","101,101,101,101,101,000"
+Mount Ragged Formation,Psammitic schist and quartzite interbedded with thin layers of pelitic rocks,1314.0,1175.0,"schist,quartzite,melilite_bearing_rock","101,101,74"
+Mount Roe Basalt,Basaltic volcanic rock; local volcaniclastic and siliciclastic rocks,2775.0,2772.0,"basaltoid,volcaniclastic_mud,siliciclastic_sediment","67,74,63"
+Mount Sholl Intrusion,"Gabbro, leucogabbro, serpentinized peridotite and dunite, pyroxenite, and minor anorthosite; metamorphosed",2930.0,2924.0,"gabbro,dolerite,peridotite,dacite,pyroxenite,anorthosite","101,73,101,80,101,101"
+Mount Venn Igneous Complex,"Layered intrusion of gabbro, leucogabbro, and leucodolerite; metamorphosed; locally schistose",2769.0,2666.0,"gabbro,dolerite,dolerite","101,73,76"
+Mount Waugh Formation,"Flow-banded rhyolite, locally interlayered with siliciclastic diamictite, conglomerate, sandstone and siltstone, and amygdaloidal basalt",1077.0,1047.0,"rhyolite,diamictite,conglomerate,sandstone,mudstone,basalt","101,101,101,101,101,000"
+Mount Webb Granite,"Metamonzogranite; metasyenogranite, metagranodiorite, and metatonalite",1647.0,1633.0,"monzogranite,syenogranite,granodiorite,tonalite","101,101,101,101"
+Mount Weld Carbonatite,Carbonatite plug with mineralized lateritic cap; breccia with abundant glimmerite; locally silicified,2020.0,2020.0,"carbonatite,mineralisation,breccia,monzonite","101,100,101,67"
+Mu Formation,"Conglomerate, sandstone, mudstone",541.0,485.4,"conglomerate,sandstone,mudstone","101,101,101"
+Muja Coal Measures,"Interbedded poorly sorted feldspathic sandstone, carbonaceous shale, coal; conglomerate",283.5,258.5,"sandstone,mudstone,coal,conglomerate","101,101,101,101"
+Mulgandinnah Monzogranite,"Magnetite-bearing biotite monzogranite, fine to medium grained; weakly foliated",2934.0,2919.0,monzogranite,101
+Mulgarra Sandstone,"Sandstone; minor shale, limestone, and granule conglomerate; locally glauconitic",1808.0,1650.0,"sandstone,mudstone,limestone,conglomerate,glaucophanite","101,101,101,101,75"
+Mulgine Granite,tonalite,2756.0,2756.0,tonalite,-1
+Mullingarra Gneiss,"Quartzofeldspathic, semi-pelitic and pelitic gneiss; granoblastic texture common; minor pegmatitic and granitic segregations; includes lenses of quartzite and amphibolite",1113.0,1058.0,"quartz_latite,gneiss,phonolitic_tephrite,pegmatite,granitoid,quartzite,amphibolite","65,101,50,84,61,101,101"
+Mullugunya Granodiorite,Biotite--hornblende granodiorite; medium grained; weakly foliated and metamorphosed,3308.0,3297.0,granodiorite,101
+Munarra Monzogranite,"monzogranite, granodiorite, diorite, microgranite",2670.0,2670.0,"microgranite, monzogranite, diorite, granodiorite",-1
+Mundadjini Formation,"Sandstone, siltstone, and minor conglomerate, shale, mudstone, and dolomite (locally stromatolitic); evaporite pseudomorphs",850.0,720.0,"sandstone,mudstone,conglomerate,mudstone,mudstone,dolostone,evaporite","101,101,101,101,101,000,000"
+Mundine Well Dolerite Suite,"Dolerite dykes, sills, and small intrusions with locally abundant xenoliths and potassic alteration of wallrocks; includes minor quartz diorite, syenite, tonalite, and biotite monzogranite",755.0,755.0,"dolerite,mud,coarse_grained_plutonic_crystalline_igneous_rock,adamellite,ultrapotassic_rock,diorite,syenite,tonalite,monzogranite","100,75,69,56,68,101,101,101,101"
+Munganbrina Monzogranite,"Monzogranite; banded, medium to coarse grained; locally seriate to porphyritic; weakly foliated and metamorphosed",3310.0,3310.0,"monzogranite,bituminous_coal","101,71"
+Mungarinya Monzogranite,Feldspar(--quartz) porphyritic biotite monzogranite; massive to weakly foliated; locally well developed flow alignment of phenocrysts and schlieren; locally ghost banded; weakly metamorphosed,2938.0,2938.0,"monzogranite,clinker,chert","101,62,67"
+Mungaroona Granodiorite,Hornblende--biotite granodiorite and minor biotite monzogranite; metamorphosed,2945.0,2945.0,"granodiorite,monzogranite","101,101"
+Munglinup Gneiss,Granitic gneiss interlayered with mafic amphibolite; includes intrusions of Paleoproterozoic granitic rocks,2700.0,1600.0,"mafic, intermediate_plutonic_rock, gabbro, granite, gneiss, amphibolite","101,101,48"
+Munkayarra Shale,Claystone and shale,247.2,201.3,"mudstone,mudstone","101,101"
+Munni Munni Intrusion,"Gabbro, leucogabbro, serpentinized peridotite and dunite, pyroxenite, and minor anorthosite; metamorphosed",2925.0,2924.0,"gabbro,dolerite,peridotite,dacite,pyroxenite,anorthosite","101,73,101,80,101,101"
+Munyu Sandstone,Quartz sandstone and conglomerate,1000.0,810.0,"sandstone,conglomerate","101,101"
+Murchison Supergroup,Pyroxene spinifex-textured basalt and local basalt; locally variolitic; metamorphosed,3000.0,2700.0,"basalt, coarse_grained_plutonic_crystalline_igneous_rock, schist, volcaniclastic_mud, ultramafic_rock, felsic, mafic, siliciclastic_sediment, aeolinite","101,101"
+Murrouli Basalt,Metabasalt and metakomatiitic basalt,2825.0,2800.0,"basalt,basalt","101,101"
+Musgrave Province metagranitic unit,Metagranite; undivided,1220.0,995.0,granite,101
+Musgrave Province metamorphic unit,Fault breccia,1085.0,541.0,"gneiss, felsic, breccia, mylonite",101
+Myanna Leucogranite,Biotite--muscovite monzogranite; locally with quartz and K-feldspar phenocrysts; massive to weakly foliated,2851.0,2831.0,"monzogranite,vein","101,101"
+Mystery Monzogranite,"Fine-grained, equigranular biotite monzogranite",2650.0,2650.0,monzogranite,101
+Nadarra Formation,"Silty micritic limestone; includes minor calcrete; muddy, commonly silicified; lacustrine; may extend into Pleistocene",5.333,2.58,"limestone,calcrete,mud,halite_stone,limestone","101,101,75,80,70"
+Nallana Formation,"Basalt with minor ultramafic, felsic, and sedimentary units; metamorphosed",3130.0,3128.0,"basalt,ultramafic_rock,felsic,sediment","101,80,101,84"
+Nandingarra Granodiorite,Biotite--hornblende granodiorite to tonalite; equigranular; contains inclusions of Tambina Supersuite tonalite; metamorphosed,3313.0,3300.0,"granodiorite,tonalite,tonalite","101,101,101"
+Nangetty Formation,"Diamictite, shale (locally varvoid), conglomerate, sandstone",323.2,290.1,"diamictite,mudstone,conglomerate,sandstone","101,101,101,101"
+Nannine Tonalite,tonalite,2787.0,2782.0,tonalite,-1
+Nanutarra Formation,"Sandstone, siltstone, lesser pebble to cobble conglomerate; texturally immature",145.0,113.0,"sandstone,mudstone,gravel,conglomerate","101,101,92,101"
+Nanutarra Formation and Yarraloola Conglomerate,"Poorly sorted sandstone (in places glauconitic), cobble to boulder conglomerate, and siltstone",145.0,113.0,"sandstone,gravel,conglomerate,mudstone","101,92,101,101"
+Narimbunna Dolerite,Dolerite and gabbro sills intruded into Edmund Group,1465.0,1449.0,"dolerite,gabbro","101,100"
+Narndee Igneous Complex,"dolerite, gabbro",2799.0,2799.0,"pyroxenite, dolerite, gabbro, anorthosite, dacite",-1
+Narndee Igneous Complex  lower zone,serpentinite,2799.0,2799.0,"pyroxenite, gabbroid, peridotite, serpentinite",-1
+Narndee Igneous Complex  middle zone,"leucogabbronorite, gabbronorite",2799.0,2799.0,"pyroxenite, gabbronorite, foid_gabbroid, serpentinite, gabbroid, leucogabbronorite, anorthosite",-1
+Narndee Igneous Complex  ultramafic zone,dunite,2799.0,2799.0,"pyroxenite, serpentinite, hornblendite, peridotite, dunite",-1
+Narracoota Formation,"Basalt, locally pillowed and plagioclase-phyric, and mafic--ultramafic schist; interbedded with volcaniclastic and sedimentary rocks; metamorphosed",2014.0,1920.0,"basalt,schist,volcaniclastic_mud,iron_sediment","101,101,88,67"
+Narryer Terrane granitic unit,granite,3731.0,2608.0,"granite, granitoid",-1
+Narryer Terrane greenstones,ultramafic rock,3100.0,2700.0,"basalt, ultramafic_rock, mafic, quartzite, granulite, peridotite, gabbro, hornblende_rock, schist, sandstone, dolerite, till, gneiss, felsic, ultramaficrock, pisolith, mudstone, creep, amphibolite",-1
+Narryer Terrane metagranitic unit,gneiss,3731.0,3292.0,"granodiorite, basaltoid, monzogranite, ultramafic_rock, syenogranite, pegmatite, granitoid, granite, gneiss, amphibolite",-1
+Neoproterozoic sedimentary rocks  western Amadeus Basin,"Siltstone, carbonate, diamictite and sandstone; includes several formations of the western Amadeus Basin",810.0,541.0,"mudstone,carbonate,diamictite,sandstone","101,101,101,101"
+Neoproterozoic--Cambrian sedimentary rocks  Amadeus Basin,"Sandstone, minor siltstone and conglomerate",850.0,485.4,"sandstone,mudstone,conglomerate","101,101,101"
+Nerrely Leucogranite,Biotite(--tourmaline)-bearing leucogranite; undeformed,2765.0,2765.0,syenogranite,75
+Ngarrutji Monzogranite,Medium- to coarse-grained monzogranite with biotite and local hornblende; minor granodiorite and local pegmatite; metamorphosed,2666.0,2666.0,"monzogranite,micaite,hornblende_rock,granodiorite,pegmatite","101,88,77,101,101"
+Nickol River Formation,"Quartzose sandstone, conglomerate, breccia, carbonate rocks, chert, and banded-iron formation; local felsic volcanic and intrusive rocks; metamorphosed",3220.0,3160.0,"sandstone,conglomerate,breccia,carbonate,chert,banded_iron_formation,felsic,coarse_grained_plutonic_crystalline_igneous_rock","101,101,101,100,101,78,100,100"
+Nilling Formation,"Fine- to very coarse-grained sandstone; variably pebbly, micaceous and silty",1600.0,1091.0,"sandstone,micaite,mud","101,62,89"
+Ninety Seven Mile Formation and Elimberrie Formation,"Sandstone, diamictite, siltstone, limestone, phyllite, quartzite, metabasalt, metatuff, and metarhyolite",1000.0,541.0,"sandstone,diamictite,mudstone,limestone,phyllite,quartzite,basalt,tuff,rhyolite","101,101,101,101,101,000,000,000,000"
+Ningbing Group,"Limestone reef complexes; cyanobacterial limestone, limestone breccia, shale, and sandstone",372.2,358.9,"complex,limestone,breccia,mudstone,sandstone","101,101,101,101,101"
+Ninghan Gabbro,dolerite,2801.0,2792.0,dolerite,-1
+Nob Well Intrusion,Serpentinized peridotite and metapyroxenite,3460.0,3427.0,"peridotite,pyroxenite","101,101"
+Nooloo Formation,"Thinly bedded dolomite, limestone, shale, and sandstone",1000.0,635.0,"dolostone,limestone,mudstone,sandstone","101,101,101,101"
+Noongal Gabbro,peridotite,2801.0,2792.0,peridotite,-1
+Noonkanbah Formation,"Siltstone, shale, and sandstone; minor carbonate",286.0,272.3,"mudstone,mudstone,sandstone,carbonate","101,101,101,101"
+Norie Group,banded_iron_formation,2825.0,2800.0,"basalt, schist, basaltoid, dolerite, banded_iron_formation",-1
+Nornalup Zone gneissic unit,Layered quartz--feldspar--biotite(--hornblende--garnet) gneiss; protolith unknown,1800.0,1280.0,gneiss,101
+Nornalup Zone metagranitic unit,Granitic gneiss interlayered with metagabbro; may include intrusions of Recherche and Esperance Supersuites,1809.0,1140.0,"acid_plutonic_rock, gneiss, gabbro, granitoid","101,101,52"
+North Pole Monzogranite,Biotite monzogranite; equigranular to weakly porphyritic,3446.0,3446.0,monzogranite,101
+North Shaw Tonalite,"Metamorphosed hornblende tonalite to diorite; equigranular, with local plagioclase phenocrysts",3468.0,3468.0,"tonalite,diorite,coal","101,101,67"
+North Star Basalt,Mafic volcanic rocks; minor ultramafic rocks and chert; metamorphosed,3515.0,3490.0,"mafic,ultramafic_rock,chert","100,65,101"
+North Whundo Intrusion,"Gabbro, leucogabbro, and dolerite; metamorphosed",2930.0,2924.0,"gabbro,dolerite,dolerite","101,73,101"
+Northampton Inlier gneissic unit,Quartzofeldspathic gneiss,1150.0,1083.0,gneiss,101
+Northampton Inlier granitic unit,Granitic rock,1068.0,989.0,granitoid,89
+Northampton Inlier metamorphosed mafic intrusive unit,Metamorphosed gabbroic rock,1150.0,1083.0,gabbroid,89
+Northampton Inlier metasedimentary unit,Paragneiss,1150.0,1083.0,"quartzite, gneiss, paragneiss",101
+Northern Foreland mafic unit,"Metamorphosed mafic intrusive rock, undivided",2900.0,2660.0,"coarse_grained_plutonic_crystalline_igneous_rock, ultrabasic_volcanic_rock, ultramafic_rock, mafic, till",100
+Northern Foreland metagranitic unit,Granitic gneiss; locally migmatitic; includes mafic layers and enclaves,3131.0,2500.0,"granite, granodiorite, monzogranite, syenogranite, mafic, granitoid, greenstone, gabbro, gneiss","101,101"
+Northern Foreland unit,"Banded meta-iron formation, metachert, metasedimentary rocks and amphibolite",2900.0,2660.0,"quartzite, banded_iron_formation, chert, ultrabasic_volcanic_rock, sandstone, conglomerate, iron_sediment, amphibolite","81,101,67,101"
+Numbana Monzogranite,Medium- to coarse-grained feldspar(--quartz) porphyritic monzogranite; massive to weakly foliated; local flow-aligned feldspar phenocrysts; local garnet-bearing pegmatite and granite dykes,2851.0,2831.0,"monzogranite,feldspathic_wacke,pegmatite,granite","101,58,101,100"
+Oldham Sandstone,Silicified quartz sandstone; with local pebbly lenses,1338.0,1229.0,sandstone,101
+Olive Queen Gabbro,"peridotite, pyroxenite",2793.0,2793.0,"peridotite, pyroxenite",-1
+Opal Gabbro,"gabbro, gabbronorite, leucogabbro, dolerite",2735.0,2711.0,"gabbro, gabbronorite, leucogabbro, dolerite",-1
+Opaline Well Intrusion,"Gabbro and dolerite; local dunite, peridotite, pyroxenite, and basaltic rock; metamorphosed",2954.0,2948.0,"gabbro,dolerite,bituminous_coal,peridotite,pyroxenite,basaltoid","101,101,53,101,101,89"
+Orpheus Supersuite,"Gabbro, leucogabbro, serpentinized peridotite and dunite, pyroxenite, and minor anorthosite; metamorphosed",3023.0,3012.0,"pyroxenite, coarse_grained_plutonic_crystalline_igneous_rock, granodiorite, lamprophyre, monzogranite, monzodiorite, dolerite, peridotite, gabbro, anorthosite, dacite","101,73,101,80,101,101"
+Osborne Formation,"Interbedded sandstone, siltstone, shale, and claystone; characteristically glauconitic",113.0,89.8,"sandstone,mudstone,mudstone,mudstone","101,101,101,101"
+Oscar Range Group,"Sandstone, siltstone, shale, conglomerate, and altered mafic igneous rock",1000.0,541.0,"sandstone,mudstone,mudstone,conglomerate,mafic","101,101,101,101,100"
+Otorowiri Formation,"Micaceous siltstone, shale, minor glauconitic sandstone",163.5,139.8,"mudstone,mudstone,sandstone","101,101,101"
+Owens Gully Diorite,Metamorphosed quartz diorite; foliated to gneissic,3465.0,3462.0,"diorite,gneiss","101,86"
+Padbury Group,"Sandstone, siltstone, mudstone, banded iron-formation, granular iron-formation, conglomerate, and dolostone",1983.0,1811.0,"sandstone,mudstone,mudstone,bituminous_coal,gravel,conglomerate,dolostone","101,101,101,71,75,101,101"
+Paddy Market Formation,"Banded iron-formation, chert, siliciclastic sedimentary rocks, and local felsic volcanic rocks; metamorphosed",3228.0,3176.0,"bituminous_coal,chert,conglomerate,felsic","71,101,56,100"
+Paleozoic siliciclastic units  Canning Basin,"Sandstone and siltstone, eastern Canning Basin",541.0,252.17,"sandstone,mudstone","101,101"
+Palkapiti Formation,Undivided felsic volcanic and siliclastic sedimentary rocks; metamorphosed,2770.0,2769.0,"felsic,sedimentary_rock","100,57"
+Panorama Formation,Felsic volcanic rock; local sedimentary rock; metamorphosed,3448.0,3424.0,"felsic,clastic_sedimentary_rock","100,60"
+Panton Suite,Metamorphosed layered mafic--ultramafic intrusions,1856.0,1856.0,fine_grained_ultramafic_rock,62
+Paperbark Supersuite,"Granite, microgranite, gabbro, layered mafic--ultramafic intrusions, and felsic volcanic rock",1864.0,1852.0,"granite,monzogranite,gabbro,fine_grained_ultramafic_rock,felsic","101,75,101,62,100"
+Parda Formation,Mudstone; interbedded fine-grained sandstone,145.0,113.0,"mudstone,sandstone","101,101"
+Pargee Sandstone,Sandstone; minor conglomerate,1760.0,1735.0,"sandstone,conglomerate","101,101"
+Parmelia Group,Predominantly sandstone; most formations recognized only in subsurface,163.5,139.8,sandstone,101
+Paterson Formation,"Conglomerate (including diamictite), sandstone, and siltstone; largely glacigene",323.2,290.1,"conglomerate,sandstone,mudstone,glacial_deposit","101,101,101,58"
+Peak Hill Schist,"Quartz muscovite schist, mylonitic schist, and phyllonite",3131.0,1600.0,"schist,schist,mylonite","101,101,101"
+Pear Creek Formation,"Conglomerate and other siliciclastic rocks interlayered with basalt; clasts range from boulders to pebbles; dominantly basaltic clasts; granitic, felsic volcanic, and chert clasts present locally",2735.0,2713.0,"conglomerate,siliciclastic_sediment,basalt,gravel,gravel,basaltic_andesite,granitoid,felsic,chert","101,63,101,59,92,62,82,100,100"
+Peawah Granodiorite,Hornblende--biotite granodiorite and tonalite; metamorphosed,2948.0,2948.0,"granodiorite,tonalite","101,101"
+Pentecost Sandstone,"Quartz sandstone, pebbly sandstone, siltstone, and claystone",1835.0,1740.0,"sandstone,sandstone,mudstone,mudstone","101,101,101,101"
+Peter Well Granodiorite,granodiorite,2759.0,2746.0,granodiorite,-1
+Petermarer Monzogranite,Biotite monzogranite; seriate to strongly K-feldspar porphyritic; weakly metamorphosed,2940.0,2940.0,monzogranite,101
+Petroglyph Gneiss,Tonalitic orthogneiss with sheeted pegmatitic granitic veins and local white leucogranite,3428.0,3420.0,"orthogneiss,vein,syenogranite","101,101,60"
+Pigeon Rocks Monzogranite,Biotite monzogranite; equigranular; metamorphosed,2729.0,2729.0,monzogranite,101
+Pilbara Craton granitic unit,Undivided granitic rock; metamorphosed,3650.0,2830.0,granitoid,69
+Pilbara Craton greenstones,Amphibolite with abundant granitic dykes and veins; local interleaved metamorphosed ultramafic rocks,3530.0,2930.0,"quartzite, coarse_grained_plutonic_crystalline_igneous_rock, schist, albitized_granite, ultramafic_rock, felsic, sandstone, mafic, arenite, peridotite, conglomerate, iron_sediment, gabbro, amphibolite, vein","101,54,101,54"
+Pilbara Creek Monzogranite,Biotite monzogranite and syenogranite; leucocratic; weakly foliated to massive; metamorphosed,2945.0,2919.0,"monzogranite,syenogranite,leucitic_rock","101,101,74"
+Pilbara Supergroup,Amphibolite; metamorphosed mafic volcanic and intrusive rocks; locally schistose,3515.0,3235.0,"coarse_grained_plutonic_crystalline_igneous_rock, schist, ultramafic_rock, mafic, amphibolite, vein","101,100,100"
+Pilbara craton greenstones,"Foliated interlayered psammite and pelite, typically chloritic; includes some chlorite--actinolite schist and phyllite",3530.0,2930.0,"sandstone,mudstone,chloritolite,schist,phyllite","86,101,76,101,101"
+Pincunah Monzogranite,"Porphyritic biotite(--hornblende) monzogranite; feldspar and quartz phenocrysts, commonly aligned; metamorphosed",2945.0,2919.0,"monzogranite,metasomatic_rock,vein","101,59,101"
+Pindilya Formation,"Poorly sorted sandstone, commonly lithic, and granule to pebble conglomerate; generally very silicified",23.03,5.333,"sandstone,gravel,conglomerate,mud","101,93,101,57"
+Pinjian Chert Breccia,Chert breccia and poorly bedded chert; overlies Carawine Dolomite,2630.0,1317.0,"breccia,chert,dolostone","101,101,101"
+Pinnacle Hill Gneiss,Banded metatonalite and metagranodiorite gneiss; xenoliths of amphibolite and leucocratic granitic gneiss,3130.0,3114.0,"tonalite,gneiss,amphibolite,gneiss","101,101,101,101"
+Pirgan Monzogranite,monzogranite,2697.0,2665.0,monzogranite,-1
+Pitjantjatjara Supersuite,Metagranite and gneiss,1219.0,1148.0,"monzogranite, mylonite, granitoid, granite, gneiss","101,101"
+Pitjantjatjara Supersuite 1,Metagranite and gneiss,1219.0,1195.0,"granite,gneiss","101,101"
+Pitjantjatjara Supersuite 2,Metagranite and gneiss,1188.0,1148.0,"granodiorite, mylonite, granitoid, gabbro, granite, gneiss","101,101"
+Point Salvation Monzogranite,Biotite monzogranite; fine- to coarse-grained; seriate to K-feldspar-porphyritic; abundant leucogranitic layers and schlieren; metamorphosed,2665.0,2663.0,"monzogranite,leucitic_rock,clinker","101,57,62"
+Polelle Group,"mafic, ultramafic, actinolite, tremolite",2800.0,2735.0,"andesite, ultramafic, basalt, actinolite, schist, felsic, mafic, tremolite, dacite",-1
+Pollock Hills Formation,"Metadacite, metarhyodacite, and volcaniclastic metasedimentary rock",1677.0,1677.0,"dacite,rhyolite,volcaniclastic_breccia","101,101,62"
+Poocatche Monzogranite,Muscovite--biotite monzogranite; seriate to porphyritic; massive to weakly foliated; locally abundant pegmatite,2851.0,2831.0,"monzogranite,pegmatite","101,101"
+Poole Sandstone,Quartz sandstone and minor siltstone,292.0,287.0,"sandstone,mudstone","101,101"
+Pooranoo Metamorphics,"Pelitic and psammitic schist, quartz metasandstone, feldspathic metasandstone and metaconglomerate, and phyllite",1758.0,1682.0,"mudstone,schist,sandstone,sandstone,conglomerate,phyllite","77,101,101,101,101,100"
+Portree Suite,Granitic rock; metamorphosed,2946.0,2946.0,granitoid,89
+Pottoyu Granite Suite,"Fine- to coarse-grained, foliated, biotite metagranite",1192.0,1148.0,granite,101
+Powdar Monzogranite,Leucocratic monzogranite; locally coarsely porphyritic; metamorphosed,2935.0,2935.0,monzogranite,101
+Premier Coal Measures,"Interbedded poorly sorted feldspathic sandstone, carbonaceous shale, coal; pebble conglomerate",290.1,272.3,"sandstone,mudstone,coal,conglomerate","101,101,101,101"
+Prenti Dolerite,Dolerite sill; fine- to medium-grained dolerite,1066.0,1066.0,"dolerite,dolerite","100,101"
+Prices Creek Group,"Siltstone, shale, limestone, and dolomitic sandstone",485.4,458.4,"mudstone,mudstone,limestone,sandstone","101,101,101,101"
+Proterozoic mafic intrusive unit,Undivided mafic intrusive rock,2500.0,541.0,"dolerite, mud, gabbro, coarse_grained_plutonic_crystalline_igneous_rock",100
+Proterozoic siliciclastic rocks,"Unassigned siliciclastic rocks; sandstone, conglomerate, siltstone and microbial laminate; commonly silicified and brecciated",2500.0,541.0,"siliciclastic_sediment,sandstone,conglomerate,mudstone,anthracite,breccia","63,101,101,101,55,82"
+Punkerri Sandstone,"Sandstone, reddish brown, flaggy, micaceous to feldspathic, and lesser siltstone",635.0,541.0,"sandstone,micaite,feldspathic_wacke,mudstone","101,62,79,101"
+Puntapunta Formation,"Dolarenite interbedded with dolomite, siltstone, and shale; thinly bedded, fine to medium grained",950.0,630.0,"arenite,dolostone,mudstone,mudstone,china_clay","82,101,101,101,62"
+Pussy Cat Group,"Matrix- to clast-supported conglomerate; mainly basalt cobbles, with minor rhyolite and granite; interbedded with medium- to fine-grained siliciclastic rocks",1077.0,1047.0,"rhyolite, basalt, cracks, coarse_grained_plutonic_crystalline_igneous_rock, diamictite, micaite, felsic, dolerite, mafic, siliciclastic_sediment, ironstone/phosphorite, conglomerate, granite, evaporite, vein","101,100,101,101,63"
+Pyradie Formation,Pyroxene spinifex-textured basaltic flows and pillow lava with mafic volcaniclastic rock; minor chert and local komatiite; metamorphosed,2730.0,2718.0,"basaltoid,alluvium,mafic,chert,kalsilitic_rock","62,57,100,101,101"
+Pyramid Hill Formation,"Banded iron-formation, chert, and shale; metamorphosed",3228.0,3176.0,"bituminous_coal,chert,mudstone","71,101,101"
+Quadrio Formation and Cornelia Sandstone,"Shale, siltstone, chert, and minor sandstone; quartz sandstone to quartzite, and minor siltstone",1845.0,1070.0,"mudstone,mudstone,chert,sandstone,sandstone,quartzite,mudstone","101,101,101,101,101,000,000"
+Quinns Basalt Member,maficvolcanic,2825.0,2800.0,maficvolcanic,-1
+Racecourse Tonalite,granite,2760.0,2760.0,"sedimentary_rock, granite",-1
+Radio Hill Intrusion,"Gabbro, pyroxenite, and minor peridotite; metamorphosed",2929.0,2929.0,"gabbro,pyroxenite,peridotite","101,101,101"
+Railway Supersuite,"Metatonalite, metagranodiorite, and metamonzogranite; gneissic and with greenstone xenoliths; local ultramafic--mafic intrusive rocks",3130.0,3093.0,"tonalite,granodiorite,monzogranite,gneiss,greenstone,coarse_grained_plutonic_crystalline_igneous_rock","101,101,101,86,100,100"
+Rapide Granite,"Garnet-bearing biotite metagranite, mostly porphyritic with tabular feldspars; weak to strong foliation; may include banded gneiss",1779.0,1767.0,"granite,feldspathic_arenite,gneiss","101,57,101"
+Ravelstone Formation,Lithic wacke and siltstone; chloritic fragments; graded beds,2014.0,1920.0,"wacke,mudstone,chloritolite","101,101,60"
+Rea Dacite,Rhyolite and dacite; quartz--feldspar porphyritic; chiefly intrusive; metamorphosed,3023.0,3014.0,"rhyolite,dacite,vein,coarse_grained_plutonic_crystalline_igneous_rock","101,101,100,101"
+Recherche Supersuite,Granitic gneiss and metagranite; heterogeneous; locally with pods or lenses of metagabbro; may include intrusions of Esperance Supersuite and remnants of Paleoproterozoic basement,1330.0,1276.0,"sedimentary_rock, granitoid, gabbro, granite, gneiss, diorite","101,101,101,50,50"
+Red Hill Volcanics,"Felsic volcaniclastic rocks, intrusive porphyritic dacite and dacitic to rhyolitic lava; includes debris-flow, turbidite and fluvial facies; metamorphosed",3009.0,2991.0,"felsic,dacite,dacitoid,rhyolitoid,turbidites,alluvium","100,101,80,67,95,64"
+Red Rock Formation,"Lithic quartz sandstone, pink feldspathic quartz sandstone, pebbly sandstone, conglomerate, siltstone, mudstone, basalt flows, and basaltic breccia",1827.0,1784.0,"sandstone,sandstone,sandstone,conglomerate,mudstone,mudstone,basalt,breccia","101,101,101,101,101,000,000,000"
+Redcliff Pound Group,"Quartz sandstone; minor conglomerate, siltstone, shale, carbonate and glauconitic sandstone",650.0,510.0,"sandstone,conglomerate,mudstone,mudstone,carbonate,sandstone","101,101,101,101,101,000"
+Regal Formation,"Massive and pillowed basalt, with local komatiitic peridotite; minor chert; metamorphosed",3200.0,3160.0,"basalt,peridotite,chert","101,101,101"
+Revolver Creek Formation,"Quartz sandstone, lithic quartz sandstone, feldspathic quartz sandstone, and siltstone and mudstone; dolerite, basalt, and basaltic breccia; minor conglomerate",2500.0,1600.0,"sandstone,sandstone,sandstone,mudstone,mudstone,dolerite,basalt,breccia,conglomerate","101,101,101,101,101,000,000,000,000"
+Robinson Range Formation,"Ferruginous shale, siltstone, banded iron-formation, and chert",1983.0,1811.0,"mudstone,mudstone,bituminous_coal,chert","101,101,71,101"
+Rocklea Inlier greenstones,"Basaltic and andesitic flows, and associated volcaniclastic rocks; metamorphosed",3530.0,3225.0,"basalt, chert, andesitoid, iron_sediment, volcaniclastic_breccia, sandstone, conglomerate, mudstone, dolomicrite","86,76,61"
+Rocklea Inlier metagranitic unit,"Foliated, gneissic, or migmatitic metagranitic rock",3225.0,3221.0,"gneiss,granitoid","86,63"
+Rocky Bore Granite,Porphyritic monzogranite with tabular feldspar phenocrysts; medium grained; metamorphosed,2615.0,2615.0,"monzogranite,feldspathic_arenite","101,57"
+Roebourne Group,Basalt and komatiite; minor chert; metamorphosed,3280.0,3270.0,"basalt,kalsilitic_rock,chert","101,101,101"
+Rooney and Springo Inliers granitic unit,Granite to granodiorite; metamorphosed and variably foliated,3530.0,2895.0,"granite,granodiorite","101,101"
+Rooney and Springo Inliers greenstones,"Sedimentary rock, undivided; includes oligomicitic and polymictic conglomerate, pebbly sandstone, mudstone, siltstone, and chert; metamorphosed",3530.0,2930.0,"iron_sediment,dolomicrite,conglomerate,sandstone,mudstone,mudstone,chert","67,70,101,101,101,101,101"
+Rothsay Suite,granodiorite,2763.0,2742.0,granodiorite,-1
+Roundtop Komatiite,Komatiite with local olivine spinifex texture; minor cumulate and talc--tremolite schist; metamorphosed,2920.0,2718.0,"kalsilitic_rock,schist","101,101"
+Ruby Plains Group,"Sandstone, dolomite, stromatolitic dolomite, dolomitic mudstone, mudstone, and siltstone",1000.0,720.0,"sandstone,dolostone,dolostone,mudstone,mudstone,mudstone","101,101,101,101,101,000"
+Ruins Dolerite,Coarse- to fine-grained metadolerite; equigranular to porphyritic,1872.0,1861.0,dolerite,101
+Rushall Slate,Metamorphosed shale and siltstone; minor sandstone; graded beds; locally well developed slaty cleavage,2955.0,2943.0,"mudstone,mudstone,sandstone","101,101,101"
+Ryansville Formation,"pelite, psammite, felsic volcaniclastic",2735.0,2700.0,"chert, psammite, felsicvolcaniclastic, sandstone, conglomerate, clastic_sediment, mudstone, pelite",-1
+Salisbury Gneiss,Pelitic gneiss and mafic granulite; porphyritic granitic gneiss and metagabbro,1320.0,1214.0,"gneiss,granulite,gneiss,gabbro","101,101,101,101"
+Sally Downs Supersuite,Undivided granite,1832.0,1808.0,"gabbro, granite, fine_grained_ultramafic_rock",101
+Sally Malay Suite,Layered mafic--ultramafic intrusions,1846.0,1844.0,fine_grained_ultramafic_rock,62
+Salt Creek Gabbro,Gabbro or gabbronorite; locally intrusive into metasedimentary rocks,1300.0,1000.0,"gabbro,gabbroid,coarse_grained_plutonic_crystalline_igneous_rock,iron_sediment","101,101,101,67"
+Samuel Formation and Bejah Claystone,"Siltstone, sandstone and claystone; carbonaceous, locally glauconitic; radiolarian siltstone in Bejah Claystone",125.0,100.5,"mudstone,sandstone,mudstone,carbonate,glaucophanite,mudstone","101,101,101,76,75,101"
+San Sou Monzogranite,Medium- to fine-grained biotite monzogranite; scattered fine-grained mafic inclusions,1788.0,1788.0,"monzogranite,mafic","101,100"
+Satirist Monzogranite,Leucocratic monzogranite and syenogranite; metamorphosed,2938.0,2931.0,"monzogranite,syenogranite","101,101"
+Scamp Formation,"Rhyolite; possibly lava flows and pyroclastic rocks, but may include subvolcanic intrusions; typically shows a fine- to coarse-grained granofelsic texture, indicating weak to moderate recrystallization",1077.0,1047.0,"rhyolite,fluvial_deposit,pyroclastic_rock,andesite,ash,granofels","101,53,91,60,57,64"
+Scotty Creek Formation,Arkosic sandstone with subordinate conglomerate; metamorphosed,2662.0,2640.0,"sandstone,conglomerate","101,101"
+Scuddles Member,"dacite, rhyodacite, felsic volcaniclastic",2958.0,2958.0,"dacite, rhyodacite, felsic volcaniclastic",-1
+Seeligson Monzogranite,monzogranite,2626.0,2626.0,monzogranite,-1
+Shay Intrusion,"Gabbro, norite, and pyroxenite; metamorphosed",2954.0,2948.0,"gabbro,gabbroid,pyroxenite","101,101,101"
+Sherlock Intrusion,"Gabbro, and minor pyroxenite and granophyre; metamorphosed",2950.0,2948.0,"gabbro,pyroxenite,lamprophyre","101,101,67"
+Shingle Creek Group,"Basalt and mafic volcaniclastic rock; sandstone, conglomerate, pebbly sandstone, and siltstone; intruded by Balgara Dolerite sills",2208.0,2031.0,"basalt,mafic,sandstone,conglomerate,sandstone,mudstone,dolerite","101,100,101,101,101,000,000"
+Siffleetes Granodiorite,Metamorphosed biotite--hornblende granodiorite; locally common amphibolite and diorite xenoliths; moderately to strongly foliated,3274.0,3224.0,"granodiorite,amphibolite,diorite","101,101,100"
+Singleton Formation,"basalt, komatiitic basalt",2825.0,2800.0,"basalt, komatiitic basalt",-1
+Sir Frederick Conglomerate,Cobble to boulder conglomerate; lesser interbedded sandstone,635.0,510.0,"gravel,conglomerate,sandstone","92,101,101"
+Sisters Supersuite,Granitic and ultramafic to mafic intrusive rocks; metamorphosed,2954.0,2919.0,"coarse_grained_plutonic_crystalline_igneous_rock, monzogranite, ultramafic_rock, granitoid, leucitic_rock, vein","82,80,100"
+Skates Hills Formation,"Stromatolitic dolomite, sandstone, siltstone, chert, and basal conglomerate; evaporite pseudomorphs",850.0,720.0,"dolostone,sandstone,mudstone,chert,conglomerate,evaporite","101,101,101,101,101,000"
+Skirmish Hill Formation,Dacitic to rhyolitic volcanic and volcaniclastic rock; minor basalt; metamorphosed,1085.0,1075.0,"dacitoid,rhyolitoid,volcaniclastic_mud,basalt","80,69,74,101"
+Slatey Creek Granite,"Muscovite and biotite monzogranite, locally porphyritic; minor biotite granodiorite",1795.0,1795.0,"carbonatite,monzogranite,granodiorite","71,101,101"
+Snell Well Granodiorite,Foliated granodiorite; metamorphosed,3013.0,3012.0,granodiorite,101
+Snowys Dam Formation,"Sedimentary gneiss; psammitic, semipelitic, and locally calc-silicate and iron-rich layers; commonly interlayered with metagabbro, or mafic and felsic granulite",1332.0,1304.0,"granulite, mafic, pisolith, mudstone, gabbro, gneiss","101,75,86,101,101,101"
+Sophie Downs Suite,"Leucocratic metagranite, metarhyolite, metabasalt and amphibolite, and minor metasedimentary rock",1913.0,1907.0,"granite,rhyolite,basalt,amphibolite,iron_sediment","101,101,101,101,67"
+South Mallina Basalt Member,"Siliceous high-Mg basalt; typically variolitic, commonly with pyroxene spinifex textures, and pillowed",2950.0,2948.0,"basalt,pisolith,peridotite","101,74,59"
+South West Terrane cataclasite,Mylonite and gneiss; derived from Archean and Proterozoic deformation of Archean rocks; adjacent to Darling Fault,3100.0,541.0,"mylonite,gneiss,fault","101,101,101"
+South West Terrane greenstones,Amphibolite,3100.0,2650.0,"basalt, chert, ultramafic_rock, hornblendite, paragneiss, melilitolite, mafic, banded_iron_formation, quartzite, orthogneiss, granulite, spilite, hybrid_sedimentary_rock, peridotite, complex, gabbro, andesite, coarse_grained_plutonic_crystalline_igneous_rock, schist, till, granite, gneiss, migmatite, amphibolite, pyroclastic_rock, felsic, wacke, mudstone, talc_rock",101
+South Whundo Monzogranite,"Monzogranite; massive, medium- to coarse-grained; metamorphosed",3013.0,3013.0,monzogranite,101
+Southern Hills Suite,"Syenogranite gneiss, typically interlayered with metagabbro",1305.0,1288.0,"gneiss,gabbro","101,101"
+Spear Hill Monzogranite,Coarse-grained to K-feldspar porphyritic biotite monzogranite,2851.0,2851.0,monzogranite,101
+Speewah Basin felsic extrusive unit,"Porphyritic dacite; fine-grained, massive or flow banded",1850.0,1784.0,"dacite,bituminous_coal","101,67"
+Speewah Group,"Sandstone, siltstone, and claystone; minor rhyolitic volcaniclastic siltstone",1835.0,1797.0,"sandstone,mudstone,mudstone,mudstone","101,101,101,101"
+Splinter Gneiss,"Gabbro gneiss, locally garnet-rich, and layered intermediate gneiss; contains intrusions of Esperance Supersuite monzogranite and pegmatite",1276.0,1276.0,"gneiss,gneiss,monzogranite,pegmatite","101,101,101,101"
+Split Rock Supersuite,"Undivided granitic rocks including monzogranite, syenogranite, and pegmatite",2851.0,2831.0,"monzogranite, syenogranite, pegmatite, granitoid, leucitic_rock","69,101,101,101"
+Stirling Range Formation,"Metasandstone, quartzite, slate, and phyllite",2000.0,1800.0,"sandstone,quartzite,slate,phyllite","101,101,101,101"
+Stockton Group,Diamictite overlain by claystone; lesser sandstone and siltstone,298.9,290.1,"diamictite,mudstone,sandstone,mudstone","101,101,101,101"
+Stockyard Basalt Member,"basalt, komatiitic basalt, felsic tuff",2800.0,2760.0,"basalt, komatiitic basalt, felsic tuff",-1
+Stokes Siltstone,Interbedded shale and siltstone; limestone; fine-grained sandstone,470.0,443.4,"mudstone,mudstone,limestone,sandstone","101,101,101,101"
+Strelley Monzogranite,"Hornblende--biotite monzogranite and granophyric monzogranite; local diorite, dolerite, and gabbro; metamorphosed",3239.0,3238.0,"monzogranite,monzogranite,diorite,dolerite,gabbro","101,101,101,101,101"
+Strelley Pool Formation,"Silicified carbonate rocks, sandstone, conglomerate, chert, and dolomite; stromatolitic; metamorphosed",3426.0,3350.0,"carbonate,sandstone,conglomerate,chert,dolostone,migmatite","100,101,101,101,101,78"
+Strutton Intrusion,"Gabbro, pyroxenite, and peridotite; metamorphosed",3460.0,3427.0,"gabbro,pyroxenite,peridotite","101,101,101"
+Stubbins Formation,"Metamorphosed dolerite sill; minor interlayered, metamorphosed feldspathic wacke, sandstone, siltstone, and mudstone",1864.0,1864.0,"quartzite, basalt, chert, sandstone, wacke, dolerite, mudstone, gabbro","100,101,101,101,101"
+Surprise Orthogneiss,Migmatitic quartz--biotite orthogneiss,2769.0,2765.0,orthogneiss,101
+Swincer Dolerite,Dolerite with minor gabbro; metamorphosed,2812.0,2812.0,"dolerite,gabbro","101,101"
+Sylvania Inlier granitic unit,Granite to granodiorite; metamorphosed and variably foliated,3239.0,2918.0,"granite,granodiorite","101,101"
+Sylvania Inlier greenstones,Komatiitic basalt; metamorphosed,3530.0,3239.0,"rhyolite, basalt, chert, schist, serpentinite, ultramafic_rock, felsic, volcaniclastic_breccia, bituminous_coal, sandstone, mafic, iron_sediment, peridotite, conglomerate, gabbro, mudstone, dolomicrite, dacite",101
+Tabba Tabba Leucogranite,Biotite(--muscovite) granite; seriate to equigranular; fine to medium grained; massive to weakly foliated and metamorphosed,2851.0,2831.0,granite,101
+Table Hill Volcanics,Basalt (in part vesicular and/or amygdaloidal) in multiple flows; minor interbedded sandstone and siltstone,508.0,505.0,"basalt,sandstone,mudstone","100,101,101"
+Table Top Formation,Amphibolite; metamorphosed mafic volcanic and intrusive rocks; locally schistose,3515.0,3515.0,"amphibolite,mafic,coarse_grained_plutonic_crystalline_igneous_rock","101,100,100"
+Tabletop Zone granitic unit,"Granitic rock, amphibolite, metamorphosed ultramafic rock of the Krackatinny Supersuite, metamorphosed banded iron-formation, quartzite, and orthogneiss",1590.0,1310.0,"granitoid,amphibolite,coarse_grained_ultramafic_rock,quartzite,orthogneiss","89,101,52,101,101"
+Talbot Zone metasedimentary unit,"Quartzite, psammitic paragneiss, banded paragneiss, and pelitic schist; includes Larry Formation, Fingoon Quartzite, and Butler Creek and Poynton Formations",2500.0,1760.0,"quartzite,paragneiss,paragneiss,schist,quartzite","101,101,101,101,101"
+Talbot and Connaughton Zones metagranitic unit,"Augen orthogneiss derived from granitic rocks of the Kalkan Supersuite; includes minor orthogneiss derived from granite, mafic, ultramafic, and metasedimentary rocks",1801.0,1762.0,"mafic,ultramafic_rock,iron_sediment","101,80,67"
+Taliwanya Formation,"Arkose to arkosic sandstone, with local thick beds of polymictic conglomerate and rare thin interbeds of lithic wacke, siltstone, and shale; assignment to Throssell Range Group uncertain",911.0,650.0,"sandstone,sandstone,conglomerate,wacke,mudstone,mudstone","101,101,101,101,101,000"
+Tambina Supersuite,"Metagranodiorite with amphibolite xenoliths along contacts of amphibolite rafts; equigranular, mesocratic to melanocratic",3451.0,3416.0,"granodiorite, carbonatite, monzogranite, tonalite, greenstone, gneiss, amphibolite","101,100,58"
+Tambourah Monzogranite,"Pegmatitic to coarse-grained granite, generally as irregular patches in foliated biotite granodiorite (?Kavir granodiorite)",2851.0,2831.0,"pegmatite,granite,granodiorite","84,101,101"
+Tank 44 Gneiss,"Interlayered mafic and quartzofeldspathic gneiss with abundant leucosomes, locally with garnet",1800.0,1201.0,"sinter,gneiss,lime_microstone,garnetite","91,101,54,80"
+Tarcunyah Group,"Sandstone, siltstone, mudstone, and stromatolitic and non-stromatolitic dolomite; minor conglomerate",1000.0,635.0,"sandstone,mudstone,mudstone,migmatite,dolostone,conglomerate","101,101,101,78,101,101"
+Tarlwa Pool Tonalite,Foliated hornblende--biotite metatonalite,3236.0,3236.0,tonalite,101
+Tchukardine Formation,"Medium- to coarse-grained sandstone, quartz wacke, siltstone, and shale; minor conglomerate",635.0,541.0,"sandstone,wacke,mudstone,mudstone,conglomerate","101,101,101,101,101"
+Teague Granite,Alkali feldspar granite; leucocratic,2648.0,2648.0,"granite,leucitic_rock","101,74"
+Telegootherra Monzogranite,"monzogranite, syenogranite",2623.0,2623.0,"migmatite, monzogranite, syenogranite",-1
+Texas Downs Formation,"Fine- to coarse-grained sandstone, pebbly sandstone, conglomerate, siltstone, and mudstone, intercalated with basalt flows and basaltic breccia",1827.0,1784.0,"sandstone,sandstone,conglomerate,mudstone,mudstone,basalt,breccia","101,101,101,101,101,000,000"
+Thaduna Formation,"Lithic sandstone, litharenite, shale, siltstone, and quartz wacke; locally containing fragments of basaltic scoria and thin volcaniclastic lenses; minor dolomite",2170.0,1600.0,"sandstone,lithic_arenite,mudstone,mudstone,wacke,scoria,volcaniclastic_mud,dolostone","101,88,101,101,101,101,76,101"
+Thelman Monzogranite,Muscovite--biotite(--garnet) monzogranite; equigranular to weakly porphyritic; fine to medium grained; massive to weakly foliated; weakly metamorphosed,2851.0,2831.0,monzogranite,101
+Thirty Three Supersuite,"Leucocratic granite and metagranite, and pegmatite",995.0,939.0,"granite,granite,pegmatite","101,101,101"
+Throssell Range Group,"Sandstone, shale, limestone, and dolomite",911.0,650.0,"sandstone,mudstone,limestone,dolostone","101,101,101,101"
+Tickalara Metamorphics,Mafic extrusive and intrusive meta-igneous rock with interlayered metasedimentary rock; minor metagranitic rock,1865.0,1850.0,"mafic,coarse_grained_plutonic_crystalline_igneous_rock,iron_sediment,granitoid","100,100,67,89"
+Tjauwata Group,Metamorphosed siliciclastic sedimentary and volcanic rocks,1085.0,1040.0,"conglomerate,felsic","64,62"
+Tobin Formation,"Wacke, lithic sandstone, siltstone, abundant chert and banded iron-formation, and minor felsic volcaniclastic rocks; metamorphosed",2682.0,2640.0,"wacke,sandstone,mudstone,chert,bituminous_coal,felsic","101,101,101,101,71,100"
+Tollu Group,Rhyolitic and basaltic volcanic rocks; conglomerate and sandstone,1073.0,1026.0,"rhyolitoid,basaltoid,conglomerate,sandstone","84,67,101,101"
+Tooloo Group,"Siltstone, sandstone, granular iron-formation, dolomite, chert",2027.0,1650.0,"mudstone,sandstone,gravel,dolostone,chert","101,101,75,101,101"
+Toorare Tonalite,Hornblende metatonalite and metagranodiorite; foliated and locally gneissic,2995.0,2995.0,"tonalite,granodiorite,gneiss","101,101,86"
+Toppin Hill Formation,"Felsic volcanic and volcaniclastic rocks, with minor siliciclastic sedimentary rocks; metamorphosed",2699.0,2677.0,"felsic,volcaniclastic_mud,conglomerate","100,74,56"
+Tozer Formation,"Basalt and dacitic to rhyolitic lava and pyroclastic rocks, variable silicification and carbonate alteration; metamorphosed",3128.0,3118.0,"basalt,dacitoid,rhyolitoid,pyroclastic_rock,carbonate","101,80,67,91,100"
+Triberton Granodiorite,Biotite--hornblende granodiorite to tonalite; feldspar porphyritic; medium to coarse grained; common mafic xenoliths; weakly metamorphosed,3324.0,3277.0,"granodiorite,tonalite,metasomatic_rock,mafic","101,101,59,100"
+Trillbar formation,"Gabbro, microgabbro, mafic and ultramafic schist; minor mafic rock; metamorphosed",2014.0,1920.0,"gabbro,dolerite,mafic,schist,mafic","101,101,101,101,100"
+Tropicana Gneiss,"Metamorphosed banded iron-formation, metagabbro and metaleucogabbro; may include Archean or Paleoproterozoic metagranite",2800.0,1600.0,"chert, exotic_crystalline_igneous_rock, ultramafic_rock, dolerite, arenite, tonalite, gabbro, granite, gneiss","101,73,55,101"
+Tropicana Zone metagranitic unit,Metagranite; intrudes Tropicana or Hercules Gneiss,2800.0,1600.0,"granite,gneiss","101,101"
+Truslove Suite,Dominantly monzogranite; undeformed to moderately deformed; may include magnetite-rich varieties,1198.0,1162.0,monzogranite,101
+Tuckanarra Suite,monzogranite,2697.0,2665.0,"monzogranite, granodiorite",-1
+Tumbiana Formation,Basaltic volcanic rocks and carbonate rocks,2727.0,2715.0,"basaltoid,carbonate","67,100"
+Tumblagooda Sandstone,"Sandstone, minor siltstone and granule to pebble conglomerate",485.4,419.2,"sandstone,mudstone,gravel,conglomerate","101,101,93,101"
+Turee Creek Group,"Mudstone, siltstone, sandstone, conglomerate, dolomite; minor diamictite, limestone and iron formation; intruded by Balgara Dolerite sills",2445.0,2208.0,"mudstone,mudstone,sandstone,conglomerate,dolostone,diamictite,limestone,till,dolerite","101,101,101,101,101,101,101,67,100"
+Turkey Hill Formation,"Sandstone, siltstone and mudstone; possibly diamictite",720.0,541.0,"sandstone,mudstone,mudstone,diamictite","101,101,101,101"
+Twin Table Monzogranite,Monzogranite and alkali-feldspar granite; metamorphosed,3114.0,3114.0,"monzogranite,granite","101,101"
+Ularring Monzogranite,Even-grained monzogranite,2632.0,2632.0,monzogranite,101
+Umutju Granite Suite,Medium- to coarse-grained hornblende--pyroxene(--garnet) metagranite,1175.0,1148.0,granite,101
+Underwood Gneiss,"Granitic gneiss and migmatite; metatonalite, metagranodiorite, and metamonzogranite banding; strongly sheared",3484.0,3462.0,"gneiss,migmatite,tonalite,granodiorite,monzogranite","101,101,101,101,100"
+Upper Cretaceous carbonate rocks  greater Carnarvon Basin,"Chalky calcilutite, calcisiltite, calcarenite and marl",86.3,66.0,"calcilutite,calcilutite,calcarenite,marl","101,87,101,101"
+Voodoo Child Formation,"Interlayered mafic to ultramafic intrusive rocks, metabasalt to metadacite volcanic rocks, and metasedimentary rocks; may include Paleoproterozoic metagranite",1780.0,1700.0,"sinter,coarse_grained_plutonic_crystalline_igneous_rock,basalt,dacite,iron_sediment,granite","91,100,101,100,67,101"
+Wade Creek Formation,"Fine- to coarse-grained quartz sandstone, lithic quartz sandstone, pebbly sandstone, conglomerate, siltstone, and mudstone",1600.0,1000.0,"sandstone,sandstone,sandstone,conglomerate,mudstone,mudstone","101,101,101,101,101,000"
+Wadgingarra Gabbro,schist,2801.0,2792.0,schist,-1
+Wagina Sandstone,"Fine- to medium-grained, clayey quartz sandstone; minor conglomerate, shale, siltstone and coal",270.0,252.17,"sandstone,conglomerate,mudstone,mudstone,coal","101,101,101,101,101"
+Wahlgu Formation,"Sandstone, diamictite (commonly polymictic), siltstone, dolomite; characteristically reddish",720.0,635.0,"sandstone,diamictite,mudstone,dolostone","101,101,101,101"
+Waladah Gabbro,leucogabbro,2711.0,2711.0,leucogabbro,-1
+Waldburg Dolerite,Dolerite and gabbro sills intruded into Edmund Group,1517.0,1505.0,"dolerite,gabbro","101,100"
+Walganna Suite,"monzogranite, syenogranite",2650.0,2600.0,"micaite, monzogranite, syenogranite, sedimentary_rock, migmatite",-1
+Walgoo Monzogranite,monzogranite,2640.0,2600.0,monzogranite,-1
+Walgunya Trondhjemite,Quartz-rich biotite trondhjemite; medium to coarse grained; weakly metamorphosed,3324.0,3277.0,tonalite,101
+Wallal Sandstone,Sandstone; minor siltstone and conglomerate,174.1,157.3,"sandstone,mudstone,conglomerate","101,101,101"
+Wallareenya Granodiorite,Hornblende--biotite granodiorite and tonalite; massive to moderately foliated; locally inclusion-rich; weakly metamorphosed,2954.0,2954.0,"granodiorite,tonalite","101,101"
+Waloo Waloo Monzogranite,Biotite monzogranite; medium grained; weakly foliated; metamorphosed,2988.0,2988.0,monzogranite,101
+Waltha Woora Formation,"Stromatolitic dolomite, siltstone, shale, minor sandstone; discontinuous basal sandstone and conglomerate",1000.0,635.0,"dolostone,mudstone,mudstone,sandstone,sandstone,conglomerate","101,101,101,101,101,000"
+Walungurru Volcanics,Metadacite and metarhyodacite; may include intermediate to mafic metavolcanic rocks,1680.0,1645.0,"dacite,rhyolite,adinole,mafic","101,101,57,100"
+Waluwiya Suite,Foliated hornblende metagranodiorite to quartz metadiorite; may include two-pyroxene metagranite or migmatitc felsic rocks,1640.0,1630.0,"granodiorite,diorite,granite,felsic","101,101,101,100"
+Wangata Monzogranite,monzogranite,2626.0,2626.0,monzogranite,-1
+Wankanki Supersuite,Metamorphosed felsic volcanic rocks mixed with interlayered psammite and pelite,1319.0,1319.0,"phonolite, felsic, sandstone, mudstone, granite, gneiss","100,86,101"
+Wanna Formation,"White-weathering quartz sandstone, minor siltstone; characteristic large to very large scale cross bedding",485.4,419.2,"sandstone,mudstone,microsparstone","101,101,46"
+Warakurna Supersuite,"diorite, syenogranite",1085.0,1031.0,"fine_grained_ultramafic_rock, monzogranite, felsic, syenogranite, dolerite, mafic, granitoid, gabbro, granite, diorite",-1
+Warambie Basalt,"Vesicular basalt and basaltic andesite, locally porphyritic, and volcaniclastic and siliciclastic sedimentary rocks; metamorphosed",3010.0,2991.0,"basalt,andesite,volcaniclastic_mud,conglomerate","101,101,88,56"
+Warbadoo Tonalite,monzogranite,2743.0,2743.0,monzogranite,-1
+Warlawurru Supersuite,Strongly foliated to gneissic biotite(--hornblende) metasyenogranite; garnet-bearing; commonly migmatitic,1607.0,1583.0,"syenogranite,migmatite","101,84"
+Warnbro Group,"Interbedded sandstone, siltstone, and shale; minor conglomerate",139.8,113.0,"sandstone,mudstone,mudstone,conglomerate","101,101,101,101"
+Waroongunyah Formation,"Dolomite, in part stromatolitic, siltstone, shale; sandstone; evaporite pseudomorphs",1000.0,635.0,"dolostone,migmatite,mudstone,mudstone,sandstone,evaporite","101,64,101,101,101,100"
+Warrawoona Group,"Basalt; massive or pillowed, and locally variolitic; metamorphosed",3515.0,3427.0,"basalt, coarse_grained_plutonic_crystalline_igneous_rock, schist, serpentinite, kalsilitic_rock, felsic, mafic, peridotite, sediment",101
+Warriedar Suite,"talc, tremolite, serpentine, magnetite schist",2801.0,2792.0,"talc, tremolite, serpentine, magnetite schist",-1
+Warrigal Gneiss,"Foliated to gneissic, even-textured to sparsely porphyritic metamonzogranite; locally contains sheets and pods of amphibolite; cut by c. 1800 Ma pegmatite dykes; deformation is Paleoproterozoic",2758.0,2585.0,"gneiss,monzogranite,amphibolite,pegmatite","86,101,101,100"
+Warton Sandstone,White to buff quartz sandstone and feldspathic sandstone; siltstone interbeds; minor hematitic sandstone,1835.0,1740.0,"sandstone,sandstone,mudstone,sandstone","101,101,100,101"
+Wartu Monzogranite,Monzogranite; includes minor granite and granodiorite,2643.0,2643.0,"monzogranite,granite,granodiorite","101,101,101"
+Watch Point Formation,"Fine- to medium-grained sandstone, silty sandstone, and shale",1000.0,720.0,"sandstone,sandstone,mudstone","101,101,101"
+Wattagee Formation,basalt,2735.0,2700.0,"rhyolite, andesite, basalt, schist, felsic, mafic, dacite",-1
+Weaber Group,"Siltstone, shale, sandstone, conglomerate; subordinate carbonate",350.0,298.9,"mudstone,mudstone,sandstone,conglomerate,carbonate","101,101,101,101,101"
+Weeli Wolli Formation,"Banded iron-formation (commonly jaspilitic), mudstone, siltstone, and numerous dolerite sills; metamorphosed",2451.0,2450.0,"bituminous_coal,mudstone,mudstone,dolerite","71,101,101,100"
+West Pilbara Superterrane mylonitic unit,"Mylonitic granitic, felsic and mafic volcanic, ultramafic, and sedimentary rocks",3200.0,2760.0,"granitoid,felsic,mafic,ultramafic_rock,iron_sediment","65,101,100,80,67"
+Westralia Sandstone,Sandstone with interbedded subordinate siltstone in coarsening-upward sequence,295.0,290.1,"sandstone,mudstone","101,100"
+Whitewater Volcanics,"Porphyritic rhyolite to dacite; coherent lavas, subvolcanic intrusions, and pyroclastic deposits; commonly crystal rich; minor volcanic breccia, lapilli tuff, and volcaniclastic rock; locally foliated",1864.0,1854.0,"rhyolite,dacite,chert,coarse_grained_plutonic_crystalline_igneous_rock,pyroclastic_rock,breccia,tuff,volcaniclastic_mud","101,101,56,57,63,101,101,74"
+Whundo Group,Mafic and felsic volcanic rocks; local ultramafic rocks and chert; metamorphosed,3130.0,3110.0,"mafic,felsic,ultramafic_rock,chert","101,100,54,101"
+Whyjabby Granodiorite,Hornblende granodiorite; microcline phenocrysts; foliated and with local xenoilths of tonalite gneiss; metamorphosed,2994.0,2994.0,"granodiorite,micrite,gneiss","101,71,101"
+Widgiemooltha Supersuite,Dolerite and gabbro; includes cumulate and granophyric differentiates,2420.0,2400.0,"dolerite,gabbro,felsic","101,101,65"
+Wilgie Mia Formation,banded_iron_formation,2790.0,2735.0,"felsic, banded_iron_formation, bituminous_coal",-1
+Wilina Granodiorite,Quartz-rich biotite granodiorite and trondhjemite; medium grained; weakly metamorphosed,3324.0,3310.0,"granodiorite,tonalite","101,101"
+Wilki Formation,"Fine- to medium-grained quartz sandstone; minor shale, laminated sandstone, and dolomite",950.0,630.0,"sandstone,mudstone,sandstone,dolostone","101,101,101,101"
+Willy Willy Formation,Interbedded stromatolitic dolomite and siltstone; minor sandstone,1620.0,1455.0,"dolostone,mudstone,sandstone","101,101,101"
+Wilson Well Gneiss,Heterogeneous tonalitic orthogneiss and schlieric hornblende granodiorite; migmatitic,3420.0,3420.0,"orthogneiss,granodiorite,migmatite","101,101,84"
+Wilthorpe Formation,"Pebble to boulder conglomerate; clasts include vein quartz, minor chert, quartz wacke, and granitoid; quartz wacke and finely bedded siltstone; locally chloritic; graded beds",1983.0,1811.0,"gravel,conglomerate,vein,chert,wacke,granitoid,wacke,mudstone","92,101,101,101,101,100,000,000"
+Windimurra Igneous Complex,"gabbro, leucogabbro, gabbronorite, granite, aplite",2813.0,2813.0,"gabbronorite, granite, coarse_grained_plutonic_crystalline_igneous_rock, aplite, gabbroid, limestone/silicate_sandstone, dolerite, leucogabbro, magnetitite, gabbro",-1
+Windimurra Igneous Complex  border zone,"gabbro, dolerite",2813.0,2813.0,"dolerite, gabbro, metamorphic_pyroxenite",-1
+Windimurra Igneous Complex  lower zone,"gabbronorite, gabbro, leucogabbronorite",2813.0,2813.0,"pyroxenite, gabbronorite, gabbroid, leucogabbronorite, gabbro",-1
+Windimurra Igneous Complex  middle zone,"gabbronorite, olivinegabbro, leucogabbronorite",2813.0,2813.0,"pyroxenite, gabbronorite, olivinegabbro, gabbroid, leucogabbronorite, dolerite, gabbro",-1
+Windimurra Igneous Complex  roof zone,leucogabbro,2813.0,2813.0,"dolerite, gabbro, leucogabbro",-1
+Windimurra Igneous Complex  ultramafic zone,"dunite, gabbro, anorthosit, peridotite",2813.0,2813.0,"dolostone, peridotite, dunite, gabbro, anorthosite, anorthosit, dacite",-1
+Windimurra Igneous Complex  upper zone,"leucogabbro, anorthosite, magnetite, gabbro",2813.0,2813.0,"gabbroid, leucogabbro, magnetitite, gabbro, magnetite, anorthosite, magnetite_ore",-1
+Winnama Formation,"Lithic metasandstone, metasiltstone, metamudstone, metabasalt, metadolerite, and metacarbonate; low to medium grade",1845.0,1840.0,"sandstone,mudstone,mudstone,basalt,dolerite,carbonate","101,101,101,101,101,000"
+Winning Group,"Shale, siltstone, marl, and basal sandstone; commonly glauconitic; radiolarian siltstone in central part",139.8,85.0,"mudstone,mudstone,marl,sandstone,glaucophanite,mudstone","101,101,101,101,75,100"
+Wirku Metamorphics,Undivided weakly to strongly banded gneiss; typically quartzofeldspathic but includes amphibolitic rocks; mostly derived from sedimentary or volcano-sedimentary protoliths,1340.0,1270.0,"gneiss,quartz_latite,amphibole_rock,metasedimentary_rock","101,65,75,68"
+Wirrildar beds,"Fine grained, micaceous sandstone and dolomite, with basal arkosic sandstone; fines and becomes more calcareous upwards",541.0,511.0,"sandstone,dolostone,sandstone,travertine","101,101,101,51"
+Wittenoom Formation,"Thinly bedded dolomite and dolomitic shale, with minor black chert, shale, banded iron formation and sandstone",2597.0,2504.0,"dolostone,mudstone,chert,mudstone,banded_iron_formation,sandstone","101,101,101,101,71,101"
+Woblegun Formation,Sandstone and siltstone; medium to coarse grained; thin beds of conglomerate,1170.0,1070.0,"sandstone,mudstone,conglomerate","101,101,101"
+Wogala Suite,Muscovite-bearing alkali granite; equigranular; common accessory fluorite; post-tectonic,2625.0,2600.0,"granite,tuffaceous_sedimentary_rock","101,52"
+Wolline Monzogranite,Monzogranite and syenogranite; porphyritic and seriate; metamorphosed,3252.0,3244.0,"monzogranite,syenogranite","101,101"
+Wongarlong Formation,"Medium-grained sandstone, siltstone, shale; local evaporite pseudomorphs",1000.0,635.0,"sandstone,mudstone,mudstone,evaporite","101,101,101,100"
+Wongawol Formation,"Sandstone, shale, dolomite, dolomitic siltstone, stromatolitic limestone; minor conglomerate",1876.0,1650.0,"sandstone,mudstone,dolostone,mudstone,limestone,conglomerate","101,101,101,101,101,000"
+Wonyulgunna Sandstone,"Quartz sandstone; minor cobble conglomerate, siltstone, and mudstone",1653.0,1455.0,"sandstone,conglomerate,mudstone,mudstone","101,101,101,101"
+Woodada Formation,"Fine- to medium-grained sandstone, interbedded with laminated siltstone",250.0,245.0,"sandstone,mudstone","101,101"
+Woodbrook Formation,Rhyolite tuff and agglomerate; minor basalt and rare thin banded iron-formation; metamorphosed,3115.0,3110.0,"tuff,agglomerate,basalt","101,101,101"
+Woodline Formation,"Quartz sandstone, quartz conglomerate, and mudstone; metamorphosed",1651.0,1600.0,"sandstone,conglomerate,mudstone","101,101,101"
+Woodrarrung Sandstone,"Medium- to coarse-grained quartzose sandstone, commonly silicified, overlain by fine- to medium-grained feldspathic sandstone",1000.0,541.0,"sandstone,sandstone","101,101"
+Woodstock Monzogranite,Biotite monzogranite; equigranular to feldspar porphyritic; weakly to moderately foliated; locally abundant pegmatite and granodiorite dykes; magnetite-bearing leucogranite pods,2933.0,2927.0,"monzogranite,metasomatic_rock,pegmatite,granodiorite,syenogranite","101,59,101,100,75"
+Woodward Dolerite,"Fine- to coarse-grained metadolerite, and minor amphibolite",1847.0,1808.0,"dolerite,amphibolite","101,101"
+Woolgra Andesite Member,andesite,2755.0,2755.0,andesite,-1
+Wooly Dolomite,Thin- to thick-bedded dolostone; locally stromatolitic,2031.0,2008.0,dolostone,101
+Woongarra Rhyolite,"Rhyolite, rhyodacite, rhyolitic breccia, and banded iron-formation; metamorphosed",2449.0,2445.0,"rhyolite,rhyolite,breccia,bituminous_coal","101,101,101,71"
+Woora Woora Formation,"Medium-grained ferruginous sandstone, lithic sandstone, quartz wacke, and siltstone",635.0,541.0,"sandstone,sandstone,wacke,mudstone","101,101,101,101"
+Wooramel Group,"Fine- to coarse-grained sandstone, siltstone, and minor granule to pebble conglomerate",292.0,283.5,"sandstone,mudstone,gravel,conglomerate","101,101,93,101"
+Wotjulum Porphyry,Grey quartz--feldspar-phyric micromonzogranite,1740.0,1725.0,vein,100
+Wyloo Group,"Sandstone, siltstone, pebbly sandstone, conglomerate, and dolostone; minor mafic and felsic volcanic rocks and banded iron-formation; metamorphosed",2008.0,1796.0,"sandstone,mudstone,sandstone,conglomerate,dolostone,mafic,felsic,bituminous_coal","101,101,101,101,101,101,100,71"
+Wyloo Inlier greenstones,"Basaltic and andesitic flows, and associated volcaniclastic rocks; metamorphosed",3530.0,2893.0,"basalt,andesitoid,volcaniclastic_breccia","86,76,61"
+Wyman Formation,"Felsic volcanic and volcaniclastic rocks; local clastic sedimentary rocks, chert and basalt; metamorphosed",3325.0,3315.0,"felsic,volcaniclastic_mud,clastic_sedimentary_rock,chert,basalt","100,74,65,101,101"
+Yalgowra Suite,peridotite,2735.0,2711.0,"dolerite, peridotite, gabbro",-1
+Yaloginda Formation,"psammitic, pelitic schist",2815.0,2800.0,"quartzite, chert, schist, gabbroid, felsic, bituminous_coal, mafic, peridotite, mudstone, banded_iron_formation, psammitic, peliticschist",-1
+Yamarna Terrane greenstones,Amphibolite; locally schistose,2750.0,2650.0,"basalt, chert, ultramafic_rock, mafic, apatitolite, carbonatite, calcilutite, alkali_feldspar_rhyolite, volcaniclastic_mud, gabbro, pyroxenite, andesite, schist, basaltoid, ultrabasic_volcanic_rock, sandstone, dolerite, clastic_sediment, granite, gneiss, serpentinite, amphibolite, iron_sediment, felsic, diaphthorite, mudstone, talc_rock",101
+Yampi Formation,"Pink-brown arkose and feldspathic sandstone; minor siltstone, hematitic quartz sandstone, glauconitic sandstone",1835.0,1740.0,"sandstone,sandstone,mudstone,sandstone,sandstone","101,101,101,101,101"
+Yandagooge Formation,"Pelitic to semi-pelitic quartz--mica schist and hematite--biotite schist; minor quartzite, felsic gneiss, pyritic graphitic schist, chert, and metamorphosed banded iron-formation",2500.0,1760.0,"mudstone,schist,schist,quartzite,gneiss,schist,chert","77,101,101,101,101,100,000"
+Yandanooka Group,"Siltstone with abundant volcanic fragments, sandstone and conglomerate",1600.0,1000.0,"mudstone,andesite,sandstone,conglomerate","101,57,101,101"
+Yandanunyah Formation,"Siltstone, shale, calcareous shale, locally stromatolitic carbonate",1000.0,635.0,"mudstone,mudstone,mudstone","101,101,101"
+Yandeearra Granodiorite,"Biotite granodiorite, weakly to strongly foliated; metamorposed",2945.0,2919.0,granodiorite,101
+Yannery Granite,Hornblende granite; massive; iron oxide minerals and hornblende replaced by chlorite; metamorphosed,2930.0,2930.0,"granite,mineralisation,hornblendite","101,62,57"
+Yarlarweelor Gneiss Complex unit,Granite gneiss; reworked during the Paleoproterozoic,3352.0,1813.0,"pegmatite, granitoid, granite, gneiss, anorthosite","101,48"
+Yarrabubba Monzogranite,"monzogranite, quartz veins, pseudotachylite, pegmatite",2650.0,2650.0,"monzogranite, quartz veins, pseudotachylite, pegmatite",-1
+Yarragadee Formation,"Fine- to coarse-grained sandstone, thin shale interbeds",174.1,150.0,"sandstone,mudstone","101,100"
+Yarraloola Conglomerate,"Polymictic cobble to small boulder conglomerate, lesser sandstone; minor siltstone",145.0,120.0,"gravel,conglomerate,sandstone,mudstone","92,101,101,101"
+Yarrawolya Formation,Siltstone and silty sandstone,1000.0,541.0,"mudstone,sandstone","101,101"
+Yelma Formation,"Sandstone, dolomite (locally stromatolitic), siltstone, and shale; minor conglomerate and limestone",2027.0,1811.0,"sandstone,dolostone,mudstone,mudstone,conglomerate,limestone","101,101,101,101,101,000"
+Yilgarn Craton granites,"granite, mafic",3010.0,2600.0,"basalt, chert, micaite, hornblendite, ultramafic_rock, syenogranite, mafic, alkali_feldspar_trachyte, metasomatic_rock, diorite, orthogneiss, monzogranite, monzodiorite, monzonite, pegmatite, syenite, hornblende_rock, clinker, pyroxenite, coarse_grained_plutonic_crystalline_igneous_rock, granodiorite, dioritoid, clastic_sedimentary_rock, granitoid, granite, gneiss, leucitic_rock, albitized_gneiss, sedimentary_rock, tonalite, amphibolite",-1
+Yilgarn Craton metamorphic unit,"Gneiss, undivided",2950.0,2640.0,gneiss,101
+Youangarra Volcanics Member,mafic schist,2814.0,2814.0,mafic schist,-1
+Youanmi Igneous Complex,gabbro,2825.0,2813.0,gabbro,-1
+Youanmi Igneous Complex  border zone,dolerite,2825.0,2813.0,dolerite,-1
+Youanmi Igneous Complex  lower zone,ultramafic schist,2825.0,2813.0,"gabbro, ultramaficschist, serpentinite",-1
+Youanmi Igneous Complex  middle zone,"leucogabbro, gabbro",2825.0,2813.0,"gabbroid, gabbro, leucogabbro",-1
+Youanmi Igneous Complex  upper zone,"magnetitite, leucogabbro",2825.0,2813.0,"magnetitite, dolerite, leucogabbro",-1
+Youanmi Terrane greenstones,"mafic, chert, banded_iron_formation, quartzite",3131.0,2700.0,"garnetite, basalt, chert, ultramafic_rock, mafic, hornfels, banded_iron_formation, quartzite, granulite, volcaniclastic_breccia, volcaniclastic_mud, gabbro, pyroxenite, coarse_grained_plutonic_crystalline_igneous_rock, schist, ultrabasic_volcanic_rock, clastic_sedimentary_rock, sandstone, till, granite, adinole, serpentinite, kalsilitic_rock, amphibolite, iron_sediment, felsic, bituminous_coal, mudstone, creep, talc_rock",-1
+Yuinmery Volcanics Member,"felsic schist, rhyolitic schist",2813.0,2813.0,"felsic schist, rhyolitic schist",-1
+Ziggy Monzogranite,"Medium- to coarse-grained, seriate-textured monzogranite; variably foliated and metamorphosed",2832.0,2832.0,monzogranite,101
+Zulu Granodiorite,"Biotite granodiorite; local tonalite and monzogranite; medium to coarse grained, weakly foliated",3299.0,3294.0,"granodiorite,tonalite,monzogranite","101,101,101"
+cover,"mud, ferricrete, colluvium, alluvium",0.0,0.0,"mud, ferricrete, colluvium, alluvium",-1

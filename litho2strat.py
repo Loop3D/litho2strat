@@ -13,11 +13,11 @@ Constants for discaring low frequency routes while calculating the routes.
 This heuristic reduces the number of routes allowing faster calculation in the case of many route combinations.
 Note: this is a heuristic, thus the final result is not necessarily accurate.
 '''
-discard_low_score_routes = False
+discard_low_score_routes = True
 # Determines how often we discard te routes.
-discard_frequency = 1
+discard_frequency = 2
 # Determines how many routes to keep when discarding.
-num_routes_keep = 100000
+num_routes_keep = 10000
 
 
 # List of all lithologies.
@@ -25,7 +25,7 @@ all_lithos = []
 
 #==============================================================================
 # Converter from string to list.
-str2list = lambda x: x.strip("[]").replace("'", "").split(",")
+str2list = lambda x: x.strip("[]").replace("'", "").replace(" ", "").split(",")
 
 #==============================================================================
 def read_strat_data(filename):
@@ -47,7 +47,7 @@ def read_strat_data(filename):
     return strat_data
 
 #==============================================================================
-def read_strat_data2(all_strat_filename, unit_list_filename):
+def read_strat_data2(all_strat_filename, unit_list_filename, lithos_column):
     '''
     Building lithologies list for every unit from csv files data.
     '''
@@ -60,8 +60,7 @@ def read_strat_data2(all_strat_filename, unit_list_filename):
         next(csvreader)
         # Extracting the lighology list for every csv row (strata unit).
         for row in csvreader:
-            # The lithologies are stored in the THIRD COLUMN!
-            lithos = str2list(row[2])
+            lithos = str2list(row[lithos_column])
             unit_name = row[0]
             if unit_name in strat_all:
             # Added this to be able to read data where unitname appears at multiple lines.
@@ -161,6 +160,10 @@ def generate_strata_table(drillsample_data, strat_data):
 
     num_rows = len(drillsample_data)
     print("num_rows (after) = ", num_rows)
+
+    if (num_rows == 0):
+        print('No data left. Exiting.')
+        exit()
 
     # Remove rows due to missing lithologies.
     strata_table = strata_table[0:num_rows, :]
@@ -712,8 +715,9 @@ def main():
 #     unit_list_filename   = "data/real/Hill_strat.csv"
 
     # Ranee's data.
-    # Note: To read Ranee's strat data we needed to modify read_strat_data2(), and str2list
-    all_strat_filename   = "data/real/20210903_ENS_dh2loop.csv"
+    #all_strat_filename   = "data/real/20210903_ENS_dh2loop.csv"
+    # Combined data from Mark and Ranee.
+    all_strat_filename   = "data/real/combined.csv"
     drillsample_filename = "data/real/Hill_drillhole.csv"
     unit_list_filename   = "data/real/Hill_strat.csv"
     #drillsample_filename = "data/real/MtGibson_drillhole.csv"
@@ -726,7 +730,7 @@ def main():
     add_thickness_constraints = False
 
     # Flag for whether we should stay in the unit until the lithology name is changed.
-    keep_continuous_lithos = True
+    keep_continuous_lithos = False
 
     #--------------------------------------------------------------
     # Reading input data.
@@ -737,7 +741,8 @@ def main():
     # Unit lithologies data..
     strat_data = []
     if (new_file_format):
-        strat_data = read_strat_data2(all_strat_filename, unit_list_filename)
+        lithos_column = 4
+        strat_data = read_strat_data2(all_strat_filename, unit_list_filename, lithos_column)
     else:
         strat_data = read_strat_data(strat_filename)
 
