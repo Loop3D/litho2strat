@@ -621,6 +621,14 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
     print_foreign_lithos(all_routes[index_max])
 
     #------------------------------------------
+    # Print the most probable routes.
+    indexes_max = np.argsort(-route_scores) # A minus here to have largest to smallest score order.
+    ntop = 3
+    print('Top indexes: ', indexes_max[0:ntop])
+    print('Top scores: ', route_scores[indexes_max[0:ntop]])
+    plot_routes(drillsample_data, [all_routes[i] for i in indexes_max[0:ntop]])
+
+    #------------------------------------------
     # Generating the plots.
     # Increasing the figure size.
     pl.rcParams["figure.figsize"] = (12.8, 9.6) # Default size = (6.4, 4.8)
