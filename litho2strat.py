@@ -621,46 +621,69 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
     print_foreign_lithos(all_routes[index_max])
 
     #------------------------------------------
-    # Print the most probable routes.
+    # Top scores.
     indexes_max = np.argsort(-route_scores) # A minus here to have largest to smallest score order.
     ntop = 3
     print('Top indexes: ', indexes_max[0:ntop])
     print('Top scores: ', route_scores[indexes_max[0:ntop]])
+
+    # Print the most probable routes.
     plot_routes(drillsample_data, [all_routes[i] for i in indexes_max[0:ntop]])
+
+    multiple_best_routes = False
+    if (route_scores[indexes_max[0]] == route_scores[indexes_max[1]]):
+        multiple_best_routes = True
+
+    print("Multiple best routes: ", multiple_best_routes)
 
     #------------------------------------------
     # Generating the plots.
     # Increasing the figure size.
     pl.rcParams["figure.figsize"] = (12.8, 9.6) # Default size = (6.4, 4.8)
-    fig, axs = pl.subplots(num_units, sharey=True)
-    fig.suptitle('Probability for each unit. ' + title_params)
+
+    num_units_nonempty = 0
+    for i in range(num_units):
+        if (sum(strat_distr[:, i]) != 0):
+            num_units_nonempty += 1
+    fig, axs = pl.subplots(num_units_nonempty, sharey=True)
+
+    fig.suptitle('Probability of occurrence for every unit.', y=0.92)
 
     num_rows = len(all_routes[0].path)
 
     # Using the "From" column.
     x_data = [float(d[0]) for d in drillsample_data[0:num_rows]]
 
+    j = 0
     for i in range(num_units):
+        if (sum(strat_distr[:, i]) == 0):
+            # Skip empty units.
+            continue
+
         # Plot lines.
-        axs[i].plot(x_data, strat_distr[:, i], zorder=1, c='lightblue')
+        axs[j].plot(x_data, strat_distr[:, i], zorder=1, c='blue')
 
         # Set red color for zero data.
         color = ['red' if d <= 0 else 'blue' for d in strat_distr[:, i]]
 
-        # Set green color for the route with the highest score.
-        for row in range(num_rows):
-            if (all_routes[index_max].path[row] == i):
-                color[row] = 'green'
+        if (not multiple_best_routes):
+            # Set green color for the route with the highest score.
+            for row in range(num_rows):
+                if (all_routes[index_max].path[row] == i):
+                    color[row] = 'green'
 
         # Plot dots.
-        axs[i].scatter(x_data, strat_distr[:, i], s=5, c=color, zorder=2)
+        axs[j].scatter(x_data, strat_distr[:, i], s=5, c=color, zorder=2)
 
-        axs[i].set(ylabel=str(i))
+        axs[j].set(ylabel=str(i))
         if (i != num_units - 1):
             # Hide tick labels.
-            axs[i].set_xticklabels([])
+            axs[j].set_xticklabels([])
+
         # Add vertical lines.
-        axs[i].xaxis.grid(True)
+        axs[j].xaxis.grid(True)
+
+        j += 1
  
     pl.xlabel('Depth')
     pl.show()
