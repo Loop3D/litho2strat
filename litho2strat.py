@@ -3,21 +3,21 @@ import numpy as np
 import matplotlib.pylab as pl
 import tracemalloc
 
-max_num_foreign_lithos = 5
-max_num_foreign_lithos_per_unit = 2
-max_num_returns = 1
-max_num_returns_per_unit = 1
+max_num_foreign_lithos = 0
+max_num_foreign_lithos_per_unit = 0
+max_num_returns = 0
+max_num_returns_per_unit = 0
 
 '''
 Constants for discaring low frequency routes while calculating the routes.
-This heuristic reduces the number of routes allowing faster calculation in the case of many route combinations. 
+This heuristic reduces the number of routes allowing faster calculation in the case of many route combinations.
 Note: this is a heuristic, thus the final result is not necessarily accurate.
 '''
 discard_low_score_routes = False
 # Determines how often we discard te routes.
-discard_frequency = 20
+discard_frequency = 1
 # Determines how many routes to keep when discarding.
-num_routes_keep = 1000
+num_routes_keep = 100000
 
 
 # List of all lithologies.
@@ -25,7 +25,7 @@ all_lithos = []
 
 #==============================================================================
 # Converter from string to list.
-str2list = lambda x: x.strip("[]").replace("'", "").split(", ")
+str2list = lambda x: x.strip("[]").replace("'", "").split(",")
 
 #==============================================================================
 def read_strat_data(filename):
@@ -60,11 +60,18 @@ def read_strat_data2(all_strat_filename, unit_list_filename):
         next(csvreader)
         # Extracting the lighology list for every csv row (strata unit).
         for row in csvreader:
-            # The lithologies are stored in the third column!
-            lithos = str2list(row[1])
-            strat_all[row[0]] = lithos
+            # The lithologies are stored in the THIRD COLUMN!
+            lithos = str2list(row[2])
+            unit_name = row[0]
+            if unit_name in strat_all:
+            # Added this to be able to read data where unitname appears at multiple lines.
+                for litho in lithos:
+                    if litho not in strat_all[unit_name]:
+                        strat_all[unit_name].append(litho)
+            else:
+                strat_all[unit_name] = lithos
 
-    # Building unit list for a partial set of units..
+    # Building unit list for a partial set of units.
     strat_data = []
     with open(unit_list_filename, 'r') as csvfile:
         # Reading the csv data.
@@ -662,9 +669,9 @@ def main():
 #     thickness_filename   = "data/simple/thickness_mean_1627022992.5507748.csv"
 #     drillsample_filename = "data/simple/drill_sample_1627022992.5507748.csv"
 
-    strat_filename       = "data/foreign_litho/strat_1627025194.6300328.csv"
-    thickness_filename   = "data/foreign_litho/thickness_mean_1627025194.6300328.csv"
-    drillsample_filename = "data/foreign_litho/drill_sample_1627025194.6300328.csv"
+#    strat_filename       = "data/foreign_litho/strat_1627025194.6300328.csv"
+#    thickness_filename   = "data/foreign_litho/thickness_mean_1627025194.6300328.csv"
+#    drillsample_filename = "data/foreign_litho/drill_sample_1627025194.6300328.csv"
 
 #     all_strat_filename   = "data/real/ALL_Strat descriptions.csv"
 #     drillsample_filename = "data/real/MtGibson_drillhole.csv"
@@ -673,17 +680,22 @@ def main():
 #     drillsample_filename = "data/real/Hill_drillhole.csv"
 #     unit_list_filename   = "data/real/Hill_strat.csv"
 
-#     all_strat_filename = "data/test/ALL_strat.csv"
-#     drillsample_filename = "data/test/drill.csv"
-#     unit_list_filename = "data/test/ALL_strat.csv"
+    # Ranee's data.
+    # Note: To read Ranee's strat data we needed to modify read_strat_data2(), and str2list
+    all_strat_filename   = "data/real/20210903_ENS_dh2loop.csv"
+    drillsample_filename = "data/real/Hill_drillhole.csv"
+    unit_list_filename   = "data/real/Hill_strat.csv"
+    #drillsample_filename = "data/real/MtGibson_drillhole.csv"
+    #unit_list_filename   = "data/real/MtGibson_strat.csv"
+
 
     #--------------------------------------------------------------
-    new_file_format = False
+    new_file_format = True
 
-    add_thickness_constraints = True
+    add_thickness_constraints = False
 
     # Flag for whether we should stay in the unit until the lithology name is changed.
-    keep_continuous_lithos = False
+    keep_continuous_lithos = True
 
     #--------------------------------------------------------------
     # Reading input data.
