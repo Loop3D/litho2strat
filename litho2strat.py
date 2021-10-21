@@ -1,24 +1,33 @@
 import csv
 import numpy as np
 import matplotlib.pylab as pl
+import networkx as nx
 import tracemalloc
 
 max_num_foreign_lithos = 0
 max_num_foreign_lithos_per_unit = 0
-max_num_returns = 0
-max_num_returns_per_unit = 0
+max_num_returns = 10
+max_num_returns_per_unit = 10
 
-'''
-Constants for discaring low frequency routes while calculating the routes.
-This heuristic reduces the number of routes allowing faster calculation in the case of many route combinations.
-Note: this is a heuristic, thus the final result is not necessarily accurate.
-'''
-discard_low_score_routes = True
+#---------------------------------------------------------------------------
+# Constants for discaring low frequency routes while calculating the routes.
+# This heuristic reduces the number of routes allowing faster calculation in the case of many route combinations.
+# Note: this is a heuristic, thus the final result is not necessarily accurate.
+discard_low_score_routes = False
 # Determines how often we discard te routes.
 discard_frequency = 2
 # Determines how many routes to keep when discarding.
 num_routes_keep = 10000
-
+#---------------------------------------------------------------------------
+# Adding unit contacts topology (extracted from map data).
+add_topology_constraints = True
+#---------------------------------------------------------------------------
+# Adding thickness constraints. (Requires unit thickness data).
+add_thickness_constraints = False
+#---------------------------------------------------------------------------
+# Flag for whether we should stay in the unit until the lithology name is changed.
+keep_continuous_lithos = False
+#---------------------------------------------------------------------------
 
 # List of all lithologies.
 all_lithos = []
@@ -71,7 +80,7 @@ def read_strat_data2(all_strat_filename, unit_list_filename, lithos_column):
                 strat_all[unit_name] = lithos
 
     # Building unit list for a partial set of units.
-    strat_data = []
+    strat_data = dict()
     with open(unit_list_filename, 'r') as csvfile:
         # Reading the csv data.
         csvreader = csv.reader(csvfile, delimiter=',')
@@ -81,7 +90,7 @@ def read_strat_data2(all_strat_filename, unit_list_filename, lithos_column):
         for row in csvreader:
             unit_name = row[0]
             if (unit_name in strat_all):
-                strat_data.append(strat_all[unit_name])
+                strat_data[unit_name] = strat_all[unit_name]
             else:
                 print("Error! No unit description found in 'all strat' list for unit name: " + unit_name)
                 exit()
@@ -129,9 +138,25 @@ def read_thickness_data(filename):
     return data
 
 #==============================================================================
+def read_topology_data(topology_filename):
+    '''
+    Read topology data (gml format graph) from a file.
+    '''
+    # Import graph from a file.
+    Gf = nx.read_gml(topology_filename)
+
+    # Modify the graph to have node names = unit names.
+    for node in Gf.nodes():
+        unit_name = Gf.nodes[node]['LabelGraphics']['text'].replace("_", " ")
+        mapping = {node:unit_name}
+        Gf = nx.relabel_nodes(Gf, mapping)
+
+    return Gf
+
+#==============================================================================
 def generate_strata_table(drillsample_data, strat_data):
     '''
-    Generates the stratigraphic table.
+    Generates the stratigraphic table, and unit names list.
     '''
     num_rows = len(drillsample_data)
     num_units = len(strat_data)
@@ -145,10 +170,13 @@ def generate_strata_table(drillsample_data, strat_data):
     for row in drillsample_data[:]:
         litho = row[2]
         litho_found = False
-        for strat in range(num_units):
-            if (litho in strat_data[strat]):
+
+        unit_index = 0
+        for unit_name in strat_data:
+            if (litho in strat_data[unit_name]):
                 litho_found = True
-                strata_table[new_row_index, strat] = True
+                strata_table[new_row_index, unit_index] = True
+            unit_index += 1
 
         if (not litho_found):
         # Lithology not found in units.
@@ -168,7 +196,12 @@ def generate_strata_table(drillsample_data, strat_data):
     # Remove rows due to missing lithologies.
     strata_table = strata_table[0:num_rows, :]
 
-    return strata_table
+    # Map unit index to unit name.
+    unit_names = []
+    for unit_name in strat_data:
+        unit_names.append(unit_name)
+
+    return strata_table, unit_names
 
 #==============================================================================
 '''
@@ -270,8 +303,8 @@ def flatten(S):
 #==============================================================================
 def apply_max_num_returns_constraint(route, strata_list):
     '''
-    Applies the "maximum number of returns to a unit" constraint:
-    removes from the input unit list the units where the route cannot return anymore.
+    Apply the "maximum number of returns to a unit" constraint:
+        remove from the input unit list the units where the route cannot return anymore.
     '''
     # Calculate the current global number of returns to the same unit.
     num_returns0 = 0
@@ -294,13 +327,24 @@ def apply_max_num_returns_constraint(route, strata_list):
                 strata_list.remove(strat)
 
 #==============================================================================
-def generate_strat_routes(strat_data, drillsample_data, thickness_data,
-                          add_thickness_constraints, keep_continuous_lithos, discard_low_score_routes):
+def apply_topology_constraints(graph, unit_names, strat0, strata_list):
+    '''
+    Apply unit topology (connectivity) constraints:
+        remove from the input unit list the units not connected to a given one (strat0).
+    '''
+    if (unit_names[strat0] in graph.nodes()):
+        for strat in strata_list[:]:
+            if (not graph.has_edge(unit_names[strat0], unit_names[strat])):
+                # Units are not connected. Skip this unit.
+                strata_list.remove(strat)
+
+#==============================================================================
+def generate_strat_routes(strat_data, drillsample_data, thickness_data, graph):
     '''
     Generating stratigraphic routes.
     '''
     # Generating the table of possible strata paths.
-    strata_table = generate_strata_table(drillsample_data, strat_data)
+    strata_table, unit_names = generate_strata_table(drillsample_data, strat_data)
 
     num_rows = strata_table.shape[0]
     num_units = strata_table.shape[1]
@@ -367,10 +411,15 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data,
                     can_change = can_change and (current_thickness >= min_strata_thickness[strat0])
 
             if (can_change):
-                # Strata units excluding the current one, and those visited the maximum number of times.
+                # Strata units excluding the current one.
                 strata_list = [strat for strat in range(num_units) if (strat != strat0)]
+
                 # Applying the "maximum umber of returns to a unit" constraint.
                 apply_max_num_returns_constraint(route, strata_list)
+
+                # Apply unit topology constraints.
+                if (add_topology_constraints):
+                    apply_topology_constraints(graph, unit_names, strat0, strata_list)
 
                 if (len(strata_list) != 0):
                     # Copy the route to create references to it below.
@@ -626,7 +675,7 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
     #------------------------------------------
     # Top scores.
     indexes_max = np.argsort(-route_scores) # A minus here to have largest to smallest score order.
-    ntop = 3
+    ntop = 10
     print('Top indexes: ', indexes_max[0:ntop])
     print('Top scores: ', route_scores[indexes_max[0:ntop]])
 
@@ -723,14 +772,11 @@ def main():
     #drillsample_filename = "data/real/MtGibson_drillhole.csv"
     #unit_list_filename   = "data/real/MtGibson_strat.csv"
 
+    # Topology file.
+    topology_filename = "data/real/ASUD_strat.gml"
 
     #--------------------------------------------------------------
     new_file_format = True
-
-    add_thickness_constraints = False
-
-    # Flag for whether we should stay in the unit until the lithology name is changed.
-    keep_continuous_lithos = False
 
     #--------------------------------------------------------------
     # Reading input data.
@@ -738,7 +784,7 @@ def main():
     # Drill sample data.
     drillsample_data = read_drillsample_data(drillsample_filename)
 
-    # Unit lithologies data..
+    # Unit lithologies data.
     strat_data = []
     if (new_file_format):
         lithos_column = 4
@@ -751,12 +797,20 @@ def main():
     if (add_thickness_constraints):
         thickness_data = read_thickness_data(thickness_filename)
 
+    # Topology data.
+    graph = nx.Graph()
+    if (add_topology_constraints):
+        graph = read_topology_data(topology_filename)
+        # Sanity check: check that strata units exist in the graph.
+        for unit_name in strat_data:
+            if unit_name not in graph.nodes():
+                print("WARNING: Not found graph unit: ", unit_name)
+
     #--------------------------------------------------------------
     # Generating the stratigraphy routes.
     tracemalloc.start()
 
-    all_routes, all_routes_number = generate_strat_routes(strat_data, drillsample_data, thickness_data,
-                                       add_thickness_constraints, keep_continuous_lithos, discard_low_score_routes)
+    all_routes, all_routes_number = generate_strat_routes(strat_data, drillsample_data, thickness_data, graph)
 
     print("Total number of routes = ", len(all_routes))
 
