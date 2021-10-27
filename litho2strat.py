@@ -594,7 +594,7 @@ def plot_routes(drillsample_data, routes, strat_distr):
     pl.show()
 
     #------------------------------------------
-    # Plot route uncertainty.
+    # Plot route probabilities.
     num_rows = len(routes[0].path)
 
     for route in routes:
@@ -602,10 +602,10 @@ def plot_routes(drillsample_data, routes, strat_distr):
         for row in range(num_rows):
             unit_index = route.path[row]
             route_proba[row] = strat_distr[row, unit_index]
-        pl.plot(x_data, 1. - route_proba, '.-')
+        pl.plot(x_data, route_proba, '.-')
 
     pl.xlabel('Depth')
-    pl.ylabel('Uncertainty')
+    pl.ylabel('Probability')
     pl.show()
 
 #=============================================================================
@@ -686,6 +686,8 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
     ntop = 10
     print('Top indexes: ', indexes_max[0:ntop])
     print('Top scores: ', route_scores[indexes_max[0:ntop]])
+
+    index_max = indexes_max[0]
 
     #------------------------------------------
     # Print the most probable routes.
