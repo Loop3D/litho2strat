@@ -577,7 +577,7 @@ def print_unique_routes(all_routes, num_print_paths):
                 break
 
 #=============================================================================
-def plot_routes(drillsample_data, routes):
+def plot_routes(drillsample_data, routes, strat_distr):
     '''
     Plot and display the routes.
     '''
@@ -591,6 +591,21 @@ def plot_routes(drillsample_data, routes):
 
     pl.xlabel('Depth')
     pl.ylabel('Strata unit index')
+    pl.show()
+
+    #------------------------------------------
+    # Plot route uncertainty.
+    num_rows = len(routes[0].path)
+
+    for route in routes:
+        route_proba = np.zeros(num_rows)
+        for row in range(num_rows):
+            unit_index = route.path[row]
+            route_proba[row] = strat_distr[row, unit_index]
+        pl.plot(x_data, 1. - route_proba, '.-')
+
+    pl.xlabel('Depth')
+    pl.ylabel('Uncertainty')
     pl.show()
 
 #=============================================================================
@@ -666,22 +681,18 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
     pl.show()
 
     #------------------------------------------
-    # Index of the route with highest score. (Note: can be several such routes)
-    index_max = np.argmax(route_scores)
-    print('Max index = ', index_max)
-    print('Max score = ', route_scores[index_max])
-    print_foreign_lithos(all_routes[index_max])
-
-    #------------------------------------------
     # Top scores.
     indexes_max = np.argsort(-route_scores) # A minus here to have largest to smallest score order.
     ntop = 10
     print('Top indexes: ', indexes_max[0:ntop])
     print('Top scores: ', route_scores[indexes_max[0:ntop]])
 
+    #------------------------------------------
     # Print the most probable routes.
-    plot_routes(drillsample_data, [all_routes[i] for i in indexes_max[0:ntop]])
+    plot_routes(drillsample_data, [all_routes[i] for i in indexes_max[0:ntop]], strat_distr)
 
+    #------------------------------------------
+    # Print if there are multiple best routes.
     multiple_best_routes = False
     if (route_scores[indexes_max[0]] == route_scores[indexes_max[1]]):
         multiple_best_routes = True
