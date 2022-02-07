@@ -10,7 +10,7 @@ max_num_returns = 10
 max_num_returns_per_unit = 10
 
 #---------------------------------------------------------------------------
-# Constants for discaring low frequency routes while calculating the routes.
+# Constants for discarding low frequency routes while calculating the routes.
 # This heuristic reduces the number of routes allowing faster calculation in the case of many route combinations.
 # Note: this is a heuristic, thus the final result is not necessarily accurate.
 discard_low_score_routes = False
@@ -112,6 +112,32 @@ def read_drillsample_data(filename):
         for row in csvreader:
             data.append(row)
             litho_name = row[2]
+            if (litho_name not in all_lithos):
+                all_lithos.append(litho_name)
+    print("The number of drillhole lithologies: " + str(len(all_lithos)))
+
+    return data
+
+#==============================================================================
+def read_drillsample_data2(filename):
+    '''
+    Reading drill sample data from csv file.
+    '''
+    data = []
+    with open(filename, 'r') as csvfile:
+        # Reading the csv data.
+        csvreader = csv.reader(csvfile, delimiter=',')
+        # Skipping the header.
+        next(csvreader)
+        # Extracting the data for every csv row.
+        for row in csvreader:
+            row_formatted = list(range(3))
+            row_formatted[0] = row[4] # FromDepth
+            row_formatted[1] = row[5] # ToDepth
+            row_formatted[2] = row[8] # CET_Litho
+            data.append(row)
+            # Add lithology to the global list of all lithos.
+            litho_name = row_formatted[2]
             if (litho_name not in all_lithos):
                 all_lithos.append(litho_name)
     print("The number of drillhole lithologies: " + str(len(all_lithos)))
@@ -788,21 +814,29 @@ def main():
     # Topology file.
     topology_filename = "data/real/ASUD_strat.gml"
 
+    # Mark's new data.
+    drillsample_filename = "data/real/dh_files/litho_tables/litho_548917.csv"
+
     #--------------------------------------------------------------
-    new_file_format = True
+    file_format = 3
 
     #--------------------------------------------------------------
     # Reading input data.
     #--------------------------------------------------------------
     # Drill sample data.
-    drillsample_data = read_drillsample_data(drillsample_filename)
+    if (file_format == 3):
+        drillsample_data = read_drillsample_data2(drillsample_filename)
+    else:
+        drillsample_data = read_drillsample_data(drillsample_filename)
+
+    exit()
 
     # Unit lithologies data.
     strat_data = []
-    if (new_file_format):
+    if (file_format == 2):
         lithos_column = 4
         strat_data = read_strat_data2(all_strat_filename, unit_list_filename, lithos_column)
-    else:
+    elif (file_format == 1):
         strat_data = read_strat_data(strat_filename)
 
     # Thickness data.
