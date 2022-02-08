@@ -117,9 +117,19 @@ def fix_litho_name(litho):
     return litho
 
 #==============================================================================
+def get_unique_lithos_from_strat_data(strat_data):
+    lithos = list()
+    for unit_name in strat_data:
+        for litho in strat_data[unit_name]:
+            lithos.append(litho)
+    unique_lithos = list(dict.fromkeys(lithos))
+
+    return unique_lithos
+
+#==============================================================================
 def read_strat_data3(dist_table_filename):
     '''
-    Building lithologies list for every unit from csv files data.
+    Building lithologies list for every unit from csv file data.
     '''
     # Unit code column number.
     code_column = 1
@@ -128,7 +138,7 @@ def read_strat_data3(dist_table_filename):
     # Lithology list column number.
     lithos_column = 4
 
-    # Reading all units description.
+    # Reading the units table.
     strat_all = dict()
     with open(dist_table_filename, 'r') as csvfile:
         # Reading the csv data.
@@ -154,7 +164,7 @@ def read_strat_data3(dist_table_filename):
             lithos = [l for l in lithos2]
 
             #=========================================
-            # Adding the lithos to the dictionary (excluding the dublicates).
+            # Adding the lithos to the dictionary (excluding the duplicates).
             if unit_name in strat_all:
                 for litho in lithos:
                     if litho not in strat_all[unit_name]:
@@ -165,11 +175,7 @@ def read_strat_data3(dist_table_filename):
     print("The total number of unit codes: " + str(len(strat_all)))
 
     #=====================================================================
-    lithos = list()
-    for unit_name in strat_all:
-        for litho in strat_all[unit_name]:
-            lithos.append(litho)
-    unique_lithos = list(dict.fromkeys(lithos))
+    unique_lithos = get_unique_lithos_from_strat_data(strat_all)
 
     print(unique_lithos)
     print("The total number of lithologies: " + str(len(unique_lithos)))
@@ -177,15 +183,28 @@ def read_strat_data3(dist_table_filename):
     #=====================================================================
     # Filter units based on the drillhole lithologies: 
     # Remove the codes that do not contain the drillhole lithos.
-    # strat_filtered = dict()
-    # for el in strat_all:
-    #     for litho in el:
-    #         if (litho in all_lithos):
-    #             strat_filtered.
+    # Also remove lithologies, that are not present in the drillhole data.
+    strat_filtered = dict()
+    for unit_name in strat_all:
+        for litho in strat_all[unit_name]:
+            if (litho in all_lithos):
+            # Lithology is present in drillhole data.
+                if (unit_name in strat_filtered):
+                    strat_filtered[unit_name].append(litho)
+                else:
+                    strat_filtered[unit_name] = [litho]
 
-    #print(strat_all)
+    print("The number of filtered unit codes: " + str(len(strat_filtered)))
 
-    return strat_all
+    #=====================================================================
+    unique_lithos = get_unique_lithos_from_strat_data(strat_filtered)
+
+    print(unique_lithos)
+    print("The filtered number of lithologies: " + str(len(unique_lithos)))
+
+    #print(strat_filtered)
+
+    return strat_filtered
 
 #==============================================================================
 def read_drillsample_data(filename):
