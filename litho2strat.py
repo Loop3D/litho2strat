@@ -29,7 +29,7 @@ add_thickness_constraints = False
 keep_continuous_lithos = False
 #---------------------------------------------------------------------------
 
-# List of all lithologies.
+# List of all drillhole lithologies.
 all_lithos = []
 
 #==============================================================================
@@ -164,12 +164,24 @@ def read_strat_data3(dist_table_filename):
 
     print("The total number of unit codes: " + str(len(strat_all)))
 
-    unique_lithos = dict()
-    for el in strat_all:
-        for litho in el:
-            unique_lithos[litho] = 1
+    #=====================================================================
+    lithos = list()
+    for unit_name in strat_all:
+        for litho in strat_all[unit_name]:
+            lithos.append(litho)
+    unique_lithos = list(dict.fromkeys(lithos))
 
+    print(unique_lithos)
     print("The total number of lithologies: " + str(len(unique_lithos)))
+
+    #=====================================================================
+    # Filter units based on the drillhole lithologies: 
+    # Remove the codes that do not contain the drillhole lithos.
+    # strat_filtered = dict()
+    # for el in strat_all:
+    #     for litho in el:
+    #         if (litho in all_lithos):
+    #             strat_filtered.
 
     #print(strat_all)
 
@@ -192,6 +204,7 @@ def read_drillsample_data(filename):
             litho_name = row[2]
             if (litho_name not in all_lithos):
                 all_lithos.append(litho_name)
+
     print("The number of drillhole lithologies: " + str(len(all_lithos)))
 
     return data
@@ -218,6 +231,8 @@ def read_drillsample_data2(filename):
             litho_name = row_formatted[2]
             if (litho_name not in all_lithos):
                 all_lithos.append(litho_name)
+
+    print(all_lithos)
     print("The number of drillhole lithologies: " + str(len(all_lithos)))
 
     return data
