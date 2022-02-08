@@ -32,6 +32,9 @@ keep_continuous_lithos = False
 # List of all drillhole lithologies.
 all_lithos = []
 
+# Unit code to unit name mapping.
+code2unitname = dict()
+
 #==============================================================================
 # Converter from string to list.
 str2list = lambda x: x.strip("[]").replace("'", "").replace(" ", "").split(",")
@@ -155,6 +158,15 @@ def read_strat_data3(dist_table_filename):
             unit_name = row[code_column]
 
             #=========================================
+            # Create the mapping: code-to-unitname.
+            unit_name_name = row[unitname_column]
+
+            # Convert the unitname to align it with format used in the topology graph.
+            unit_name_name = unit_name_name.replace(" ", "_").replace(",", "_")
+
+            code2unitname[unit_name] = unit_name_name
+
+            #=========================================
             # Fixing the litho names.
             lithos2 = list()
             for litho in lithos:
@@ -170,7 +182,7 @@ def read_strat_data3(dist_table_filename):
                     if litho not in strat_all[unit_name]:
                         strat_all[unit_name].append(litho)
             else:
-                strat_all[unit_name] = list(dict.fromkeys(lithos)) # Remove dublicates.
+                strat_all[unit_name] = list(dict.fromkeys(lithos)) # Remove duplicates.
 
     print("The total number of unit codes: " + str(len(strat_all)))
 
@@ -278,7 +290,7 @@ def read_thickness_data(filename):
     return data
 
 #==============================================================================
-def read_topology_data(topology_filename):
+def read_topology_data(topology_filename, file_format):
     '''
     Read topology data (gml format graph) from a file.
     '''
@@ -287,7 +299,10 @@ def read_topology_data(topology_filename):
 
     # Modify the graph to have node names = unit names.
     for node in Gf.nodes():
-        unit_name = Gf.nodes[node]['LabelGraphics']['text'].replace("_", " ")
+        if (file_format == 3):
+            unit_name = Gf.nodes[node]['LabelGraphics']['text']
+        else:
+            unit_name = Gf.nodes[node]['LabelGraphics']['text'].replace("_", " ")
         mapping = {node:unit_name}
         Gf = nx.relabel_nodes(Gf, mapping)
 
@@ -954,8 +969,6 @@ def main():
     elif (file_format == 1):
         strat_data = read_strat_data(strat_filename)
 
-    exit()
-
     # Thickness data.
     thickness_data = []
     if (add_thickness_constraints):
@@ -964,11 +977,15 @@ def main():
     # Topology data.
     graph = nx.Graph()
     if (add_topology_constraints):
-        graph = read_topology_data(topology_filename)
+        graph = read_topology_data(topology_filename, file_format)
         # Sanity check: check that strata units exist in the graph.
         for unit_name in strat_data:
+            if (file_format == 3):
+                unit_name = code2unitname[unit_name]
             if unit_name not in graph.nodes():
                 print("WARNING: Not found graph unit: ", unit_name)
+
+    exit()
 
     #--------------------------------------------------------------
     # Generating the stratigraphy routes.
