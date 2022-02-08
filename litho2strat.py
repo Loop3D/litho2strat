@@ -151,13 +151,13 @@ def read_strat_data3(dist_table_filename):
             lithos = [l for l in lithos2]
 
             #=========================================
-            # Adding the lithos to the list.
+            # Adding the lithos to the dictionary (excluding the dublicates).
             if unit_name in strat_all:
                 for litho in lithos:
                     if litho not in strat_all[unit_name]:
                         strat_all[unit_name].append(litho)
             else:
-                strat_all[unit_name] = lithos
+                strat_all[unit_name] = list(dict.fromkeys(lithos)) # Remove dublicates.
 
     print("The total number of unit codes: " + str(len(strat_all)))
 
