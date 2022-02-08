@@ -98,6 +98,74 @@ def read_strat_data2(all_strat_filename, unit_list_filename, lithos_column):
     return strat_data
 
 #==============================================================================
+def fix_litho_name(litho):
+    '''
+    Convert the map lithology name to the 'CET lithology' name.
+    '''
+
+    if (litho == 'iron-formation'):
+        litho = 'banded_iron_formation'
+
+    if (litho == 'ultramafic'):
+        litho = 'ultramafic-rock'
+
+    # Convert things like metagranite to granite.
+    if (litho[0:4] == 'meta'):
+        litho = litho[4:]
+
+    return litho
+
+#==============================================================================
+def read_strat_data3(dist_table_filename):
+    '''
+    Building lithologies list for every unit from csv files data.
+    '''
+    # Unit code column number.
+    code_column = 1
+    # Unit name column number.
+    unitname_column = 2
+    # Lithology list column number.
+    lithos_column = 4
+
+    # Reading all units description.
+    strat_all = dict()
+    with open(dist_table_filename, 'r') as csvfile:
+        # Reading the csv data.
+        csvreader = csv.reader(csvfile, delimiter=',')
+        # Skipping the header.
+        next(csvreader)
+        # Extracting the lighology list for every csv row (strata unit).
+        for row in csvreader:
+            lithos = str2list(row[lithos_column])
+            #=========================================
+            # NOTE: USING CODE FOR THE UNIT NAME!
+            unit_name = row[code_column]
+
+            #=========================================
+            # Fixing the litho names.
+            lithos2 = list()
+            for litho in lithos:
+                litho2 = fix_litho_name(litho)
+                lithos2.append(litho2)
+
+            lithos = [l for l in lithos2]
+
+            #=========================================
+            # Adding the lithos to the list.
+            if unit_name in strat_all:
+                for litho in lithos:
+                    if litho not in strat_all[unit_name]:
+                        strat_all[unit_name].append(litho)
+            else:
+                strat_all[unit_name] = lithos
+
+    print("The total number of unit codes: " + str(len(strat_all)))
+
+    print(strat_all)
+
+    return strat_all
+
+#==============================================================================
 def read_drillsample_data(filename):
     '''
     Reading drill sample data from csv file.
@@ -816,6 +884,7 @@ def main():
 
     # Mark's new data.
     drillsample_filename = "data/real/dh_files/litho_tables/litho_548917.csv"
+    dist_table_filename = "data/real/dh_files/dist_tables/100k_map_near_548917.csv"
 
     #--------------------------------------------------------------
     file_format = 3
@@ -829,15 +898,17 @@ def main():
     else:
         drillsample_data = read_drillsample_data(drillsample_filename)
 
-    exit()
-
     # Unit lithologies data.
     strat_data = []
+    if (file_format == 3):
+        strat_data = read_strat_data3(dist_table_filename)
     if (file_format == 2):
         lithos_column = 4
         strat_data = read_strat_data2(all_strat_filename, unit_list_filename, lithos_column)
     elif (file_format == 1):
         strat_data = read_strat_data(strat_filename)
+
+    exit()
 
     # Thickness data.
     thickness_data = []
