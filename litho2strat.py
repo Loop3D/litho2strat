@@ -241,11 +241,13 @@ def read_drillsample_data2(filename):
         next(csvreader)
         # Extracting the data for every csv row.
         for row in csvreader:
+            # Extract the data columns.
             row_formatted = list(range(3))
             row_formatted[0] = row[4] # FromDepth
             row_formatted[1] = row[5] # ToDepth
             row_formatted[2] = row[8] # CET_Litho
-            data.append(row)
+            data.append(row_formatted)
+
             # Add lithology to the global list of all lithos.
             litho_name = row_formatted[2]
             if (litho_name not in all_lithos):
@@ -318,7 +320,7 @@ def generate_strata_table(drillsample_data, strat_data):
 
         if (not litho_found):
         # Lithology not found in units.
-            print("WARNING: Not found lithology: ", row)
+            print("WARNING: Not found lithology: ", litho)
             # Treat this as "no data".
             drillsample_data.remove(row)
         else:
@@ -917,9 +919,9 @@ def main():
     # Ranee's data.
     #all_strat_filename   = "data/real/20210903_ENS_dh2loop.csv"
     # Combined data from Mark and Ranee.
-    all_strat_filename   = "data/real/combined.csv"
-    drillsample_filename = "data/real/Hill_drillhole.csv"
-    unit_list_filename   = "data/real/Hill_strat.csv"
+    #all_strat_filename   = "data/real/combined.csv"
+    #drillsample_filename = "data/real/Hill_drillhole.csv"
+    #unit_list_filename   = "data/real/Hill_strat.csv"
     #drillsample_filename = "data/real/MtGibson_drillhole.csv"
     #unit_list_filename   = "data/real/MtGibson_strat.csv"
 
