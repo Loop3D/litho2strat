@@ -35,6 +35,7 @@ all_lithos = []
 #==============================================================================
 # Converter from string to list.
 str2list = lambda x: x.strip("[]").replace("'", "").replace(" ", "").split(",")
+str2list2 = lambda x: x.strip("[]").replace("'", "").replace(" ", "").replace("?", ",").split(",") # To fix ? symbol in some names (gabbro?leucogabbro)
 
 #==============================================================================
 def read_strat_data(filename):
@@ -136,9 +137,11 @@ def read_strat_data3(dist_table_filename):
         next(csvreader)
         # Extracting the lighology list for every csv row (strata unit).
         for row in csvreader:
-            lithos = str2list(row[lithos_column])
+            # Extract the list of lithologies.
+            lithos = str2list2(row[lithos_column])
+
             #=========================================
-            # NOTE: USING CODE FOR THE UNIT NAME!
+            # NOTE: USING 'CODE' FOR THE UNIT NAME!
             unit_name = row[code_column]
 
             #=========================================
@@ -161,7 +164,14 @@ def read_strat_data3(dist_table_filename):
 
     print("The total number of unit codes: " + str(len(strat_all)))
 
-    print(strat_all)
+    unique_lithos = dict()
+    for el in strat_all:
+        for litho in el:
+            unique_lithos[litho] = 1
+
+    print("The total number of lithologies: " + str(len(unique_lithos)))
+
+    #print(strat_all)
 
     return strat_all
 
