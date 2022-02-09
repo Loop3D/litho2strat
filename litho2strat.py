@@ -28,6 +28,9 @@ add_thickness_constraints = False
 # Flag for whether we should stay in the unit until the lithology name is changed.
 keep_continuous_lithos = False
 #---------------------------------------------------------------------------
+# The number of nearest unit codes (for distance constraints).
+number_nearest_codes = 20
+#---------------------------------------------------------------------------
 
 # List of all drillhole lithologies.
 all_lithos = []
@@ -228,8 +231,6 @@ def read_strat_data3(dist_table_filename):
     #=====================================================================
     # Filter units based on the distance.
     #=====================================================================
-    number_nearest_codes = 3
-
     strat_dist = dict()
     for unit_name in strat_filtered:
         for litho in strat_filtered[unit_name]:
@@ -248,13 +249,9 @@ def read_strat_data3(dist_table_filename):
 
     print("The number of filtered (by distance) units: " + str(len(strat_dist)))
 
-    #print(litho2dist)
-    #print(strat_filtered)
-    print(strat_dist)
+    #print(strat_dist)
 
-    exit()
-
-    return strat_filtered
+    return strat_dist
 
 #==============================================================================
 def read_drillsample_data(filename):
@@ -1020,8 +1017,6 @@ def main():
         for unit_name in strat_data:
             if unit_name not in graph.nodes():
                 print("WARNING: Not found graph unit: ", unit_name)
-
-    exit()
 
     #--------------------------------------------------------------
     # Generating the stratigraphy routes.
