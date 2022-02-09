@@ -206,6 +206,7 @@ def read_strat_data3(dist_table_filename):
     # Filter units based on the drillhole lithologies: 
     # Remove lithologies, that are not present in the drillhole data.
     # Remove the units that do not contain the drillhole lithos.
+    #=====================================================================
     strat_filtered = dict()
     for unit_name in strat_all:
         for litho in strat_all[unit_name]:
@@ -224,7 +225,32 @@ def read_strat_data3(dist_table_filename):
     print(unique_lithos)
     print("The filtered number of lithologies: " + str(len(unique_lithos)))
 
-    print(strat_filtered)
+    #=====================================================================
+    # Filter units based on the distance.
+    #=====================================================================
+    number_nearest_codes = 3
+
+    strat_dist = dict()
+    for unit_name in strat_filtered:
+        for litho in strat_filtered[unit_name]:
+            # Sorted distance list for this lithology.
+            dist_list = litho2dist[litho]
+
+            # Consider only N closest codes.
+            for el in dist_list[:number_nearest_codes]:
+                unit_name_nearest = el[1]
+                if (unit_name == unit_name_nearest):
+                    if (unit_name in strat_dist):
+                        strat_dist[unit_name].append(litho)
+                    else:
+                        strat_dist[unit_name] = [litho]
+                    break
+
+    print("The number of filtered (by distance) units: " + str(len(strat_dist)))
+
+    #print(litho2dist)
+    #print(strat_filtered)
+    print(strat_dist)
 
     exit()
 
