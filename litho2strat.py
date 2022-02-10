@@ -38,6 +38,9 @@ all_lithos = []
 # Lithology to distance and unitname mapping.
 litho2dist = dict()
 
+# Unit names (filtered).
+unit_names = []
+
 #==============================================================================
 # Converter from string to list.
 str2list = lambda x: x.strip("[]").replace("'", "").replace(" ", "").split(",")
@@ -398,11 +401,10 @@ def generate_strata_table(drillsample_data, strat_data):
     strata_table = strata_table[0:num_rows, :]
 
     # Map unit index to unit name.
-    unit_names = []
     for unit_name in strat_data:
         unit_names.append(unit_name)
 
-    return strata_table, unit_names
+    return strata_table
 
 #==============================================================================
 '''
@@ -545,7 +547,7 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data, graph):
     Generating stratigraphic routes.
     '''
     # Generating the table of possible strata paths.
-    strata_table, unit_names = generate_strata_table(drillsample_data, strat_data)
+    strata_table = generate_strata_table(drillsample_data, strat_data)
 
     num_rows = strata_table.shape[0]
     num_units = strata_table.shape[1]
@@ -913,7 +915,7 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
             num_units_nonempty += 1
     fig, axs = pl.subplots(num_units_nonempty, sharey=True)
 
-    fig.suptitle('Probability of occurrence for every unit.', y=0.92)
+    fig.suptitle('Probability of occurrence for every unit.', y=0.96)
 
     num_rows = len(all_routes[0].path)
 
@@ -941,7 +943,8 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
         # Plot dots.
         axs[j].scatter(x_data, strat_distr[:, i], s=5, c=color, zorder=2)
 
-        axs[j].set(ylabel=str(i))
+        axs[j].set_title(unit_names[i], size=9, y=0.91)
+
         if (i != num_units - 1):
             # Hide tick labels.
             axs[j].set_xticklabels([])
@@ -950,6 +953,8 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
         axs[j].xaxis.grid(True)
 
         j += 1
+ 
+    #pl.tight_layout()
  
     pl.xlabel('Depth')
     pl.show()
