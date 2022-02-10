@@ -899,8 +899,9 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
     #------------------------------------------
     # Print if there are multiple best routes.
     multiple_best_routes = False
-    if (route_scores[indexes_max[0]] == route_scores[indexes_max[1]]):
-        multiple_best_routes = True
+    if (len(indexes_max) > 1):
+        if (route_scores[indexes_max[0]] == route_scores[indexes_max[1]]):
+            multiple_best_routes = True
 
     print("Multiple best routes: ", multiple_best_routes)
 
