@@ -935,16 +935,16 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
         # Set red color for zero data.
         color = ['red' if d <= 0 else 'blue' for d in strat_distr[:, i]]
 
-        if (not multiple_best_routes):
-            # Set green color for the route with the highest score.
-            for row in range(num_rows):
-                if (all_routes[index_max].path[row] == i):
-                    color[row] = 'green'
+        # Set green color for the route with the highest score.
+        for row in range(num_rows):
+            if (all_routes[index_max].path[row] == i):
+                color[row] = 'green'
 
         # Plot dots.
         axs[j].scatter(x_data, strat_distr[:, i], s=5, c=color, zorder=2)
 
         axs[j].set_title(unit_names[i], size=9, y=0.91)
+        axs[j].set_ylabel(str(j))
 
         if (i != num_units - 1):
             # Hide tick labels.
