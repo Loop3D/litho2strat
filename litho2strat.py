@@ -29,7 +29,7 @@ add_thickness_constraints = False
 keep_continuous_lithos = False
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
-number_nearest_units = 3
+number_nearest_units = 6
 #---------------------------------------------------------------------------
 
 # List of all drillhole lithologies.
@@ -924,7 +924,7 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
     for i in range(num_units):
         if (sum(strat_distr[:, i]) != 0):
             num_units_nonempty += 1
-    fig, axs = pl.subplots(num_units_nonempty, sharey=True)
+    fig, axs = pl.subplots(num_units_nonempty, sharey=True, squeeze=False)
 
     fig.suptitle('Probability of occurrence for every unit.', y=0.96)
 
@@ -940,7 +940,7 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
             continue
 
         # Plot lines.
-        axs[j].plot(x_data, strat_distr[:, i], zorder=1, c='blue')
+        axs[j, 0].plot(x_data, strat_distr[:, i], zorder=1, c='blue')
 
         # Set red color for zero data.
         color = ['red' if d <= 0 else 'blue' for d in strat_distr[:, i]]
@@ -951,17 +951,17 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
                 color[row] = 'green'
 
         # Plot dots.
-        axs[j].scatter(x_data, strat_distr[:, i], s=5, c=color, zorder=2)
+        axs[j, 0].scatter(x_data, strat_distr[:, i], s=5, c=color, zorder=2)
 
-        axs[j].set_title(unit_names[i], size=9, y=0.91)
-        axs[j].set_ylabel(str(j + 1))
+        axs[j, 0].set_title(unit_names[i], size=9, y=0.91)
+        axs[j, 0].set_ylabel(str(j + 1))
 
         if (i != num_units - 1):
             # Hide tick labels.
-            axs[j].set_xticklabels([])
+            axs[j, 0].set_xticklabels([])
 
         # Add vertical lines.
-        axs[j].xaxis.grid(True)
+        axs[j, 0].xaxis.grid(True)
 
         j += 1
  
@@ -1006,7 +1006,7 @@ def main():
     topology_filename = "data/real/ASUD_strat.gml"
 
     # Mark's new data.
-    collarID = 548918
+    collarID = 548917
     drillsample_filename = "data/real/dh_files/litho_tables/litho_" + str(collarID) + ".csv"
     dist_table_filename = "data/real/dh_files/dist_tables/100k_map_near_" + str(collarID) + ".csv"
 
