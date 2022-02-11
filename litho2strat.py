@@ -148,6 +148,8 @@ def read_strat_data3(dist_table_filename):
     lithos_column = 4
     # Distance column number.
     dist_column = 5
+    # LITHNAME1 column.
+    lithname1_column = 10
 
     # Reading the units table.
     strat_all = dict()
@@ -167,6 +169,14 @@ def read_strat_data3(dist_table_filename):
 
             # Convert the unitname to align it with format used in the topology graph.
             unit_name = unit_name.replace(" ", "_").replace(",", "_")
+
+            #=========================================
+            # Fix for "mudstone". 
+            # TODO: Add mudstone to "lithos" column in original data.
+            #=========================================
+            lithname1 = row[lithname1_column]
+            if ("mudstone" in lithname1):
+                lithos.append("mudstone")
 
             #=========================================
             # Fixing the litho names.
