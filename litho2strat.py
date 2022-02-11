@@ -29,7 +29,7 @@ add_thickness_constraints = False
 keep_continuous_lithos = False
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
-number_nearest_units = 6
+number_nearest_units = 3
 #---------------------------------------------------------------------------
 
 # List of all drillhole lithologies.
@@ -944,7 +944,7 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
         axs[j].scatter(x_data, strat_distr[:, i], s=5, c=color, zorder=2)
 
         axs[j].set_title(unit_names[i], size=9, y=0.91)
-        axs[j].set_ylabel(str(j))
+        axs[j].set_ylabel(str(j + 1))
 
         if (i != num_units - 1):
             # Hide tick labels.
@@ -996,8 +996,9 @@ def main():
     topology_filename = "data/real/ASUD_strat.gml"
 
     # Mark's new data.
-    drillsample_filename = "data/real/dh_files/litho_tables/litho_548917.csv"
-    dist_table_filename = "data/real/dh_files/dist_tables/100k_map_near_548917.csv"
+    collarID = 548918
+    drillsample_filename = "data/real/dh_files/litho_tables/litho_" + str(collarID) + ".csv"
+    dist_table_filename = "data/real/dh_files/dist_tables/100k_map_near_" + str(collarID) + ".csv"
 
     #--------------------------------------------------------------
     file_format = 3
