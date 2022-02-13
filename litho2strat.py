@@ -4,10 +4,13 @@ import matplotlib.pylab as pl
 import networkx as nx
 import tracemalloc
 
+# 'Foreign' lithology parameters.
 max_num_foreign_lithos = 0
 max_num_foreign_lithos_per_unit = 0
+
+# Returning to the same unit parameters.
 max_num_returns = 10
-max_num_returns_per_unit = 10
+max_num_returns_per_unit = 0
 
 #---------------------------------------------------------------------------
 # Constants for discarding low frequency routes while calculating the routes.
@@ -19,11 +22,14 @@ discard_frequency = 2
 # Determines how many routes to keep when discarding.
 num_routes_keep = 10000
 #---------------------------------------------------------------------------
-# Adding unit contacts topology (extracted from map data).
-add_topology_constraints = True
-#---------------------------------------------------------------------------
 # Adding thickness constraints. (Requires unit thickness data).
 add_thickness_constraints = False
+
+#---------------------------------------------------------------------------
+# Adding unit contacts topology (extracted from map data).
+add_topology_constraints = True
+# Ignore topology graph edge direction defining the unit age.
+ignore_unit_age = False
 #---------------------------------------------------------------------------
 # Flag for whether we should stay in the unit until the lithology name is changed.
 keep_continuous_lithos = False
@@ -34,10 +40,8 @@ number_nearest_units = 6
 
 # List of all drillhole lithologies.
 all_lithos = []
-
 # Lithology to distance and unitname mapping.
 litho2dist = dict()
-
 # Unit names (filtered).
 unit_names = []
 
@@ -364,6 +368,10 @@ def read_topology_data(topology_filename, file_format):
             unit_name = Gf.nodes[node]['LabelGraphics']['text'].replace("_", " ")
         mapping = {node:unit_name}
         Gf = nx.relabel_nodes(Gf, mapping)
+
+    if (ignore_unit_age):
+    # Ignore graph edge direction defining the unit age.
+        Gf = Gf.to_undirected()
 
     return Gf
 
