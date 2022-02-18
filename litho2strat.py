@@ -4,8 +4,7 @@ import matplotlib.pylab as pl
 import networkx as nx
 import tracemalloc
 
-# Returning to the same unit parameters.
-max_num_returns = 10
+# 'Returning to the same unit' constraints.
 max_num_returns_per_unit = 1
 
 #---------------------------------------------------------------------------
@@ -28,7 +27,7 @@ add_topology_constraints = True
 ignore_unit_age = True
 #---------------------------------------------------------------------------
 # The number of unit contacts inside the same litholgy sequence.
-max_num_unit_contacts_inside_litho = 1
+max_num_unit_contacts_inside_litho = 2
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
 number_nearest_units = 3
@@ -493,25 +492,11 @@ def apply_max_num_returns_constraint(route, strata_list):
     Apply the "maximum number of returns to a unit" constraint:
         remove from the input unit list the units where the route cannot return anymore.
     '''
-    # Calculate the current global number of returns to the same unit.
-    num_returns0 = 0
-    for visited in route.unit_visited:
-        if (visited > 0):
-            num_returns0 += visited - 1
-
     # Apply the "max number of returns" constraint.
     for strat in strata_list[:]:
         if (route.unit_visited[strat] - 1 >= max_num_returns_per_unit):
         # Reached the maximum numer of local returns (to this unit).
             strata_list.remove(strat)
-        else:
-        # Calculate the global number of returns, if we visit this strat again.
-            num_returns = num_returns0
-            if (route.unit_visited[strat] > 0):
-                num_returns += 1
-            if (num_returns > max_num_returns):
-                # Skip this unit.
-                strata_list.remove(strat)
 
 #==============================================================================
 def apply_topology_constraints(graph, unit_names, strat0, strata_list):
@@ -843,7 +828,7 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
     # Plot distribution of the route scores (based on path probability).
     route_scores = get_route_scores(all_routes, strat_distr)
 
-    title_params = 'Max returns = ' + str(max_num_returns)
+    title_params = 'Max returns per unit = ' + str(max_num_returns_per_unit)
 
     pl.hist(route_scores, bins = 50)
     pl.title(title_params)
