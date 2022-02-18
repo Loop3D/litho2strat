@@ -10,7 +10,7 @@ max_num_foreign_lithos_per_unit = 0
 
 # Returning to the same unit parameters.
 max_num_returns = 10
-max_num_returns_per_unit = 0
+max_num_returns_per_unit = 1
 
 #---------------------------------------------------------------------------
 # Constants for discarding low frequency routes while calculating the routes.
@@ -29,13 +29,13 @@ add_thickness_constraints = False
 # Adding unit contacts topology (extracted from map data).
 add_topology_constraints = True
 # Ignore topology graph edge direction defining the unit age.
-ignore_unit_age = False
+ignore_unit_age = True
 #---------------------------------------------------------------------------
-# Flag for whether we should stay in the unit until the lithology name is changed.
-keep_continuous_lithos = False
+# The number of unit contacts inside the same litholgy sequence.
+max_num_unit_contacts_inside_litho = 1
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
-number_nearest_units = 6
+number_nearest_units = 3
 #---------------------------------------------------------------------------
 
 # List of all drillhole lithologies.
@@ -449,6 +449,8 @@ class StrataRoute:
         # Containts the number of times each unit was visited.
         self.unit_visited = np.zeros((num_units), dtype=int)
         self.unit_visited[strat] += 1
+        # The number of unit contacts inside the same lithology sequence.
+        self.num_unit_contacts_inside_litho = 0
 
     def __str__(self):
         return str(self.path)
@@ -598,6 +600,8 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data, graph):
     for row in range(1, row_max):
         current_litho = drillsample_data[row][2]
         current_litho_index = all_lithos.index(current_litho)
+        previous_litho = drillsample_data[row - 1][2]
+
         num_routes = len(all_routes)
         all_routes_number.append(num_routes)
 
@@ -619,11 +623,13 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data, graph):
             #--------------------------------------------------------------------
             can_change = True
 
-            # Add 'continous lithology' constraints.
-            if (keep_continuous_lithos):
-                previous_litho = drillsample_data[row - 1][2]
-                if (current_litho == previous_litho):
+            # Add 'unit contacts inside the same litho' constraints.
+            if (current_litho == previous_litho):
+                if (route.num_unit_contacts_inside_litho >= max_num_unit_contacts_inside_litho):
                     can_change = False
+            else:
+                # Reset.
+                route.num_unit_contacts_inside_litho = 0
 
             # Apply unit thickness constraints.
             if (add_thickness_constraints):
@@ -669,6 +675,11 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data, graph):
                             # Processing the "foreign" lithology.
                             if (foreign_litho_added):
                                 process_foreign_lithology(new_route, current_litho_index, strat)
+                            # Processing the unit contact inside the same lithology sequence.
+                            if (current_litho == previous_litho):
+                                new_route.num_unit_contacts_inside_litho = route.num_unit_contacts_inside_litho + 1
+                            else:
+                                new_route.num_unit_contacts_inside_litho = 0
                             # Adding new route into the list.
                             new_routes.append(new_route)
 
@@ -1015,6 +1026,7 @@ def main():
 
     # Mark's new data.
     collarID = 548917
+    #collarID = 792948
     drillsample_filename = "data/real/dh_files/litho_tables/litho_" + str(collarID) + ".csv"
     dist_table_filename = "data/real/dh_files/dist_tables/100k_map_near_" + str(collarID) + ".csv"
 
