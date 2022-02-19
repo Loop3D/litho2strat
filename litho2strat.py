@@ -561,6 +561,9 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data, graph):
         thickness_change = get_thickness_change(drillsample_data, row)
         new_routes = []
 
+        # Allowed strata units for a unit change.
+        strata_allowed = [strat for strat in range(num_units) if (strata_table[row, strat])]
+
         # Iterate over all routes.
         for route in all_routes:
             # The current strata index.
@@ -588,9 +591,9 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data, graph):
 
             if (can_change):
                 # Strata units excluding the current one.
-                strata_list = [strat for strat in range(num_units) if (strat != strat0)]
+                strata_list = [s for s in strata_allowed if (s != strat0)]
 
-                # Applying the "maximum umber of returns to a unit" constraint.
+                # Applying the "maximum number of returns to a unit" constraint.
                 apply_max_num_returns_constraint(route, strata_list)
 
                 # Apply unit topology constraints.
@@ -603,29 +606,26 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data, graph):
 
                     # Looking to which strata unit we can change.
                     for strat in strata_list:
-                        path_exists = strata_table[row, strat]
+                        # Making the new route.
+                        new_route = StrataRoute()
+                        # New path contains the reference to the old path, and the new route position.
+                        # Note: we are not copying the full old path, but only store a reference to it to save memory.
+                        new_route.path = [old_path, strat]
+                        new_route.current_thickness = thickness_change
+                        new_route.num_units = route.num_units + 1
+                        new_route.unit_visited = np.array(route.unit_visited)
 
-                        if (path_exists):
-                            # Making the new route.
-                            new_route = StrataRoute()
-                            # New path contains the reference to the old path, and the new route position.
-                            # Note: we are not copying the full old path, but only store a reference to it to save memory.
-                            new_route.path = [old_path, strat]
-                            new_route.current_thickness = thickness_change
-                            new_route.num_units = route.num_units + 1
-                            new_route.unit_visited = np.array(route.unit_visited)
+                        # Count this unit as visited.
+                        new_route.unit_visited[strat] += 1
 
-                            # Count this unit as visited.
-                            new_route.unit_visited[strat] += 1
+                        # Processing the unit contact inside the same lithology sequence.
+                        if (current_litho == previous_litho):
+                            new_route.num_unit_contacts_inside_litho = route.num_unit_contacts_inside_litho + 1
+                        else:
+                            new_route.num_unit_contacts_inside_litho = 0
 
-                            # Processing the unit contact inside the same lithology sequence.
-                            if (current_litho == previous_litho):
-                                new_route.num_unit_contacts_inside_litho = route.num_unit_contacts_inside_litho + 1
-                            else:
-                                new_route.num_unit_contacts_inside_litho = 0
-
-                            # Adding new route into the list.
-                            new_routes.append(new_route)
+                        # Adding new route into the list.
+                        new_routes.append(new_route)
 
             #-----------------------------------------------------------------
             # Check if we can go down the same srata unit (if cannot -- remove the current route).
