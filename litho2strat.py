@@ -990,14 +990,14 @@ def main():
 
     #--------------------------------------------------------------
     # Generating the stratigraphy routes.
-    tracemalloc.start()
+    #tracemalloc.start()
 
     all_routes, all_routes_number = generate_strat_routes(strat_data, drillsample_data, thickness_data, graph)
 
     print("Total number of routes = ", len(all_routes))
 
-    current, peak = tracemalloc.get_traced_memory()
-    print("Current memory usage is {} MB; Peak was {} MB".format(current / 10**6, peak / 10**6))
+    #current, peak = tracemalloc.get_traced_memory()
+    #print("Current memory usage is {} MB; Peak was {} MB".format(current / 10**6, peak / 10**6))
 
     #--------------------------------------------------------------
     # Plot the number of processed routes at each row.
