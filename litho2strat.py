@@ -424,6 +424,8 @@ def generate_strata_table(drillsample_data, strat_data):
 A class for storing the stratigraphic route.
 '''
 class StrataRoute:
+    __slots__ = 'to_remove', 'path', 'current_thickness', 'num_units', 'unit_visited', 'num_unit_contacts_inside_litho'
+
     def __init__(self):
         # Flag for removal.
         self.to_remove = False
