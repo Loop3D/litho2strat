@@ -424,7 +424,7 @@ def generate_strata_table(drillsample_data, strat_data):
 A class for storing the stratigraphic route.
 '''
 class StrataRoute:
-    __slots__ = 'to_remove', 'path', 'current_thickness', 'num_units', 'unit_visited', 'num_unit_contacts_inside_litho'
+    __slots__ = 'to_remove', 'path', 'current_thickness', 'unit_visited', 'num_unit_contacts_inside_litho'
 
     def __init__(self):
         # Flag for removal.
@@ -437,8 +437,6 @@ class StrataRoute:
         self.path = [strat]
         # The thickness of the last strata unit.
         self.current_thickness = thickness_change
-        # The number of strata units.
-        self.num_units = 1
         # Containts the number of times each unit was visited.
         self.unit_visited = np.zeros((num_units), dtype=int)
         # Mark this unit as 'visited'.
@@ -588,7 +586,7 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data, graph):
             # Apply unit thickness constraints.
             if (add_thickness_constraints):
                 # Ignore thickness for the top unit
-                if (route.num_units > 1):
+                if (len(route.path) > 1):
                     can_change = can_change and (current_thickness >= min_strata_thickness[strat0])
 
             if (can_change):
@@ -614,7 +612,6 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data, graph):
                         # Note: we are not copying the full old path, but only store a reference to it to save memory.
                         new_route.path = [old_path, strat]
                         new_route.current_thickness = thickness_change
-                        new_route.num_units = route.num_units + 1
                         new_route.unit_visited = np.array(route.unit_visited)
 
                         # Count this unit as visited.
@@ -990,14 +987,14 @@ def main():
 
     #--------------------------------------------------------------
     # Generating the stratigraphy routes.
-    #tracemalloc.start()
+#    tracemalloc.start()
 
     all_routes, all_routes_number = generate_strat_routes(strat_data, drillsample_data, thickness_data, graph)
 
     print("Total number of routes = ", len(all_routes))
 
-    #current, peak = tracemalloc.get_traced_memory()
-    #print("Current memory usage is {} MB; Peak was {} MB".format(current / 10**6, peak / 10**6))
+#    current, peak = tracemalloc.get_traced_memory()
+#    print("Current memory usage is {} MB; Peak was {} MB".format(current / 10**6, peak / 10**6))
 
     #--------------------------------------------------------------
     # Plot the number of processed routes at each row.
