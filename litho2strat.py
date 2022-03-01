@@ -27,10 +27,13 @@ add_topology_constraints = True
 ignore_unit_age = True
 #---------------------------------------------------------------------------
 # The number of unit contacts inside the same litholgy sequence.
-max_num_unit_contacts_inside_litho = 2
+max_num_unit_contacts_inside_litho = 1
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
-number_nearest_units = 3
+number_nearest_units = 4
+#---------------------------------------------------------------------------
+# Use the single closest unit for the top (first) lithology.
+single_top_unit = True
 #---------------------------------------------------------------------------
 
 # List of all drillhole lithologies.
@@ -388,12 +391,25 @@ def generate_strata_table(drillsample_data, strat_data):
         litho = row[2]
         litho_found = False
 
-        unit_index = 0
-        for unit_name in strat_data:
-            if (litho in strat_data[unit_name]):
-                litho_found = True
-                strata_table[new_row_index, unit_index] = True
-            unit_index += 1
+        if (new_row_index == 0 and single_top_unit):
+        # Use only the closest unit for the top lithology.
+            # Sorted distance list for this lithology.
+            dist_list = litho2dist[litho]
+            closest_unit = dist_list[0][1]
+
+            unit_index = 0
+            for unit_name in strat_data:
+                if (unit_name == closest_unit):
+                    litho_found = True
+                    strata_table[new_row_index, unit_index] = True
+                unit_index += 1
+        else:
+            unit_index = 0
+            for unit_name in strat_data:
+                if (litho in strat_data[unit_name]):
+                    litho_found = True
+                    strata_table[new_row_index, unit_index] = True
+                unit_index += 1
 
         if (not litho_found):
         # Lithology not found in units.
@@ -995,6 +1011,8 @@ def main():
 
 #    current, peak = tracemalloc.get_traced_memory()
 #    print("Current memory usage is {} MB; Peak was {} MB".format(current / 10**6, peak / 10**6))
+
+#    exit()
 
     #--------------------------------------------------------------
     # Plot the number of processed routes at each row.
