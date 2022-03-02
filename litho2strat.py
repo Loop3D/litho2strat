@@ -396,6 +396,10 @@ def generate_strata_table(drillsample_data, strat_data):
             # Sorted distance list for this lithology.
             dist_list = litho2dist[litho]
             closest_unit = dist_list[0][1]
+            closest_unit_distance = dist_list[0][0]
+
+            if (closest_unit_distance > 0):
+                print("WARNING: The closest distance to the top unit > 0! Dist =", closest_unit_distance)
 
             unit_index = 0
             for unit_name in strat_data:
