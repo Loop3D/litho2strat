@@ -821,15 +821,14 @@ def get_route_scores(all_routes, strat_distr):
     Needs strat_distr returned by get_strat_distr().
     '''
     num_rows = len(all_routes[0].path)
-
     route_scores = np.zeros(len(all_routes), dtype=float)
-    route_index = 0
-    for route in all_routes:
-        for row in range(num_rows):
-            unit_index = route.path[row]
+
+    for route_index, route in enumerate(all_routes):
+        for row, unit_index in enumerate(route.path):
             route_scores[route_index] += strat_distr[row, unit_index]
-        route_scores[route_index] = route_scores[route_index] / float(num_rows)
-        route_index += 1
+
+    # Normalize.
+    route_scores = route_scores / float(num_rows)
     return route_scores
 
 #=============================================================================
