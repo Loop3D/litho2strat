@@ -807,9 +807,9 @@ def get_strat_distr(all_routes, num_units):
     strat_distr = np.zeros((num_rows, num_units))
 
     for route in all_routes:
-        for row in range(num_rows):
-            unit_index = route.path[row]
+        for row, unit_index in enumerate(route.path):
             strat_distr[row, unit_index] += 1
+
     # Normalize.
     strat_distr = strat_distr / float(len(all_routes))
     return strat_distr
