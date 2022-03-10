@@ -27,7 +27,7 @@ add_topology_constraints = True
 ignore_unit_age = True
 #---------------------------------------------------------------------------
 # The number of unit contacts inside the same litholgy sequence.
-max_num_unit_contacts_inside_litho = 1
+max_num_unit_contacts_inside_litho = 2
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
 number_nearest_units = 4
@@ -329,7 +329,48 @@ def read_drillsample_data2(filename):
     print(all_lithos)
     print("The number of drillhole lithologies: " + str(len(all_lithos)))
 
-    return data
+    #==============================================================================
+    # Group the lithos by name, leaving at most N in each group,
+    # corresponding to number of contacts inside the litho sequence.
+    #==============================================================================
+    data2 = []
+    N = max_num_unit_contacts_inside_litho + 1
+    current_litho = ""
+    from_depth = float(data[0][0])
+    to_depth = float(data[0][1])
+
+    data_mod = [d for d in data]
+    data_mod.append([0, 0, "last_litho_name_for_following_calculation"])
+
+    for index, row in enumerate(data_mod):
+
+        prev_litho = current_litho
+        current_litho = row[2]
+
+        if (current_litho != prev_litho and index > 0):
+        # Change of litho name.
+            total_thickness = to_depth - from_depth
+            local_thickness = total_thickness / float(N)
+            litho = prev_litho
+
+            print("Grouping lithos for:", from_depth, to_depth, litho)
+
+            # Generate local grouped lithos.
+            for i in range(N):
+                from_depth_local = from_depth + float(i) * local_thickness
+                to_depth_local = from_depth_local + local_thickness
+
+                row_grouped = list(range(3))
+                row_grouped[0] = from_depth_local
+                row_grouped[1] = to_depth_local
+                row_grouped[2] = litho
+                data2.append(row_grouped)
+
+            # Update the starting depth for the following grouped lithos.
+            from_depth = float(row[0])
+        to_depth = float(row[1])
+
+    return data2
 
 #==============================================================================
 def read_thickness_data(filename):
@@ -963,7 +1004,7 @@ def main():
     topology_filename = "data/real/ASUD_strat.gml"
 
     # Mark's new data.
-    collarID = 548917
+    collarID = 548918
     #collarID = 792948
     drillsample_filename = "data/real/dh_files/litho_tables/litho_" + str(collarID) + ".csv"
     dist_table_filename = "data/real/dh_files/dist_tables/100k_map_near_" + str(collarID) + ".csv"
