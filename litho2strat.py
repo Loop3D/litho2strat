@@ -656,7 +656,6 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data, graph):
 
                 #-------------------------------------------------------------------------------------
                 # Exluding superficial (duplicate) routes with unit contacts inside a litho sequence.
-                # (Note: this optimisation is only relevent for max_num_unit_contacts_inside_litho >= 2)
                 #-------------------------------------------------------------------------------------
                 # Example:
                 # litho_sequence_length = 3
@@ -1038,7 +1037,7 @@ def main():
     topology_filename = "data/real/ASUD_strat.gml"
 
     # Mark's new data.
-    collarID = 548918
+    collarID = 548917
     #collarID = 792948
     drillsample_filename = "data/real/dh_files/litho_tables/litho_" + str(collarID) + ".csv"
     dist_table_filename = "data/real/dh_files/dist_tables/100k_map_near_" + str(collarID) + ".csv"
@@ -1056,7 +1055,7 @@ def main():
         drillsample_data = read_drillsample_data(drillsample_filename)
 
     # Group the litho sequence inside the drillhole data.
-    drillsample_data = group_drillhole_litho_sequence(drillsample_data)
+    #drillsample_data = group_drillhole_litho_sequence(drillsample_data)
 
     # Unit lithologies data.
     strat_data = []
