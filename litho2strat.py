@@ -329,11 +329,15 @@ def read_drillsample_data2(filename):
     print(all_lithos)
     print("The number of drillhole lithologies: " + str(len(all_lithos)))
 
-    #==============================================================================
-    # Group the lithos by name, leaving at most N in each group,
-    # corresponding to number of contacts inside the litho sequence.
-    #==============================================================================
-    data2 = []
+    return data
+
+#==============================================================================
+def group_drillhole_litho_sequence(data):
+    '''
+    Group the litho sequence by name (inside the drillhole data), leaving at most N in each group,
+    corresponding to number of contacts inside the litho sequence.
+    '''
+    data_grouped = []
     N = max_num_unit_contacts_inside_litho + 1
     current_litho = ""
     from_depth = float(data[0][0])
@@ -364,13 +368,14 @@ def read_drillsample_data2(filename):
                 row_grouped[0] = from_depth_local
                 row_grouped[1] = to_depth_local
                 row_grouped[2] = litho
-                data2.append(row_grouped)
+
+                data_grouped.append(row_grouped)
 
             # Update the starting depth for the following grouped lithos.
             from_depth = float(row[0])
         to_depth = float(row[1])
 
-    return data2
+    return data_grouped
 
 #==============================================================================
 def read_thickness_data(filename):
@@ -1020,6 +1025,9 @@ def main():
         drillsample_data = read_drillsample_data2(drillsample_filename)
     else:
         drillsample_data = read_drillsample_data(drillsample_filename)
+
+    # Group the litho sequence inside the drillhole data.
+    drillsample_data = group_drillhole_litho_sequence(drillsample_data)
 
     # Unit lithologies data.
     strat_data = []
