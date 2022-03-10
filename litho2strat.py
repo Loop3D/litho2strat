@@ -611,6 +611,8 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data, graph):
     row_max = num_rows
     print("row_max = ", row_max)
 
+    litho_sequence_length = 1
+
     # Going through the strata table and generating the routes.
     for row in range(1, row_max):
         current_litho = drillsample_data[row][2]
@@ -620,7 +622,7 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data, graph):
         num_routes = len(all_routes)
         all_routes_number.append(num_routes)
 
-        print("ROW = ", row, current_litho, num_routes)
+        print("ROW = ", row - 1, previous_litho, num_routes)
         if (num_routes == 0):
             break
 
@@ -629,6 +631,11 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data, graph):
 
         # Allowed strata units for a unit change.
         strata_allowed = [strat for strat in range(num_units) if (strata_table[row, strat])]
+
+        if (current_litho == previous_litho):
+            litho_sequence_length = litho_sequence_length + 1
+        else:
+            litho_sequence_length = 1
 
         # Iterate over all routes.
         for route in all_routes:
@@ -643,8 +650,26 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data, graph):
 
             # Add 'unit contacts inside the same litho' constraints.
             if (current_litho == previous_litho):
+                # Constrain the maximum number of unit contacts inside a litho sequence.
                 if (route.num_unit_contacts_inside_litho >= max_num_unit_contacts_inside_litho):
                     can_change = False
+
+                #-------------------------------------------------------------------------------------
+                # Exluding superficial (duplicate) routes with unit contacts inside a litho sequence.
+                # (Note: this optimisation is only relevent for max_num_unit_contacts_inside_litho >= 2)
+                #-------------------------------------------------------------------------------------
+                # Example:
+                # litho_sequence_length = 3
+                # n = 1,2,3
+                #     A-A-A
+                # for n = 3, allow for unit change only if have 1 "unit contacts inside litho" already (between 1 and 2),
+                # so when num_unit_contacts_inside_litho >= litho_sequence_length - 2
+                # This way we skip (duplicate) cases with unit change at n = 3 for routes with zero "unit contacts inside litho".
+                # All those cases should already have been built at n = 2.
+                #-------------------------------------------------------------------------------------
+                if (route.num_unit_contacts_inside_litho < litho_sequence_length - 2):
+                    can_change = False
+
             else:
                 # Reset.
                 route.num_unit_contacts_inside_litho = 0
@@ -725,6 +750,10 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data, graph):
         # Applying the heuristic to reduce the number of routes.
             if (row % discard_frequency == 0):
                 remove_low_score_routes(all_routes, num_units, num_routes_keep)
+
+        if (row == row_max - 1):
+            # Print info for the last row.
+            print("ROW = ", row, current_litho, len(all_routes))
 
     #------------------------------------------------------------------
     # Adding the final number of routes.
