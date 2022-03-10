@@ -6,20 +6,9 @@ import tracemalloc
 
 # 'Returning to the same unit' constraints.
 max_num_returns_per_unit = 1
-
-#---------------------------------------------------------------------------
-# Constants for discarding low frequency routes while calculating the routes.
-# This heuristic reduces the number of routes allowing faster calculation in the case of many route combinations.
-# Note: this is a heuristic, thus the final result is not necessarily accurate.
-discard_low_score_routes = False
-# Determines how often we discard te routes.
-discard_frequency = 2
-# Determines how many routes to keep when discarding.
-num_routes_keep = 10000
 #---------------------------------------------------------------------------
 # Adding thickness constraints. (Requires unit thickness data).
 add_thickness_constraints = False
-
 #---------------------------------------------------------------------------
 # Adding unit contacts topology (extracted from map data).
 add_topology_constraints = True
@@ -745,11 +734,6 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data, graph):
         # Addig new routes.
         all_routes.extend(new_routes)
 
-        if (discard_low_score_routes):
-        # Applying the heuristic to reduce the number of routes.
-            if (row % discard_frequency == 0):
-                remove_low_score_routes(all_routes, num_units, num_routes_keep)
-
         if (row == row_max - 1):
             # Print info for the last row.
             print("ROW = ", row, current_litho, len(all_routes))
@@ -763,43 +747,6 @@ def generate_strat_routes(strat_data, drillsample_data, thickness_data, graph):
         route.path = flatten(route.path)
 
     return all_routes, all_routes_number
-
-#==============================================================================
-def remove_low_score_routes(all_routes, num_units, num_routes_keep):
-    if (len(all_routes) <= num_routes_keep):
-        return
-
-    # Flatten the multilevel list of lists.
-    for route in all_routes:
-        route.path = flatten(route.path)
-
-    # Building the distribution of unit presence at every depth.
-    strat_distr = get_strat_distr(all_routes, num_units)
-
-    # Building the route scores (based on path probability).
-    route_scores = get_route_scores(all_routes, strat_distr)
-
-    # Determine the minimum score for the route to keep it.
-    route_scores_sorted = np.sort(route_scores)
-    min_score = route_scores_sorted[-num_routes_keep]
-
-    print("min_score = " + str(min_score))
-
-    # Building the filtered routes list.
-    all_routes_filtered = []
-    route_index = 0
-    for route in all_routes:
-        if (route_scores[route_index] >= min_score):
-            all_routes_filtered.append(route)
-        route_index += 1
-
-    old_length = len(all_routes)
-
-    all_routes[:] = all_routes_filtered
-
-    new_length = len(all_routes)
-
-    print("Removed routes: " + str(old_length - new_length))
 
 #==============================================================================
 def write_routes_to_file(filename, drillsample_data, all_routes):
