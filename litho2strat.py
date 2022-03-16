@@ -1,3 +1,11 @@
+'''
+  This program generates a set of plausible stratigraphies with uncertainties, for a given drillhole lithology log.
+  It uses map data for distance and topology constraints, and several free parameters describing the solution complexity (level of deformation) constraints.
+
+  Author: Vitaliy Ogarko, vogarko@gmail.com
+  The University of Western Australia
+'''
+
 import csv
 import numpy as np
 import matplotlib.pylab as pl
@@ -16,15 +24,15 @@ add_topology_constraints = True
 ignore_unit_age = True
 #---------------------------------------------------------------------------
 # The number of unit contacts inside the same litholgy sequence.
-max_num_unit_contacts_inside_litho = 2
+max_num_unit_contacts_inside_litho = 0
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
 number_nearest_units = 4
 #---------------------------------------------------------------------------
 # Use the single closest unit for the top (first) lithology.
 single_top_unit = True
-#---------------------------------------------------------------------------
 
+#==============================================================================
 # List of all drillhole lithologies.
 all_lithos = []
 # Lithology to distance and unitname mapping.
@@ -32,71 +40,9 @@ litho2dist = dict()
 # Unit names (filtered).
 unit_names = []
 
-#==============================================================================
 # Converter from string to list.
 str2list = lambda x: x.strip("[]").replace("'", "").replace(" ", "").split(",")
 str2list2 = lambda x: x.strip("[]").replace("'", "").replace(" ", "").replace("?", ",").split(",") # To fix ? symbol in some names (gabbro?leucogabbro)
-
-#==============================================================================
-def read_strat_data(filename):
-    '''
-    Reading lithologies for every unit from csv file.
-    '''
-    strat_data = []
-    with open(filename, 'r') as csvfile:
-        # Reading the csv data.
-        csvreader = csv.reader(csvfile, delimiter=',')
-        # Skipping the header.
-        next(csvreader)
-        # Extracting the lighology list for every csv row (strata unit).
-        for row in csvreader:
-            # The lithologies are stored in the third column!
-            lithos = str2list(row[2])
-            strat_data.append(lithos)
-
-    return strat_data
-
-#==============================================================================
-def read_strat_data2(all_strat_filename, unit_list_filename, lithos_column):
-    '''
-    Building lithologies list for every unit from csv files data.
-    '''
-    # Reading all units description.
-    strat_all = dict()
-    with open(all_strat_filename, 'r') as csvfile:
-        # Reading the csv data.
-        csvreader = csv.reader(csvfile, delimiter=',')
-        # Skipping the header.
-        next(csvreader)
-        # Extracting the lighology list for every csv row (strata unit).
-        for row in csvreader:
-            lithos = str2list(row[lithos_column])
-            unit_name = row[0]
-            if unit_name in strat_all:
-            # Added this to be able to read data where unitname appears at multiple lines.
-                for litho in lithos:
-                    if litho not in strat_all[unit_name]:
-                        strat_all[unit_name].append(litho)
-            else:
-                strat_all[unit_name] = lithos
-
-    # Building unit list for a partial set of units.
-    strat_data = dict()
-    with open(unit_list_filename, 'r') as csvfile:
-        # Reading the csv data.
-        csvreader = csv.reader(csvfile, delimiter=',')
-        # Skipping the header.
-        next(csvreader)
-        # Go through the list of units and form its lithology list.
-        for row in csvreader:
-            unit_name = row[0]
-            if (unit_name in strat_all):
-                strat_data[unit_name] = strat_all[unit_name]
-            else:
-                print("Error! No unit description found in 'all strat' list for unit name: " + unit_name)
-                exit()
-
-    return strat_data
 
 #==============================================================================
 def fix_litho_name(litho):
@@ -127,7 +73,7 @@ def get_unique_lithos_from_strat_data(strat_data):
     return unique_lithos
 
 #==============================================================================
-def read_strat_data3(dist_table_filename):
+def read_strat_data(dist_table_filename):
     '''
     Building lithologies list for every unit from csv file data.
     '''
@@ -281,28 +227,6 @@ def read_drillsample_data(filename):
         next(csvreader)
         # Extracting the data for every csv row.
         for row in csvreader:
-            data.append(row)
-            litho_name = row[2]
-            if (litho_name not in all_lithos):
-                all_lithos.append(litho_name)
-
-    print("The number of drillhole lithologies: " + str(len(all_lithos)))
-
-    return data
-
-#==============================================================================
-def read_drillsample_data2(filename):
-    '''
-    Reading drill sample data from csv file.
-    '''
-    data = []
-    with open(filename, 'r') as csvfile:
-        # Reading the csv data.
-        csvreader = csv.reader(csvfile, delimiter=',')
-        # Skipping the header.
-        next(csvreader)
-        # Extracting the data for every csv row.
-        for row in csvreader:
             # Extract the data columns.
             row_formatted = list(range(3))
             row_formatted[0] = row[4] # FromDepth
@@ -386,7 +310,7 @@ def read_thickness_data(filename):
     return data
 
 #==============================================================================
-def read_topology_data(topology_filename, file_format):
+def read_topology_data(topology_filename):
     '''
     Read topology data (gml format graph) from a file.
     '''
@@ -395,10 +319,7 @@ def read_topology_data(topology_filename, file_format):
 
     # Modify the graph to have node names = unit names.
     for node in Gf.nodes():
-        if (file_format == 3):
-            unit_name = Gf.nodes[node]['LabelGraphics']['text']
-        else:
-            unit_name = Gf.nodes[node]['LabelGraphics']['text'].replace("_", " ")
+        unit_name = Gf.nodes[node]['LabelGraphics']['text']
         mapping = {node:unit_name}
         Gf = nx.relabel_nodes(Gf, mapping)
 
@@ -956,63 +877,26 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
 def main():
     print('Started litho2strat')
 
-    # Paths to data.
-    all_strat_filename = ""
-    unit_list_filename = ""
-
-#     strat_filename       = "data/simple/strat_1627022992.5507748.csv"
-#     thickness_filename   = "data/simple/thickness_mean_1627022992.5507748.csv"
-#     drillsample_filename = "data/simple/drill_sample_1627022992.5507748.csv"
-
-#     all_strat_filename   = "data/real/ALL_Strat descriptions.csv"
-#     drillsample_filename = "data/real/MtGibson_drillhole.csv"
-#     unit_list_filename   = "data/real/MtGibson_strat.csv"
-
-#     drillsample_filename = "data/real/Hill_drillhole.csv"
-#     unit_list_filename   = "data/real/Hill_strat.csv"
-
-    # Ranee's data.
-    #all_strat_filename   = "data/real/20210903_ENS_dh2loop.csv"
-    # Combined data from Mark and Ranee.
-    #all_strat_filename   = "data/real/combined.csv"
-    #drillsample_filename = "data/real/Hill_drillhole.csv"
-    #unit_list_filename   = "data/real/Hill_strat.csv"
-    #drillsample_filename = "data/real/MtGibson_drillhole.csv"
-    #unit_list_filename   = "data/real/MtGibson_strat.csv"
-
     # Topology file.
     topology_filename = "data/real/ASUD_strat.gml"
 
     # Mark's new data.
     collarID = 548917
-    #collarID = 792948
     drillsample_filename = "data/real/dh_files/litho_tables/litho_" + str(collarID) + ".csv"
     dist_table_filename = "data/real/dh_files/dist_tables/100k_map_near_" + str(collarID) + ".csv"
 
     #--------------------------------------------------------------
-    file_format = 3
-
-    #--------------------------------------------------------------
-    # Reading input data.
+    # Reading the input data.
     #--------------------------------------------------------------
     # Drill sample data.
-    if (file_format == 3):
-        drillsample_data = read_drillsample_data2(drillsample_filename)
-    else:
-        drillsample_data = read_drillsample_data(drillsample_filename)
+    drillsample_data = read_drillsample_data(drillsample_filename)
 
     # Group the litho sequence inside the drillhole data.
     #drillsample_data = group_drillhole_litho_sequence(drillsample_data)
 
     # Unit lithologies data.
     strat_data = []
-    if (file_format == 3):
-        strat_data = read_strat_data3(dist_table_filename)
-    if (file_format == 2):
-        lithos_column = 4
-        strat_data = read_strat_data2(all_strat_filename, unit_list_filename, lithos_column)
-    elif (file_format == 1):
-        strat_data = read_strat_data(strat_filename)
+    strat_data = read_strat_data(dist_table_filename)
 
     # Thickness data.
     thickness_data = []
@@ -1022,14 +906,15 @@ def main():
     # Topology data.
     graph = nx.Graph()
     if (add_topology_constraints):
-        graph = read_topology_data(topology_filename, file_format)
+        graph = read_topology_data(topology_filename)
         # Sanity check: check that strata units exist in the graph.
         for unit_name in strat_data:
             if unit_name not in graph.nodes():
                 print("WARNING: Not found graph unit: ", unit_name)
 
     #--------------------------------------------------------------
-    # Generating the stratigraphy routes.
+    # Generating the stratigraphies.
+    #--------------------------------------------------------------
 #    tracemalloc.start()
 
     all_routes, all_routes_number = generate_strat_routes(strat_data, drillsample_data, thickness_data, graph)
@@ -1039,8 +924,8 @@ def main():
 #    current, peak = tracemalloc.get_traced_memory()
 #    print("Current memory usage is {} MB; Peak was {} MB".format(current / 10**6, peak / 10**6))
 
-#    exit()
-
+    #--------------------------------------------------------------
+    # Plot the results.
     #--------------------------------------------------------------
     # Plot the number of processed routes at each row.
     pl.xlabel('Row number')
@@ -1053,9 +938,6 @@ def main():
 
     # Write results to the file.
     #write_routes_to_file("strata.txt", drillsample_data, all_routes)
-
-    # Plot the routes.
-    #plot_routes(drillsample_data, all_routes[0:1000])
 
     # Plot unit probabilities.
     num_units = len(strat_data)
