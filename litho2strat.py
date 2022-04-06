@@ -30,7 +30,7 @@ max_num_unit_contacts_inside_litho = 0
 number_nearest_units = 4
 #---------------------------------------------------------------------------
 # Use the single closest unit for the top (first) lithology.
-single_top_unit = True
+single_top_unit = False
 
 #==============================================================================
 # List of all drillhole lithologies.
@@ -215,7 +215,7 @@ def read_strat_data(dist_table_filename):
     return strat_dist
 
 #==============================================================================
-def read_drillsample_data(filename):
+def read_drillsample_data(filename, column_from, column_to, column_litho):
     '''
     Reading drill sample data from csv file.
     '''
@@ -229,9 +229,9 @@ def read_drillsample_data(filename):
         for row in csvreader:
             # Extract the data columns.
             row_formatted = list(range(3))
-            row_formatted[0] = row[4] # FromDepth
-            row_formatted[1] = row[5] # ToDepth
-            row_formatted[2] = row[8] # CET_Litho
+            row_formatted[0] = row[column_from] # FromDepth
+            row_formatted[1] = row[column_to] # ToDepth
+            row_formatted[2] = row[column_litho] # CET_Litho
             data.append(row_formatted)
 
             # Add lithology to the global list of all lithos.
@@ -349,20 +349,21 @@ def generate_strata_table(drillsample_data, strat_data):
 
         if (new_row_index == 0 and single_top_unit):
         # Use only the closest unit for the top lithology.
-            # Sorted distance list for this lithology.
-            dist_list = litho2dist[litho]
-            closest_unit = dist_list[0][1]
-            closest_unit_distance = dist_list[0][0]
-
-            if (closest_unit_distance > 0):
-                print("WARNING: The closest distance to the top unit > 0! Dist =", closest_unit_distance)
-
-            unit_index = 0
-            for unit_name in strat_data:
-                if (unit_name == closest_unit):
-                    litho_found = True
-                    strata_table[new_row_index, unit_index] = True
-                unit_index += 1
+            if (litho in litho2dist):
+                # Sorted distance list for this lithology.
+                dist_list = litho2dist[litho]
+                closest_unit = dist_list[0][1]
+                closest_unit_distance = dist_list[0][0]
+    
+                if (closest_unit_distance > 0):
+                    print("WARNING: The closest distance to the top unit > 0! Dist =", closest_unit_distance)
+    
+                unit_index = 0
+                for unit_name in strat_data:
+                    if (unit_name == closest_unit):
+                        litho_found = True
+                        strata_table[new_row_index, unit_index] = True
+                    unit_index += 1
         else:
             unit_index = 0
             for unit_name in strat_data:
@@ -880,16 +881,31 @@ def main():
     # Topology file.
     topology_filename = "data/real/ASUD_strat.gml"
 
-    # Mark's new data.
-    collarID = 548917
-    drillsample_filename = "data/real/dh_files/litho_tables/litho_" + str(collarID) + ".csv"
-    dist_table_filename = "data/real/dh_files/dist_tables/100k_map_near_" + str(collarID) + ".csv"
+    # # Mark's new data.
+    # collarID = 548917
+    # drillsample_filename = "data/real/dh_files/litho_tables/litho_" + str(collarID) + ".csv"
+    # dist_table_filename = "data/real/dh_files/dist_tables/100k_map_near_" + str(collarID) + ".csv"
+    #
+    # # Drillsample data columns.
+    # column_from = 4
+    # column_to = 5
+    # column_litho = 8
+
+    # Mark's data with known solutions.
+    collarID = 353386
+    drillsample_filename = "data/real/dist_files/litho_tables/litho_" + str(collarID) + ".csv"
+    dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
+
+    # Drillsample data columns.
+    column_from = 3
+    column_to = 4
+    column_litho = 8
 
     #--------------------------------------------------------------
     # Reading the input data.
     #--------------------------------------------------------------
     # Drill sample data.
-    drillsample_data = read_drillsample_data(drillsample_filename)
+    drillsample_data = read_drillsample_data(drillsample_filename, column_from, column_to, column_litho)
 
     # Group the litho sequence inside the drillhole data.
     #drillsample_data = group_drillhole_litho_sequence(drillsample_data)
