@@ -11,6 +11,7 @@ import numpy as np
 import matplotlib.pylab as pl
 import networkx as nx
 import tracemalloc
+import os
 
 # 'Returning to the same unit' constraints.
 max_num_returns_per_unit = 1
@@ -27,10 +28,10 @@ ignore_unit_age = True
 max_num_unit_contacts_inside_litho = 0
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
-number_nearest_units = 4
+number_nearest_units = 1
 #---------------------------------------------------------------------------
 # Use the single closest unit for the top (first) lithology.
-single_top_unit = False
+single_top_unit = True
 
 #==============================================================================
 # List of all drillhole lithologies.
@@ -39,6 +40,8 @@ all_lithos = []
 litho2dist = dict()
 # Unit names (filtered).
 unit_names = []
+# Missing lithos.
+missing_lithos = set()
 
 # Converter from string to list.
 str2list = lambda x: x.strip("[]").replace("'", "").replace(" ", "").split(",")
@@ -373,8 +376,10 @@ def generate_strata_table(drillsample_data, strat_data):
                 unit_index += 1
 
         if (not litho_found):
-        # Lithology not found in units.
-            print("WARNING: Not found lithology: ", litho)
+        # Drillhole lithology not found in units.
+            print("WARNING: Drillhole lithology not found in units data: ", litho)
+            missing_lithos.add(litho)
+
             # Treat this as "no data".
             drillsample_data.remove(row)
         else:
@@ -384,8 +389,8 @@ def generate_strata_table(drillsample_data, strat_data):
     print("num_rows (after) = ", num_rows)
 
     if (num_rows == 0):
-        print('No data left. Exiting.')
-        exit()
+        print('No data left!!!')
+        return np.full((0, 0), False)
 
     # Remove rows due to missing lithologies.
     strata_table = strata_table[0:num_rows, :]
@@ -873,10 +878,56 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
  
     pl.xlabel('Depth')
     pl.show()
+    
+#=============================================================================
+def generate_missing_lithos():
+    '''
+    Generates a list of missing drillhole lithologies from unit data in all data files.
+    '''
+
+    directory = "data/real/dist_files/litho_tables"
+    #directory = "data/real/dh_files/litho_tables"
+
+    # Drillsample data columns.
+    column_from = 3
+    column_to = 4
+    column_litho = 8
+
+    counter = 0
+
+    for file in os.listdir(directory):
+        counter = counter + 1
+        print("PROCESSING FILE NUMBER =", counter)
+
+        filename = os.fsdecode(file)
+        collarID = int(filename[6:-4])
+        print(collarID)
+
+        drillsample_filename = "data/real/dist_files/litho_tables/litho_" + str(collarID) + ".csv"
+        dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
+
+        #drillsample_filename = "data/real/dh_files/litho_tables/litho_" + str(collarID) + ".csv"
+        #dist_table_filename = "data/real/dh_files/dist_tables/100k_map_near_" + str(collarID) + ".csv"
+
+        # Drill sample data.
+        drillsample_data = read_drillsample_data(drillsample_filename, column_from, column_to, column_litho)
+
+        # Unit lithologies data.
+        strat_data = read_strat_data(dist_table_filename)
+
+        # Generating the table of possible strata paths.
+        strata_table = generate_strata_table(drillsample_data, strat_data)
+
+    print("Missing lithologies list:")
+    print("Number lithos missing =", len(missing_lithos))
+    print(missing_lithos)
 
 #=============================================================================
 def main():
     print('Started litho2strat')
+
+    #generate_missing_lithos()
+    #exit()
 
     # Topology file.
     topology_filename = "data/real/ASUD_strat.gml"
@@ -892,7 +943,18 @@ def main():
     # column_litho = 8
 
     # Mark's data with known solutions.
-    collarID = 353386
+    #collarID = 1209857
+    #collarID =  353386
+
+    # Confirmed results (using 1 closest unit & single top unit).
+    collarID = 2182336
+    # collarID = 2182335
+    # collarID = 2182340
+    # collarID = 2182339
+    # collarID = 2182338
+    # collarID = 2182335
+    # collarID = 2182334
+
     drillsample_filename = "data/real/dist_files/litho_tables/litho_" + str(collarID) + ".csv"
     dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
 
@@ -908,6 +970,7 @@ def main():
     drillsample_data = read_drillsample_data(drillsample_filename, column_from, column_to, column_litho)
 
     # Group the litho sequence inside the drillhole data.
+    # Commented because it leads to many additional routes when splitting the existing single lithos.
     #drillsample_data = group_drillhole_litho_sequence(drillsample_data)
 
     # Unit lithologies data.
