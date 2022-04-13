@@ -28,7 +28,7 @@ ignore_unit_age = True
 max_num_unit_contacts_inside_litho = 0
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
-number_nearest_units = 1
+number_nearest_units = 1000
 #---------------------------------------------------------------------------
 # Use the single closest unit for the top (first) lithology.
 single_top_unit = True
@@ -38,8 +38,7 @@ single_top_unit = True
 all_lithos = []
 # Lithology to distance and unitname mapping.
 litho2dist = dict()
-# Unit names (filtered).
-unit_names = []
+
 # Missing lithos.
 missing_lithos = set()
 
@@ -93,6 +92,8 @@ def read_strat_data(dist_table_filename):
 
     # Reading the units table.
     strat_all = dict()
+    litho2dist.clear()
+
     with open(dist_table_filename, 'r') as csvfile:
         # Reading the csv data.
         csvreader = csv.reader(csvfile, delimiter=',')
@@ -223,6 +224,7 @@ def read_drillsample_data(filename, column_from, column_to, column_litho):
     Reading drill sample data from csv file.
     '''
     data = []
+    all_lithos.clear()
     with open(filename, 'r') as csvfile:
         # Reading the csv data.
         csvreader = csv.reader(csvfile, delimiter=',')
@@ -395,10 +397,6 @@ def generate_strata_table(drillsample_data, strat_data):
     # Remove rows due to missing lithologies.
     strata_table = strata_table[0:num_rows, :]
 
-    # Map unit index to unit name.
-    for unit_name in strat_data:
-        unit_names.append(unit_name)
-
     return strata_table
 
 #==============================================================================
@@ -493,12 +491,25 @@ def apply_topology_constraints(graph, unit_names, strat0, strata_list):
                 strata_list.remove(strat)
 
 #==============================================================================
+def get_unit_names(strat_data):
+    '''
+    Maps unit index to unit name.
+    '''
+    unit_names = []
+    for unit_name in strat_data:
+        unit_names.append(unit_name)
+    return unit_names
+
+#==============================================================================
 def generate_strat_routes(strat_data, drillsample_data, thickness_data, graph):
     '''
     Generating stratigraphic routes.
     '''
     # Generating the table of possible strata paths.
     strata_table = generate_strata_table(drillsample_data, strat_data)
+
+    # Unit index to unit name mapping.
+    unit_names = get_unit_names(strat_data)
 
     num_rows = strata_table.shape[0]
     num_units = strata_table.shape[1]
@@ -780,12 +791,14 @@ def get_route_scores(all_routes, strat_distr):
     return route_scores
 
 #=============================================================================
-def plot_unit_probabilities(all_routes, drillsample_data, num_units):
+def plot_unit_probabilities(all_routes, drillsample_data, unit_names):
     '''
     Generate a plot with probability of occurence for each unit.
     '''
     if (len(all_routes) == 0):
         return
+
+    num_units = len(unit_names)
 
     # Building the distribution of unit presence at every depth.
     strat_distr = get_strat_distr(all_routes, num_units)
@@ -878,7 +891,7 @@ def plot_unit_probabilities(all_routes, drillsample_data, num_units):
  
     pl.xlabel('Depth')
     pl.show()
-    
+
 #=============================================================================
 def generate_missing_lithos():
     '''
@@ -926,8 +939,8 @@ def generate_missing_lithos():
 def main():
     print('Started litho2strat')
 
-    #generate_missing_lithos()
-    #exit()
+    generate_missing_lithos()
+    exit()
 
     # Topology file.
     topology_filename = "data/real/ASUD_strat.gml"
@@ -954,6 +967,8 @@ def main():
     # collarID = 2182338
     # collarID = 2182335
     # collarID = 2182334
+
+    #collarID = 1209855
 
     drillsample_filename = "data/real/dist_files/litho_tables/litho_" + str(collarID) + ".csv"
     dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
@@ -1019,8 +1034,8 @@ def main():
     #write_routes_to_file("strata.txt", drillsample_data, all_routes)
 
     # Plot unit probabilities.
-    num_units = len(strat_data)
-    plot_unit_probabilities(all_routes, drillsample_data, num_units)
+    unit_names = get_unit_names(strat_data)
+    plot_unit_probabilities(all_routes, drillsample_data, unit_names)
 
 #=============================================================================
 if __name__ == "__main__":
