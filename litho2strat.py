@@ -28,7 +28,7 @@ ignore_unit_age = True
 max_num_unit_contacts_inside_litho = 0
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
-number_nearest_units = 1000
+number_nearest_units = 1
 #---------------------------------------------------------------------------
 # Use the single closest unit for the top (first) lithology.
 single_top_unit = True
@@ -36,8 +36,6 @@ single_top_unit = True
 #==============================================================================
 # List of all drillhole lithologies.
 all_lithos = []
-# Lithology to distance and unitname mapping.
-litho2dist = dict()
 
 # Missing lithos.
 missing_lithos = set()
@@ -92,7 +90,9 @@ def read_strat_data(dist_table_filename):
 
     # Reading the units table.
     strat_all = dict()
-    litho2dist.clear()
+
+    # Lithology to distance and unitname mapping.
+    litho2dist = dict()
 
     with open(dist_table_filename, 'r') as csvfile:
         # Reading the csv data.
@@ -216,7 +216,7 @@ def read_strat_data(dist_table_filename):
 
     print("The number of filtered (by distance) units: " + str(len(strat_dist)))
 
-    return strat_dist
+    return strat_dist, litho2dist
 
 #==============================================================================
 def read_drillsample_data(filename, column_from, column_to, column_litho):
@@ -335,7 +335,7 @@ def read_topology_data(topology_filename):
     return Gf
 
 #==============================================================================
-def generate_strata_table(drillsample_data, strat_data):
+def generate_strata_table(drillsample_data, strat_data, litho2dist):
     '''
     Generates the stratigraphic table, and unit names list.
     '''
@@ -501,12 +501,12 @@ def get_unit_names(strat_data):
     return unit_names
 
 #==============================================================================
-def generate_strat_routes(strat_data, drillsample_data, thickness_data, graph):
+def generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_data, graph):
     '''
     Generating stratigraphic routes.
     '''
     # Generating the table of possible strata paths.
-    strata_table = generate_strata_table(drillsample_data, strat_data)
+    strata_table = generate_strata_table(drillsample_data, strat_data, litho2dist)
 
     # Unit index to unit name mapping.
     unit_names = get_unit_names(strat_data)
@@ -925,11 +925,11 @@ def generate_missing_lithos():
         # Drill sample data.
         drillsample_data = read_drillsample_data(drillsample_filename, column_from, column_to, column_litho)
 
-        # Unit lithologies data.
-        strat_data = read_strat_data(dist_table_filename)
+        # Unit lithologies and distance data.
+        strat_data, litho2dist = read_strat_data(dist_table_filename)
 
         # Generating the table of possible strata paths.
-        strata_table = generate_strata_table(drillsample_data, strat_data)
+        strata_table = generate_strata_table(drillsample_data, strat_data, litho2dist)
 
     print("Missing lithologies list:")
     print("Number lithos missing =", len(missing_lithos))
@@ -939,8 +939,8 @@ def generate_missing_lithos():
 def main():
     print('Started litho2strat')
 
-    generate_missing_lithos()
-    exit()
+    #generate_missing_lithos()
+    #exit()
 
     # Topology file.
     topology_filename = "data/real/ASUD_strat.gml"
@@ -988,9 +988,8 @@ def main():
     # Commented because it leads to many additional routes when splitting the existing single lithos.
     #drillsample_data = group_drillhole_litho_sequence(drillsample_data)
 
-    # Unit lithologies data.
-    strat_data = []
-    strat_data = read_strat_data(dist_table_filename)
+    # Unit lithologies and distance data.
+    strat_data, litho2dist = read_strat_data(dist_table_filename)
 
     # Thickness data.
     thickness_data = []
@@ -1011,7 +1010,7 @@ def main():
     #--------------------------------------------------------------
 #    tracemalloc.start()
 
-    all_routes, all_routes_number = generate_strat_routes(strat_data, drillsample_data, thickness_data, graph)
+    all_routes, all_routes_number = generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_data, graph)
 
     print("Total number of routes = ", len(all_routes))
 
