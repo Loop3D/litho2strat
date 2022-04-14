@@ -36,9 +36,10 @@ single_top_unit = True
 #==============================================================================
 # List of all drillhole lithologies.
 all_lithos = []
-
 # Missing lithos.
 missing_lithos = set()
+# Ambiguous litho names for the Cover.
+ambiguous_cover_litho_names = ['mud', 'sand', 'mudstone', 'sandstone']
 
 # Converter from string to list.
 str2list = lambda x: x.strip("[]").replace("'", "").replace(" ", "").split(",")
@@ -353,11 +354,24 @@ def generate_strata_table(drillsample_data, strat_data, litho2dist):
     print("num_units = ", num_units)
 
     strata_table = np.full((num_rows, num_units), False)
+
+    unit_names = get_unit_names(strat_data)
+    cover_unit_index = unit_names.index('Cover')
+
     new_row_index = 0
 
     for row in drillsample_data[:]:
         litho = row[2]
         litho_found = False
+
+        #------------------------------------------------------------------------------------
+        # Processing the Cover lithos with ambiguous names.
+        if (litho in ambiguous_cover_litho_names):
+            # The top litho, or the litho above is Cover.
+            if (new_row_index == 0 or strata_table[new_row_index - 1, cover_unit_index] == True):
+                litho_found = True
+                strata_table[new_row_index, cover_unit_index] = True
+        #------------------------------------------------------------------------------------
 
         if (new_row_index == 0 and single_top_unit):
         # Use only the closest unit for the top lithology.
@@ -366,10 +380,10 @@ def generate_strata_table(drillsample_data, strat_data, litho2dist):
                 dist_list = litho2dist[litho]
                 closest_unit = dist_list[0][1]
                 closest_unit_distance = dist_list[0][0]
-    
+
                 if (closest_unit_distance > 0):
                     print("WARNING: The closest distance to the top unit > 0! Dist =", closest_unit_distance)
-    
+
                 unit_index = 0
                 for unit_name in strat_data:
                     if (unit_name == closest_unit):
@@ -990,19 +1004,23 @@ def main():
     # column_to = 5
     # column_litho = 8
 
+    #--------------------------------------------------------------------------------------------------
     # Mark's data with known solutions.
+
+    # TODO: Discuss with Mark - we have here too long Cover...
     #collarID = 1209857
     #collarID =  353386
 
     # Confirmed results (using 1 closest unit & single top unit).
     collarID = 2182336
-    # collarID = 2182335
-    # collarID = 2182340
-    # collarID = 2182339
-    # collarID = 2182338
-    # collarID = 2182335
-    # collarID = 2182334
+    #collarID = 2182335
+    #collarID = 2182340
+    #collarID = 2182339
+    #collarID = 2182338
+    #collarID = 2182335
+    #collarID = 2182334
 
+    # TODO: Discuss with Mark - we have here conglomerate, which is rock, and then gravel, which we define as 'always Cover'. Thus we have the Cover below the rock here.
     #collarID = 1209855
 
     drillsample_filename = "data/real/dist_files/litho_tables/litho_" + str(collarID) + ".csv"
