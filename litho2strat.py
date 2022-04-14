@@ -73,6 +73,34 @@ def get_unique_lithos_from_strat_data(strat_data):
     return unique_lithos
 
 #==============================================================================
+def add_unit_to_distance_map(unit_name, distance, lithos, litho2dist):
+    '''
+    Adds a unit with its lithologies to the distance map litho2dist.
+    '''
+    for litho in lithos:
+        if (litho in all_lithos):
+        # Lithology is present in drillhole data.
+            el = (distance, unit_name)
+            if (litho in litho2dist):
+                found_unit = False
+                # Iterate over distance list.
+                for tup in litho2dist[litho]:
+                    if (unit_name == tup[1]):
+                    # Found this unit in the list.
+                        found_unit = True
+                        if (distance < tup[0]):
+                            # Update element to a smaller distance.
+                            litho2dist[litho].remove(tup)
+                            litho2dist[litho].append(el)
+                        break
+                if (not found_unit):
+                    litho2dist[litho].append(el)
+            else:
+                litho2dist[litho] = [el]
+            # Sort the list by distance.
+            litho2dist[litho].sort(key=lambda tup: tup[0])
+
+#==============================================================================
 def read_strat_data(dist_table_filename):
     '''
     Building lithologies list for every unit from csv file data.
@@ -132,28 +160,7 @@ def read_strat_data(dist_table_filename):
             #=========================================
             # Store the sorted distance map.
             #=========================================
-            for litho in lithos:
-                if (litho in all_lithos):
-                # Lithology is present in drillhole data.
-                    el = (distance, unit_name)
-                    if (litho in litho2dist):
-                        found_unit = False
-                        # Iterate over distance list.
-                        for tup in litho2dist[litho]:
-                            if (unit_name == tup[1]):
-                            # Found this unit in the list.
-                                found_unit = True
-                                if (distance < tup[0]):
-                                    # Update element to smaller distance.
-                                    litho2dist[litho].remove(tup)
-                                    litho2dist[litho].append(el)
-                                break
-                        if (not found_unit):
-                            litho2dist[litho].append(el)
-                    else:
-                        litho2dist[litho] = [el]
-                    # Sort the list by distance.
-                    litho2dist[litho].sort(key=lambda tup: tup[0])
+            add_unit_to_distance_map(unit_name, distance, lithos, litho2dist)
 
             #=========================================
             # Adding the lithos to the dictionary (excluding the duplicates).
@@ -898,6 +905,9 @@ def generate_missing_lithos():
     Generates a list of missing drillhole lithologies from unit data in all data files.
     '''
 
+    # The Cover unit data file.
+    cover_unit_filename = "data/real/cover_unit.txt"
+
     directory = "data/real/dist_files/litho_tables"
     #directory = "data/real/dh_files/litho_tables"
 
@@ -928,12 +938,33 @@ def generate_missing_lithos():
         # Unit lithologies and distance data.
         strat_data, litho2dist = read_strat_data(dist_table_filename)
 
+        # Read the Cover unit lithologies.
+        add_cover_unit("Cover", cover_unit_filename, strat_data, litho2dist)
+
         # Generating the table of possible strata paths.
         strata_table = generate_strata_table(drillsample_data, strat_data, litho2dist)
 
     print("Missing lithologies list:")
     print("Number lithos missing =", len(missing_lithos))
     print(missing_lithos)
+
+#=============================================================================
+def add_cover_unit(unit_name, filename, strat_data, litho2dist):
+    '''
+    Adds the custom unit with its lithologies read from file.
+    '''
+    with open(filename) as f:
+        lithos = f.read().splitlines()
+
+    # Adding unit data to strat_data.
+    if (unit_name in strat_data):
+        strat_data[unit_name].append(lithos)
+    else:
+        strat_data[unit_name] = lithos
+
+    # Adding unit data to the distance map litho2dist.
+    distance = 0.
+    add_unit_to_distance_map(unit_name, distance, lithos, litho2dist)
 
 #=============================================================================
 def main():
@@ -944,6 +975,10 @@ def main():
 
     # Topology file.
     topology_filename = "data/real/ASUD_strat.gml"
+    #topology_filename = "data/real/graph_strat_NONE.gml"
+
+    # The Cover unit data file.
+    cover_unit_filename = "data/real/cover_unit.txt"
 
     # # Mark's new data.
     # collarID = 548917
@@ -981,22 +1016,25 @@ def main():
     #--------------------------------------------------------------
     # Reading the input data.
     #--------------------------------------------------------------
-    # Drill sample data.
+    # Read drill sample data.
     drillsample_data = read_drillsample_data(drillsample_filename, column_from, column_to, column_litho)
 
     # Group the litho sequence inside the drillhole data.
     # Commented because it leads to many additional routes when splitting the existing single lithos.
     #drillsample_data = group_drillhole_litho_sequence(drillsample_data)
 
-    # Unit lithologies and distance data.
+    # Read unit lithologies and distance data.
     strat_data, litho2dist = read_strat_data(dist_table_filename)
 
-    # Thickness data.
+    # Read the Cover unit lithologies.
+    add_cover_unit("Cover", cover_unit_filename, strat_data, litho2dist)
+
+    # Read thickness data.
     thickness_data = []
     if (add_thickness_constraints):
         thickness_data = read_thickness_data(thickness_filename)
 
-    # Topology data.
+    # Read topology data.
     graph = nx.Graph()
     if (add_topology_constraints):
         graph = read_topology_data(topology_filename)
