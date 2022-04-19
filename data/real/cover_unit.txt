@@ -17,3 +17,7 @@ saprock
 saprolite
 silcrete
 soil
+mud
+sand
+mudstone
+sandstone

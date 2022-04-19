@@ -38,8 +38,6 @@ single_top_unit = True
 all_lithos = []
 # Missing lithos.
 missing_lithos = set()
-# Ambiguous litho names for the Cover.
-ambiguous_cover_litho_names = ['mud', 'sand', 'mudstone', 'sandstone']
 
 # Alternative rock names.
 alternative_rock_names = {
@@ -381,15 +379,6 @@ def generate_strata_table(drillsample_data, strat_data, litho2dist):
         litho = row[2]
         litho_found = False
 
-        #------------------------------------------------------------------------------------
-        # Processing the Cover lithos with ambiguous names.
-        if (litho in ambiguous_cover_litho_names):
-            # The top litho, or the unit above can be Cover.
-            if (new_row_index == 0 or strata_table[new_row_index - 1, cover_unit_index] == True):
-                litho_found = True
-                strata_table[new_row_index, cover_unit_index] = True
-        #------------------------------------------------------------------------------------
-
         if (new_row_index == 0 and single_top_unit):
         # Use only the closest unit for the top lithology.
             if (litho in litho2dist):
@@ -645,8 +634,8 @@ def generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_da
                     can_change = can_change and (current_thickness >= min_strata_thickness[strat0])
 
             if (can_change):
-                # Strata units excluding the current one.
-                strata_list = [s for s in strata_allowed if (s != strat0)]
+                # Strata units excluding the current one, and excluding the Cover (as we cannot change to Cover, but only can start from it).
+                strata_list = [s for s in strata_allowed if (s != strat0 and unit_names[s] != "Cover")]
 
                 # Applying the "maximum number of returns to a unit" constraint.
                 apply_max_num_returns_constraint(route, strata_list)
