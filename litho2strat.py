@@ -241,7 +241,7 @@ def read_strat_data(dist_table_filename):
     return strat_dist, litho2dist
 
 #==============================================================================
-def read_drillsample_data(filename, column_from, column_to, column_litho):
+def read_drillsample_data(filename, column_from, column_to, column_litho, ignore_list):
     '''
     Reading drill sample data from csv file.
     '''
@@ -256,15 +256,18 @@ def read_drillsample_data(filename, column_from, column_to, column_litho):
         for row in csvreader:
             # Extract the data columns.
             row_formatted = list(range(3))
-            row_formatted[0] = row[column_from] # FromDepth
-            row_formatted[1] = row[column_to] # ToDepth
-            row_formatted[2] = row[column_litho] # CET_Litho
-            data.append(row_formatted)
+            row_formatted[0] = row[column_from]  # From Depth
+            row_formatted[1] = row[column_to]    # To Depth
+            row_formatted[2] = row[column_litho] # Lithology
 
-            # Add lithology to the global list of all lithos.
             litho_name = row_formatted[2]
-            if (litho_name not in all_lithos):
-                all_lithos.append(litho_name)
+
+            if (litho_name not in ignore_list):
+                data.append(row_formatted)
+
+                # Add lithology to the global list of all lithos.
+                if (litho_name not in all_lithos):
+                    all_lithos.append(litho_name)
 
     print(all_lithos)
     print("The number of drillhole lithologies: " + str(len(all_lithos)))
@@ -936,6 +939,9 @@ def generate_missing_lithos():
     # The Cover unit data file.
     cover_unit_filename = "data/real/cover_unit.txt"
 
+    # The Ignore items list.
+    ignore_list_filename = "data/real/ignore_list.txt"
+
     directory = "data/real/dist_files/litho_tables"
     #directory = "data/real/dh_files/litho_tables"
 
@@ -960,8 +966,11 @@ def generate_missing_lithos():
         #drillsample_filename = "data/real/dh_files/litho_tables/litho_" + str(collarID) + ".csv"
         #dist_table_filename = "data/real/dh_files/dist_tables/100k_map_near_" + str(collarID) + ".csv"
 
+        # Read the drillhole ignore items list.
+        ignore_list = read_ignore_list(ignore_list_filename)
+
         # Drill sample data.
-        drillsample_data = read_drillsample_data(drillsample_filename, column_from, column_to, column_litho)
+        drillsample_data = read_drillsample_data(drillsample_filename, column_from, column_to, column_litho, ignore_list)
 
         # Unit lithologies and distance data.
         strat_data, litho2dist = read_strat_data(dist_table_filename)
@@ -995,6 +1004,16 @@ def add_cover_unit(unit_name, filename, strat_data, litho2dist):
     add_unit_to_distance_map(unit_name, distance, lithos, litho2dist)
 
 #=============================================================================
+def read_ignore_list(filename):
+    '''
+    Read the drillhole items to ignore.
+    '''
+    with open(filename) as f:
+        items = f.read().splitlines()
+
+    return items
+
+#=============================================================================
 def main():
     print('Started litho2strat')
 
@@ -1007,6 +1026,9 @@ def main():
 
     # The Cover unit data file.
     cover_unit_filename = "data/real/cover_unit.txt"
+
+    # The Ignore items list.
+    ignore_list_filename = "data/real/ignore_list.txt"
 
     # # Mark's new data.
     # collarID = 548917
@@ -1048,8 +1070,11 @@ def main():
     #--------------------------------------------------------------
     # Reading the input data.
     #--------------------------------------------------------------
+    # Read the drillhole ignore items list.
+    ignore_list = read_ignore_list(ignore_list_filename)
+
     # Read drill sample data.
-    drillsample_data = read_drillsample_data(drillsample_filename, column_from, column_to, column_litho)
+    drillsample_data = read_drillsample_data(drillsample_filename, column_from, column_to, column_litho, ignore_list)
 
     # Group the litho sequence inside the drillhole data.
     # Commented because it leads to many additional routes when splitting the existing single lithos.
