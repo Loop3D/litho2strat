@@ -41,6 +41,12 @@ missing_lithos = set()
 # Ambiguous litho names for the Cover.
 ambiguous_cover_litho_names = ['mud', 'sand', 'mudstone', 'sandstone']
 
+# Alternative rock names.
+alternative_rock_names = {
+    "mudstone": ["mud", "turbidites"],
+    "sandstone": ["sand"],
+}
+
 # Converter from string to list.
 str2list = lambda x: x.strip("[]").replace("'", "").replace(" ", "").split(",")
 str2list2 = lambda x: x.strip("[]").replace("'", "").replace(" ", "").replace("?", ",").split(",") # To fix ? symbol in some names (gabbro?leucogabbro)
@@ -157,6 +163,14 @@ def read_strat_data(dist_table_filename):
                 lithos2.append(litho2)
 
             lithos = [l for l in lithos2]
+
+            #=========================================
+            # Adding the alternative litho names.
+            #=========================================
+            for litho in lithos[:]:
+                if litho in alternative_rock_names:
+                    for alt_litho in alternative_rock_names[litho]:
+                        lithos.append(alt_litho)
 
             #=========================================
             # Store the sorted distance map.
@@ -367,7 +381,7 @@ def generate_strata_table(drillsample_data, strat_data, litho2dist):
         #------------------------------------------------------------------------------------
         # Processing the Cover lithos with ambiguous names.
         if (litho in ambiguous_cover_litho_names):
-            # The top litho, or the litho above is Cover.
+            # The top litho, or the unit above can be Cover.
             if (new_row_index == 0 or strata_table[new_row_index - 1, cover_unit_index] == True):
                 litho_found = True
                 strata_table[new_row_index, cover_unit_index] = True
@@ -1009,10 +1023,10 @@ def main():
 
     # TODO: Discuss with Mark - we have here too long Cover...
     #collarID = 1209857
-    #collarID =  353386
+    collarID =  353386
 
     # Confirmed results (using 1 closest unit & single top unit).
-    collarID = 2182336
+    #collarID = 2182336
     #collarID = 2182335
     #collarID = 2182340
     #collarID = 2182339
