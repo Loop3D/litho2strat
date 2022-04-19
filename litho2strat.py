@@ -384,25 +384,34 @@ def generate_strata_table(drillsample_data, strat_data, litho2dist):
             if (litho in litho2dist):
                 # Sorted distance list for this lithology.
                 dist_list = litho2dist[litho]
-                closest_unit = dist_list[0][1]
-                closest_unit_distance = dist_list[0][0]
+
+                # Adding Cover if it is present for this litho.
+                add_cover = False
+                for item in dist_list:
+                    if (item[1] == 'Cover'):
+                        add_cover = True
+                        closest_unit = 'Cover'
+                        closest_unit_distance = item[0]
+
+                # Finding the closest unit that is not Cover.
+                for item in dist_list:
+                    if (item[1] != 'Cover'):
+                        closest_unit = item[1]
+                        closest_unit_distance = item[0]
+                        break
 
                 if (closest_unit_distance > 0):
                     print("WARNING: The closest distance to the top unit > 0! Dist =", closest_unit_distance)
 
-                unit_index = 0
-                for unit_name in strat_data:
-                    if (unit_name == closest_unit):
+                for unit_index, unit_name in enumerate(strat_data):
+                    if (unit_name == closest_unit or (add_cover and unit_name == 'Cover')):
                         litho_found = True
                         strata_table[new_row_index, unit_index] = True
-                    unit_index += 1
         else:
-            unit_index = 0
-            for unit_name in strat_data:
+            for unit_index, unit_name in enumerate(strat_data):
                 if (litho in strat_data[unit_name]):
                     litho_found = True
                     strata_table[new_row_index, unit_index] = True
-                unit_index += 1
 
         if (not litho_found):
         # Drillhole lithology not found in units.
@@ -1033,8 +1042,8 @@ def main():
     # Mark's data with known solutions.
 
     # TODO: Discuss with Mark - we have here too long Cover...
-    #collarID = 1209857
-    collarID =  353386
+    collarID = 1209857
+    #collarID =  353386
 
     # Confirmed results (using 1 closest unit & single top unit).
     #collarID = 2182336
