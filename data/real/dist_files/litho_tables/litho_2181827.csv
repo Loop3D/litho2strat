@@ -1,0 +1,4 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+1511,592,2181827,44,46.0,No apparent bedding 42-54m,exotic_crystalline_igneous_rock,101,exotic_crystalline_igneous_rock,exotic_crystalline,igneous_rock
+1512,592,2181827,48,50.0,Grey-green C in red clay,mud,101,mud,sediment_clastic,sediment
+1513,592,2181827,50,52.0,Grey-green C in red clay,mud,101,mud,sediment_clastic,sediment

@@ -1,0 +1,39 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+1937,592,2181866,34,36.0,green clays after shale? Ferruginised?,mud,100,mud,sediment_clastic,sediment
+1938,592,2181866,36,38.0,green clays after shale? Ferruginised?,mud,100,mud,sediment_clastic,sediment
+1939,592,2181866,38,40.0,green clays after shale? Ferruginised?,mud,100,mud,sediment_clastic,sediment
+1940,592,2181866,40,42.0,green clays after shale? Ferruginised?,mud,100,mud,sediment_clastic,sediment
+1941,592,2181866,48,50.0,khaki ferrug? shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+1942,592,2181866,50,52.0,khaki ferrug? shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+1943,592,2181866,52,54.0,khaki and red ferrug? shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+1944,592,2181866,54,56.0,red ferrug shale biscuity,mudstone,100,mudstone,clastic,sedimentary_rock
+1945,592,2181866,56,58.0,red ferrug shale biscuity; trc G or H,mudstone,100,mudstone,clastic,sedimentary_rock
+1946,592,2181866,58,60.0,ferrug shale?; SHARP AT:,mudstone,100,mudstone,clastic,sedimentary_rock
+1947,592,2181866,62,64.0,cherty unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1948,592,2181866,64,66.0,cherty unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1949,592,2181866,78,80.0,cherts and trc BE shale,mudstone,101,mudstone,clastic,sedimentary_rock
+1950,592,2181866,84,86.0,CONTACT AT?:,contact,100,contact,contact,texture_structure
+1951,592,2181866,86,88.0,enriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1952,592,2181866,88,90.0,enriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1953,592,2181866,90,92.0,enriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1954,592,2181866,92,94.0,enriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1955,592,2181866,94,96.0,enriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1956,592,2181866,96,98.0,enriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1957,592,2181866,98,100.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1958,592,2181866,100,102.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1959,592,2181866,102,104.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1960,592,2181866,104,106.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1961,592,2181866,106,108.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1962,592,2181866,108,110.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1963,592,2181866,110,112.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1964,592,2181866,112,114.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1965,592,2181866,118,120.0,unenriched BIF; trc cherts,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+1966,592,2181866,120,122.0,WITH BRIGHT PINK SHALE MARKER,mudstone,100,mudstone,clastic,sedimentary_rock
+1967,592,2181866,128,130.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1968,592,2181866,130,132.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1969,592,2181866,132,134.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1970,592,2181866,136,138.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1971,592,2181866,138,140.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1972,592,2181866,140,142.0,increasing chert,chert,101,chert,siliceous,sedimentary_rock
+1973,592,2181866,146,148.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1974,592,2181866,148,150.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation

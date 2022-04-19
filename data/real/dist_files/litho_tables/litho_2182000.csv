@@ -1,0 +1,10 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+2483,592,2182000,22,24.0,Lacustrine clay. Hard clay balls.,mud,100,mud,sediment_clastic,sediment
+2484,592,2182000,28,30.0,Rounded pisoids of soft H and ferruginous shale in clay.,mud,101,mud,sediment_clastic,sediment
+2485,592,2182000,30,32.0,Rounded pisoids of soft ferruginous shale.,mudstone,101,mudstone,clastic,sedimentary_rock
+2486,592,2182000,32,34.0,Lacustrine clay. Hard clay balls.,mud,100,mud,sediment_clastic,sediment
+2487,592,2182000,38,40.0,Minor H fragments in lacustrine clay,mud,101,mud,sediment_clastic,sediment
+2488,592,2182000,50,52.0,Minor H fragments in lacustrine clay,mud,101,mud,sediment_clastic,sediment
+2489,592,2182000,84,86.0,First sign of chert - but weak. McLeod?,chert,100,chert,siliceous,sedimentary_rock
+2490,592,2182000,108,110.0,Chert denatured and soft in part.,chert,100,chert,siliceous,sedimentary_rock
+2491,592,2182000,126,128.0,Light grey/green chert. Softer.,chert,100,chert,siliceous,sedimentary_rock

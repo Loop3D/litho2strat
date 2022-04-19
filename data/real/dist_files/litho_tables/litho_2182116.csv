@@ -1,0 +1,13 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+3877,592,2182116,28,30.0,All these clays: pale inside,mud,100,mud,sediment_clastic,sediment
+3878,592,2182116,42,44.0,Gritty clay FeO,mud,101,mud,sediment_clastic,sediment
+3879,592,2182116,44,46.0,Gritty clay FeO,mud,101,mud,sediment_clastic,sediment
+3880,592,2182116,52,54.0,Pale insisde,exotic_crystalline_igneous_rock,101,exotic_crystalline_igneous_rock,exotic_crystalline,igneous_rock
+3881,592,2182116,96,98.0,Gritty clay Q,mud,101,mud,sediment_clastic,sediment
+3882,592,2182116,102,104.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3883,592,2182116,104,106.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3884,592,2182116,106,108.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3885,592,2182116,108,110.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3886,592,2182116,144,146.0,Gritty Mn clay,mud,101,mud,sediment_clastic,sediment
+3887,592,2182116,146,148.0,Gritty Mn clay,mud,101,mud,sediment_clastic,sediment
+3888,592,2182116,148,150.0,Gritty Mn clay,mud,101,mud,sediment_clastic,sediment

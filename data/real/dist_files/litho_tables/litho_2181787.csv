@@ -1,0 +1,48 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+1104,592,2181787,1,5.25,Fine to coarse gr sand/grit qtz minor ferrug gravel. Clay fill,fill,101,fill,artificial_man_made_ground,surficial_rock
+1105,592,2181787,5,5.7,Qtz frags angular in sand/grit/clay.,mud,101,mud,sediment_clastic,sediment
+1106,592,2181787,5,14.1,fg to very cg often gritty qtz sand in clayey matrix. Minor cg ferrug and qtz gravel,gravel,101,gravel,sediment_clastic,sediment
+1107,592,2181787,14,14.6,Pale clay + 10-15% gravel + qtz sand,sand,101,sand,sediment_clastic,sediment
+1108,592,2181787,14,21.5,Brown clay and fine qtz sand. Minor pisolitic gravel,gravel,101,gravel,sediment_clastic,sediment
+1109,592,2181787,21,22.5,Pisolitic gravels increasing with depth in clay/sandy-gritty matrix,mud,100,mud,sediment_clastic,sediment
+1110,592,2181787,22,33.3,Pale clays with some fe-stained mottles rare pisolitic gravels,mud,100,mud,sediment_clastic,sediment
+1111,592,2181787,33,41.3,Pale lacustrine clay with floating qtz grit. MnO staining on joints,mud,100,mud,sediment_clastic,sediment
+1112,592,2181787,41,68.8,Pale sandy clay with common ferrug mottlling. Fine sand in clay. Minor ferrug frags in horizontal beds.,mud,100,mud,sediment_clastic,sediment
+1113,592,2181787,68,73.7,Sandy clay. Minor ferrug mottling. Fg sand,sand,101,sand,sediment_clastic,sediment
+1114,592,2181787,73,75.0,Weakly limonitic sandy clay. Minor ferrug/goeth frags,mud,100,mud,sediment_clastic,sediment
+1115,592,2181787,75,78.7,Fine to med gr qtz sand and clay with minor ferrug mottled zones,mud,100,mud,sediment_clastic,sediment
+1116,592,2181787,78,85.0,Soft clayey sand. Fmgr.  Rare coarse rock frags,sand,100,sand,sediment_clastic,sediment
+1117,592,2181787,85,87.7,Soft clayey sand ,sand,101,sand,sediment_clastic,sediment
+1118,592,2181787,87,94.5,Fine to coarse qtz sand clayey patches of ferruginisation. Minor Mn stained chips and staining. Dirty - ferrug sand,sand,100,sand,sediment_clastic,sediment
+1119,592,2181787,94,96.7,Fine grained qtz sand clayey. Rare Mn staining,sand,100,sand,sediment_clastic,sediment
+1120,592,2181787,96,97.7,Fine to coarse gritty sand in clay. Fe staining.,mud,100,mud,sediment_clastic,sediment
+1121,592,2181787,97,99.9,Pale sandy lacustrine clay with 15% goeth frags. Fgr sand,sand,101,sand,sediment_clastic,sediment
+1122,592,2181787,99,105.0,Limonitic sandy clay and frags of goethitic material. Basal zone of med to coarse ferrug gravel,gravel,101,gravel,sediment_clastic,sediment
+1123,592,2181787,111,112.9,Significant core loss with hole collapse and fallback redrill pink clay and quartz at 112.1-112.4m - sourced from top of hole ,mud,100,mud,sediment_clastic,sediment
+1124,592,2181787,112,113.9,weakly bedded slightly harder goethitic ore partially converted to limonite in places trace vitreous martite-hematite visible on core ends,ore,100,ore,ore,mineralisation
+1125,592,2181787,116,116.8,harder bedded goethitic ore with minor martite-hematite and/or interbedded ferruginous red shale,mudstone,101,mudstone,clastic,sedimentary_rock
+1126,592,2181787,116,118.4,soft crumbly massive goethite-limonite ore ,ore,101,ore,ore,mineralisation
+1127,592,2181787,118,118.7,hardcap style vuggy mineralisation with VT goethite and red streaky hematite little clay impurities,mud,100,mud,sediment_clastic,sediment
+1128,592,2181787,118,118.9,running quartz sands with iron staining - CONTAMINATION? SHARP AT:,vein,100,vein,fillings,texture_structure
+1129,592,2181787,118,119.7,hardcap style vuggy mineralisation with VT goethite softer weathd H and some granular goethite-limonite in vughs,mineralisation,100,mineralisation,ore,mineralisation
+1130,592,2181787,119,121.9,weakly interbedded soft red hematitised shale speckly martite present and ochreous goethite,mudstone,100,mudstone,clastic,sedimentary_rock
+1131,592,2181787,125,125.4,clay and quartz sands - CONTAMINATION? SHARP AT:,mud,100,mud,sediment_clastic,sediment
+1132,592,2181787,133,134.2,clay and quartz sands - CONTAMINATION? SHARP AT:,mud,100,mud,sediment_clastic,sediment
+1133,592,2181787,134,135.55,bedded shale marker horizon converted to clayssome limonitic staining,mud,100,mud,sediment_clastic,sediment
+1134,592,2181787,135,137.0,mostly softeasily crumbled ferruginous shale and goethite with surficial clay staining from previous interval,mud,100,mud,sediment_clastic,sediment
+1135,592,2181787,137,140.8,soft moderately bedded & crumbly goethite-limonite ore with rare beds of martite at ~138m; SHARP AT:,ore,100,ore,ore,mineralisation
+1136,592,2181787,140,141.6,bedded shale marker horizon converted to clays with some limonite probably staining,mud,100,mud,sediment_clastic,sediment
+1137,592,2181787,141,144.0,interbedded hematised shale and goethitic shalewith martite present; small pink marker shale at 144m,mudstone,100,mudstone,clastic,sedimentary_rock
+1138,592,2181787,144,145.1,more competent bedded goethitic ore converted to limonite around core of goethite in some places spotty appearance w/ presence of vitreous goethite,ore,100,ore,ore,mineralisation
+1139,592,2181787,145,147.3,very soft hematised shale red-brown with abundant speckly martite or granular goethite? with mnr pink shale beds,mudstone,100,mudstone,clastic,sedimentary_rock
+1140,592,2181787,147,150.7,very soft goethite-limonite ore bedded and granular w/ white clays structure? at 150.7-150.8m,mud,100,mud,sediment_clastic,sediment
+1141,592,2181787,150,151.3,harder vitreous style mineralisation w/ H>G and trc L only; botroidal G on joints surfaces,mineralisation,100,mineralisation,ore,mineralisation
+1142,592,2181787,151,151.4,small clay altered shale marker,mud,100,mud,sediment_clastic,sediment
+1143,592,2181787,151,152.2,interbedded ferruginous shale hematite and goethite crumbly,mudstone,100,mudstone,clastic,sedimentary_rock
+1144,592,2181787,152,152.9,clay after shale - marker or structure?,mud,100,mud,sediment_clastic,sediment
+1145,592,2181787,152,153.7,clay and quartz sands contamination or structure? SHARP AT:,mud,100,mud,sediment_clastic,sediment
+1146,592,2181787,155,157.7,pink shale marker altered to clay; SHARP AT:,mud,100,mud,sediment_clastic,sediment
+1147,592,2181787,164,165.4,hard vitreous goethite and clay altered shale; END MINERALISATION,mineralisation,101,mineralisation,ore,mineralisation
+1148,592,2181787,166,166.8,limonitic stained shale,mudstone,101,mudstone,clastic,sedimentary_rock
+1149,592,2181787,166,168.8,unenriched goethitic cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1150,592,2181787,168,170.0,EOH; unenriched shaley BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation

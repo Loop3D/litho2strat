@@ -1,0 +1,35 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+81,475,810333,0,10.0,Ylbn unconsolidated aeolian SA-WR qtz sand; tr lateritic frags,sand,100,sand,sediment_clastic,sediment
+82,475,810333,10,30.0,Mg pk & gy SSA frags wkly cemented; 10% WR aeolian qtz sands; ?poss ex-granite frags,granite,100,granite,felsic_coarse_grained_crystalline,igneous_rock
+83,475,810333,335,405.0,Clear cg WR qtz grains - unconsolidated SSA; minor argillaceous clay; 2% fg py aggregates; 1% glauconite grains,mud,100,mud,sediment_clastic,sediment
+84,475,810333,405,420.0,Clear cg SA-WR qtz grains - unconsolidated SSA; clean washed sand; tr glauconite,sand,100,sand,sediment_clastic,sediment
+85,475,810333,420,430.0,Clear cg SA-WR qtz - unconsolidated SSA; 25% gy argillaceous clay,mud,101,mud,sediment_clastic,sediment
+86,475,810333,430,590.0,Clear cg SA-SR qtz grains; rare fg py aggregates; tr bk coal,coal,101,coal,organic_rich,sedimentary_rock
+87,475,810333,590,630.0,Clear fg SA-SR qtz grains; rare fg py aggregates; tr bk coal,coal,101,coal,organic_rich,sedimentary_rock
+88,475,810333,640,700.0,Vfg dk gy SHL/SMD; rare compt chips; wk shale fabric; rare fg py aggregates,mudstone,100,mudstone,clastic,sedimentary_rock
+89,475,810333,830,850.0,Fg wh SSA & mg WR qtz grains; 40% fg gy SHL; 5% wh carbonate chips,carbonate,100,carbonate,carbonate,sedimentary_rock
+90,475,810333,920,960.0,Fmg WR-SA qtz grains; 5% fg gy SHL; rare pk chert chips; occ fg py aggregates,chert,100,chert,siliceous,sedimentary_rock
+91,475,810333,1050,1060.0,70% vfg compt SHL; wh fg compt SSA chips; 10% WR qtz granules; occ fg py aggregates & py cemented SSA; tr calcite frags,gravel,100,gravel,sediment_clastic,sediment
+92,475,810333,1090,1110.0,Mg SA-WR clasts of qtz/feld-qtz/adularia; SSA; granite; qtz-feld-amph; chert/jasper; clasts 1-3mm. Possible Worral Fm?,granite,100,granite,felsic_coarse_grained_crystalline,igneous_rock
+93,475,810333,1140,1150.0,Fg gy SHL; 2% WR qtz grains; minor orange qtz/silcrete chips,silcrete,100,silcrete,siliceous,sedimentary_rock
+94,475,810333,1270,1278.8,FG GREY SMD INTERBEDDED SSA; INTRACLASTIC BRECCIA MINOR,breccia,100,breccia,fault_rock,texture_structure
+95,475,810333,1300,1335.5,FG GREY & CREAM SMDD MINOR INTBEDDED SSA - WHICH IS WK MINERALISED; INTRACLASTIC BX,mineralisation,100,mineralisation,ore,mineralisation
+96,475,810333,1335,1368.2,GREY & MINOR RED SMDD & SCL & SHL; MINOT PACKSTONE UNITS <10CM WIDE; MINOR LAMINATED SMD,packstone,100,packstone,siliceous,sedimentary_rock
+97,475,810333,1368,1373.5,CARR/NITA TRANSITION: GREEN GREY FG SMDD & PACKSTONE INTERBEDS; SHELL FRAGS; FG DIS EU PY IN DK BROWN LAYERS; MINOR FG PK CALCITE BLEBS IN SMDD,packstone,100,packstone,siliceous,sedimentary_rock
+98,475,810333,1382,1396.9,NITA FM LIMEST; ?FRAMEST; MOD STYLOLITES; MCG GA IN BURROWS,stylolites,100,stylolites,breaks,texture_structure
+99,475,810333,1396,1416.18,POSS LOWER NITA; BUFF LIMESTONE; MINOR SHALE BEDS;  MG-CG DIS GA SEEN TO REPLACE SOME SHELL FRAGS; MOD HYDROCARBONS SEEPING OUT OF LIMESTONE; BLADED BARITE CRYSTALS,mudstone,100,mudstone,clastic,sedimentary_rock
+100,475,810333,1427,1430.54,PALE GREY DOMOITIC LIMESTONE - FRAMESTONE; MINOR POORLY DEV STYLOLITES; RARE CG GALENA IN FRAMESTONE,framestone,101,framestone,carbonate,sedimentary_rock
+101,475,810333,1430,1438.9,GREY BROWN FRAMESTONE/LIMESTONE; MOD HYDROCARBON SEEPAGES - STAINS CORE BROWN; APPROX 1 BARITE-GA VN PER METRE; 3-7CM WIDE,framestone,100,framestone,carbonate,sedimentary_rock
+102,475,810333,1438,1452.3,GREYBROWN LIMESTONE; MOD DOL ALTN; FRAMESTONE; MINOR FABRIC; POSS POORLY DEV STYLOLITES; WK HYDROCARBON DEV,framestone,100,framestone,carbonate,sedimentary_rock
+103,475,810333,1452,1466.0,BROWNGREY INTERBEDDED FRAMESTONE/LIMESTONE & MG GRAINSTONE CONTAINS MATRIX-SUPPORTED SHELL & ?CRINOID FRAGS,framestone,100,framestone,carbonate,sedimentary_rock
+104,475,810333,1466,1468.85,TRANSITION BETWEEN NTA & GOLDWYER; INTERBEDDED DOLOMITIC LIMESTONE & GRAINSTONE/SSA BEDS,grainstone,100,grainstone,siliceous,sedimentary_rock
+105,475,810333,1468,1483.8,DOM FG GREYGREEN FISSILE SHALE INTERBEDDED WITH CG PACKSTONE; CRINOID FRAGS VISIBLE,mudstone,100,mudstone,clastic,sedimentary_rock
+106,475,810333,1483,1485.35,FG DK GREY SHALE/MUDSTONE WK FISSILE DEVELOPMENT WITH STR CALCITE VEINING SWIRLS - VERY LATE,mudstone,100,mudstone,clastic,sedimentary_rock
+107,475,810333,1485,1509.4,DOM FG FISSILE SHALE/MUDSTONE; RARE LIMESTONE BEDS 20-40CM WIDE,mudstone,100,mudstone,clastic,sedimentary_rock
+108,475,810333,1509,1510.2,1-1.5m FAULT ZONE WITH 0.7CM CORE LOSS,fault,100,fault,breaks,texture_structure
+109,475,810333,1510,1518.3,DOM FG FISSILE SHALE/MUDSTONE; RARE LIMESTONE BEDS 20CM WIDE,mudstone,100,mudstone,clastic,sedimentary_rock
+110,475,810333,1518,1520.6,VUGGY DOL/BAR LIMESTONE WITH GALENA,limestone,100,limestone,carbonate,sedimentary_rock
+111,475,810333,1522,1523.7,V.WEAKLY LAMINATED MUDSTONE,mudstone,101,mudstone,clastic,sedimentary_rock
+112,475,810333,1523,1544.6,HYDROCBN RICH LIMESTONE; SILICIFIED; SOME GALENA; WEAKLY VUGHY,limestone,100,limestone,carbonate,sedimentary_rock
+113,475,810333,1544,1547.7,FOSSILIFEROUS GRAINSTONE LACKS MUD,grainstone,101,grainstone,siliceous,sedimentary_rock
+114,475,810333,1547,1558.1,SILICIFIED LIMESTONE WITH HYDROCBNS,limestone,100,limestone,carbonate,sedimentary_rock

@@ -1,0 +1,3 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+2320,592,2181949,36,38.0,yello and brown chert,chert,101,chert,siliceous,sedimentary_rock
+2321,592,2181949,50,52.0,Very fragmented. Harder than shale.,mudstone,101,mudstone,clastic,sedimentary_rock

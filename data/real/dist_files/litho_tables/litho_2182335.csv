@@ -1,0 +1,44 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+5990,592,2182335,0,2.0,OB Sandy/Silty colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+5991,592,2182335,2,4.0,OB Sandy/Silty colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+5992,592,2182335,4,6.0,As above Trace X pisoids and pebbles,gravel,101,gravel,sediment_clastic,sediment
+5993,592,2182335,6,8.0,OB Sandy/Silty colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+5994,592,2182335,8,10.0,As above Trace X pisoids and pebbles,gravel,101,gravel,sediment_clastic,sediment
+5995,592,2182335,10,12.0,As above Trace X pisoids and pebbles,gravel,101,gravel,sediment_clastic,sediment
+5996,592,2182335,12,14.0,As above Trace X pisoids and pebbles,gravel,101,gravel,sediment_clastic,sediment
+5997,592,2182335,14,16.0,Cream clays trace X pisoid/pebbles,gravel,101,gravel,sediment_clastic,sediment
+5998,592,2182335,16,18.0,Cream clays trace X pisoid/pebbles,gravel,101,gravel,sediment_clastic,sediment
+5999,592,2182335,18,20.0,Cream clays trace X pisoid/pebbles,gravel,101,gravel,sediment_clastic,sediment
+6000,592,2182335,20,22.0,YB Cutans on pebbles and pisoids of X andW in sandy matric - palaeosurface?,gravel,100,gravel,sediment_clastic,sediment
+6001,592,2182335,22,24.0,YB Cutans on pebbles and pisoids of X andW in sandy matric - palaeosurface?,gravel,100,gravel,sediment_clastic,sediment
+6002,592,2182335,24,26.0,YB Cutans on pebbles and pisoids of X andW in sandy matric - palaeosurface?,gravel,100,gravel,sediment_clastic,sediment
+6003,592,2182335,26,28.0,Cream and pale green tinged clays,mud,101,mud,sediment_clastic,sediment
+6004,592,2182335,28,30.0,Cream and pale green tinged clays,mud,101,mud,sediment_clastic,sediment
+6005,592,2182335,36,38.0,YW powdery sample- very rare wh Q fragments - ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6006,592,2182335,38,40.0,YW powdery sample- very rare wh Q fragments - ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6007,592,2182335,40,42.0,clayey gritty sample- very rare wh Q fragments- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6008,592,2182335,42,44.0,clayey gritty sample- very rare wh Q fragments- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6009,592,2182335,44,46.0,clayey gritty sample- very rare wh Q fragments- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6010,592,2182335,46,48.0,clayey gritty sample- very rare wh Q fragments- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6011,592,2182335,48,50.0,clayey gritty sample- very rare wh Q fragments- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6012,592,2182335,50,52.0,clayey gritty sample- very rare wh Q fragments- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6013,592,2182335,52,54.0,clayey gritty sample- very rare wh Q fragments- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6014,592,2182335,54,56.0,clayey gritty sample- very rare wh Q fragments- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6015,592,2182335,56,58.0,clayey gritty sample- very rare wh Q fragments- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6016,592,2182335,58,60.0,clayey gritty sample- very rare wh Q fragments- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6017,592,2182335,60,62.0,clayey gritty sample- very rare wh Q fragments- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6018,592,2182335,62,64.0,clayey gritty sample- very rare wh Q fragments- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6019,592,2182335,64,66.0,clayey gritty sample- very rare wh Q fragments- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6020,592,2182335,66,68.0,clayey gritty sample- very rare wh Q fragments- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6021,592,2182335,68,70.0,clayey gritty sample- very rare wh Q fragments- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6022,592,2182335,70,72.0,clayey gritty sample- very rare wh Q fragments- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6023,592,2182335,72,74.0,clayey gritty sample- very rare wh Q fragments- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6024,592,2182335,74,76.0,clayey gritty sample- very rare wh Q fragments- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6025,592,2182335,76,78.0,clayey gritty sample- very rare wh Q fragments- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6026,592,2182335,78,80.0,clayey gritty sample- very rare wh Q fragments- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6027,592,2182335,90,92.0,Pale blue green powder with minor Wh vein Q - ?After metabasalt/metadolerite?,dolerite,101,dolerite,mafic_coarse_grained_crystalline,igneous_rock
+6028,592,2182335,92,94.0,Pale blue green powder with minor Wh vein Q - ?After metabasalt/metadolerite?,dolerite,101,dolerite,mafic_coarse_grained_crystalline,igneous_rock
+6029,592,2182335,94,96.0,Pale blue green powderminor Wh vein Q minor chlorite schist - ?phyllitic shear material?,schist,100,schist,schist,metamorphic_rock
+6030,592,2182335,96,98.0,Pale blue green powderminor Wh vein Q minor chlorite schist - ?phyllitic shear material?,schist,100,schist,schist,metamorphic_rock
+6031,592,2182335,98,100.0,Mod hard chips retaining FG xtalline texture - metabasalt/metadolerite,dolerite,101,dolerite,mafic_coarse_grained_crystalline,igneous_rock
+6032,592,2182335,100,102.0,Mod hard chips retaining FG xtalline texture metabasalt/metadolerite,dolerite,101,dolerite,mafic_coarse_grained_crystalline,igneous_rock

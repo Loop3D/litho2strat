@@ -1,0 +1,6 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+5155,592,2182214,58,60.0,WITH CLAY,mud,101,mud,sediment_clastic,sediment
+5156,592,2182214,60,62.0,WITH CLAY,mud,101,mud,sediment_clastic,sediment
+5157,592,2182214,126,128.0,BLACK CARBONACEOUS SHALE ?,mudstone,101,mudstone,clastic,sedimentary_rock
+5158,592,2182214,128,130.0,BLACK CARBONACEOUS SHALE ?,mudstone,101,mudstone,clastic,sedimentary_rock
+5159,592,2182214,130,132.0,BLACK CARBONACEOUS SHALE ?,mudstone,101,mudstone,clastic,sedimentary_rock

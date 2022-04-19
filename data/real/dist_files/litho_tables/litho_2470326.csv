@@ -1,0 +1,6 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+6746,2670,2470326,14,18.0,siliceous F shale,mudstone,101,mudstone,clastic,sedimentary_rock
+6747,2670,2470326,24,54.0,looking subrounded but fresher - trans or insitu? Roy Hll Shale,mudstone,101,mudstone,clastic,sedimentary_rock
+6748,2670,2470326,54,66.0,some grey clay after S - coming into basement? Qz at contact:,contact,101,contact,contact,texture_structure
+6749,2670,2470326,66,72.0,weathd chl schist basement,schist,100,schist,schist,metamorphic_rock
+6750,2670,2470326,72,80.0,EOH; basement chl schist/dolerite,dolerite,101,dolerite,mafic_coarse_grained_crystalline,igneous_rock

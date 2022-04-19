@@ -1,0 +1,12 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+6707,2670,2470305,0,2.0,recent colluvium w minzd BIF maghemite and soil,soil,101,soil,residual_deposit,surficial_rock
+6708,2670,2470305,18,20.0,w trc tans cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+6709,2670,2470305,28,30.0,cemented chert an soil,soil,101,soil,residual_deposit,surficial_rock
+6710,2670,2470305,30,32.0,cemented chert an soil,soil,101,soil,residual_deposit,surficial_rock
+6711,2670,2470305,32,34.0,cemented chert-qz-soil and vuggy G,chert,100,chert,siliceous,sedimentary_rock
+6712,2670,2470305,34,36.0,cemented chert-qz-soil and vuggy G,chert,100,chert,siliceous,sedimentary_rock
+6713,2670,2470305,40,42.0,dark grey angular chert with trc vuggy G,chert,100,chert,siliceous,sedimentary_rock
+6714,2670,2470305,42,44.0,BASE OF TRANSPORTED????,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+6715,2670,2470305,44,46.0,angular chert BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+6716,2670,2470305,46,48.0,angular chert BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+6717,2670,2470305,48,50.0,vuggy mineralised? Insitu or transported? Unsure,mineralisation,100,mineralisation,ore,mineralisation

@@ -1,0 +1,8 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+2031,592,2181884,44,46.0,ferruginised clay,mud,101,mud,sediment_clastic,sediment
+2032,592,2181884,46,48.0,ferruginised clay,mud,101,mud,sediment_clastic,sediment
+2033,592,2181884,52,54.0,definitely base of transported,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+2034,592,2181884,56,58.0,with trc white clays,mud,101,mud,sediment_clastic,sediment
+2035,592,2181884,58,60.0,with mnr white clays,mud,101,mud,sediment_clastic,sediment
+2036,592,2181884,64,66.0,with white clays,mud,101,mud,sediment_clastic,sediment
+2037,592,2181884,70,72.0,with trc white clays,mud,101,mud,sediment_clastic,sediment

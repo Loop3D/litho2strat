@@ -1,0 +1,7 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+6823,2670,2470365,3,7.0,hardpan and gravel,gravel,101,gravel,sediment_clastic,sediment
+6824,2670,2470365,11,18.0,Frags of seds nodules minor haem,nodules,100,nodules,residual_deposit,surficial_rock
+6825,2670,2470365,29,31.0,partially ferrug siltst shale,mudstone,101,mudstone,clastic,sedimentary_rock
+6826,2670,2470365,31,33.0,Pale clays and clayey seds,mud,100,mud,sediment_clastic,sediment
+6827,2670,2470365,33,42.0,clays and wk ferrug sed chips,mud,100,mud,sediment_clastic,sediment
+6828,2670,2470365,42,44.0,red purp siltst shale,mudstone,101,mudstone,clastic,sedimentary_rock

@@ -1,0 +1,4 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+6265,2670,2470161,10,12.0,FERRICRETE,ferricrete,101,ferricrete,residual_deposit,surficial_rock
+6266,2670,2470161,66,68.0,DOLOMITE??,dolostone,101,dolostone,carbonate,sedimentary_rock
+6267,2670,2470161,68,70.0,DOLOMITE??,dolostone,101,dolostone,carbonate,sedimentary_rock

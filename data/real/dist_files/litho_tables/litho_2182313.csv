@@ -1,0 +1,29 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+5751,592,2182313,0,0.6,silt sand and soil,soil,101,soil,residual_deposit,surficial_rock
+5752,592,2182313,1,3.3,loosely - mod consolidated rounded maghemite gravels in silt-sand matrix,mud,100,mud,sediment_clastic,sediment
+5753,592,2182313,3,4.4,unconsolidated - loosely consolidated rounded maghemite gravels with silt and clay,mud,101,mud,sediment_clastic,sediment
+5754,592,2182313,5,7.0,weak hematite-dominated hardcap development in transported clay material some appearing like ferruginous clay,mud,100,mud,sediment_clastic,sediment
+5755,592,2182313,7,9.2,massive moderate G-dominant hardcap development in transported cover with <25 vughs G-W-F unsure of ferrug. Shale content definitely pisolitic gravels at 8.0m,colluvium,100,colluvium,natural_superficial_ground,surficial_rock
+5756,592,2182313,9,11.2,hard massive mod-strong G-dominant hardcap style mineralisation within transported cover? little primary  structure; with up to 5% vughs in places,mineralisation,100,mineralisation,ore,mineralisation
+5757,592,2182313,11,12.4,hard massive mod-strong H/W-dominant hardcap style mineralisation within transported cover little primary structure but pisolitic maghemites definitely present at 12.3m,mineralisation,100,mineralisation,ore,mineralisation
+5758,592,2182313,12,13.9,weakly bedded ferruginous shale and goethite and lesser interbedded goethitc hematite INSITU??? Unsure of exact contact,contact,101,contact,contact,texture_structure
+5759,592,2182313,13,16.8,mod bedded? shaley ferruginous material looks goethitic & hematitic in places insitu? Trace white clays appearing,mud,100,mud,sediment_clastic,sediment
+5760,592,2182313,17,20.6,soft bedded dicey mixture of ferrug shale and clay with trace goethite secondary/hardcap increasing in clay to:,mud,100,mud,sediment_clastic,sediment
+5761,592,2182313,20,21.8,clay after shale marker or transp? SHARP AT:,mud,100,mud,sediment_clastic,sediment
+5762,592,2182313,21,25.3,soft dicey interbedded ferruginous shale and hematised shale with some clays after shale,mudstone,101,mudstone,clastic,sedimentary_rock
+5763,592,2182313,26,29.0,soft bedded diced red ferruginous shale with beds of hematite and lesser goethite,mudstone,100,mudstone,clastic,sedimentary_rock
+5764,592,2182313,29,31.8,hard massive-weak bedded G>W>F mineralisation up to 10% vughs,mineralisation,100,mineralisation,ore,mineralisation
+5765,592,2182313,31,34.4,CAVITY NO CORE SAMPLE,void,100,void,artificial_man_made_ground,surficial_rock
+5766,592,2182313,34,35.0,clay related to alteration associated with BRITTLE STRUCTURE AT:,mud,100,mud,sediment_clastic,sediment
+5767,592,2182313,35,35.7,clay altered goethite mineralisation related to BRITTLE STRUCTURE sub-parallel to core axis???,mud,100,mud,sediment_clastic,sediment
+5768,592,2182313,35,36.6,clay related to alteration associated with BRITTLE STRUCTURE,mud,100,mud,sediment_clastic,sediment
+5769,592,2182313,36,37.5,clay related to alteration associated with BRITTLE STRUCTURE,mud,100,mud,sediment_clastic,sediment
+5770,592,2182313,37,39.5,interbedded hard massive G and softer deep red F with weak clay alteration in places; SHARP AT:,mud,100,mud,sediment_clastic,sediment
+5771,592,2182313,39,39.7,soft massive limonitic clays,mud,101,mud,sediment_clastic,sediment
+5772,592,2182313,39,42.0,FAULT represented in core as a mixture of hostrock F/T/H clay and angular quartz breccia,fault,100,fault,breaks,texture_structure
+5773,592,2182313,42,43.2,soft-hard bedded G-H mineralisation coated in clay presumed to be derived from adjacent fault zone,mud,100,mud,sediment_clastic,sediment
+5774,592,2182313,43,44.0,FAULT STRUCTURE represented as angular quartz rubble within bedded shaley-goethitic material,fault,100,fault,breaks,texture_structure
+5775,592,2182313,44,46.55,hard massive G>W mineralisation with up to 10% vughs,mineralisation,100,mineralisation,ore,mineralisation
+5776,592,2182313,46,47.0,soft bedded ferruginous shale with increasing clay content,mud,100,mud,sediment_clastic,sediment
+5777,592,2182313,47,47.8,interbedded pink shales and goethitised chert/siliceous goethite,chert,100,chert,siliceous,sedimentary_rock
+5778,592,2182313,47,48.0,EOH; unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation

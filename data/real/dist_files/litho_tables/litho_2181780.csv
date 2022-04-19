@@ -1,0 +1,17 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+943,592,2181780,59,60.3,lightly coloured clays derived from shales extremeley weathered ,mud,100,mud,sediment_clastic,sediment
+944,592,2181780,61,62.9,pale shales completely weathered to talcy clays some patches show partial mineralisation less weathered. Semi-compitent clay,mud,101,mud,sediment_clastic,sediment
+945,592,2181780,62,63.7,less weathered shales colour change indicates slight mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+946,592,2181780,63,67.4,Massive shales which are weathered and white talcy clays,mud,101,mud,sediment_clastic,sediment
+947,592,2181780,67,69.9,Massive and bedded goethites and hematites with some weathered shales and talcy clays,mud,101,mud,sediment_clastic,sediment
+948,592,2181780,69,74.7,very pale coloured almost clays derived from shales interbedded with sections of ferrugenous shale,mudstone,101,mudstone,clastic,sedimentary_rock
+949,592,2181780,74,95.0,dark brown goethitic layers inter-bedded with lighter yellow limonitic layers of clay and shale,mudstone,101,mudstone,clastic,sedimentary_rock
+950,592,2181780,99,105.6,significant lithology change poor to moderately well bedded biffy chert weaker zones are characterised by beds of weathered limonitic shales. Angle of bedding ranges from 90 to 50 degrees bedding planes also vary from plannar to undulating,chert,100,chert,siliceous,sedimentary_rock
+951,592,2181780,105,106.5,Similary lithologies to previous zone alternating 10cm thick sections of chert and hematized shale both very weathered. Bedding is plannar and at a high angle to the core axis   ,mudstone,100,mudstone,clastic,sedimentary_rock
+952,592,2181780,109,112.4,weathered bedded hematitic shales punctuated by small lenses of lightly coloured cherts; One thicker zone of yellow-brown chert 110.9-111.5,chert,100,chert,siliceous,sedimentary_rock
+953,592,2181780,114,116.0,shale dominated by broken weathered hematitic shales interbedded by small zones of lightly colured biffy chert ranging from <1cm to >10cm in thickness,mudstone,100,mudstone,clastic,sedimentary_rock
+954,592,2181780,116,127.5,finely bedded to massive cherts some small zones of yellow shales and one section orange/red hematised shale @ 120.7-121.2m,mudstone,100,mudstone,clastic,sedimentary_rock
+955,592,2181780,127,131.2,weathered bedded red hematitic and a lesser amount of light yellow un-mineralised shales with a small section of chert running from 129-129.5m,mineralisation,100,mineralisation,ore,mineralisation
+956,592,2181780,131,131.85,pale shales that are well bedded containing thin beds of light grey chert,chert,101,chert,siliceous,sedimentary_rock
+957,592,2181780,131,134.1,mainly massive and some poorly bedded beds of chert. Some of the paler cherts show a dotted texture vugs but on a micro scale on the surface of the core. A joint present inthis section running from 132.8-133.2m,chert,100,chert,siliceous,sedimentary_rock
+958,592,2181780,134,135.6,mainly massive and some poorly bedded beds of chert. There is a zone of highly weathered grey shale running for the first 40cm of this run,mudstone,100,mudstone,clastic,sedimentary_rock

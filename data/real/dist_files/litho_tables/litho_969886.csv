@@ -1,0 +1,4 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+254,60,969886,7,8.0,Trace ?shale too,mudstone,100,mudstone,clastic,sedimentary_rock
+255,60,969886,8,9.0,Trace ?shale too,mudstone,100,mudstone,clastic,sedimentary_rock
+256,60,969886,39,40.0,?Denatured chert. Pale rel soft still brittle,chert,100,chert,siliceous,sedimentary_rock

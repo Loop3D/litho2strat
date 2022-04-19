@@ -1,0 +1,5 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+5564,592,2182279,44,46.0,borderline BIF trace quartz,vein,101,vein,fillings,texture_structure
+5565,592,2182279,46,48.0,borderline BIF trace quartz and chert,chert,101,chert,siliceous,sedimentary_rock
+5566,592,2182279,64,66.0,Fault zone?,fault,100,fault,breaks,texture_structure
+5567,592,2182279,70,72.0,possibly fault zone  goethite is very siliceos and powdery,fault,100,fault,breaks,texture_structure

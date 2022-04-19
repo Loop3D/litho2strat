@@ -1,0 +1,24 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+613,592,2181764,34,35.78,Fine grained sand quartz,sand,101,sand,sediment_clastic,sediment
+614,592,2181764,35,39.77,White clay with reddish staining with sand sized particles  bedded within. Maghemite less common with depth.,mud,100,mud,sediment_clastic,sediment
+615,592,2181764,39,44.14,Fine grained quartz poorly sorted in clay matrix with larger FeO/maghemite deposited randomly.,mud,100,mud,sediment_clastic,sediment
+616,592,2181764,44,48.61,Vuggy hardcap with bedded poorly sorted fine grained sand quartz,sand,101,sand,sediment_clastic,sediment
+617,592,2181764,48,49.8,Bedded  but very weathered goethite - vuggy with ferruginois red shale weathered to wite clay in part.,mud,100,mud,sediment_clastic,sediment
+618,592,2181764,54,55.8,Light yellow/cream clay after shale,mud,100,mud,sediment_clastic,sediment
+619,592,2181764,55,56.59,Light red to brown weathered goethite interbedded with ferrug shale weathered to clay in part.,mud,100,mud,sediment_clastic,sediment
+620,592,2181764,56,60.3,Khaki-brown shalethat is soft with minor harder goethite beds,mudstone,100,mudstone,clastic,sedimentary_rock
+621,592,2181764,60,60.8,Brown shale  with high amount of quartz - poorly sorted - weathered sandstone?,sandstone,101,sandstone,clastic,sedimentary_rock
+622,592,2181764,60,66.67,Soft weathered shale with interbedded och goethite very weathered and fragmented. G stronger with depth.,mudstone,100,mudstone,clastic,sedimentary_rock
+623,592,2181764,66,73.4,Change to more yellow colour - inc in och G. G bedsstronger but still very soft. Quartz fragments large_ very strong at 68.8 to 68.9m.,vein,100,vein,fillings,texture_structure
+624,592,2181764,73,75.4,Yellow och G weathered to powdery L in part interbeded with yellow fissile shale.,mudstone,101,mudstone,clastic,sedimentary_rock
+625,592,2181764,75,83.84,Mn staining of soft ferruginous shale with laminations <1mm of yellow och G/limonite. Weathered to white clay in part,mud,100,mud,sediment_clastic,sediment
+626,592,2181764,83,89.5,Mn stained beddedd yellow limonitic and pink shales30 to 50cm weathered to clay in part. Soft vitreous goethite also present in highly weathered interval. ,mud,100,mud,sediment_clastic,sediment
+627,592,2181764,89,94.25,Hardcap of manganese in LWA. Very hard and vuggy reacts with peroxide with minor limonite. Grades into weathered Mn stained shale.,mudstone,101,mudstone,clastic,sedimentary_rock
+628,592,2181764,94,97.0,Soft red ferruginious shale weathered to pink clay in part interbedded with hematite beds ,mud,100,mud,sediment_clastic,sediment
+629,592,2181764,97,99.8,Soft red ferrug shale with yellow limonitic/och goethite beds.,mudstone,100,mudstone,clastic,sedimentary_rock
+630,592,2181764,113,114.37,Bedded shale weathered to clay. Limonitic.,mud,100,mud,sediment_clastic,sediment
+631,592,2181764,120,122.93,Microbeds of hematite/martite with och goethite and soft ferruginious shale ,mudstone,101,mudstone,clastic,sedimentary_rock
+632,592,2181764,122,126.47,Beds of goethite and hematie which are interbedded with ferruginious shaleclay weathered at  133.1 to 133.78m.,mudstone,100,mudstone,clastic,sedimentary_rock
+633,592,2181764,128,133.8,Mesobanded G with softer fissile ferruginious shale. Pink clay at 129 to 129.4 and 132.4 to 132.6m,mud,100,mud,sediment_clastic,sediment
+634,592,2181764,133,135.3,Hard vitreous goethite with interbedded soft ferrug shale.,mudstone,101,mudstone,clastic,sedimentary_rock
+635,592,2181764,135,136.0,Mesobands of white/grey chert wih browbn silicifed goethite.,chert,100,chert,siliceous,sedimentary_rock

@@ -1,0 +1,25 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+3174,592,2182061,46,48.0,White clay with trace FeO,mud,100,mud,sediment_clastic,sediment
+3175,592,2182061,48,50.0,White clay with trace FeO,mud,100,mud,sediment_clastic,sediment
+3176,592,2182061,50,52.0,White clay with trace FeO,mud,100,mud,sediment_clastic,sediment
+3177,592,2182061,52,54.0,White clay with trace FeO,mud,100,mud,sediment_clastic,sediment
+3178,592,2182061,54,56.0,White clay with trace FeO,mud,100,mud,sediment_clastic,sediment
+3179,592,2182061,56,58.0,White clay with trace FeO,mud,100,mud,sediment_clastic,sediment
+3180,592,2182061,58,60.0,White clay with trace FeO,mud,100,mud,sediment_clastic,sediment
+3181,592,2182061,60,62.0,White clay with trace FeO,mud,100,mud,sediment_clastic,sediment
+3182,592,2182061,62,64.0,White clay with trace FeO,mud,100,mud,sediment_clastic,sediment
+3183,592,2182061,64,66.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3184,592,2182061,68,70.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3185,592,2182061,88,90.0,Fine to med-grained sand,sand,101,sand,sediment_clastic,sediment
+3186,592,2182061,90,92.0,Clayey sand,sand,101,sand,sediment_clastic,sediment
+3187,592,2182061,92,94.0,Sandy clay,mud,101,mud,sediment_clastic,sediment
+3188,592,2182061,94,96.0,Coarse Q sand,sand,101,sand,sediment_clastic,sediment
+3189,592,2182061,96,98.0,Coarse Q sand,sand,101,sand,sediment_clastic,sediment
+3190,592,2182061,98,100.0,Fine sand with trace coarse sand and G,sand,100,sand,sediment_clastic,sediment
+3191,592,2182061,100,102.0,Fine sand with trace coarse sand and G,sand,100,sand,sediment_clastic,sediment
+3192,592,2182061,104,106.0,Fine sands with minor K coarse sand and G,sand,100,sand,sediment_clastic,sediment
+3193,592,2182061,106,108.0,Fine sands with minor K coarse sand and G,sand,100,sand,sediment_clastic,sediment
+3194,592,2182061,108,110.0,Fine sands with > coarse sand,sand,101,sand,sediment_clastic,sediment
+3195,592,2182061,110,112.0,Silty clay,mud,101,mud,sediment_clastic,sediment
+3196,592,2182061,112,114.0,Silty clay,mud,101,mud,sediment_clastic,sediment
+3197,592,2182061,124,126.0,L in limonitic clay,mud,101,mud,sediment_clastic,sediment

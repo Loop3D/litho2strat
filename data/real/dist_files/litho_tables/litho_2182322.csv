@@ -1,0 +1,21 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+5930,592,2182322,0,0.8,0.4m core loss assumed tobe to be soil andmaghemite,soil,100,soil,residual_deposit,surficial_rock
+5931,592,2182322,0,1.25,transported or insitu hardcapping?,colluvium,100,colluvium,natural_superficial_ground,surficial_rock
+5932,592,2182322,1,1.5,Cavity fill,fill,101,fill,artificial_man_made_ground,surficial_rock
+5933,592,2182322,1,2.55,transported or insitu hardcapping?,colluvium,100,colluvium,natural_superficial_ground,surficial_rock
+5934,592,2182322,2,3.3,Cavity fill. 0.7m of core loss assumed to be cavity fill as on either side of the core block,fill,100,fill,artificial_man_made_ground,surficial_rock
+5935,592,2182322,3,5.7,insitu laterite probably Newman,laterite,101,laterite,residual_deposit,surficial_rock
+5936,592,2182322,24,29.1,trace shale bands core loss assumed to be friable mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5937,592,2182322,29,29.6,0.4m of core loss assumed to be shale,mudstone,101,mudstone,clastic,sedimentary_rock
+5938,592,2182322,29,30.1,trace shale bands,mudstone,100,mudstone,clastic,sedimentary_rock
+5939,592,2182322,30,31.9,shale band 6?,mudstone,100,mudstone,clastic,sedimentary_rock
+5940,592,2182322,32,32.7,very friable mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5941,592,2182322,34,35.2,very friable shaley mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5942,592,2182322,35,36.7,very friable shaley mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5943,592,2182322,38,39.4,1.3m core loss 0.1m hematite ferriguinous shale possibly a fault zone at baseof this interval,fault,100,fault,breaks,texture_structure
+5944,592,2182322,39,39.5,very broken appears to be a fault zone,fault,100,fault,breaks,texture_structure
+5945,592,2182322,40,42.5,very shaley or powdery BIF with minor hematite goethite mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5946,592,2182322,42,45.5,very shaley or powdery BIF with minor hematite goethite mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5947,592,2182322,45,46.0,fault zone within very shaley or powdery BIF with minor hematite goethite mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5948,592,2182322,46,48.5,very shaley or powdery BIF with minor hematite goethite mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5949,592,2182322,48,50.0,very shaley or powdery BIF with minor hematite goethite mineralisation,mineralisation,101,mineralisation,ore,mineralisation

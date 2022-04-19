@@ -1,0 +1,8 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+5504,592,2182270,24,26.0,vitreous goethite and clay,mud,101,mud,sediment_clastic,sediment
+5505,592,2182270,26,28.0,vitreous goethite and clay,mud,101,mud,sediment_clastic,sediment
+5506,592,2182270,32,34.0,shale band ,mudstone,100,mudstone,clastic,sedimentary_rock
+5507,592,2182270,36,38.0,shale band 3/4,mudstone,100,mudstone,clastic,sedimentary_rock
+5508,592,2182270,38,40.0,shale band 3/4,mudstone,100,mudstone,clastic,sedimentary_rock
+5509,592,2182270,48,50.0,TRACE SHALE,mudstone,101,mudstone,clastic,sedimentary_rock
+5510,592,2182270,64,66.0,SHALE PRESENT,mudstone,100,mudstone,clastic,sedimentary_rock

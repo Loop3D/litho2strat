@@ -1,0 +1,23 @@
+,companyid,CollarID,fromdepth,todepth,attributecolumn,attributevalue,dhgeologyid
+7988,592,1075682,9.2,14.5,Stratigraphy,"""Silts, sands and clays with traces of ZX at depth""",16265135
+7990,592,1075682,14.5,17.5,Stratigraphy,ZX pisos on a ZK matrix.  Traces of ZY,16265136
+7991,592,1075682,17.5,21.0,Stratigraphy,"""Very hard, Z8 and ZX with traces ZK throughout.  Few vuggs""",16265137
+7992,592,1075682,21.0,22.35,Stratigraphy,Predominantly ZK.  Few frags of Z8 and ZX decreasing with depth,16265138
+7993,592,1075682,22.35,24.8,Stratigraphy,"""Goethitic hardcap, quite siliceous, traces of L.  Vuggy throughout.  Dip ~ 60-80�""",16265139
+7995,592,1075682,30.95,38.3,Stratigraphy,Interbedded G with K horizons.  Traces of H and ferrug shales.  Some vuggs and manganese occuring on fractures.,16265141
+7996,592,1075682,24.8,30.95,Stratigraphy,"""Interbedded G and L, some vuggs.  G siliceous in places. Dip ~ 30-70�""",16265140
+7997,592,1075682,45.55,48.45,Stratigraphy,"""Well banded chert with some fractures and faulting.  Finely laminated, dip ~ 30-50�""",16265143
+7998,592,1075682,38.3,45.55,Stratigraphy,L and G with L and G clays.  Trace F and H.  Dipping at ~ 40-80�,16265142
+7999,592,1075682,48.45,55.4,Stratigraphy,"""Interbedde C, S (some F) and sandstone.  Trace L and C partly denat in places.  Dip ~ 30-50�""",16265144
+13512,592,1075682,0.0,9.2,Stratigraphy,Rock Roller?,16265134
+37885,592,1075682,9.2,14.5,Stratigraphy,"""Silts, sands and clays with traces of ZX at depth""",16265135
+37887,592,1075682,14.5,17.5,Stratigraphy,ZX pisos on a ZK matrix.  Traces of ZY,16265136
+37888,592,1075682,17.5,21.0,Stratigraphy,"""Very hard, Z8 and ZX with traces ZK throughout.  Few vuggs""",16265137
+37889,592,1075682,21.0,22.35,Stratigraphy,Predominantly ZK.  Few frags of Z8 and ZX decreasing with depth,16265138
+37890,592,1075682,22.35,24.8,Stratigraphy,"""Goethitic hardcap, quite siliceous, traces of L.  Vuggy throughout.  Dip ~ 60-80�""",16265139
+37892,592,1075682,30.95,38.3,Stratigraphy,Interbedded G with K horizons.  Traces of H and ferrug shales.  Some vuggs and manganese occuring on fractures.,16265141
+37893,592,1075682,24.8,30.95,Stratigraphy,"""Interbedded G and L, some vuggs.  G siliceous in places. Dip ~ 30-70�""",16265140
+37894,592,1075682,45.55,48.45,Stratigraphy,"""Well banded chert with some fractures and faulting.  Finely laminated, dip ~ 30-50�""",16265143
+37895,592,1075682,38.3,45.55,Stratigraphy,L and G with L and G clays.  Trace F and H.  Dipping at ~ 40-80�,16265142
+37896,592,1075682,48.45,55.4,Stratigraphy,"""Interbedde C, S (some F) and sandstone.  Trace L and C partly denat in places.  Dip ~ 30-50�""",16265144
+43409,592,1075682,0.0,9.2,Stratigraphy,Rock Roller?,16265134

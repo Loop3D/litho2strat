@@ -1,0 +1,23 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+5673,592,2182308,0,2.05,vitreous maghemite-goethite fragments in semi-ferruginous clay matrix; relatively SHARP AT:,mud,100,mud,sediment_clastic,sediment
+5674,592,2182308,2,3.5,strong hardcap development within transported material comprising VT G and white clay on joint surfaces; <5% vughs,mud,100,mud,sediment_clastic,sediment
+5675,592,2182308,3,6.15,mod bedded hardcap mineralisation comprising goethitic hematite and VT goethite with up to 25% vughs; appears bedded but transported pisoids below at:,mineralisation,100,mineralisation,ore,mineralisation
+5676,592,2182308,6,7.1,almost clast supported pisoidal cemented mass of magnetic maghemite in ochreous goethitic matrix true transported or insitu laterite??,laterite,101,laterite,residual_deposit,surficial_rock
+5677,592,2182308,7,10.6,insitu bedded Mt. Newman mineralisation 10% vughs dominated by VT H-W and F w/ VT G increasing down interval to:,mineralisation,100,mineralisation,ore,mineralisation
+5678,592,2182308,10,14.65,insitu bedded Mt. Newman mineralisation 15-20% vughs more G domt than previous interval; with some F shale ochreous G interbeds,mineralisation,100,mineralisation,ore,mineralisation
+5679,592,2182308,14,15.9,interbedd martite-red feruginous shale at end of main hardcap mineralisation zone,mudstone,100,mudstone,clastic,sedimentary_rock
+5680,592,2182308,15,22.4,hard to soft bedded G-dominant ore with increasing hematite and ferruginous shale interbeds downhole becoming less competent toward EOI,mudstone,100,mudstone,clastic,sedimentary_rock
+5681,592,2182308,22,24.5,"hard bedded and partially vughy ""hardcappy"" G-W dominant interval w/ some vughs filled with ferruginous shale derived clays; with increasing softer bedded material EOI",mud,100,mud,sediment_clastic,sediment
+5682,592,2182308,24,25.3,softer bedded interbedded deep RB F shale and VT hematite; WITH SMALL QUART BRECCIA OR VEINING @ 25 - 25.1m,breccia,100,breccia,fault_rock,texture_structure
+5683,592,2182308,25,26.1,clay altered ferruginous shale - adjacent to fault structure or insitu weathered shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+5684,592,2182308,26,26.3,BRITTLE FAULT STRUCTURE with quartz breccia and secondary manganese aggregates,breccia,100,breccia,fault_rock,texture_structure
+5685,592,2182308,26,26.85,partially clay altered softer ochreous goethite interval adjacent to fault structure,mud,100,mud,sediment_clastic,sediment
+5686,592,2182308,29,31.4,clay altered pink shale marker horizon with SMALL QUARTZ BRECCIA-VEINING-FAULT RELATED STRUCTURE @ 30-30.06m,mud,100,mud,sediment_clastic,sediment
+5687,592,2182308,31,34.5,mostly soft-mod bedded limonitic ore with some clasts of VT G that appear brecciated CENTRED ON 32.35m; SHARP CHANGE IN MINERALOGY AT:,ore,100,ore,ore,mineralisation
+5688,592,2182308,34,39.4,mod bedded hematite shale-ferruginous shale with VT martite interbeds; rare intervals of more G dominant material,mudstone,100,mudstone,clastic,sedimentary_rock
+5689,592,2182308,39,40.4,harder interbedded VT G dominant zone with W-H and goethitic shale material,mudstone,100,mudstone,clastic,sedimentary_rock
+5690,592,2182308,40,42.3,interbedd martite-ferruginous shale vughy; SHARP AT:,mudstone,100,mudstone,clastic,sedimentary_rock
+5691,592,2182308,42,46.2,interbedded interval of soft bedded clay-altered pink shale markers and ochreous G/VT G; SHARP AT;,mud,100,mud,sediment_clastic,sediment
+5692,592,2182308,49,50.6,soft bedded T-F with some pink clays; SHARP AT:,mud,100,mud,sediment_clastic,sediment
+5693,592,2182308,59,62.2,interbedded white clays and VT-G/ferruginous shale/clay beds at base of Mt Newman iron mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5694,592,2182308,62,64.6,EOH; unenriched shaley BIF converted to white clay in places,mud,100,mud,sediment_clastic,sediment

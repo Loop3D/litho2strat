@@ -1,0 +1,21 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+5695,592,2182309,0,0.35,silt and sand,sand,101,sand,sediment_clastic,sediment
+5696,592,2182309,0,1.5,clay matrix supported cemented sub-rounded material maghemite-goethite,mud,100,mud,sediment_clastic,sediment
+5697,592,2182309,1,3.4,as above but increase in clast content and more pisolitic; SHARP AT:,pisolith,100,pisolith,residual_deposit,surficial_rock
+5698,592,2182309,3,15.9,strong hardcap development dominated by VT-G developed within insitu LWA clays?  Minimal white clay content; can see relict bedding,mud,100,mud,sediment_clastic,sediment
+5699,592,2182309,27,29.7,hard competent H-dominant mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5700,592,2182309,29,31.4,hard competent and bedded G-dominant mineralisation with some interbedded pink shales,mineralisation,100,mineralisation,ore,mineralisation
+5701,592,2182309,34,40.0,mostly competent vughy ferro-manganese mineralisation presence of some hematitic shales,mineralisation,100,mineralisation,ore,mineralisation
+5702,592,2182309,40,40.4,clay zone,mud,100,mud,sediment_clastic,sediment
+5703,592,2182309,40,41.3,mostly competent vughy ferro-manganese mineralisation GRADING INTO:,mineralisation,100,mineralisation,ore,mineralisation
+5704,592,2182309,41,45.35,massive hard bedded and super vitreous massive hematite mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5705,592,2182309,45,47.4,as above but interbedded with pink clay after shale markers,mud,100,mud,sediment_clastic,sediment
+5706,592,2182309,53,57.6,as above but with larger interdisperspered clay after shale marker beds,mud,100,mud,sediment_clastic,sediment
+5707,592,2182309,57,66.0,hard bedded vitreous G>H mineralisation with increasing fracture zones and presence of quart up to:,mineralisation,100,mineralisation,ore,mineralisation
+5708,592,2182309,66,69.2,MAJOR BRITTLE ZONE with clay alteration altered G host rock and Quartz-Fe breccias,mud,100,mud,sediment_clastic,sediment
+5709,592,2182309,73,74.9,pink clay after shale marker bed,mud,100,mud,sediment_clastic,sediment
+5710,592,2182309,74,76.9,very fractured zone at base of Mt Newman mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5711,592,2182309,76,83.1,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+5712,592,2182309,83,84.8,pink clay after shale marker bed,mud,100,mud,sediment_clastic,sediment
+5713,592,2182309,84,86.0,small zone highly fracture G-dominant mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5714,592,2182309,86,90.0,EOH; unenriched shaley BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation

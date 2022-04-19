@@ -1,0 +1,4 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+3653,592,2182098,34,36.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3654,592,2182098,38,40.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3655,592,2182098,78,79.0,Dirtier-looking dolomite,dolostone,101,dolostone,carbonate,sedimentary_rock

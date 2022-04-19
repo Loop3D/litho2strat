@@ -1,0 +1,62 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+853,592,2181777,50,51.5,goethite and ferrugenous shale closely intebedded some vugs About 5mm across with clay infill ,mud,100,mud,sediment_clastic,sediment
+854,592,2181777,51,53.0,goethite and ferrugenous shale closely intebedded bedding better defined larger vugs in-filled with clay also moderatley weatherd,mud,100,mud,sediment_clastic,sediment
+855,592,2181777,53,54.5,moderately weathered goethites with clays vugs run along-side bedding,mud,100,mud,sediment_clastic,sediment
+856,592,2181777,54,56.0,highly weather goethites with limonitic clays a clear change from the earlier part of the hole,mud,100,mud,sediment_clastic,sediment
+857,592,2181777,56,57.5,dominated by clay most likely weathered shales goethitic sections toward the end of the run from 57.1 to 57.4,mud,100,mud,sediment_clastic,sediment
+858,592,2181777,57,59.0,goethitc rock with thin lenses of clay running through it representing the areas of weekness,mud,100,mud,sediment_clastic,sediment
+859,592,2181777,59,60.4,Clays derived from ferrougenous limonitic shales,mud,100,mud,sediment_clastic,sediment
+860,592,2181777,60,62.0,shale and limonite derived clays some small bedsof goethite ,mud,100,mud,sediment_clastic,sediment
+861,592,2181777,65,66.5,highly weathered bedding visable insome areas more than others limonitic clays ,mud,101,mud,sediment_clastic,sediment
+862,592,2181777,66,68.0,highly weathered bedding visable insome areas more than others clays are highly weathered shales and limonitic  ,mud,100,mud,sediment_clastic,sediment
+863,592,2181777,75,77.0,Dominated by limonitic clays,mud,101,mud,sediment_clastic,sediment
+864,592,2181777,77,78.5,shale derived clays some small chunks of goethite ,mud,100,mud,sediment_clastic,sediment
+865,592,2181777,78,79.9,bedding still visable in the clay zone at the start of the run,mud,100,mud,sediment_clastic,sediment
+866,592,2181777,79,81.1,Clays derived from ferrougenous and limonitic shales,mud,100,mud,sediment_clastic,sediment
+867,592,2181777,81,82.1,goethite seperated by thick bands of shale,mudstone,101,mudstone,clastic,sedimentary_rock
+868,592,2181777,82,83.2,one solid piece of weathered ferrugenous shale,mudstone,101,mudstone,clastic,sedimentary_rock
+869,592,2181777,83,83.4,highly weathered ferrugenous shale with small pieces of goethite and limonitic clays,mud,101,mud,sediment_clastic,sediment
+870,592,2181777,83,84.7,apart from a small band of clay/shale at 84.5m the rest of the run is massive goethite,mud,100,mud,sediment_clastic,sediment
+871,592,2181777,84,86.0,shales that have been weathered to clay,mud,101,mud,sediment_clastic,sediment
+872,592,2181777,86,87.5,clay with chunks of massive goethite,mud,100,mud,sediment_clastic,sediment
+873,592,2181777,87,89.0,first half of the run dominated by goethite second half dominated by a thick weathered shale band,mudstone,100,mudstone,clastic,sedimentary_rock
+874,592,2181777,89,90.5,band of pink shale running from 89.2-89.4 marker horizon,mudstone,100,mudstone,clastic,sedimentary_rock
+875,592,2181777,98,99.5,highly weathered shales some small chunks of ore bedding seen at 99m,ore,100,ore,ore,mineralisation
+876,592,2181777,102,104.0,weathered broken hematitic goethite pink shales weathered to clay at 103.1m,mud,100,mud,sediment_clastic,sediment
+877,592,2181777,106,107.0,shales weathered to clay,mud,101,mud,sediment_clastic,sediment
+878,592,2181777,107,108.4,limonitic and shale derived clay highly weathered,mud,100,mud,sediment_clastic,sediment
+879,592,2181777,112,114.3,broken shales and siliceous goethite with a small amount of clay in the middle of the run this run is likely to represent the start of the end for the ore zone,mud,100,mud,sediment_clastic,sediment
+880,592,2181777,114,115.9,clays at start of run goethitic section shows light and dark bands,mud,100,mud,sediment_clastic,sediment
+881,592,2181777,115,116.9,clays at start of run goethitic section shows light and dark bands,mud,100,mud,sediment_clastic,sediment
+882,592,2181777,116,118.1,compitent core is represented by hard chunks of siliceous goethite which is seperated by weaker zones of weathered shale,mudstone,101,mudstone,clastic,sedimentary_rock
+883,592,2181777,118,118.9,compitent core is represented by hard chunks of siliceous goethite which is seperated by weaker zones of weathered shale,mudstone,101,mudstone,clastic,sedimentary_rock
+884,592,2181777,119,120.8,clay dominated run most likely weathered hematitic shales. Bedding well developed in siliceous goethite section,mud,100,mud,sediment_clastic,sediment
+885,592,2181777,122,122.4,cherts with beds of shale running through it,mudstone,100,mudstone,clastic,sedimentary_rock
+886,592,2181777,123,124.0,shale zones much less compitent than the chert ones,mudstone,100,mudstone,clastic,sedimentary_rock
+887,592,2181777,124,124.7,palid cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+888,592,2181777,124,126.4,palid cherty BIF bedding plannar to undulating with small sections of goethite min.,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+889,592,2181777,126,127.7,about 70% of the run consists of dark red shale derived clays the rest is biffy chert,chert,101,chert,siliceous,sedimentary_rock
+890,592,2181777,127,128.2,palid cherty BIF bedding plannar to undulating with small sections of goethite min.,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+891,592,2181777,128,129.0,uniformly well bedded biffy chert,chert,101,chert,siliceous,sedimentary_rock
+892,592,2181777,131,132.8,limonitic clay containing small pieces of goethite,mud,100,mud,sediment_clastic,sediment
+893,592,2181777,132,134.3,clay with a Ferrugenous rubble within it,mud,100,mud,sediment_clastic,sediment
+894,592,2181777,134,135.5,shales completely weathered to clay,mud,101,mud,sediment_clastic,sediment
+895,592,2181777,135,137.0,core not compitent at all clay at start of run still shows some evidence of minerlisation,mud,100,mud,sediment_clastic,sediment
+896,592,2181777,137,138.5,texture of this chert changes from vuggy to well bedded s you increase with depth,chert,100,chert,siliceous,sedimentary_rock
+897,592,2181777,138,140.0,residual clay with small sections of clay in between,mud,100,mud,sediment_clastic,sediment
+898,592,2181777,140,141.5,residual clay with small sections of clay in between,mud,100,mud,sediment_clastic,sediment
+899,592,2181777,142,143.0,some weak mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+900,592,2181777,143,144.5,some weak mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+901,592,2181777,144,145.2,cherty BIF with well defined bedding,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+902,592,2181777,145,146.0,well bedded biffy chert with a yellow weathered shale running through the middle of the run ,mudstone,100,mudstone,clastic,sedimentary_rock
+903,592,2181777,146,149.0,biffy chert with small lenses of of shale running through it,mudstone,100,mudstone,clastic,sedimentary_rock
+904,592,2181777,149,149.5,biffy chert with small lenses of of shale running through it,mudstone,100,mudstone,clastic,sedimentary_rock
+905,592,2181777,149,151.0,very weathered pale chert with porly defined bedding,chert,100,chert,siliceous,sedimentary_rock
+906,592,2181777,152,152.8,clays with extremely weathered and broken shales ,mud,100,mud,sediment_clastic,sediment
+907,592,2181777,152,153.2,dominated by shales but some minor chert beds very broken and weathered,chert,100,chert,siliceous,sedimentary_rock
+908,592,2181777,153,153.7,dominated by shales but some minor chert beds very broken and weathered,chert,100,chert,siliceous,sedimentary_rock
+909,592,2181777,153,154.0,dominated by shales but some minor chert beds very broken and weathered,chert,100,chert,siliceous,sedimentary_rock
+910,592,2181777,155,156.6,50% chert 30% clay found at the end of the ,mud,100,mud,sediment_clastic,sediment
+911,592,2181777,156,157.3,weathered chert and shale very broken ,mudstone,100,mudstone,clastic,sedimentary_rock
+912,592,2181777,157,161.5,shales weatherd to clays in places the more solid pieces of clay contain small vugs <5mm,mud,100,mud,sediment_clastic,sediment
+913,592,2181777,173,175.0,carbonaceous shale marker horizon in the mcleod. Some small pods of white chert within this zone couple of cms in width,mudstone,100,mudstone,clastic,sedimentary_rock

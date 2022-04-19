@@ -1,0 +1,47 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+6146,592,2182340,0,2.0,FG silt/soil with minor BIF frags,mud,100,mud,sediment_clastic,sediment
+6147,592,2182340,2,4.0,Silt/soil. Very fine,mud,100,mud,sediment_clastic,sediment
+6148,592,2182340,4,6.0,Granular silt/soil,soil,101,soil,residual_deposit,surficial_rock
+6149,592,2182340,6,8.0,Silt pisoids and clay,mud,101,mud,sediment_clastic,sediment
+6150,592,2182340,8,10.0,Clay and grits,mud,100,mud,sediment_clastic,sediment
+6151,592,2182340,10,12.0,Clay and grits,mud,100,mud,sediment_clastic,sediment
+6152,592,2182340,12,14.0,FeO frags with clay matrix,mud,100,mud,sediment_clastic,sediment
+6153,592,2182340,14,16.0,FeO frags with clay matrix,mud,100,mud,sediment_clastic,sediment
+6154,592,2182340,16,18.0,FeO frags with clay matrix,mud,100,mud,sediment_clastic,sediment
+6155,592,2182340,18,20.0,AA BUT MORE SHALEY - clay increase,mud,100,mud,sediment_clastic,sediment
+6156,592,2182340,24,26.0,Powdery clay,mud,101,mud,sediment_clastic,sediment
+6157,592,2182340,26,28.0,Powdery clay + 5% Q,mud,100,mud,sediment_clastic,sediment
+6158,592,2182340,28,30.0,Powdery clay + 3% Q,mud,100,mud,sediment_clastic,sediment
+6159,592,2182340,30,32.0,Quartz in yellow FGR sandy clay,mud,101,mud,sediment_clastic,sediment
+6160,592,2182340,32,34.0,Quartz in yellow FGR sandy clay,mud,101,mud,sediment_clastic,sediment
+6161,592,2182340,34,36.0,Quartz in yellow FGR sandy clay,mud,101,mud,sediment_clastic,sediment
+6162,592,2182340,36,38.0,Yellow FG sandy Clay with low % Qtz grits. Weatered sandstone? Alluvial sands?,mud,100,mud,sediment_clastic,sediment
+6163,592,2182340,38,40.0,Yellow FG sandy Clay with low % Qtz grits. Weatered sandstone? Alluvial sands?,mud,100,mud,sediment_clastic,sediment
+6164,592,2182340,40,42.0,Yellow FG sandy Clay with low % Qtz grits. Weatered sandstone? Alluvial sands?,mud,100,mud,sediment_clastic,sediment
+6165,592,2182340,42,44.0,Yellow FG sandy Clay with low % Qtz grits. Weatered sandstone? Alluvial sands?,mud,100,mud,sediment_clastic,sediment
+6166,592,2182340,44,46.0,Yellow FG sandy Clay with low % Qtz grits. Weatered sandstone? Alluvial sands?,mud,100,mud,sediment_clastic,sediment
+6167,592,2182340,46,48.0,Yellow FG sandy Clay with low % Qtz grits. Weatered sandstone? Alluvial sands?,mud,100,mud,sediment_clastic,sediment
+6168,592,2182340,48,50.0,Very rare Qtz < 1% in silty clay,mud,101,mud,sediment_clastic,sediment
+6169,592,2182340,50,52.0,Change to BN colour Very rare Qtz in silty clay,mud,101,mud,sediment_clastic,sediment
+6170,592,2182340,52,54.0,Change to BN colour Very rare Qtz in silty clay,mud,101,mud,sediment_clastic,sediment
+6171,592,2182340,54,56.0,YW silty gritty clay with  5% Qtz,mud,100,mud,sediment_clastic,sediment
+6172,592,2182340,56,58.0,YW silty gritty clay with  10% larger Qtz frags,mud,100,mud,sediment_clastic,sediment
+6173,592,2182340,58,60.0,YW silty gritty clay with  3% fine Qtz,mud,100,mud,sediment_clastic,sediment
+6174,592,2182340,60,62.0,Powdery clay with rare Qtz,mud,100,mud,sediment_clastic,sediment
+6175,592,2182340,62,64.0,Powdery clay with 7% medium sized Qtz,mud,100,mud,sediment_clastic,sediment
+6176,592,2182340,64,66.0,Powdery clay with rare Qtz,mud,100,mud,sediment_clastic,sediment
+6177,592,2182340,66,68.0,Quartz Vein? in clay,mud,101,mud,sediment_clastic,sediment
+6178,592,2182340,68,70.0,Mostly large quartz in clay,mud,101,mud,sediment_clastic,sediment
+6179,592,2182340,70,72.0,Running sands? Mix of quartz and clay frags in gritty FGR clay,mud,101,mud,sediment_clastic,sediment
+6180,592,2182340,72,74.0,Running sands? Mix of quartz and clay frags in gritty FGR clay,mud,101,mud,sediment_clastic,sediment
+6181,592,2182340,74,76.0,Running sands? Mix of quartz and clay frags in gritty FGR clay,mud,101,mud,sediment_clastic,sediment
+6182,592,2182340,76,78.0,Running sands? Mix of quartz and clay frags in gritty FGR clay,mud,101,mud,sediment_clastic,sediment
+6183,592,2182340,78,80.0,Quartz Carb veins? With clay,mud,101,mud,sediment_clastic,sediment
+6184,592,2182340,80,82.0,Quartz/Albite rich sediment? Intermediate Tuff?,tuff,101,tuff,volcaniclastic,igneous_rock
+6185,592,2182340,82,84.0,Possible granite or Intermediate volcanic? Qtz/Al xtls. Interbedded Tuff? ,tuff,101,tuff,volcaniclastic,igneous_rock
+6186,592,2182340,84,86.0,Possible granite or Intermediate volcanic? Qtz/Al xtls. Interbedded Tuff? ,tuff,101,tuff,volcaniclastic,igneous_rock
+6187,592,2182340,86,88.0,Intermediate Volcanic?  Chlorite Schist?,schist,101,schist,schist,metamorphic_rock
+6188,592,2182340,88,90.0,Intermediate Volcanic?  Chlorite Schist?,schist,101,schist,schist,metamorphic_rock
+6189,592,2182340,90,92.0,Increase in mafic but Qtz/Albite strong. Andesite/Dolerite?,dolerite,101,dolerite,mafic_coarse_grained_crystalline,igneous_rock
+6190,592,2182340,92,94.0,Increase in mafic but Qtz/Albite strong. Andesite/Dolerite?,dolerite,101,dolerite,mafic_coarse_grained_crystalline,igneous_rock
+6191,592,2182340,94,96.0,Mafic rich. Andesite/Dolerite?,dolerite,101,dolerite,mafic_coarse_grained_crystalline,igneous_rock

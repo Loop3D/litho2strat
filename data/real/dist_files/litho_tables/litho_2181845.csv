@@ -1,0 +1,8 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+1613,592,2181845,58,60.0,?Lag deposit at base of transp. 2-3mm Q grains,lag,100,lag,residual_deposit,surficial_rock
+1614,592,2181845,60,62.0,?Lag deposit at base of transp. 2-5mm Q grains,lag,100,lag,residual_deposit,surficial_rock
+1615,592,2181845,62,64.0,Manganese at base of transported,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+1616,592,2181845,162,164.0,Grade? Unenriched? BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1617,592,2181845,164,166.0,Grade? Unenriched? BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1618,592,2181845,166,168.0,Grade? Unenriched? BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1619,592,2181845,176,178.0,Marks change in unit? Hematised/ferrug shale ,mudstone,101,mudstone,clastic,sedimentary_rock

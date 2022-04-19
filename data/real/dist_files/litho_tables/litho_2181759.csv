@@ -1,0 +1,14 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+552,592,2181759,3,6.0,Core loss 3.0-3.6m.  Pisoids maghemite hematite and rare F granules and pebbles to 1cm in a fg RB matrix.,gravel,100,gravel,sediment_clastic,sediment
+553,592,2181759,6,17.8,Maghemite hematite minor F matrix-supported in cream clays.,mud,101,mud,sediment_clastic,sediment
+554,592,2181759,17,20.3,D GY and BN  Goethite goethitic hematite overprinting pebbly colluvium with relict mottled patches of cream clays. ?Hardcap/ferruginised transcover?,mud,100,mud,sediment_clastic,sediment
+555,592,2181759,20,23.9,Mottled mod/well ferruginised hardcap clay pods as vugh fill.  Original textures overprinted. ?LWA?Transported? material?,mud,100,mud,sediment_clastic,sediment
+556,592,2181759,24,24.8,Cream/yellow clayey shale.,mudstone,101,mudstone,clastic,sedimentary_rock
+557,592,2181759,25,26.1,Rare 2cm beds of bedded goethitisd bif between 10-20 cm zones of G and F fragments core still hard,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+558,592,2181759,26,30.5,Vughy Goethitised cm scale bedded G and F. Vughs and clay filled vughs. Trace Goethitic hematite beds,mud,100,mud,sediment_clastic,sediment
+559,592,2181759,30,30.8,Friable yb/orange shale band,mudstone,100,mudstone,clastic,sedimentary_rock
+560,592,2181759,30,31.8,Vughy Goethitised cm scale bedded G and F. Vughs and clay filled vughs. ,mud,100,mud,sediment_clastic,sediment
+561,592,2181759,34,36.6,Ferruginous shale. 10 % mottled lenses of friable shale. ,mudstone,101,mudstone,clastic,sedimentary_rock
+562,592,2181759,41,43.0,Yellow pink shale. not as well defined as possible marker bed in other holes.,mudstone,101,mudstone,clastic,sedimentary_rock
+563,592,2181759,43,44.7,Yellow pink shale with minor moderately hard 2cm beds of goethitic hematite. CM scale pods of white/cream friable fines. ,mudstone,100,mudstone,clastic,sedimentary_rock
+564,592,2181759,48,48.6,Pink/RB ferruginous shale ,mudstone,101,mudstone,clastic,sedimentary_rock

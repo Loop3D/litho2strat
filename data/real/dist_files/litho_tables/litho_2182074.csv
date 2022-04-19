@@ -1,0 +1,12 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+3358,592,2182074,18,20.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3359,592,2182074,20,22.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3360,592,2182074,22,24.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3361,592,2182074,26,28.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3362,592,2182074,54,56.0,Very soft pale ?denatured chert,chert,101,chert,siliceous,sedimentary_rock
+3363,592,2182074,68,70.0,O = Q sand,sand,101,sand,sediment_clastic,sediment
+3364,592,2182074,72,74.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3365,592,2182074,108,110.0,10-20% clay,mud,101,mud,sediment_clastic,sediment
+3366,592,2182074,128,130.0,Trace clay with G/H,mud,100,mud,sediment_clastic,sediment
+3367,592,2182074,162,164.0,Quartz rich with siliicious G 20%,vein,100,vein,fillings,texture_structure
+3368,592,2182074,164,166.0,Chert increase to 60%,chert,100,chert,siliceous,sedimentary_rock

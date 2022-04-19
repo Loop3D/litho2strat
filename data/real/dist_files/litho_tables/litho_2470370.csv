@@ -1,0 +1,9 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+6841,2670,2470370,5,8.0,trans rock chips clay and minor pisos,mud,100,mud,sediment_clastic,sediment
+6842,2670,2470370,8,10.0,trans sediment frags ferrug,sediment,100,sediment,sediment,sediment
+6843,2670,2470370,10,14.0,red purp siltst shale,mudstone,101,mudstone,clastic,sedimentary_rock
+6844,2670,2470370,23,26.0,pale clay,mud,101,mud,sediment_clastic,sediment
+6845,2670,2470370,28,34.0,pale clay,mud,101,mud,sediment_clastic,sediment
+6846,2670,2470370,41,43.0,clays ferrug/goeth chips and qtz,mud,100,mud,sediment_clastic,sediment
+6847,2670,2470370,43,44.0,pale clay,mud,101,mud,sediment_clastic,sediment
+6848,2670,2470370,49,54.0,weakly ferrug siltst shale,mudstone,101,mudstone,clastic,sedimentary_rock

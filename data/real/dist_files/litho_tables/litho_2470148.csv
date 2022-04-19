@@ -1,0 +1,9 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+6195,2670,2470148,0,4.0,cemented soil & colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+6196,2670,2470148,20,26.0,thick lacustrine clay - wet samples,mud,100,mud,sediment_clastic,sediment
+6197,2670,2470148,36,56.0,insitu? after S/O? BRIGHT YELLOW & PPL CLAYS = FE?,mud,100,mud,sediment_clastic,sediment
+6198,2670,2470148,58,60.0,purple-brown clays,mud,101,mud,sediment_clastic,sediment
+6199,2670,2470148,62,80.0,no chips pp-brn-yl CLAYS,mud,101,mud,sediment_clastic,sediment
+6200,2670,2470148,92,96.0,Roy Hill Shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+6201,2670,2470148,96,100.0,mnr Q Roy Hill Shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+6202,2670,2470148,100,107.0,mnr grn K after mafic? Fortescue?,mafic,100,mafic,mafic,igneous_rock

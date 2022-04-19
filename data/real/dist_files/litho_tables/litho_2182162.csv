@@ -1,0 +1,11 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+4466,592,2182162,38,40.0,sandy quartz,vein,101,vein,fillings,texture_structure
+4467,592,2182162,40,42.0,sandy quartz,vein,101,vein,fillings,texture_structure
+4468,592,2182162,60,62.0,sandy quartz,vein,101,vein,fillings,texture_structure
+4469,592,2182162,62,64.0,sandy quartz,vein,101,vein,fillings,texture_structure
+4470,592,2182162,64,66.0,sandy quartz,vein,101,vein,fillings,texture_structure
+4471,592,2182162,66,68.0,lacustrine clays,mud,101,mud,sediment_clastic,sediment
+4472,592,2182162,68,70.0,lacustrine clays,mud,101,mud,sediment_clastic,sediment
+4473,592,2182162,70,72.0,lacustrine clays,mud,101,mud,sediment_clastic,sediment
+4474,592,2182162,72,74.0,lacustrine clays,mud,101,mud,sediment_clastic,sediment
+4475,592,2182162,74,76.0,lacustrine clays,mud,101,mud,sediment_clastic,sediment

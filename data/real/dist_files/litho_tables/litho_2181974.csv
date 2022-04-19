@@ -1,0 +1,4 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+2397,592,2181974,50,52.0,Base of transported?,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+2398,592,2181974,66,68.0,clay with sparse quartz granules,gravel,101,gravel,sediment_clastic,sediment
+2399,592,2181974,70,72.0,241400,exotic_crystalline_igneous_rock,101,exotic_crystalline_igneous_rock,exotic_crystalline,igneous_rock

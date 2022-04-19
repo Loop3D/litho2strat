@@ -1,0 +1,4 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+251,60,969885,58,59.0,58.5 - 59.5m cavity,void,101,void,artificial_man_made_ground,surficial_rock
+252,60,969885,59,60.0,58.5 - 59.5m cavity,void,101,void,artificial_man_made_ground,surficial_rock
+253,60,969885,60,61.0,FAULT!,fault,100,fault,breaks,texture_structure

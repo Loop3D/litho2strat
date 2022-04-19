@@ -1,0 +1,29 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+3815,592,2182113,36,38.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3816,592,2182113,58,60.0,Clay balls.Very light YB inside,mud,100,mud,sediment_clastic,sediment
+3817,592,2182113,60,62.0,Clay balls.Very light YB inside,mud,100,mud,sediment_clastic,sediment
+3818,592,2182113,62,64.0,Clay balls.Almost white inside,mud,100,mud,sediment_clastic,sediment
+3819,592,2182113,76,78.0,Gritty clay Q silt,mud,101,mud,sediment_clastic,sediment
+3820,592,2182113,78,80.0,Gritty clay Q silt,mud,101,mud,sediment_clastic,sediment
+3821,592,2182113,80,82.0,Gritty clay Q silt,mud,101,mud,sediment_clastic,sediment
+3822,592,2182113,82,84.0,Gritty clay Q silt,mud,101,mud,sediment_clastic,sediment
+3823,592,2182113,88,90.0,Q silt,mud,101,mud,sediment_clastic,sediment
+3824,592,2182113,108,110.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3825,592,2182113,118,120.0,Q silt and sand,sand,101,sand,sediment_clastic,sediment
+3826,592,2182113,120,122.0,Q silt and sand,sand,101,sand,sediment_clastic,sediment
+3827,592,2182113,148,150.0,Gritty Mn clay,mud,101,mud,sediment_clastic,sediment
+3828,592,2182113,150,152.0,Gritty Mn clay,mud,101,mud,sediment_clastic,sediment
+3829,592,2182113,152,154.0,Includes pale weakly manganiferous shale,mudstone,101,mudstone,clastic,sedimentary_rock
+3830,592,2182113,158,160.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3831,592,2182113,166,168.0,Includes Mn shale chips,mudstone,100,mudstone,clastic,sedimentary_rock
+3832,592,2182113,168,170.0,Includes Mn shale chips,mudstone,100,mudstone,clastic,sedimentary_rock
+3833,592,2182113,170,172.0,Includes Mn shale chips,mudstone,100,mudstone,clastic,sedimentary_rock
+3834,592,2182113,176,178.0,Microbanding present. C in Mn clay,mud,101,mud,sediment_clastic,sediment
+3835,592,2182113,178,180.0,Microbanding present. C in Mn clay. Trace Q,mud,100,mud,sediment_clastic,sediment
+3836,592,2182113,182,184.0,Q vein,vein,101,vein,fillings,texture_structure
+3837,592,2182113,184,186.0,Q vein,vein,101,vein,fillings,texture_structure
+3838,592,2182113,186,188.0,Also Q vein,vein,101,vein,fillings,texture_structure
+3839,592,2182113,188,190.0,Also Q vein,vein,101,vein,fillings,texture_structure
+3840,592,2182113,190,192.0,Shale pinky-brown. Virtually non-manganiferous,mudstone,100,mudstone,clastic,sedimentary_rock
+3841,592,2182113,202,204.0,Trace Mn shale chips,mudstone,100,mudstone,clastic,sedimentary_rock
+3842,592,2182113,234,236.0,Shale ?less ferruginous. Still brownish. Like a G shale,mudstone,101,mudstone,clastic,sedimentary_rock

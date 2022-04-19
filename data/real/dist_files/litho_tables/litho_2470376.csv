@@ -1,0 +1,5 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+6867,2670,2470376,10,16.0,pisolitic mainly,pisolith,100,pisolith,residual_deposit,surficial_rock
+6868,2670,2470376,16,19.0,nodular and frags of ferrug haem/goeth frags,nodules,100,nodules,residual_deposit,surficial_rock
+6869,2670,2470376,19,23.0,trans? Clay and ferrug frags,mud,100,mud,sediment_clastic,sediment
+6870,2670,2470376,25,26.0,fgr sst quartzite Woodiana,quartzite,101,quartzite,low_grade_metamorphic_rock,metamorphic_rock

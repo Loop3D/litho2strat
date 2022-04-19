@@ -1,0 +1,5 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+6399,2670,2470200,26,28.0,CAVITY,void,101,void,artificial_man_made_ground,surficial_rock
+6400,2670,2470200,28,30.0,CAVITY,void,101,void,artificial_man_made_ground,surficial_rock
+6401,2670,2470200,78,80.0,SHALEY,mudstone,91,mudstone,clastic,sedimentary_rock
+6402,2670,2470200,80,82.0,SHALEY,mudstone,91,mudstone,clastic,sedimentary_rock

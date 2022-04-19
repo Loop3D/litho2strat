@@ -1,0 +1,11 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+603,592,2181763,43,46.5,FG sand/sandstone with stronger med grained quartz beds grading into white clay after shale with various amounts of G interbeds. Possibly still transported.,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+604,592,2181763,47,48.78,Weathered clay after shale. With minor F/G chips towards base.,mud,100,mud,sediment_clastic,sediment
+605,592,2181763,48,50.74,Interbeds of soft red shale with 10mmthick beds  of goethite. Bedding bery distorted but mostly competant. ,mudstone,100,mudstone,clastic,sedimentary_rock
+606,592,2181763,50,51.9,Interbeds of soft red shale with 10mm beds  of goethite/ocherous goethite with minor limonite. Inc in broken core. G = weakly silcified.,mudstone,100,mudstone,clastic,sedimentary_rock
+607,592,2181763,51,53.74,Vuggy unit with vugs weathered or infilled by clay with shale. Yellow to brown shale weathered to white clay in part interbeded with goethite strongest between 53.5m and 53.75m,mud,100,mud,sediment_clastic,sediment
+608,592,2181763,60,65.9,Interval of yellow to brown shale interedded with G to oG. Strongly limonitic in part - 60.8 - 60.95m 63.02 - 63.25 followed by oG bed at this point,mudstone,100,mudstone,clastic,sedimentary_rock
+609,592,2181763,75,76.5,Soft shale interval followed by oG/LF. Shale strong at 75.4 to 75.7m. ,mudstone,100,mudstone,clastic,sedimentary_rock
+610,592,2181763,82,83.45,Interval of soft pink to red shale followed by harder very fissile F shale grading into G and oG laminations.,mudstone,100,mudstone,clastic,sedimentary_rock
+611,592,2181763,83,86.1,Interval of broken/fractured G interbedded with oG to limonitic strong at fractures.  Ends in  rubble/gravel before core loss block.,gravel,100,gravel,sediment_clastic,sediment
+612,592,2181763,86,88.95,FG sand/sandstone with stronger med grained quartz beds grading into white clay after shale with various amounts of G interbeds. Possibly still transported.,colluvium,101,colluvium,natural_superficial_ground,surficial_rock

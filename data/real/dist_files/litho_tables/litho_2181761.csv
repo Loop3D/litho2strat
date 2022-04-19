@@ -1,0 +1,16 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+571,592,2181761,18,21.4,Red to white clayafter shale/ferruginous shale with some F fragments within clay,mud,101,mud,sediment_clastic,sediment
+572,592,2181761,21,24.5,Competent core with red to white clay after shale with clast of chert and ferruginous clasts of various size scattered.,mud,100,mud,sediment_clastic,sediment
+573,592,2181761,24,26.31,Red to white clay with clasts of hematite Located randomly and fine grained quartz,vein,101,vein,fillings,texture_structure
+574,592,2181761,26,31.6,Small pisolites of maghemite within a white to red clay matrix.,mud,100,mud,sediment_clastic,sediment
+575,592,2181761,31,34.5,Increase in amount of maghemite over clay - pisos dominant in a minimum clay matrix. Pisos well rounded and mod sorted of sizes od 1mm to 10mm.,mud,100,mud,sediment_clastic,sediment
+576,592,2181761,34,36.06,Increase in piso size but not as compacted - inc in clay matrix.Mod rounded and sorted.,mud,100,mud,sediment_clastic,sediment
+577,592,2181761,36,38.12,Transported vuggy hardcap with silicious goethite and minor maghemite that is well rounded. ,colluvium,100,colluvium,natural_superficial_ground,surficial_rock
+578,592,2181761,50,53.4,White to light brown clay after shale  with angular clasts of G within interval increasing in amount with depth.,mud,100,mud,sediment_clastic,sediment
+579,592,2181761,53,56.26,First bedded interval with G prominent in a highly weathered clay after shale. Some smaller clasts so possibly still in transported.,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+580,592,2181761,56,61.85,Olive-brown shale interbedded with hard goethite. Shale weathered to white clay within unit - strong between 57m to 58m,mud,100,mud,sediment_clastic,sediment
+581,592,2181761,61,64.9,Soft broken F. Shale with minor interbeds of G and och G weathered to yellow powdery limonite end of interval all yellow powder,mudstone,100,mudstone,clastic,sedimentary_rock
+582,592,2181761,72,74.3,Soft fissile shale interbedded with och goethite/powdery limonite.,mudstone,100,mudstone,clastic,sedimentary_rock
+583,592,2181761,77,79.7,Interbedded fissile red ferr ug shale with soft och goethite and minor harder clasts of goethite.,mudstone,100,mudstone,clastic,sedimentary_rock
+584,592,2181761,87,88.05,Soft brown fissile material - F shale-  with very minor enrichment,mudstone,100,mudstone,clastic,sedimentary_rock
+585,592,2181761,94,96.8,Interbeds of shale hard silicified goethite followed by bed of red Ferrug or Hematiic shale at 95.5m to 95.92. At 96.3m for 20cm a black soft fissile unit possibly a carb shale. Followed by thinly bedded limonite and soft black martite.,mudstone,100,mudstone,clastic,sedimentary_rock

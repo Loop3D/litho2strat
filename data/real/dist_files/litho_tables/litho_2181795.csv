@@ -1,0 +1,35 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+1327,592,2181795,98,106.1,Alluvial Running sands,alluvium,100,alluvium,alluvial_deposit,surficial_rock
+1328,592,2181795,106,115.9,Massive alluvial running sands and clay,mud,101,mud,sediment_clastic,sediment
+1329,592,2181795,122,125.6,massive clays and minor och goeth/goeth,mud,100,mud,sediment_clastic,sediment
+1330,592,2181795,125,132.2,decrreasing Fe in massive clays,mud,101,mud,sediment_clastic,sediment
+1331,592,2181795,132,135.5,Massive clays little or no Fe,mud,100,mud,sediment_clastic,sediment
+1332,592,2181795,135,140.8,Massive clays increasing in Fe,mud,100,mud,sediment_clastic,sediment
+1333,592,2181795,140,144.7,Competant and fragmented ore,ore,101,ore,ore,mineralisation
+1334,592,2181795,144,144.9,Vuggy and fragmented goeth ore  ,ore,101,ore,ore,mineralisation
+1335,592,2181795,144,146.0,Clay filled vugs within fragmented ore,ore,101,ore,ore,mineralisation
+1336,592,2181795,146,146.8,Extremely vuggy ore,ore,101,ore,ore,mineralisation
+1337,592,2181795,146,148.2,Goeth and friable ?magnetite + clays,mud,101,mud,sediment_clastic,sediment
+1338,592,2181795,154,159.8,friable ore +- trace magnetite?,ore,100,ore,ore,mineralisation
+1339,592,2181795,159,160.1,Low Fe shale,mudstone,101,mudstone,clastic,sedimentary_rock
+1340,592,2181795,160,161.0,fractured and friable ore including magnetite,ore,100,ore,ore,mineralisation
+1341,592,2181795,161,162.5,fragmented and very vuggy ore,ore,101,ore,ore,mineralisation
+1342,592,2181795,162,163.8,extremely friable ore dust in places highly broken and clay rich,mud,100,mud,sediment_clastic,sediment
+1343,592,2181795,163,164.9,broken section of clays and bedded shales,mud,100,mud,sediment_clastic,sediment
+1344,592,2181795,164,166.7,moderately clay filled vuggy goethite-limonite ore,ore,101,ore,ore,mineralisation
+1345,592,2181795,166,167.5,Clay increasing,mud,100,mud,sediment_clastic,sediment
+1346,592,2181795,168,169.2,broken section of ore plus quartz sands,vein,100,vein,fillings,texture_structure
+1347,592,2181795,169,171.6,Goeth ore plus interbeds 1-4cm thick of ferruginous shale,mudstone,101,mudstone,clastic,sedimentary_rock
+1348,592,2181795,171,172.2,Shale and ferruginous shale interbed,mudstone,100,mudstone,clastic,sedimentary_rock
+1349,592,2181795,172,176.0,hematite +- magnetite and goeth extremely friable and broken ore with Fe shale interbeds c. x6 @ ~5cm thick,mudstone,100,mudstone,clastic,sedimentary_rock
+1350,592,2181795,176,180.4,1-2cm interbeds of ferruginous shale,mudstone,101,mudstone,clastic,sedimentary_rock
+1351,592,2181795,180,184.0,Competant and vuggy ore interbedded with thin 1cm ferruginous shales,ore,100,ore,ore,mineralisation
+1352,592,2181795,184,185.2,Fragmented ore and Fe shale + shale + clay,mud,101,mud,sediment_clastic,sediment
+1353,592,2181795,185,189.7,SIGNIFICANT CORE LOSS recovered rock AA but bedded and with thick 10-15cm beds of vuggy ore. ,ore,101,ore,ore,mineralisation
+1354,592,2181795,189,190.2,Fe increase as shale bands decrease,mudstone,100,mudstone,clastic,sedimentary_rock
+1355,592,2181795,190,191.3,Laminated Fe shales and clay with minor accesory goeth,mud,100,mud,sediment_clastic,sediment
+1356,592,2181795,191,198.9,Highly broken and fragmented goeth with minor-trace Fe shale. Good examples of  tr magnetite,mudstone,100,mudstone,clastic,sedimentary_rock
+1357,592,2181795,203,207.0,Blocks of more competant goeth ore fragmented and bedded within highly broken ferruginous shales,ore,100,ore,ore,mineralisation
+1358,592,2181795,207,209.6,Shale and ferruginous shale interbed extremely friable dust in parts and fragmented goethite,mudstone,100,mudstone,clastic,sedimentary_rock
+1359,592,2181795,209,209.7,Competant and brecciated goeth/Fe shale,mudstone,101,mudstone,clastic,sedimentary_rock
+1360,592,2181795,209,212.3,Highly fractured and broken Fe shale and goeth beds,mudstone,100,mudstone,clastic,sedimentary_rock

@@ -1,0 +1,18 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+6268,2670,2470163,40,42.0,CAVITY,void,101,void,artificial_man_made_ground,surficial_rock
+6269,2670,2470163,52,54.0,WEATHERED DOLOMITE,dolostone,101,dolostone,carbonate,sedimentary_rock
+6270,2670,2470163,54,56.0,WEATHERED DOLOMITE,dolostone,101,dolostone,carbonate,sedimentary_rock
+6271,2670,2470163,56,58.0,WEATHERED DOLOMITE,dolostone,101,dolostone,carbonate,sedimentary_rock
+6272,2670,2470163,58,60.0,WEATHERED DOLOMITE,dolostone,101,dolostone,carbonate,sedimentary_rock
+6273,2670,2470163,60,62.0,WEATHERED DOLOMITE,dolostone,101,dolostone,carbonate,sedimentary_rock
+6274,2670,2470163,80,82.0,FINE GRAINED DOLOMITE; MOD WEATHERED,dolostone,100,dolostone,carbonate,sedimentary_rock
+6275,2670,2470163,82,84.0,FINE GRAINED DOLOMITE; SLIGHTLY WEATHERED,dolostone,100,dolostone,carbonate,sedimentary_rock
+6276,2670,2470163,84,86.0,FINE GRAINED DOLOMITE; JNT OXIDN,dolostone,100,dolostone,carbonate,sedimentary_rock
+6277,2670,2470163,86,88.0,FINE GRAINED DOLOMITE; JNT OXIDN,dolostone,100,dolostone,carbonate,sedimentary_rock
+6278,2670,2470163,88,90.0,FINE GRAINED DOLOMITE; JNT OXIDN,dolostone,100,dolostone,carbonate,sedimentary_rock
+6279,2670,2470163,90,92.0,FINE GRAINED DOLOMITE; JNT OXIDN,dolostone,100,dolostone,carbonate,sedimentary_rock
+6280,2670,2470163,92,94.0,FINE GRAINED DOLOMITE; JNT OXIDN,dolostone,100,dolostone,carbonate,sedimentary_rock
+6281,2670,2470163,94,96.0,FINE GRAINED DOLOMITE; JNT OXIDN,dolostone,100,dolostone,carbonate,sedimentary_rock
+6282,2670,2470163,96,98.0,FINE GRAINED DOLOMITE; FRESH,dolostone,100,dolostone,carbonate,sedimentary_rock
+6283,2670,2470163,98,100.0,FINE GRAINED DOLOMITE; FRESH,dolostone,100,dolostone,carbonate,sedimentary_rock
+6284,2670,2470163,100,102.0,FINE GRAINED DOLOMITE; FRESH,dolostone,100,dolostone,carbonate,sedimentary_rock

@@ -1,0 +1,23 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+686,592,2181768,17,24.5,Rounded polymictic pebbles maghemite dominated in mottled yellow/cream/orange clayey matrix.,gravel,100,gravel,sediment_clastic,sediment
+687,592,2181768,24,27.4,"Maghemite granules and ""biffy"" hematite pebbles to 4 cm in a cream clay matrix.",mud,100,mud,sediment_clastic,sediment
+688,592,2181768,27,27.9,"Goethitic hardcap overprinting transported cover. Vughs <5% and ""poorly developed"" to 8mm with with rounded margins and filled with white clays and polymictic granules. ",gravel,101,gravel,sediment_clastic,sediment
+689,592,2181768,27,29.2,Black/Brown Goethitic hardcap manganiferrous overprinting transported cover. Vughy with minor cavity fliing and rare banding of white clays. ,mud,101,mud,sediment_clastic,sediment
+690,592,2181768,29,31.0,Dark brown/reddish tinged goethite/maghemite hardcap 1*15cm and 1* 60cm bed of rounded maghemite and biffy hematite pebbles in clay matrix.,mud,100,mud,sediment_clastic,sediment
+691,592,2181768,31,34.3,"Dk red-br vughy goeth hardcap min goeth hematite overprinting trans cover.  31.1-31.3 has ""type example"" of pebbly/clay matrix progressively downwards displaying vugh development as clays are trans away followed by botroidal goeth filling vughs.",mud,100,mud,sediment_clastic,sediment
+692,592,2181768,34,36.9,Yellow brown ferruginous shales fragmented/broken with clay CR rich mottles. Minor goethitic and limonitic zones olive/dirty grey tinge/wash from prescence of rare Mn minerals.,mud,100,mud,sediment_clastic,sediment
+693,592,2181768,36,40.9,0.5-5cm scale interbedded YB ferruginous shales/ Manganiferrous goethite. Dirty olive/grey wash on core from Mn minerals. 5% Clay pods to 5cm visible on core surface. ,mud,100,mud,sediment_clastic,sediment
+694,592,2181768,40,42.1,Interlayered 15-25cm zones massive dark brown goethite massive dark red brown goethitic hematite and ferruginous shale. ferruginisation overprinting LWA. ,mudstone,100,mudstone,clastic,sedimentary_rock
+695,592,2181768,42,45.4,0.5-5cm scale interbedded YB ferruginous shales/ Goethitic hematite. 10% Clay pods to 8cm visible on core surface. ,mud,100,mud,sediment_clastic,sediment
+696,592,2181768,45,47.2,Massive vit-g and hematitic goethite overprinting ferruginous shale.,mudstone,101,mudstone,clastic,sedimentary_rock
+697,592,2181768,54,59.9,"Massive semi-vit-goethite and hematitic goethite. <5% vughs. Rare 5-25cm zones of ""less enriched"" microbedded ferruginous shale/g.",mudstone,100,mudstone,clastic,sedimentary_rock
+698,592,2181768,62,62.6,Vughy semi-vit-g overprinting micro to 0.5cm bedded ferruginous shale/goethite.,mudstone,100,mudstone,clastic,sedimentary_rock
+699,592,2181768,64,70.2,Vughy semi-vit-g overprinting micro to 0.5cm bedded ferruginous shale/goethite. Soft ferruginous shale band 67.9-68.1m,mudstone,100,mudstone,clastic,sedimentary_rock
+700,592,2181768,70,70.6,Pink yellow shale marker horizon.,mudstone,100,mudstone,clastic,sedimentary_rock
+701,592,2181768,70,78.0,Dk yell-br  lim shales with mottled black harded zones of goethite. 10cm pink shale @ 71.3m. Common 25cm zones fract core with staining on joints. These zones also display fissilebedding fracts @ ~ 45deg from core axis rather than  60 deg from core axis.,mudstone,100,mudstone,clastic,sedimentary_rock
+702,592,2181768,78,89.8,Dark yellow Brown Limonitic shale. Common hard Goethitic mottling and goethite beds to 4cm. Common 25-50cm zones of jointed/dicey textured F.,mudstone,100,mudstone,clastic,sedimentary_rock
+703,592,2181768,89,90.6,Cream/pink shale marker horizon.,mudstone,100,mudstone,clastic,sedimentary_rock
+704,592,2181768,90,97.0,Dark yellow brown limonitic shale. Rare hard goethitic bands to 2cm. Core competent but fragile with dicey/jointed texture at breaks.,mudstone,100,mudstone,clastic,sedimentary_rock
+705,592,2181768,97,98.1,Yellow cream clayey shale marker horizon.,mudstone,100,mudstone,clastic,sedimentary_rock
+706,592,2181768,98,110.2,Dk yell-br lim shale. Rare hard goeth bands to 2cm.Core comp but fragile dicey/joint text at breaks. Beds dip more steeply with fissile bed fracts @ approx 30-15  deg from core axis rather than  60 deg from core axis. 25cm and 5cm s bands @ 99 and 100.1m,mudstone,100,mudstone,clastic,sedimentary_rock
+707,592,2181768,110,114.5,Interlayered 25cm beds Darkyellow brown limonitic shale and pink shale. Beds still dipping 30 degrees from core axis.,mudstone,100,mudstone,clastic,sedimentary_rock

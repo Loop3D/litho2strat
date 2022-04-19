@@ -1,0 +1,21 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+5622,592,2182306,10,10.6,Up to 50% pisoidal maghemites & G cemented in clay matrix; GRADE?,mud,100,mud,sediment_clastic,sediment
+5623,592,2182306,17,18.8,Strong hardcap development with weak bedded vitreous G and ochreous limonite increase in vughs up to 40% but some white clay contaminants filling vughs,mud,100,mud,sediment_clastic,sediment
+5624,592,2182306,19,22.5,very hard vitreous H-W dominant ore mostly massive and <2% vughs,ore,100,ore,ore,mineralisation
+5625,592,2182306,22,22.8,soft crumbly hematised shale with rare hematite beds,mudstone,100,mudstone,clastic,sedimentary_rock
+5626,592,2182306,22,24.2,somewhat weaker massive H-G hardcap development within hematised-ferruginous shales? with <2% vughs overall and small clay contamination; SHARP AT,mud,100,mud,sediment_clastic,sediment
+5627,592,2182306,24,29.8,hard bedded vitreous goethitic dominant ore with some hematite beds; SHARP AT:,ore,100,ore,ore,mineralisation
+5628,592,2182306,29,31.1,moderately hard bedded black martite-manganese ore,ore,101,ore,ore,mineralisation
+5629,592,2182306,31,31.8,soft bedded hematised shale with martite manganese?,mudstone,100,mudstone,clastic,sedimentary_rock
+5630,592,2182306,37,38.3,extremely hard vitreous goethite hardcappy ore down hole? ,ore,100,ore,ore,mineralisation
+5631,592,2182306,38,41.8,hard vitreous and soft bedded porous shale black manganese rich ore?,ore,101,ore,ore,mineralisation
+5632,592,2182306,41,42.9,clay altered shale marker bed,mud,100,mud,sediment_clastic,sediment
+5633,592,2182306,42,48.5,hard bedded vugghy and vitreous black ore martite-goethite-manganese with up to 20% vughs unfilled,ore,101,ore,ore,mineralisation
+5634,592,2182306,52,53.7,hard bedded vitreous G with goethitic shale at end of interval,mudstone,100,mudstone,clastic,sedimentary_rock
+5635,592,2182306,55,60.5,hard bedded vitreous H-G mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5636,592,2182306,79,82.9,goethitic shale? not sure of grade,mudstone,100,mudstone,clastic,sedimentary_rock
+5637,592,2182306,90,91.3,clay altered PINK SHALE MARKER BED w/ rare inclusion of T in places,mud,100,mud,sediment_clastic,sediment
+5638,592,2182306,104,105.2,clay altered PINK SHALE MARKER BED,mud,100,mud,sediment_clastic,sediment
+5639,592,2182306,105,106.9,small breccia? Proximal to FAULT AT:,breccia,100,breccia,fault_rock,texture_structure
+5640,592,2182306,106,107.2,FAULT STRUCTURE WITH QUARTZ-IRON OXIDE BRECCIA,breccia,101,breccia,fault_rock,texture_structure
+5641,592,2182306,107,107.9,clay altered rock adjacent to fault structure,mud,100,mud,sediment_clastic,sediment

@@ -1,0 +1,7 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+3910,592,2182119,36,38.0,fine grained quartz,vein,101,vein,fillings,texture_structure
+3911,592,2182119,38,40.0,fine grained quartz,vein,101,vein,fillings,texture_structure
+3912,592,2182119,40,42.0,fine grained quartz,vein,101,vein,fillings,texture_structure
+3913,592,2182119,152,154.0,finely laminated BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+3914,592,2182119,154,156.0,finely laminated BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+3915,592,2182119,156,158.0,finely laminated BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation

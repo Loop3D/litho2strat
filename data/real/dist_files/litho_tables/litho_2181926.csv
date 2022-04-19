@@ -1,0 +1,4 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+2297,592,2181926,30,32.0,This clay-rich zone.. after F/S?,mud,100,mud,sediment_clastic,sediment
+2298,592,2181926,42,44.0,Green-grey chert,chert,101,chert,siliceous,sedimentary_rock
+2299,592,2181926,44,46.0,Green-grey chert,chert,101,chert,siliceous,sedimentary_rock

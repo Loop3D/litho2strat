@@ -1,0 +1,36 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+4621,592,2182178,32,34.0,White clays,mud,101,mud,sediment_clastic,sediment
+4622,592,2182178,34,36.0,White clays,mud,101,mud,sediment_clastic,sediment
+4623,592,2182178,36,38.0,White clays,mud,101,mud,sediment_clastic,sediment
+4624,592,2182178,38,40.0,White clays,mud,101,mud,sediment_clastic,sediment
+4625,592,2182178,40,42.0,White clays,mud,101,mud,sediment_clastic,sediment
+4626,592,2182178,42,44.0,White clays,mud,101,mud,sediment_clastic,sediment
+4627,592,2182178,44,46.0,White clays,mud,101,mud,sediment_clastic,sediment
+4628,592,2182178,46,48.0,White clays,mud,101,mud,sediment_clastic,sediment
+4629,592,2182178,48,50.0,White clays,mud,101,mud,sediment_clastic,sediment
+4630,592,2182178,50,52.0,White clays,mud,101,mud,sediment_clastic,sediment
+4631,592,2182178,52,54.0,White clays,mud,101,mud,sediment_clastic,sediment
+4632,592,2182178,54,56.0,White clays,mud,101,mud,sediment_clastic,sediment
+4633,592,2182178,56,58.0,White clays,mud,101,mud,sediment_clastic,sediment
+4634,592,2182178,58,60.0,White clays,mud,101,mud,sediment_clastic,sediment
+4635,592,2182178,60,62.0,White clays,mud,101,mud,sediment_clastic,sediment
+4636,592,2182178,62,64.0,White clays,mud,101,mud,sediment_clastic,sediment
+4637,592,2182178,64,66.0,White clays,mud,101,mud,sediment_clastic,sediment
+4638,592,2182178,66,68.0,White clays,mud,101,mud,sediment_clastic,sediment
+4639,592,2182178,68,70.0,White clays,mud,101,mud,sediment_clastic,sediment
+4640,592,2182178,70,72.0,White clays,mud,101,mud,sediment_clastic,sediment
+4641,592,2182178,72,74.0,White clays,mud,101,mud,sediment_clastic,sediment
+4642,592,2182178,74,76.0,White clays,mud,101,mud,sediment_clastic,sediment
+4643,592,2182178,76,78.0,Fine Q sand in WT clay,mud,101,mud,sediment_clastic,sediment
+4644,592,2182178,78,80.0,Fine Q sand in clay,mud,101,mud,sediment_clastic,sediment
+4645,592,2182178,80,82.0,Fine Q sand in clay,mud,101,mud,sediment_clastic,sediment
+4646,592,2182178,82,84.0,Q sand in clay,mud,101,mud,sediment_clastic,sediment
+4647,592,2182178,92,94.0,Clay after limonite,mud,100,mud,sediment_clastic,sediment
+4648,592,2182178,94,96.0,Clay after limonite,mud,100,mud,sediment_clastic,sediment
+4649,592,2182178,96,98.0,Clay after limonite,mud,100,mud,sediment_clastic,sediment
+4650,592,2182178,98,100.0,Clay after limonite,mud,100,mud,sediment_clastic,sediment
+4651,592,2182178,100,102.0,Clay after limonite,mud,100,mud,sediment_clastic,sediment
+4652,592,2182178,102,104.0,Clay after limonite,mud,100,mud,sediment_clastic,sediment
+4653,592,2182178,104,106.0,Clay after limonite,mud,100,mud,sediment_clastic,sediment
+4654,592,2182178,106,108.0,Clay after limonite,mud,100,mud,sediment_clastic,sediment
+4655,592,2182178,108,110.0,Q vein?,vein,101,vein,fillings,texture_structure

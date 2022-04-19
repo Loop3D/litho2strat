@@ -1,0 +1,41 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+5950,592,2182334,0,2.0,OB sandy colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+5951,592,2182334,2,4.0,OB sandy colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+5952,592,2182334,4,6.0,OB sandy colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+5953,592,2182334,6,8.0,OB sandy colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+5954,592,2182334,8,10.0,OB sandy colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+5955,592,2182334,10,12.0,OB sandy colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+5956,592,2182334,12,14.0,OB sandy colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+5957,592,2182334,14,16.0,OB sandy colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+5958,592,2182334,16,18.0,OB Sandy colluvium + trace D CR clay,mud,101,mud,sediment_clastic,sediment
+5959,592,2182334,18,20.0,OB Sandy colluvium + trace D CR clay,mud,101,mud,sediment_clastic,sediment
+5960,592,2182334,20,22.0,Cream clays with trace RB colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+5961,592,2182334,22,24.0,X pebbles and pisoids in clay matrix,mud,100,mud,sediment_clastic,sediment
+5962,592,2182334,24,26.0,X pebbles and pisoids in clay matrix,mud,100,mud,sediment_clastic,sediment
+5963,592,2182334,26,28.0,L YB and CR clays,mud,101,mud,sediment_clastic,sediment
+5964,592,2182334,28,30.0,L YB and CR clays,mud,101,mud,sediment_clastic,sediment
+5965,592,2182334,30,32.0,L YB and CR clays,mud,101,mud,sediment_clastic,sediment
+5966,592,2182334,32,34.0,YB clays trace Q and ferruginous chips,mud,100,mud,sediment_clastic,sediment
+5967,592,2182334,34,36.0,YB clays trace Q and ferruginous chips,mud,100,mud,sediment_clastic,sediment
+5968,592,2182334,36,38.0,YB clays trace Q and ferruginous chips,mud,100,mud,sediment_clastic,sediment
+5969,592,2182334,38,40.0,YB clays trace Q and ferruginous chips,mud,100,mud,sediment_clastic,sediment
+5970,592,2182334,40,42.0,YB clays trace Q and ferruginous chips,mud,100,mud,sediment_clastic,sediment
+5971,592,2182334,42,44.0,YB clays trace Q and ferruginous chips,mud,100,mud,sediment_clastic,sediment
+5972,592,2182334,44,46.0,YB clays trace Q and ferruginous chips,mud,100,mud,sediment_clastic,sediment
+5973,592,2182334,46,48.0,YB clays trace Q and ferruginous chips,mud,100,mud,sediment_clastic,sediment
+5974,592,2182334,48,50.0,Olive/khaki clay/powder,mud,100,mud,sediment_clastic,sediment
+5975,592,2182334,50,52.0,Olive/khaki clay/powder,mud,100,mud,sediment_clastic,sediment
+5976,592,2182334,52,54.0,Olive/khaki clay/powder,mud,100,mud,sediment_clastic,sediment
+5977,592,2182334,54,56.0,Olive/khaki clay/powder,mud,100,mud,sediment_clastic,sediment
+5978,592,2182334,56,58.0,Olive/khaki clay/powder,mud,100,mud,sediment_clastic,sediment
+5979,592,2182334,58,60.0,Olive/khaki clay/powder,mud,100,mud,sediment_clastic,sediment
+5980,592,2182334,60,62.0,Olive/khaki clay/powder,mud,100,mud,sediment_clastic,sediment
+5981,592,2182334,62,64.0,Olive/khaki clay/powder,mud,100,mud,sediment_clastic,sediment
+5982,592,2182334,64,66.0,Olive/khaki clay/powder,mud,100,mud,sediment_clastic,sediment
+5983,592,2182334,66,68.0,Olive/khaki clay/powder,mud,100,mud,sediment_clastic,sediment
+5984,592,2182334,68,70.0,Olive/khaki clay/powder,mud,100,mud,sediment_clastic,sediment
+5985,592,2182334,70,72.0,Extremely fine bedded argillaceous/micaceous soft silty mudstone,mudstone,101,mudstone,clastic,sedimentary_rock
+5986,592,2182334,72,74.0,Extremely fine bedded argillaceous/micaceous soft silty mudstone,mudstone,101,mudstone,clastic,sedimentary_rock
+5987,592,2182334,74,76.0,Extremely fine bedded argillaceous/micaceous soft silty mudstone,mudstone,101,mudstone,clastic,sedimentary_rock
+5988,592,2182334,76,78.0,Extremely fine bedded argillaceous/micaceous soft silty mudstone,mudstone,101,mudstone,clastic,sedimentary_rock
+5989,592,2182334,98,100.0,"As above but 40% soft chips retaining ""igneous texture? - Weathered meta-Dolerite?",dolerite,101,dolerite,mafic_coarse_grained_crystalline,igneous_rock

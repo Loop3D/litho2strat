@@ -1,0 +1,11 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+5440,592,2182253,8,10.0,White clays,mud,101,mud,sediment_clastic,sediment
+5441,592,2182253,10,12.0,White clays,mud,101,mud,sediment_clastic,sediment
+5442,592,2182253,12,14.0,White clays,mud,101,mud,sediment_clastic,sediment
+5443,592,2182253,14,16.0,White clays,mud,101,mud,sediment_clastic,sediment
+5444,592,2182253,16,18.0,White clays,mud,101,mud,sediment_clastic,sediment
+5445,592,2182253,18,20.0,White clays,mud,101,mud,sediment_clastic,sediment
+5446,592,2182253,20,22.0,White clays,mud,101,mud,sediment_clastic,sediment
+5447,592,2182253,22,24.0,White clays,mud,101,mud,sediment_clastic,sediment
+5448,592,2182253,66,68.0,30% pale very soft granular denatured chert,chert,101,chert,siliceous,sedimentary_rock
+5449,592,2182253,68,70.0,30% pale very soft microbanded denatured chert,chert,101,chert,siliceous,sedimentary_rock

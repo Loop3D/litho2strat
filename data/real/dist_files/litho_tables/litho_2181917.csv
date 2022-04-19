@@ -1,0 +1,9 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+2251,592,2181917,28,30.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+2252,592,2181917,66,68.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+2253,592,2181917,68,70.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+2254,592,2181917,70,72.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+2255,592,2181917,72,74.0,Gritty clay. Fine FeO chips,mud,100,mud,sediment_clastic,sediment
+2256,592,2181917,76,78.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+2257,592,2181917,82,84.0,Dark blue-grey clay/chips. Mang,mud,100,mud,sediment_clastic,sediment
+2258,592,2181917,108,110.0,Fine chips. Sieve full of clay.Hard to say,mud,100,mud,sediment_clastic,sediment

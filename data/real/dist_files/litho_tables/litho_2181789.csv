@@ -1,0 +1,24 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+1178,592,2181789,50,50.8,transported running quartz sands,colluvium,100,colluvium,natural_superficial_ground,surficial_rock
+1179,592,2181789,50,52.5,transported clays with trc quartz,vein,101,vein,fillings,texture_structure
+1180,592,2181789,70,78.7,white and limonitic stained transported clays,mud,101,mud,sediment_clastic,sediment
+1181,592,2181789,78,79.6,hardcappy transported clays with goethite; SHARP AT:,mud,100,mud,sediment_clastic,sediment
+1182,592,2181789,79,96.3,transported running quartz sands,colluvium,100,colluvium,natural_superficial_ground,surficial_rock
+1183,592,2181789,96,99.5,limonitic clays - grade? No apparent structure,mud,100,mud,sediment_clastic,sediment
+1184,592,2181789,99,105.5,limonitic clays - grade?  Wkly bedded,mud,100,mud,sediment_clastic,sediment
+1185,592,2181789,109,110.8,wkly-mod bedd G/L>H ore softer and a bit more crumbly,ore,100,ore,ore,mineralisation
+1186,592,2181789,117,121.1,bit more competent bedded ore with vitreous G and some H,ore,100,ore,ore,mineralisation
+1187,592,2181789,121,122.6,hard vitreous goethite dominant ore with mnr <2% vughs,ore,100,ore,ore,mineralisation
+1188,592,2181789,122,127.0,soft powdery limonitic ore,ore,101,ore,ore,mineralisation
+1189,592,2181789,127,127.4,pink shale marker bed,mudstone,100,mudstone,clastic,sedimentary_rock
+1190,592,2181789,130,133.1,crumbly limonite dominant ore,ore,101,ore,ore,mineralisation
+1191,592,2181789,133,133.8,clay altered shale,mudstone,101,mudstone,clastic,sedimentary_rock
+1192,592,2181789,133,137.1,crumbly limonite dominant ore,ore,101,ore,ore,mineralisation
+1193,592,2181789,164,165.0,pink shale marker bed,mudstone,100,mudstone,clastic,sedimentary_rock
+1194,592,2181789,177,179.3,limonitic stained? shale beds,mudstone,100,mudstone,clastic,sedimentary_rock
+1195,592,2181789,181,187.1,quartz sands = FAULT BRECCIA?,breccia,101,breccia,fault_rock,texture_structure
+1196,592,2181789,187,189.3,STRONGLY FRACTURE HARD HEMATITIC ORE - FAULT,fault,101,fault,breaks,texture_structure
+1197,592,2181789,189,190.0,soft clay weathd shale due to proximity to fault,fault,101,fault,breaks,texture_structure
+1198,592,2181789,194,198.1,very hard bedded vitreous hematite ore,ore,101,ore,ore,mineralisation
+1199,592,2181789,199,203.6,goethite dominant semi-enriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1200,592,2181789,203,210.0,EOH; unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation

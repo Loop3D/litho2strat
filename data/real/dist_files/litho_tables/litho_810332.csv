@@ -1,0 +1,31 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+51,475,810332,0,10.0,Ylbn unconsolidated SR qtz sand; minor feldspar ex-granite,sand,100,sand,sediment_clastic,sediment
+52,475,810332,30,40.0,Mg SR-WR clear/yl qtz unconsolidated sand; rare haem cement,sand,100,sand,sediment_clastic,sediment
+53,475,810332,100,160.0,Ylbn fg unconsolidated SA-WR qtz sand,sand,101,sand,sediment_clastic,sediment
+54,475,810332,160,210.0,Clear/white SA-SR qtz sand; rare pk haem-stained fg qtz SSA; rare rdbn ferruginous chips,sand,100,sand,sediment_clastic,sediment
+55,475,810332,210,320.0,Clear/white SA-SR qtz sand; rare pk haem-stained fg qtz SSA; rare rdbn ferruginous chips,sand,100,sand,sediment_clastic,sediment
+56,475,810332,320,330.0,Clear to ylbn SA fg unconsolidated qtz sand; occ 1-2% gnbk coal chips,coal,100,coal,organic_rich,sedimentary_rock
+57,475,810332,330,370.0,Clear SA-SR qtz grains; rare gn/bk coal; rare fg py aggregates; rare goeth/haem chips; rare glauconite grains,coal,100,coal,organic_rich,sedimentary_rock
+58,475,810332,570,580.0,Clear mg WR-SA qtz sand; rare smokey pk qtz; 1% bk coal; rare fg py aggregates,coal,100,coal,organic_rich,sedimentary_rock
+59,475,810332,580,600.0,Mcg clear SA qtz sand; 2-3% fg py aggregates; 1% limonitic frags; tr ?coal,coal,101,coal,organic_rich,sedimentary_rock
+60,475,810332,1215,1216.5,Brecciated mudstone with pyrite,massive_sulphide,101,massive_sulphide,ore,mineralisation
+61,475,810332,1216,1231.4,Interbedded sandstone/mudstone,mudstone,101,mudstone,clastic,sedimentary_rock
+62,475,810332,1262,1269.8,Hydrocbn within med-fn interbedded sandst/mud,mud,101,mud,sediment_clastic,sediment
+63,475,810332,1269,1290.0,VF disseminated mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+64,475,810332,1304,1319.3,Minor limestone;  Base of Carribuddy,limestone,100,limestone,carbonate,sedimentary_rock
+65,475,810332,1319,1321.1,Saddle Dolomite,dolostone,101,dolostone,carbonate,sedimentary_rock
+66,475,810332,1321,1322.1,Increase in visible mineralisation mostly galena,mineralisation,101,mineralisation,ore,mineralisation
+67,475,810332,1334,1337.0,Start of Saddle Dolomite throughout Leo Member,dolostone,100,dolostone,carbonate,sedimentary_rock
+68,475,810332,1337,1337.5,Secondary brown dolomite,dolostone,101,dolostone,carbonate,sedimentary_rock
+69,475,810332,1338,1339.0,Jasper replaces stromatolites?,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+70,475,810332,1340,1341.9,Secondary brown dolomite,dolostone,101,dolostone,carbonate,sedimentary_rock
+71,475,810332,1342,1342.7,30cm silty/sand unit,sand,100,sand,sediment_clastic,sediment
+72,475,810332,1342,1354.6,Zone of significant saddle dolomite in Leo Member,dolostone,100,dolostone,carbonate,sedimentary_rock
+73,475,810332,1354,1355.7,Interbedded wackestone/massive dolomite,dolostone,101,dolostone,carbonate,sedimentary_rock
+74,475,810332,1374,1376.0,Interstitial saddle dolomite,dolostone,101,dolostone,carbonate,sedimentary_rock
+75,475,810332,1376,1382.0,Yellow-brown dolomite and recryst limestone,limestone,101,limestone,carbonate,sedimentary_rock
+76,475,810332,1382,1384.1,Base of Nita Fm: Recryst limestone;  stylolites - wireline logs,limestone,100,limestone,carbonate,sedimentary_rock
+77,475,810332,1384,1387.5,Top of Goldwyer - fossils;  jasper alt;  decr in porosity,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+78,475,810332,1388,1399.9,Jasper preferential in stromatolites and other fossils with pyrite,massive_sulphide,101,massive_sulphide,ore,mineralisation
+79,475,810332,1419,1420.3,Minor hydrocbns in sandstone,sandstone,101,sandstone,clastic,sedimentary_rock
+80,475,810332,1420,1424.0,Increase in hydrocbns in porous recryst limestone,limestone,101,limestone,carbonate,sedimentary_rock

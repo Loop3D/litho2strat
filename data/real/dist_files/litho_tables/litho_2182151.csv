@@ -1,0 +1,61 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+4140,592,2182151,0,2.0,Orange brown pebbly colluvium trace PS,colluvium,100,colluvium,natural_superficial_ground,surficial_rock
+4141,592,2182151,2,4.0,Orange brown pebbly colluvium trace PS,colluvium,100,colluvium,natural_superficial_ground,surficial_rock
+4142,592,2182151,4,6.0,Orange brown pebbly colluvium trace PS,colluvium,100,colluvium,natural_superficial_ground,surficial_rock
+4143,592,2182151,6,8.0,Orange brown pebbly colluvium trace PS,colluvium,100,colluvium,natural_superficial_ground,surficial_rock
+4144,592,2182151,8,10.0,Orange brown pebbly colluvium trace PS,colluvium,100,colluvium,natural_superficial_ground,surficial_rock
+4145,592,2182151,10,12.0,Orange brown pebbly colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+4146,592,2182151,12,14.0,Orange brown pebbly colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+4147,592,2182151,14,16.0,Orange brown pebbly colluviumminor chips clay,mud,101,mud,sediment_clastic,sediment
+4148,592,2182151,16,18.0,Clayey sands / granular colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+4149,592,2182151,18,20.0,Clayey sands / granular colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+4150,592,2182151,20,22.0,Clayey sands / granular colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+4151,592,2182151,22,24.0,Clayey sands / granular colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock
+4152,592,2182151,24,26.0,Silty clays and sandy clays,mud,101,mud,sediment_clastic,sediment
+4153,592,2182151,26,28.0,Silty clays and sandy clays,mud,101,mud,sediment_clastic,sediment
+4154,592,2182151,28,30.0,Silty clays and sandy clays,mud,101,mud,sediment_clastic,sediment
+4155,592,2182151,30,32.0,Silty clays and sandy clays,mud,101,mud,sediment_clastic,sediment
+4156,592,2182151,32,34.0,Silty clays and sandy clays,mud,101,mud,sediment_clastic,sediment
+4157,592,2182151,34,36.0,Silty clays and sandy clays,mud,101,mud,sediment_clastic,sediment
+4158,592,2182151,36,38.0,Sandy clays,mud,101,mud,sediment_clastic,sediment
+4159,592,2182151,38,40.0,Sandy clays,mud,101,mud,sediment_clastic,sediment
+4160,592,2182151,40,42.0,Clay chips-less plastic,plastic,101,plastic,artificial_man_made_ground,surficial_rock
+4161,592,2182151,42,44.0,Clay chips-less plastictrace to minor ferruginous chips rough not pisolitic no cutans,mud,100,mud,sediment_clastic,sediment
+4162,592,2182151,44,46.0,Clay chips-less plastictrace to minor ferruginous chips rough not pisolitic no cutans,mud,100,mud,sediment_clastic,sediment
+4163,592,2182151,46,48.0,Clay chips-less plastictrace to minor ferruginous chips rough not pisolitic no cutans,mud,100,mud,sediment_clastic,sediment
+4164,592,2182151,48,50.0,Clay chips-less plastic minor ferruginous chips rough not pisolitic no cutans,mud,100,mud,sediment_clastic,sediment
+4165,592,2182151,50,52.0,Clay chips-less plastic minor ferruginous chips rough not pisolitic no cutans,mud,100,mud,sediment_clastic,sediment
+4166,592,2182151,52,54.0,Clay chips-less plastic ,plastic,101,plastic,artificial_man_made_ground,surficial_rock
+4167,592,2182151,54,56.0,Clay chips-less plastic ,plastic,101,plastic,artificial_man_made_ground,surficial_rock
+4168,592,2182151,56,58.0,Clay chips-less plastic ,plastic,101,plastic,artificial_man_made_ground,surficial_rock
+4169,592,2182151,58,60.0,Chips BR ferruginous material -weakly goethitised matrix containing  detrital ?quartz? grains,vein,100,vein,fillings,texture_structure
+4170,592,2182151,90,92.0,Hematitic shaleand H trace vein Q?Fault?,fault,101,fault,breaks,texture_structure
+4171,592,2182151,92,94.0,Hematitic shaleand Hchert in,chert,100,chert,siliceous,sedimentary_rock
+4172,592,2182151,94,96.0,Biffy Chert,chert,101,chert,siliceous,sedimentary_rock
+4173,592,2182151,96,98.0,Biffy Chert,chert,101,chert,siliceous,sedimentary_rock
+4174,592,2182151,98,100.0,Biffy Chert,chert,101,chert,siliceous,sedimentary_rock
+4175,592,2182151,100,102.0,Biffy Chert,chert,101,chert,siliceous,sedimentary_rock
+4176,592,2182151,102,104.0,Biffy Chert,chert,101,chert,siliceous,sedimentary_rock
+4177,592,2182151,104,106.0,Biffy Chert,chert,101,chert,siliceous,sedimentary_rock
+4178,592,2182151,110,112.0,Biffy Chert Fractured? ,chert,100,chert,siliceous,sedimentary_rock
+4179,592,2182151,112,114.0,Biffy Chert trace vein Q ?minor fault?,fault,101,fault,breaks,texture_structure
+4180,592,2182151,114,116.0,Biffy ChertFeO bands as H wont grade-Si high,chert,100,chert,siliceous,sedimentary_rock
+4181,592,2182151,116,118.0,Biffy ChertFeO bands as H wont grade-Si high,chert,100,chert,siliceous,sedimentary_rock
+4182,592,2182151,118,120.0,Biffy ChertFeO bands as H wont grade-Si high,chert,100,chert,siliceous,sedimentary_rock
+4183,592,2182151,120,122.0,Biffy ChertFeO bands as H wont grade-Si high,chert,100,chert,siliceous,sedimentary_rock
+4184,592,2182151,122,124.0,Biffy ChertFeO bands as H wont grade-Si high,chert,100,chert,siliceous,sedimentary_rock
+4185,592,2182151,124,126.0,Biffy ChertFeO bands as H wont grade-Si high,chert,100,chert,siliceous,sedimentary_rock
+4186,592,2182151,126,128.0,Biffy ChertFeO bands as H wont grade-Si high,chert,100,chert,siliceous,sedimentary_rock
+4187,592,2182151,128,130.0,Cherty BIFFeO bands as H wont grade-Si high,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+4188,592,2182151,130,132.0,Biffy Chert minor clays and white vein Q- Fault?,fault,101,fault,breaks,texture_structure
+4189,592,2182151,144,146.0,BiffyChert increase in H and trace G chips appear broken chert fractured to angular 1-10mm fragments in black Fe matrix,chert,100,chert,siliceous,sedimentary_rock
+4190,592,2182151,146,148.0,Brecciated Biffy Chert increase in H and trace G chips appear broken chert fractured to angular 1-10mm fragments in black Fe matrix,chert,100,chert,siliceous,sedimentary_rock
+4191,592,2182151,148,150.0,Brecciated Biffy Chert increase in H and trace G chips appear broken chert fractured to angular 1-10mm fragments in black Fe matrix,chert,100,chert,siliceous,sedimentary_rock
+4192,592,2182151,150,152.0,Brecciated Biffy Chert increase in H and trace G chips appear broken chert fractured to angular 1-10mm fragments in black Fe matrix,chert,100,chert,siliceous,sedimentary_rock
+4193,592,2182151,152,154.0,Brecciated Biffy Chert increase in H and trace G chips appear broken chert fractured to angular 1-10mm fragments in black Fe matrix,chert,100,chert,siliceous,sedimentary_rock
+4194,592,2182151,154,156.0,Brecciated Biffy Chert increase in H and trace G chips appear broken chert fractured to angular 1-10mm fragments in black Fe matrix,chert,100,chert,siliceous,sedimentary_rock
+4195,592,2182151,158,160.0,Biffy Chert,chert,101,chert,siliceous,sedimentary_rock
+4196,592,2182151,160,162.0,Biffy Chert,chert,101,chert,siliceous,sedimentary_rock
+4197,592,2182151,174,176.0,Shaley interval clay rich sticky sample,mud,100,mud,sediment_clastic,sediment
+4198,592,2182151,176,178.0,Shaley interval clay rich sticky sample,mud,100,mud,sediment_clastic,sediment
+4199,592,2182151,178,180.0,Shaley interval clay rich sticky sample,mud,100,mud,sediment_clastic,sediment

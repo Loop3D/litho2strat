@@ -1,0 +1,10 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+1451,592,2181800,0,2.0,cemented frags soil and trc maghemite,soil,100,soil,residual_deposit,surficial_rock
+1452,592,2181800,2,4.0,cemented frags soil and trc maghemite,soil,100,soil,residual_deposit,surficial_rock
+1453,592,2181800,4,6.0,cemented frags soil and trc maghemite,soil,100,soil,residual_deposit,surficial_rock
+1454,592,2181800,16,18.0,weathd shale or hematite,mudstone,100,mudstone,clastic,sedimentary_rock
+1455,592,2181800,18,20.0,weathd shale or hematite,mudstone,100,mudstone,clastic,sedimentary_rock
+1456,592,2181800,100,102.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1457,592,2181800,102,104.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1458,592,2181800,104,106.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1459,592,2181800,106,108.0,EOH; unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation

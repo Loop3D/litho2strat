@@ -1,0 +1,38 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+197,475,810342,0,10.0,Mg SA-SR aeolian qtz grains; mod red haem staining on grain surfaces; minor SR limonitic/ferricrete/lag frags,ferricrete,100,ferricrete,residual_deposit,surficial_rock
+198,475,810342,10,30.0,Mg SR-WR qtz grains with minor white ?si cement on grain surfaces; minor haem staining on grain surfaces; rare SR lag frags; rare lim/haem cement late,lag,100,lag,residual_deposit,surficial_rock
+199,475,810342,30,40.0,Clear mg SA-SR qtz grains; v wk white cement on grain surfaces; rare WR qtz & jasper granules ?conglomerate,gravel,101,gravel,sediment_clastic,sediment
+200,475,810342,130,140.0,Well sorted mg SR-WR smoky qtz; fresh py & haem bands after pyrite; ?siliceous bands,massive_sulphide,100,massive_sulphide,ore,mineralisation
+201,475,810342,140,180.0,Haem/goeth str si-cemented gossanous SSA; tr vitreous black chips - ?coal beds,coal,100,coal,organic_rich,sedimentary_rock
+202,475,810342,390,410.0,Fg poorly cemented SSA; clear fg SR-WR qtz with 2% glauconitic clay; some goeth staining decr downhole,mud,100,mud,sediment_clastic,sediment
+203,475,810342,440,460.0,Poorly sorted fmg clear qtz SSA with clays SCL & minor fissile SHL; tr PY; lots of grease in sample,mud,100,mud,sediment_clastic,sediment
+204,475,810342,460,470.0,Sandy SSL siliceous & mod-sorted SA clear qtz SSA; wk cemented with si-py; tr coal; fresh pyrite,massive_sulphide,101,massive_sulphide,ore,mineralisation
+205,475,810342,480,500.0,Generally poorly cemented; fmg clear qtz SSA with some horizons in fresh massive py matrix; fg grey siliceous SSL; tr glauconite; tr coal,coal,101,coal,organic_rich,sedimentary_rock
+206,475,810342,530,580.0,Poorly cemented; mod-well sorted fcg clear minor smoky SR qtz SSA; minor massive py matrix interbeds; tr coal; fining downwards sequence,coal,100,coal,organic_rich,sedimentary_rock
+207,475,810342,580,600.0,Poor-mod sorted; poorly cemented smoky-clear SA-SR qtz SSA; some haem-stained qtz; tr massive py-cemented interbeds; tr coal; tr ?chert,chert,101,chert,siliceous,sedimentary_rock
+208,475,810342,600,690.0,Poor-mod sorted; poorly cemented clear-translucent SA-SR qtz SSA; tr massive py-cemented interbeds; tr coal; tr ?chert; minor WR basement granules,gravel,101,gravel,sediment_clastic,sediment
+209,475,810342,690,710.0,Mod sorted clear-translucent SR qtz SSA with massive py matrix-supported SSA interbeds; v minor pale grey flaky SHL; tr coal fragments,coal,100,coal,organic_rich,sedimentary_rock
+210,475,810342,730,760.0,Transition to Grant SSA; mod sorted clear-translucent SR qtz SSA with massive py matrix-supported SSA interbeds; grey friable SHL frags to 4mm with 20% clays; tr siliceous SSL,mud,100,mud,sediment_clastic,sediment
+211,475,810342,760,860.0,Dk grey fg SHL; mod/wk fissility; fg SSL chips; poss wk argillaceous muds; fg py cement aggregate,bonded_aggregate,101,bonded_aggregate,artificial_man_made_ground,surficial_rock
+212,475,810342,860,880.0,Dk grey fg SHL; wk fissility; rare py aggregates; v rare orange carbonate veins; rare SR qtz grains,carbonate,100,carbonate,carbonate,sedimentary_rock
+213,475,810342,880,890.0,Fg SR qtz grains; minor fg grey SHL; mod fissility; occ SR frags/granules of granitic qtz-fd origin,gravel,100,gravel,sediment_clastic,sediment
+214,475,810342,890,910.0,Fg clear qtz grains; mod vfg SSL/SCL frags; minor fg grey SHL; rare granules of pink/orange qtz; v rare fg py aggregates,gravel,100,gravel,sediment_clastic,sediment
+215,475,810342,1222,1230.0,Clastic mudstone/shale,mudstone,101,mudstone,clastic,sedimentary_rock
+216,475,810342,1241,1248.1,red brown alteration and occasional sandstone interbed qtz grains 20-30% + cal cement,sandstone,100,sandstone,clastic,sedimentary_rock
+217,475,810342,1248,1259.1,clean quartz sandstone 30%clast mostly clear qz + calcaeous fg cement,sandstone,100,sandstone,clastic,sedimentary_rock
+218,475,810342,1285,1293.5,poorly bedded fine siltstone,mudstone,101,mudstone,clastic,sedimentary_rock
+219,475,810342,1293,1295.1,dirty ferrug limestone w- white lenticles calcite after fossils?,limestone,100,limestone,carbonate,sedimentary_rock
+220,475,810342,1295,1323.2,weakly bedded mudstone + silstone + minor sandstone.,sandstone,101,sandstone,clastic,sedimentary_rock
+221,475,810342,1323,1331.5,carbonate rich mudstone with some visible bedding,mudstone,100,mudstone,clastic,sedimentary_rock
+222,475,810342,1331,1342.9,semi laminated carbonaceous mudstone/siltstone,mudstone,101,mudstone,clastic,sedimentary_rock
+223,475,810342,1384,1395.6,carbonate rich; laminar bedding; minor galena,carbonate,100,carbonate,carbonate,sedimentary_rock
+224,475,810342,1395,1400.2,turbid bedding textures; some calcite/dolomite infill,dolostone,100,dolostone,carbonate,sedimentary_rock
+225,475,810342,1400,1413.2,pink/white dolomite grains/infill/overprint; some laminar bedding,dolostone,100,dolostone,carbonate,sedimentary_rock
+226,475,810342,1413,1415.3,shale with limestone clasts syn depostitional=reworked clastic shale??= NAME?MARKER?,mudstone,100,mudstone,clastic,sedimentary_rock
+227,475,810342,1437,1443.9,foss. coarser limestone galena and minor sphal infill; minor bedded shale + barite,mudstone,100,mudstone,clastic,sedimentary_rock
+228,475,810342,1443,1446.7,fg limestone with minor shale interbeds,mudstone,100,mudstone,clastic,sedimentary_rock
+229,475,810342,1446,1452.4,ga/sp/ba min + HC + foss + shale interbeds,mudstone,100,mudstone,clastic,sedimentary_rock
+230,475,810342,1452,1458.1,HC poor; fossil casts infilled with dolomite/barite/minor sulphides,dolostone,100,dolostone,carbonate,sedimentary_rock
+231,475,810342,1458,1483.8,HC stained brown algal texture with some finely bedded limey siltstone,mudstone,101,mudstone,clastic,sedimentary_rock
+232,475,810342,1483,1496.2,gritty sandstone + fossilif beds,sandstone,100,sandstone,clastic,sedimentary_rock
+233,475,810342,1496,1515.6,"greenish shale with foss. sandstone interbeds incl. oolites? ""coaster formation"" EOH",mudstone,100,mudstone,clastic,sedimentary_rock

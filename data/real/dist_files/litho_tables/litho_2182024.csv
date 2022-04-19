@@ -1,0 +1,45 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+2769,592,2182024,6,8.0,Mix of mod indurated chips OB sands and pale cream pale green chips clay.,mud,101,mud,sediment_clastic,sediment
+2770,592,2182024,8,10.0,Mix of mod indurated chips OB sands and pale cream pale green chips clay.,mud,101,mud,sediment_clastic,sediment
+2771,592,2182024,10,12.0,Mix of mod indurated chips OB sands and pale cream pale green chips clay.,mud,101,mud,sediment_clastic,sediment
+2772,592,2182024,12,14.0,Mix of mod indurated chips OB sands and pale cream pale green chips clay.,mud,101,mud,sediment_clastic,sediment
+2773,592,2182024,14,16.0,Mod indurated chips OB sands 10% X pisoids and rounded pebbles and granules,gravel,101,gravel,sediment_clastic,sediment
+2774,592,2182024,16,18.0,Mod indurated chips OB sands 20% X pisoids and rounded pebbles and granules,gravel,101,gravel,sediment_clastic,sediment
+2775,592,2182024,18,20.0,Chips d CR and pale green clay in OG fines,mud,100,mud,sediment_clastic,sediment
+2776,592,2182024,20,22.0,Chips d CR and pale green clay in OG fines,mud,100,mud,sediment_clastic,sediment
+2777,592,2182024,22,24.0,Chips d CR and pale green clay in OG fines,mud,100,mud,sediment_clastic,sediment
+2778,592,2182024,24,26.0,Chips d CR and pale green clay in OG fines,mud,100,mud,sediment_clastic,sediment
+2779,592,2182024,26,28.0,Chips d CR and pale green clay in OG fines,mud,100,mud,sediment_clastic,sediment
+2780,592,2182024,28,30.0,Chips d CR and pale green clay in OG fines,mud,100,mud,sediment_clastic,sediment
+2781,592,2182024,32,34.0, D cream sticky clay.,mud,101,mud,sediment_clastic,sediment
+2782,592,2182024,34,36.0,Chips D CR clay in OG fines,mud,100,mud,sediment_clastic,sediment
+2783,592,2182024,36,38.0,Chips D CR clay in OG fines,mud,100,mud,sediment_clastic,sediment
+2784,592,2182024,40,42.0,Dark cream plastic clay.,mud,101,mud,sediment_clastic,sediment
+2785,592,2182024,42,44.0,Cream with hint of pale green plastic clays,mud,101,mud,sediment_clastic,sediment
+2786,592,2182024,44,46.0,Cream with hint of pale green plastic clays,mud,101,mud,sediment_clastic,sediment
+2787,592,2182024,46,48.0,Cream with hint of pale green plastic clays,mud,101,mud,sediment_clastic,sediment
+2788,592,2182024,48,50.0,Cream with hint of pale green plastic clays,mud,101,mud,sediment_clastic,sediment
+2789,592,2182024,50,52.0,Cream with hint of pale green plastic clays,mud,101,mud,sediment_clastic,sediment
+2790,592,2182024,52,54.0,Cream with hint of pale green plastic clays,mud,101,mud,sediment_clastic,sediment
+2791,592,2182024,84,86.0,White slurry 15% q and sub rounded ?quartzite? Pebbles to 2cm,quartzite,100,quartzite,low_grade_metamorphic_rock,metamorphic_rock
+2792,592,2182024,86,88.0,White slurry 15% q and sub rounded ?quartzite? Pebbles to 2cm,quartzite,100,quartzite,low_grade_metamorphic_rock,metamorphic_rock
+2793,592,2182024,88,90.0,White slurry 15% q and sub rounded ?quartzite? Pebbles to 2cm,quartzite,100,quartzite,low_grade_metamorphic_rock,metamorphic_rock
+2794,592,2182024,90,92.0,White slurry 60% q and sub rounded ?quartzite? Pebbles to 2cm,quartzite,100,quartzite,low_grade_metamorphic_rock,metamorphic_rock
+2795,592,2182024,92,94.0,White slurry 60% q and sub rounded ?quartzite? Pebbles to 2cm,quartzite,100,quartzite,low_grade_metamorphic_rock,metamorphic_rock
+2796,592,2182024,94,96.0,White slurry 60% q and sub rounded ?quartzite? Pebbles to 2cm,quartzite,100,quartzite,low_grade_metamorphic_rock,metamorphic_rock
+2797,592,2182024,96,98.0,White slurry 60% q and sub rounded ?quartzite? Pebbles to 2cm,quartzite,100,quartzite,low_grade_metamorphic_rock,metamorphic_rock
+2798,592,2182024,98,100.0,White slurry 60% q and sub rounded ?quartzite? Pebbles to 2cm. Rare pale grey laminated Quartzite chips,quartzite,100,quartzite,low_grade_metamorphic_rock,metamorphic_rock
+2799,592,2182024,102,104.0,Incredibly sticky unwashable/unsievable Plastic clays stained grey by trace ?Mn? minerals,mud,100,mud,sediment_clastic,sediment
+2800,592,2182024,104,106.0,Incredibly sticky unwashable/unsievable Plastic clays stained grey by trace ?Mn? Minerals,mud,100,mud,sediment_clastic,sediment
+2801,592,2182024,106,108.0,Incredibly sticky unwashable/unsievable Plastic clays stained grey by trace ?Mn? Minerals,mud,100,mud,sediment_clastic,sediment
+2802,592,2182024,108,110.0,Incredibly sticky unwashable/unsievable Plastic clays. 5% <2mm gritty ferruginous material smaller than sieve mesh,mud,100,mud,sediment_clastic,sediment
+2803,592,2182024,110,112.0,Incredibly sticky unwashable/unsievable Plastic clays. 5% <2mm gritty ferruginous material smaller than sieve mesh,mud,100,mud,sediment_clastic,sediment
+2804,592,2182024,112,114.0,Incredibly sticky unwashable/unsievable Plastic clays. 5% <2mm gritty ferruginous material smaller than sieve mesh,mud,100,mud,sediment_clastic,sediment
+2805,592,2182024,146,148.0,As above Part of interval has sticky clay - S marker horizion?,mud,100,mud,sediment_clastic,sediment
+2806,592,2182024,150,152.0,Cryptic water and chips back to dirty olive brown trace vein quartz clays in sample,mud,100,mud,sediment_clastic,sediment
+2807,592,2182024,156,158.0,D Yellow clayey fg chips with no visible textures minor mottled purple chips and trace white vein Q,vein,100,vein,fillings,texture_structure
+2808,592,2182024,158,160.0,D Yellow clayey fg chips with no visible textures minor mottled purple chips and trace white vein Q,vein,100,vein,fillings,texture_structure
+2809,592,2182024,160,162.0,D Yellow clayey fg chips with no visible textures minor mottled purple chips and trace white vein Q,vein,100,vein,fillings,texture_structure
+2810,592,2182024,162,164.0,D Yellow clayey fg chips with no visible textures minor mottled purple chips and trace white vein Q,vein,100,vein,fillings,texture_structure
+2811,592,2182024,164,166.0,Massive dbn G chips with minor YW shale chips,mudstone,100,mudstone,clastic,sedimentary_rock
+2812,592,2182024,166,168.0,Massive dbn G chips with minor YW shale chips,mudstone,100,mudstone,clastic,sedimentary_rock

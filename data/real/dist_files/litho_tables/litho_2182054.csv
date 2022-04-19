@@ -1,0 +1,31 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+3049,592,2182054,0,2.0,Silt/Soil with trace quartz,vein,101,vein,fillings,texture_structure
+3050,592,2182054,2,4.0,Silt/Soil with trace quartz,vein,101,vein,fillings,texture_structure
+3051,592,2182054,4,6.0,Silt/Soil with trace quartz,vein,101,vein,fillings,texture_structure
+3052,592,2182054,20,22.0,Small pisoids of X 13% and Q 7% in clay,mud,101,mud,sediment_clastic,sediment
+3053,592,2182054,22,24.0,Small pisoids of X 13% and F 7% in clay,mud,101,mud,sediment_clastic,sediment
+3054,592,2182054,24,26.0,Gritty hard clay,mud,101,mud,sediment_clastic,sediment
+3055,592,2182054,26,28.0,Softer clay,mud,101,mud,sediment_clastic,sediment
+3056,592,2182054,32,34.0,Hard lacustrine clay with Q chips <5%,mud,100,mud,sediment_clastic,sediment
+3057,592,2182054,34,36.0,Hard lacustrine clay w/ 5% grits,mud,100,mud,sediment_clastic,sediment
+3058,592,2182054,36,38.0,Hard lacustrine clay balls,mud,100,mud,sediment_clastic,sediment
+3059,592,2182054,38,40.0,5% grits in softer clay ZH with hard clay balls,mud,100,mud,sediment_clastic,sediment
+3060,592,2182054,40,42.0,5% grits in softer clay ZH with hard clay balls,mud,100,mud,sediment_clastic,sediment
+3061,592,2182054,44,46.0,3% small F frags in hard gritty clay,mud,101,mud,sediment_clastic,sediment
+3062,592,2182054,46,48.0,Maghemite pisoids in powdery clay,mud,101,mud,sediment_clastic,sediment
+3063,592,2182054,50,52.0,FG clay wit pisoids of X and G,mud,100,mud,sediment_clastic,sediment
+3064,592,2182054,52,54.0,FG clay wit pisoids of X and G,mud,100,mud,sediment_clastic,sediment
+3065,592,2182054,56,58.0,Hard gritty clay,mud,101,mud,sediment_clastic,sediment
+3066,592,2182054,64,66.0,Q vein?,vein,101,vein,fillings,texture_structure
+3067,592,2182054,68,70.0,Gritty clay. Grits C/Q,mud,100,mud,sediment_clastic,sediment
+3068,592,2182054,82,84.0,Mildly enriched H BIF interbedded with C,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+3069,592,2182054,84,86.0,Mildly enriched H BIF interbedded with C.  Very microbedded. Slatey in part,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+3070,592,2182054,88,90.0,Microbedded C wit 10% vein Q,vein,100,vein,fillings,texture_structure
+3071,592,2182054,90,92.0,Chert in clay with Q,mud,100,mud,sediment_clastic,sediment
+3072,592,2182054,92,94.0,Dark chert. Massive in part?,chert,100,chert,siliceous,sedimentary_rock
+3073,592,2182054,94,96.0,Dark chert. Massive in part?,chert,100,chert,siliceous,sedimentary_rock
+3074,592,2182054,100,102.0,Chert with FeO staining. BIFFY C?,chert,100,chert,siliceous,sedimentary_rock
+3075,592,2182054,102,104.0,Chert with FeO staining. BIFFY C?,chert,100,chert,siliceous,sedimentary_rock
+3076,592,2182054,104,106.0,Chert with FeO staining. Microfaulting of chert microbands. 10% Q,chert,100,chert,siliceous,sedimentary_rock
+3077,592,2182054,110,112.0,Weathered in clay. C with 25% H,mud,100,mud,sediment_clastic,sediment
+3078,592,2182054,112,114.0,Weathered in clay. C with 10% H,mud,100,mud,sediment_clastic,sediment

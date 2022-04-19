@@ -1,0 +1,8 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+2273,592,2181924,48,50.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+2274,592,2181924,50,52.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+2275,592,2181924,52,54.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+2276,592,2181924,62,64.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+2277,592,2181924,64,66.0,Gritty clay. Base of transport? Uncertain,mud,100,mud,sediment_clastic,sediment
+2278,592,2181924,66,68.0,Trace shale ? also these few metres,mudstone,100,mudstone,clastic,sedimentary_rock
+2279,592,2181924,122,124.0,After manganiferous shale? ,mudstone,101,mudstone,clastic,sedimentary_rock

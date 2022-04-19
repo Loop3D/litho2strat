@@ -1,0 +1,14 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+478,592,2181752,3,10.0,RB silty/sandy colluvium. 5% X and H granules to 4mm in Matrix of unbedded RB fines. ,gravel,100,gravel,sediment_clastic,sediment
+479,592,2181752,10,11.6,RB silty/sandy colluvium. 35% polymictic S H C J H granules and pebbles to  20mm matrix supported in RB fines.,gravel,100,gravel,sediment_clastic,sediment
+480,592,2181752,11,12.8,RB poorly sorted silty matrix supported conglomeritic colluvium. Shale pebbles common minor well cemented zones. ,gravel,100,gravel,sediment_clastic,sediment
+481,592,2181752,12,27.2,"Cream and yellow clay matrix containing shale and Feo pebbles.Note outside of core looks RB because of drilling mud More competent very weakly ""silcretey"" from about 26m.",mud,100,mud,sediment_clastic,sediment
+482,592,2181752,27,33.5,Goethitic Hardcap overprinting/replacing pebbly colluvium.  Poddy clays/clay as vugh fill. ?potential for beneficiation by coarse crush and wash?,fill,101,fill,artificial_man_made_ground,surficial_rock
+483,592,2181752,33,36.9,Goethitic Hardcap overprinting/replacing BIF/S.  Rare patches retain probable bedding trace of G BIF.. ,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+484,592,2181752,36,40.3,Bedded G mineralised Mt Newman. <5% vughs.,mineralisation,100,mineralisation,ore,mineralisation
+485,592,2181752,40,42.4,Bedded G mineralised Mt Newman. 5-10% vughs.,mineralisation,100,mineralisation,ore,mineralisation
+486,592,2181752,42,46.0,Bedded G mineralised Mt Newman. Alternating 2-25cm beds of  oG and F.,mineralisation,100,mineralisation,ore,mineralisation
+487,592,2181752,46,57.5,Bedded mineralised Mt Newman F dominated. Alternating 2-25cm beds of  oG and F. V rare < 1% pods of clay with max pod dimension of 5cm.,mud,100,mud,sediment_clastic,sediment
+488,592,2181752,57,58.3,Yellow/pink shale band.,mudstone,100,mudstone,clastic,sedimentary_rock
+489,592,2181752,58,59.5,Bedded mineralised Mt Newman F dominated. Alternating 2-25cm beds of  mod soft oG and F. ,mineralisation,100,mineralisation,ore,mineralisation
+490,592,2181752,61,62.0,Pink F and yellow/Pink F - Unminerallised shale unit of Mt Newman?,mudstone,100,mudstone,clastic,sedimentary_rock

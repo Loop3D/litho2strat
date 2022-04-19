@@ -1,0 +1,31 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+3486,592,2182079,20,22.0,Gritty clay with smallFeO chips,mud,100,mud,sediment_clastic,sediment
+3487,592,2182079,22,24.0,Gritty clay with smallFeO chips,mud,100,mud,sediment_clastic,sediment
+3488,592,2182079,26,28.0,Gritty clay with smallFeO chips,mud,100,mud,sediment_clastic,sediment
+3489,592,2182079,28,30.0,Gritty clay with smallFeO chips,mud,100,mud,sediment_clastic,sediment
+3490,592,2182079,30,32.0,Gritty clay with smallFeO chips,mud,100,mud,sediment_clastic,sediment
+3491,592,2182079,40,42.0,Gritty clay with smallFeO chips,mud,100,mud,sediment_clastic,sediment
+3492,592,2182079,42,44.0,Hard clay. Impossible to wash,mud,100,mud,sediment_clastic,sediment
+3493,592,2182079,44,46.0,Hard clay. Impossible to wash. Ferruginous grits,mud,100,mud,sediment_clastic,sediment
+3494,592,2182079,50,52.0,Hard lacustrine clay balls,mud,100,mud,sediment_clastic,sediment
+3495,592,2182079,52,54.0,Hard lacustrine clay balls,mud,100,mud,sediment_clastic,sediment
+3496,592,2182079,54,56.0,Clay with grits,mud,100,mud,sediment_clastic,sediment
+3497,592,2182079,56,58.0,Clay with grits,mud,100,mud,sediment_clastic,sediment
+3498,592,2182079,58,60.0,Powdery clay with ferruginous pisoids,mud,100,mud,sediment_clastic,sediment
+3499,592,2182079,64,66.0,Small ferruginous chips. Shale/Goethite in clay,mud,101,mud,sediment_clastic,sediment
+3500,592,2182079,66,68.0,Small ferruginous chips. Shale/Goethite in clay,mud,101,mud,sediment_clastic,sediment
+3501,592,2182079,68,70.0,Possibly detrital? High amount of clay. Small ferruginous chips,mud,100,mud,sediment_clastic,sediment
+3502,592,2182079,70,72.0,Possibly detrital? High amount of clay. Small ferruginous chips,mud,100,mud,sediment_clastic,sediment
+3503,592,2182079,72,74.0,Hard dark clay. Impossible to sieve but gritty,mud,100,mud,sediment_clastic,sediment
+3504,592,2182079,74,76.0,Detrital? Small ferruginous chips F or G in clay,mud,101,mud,sediment_clastic,sediment
+3505,592,2182079,76,78.0,Detrital? Small ferruginous chips F or G in clay,mud,101,mud,sediment_clastic,sediment
+3506,592,2182079,78,80.0,Detrital? Small ferruginous chips F or G in clay,mud,101,mud,sediment_clastic,sediment
+3507,592,2182079,80,82.0,Chips small and my arm is about to fall off from sieving. This hole has been rubbish so far. Hard to tell BOT/lithology/stratigraphy,fall,100,fall,natural_superficial_ground,surficial_rock
+3508,592,2182079,82,84.0,Crystalline dolomite,dolostone,101,dolostone,carbonate,sedimentary_rock
+3509,592,2182079,84,86.0,Crystalline dolomite with clay,mud,101,mud,sediment_clastic,sediment
+3510,592,2182079,86,88.0,Crystalline dolomite with clay,mud,101,mud,sediment_clastic,sediment
+3511,592,2182079,88,90.0,Microbanded crystalline dolomite,dolostone,101,dolostone,carbonate,sedimentary_rock
+3512,592,2182079,90,92.0,Dolomite with fines andclay,dolostone,100,dolostone,carbonate,sedimentary_rock
+3513,592,2182079,92,94.0,Dolomite with softer bedded pieces,dolostone,100,dolostone,carbonate,sedimentary_rock
+3514,592,2182079,96,98.0,Clay/fine rich,mud,100,mud,sediment_clastic,sediment
+3515,592,2182079,98,100.0,Dark grey/black fragments. Carb shale? Weak acid reaction but not very soft,felsic,100,felsic,felsic,igneous_rock

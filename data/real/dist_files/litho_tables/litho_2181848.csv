@@ -1,0 +1,35 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+1620,592,2181848,68,70.0,khaki green clays,mud,101,mud,sediment_clastic,sediment
+1621,592,2181848,70,72.0,khaki green clays,mud,101,mud,sediment_clastic,sediment
+1622,592,2181848,72,74.0,khaki green clays,mud,101,mud,sediment_clastic,sediment
+1623,592,2181848,74,76.0,khaki green clays,mud,101,mud,sediment_clastic,sediment
+1624,592,2181848,76,78.0,khaki green clays,mud,101,mud,sediment_clastic,sediment
+1625,592,2181848,78,80.0,cherty shale/sediment,sediment,101,sediment,sediment,sediment
+1626,592,2181848,80,82.0,khaki green clays,mud,101,mud,sediment_clastic,sediment
+1627,592,2181848,82,84.0,khaki green clays,mud,101,mud,sediment_clastic,sediment
+1628,592,2181848,84,86.0,khaki green clays,mud,101,mud,sediment_clastic,sediment
+1629,592,2181848,88,90.0,clays after shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+1630,592,2181848,90,92.0,clays after shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+1631,592,2181848,92,94.0,clays after shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+1632,592,2181848,94,96.0,clays after shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+1633,592,2181848,96,98.0,clays after shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+1634,592,2181848,98,100.0,clays after shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+1635,592,2181848,100,102.0,clays after shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+1636,592,2181848,102,104.0,clays after shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+1637,592,2181848,104,106.0,clays after shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+1638,592,2181848,106,108.0,clays after shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+1639,592,2181848,108,110.0,clays after shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+1640,592,2181848,110,112.0,clays after shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+1641,592,2181848,112,114.0,clays after shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+1642,592,2181848,122,124.0,clays after shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+1643,592,2181848,124,126.0,clays after shale? w/ trc 1,mud,100,mud,sediment_clastic,sediment
+1644,592,2181848,126,128.0,cherts,chert,91,chert,siliceous,sedimentary_rock
+1645,592,2181848,128,130.0,cherts,chert,91,chert,siliceous,sedimentary_rock
+1646,592,2181848,130,132.0,cherts,chert,91,chert,siliceous,sedimentary_rock
+1647,592,2181848,132,134.0,more shale rich?,mudstone,100,mudstone,clastic,sedimentary_rock
+1648,592,2181848,140,142.0,martite-hematite shale rich?,mudstone,100,mudstone,clastic,sedimentary_rock
+1649,592,2181848,150,152.0,martite-hematite - with shale or G-oG?,mudstone,100,mudstone,clastic,sedimentary_rock
+1650,592,2181848,152,154.0,martite-hematite - with shale or G-oG?,mudstone,100,mudstone,clastic,sedimentary_rock
+1651,592,2181848,154,156.0,martite-hematite - with shale or G-oG?,mudstone,100,mudstone,clastic,sedimentary_rock
+1652,592,2181848,164,166.0,chert or hard limonite? Siliceous G or H,chert,100,chert,siliceous,sedimentary_rock
+1653,592,2181848,170,172.0,red ferruginous marker bed at base of enrichment/contact with Macleod,contact,100,contact,contact,texture_structure

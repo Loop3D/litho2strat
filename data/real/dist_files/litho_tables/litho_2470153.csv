@@ -1,0 +1,11 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+6210,2670,2470153,0,1.0,sand/soil and minor rock frags,sand,100,sand,sediment_clastic,sediment
+6211,2670,2470153,1,6.0,some ferrug shale chips,mudstone,100,mudstone,clastic,sedimentary_rock
+6212,2670,2470153,14,39.0,cemented mg to vcg piso/nodular gravels,nodules,100,nodules,residual_deposit,surficial_rock
+6213,2670,2470153,39,41.0,trans clay and minor gravel,gravel,101,gravel,sediment_clastic,sediment
+6214,2670,2470153,41,45.0,cemented magh gravels and minor clay,mud,101,mud,sediment_clastic,sediment
+6215,2670,2470153,45,51.0,Goeth/haem detritals and trans clay,mud,101,mud,sediment_clastic,sediment
+6216,2670,2470153,51,56.0,Goeth enriched chips and clay,mud,101,mud,sediment_clastic,sediment
+6217,2670,2470153,56,63.0,pale clay and minor goeth chips,mud,100,mud,sediment_clastic,sediment
+6218,2670,2470153,72,92.0,haem fg sst - shale with minor flaggy beds,mudstone,100,mudstone,clastic,sedimentary_rock
+6219,2670,2470153,92,98.0,Fe stained fg sst minor shale,mudstone,101,mudstone,clastic,sedimentary_rock

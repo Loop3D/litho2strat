@@ -1,0 +1,12 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+1044,592,2181785,39,42.0,60% clay 40% maghemite. The clasts of maghemite are poorly sorted and range from and <5mm to >3cm,mud,100,mud,sediment_clastic,sediment
+1045,592,2181785,42,51.5,goethitic hardcap mineralization. Some ochreous and vitreous goethitites with limonitic clays fillinginthe vugs in the hardcap,mud,100,mud,sediment_clastic,sediment
+1046,592,2181785,51,56.0,massive ochreous contained in limonitic clay matrix,mud,100,mud,sediment_clastic,sediment
+1047,592,2181785,56,67.0,intrbedded goethite and F shale. The bedding here is not that well defined,mudstone,100,mudstone,clastic,sedimentary_rock
+1048,592,2181785,67,69.5,Intrbedded goethite and shale. The bedding here is reasonibly well bedded. Shales are highly weathered,mudstone,100,mudstone,clastic,sedimentary_rock
+1049,592,2181785,76,77.97,Comptent interval of F shale with microbedded G,mudstone,100,mudstone,clastic,sedimentary_rock
+1050,592,2181785,77,81.02,>60% PK clay after shale interbedded with hard G and softer och G. Pink clay marker bed?,mud,100,mud,sediment_clastic,sediment
+1051,592,2181785,81,89.34,Broken and vuggy G/ochG with chert interbeds82.35 83.45. K unit after shale @ 85.3 to 85.8. G follows and is fissile/shaley,chert,100,chert,siliceous,sedimentary_rock
+1052,592,2181785,90,95.31,Chert rich 60% beds 0.5 to 4cm with micro to mesobands of G interbedded which is stronger with depth and enriched. Therefore BIF.,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1053,592,2181785,126,130.2,interbedded shale and chert. Bedding ranges from poor to well developed,mudstone,100,mudstone,clastic,sedimentary_rock
+1054,592,2181785,144,160.0,"extremely weathered and broken. Bedding mostly plannar but undulating in places some very fine bedding too. some poddy textures @ 146.7m possibly ""potato chert"" marker horizon",chert,100,chert,siliceous,sedimentary_rock

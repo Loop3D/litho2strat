@@ -1,0 +1,14 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+4587,592,2182176,0,2.0,Mn-coated silt clumps,mud,100,mud,sediment_clastic,sediment
+4588,592,2182176,2,4.0,Mn-coated silt clumps,mud,100,mud,sediment_clastic,sediment
+4589,592,2182176,4,6.0,Mn-coated silt clumps,mud,100,mud,sediment_clastic,sediment
+4590,592,2182176,14,16.0,Weakly-consold silt clumps,mud,100,mud,sediment_clastic,sediment
+4591,592,2182176,16,18.0,Weakly-consold silt clumps,mud,100,mud,sediment_clastic,sediment
+4592,592,2182176,32,34.0,White clays,mud,101,mud,sediment_clastic,sediment
+4593,592,2182176,34,36.0,White clays,mud,101,mud,sediment_clastic,sediment
+4594,592,2182176,38,40.0,White clays,mud,101,mud,sediment_clastic,sediment
+4595,592,2182176,40,42.0,White clays,mud,101,mud,sediment_clastic,sediment
+4596,592,2182176,42,44.0,White clays,mud,101,mud,sediment_clastic,sediment
+4597,592,2182176,44,46.0,White clays,mud,101,mud,sediment_clastic,sediment
+4598,592,2182176,46,48.0,very light BN White clays,mud,101,mud,sediment_clastic,sediment
+4599,592,2182176,118,120.0,Unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation

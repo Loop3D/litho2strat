@@ -1,0 +1,30 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+3754,592,2182111,22,24.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3755,592,2182111,72,74.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3756,592,2182111,74,76.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3757,592,2182111,76,78.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3758,592,2182111,80,82.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3759,592,2182111,82,84.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3760,592,2182111,84,86.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3761,592,2182111,86,88.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3762,592,2182111,88,90.0,Gritty clay fine Q sand,sand,101,sand,sediment_clastic,sediment
+3763,592,2182111,104,106.0,Grey Q siltstone,mudstone,101,mudstone,clastic,sedimentary_rock
+3764,592,2182111,106,108.0,Grey Q siltstone,mudstone,101,mudstone,clastic,sedimentary_rock
+3765,592,2182111,108,110.0,Grey Q siltstone,mudstone,101,mudstone,clastic,sedimentary_rock
+3766,592,2182111,120,122.0,Also woody lignite material!,lignite,100,lignite,organic_rich,sedimentary_rock
+3767,592,2182111,124,126.0,110-128m difficult to log. A mix of N ?B G ?vein Q,vein,100,vein,fillings,texture_structure
+3768,592,2182111,148,150.0,Gritty N clay,mud,101,mud,sediment_clastic,sediment
+3769,592,2182111,152,154.0,Also minor Q. Clearly Mn SHALE here - greyish,mudstone,100,mudstone,clastic,sedimentary_rock
+3770,592,2182111,160,162.0,Mang shale,mudstone,101,mudstone,clastic,sedimentary_rock
+3771,592,2182111,164,166.0,Shale with Q vein --> Clay w Q VN,mud,100,mud,sediment_clastic,sediment
+3772,592,2182111,168,170.0,Gritty N clay,mud,101,mud,sediment_clastic,sediment
+3773,592,2182111,170,172.0,Shale with Q vein --> Clay w Q VN,mud,100,mud,sediment_clastic,sediment
+3774,592,2182111,172,174.0,Gritty N clay,mud,101,mud,sediment_clastic,sediment
+3775,592,2182111,178,180.0,Gritty N clay,mud,101,mud,sediment_clastic,sediment
+3776,592,2182111,180,182.0,Gritty N clay,mud,101,mud,sediment_clastic,sediment
+3777,592,2182111,182,184.0,Gritty N clay. Very strong reaction,mud,100,mud,sediment_clastic,sediment
+3778,592,2182111,186,188.0,Faint microbanding. N blue-grey ?shale quite solid,mudstone,101,mudstone,clastic,sedimentary_rock
+3779,592,2182111,188,190.0,Faint microbanding. N blue-grey ?shale quite solid,mudstone,101,mudstone,clastic,sedimentary_rock
+3780,592,2182111,190,192.0,Dark Mn shale,mudstone,101,mudstone,clastic,sedimentary_rock
+3781,592,2182111,200,202.0,Dark GY-BN shale. Weakly mag. ?T or F,mudstone,100,mudstone,clastic,sedimentary_rock
+3782,592,2182111,222,224.0,Or unenriched Mt Newman BIF? Approx one third of each. S red 1 yellow H dark grey,banded_iron_formation,100,banded_iron_formation,ore,mineralisation

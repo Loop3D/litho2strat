@@ -1,0 +1,25 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+1237,592,2181791,0,1.0,Transported sands silt and iron rich fragments,mud,100,mud,sediment_clastic,sediment
+1238,592,2181791,1,5.0,Homogenous transported sands silts grit and qtz fragments,silicate_sandstone,100,silicate_sandstone,siliciclastic,sedimentary_rock
+1239,592,2181791,5,5.9,As above with 10% angular fragments of chert decreasing from SOI downhole,chert,100,chert,siliceous,sedimentary_rock
+1240,592,2181791,9,9.4,As per 5-5.9m with 5% angular chert fragments decreasing from SOI downhole,chert,100,chert,siliceous,sedimentary_rock
+1241,592,2181791,9,12.3,finer grained homogenous silt-clay interval,mud,100,mud,sediment_clastic,sediment
+1242,592,2181791,12,18.7,Transported clays and poorly sorted goethite-shale fsub-rounded to rounded fragments <1.5cm,mud,100,mud,sediment_clastic,sediment
+1243,592,2181791,18,24.0,Cleaner fine grained clays-silts with tiny quartz fragments; some bands of coarser high energy environment material,mud,100,mud,sediment_clastic,sediment
+1244,592,2181791,24,25.8,as above with 10-15% red ferruginous shale clasts,mudstone,100,mudstone,clastic,sedimentary_rock
+1245,592,2181791,25,45.5,dirty lacustrine clays with high silt content; SHARP AT:,mud,100,mud,sediment_clastic,sediment
+1246,592,2181791,45,46.4,40-45% subrounded <2cm iron clasts cemented in brown-white clay matrix,mud,100,mud,sediment_clastic,sediment
+1247,592,2181791,46,47.0,Massive H-dominant detrital ore subjected to moderate hardcap development 10% vughs filled with ferruginous clay,mud,101,mud,sediment_clastic,sediment
+1248,592,2181791,47,48.8,50-60% pisoidal <3-4cm vitreous clasts maghemite-goethite cemented in white clay matrix,mud,100,mud,sediment_clastic,sediment
+1249,592,2181791,48,51.5,as above but increasing clay content and decrease iron percentage,mud,100,mud,sediment_clastic,sediment
+1250,592,2181791,51,56.6,very weak VT G hardcap development in clays to give fragmental appearance?  Or true transported G-clast material? ,mud,100,mud,sediment_clastic,sediment
+1251,592,2181791,59,65.7,very weak VT G hardcap development in clays to give fragmental appearance?  Or true transported G-clast material? ,mud,100,mud,sediment_clastic,sediment
+1252,592,2181791,66,69.3,moderately developed vitreous H-dominant hardcap mineralisation ferruginous clays but also presence of white clay contaminants,mud,100,mud,sediment_clastic,sediment
+1253,592,2181791,73,73.65,red ferruginous shale trc white clays,mud,101,mud,sediment_clastic,sediment
+1254,592,2181791,73,74.4,weak vit H hardcap development in ferruginous shales; vughs filled with red clays,mud,101,mud,sediment_clastic,sediment
+1255,592,2181791,74,75.3,ferruginous shales with large amount white clay content,mud,100,mud,sediment_clastic,sediment
+1256,592,2181791,76,78.1,deep red ferruginous shales with some white clay content,mud,100,mud,sediment_clastic,sediment
+1257,592,2181791,78,79.8,clay altered shale bed,mud,100,mud,sediment_clastic,sediment
+1258,592,2181791,79,82.6,very weak hardcap vitreous H development in red ferruginous shales with white clay content - grade? SHARP AT:,mud,100,mud,sediment_clastic,sediment
+1259,592,2181791,92,95.3,soft porous martitic hematised shale; END OF MINERALISATION; SHARP AT:,mudstone,100,mudstone,clastic,sedimentary_rock
+1260,592,2181791,95,98.0,EOH; unenriched shaley BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation

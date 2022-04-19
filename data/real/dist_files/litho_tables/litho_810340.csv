@@ -1,0 +1,46 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+152,475,810340,0,20.0,Pale rdbn aeolian sands; SA-WR qtz grains; minor compt siltst; minor white silcrete; rare haem chips & v rare specular haem chips; w cemented sands,silcrete,100,silcrete,siliceous,sedimentary_rock
+153,475,810340,20,30.0,Pink-white silcrete & str cemented SSA cryptocrystalline cement; rare cg SR qtz grains; rare fg siltst,silcrete,100,silcrete,siliceous,sedimentary_rock
+154,475,810340,30,60.0,Clear yellow pink; orange fg qtz grains - incompetent sandst; rare cg SR qtz grains; 5-10% cryptocrystalline silcrete; rare fg SSL frags,silcrete,100,silcrete,siliceous,sedimentary_rock
+155,475,810340,120,185.0,Clear & minor frosted cgSR-SA qtz grains; goeth/clay staining on surface of qtz grains relict cement; minor hard haem chips; rare fg py aggs; haem is occ specular; haem abundance decr down interval,mud,100,mud,sediment_clastic,sediment
+156,475,810340,250,300.0,Clear & grey mcg SA-SR qtz grains; well-sorted; v rare frags with white & orange clays on surface; rare fg py aggs acting as cement; v rare silcrete frags; minor fg compt sandst frags,mud,100,mud,sediment_clastic,sediment
+157,475,810340,300,310.0,Clear SR-WR cg qtz grains - unconsolidated sandst; mod grey fg argillaceous mudst; rare fg siltst frags; occ qtz grain with yellow goethite clay cement staining,mud,100,mud,sediment_clastic,sediment
+158,475,810340,370,420.0,Clear & frosted SR-WR mcg qtz grains; mod fg sand; mod fg white friable siltst frags; v rare glauconite grains; tr fg py aggs,sand,100,sand,sediment_clastic,sediment
+159,475,810340,420,500.0,Mcg WR-SA clear qtz grains mod sorted; rare/trace fg py aggs; v rare glauconite grains; v rare SR shell frags; occ blue frosted qtz grains,shell,100,shell,natural_superficial_ground,surficial_rock
+160,475,810340,500,660.0,Clear & minor frosted mcg SA-SR qtz grains rare WR grains; mod sorted; tr thin coal beds; rare fg py aggs py acts as a cement; coal incr to 1% 610-620m; from 620-630m qtz is dominantly SA,coal,100,coal,organic_rich,sedimentary_rock
+161,475,810340,660,675.0,Clear mg SA-SR qtz grains with 10% grey argillaceous clays,mud,101,mud,sediment_clastic,sediment
+162,475,810340,690,850.0,Fg grey shale; minor/mod argillaceous clays; weakly fissile; trending to massive SMD from 800m; tr amounts of siltstone 800-810m,mud,100,mud,sediment_clastic,sediment
+163,475,810340,850,880.0,Fg grey shale; v mk fabric; mg SR qtz grains; mod argillaceous clays; transition between SHL & SSA,mud,100,mud,sediment_clastic,sediment
+164,475,810340,880,930.0,Fmg SR-SA qtz grains; mod/minor argillaceous clays; rare granule of granitic composition; rare frag of fissile shale; calcte frag; tr fg PY agg; chips fizz strongly with acid,felsic,101,felsic,felsic,igneous_rock
+165,475,810340,930,1000.0,Fg grey SHL with mod argillaceous clays; mg SR-SA qtz grains; minor orange qtz frags; rare fg PY aggs; qtz grains increas to 20% between 980-990m,mud,100,mud,sediment_clastic,sediment
+166,475,810340,1000,1020.0,Fg pale grey argillaceous clays; ex-SMD; 5-30% Sa-SR qtz grains; tr fg PY aggs; str fizz with acid; occ v hard fg SSA frag,mud,100,mud,sediment_clastic,sediment
+167,475,810340,1020,1040.0,Fg SA-SR qtz grains; white wk carbonate cement - poorly consolidated; rare grey shale frags; minor fg grey muds; tr fg PY aggs,mudstone,100,mudstone,clastic,sedimentary_rock
+168,475,810340,1040,1055.0,Fg grey mudstone; argillaceous mud; tr fg PY aggs,mud,100,mud,sediment_clastic,sediment
+169,475,810340,1055,1070.0,Fg brown siltstone & grey mudstone; v wk fabric; str carbonate altn str fizz; rare cg qtz granule; rare fg PY aggs,mudstone,100,mudstone,clastic,sedimentary_rock
+170,475,810340,1070,1090.0,Fg brown siltstone & mod amount fg WR qtz grains,mudstone,100,mudstone,clastic,sedimentary_rock
+171,475,810340,1090,1200.0,Fg brown silitstone with minor grey mudstone; v rare SR qtz grains; minor fizzing; rare grey shale frags wk/mod fabric,mudstone,100,mudstone,clastic,sedimentary_rock
+172,475,810340,1200,1236.0,Fg grey dolomitic mudstone; minor fg friable shale beds wk fabric; up to 5% fg PY aggs,mudstone,100,mudstone,clastic,sedimentary_rock
+173,475,810340,1234,1241.5,PALE GREY GREEN CLAYSTONE; INTRACLASTIC BRECCIA - CLASTS RANGE FROM MM TO CM SCALE; RARE SANDY BEDS; MINOR CARBONATE VEINING,breccia,100,breccia,fault_rock,texture_structure
+174,475,810340,1241,1243.1,ORANGE-RED HAEMATITE-STAINED SANDSTONE BEDS IN GREY CLAYST; HAEM ALTN - EARLY AND OVERPRINTED BY LATER DOLOMITISATION/VEINING; MINOR CARBONATE VEINING; MINOR LOW GRADE ?COAL BEDS AT TOP & BOTTOM CONTACTS OF THIS UNIT,coal,100,coal,organic_rich,sedimentary_rock
+175,475,810340,1243,1260.1,ORANGE HAEMATITE ALTD SANDST BEDS IN GREEN/GREY MUDST; MOD CARBONATE VEINING - STR FIZZ; MICRO CARB VEIN NETWORK; OCC BARITE VEIN; INTRACLASTIC BRECCIA IN MUDST; RARE SPH ASSOCD WITH BARITE VN;,breccia,100,breccia,fault_rock,texture_structure
+176,475,810340,1260,1261.6,DARK GREEN BLACK; SIMILAR TO ABOVE; HOWEVER ?LIM ALTN; NOT HAEM; MOD-STR CARB REPLACEMENT TEXTURES IN MUDST; COULD BE EX-WACKESTONE; ; MINOR FG DIS PY AT BASE OF INTERVAL,wackestone,100,wackestone,siliciclastic,sedimentary_rock
+177,475,810340,1261,1265.1,"PALE GREY-BROWN FG CLAYSTONE; FINELY BEDDED; SOFT SED DEFORMATION STRUCTURES; RARE FG DIS ""CLOUDS"" OF TYPE 2 YELLOW SPHALERITE & RARE TYPE 1 SPHALERITE",mudstone,100,mudstone,clastic,sedimentary_rock
+178,475,810340,1267,1288.5,INTERBEDDED VFG BROWN-GREY CLAYST & GREY MUDST; MINOR MG SANDSTONE BEDS - BUT RARE; RARE FG DIS TYPE 2 SPH;,sandstone,100,sandstone,clastic,sedimentary_rock
+179,475,810340,1302,1339.4,WELL-DEV INTRACLASTIC BRECCIA IN MUDSTONE; PATCHES OF DARK ?KEROTINE/COAL INTERBEDDED WITH MUDSTONE WISPY & UP TO 20CM BEDS; MINOR TYPE 2 SPH MIN; MINOR BLADED BARITE CRYSTALS LATE,mudstone,101,mudstone,clastic,sedimentary_rock
+180,475,810340,1339,1341.1,WELL-DEV LAMINAR MUDSTONE; PALE GREY; MARKER UNIT AT TOP OF NITA FM; MOD FRACT WITH TYPE 2 SPH & BARITE AS FRACTURE FILL,fill,101,fill,artificial_man_made_ground,surficial_rock
+181,475,810340,1344,1345.0,MASSIVE BARITE VEIN WITH MINOR CG GA 1%,vein,100,vein,fillings,texture_structure
+182,475,810340,1345,1347.8,INTERBEDDED MUDSTONE & KEROTINE BEDS AS SEEN IN CFMc; MOD FG DIS PY; LATE BLADED BARITE CRYSTALS; SOME BRECCIATION - ?FAULTED WEDGE OR INTERBEDDED WITH UPPER NITA?,mudstone,100,mudstone,clastic,sedimentary_rock
+183,475,810340,1348,1349.45,WHITE CG BLADED BARITE VEIN; MINOR-1% CG GALENA,vein,100,vein,fillings,texture_structure
+184,475,810340,1355,1359.9,MED BROWN WACKEST INTERBEDDED WITH SILTST/SANDST; MINOR HAEM ALTN OF SANDST; THEN BX; MOD-STR BARITE VEIN REPLACEMENT; BLADED BARITE VNS; MINOR CG GA IN BURROWS; MINOR DIS PY ASSOC WITH BX,vein,100,vein,fillings,texture_structure
+185,475,810340,1365,1368.0,PALE BROWN CARB-DOL-ALTERED SILTST; MINOR LATE BARITE VEINS PARALLEL TO BEDDING; RARE CG GALENA ASSOCD WITH BARITE-VEINS,vein,101,vein,fillings,texture_structure
+186,475,810340,1371,1385.6,PALE GREY LIMEST; LOW-MOD VUGHS; V RARE FG DIS GA; MINOR SUB-HORIZ FRACTS; OCC CG BLADED BARITE VEIN;,vein,101,vein,fillings,texture_structure
+187,475,810340,1385,1393.6,PALE BROWN GREY LIMEST/WACKEST; MOD-STR BARITE ALTN - BLADED CRYSTALS FILL VUGHS & ALSO RARE WIDE VEINS TO 30CM; V WK DOLOMITIC ALTN; V RARE MG DIS GA,fill,100,fill,artificial_man_made_ground,surficial_rock
+188,475,810340,1399,1401.05,WHITE CG BARITE VEIN; BLADED CRYSTALS WITH V RARE CG EUHEDRAL CRYSTALS,vein,100,vein,fillings,texture_structure
+189,475,810340,1416,1422.25,GREY WACKEST; STR BARITE ALTN - PERVASIVE RECRYSTALLISATION OF BLADED CRYSTALS THROUGHOUT; 3 X CG BARITE VEINS 10-20CM WIDE,vein,100,vein,fillings,texture_structure
+190,475,810340,1422,1424.1,GREY BROWN MG WACKEST; MINOR GREY SANDST; LATE BARITE FILLED FRACTURES/VEINS; NO GA; WK-MOD HYDROCARBON ALTN,vein,100,vein,fillings,texture_structure
+191,475,810340,1431,1436.8,PALE BROWN GREY WACKEST INTERBEDDED WITH SANDSTONE BEDS; MINOR MUDDING BEDS; MUDDY BEDS DEFINE BEDDING WELL;,sandstone,100,sandstone,clastic,sedimentary_rock
+192,475,810340,1436,1437.7,DARK GREY BRECCIATED WACKEST; MINOR FG EUH PY IN BRECCIA FILL; MINOR HAEM AS HALO AROUND BX; MG RECRYSTALLISED BARITE/CARB; POSS TRANSITION INTO GOLDWYER OR GOLDWYER ITSELF,breccia,100,breccia,fault_rock,texture_structure
+193,475,810340,1441,1443.2,MARKER UNIT IN GOLDWYER - CRINOIDAL PACKSTONE; DOM MATRIX-SUPPORTED; BUT OCC CLAST SUPPORTED,packstone,100,packstone,siliceous,sedimentary_rock
+194,475,810340,1443,1446.5,GREY INTERBEDDED SANDSTONE-SHALE-WACKEST; MINOR-MOD BARITE VEINING,mudstone,100,mudstone,clastic,sedimentary_rock
+195,475,810340,1446,1454.4,GREY SHALE WITH MINOR WACKEST-SANDST-MUDST; SHALE MOD FISSILE,mudstone,100,mudstone,clastic,sedimentary_rock
+196,475,810340,1454,1464.1,GREY MUDST COMPT WITH V MINOR SHALE; FINE 1-5CM BARITE VEINS CREATE BRECCIA NETWORK IN MUDST; HYDROCARBONS SEEP ALONG VAINS,breccia,100,breccia,fault_rock,texture_structure

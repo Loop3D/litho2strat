@@ -1,0 +1,37 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+6080,592,2182338,0,2.0,FG silt/soil,soil,101,soil,residual_deposit,surficial_rock
+6081,592,2182338,2,4.0,FG silt/soil w/ 5% C/Q,mud,100,mud,sediment_clastic,sediment
+6082,592,2182338,4,6.0,FG silt/soil w/ 5% C/Q,mud,100,mud,sediment_clastic,sediment
+6083,592,2182338,24,26.0,Bedded shale with vein Q in clay,mud,101,mud,sediment_clastic,sediment
+6084,592,2182338,32,34.0,Fragments in powdery fines of yellow F shale G and Q,mudstone,100,mudstone,clastic,sedimentary_rock
+6085,592,2182338,36,38.0,Rare Q in powdery clay fines,mud,100,mud,sediment_clastic,sediment
+6086,592,2182338,38,40.0,Rare Q in powdery clay fines,mud,100,mud,sediment_clastic,sediment
+6087,592,2182338,40,42.0,Rare Q in powdery clay fines,mud,100,mud,sediment_clastic,sediment
+6088,592,2182338,42,44.0,Bedded shale ferruginous in powdery fines with trace Q. Meta-pelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6089,592,2182338,44,46.0,Bedded shale ferruginous in powdery fines with trace Q. Meta-pelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6090,592,2182338,46,48.0,Bedded shale ferruginous in powdery fines with trace Q. Meta-pelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6091,592,2182338,48,50.0,Meta-pelite?,mudstone,101,mudstone,clastic,sedimentary_rock
+6092,592,2182338,54,56.0,Powdery clay fines,mud,100,mud,sediment_clastic,sediment
+6093,592,2182338,56,58.0,Powdery clay fines,mud,100,mud,sediment_clastic,sediment
+6094,592,2182338,58,60.0,Powdery clay fines,mud,100,mud,sediment_clastic,sediment
+6095,592,2182338,60,62.0,Powdery clay fines with rare Qtz,mud,100,mud,sediment_clastic,sediment
+6096,592,2182338,62,64.0,Powdery clay fines with rare Qtz,mud,100,mud,sediment_clastic,sediment
+6097,592,2182338,64,66.0,Very soft powdery clay fines,mud,100,mud,sediment_clastic,sediment
+6098,592,2182338,66,68.0,Very soft powdery clay fines,mud,100,mud,sediment_clastic,sediment
+6099,592,2182338,68,70.0,Quartz and shale meta-pelite? in clay fines,mud,100,mud,sediment_clastic,sediment
+6100,592,2182338,70,72.0,Q in clay fines,mud,100,mud,sediment_clastic,sediment
+6101,592,2182338,72,74.0,Q in clay fines,mud,100,mud,sediment_clastic,sediment
+6102,592,2182338,74,76.0,Q/Carb vein? Rextld + mafic,mafic,101,mafic,mafic,igneous_rock
+6103,592,2182338,76,78.0,Mafic volcanic + Qtz,mafic,100,mafic,mafic,igneous_rock
+6104,592,2182338,78,80.0,Mafic volcanic Q + 10% Qtz,mafic,100,mafic,mafic,igneous_rock
+6105,592,2182338,80,82.0,Mafic volcanic Q + 10% Qtz,mafic,100,mafic,mafic,igneous_rock
+6106,592,2182338,82,84.0,Intermediate to mafic meta volcanic Q + 40% Qtz. Micaceous. Interbedded tuff?,tuff,101,tuff,volcaniclastic,igneous_rock
+6107,592,2182338,84,86.0,Intermediate to mafic volcanic Q + 40% Qtz,mafic,100,mafic,mafic,igneous_rock
+6108,592,2182338,86,88.0,Increase in Q/Albite. Granitic or intermediate meta-volcanic. Q > 60% Qtz,intermediate,100,intermediate,intermediate,igneous_rock
+6109,592,2182338,88,90.0,Increase in Q/Albite. Granitic or intermediate meta-volcanic. Q > 60% Qtz,intermediate,100,intermediate,intermediate,igneous_rock
+6110,592,2182338,90,92.0,Increase in Q to 80%. Granitic to Intermediate volcanic. Possible intermediate tuff - quartzofeldspathic matrix,intermediate,100,intermediate,intermediate,igneous_rock
+6111,592,2182338,92,94.0,Meta volcanic intermediate to granitic. 40% quartz,vein,101,vein,fillings,texture_structure
+6112,592,2182338,94,96.0,Meta volcanic intermediate to granitic. 40% quartz,vein,101,vein,fillings,texture_structure
+6113,592,2182338,96,98.0,Meta volcanic intermediate to granitic. 40% quartz,vein,101,vein,fillings,texture_structure
+6114,592,2182338,98,100.0,Meta volcanic intermediate to granitic. 40% quartz,vein,101,vein,fillings,texture_structure
+6115,592,2182338,100,102.0,Mainly quartz - vein,vein,101,vein,fillings,texture_structure

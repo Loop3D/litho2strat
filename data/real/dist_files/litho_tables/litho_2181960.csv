@@ -1,0 +1,5 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+2354,592,2181960,32,34.0,RB clay after F?,mud,100,mud,sediment_clastic,sediment
+2355,592,2181960,36,38.0,Possible LWA/MNM contact?,contact,101,contact,contact,texture_structure
+2356,592,2181960,84,86.0,Greenish chert,chert,101,chert,siliceous,sedimentary_rock
+2357,592,2181960,86,88.0,Greenish chert,chert,101,chert,siliceous,sedimentary_rock

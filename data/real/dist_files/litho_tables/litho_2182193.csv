@@ -1,0 +1,11 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+4966,592,2182193,90,92.0,coarse quartz lag,lag,101,lag,residual_deposit,surficial_rock
+4967,592,2182193,92,94.0,coarse quartz lag,lag,101,lag,residual_deposit,surficial_rock
+4968,592,2182193,94,96.0,coarse quartz lag,lag,101,lag,residual_deposit,surficial_rock
+4969,592,2182193,98,100.0,coarse quartz lag,lag,101,lag,residual_deposit,surficial_rock
+4970,592,2182193,126,128.0,1?,exotic_crystalline_igneous_rock,101,exotic_crystalline_igneous_rock,exotic_crystalline,igneous_rock
+4971,592,2182193,128,130.0,1?,exotic_crystalline_igneous_rock,101,exotic_crystalline_igneous_rock,exotic_crystalline,igneous_rock
+4972,592,2182193,130,132.0,1?,exotic_crystalline_igneous_rock,101,exotic_crystalline_igneous_rock,exotic_crystalline,igneous_rock
+4973,592,2182193,132,134.0,1?,exotic_crystalline_igneous_rock,101,exotic_crystalline_igneous_rock,exotic_crystalline,igneous_rock
+4974,592,2182193,134,136.0,1?,exotic_crystalline_igneous_rock,101,exotic_crystalline_igneous_rock,exotic_crystalline,igneous_rock
+4975,592,2182193,136,138.0,1?,exotic_crystalline_igneous_rock,101,exotic_crystalline_igneous_rock,exotic_crystalline,igneous_rock

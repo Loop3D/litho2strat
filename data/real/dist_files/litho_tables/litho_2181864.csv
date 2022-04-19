@@ -1,0 +1,28 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+1887,592,2181864,30,32.0,clays after shales?,mud,100,mud,sediment_clastic,sediment
+1888,592,2181864,32,34.0,clays after shales?,mud,100,mud,sediment_clastic,sediment
+1889,592,2181864,34,36.0,clays after shales?,mud,100,mud,sediment_clastic,sediment
+1890,592,2181864,36,38.0,clays after shales?,mud,100,mud,sediment_clastic,sediment
+1891,592,2181864,38,40.0,clays after shales?,mud,100,mud,sediment_clastic,sediment
+1892,592,2181864,40,42.0,clays after shales?,mud,100,mud,sediment_clastic,sediment
+1893,592,2181864,42,44.0,clays after shales?,mud,100,mud,sediment_clastic,sediment
+1894,592,2181864,44,46.0,clays after shales?,mud,100,mud,sediment_clastic,sediment
+1895,592,2181864,46,48.0,clays after shales?,mud,100,mud,sediment_clastic,sediment
+1896,592,2181864,48,50.0,clays after shales?,mud,100,mud,sediment_clastic,sediment
+1897,592,2181864,50,52.0,clays after shales?,mud,100,mud,sediment_clastic,sediment
+1898,592,2181864,52,54.0,clays after shales?,mud,100,mud,sediment_clastic,sediment
+1899,592,2181864,54,56.0,clays after shales?,mud,100,mud,sediment_clastic,sediment
+1900,592,2181864,56,58.0,clays after shales?,mud,100,mud,sediment_clastic,sediment
+1901,592,2181864,58,60.0,clays after shales?,mud,100,mud,sediment_clastic,sediment
+1902,592,2181864,64,66.0,oGt/Lt shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+1903,592,2181864,66,68.0,enriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1904,592,2181864,68,70.0,enriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1905,592,2181864,70,72.0,enriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1906,592,2181864,72,74.0,enriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1907,592,2181864,74,76.0,enriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1908,592,2181864,76,78.0,enriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1909,592,2181864,78,80.0,enriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1910,592,2181864,80,82.0,enriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1911,592,2181864,82,84.0,enriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1912,592,2181864,94,96.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1913,592,2181864,102,104.0,CONTACT AT?:,contact,100,contact,contact,texture_structure

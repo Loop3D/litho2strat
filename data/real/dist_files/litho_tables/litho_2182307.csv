@@ -1,0 +1,32 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+5642,592,2182307,0,0.4,soil and sand,sand,101,sand,sediment_clastic,sediment
+5643,592,2182307,0,8.1,semi consolidated magnetic pisoids in silt-sand to clay matrix,mud,100,mud,sediment_clastic,sediment
+5644,592,2182307,8,8.6,increasing clay content,mud,100,mud,sediment_clastic,sediment
+5645,592,2182307,11,11.5,as above but larger clay content nearing,mud,100,mud,sediment_clastic,sediment
+5646,592,2182307,11,12.1,very weak hardcap development within transported material ?,colluvium,100,colluvium,natural_superficial_ground,surficial_rock
+5647,592,2182307,12,13.9,vitreous vuggy G-dominant hardcap development within transported material? can see some pisoidal cemented material within overall mass; possibility of it being contamination from above?,colluvium,100,colluvium,natural_superficial_ground,surficial_rock
+5648,592,2182307,24,28.7,hard bedded VT G-H with mnr T and F; some purple clay contaminants on joint surfaces; SHARP AT:,mud,100,mud,sediment_clastic,sediment
+5649,592,2182307,28,32.1,hard manganese-iron block increasing white clay content down interval to:,mud,100,mud,sediment_clastic,sediment
+5650,592,2182307,32,37.2,mostly soft hematised shale and manganese shale with sparkly acicular and radial silver manganese? minerals some appearing to be vein like structures,mudstone,100,mudstone,clastic,sedimentary_rock
+5651,592,2182307,38,40.7,soft crumbly manganiferous clays with some interbedded T and G shale,mudstone,101,mudstone,clastic,sedimentary_rock
+5652,592,2182307,40,42.5,mod bedded hematised shale with manganese mineralisation unsure of how much is staining and how much is insitu mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5653,592,2182307,42,46.7,soft to mod bedded hematised shale and manganese with significant presence white to purple clays,mud,101,mud,sediment_clastic,sediment
+5654,592,2182307,46,48.55,hard vitreous vughy W-G interbedded mineralisation competent and hard but quite broken,mineralisation,100,mineralisation,ore,mineralisation
+5655,592,2182307,48,51.35,hard bedded VT G-W mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5656,592,2182307,51,55.2,mostly soft bedded porous goethitic shales and mnr hematitised shale; with rare beds of VT G,mudstone,100,mudstone,clastic,sedimentary_rock
+5657,592,2182307,55,55.5,hard bedded VT G-W mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5658,592,2182307,55,57.8,MAJOR STRUCTURE within clay altered G mineralisation some v. weak breccia textures and quartz-iron boxworks related to FAULTING,fault,101,fault,breaks,texture_structure
+5659,592,2182307,64,65.2,pink shale marker bed after shale,mudstone,101,mudstone,clastic,sedimentary_rock
+5660,592,2182307,66,69.6,soft bedded porous hematised shale ferruginous shale with POLISHED CLAYS ON JOINT SURFACES INDICATING FAULT STRUCTURE @ 68.6m,mud,100,mud,sediment_clastic,sediment
+5661,592,2182307,69,72.15,hard bedded vitreous W-G mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5662,592,2182307,72,72.4,pink shale marker bed after shale,mudstone,101,mudstone,clastic,sedimentary_rock
+5663,592,2182307,74,74.2,pink shale marker bed after shale,mudstone,101,mudstone,clastic,sedimentary_rock
+5664,592,2182307,74,76.25,intebredded martite-goethite with some hematised shale down hole,mudstone,100,mudstone,clastic,sedimentary_rock
+5665,592,2182307,76,77.3,pink shale marker bed after shale,mudstone,101,mudstone,clastic,sedimentary_rock
+5666,592,2182307,78,81.0,hard bedded semi-vitreous H dominant mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5667,592,2182307,81,82.7,interval of interbedded clay after shale and VT H-G dominant mineralistaion,mud,100,mud,sediment_clastic,sediment
+5668,592,2182307,82,84.3,hard bedded semi-vitreous G dominant mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5669,592,2182307,84,86.9,ZONE OF BRITTLE DEFORMATION with clay alteration soft crushed limonite material and quartz-fe breccias-veining,mud,100,mud,sediment_clastic,sediment
+5670,592,2182307,86,89.8,hard bedded VT goethite but EXTREMELY FRACTURED ADJACENT TO FAULT ZONE,fault,100,fault,breaks,texture_structure
+5671,592,2182307,89,91.2,BRITTLE DEFORMATION ZONE with clay alteration of T-F and some quartz rubble,mud,100,mud,sediment_clastic,sediment
+5672,592,2182307,91,92.4,mod-hard bedded G mineralisation broken adjacent to brittle zone,mineralisation,100,mineralisation,ore,mineralisation

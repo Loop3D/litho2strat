@@ -1,0 +1,8 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+6723,2670,2470316,0,7.0,maghemite & cemented soil,soil,101,soil,residual_deposit,surficial_rock
+6724,2670,2470316,7,10.0,shale & siltstone ferruginous; some looks limonitic bright yl-og PS? Roy Hill Shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+6725,2670,2470316,10,25.0,PP to L BN shale/fold schist w/ trc Q in some metres,schist,100,schist,schist,metamorphic_rock
+6726,2670,2470316,28,30.0,mnr Q at contact - tuff?,tuff,101,tuff,volcaniclastic,igneous_rock
+6727,2670,2470316,30,36.0,lamd F shale = unit change?,mudstone,100,mudstone,clastic,sedimentary_rock
+6728,2670,2470316,36,46.0,increase Q 44-46m = contact?,contact,101,contact,contact,texture_structure
+6729,2670,2470316,50,70.0,weathd fold CHL schist,schist,101,schist,schist,metamorphic_rock

@@ -1,0 +1,6 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+3608,592,2182092,48,50.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3609,592,2182092,50,52.0,?Transported or in situ Hamersley Group strata,colluvium,100,colluvium,natural_superficial_ground,surficial_rock
+3610,592,2182092,54,56.0,Magemite trans??,monzonite,82,monzonite,intermediate_coarse_grained_crystalline,igneous_rock
+3611,592,2182092,82,84.0,Q vein? Pinky grey massive Q,vein,100,vein,fillings,texture_structure
+3612,592,2182092,166,168.0,Gritty clay,mud,101,mud,sediment_clastic,sediment

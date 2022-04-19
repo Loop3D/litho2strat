@@ -1,0 +1,19 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+3548,592,2182084,0,2.0,Angular Q pebbles,gravel,101,gravel,sediment_clastic,sediment
+3549,592,2182084,2,4.0,Angular Q pebbles,gravel,101,gravel,sediment_clastic,sediment
+3550,592,2182084,10,12.0,Angular Q pebbles,gravel,101,gravel,sediment_clastic,sediment
+3551,592,2182084,12,14.0,More well-sorted Q gravel,gravel,101,gravel,sediment_clastic,sediment
+3552,592,2182084,16,18.0,Gritty clay FeO,mud,101,mud,sediment_clastic,sediment
+3553,592,2182084,24,26.0,Gritty clay FeO,mud,101,mud,sediment_clastic,sediment
+3554,592,2182084,26,28.0,Gritty clay FeO. Stained white clay,mud,101,mud,sediment_clastic,sediment
+3555,592,2182084,28,30.0,Gritty clay FeO. Stained white clay,mud,101,mud,sediment_clastic,sediment
+3556,592,2182084,30,32.0,Gritty clay FeO. Stained white clay,mud,101,mud,sediment_clastic,sediment
+3557,592,2182084,32,34.0,Gritty clay FeO. Stained white clay,mud,101,mud,sediment_clastic,sediment
+3558,592,2182084,34,36.0,Gritty clay FeO. Stained white clay,mud,101,mud,sediment_clastic,sediment
+3559,592,2182084,38,40.0,This zone from 26m: FeO-stained white clay,mud,101,mud,sediment_clastic,sediment
+3560,592,2182084,50,52.0,This clay-rich material very likely in-situ.,mud,100,mud,sediment_clastic,sediment
+3561,592,2182084,54,56.0,The strata possibly forced up from thrust ,fault,101,fault,breaks,texture_structure
+3562,592,2182084,56,58.0,fault and weathered to a greater extent ,fault,100,fault,breaks,texture_structure
+3563,592,2182084,64,66.0,50% black carbonaceous clay,mud,101,mud,sediment_clastic,sediment
+3564,592,2182084,80,82.0,80-86m fault zone material? Mt Newman overlying Para dolomite both including Q vein.,vein,101,vein,fillings,texture_structure
+3565,592,2182084,86,88.0,Soft light BN fizzy carbonate. Dol shale?More likely weathered Xine Dol?,carbonate,100,carbonate,carbonate,sedimentary_rock

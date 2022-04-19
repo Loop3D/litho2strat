@@ -1,0 +1,33 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+3783,592,2182112,44,46.0,All these white clays FeO-stained,mud,100,mud,sediment_clastic,sediment
+3784,592,2182112,50,52.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3785,592,2182112,52,54.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3786,592,2182112,54,56.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3787,592,2182112,56,58.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3788,592,2182112,58,60.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3789,592,2182112,60,62.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3790,592,2182112,62,64.0,The below clay zone all light yellow-brown,mud,100,mud,sediment_clastic,sediment
+3791,592,2182112,64,66.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3792,592,2182112,108,110.0,Fine silty Q in clay,mud,101,mud,sediment_clastic,sediment
+3793,592,2182112,110,112.0,Fine silty Q in clay,mud,101,mud,sediment_clastic,sediment
+3794,592,2182112,112,114.0,Fine silty Q clay.. coarsening,mud,100,mud,sediment_clastic,sediment
+3795,592,2182112,114,116.0,Q sand in coloured clay,mud,101,mud,sediment_clastic,sediment
+3796,592,2182112,116,118.0,Q sand in coloured clay,mud,101,mud,sediment_clastic,sediment
+3797,592,2182112,118,120.0,Q sand in coloured clay,mud,101,mud,sediment_clastic,sediment
+3798,592,2182112,120,122.0,Fine silty Q in coloured clay,mud,101,mud,sediment_clastic,sediment
+3799,592,2182112,122,124.0,Fine silty Q in coloured clay,mud,101,mud,sediment_clastic,sediment
+3800,592,2182112,124,126.0,Fine silty Q in coloured clay,mud,101,mud,sediment_clastic,sediment
+3801,592,2182112,140,142.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3802,592,2182112,146,148.0,Finely gritty clay,mud,101,mud,sediment_clastic,sediment
+3803,592,2182112,148,150.0,Finely gritty clay,mud,101,mud,sediment_clastic,sediment
+3804,592,2182112,152,154.0,Finely gritty clay,mud,101,mud,sediment_clastic,sediment
+3805,592,2182112,164,166.0,Sieve mix up! Resieved. This Mn zone Q is vein Q,vein,100,vein,fillings,texture_structure
+3806,592,2182112,184,186.0,Shale washed awway?,mudstone,100,mudstone,clastic,sedimentary_rock
+3807,592,2182112,192,194.0,Mn shale and in weakly mag hem. Minor H and F,mudstone,100,mudstone,clastic,sedimentary_rock
+3808,592,2182112,194,196.0,Mn shale  ,mudstone,101,mudstone,clastic,sedimentary_rock
+3809,592,2182112,196,198.0,Mn clay,mud,101,mud,sediment_clastic,sediment
+3810,592,2182112,224,226.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3811,592,2182112,226,228.0,?Sandstone,sandstone,101,sandstone,clastic,sedimentary_rock
+3812,592,2182112,228,230.0,Mn mins and shale,mudstone,101,mudstone,clastic,sedimentary_rock
+3813,592,2182112,230,232.0,Gritty Mn clay,mud,101,mud,sediment_clastic,sediment
+3814,592,2182112,232,234.0,Gritty Red-brown and Mn clay,mud,101,mud,sediment_clastic,sediment

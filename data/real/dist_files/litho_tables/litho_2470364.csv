@@ -1,0 +1,10 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+6814,2670,2470364,1,7.0,hardpanised material and ferrug gravel,gravel,101,gravel,sediment_clastic,sediment
+6815,2670,2470364,7,10.0,pisolitic gravel,gravel,101,gravel,sediment_clastic,sediment
+6816,2670,2470364,14,17.0,haem shale and siltst,mudstone,100,mudstone,clastic,sedimentary_rock
+6817,2670,2470364,18,21.0,Ferrug shale and siltst,mudstone,100,mudstone,clastic,sedimentary_rock
+6818,2670,2470364,27,28.0,siltst shale,mudstone,101,mudstone,clastic,sedimentary_rock
+6819,2670,2470364,28,35.0,clays siltst shale,mudstone,101,mudstone,clastic,sedimentary_rock
+6820,2670,2470364,35,37.0,occass ferrug siltst shale - Fort Grp,mudstone,100,mudstone,clastic,sedimentary_rock
+6821,2670,2470364,37,43.0,weakly ferrug siltst shale,mudstone,101,mudstone,clastic,sedimentary_rock
+6822,2670,2470364,43,44.0,ferrug/haem siltst shale,mudstone,101,mudstone,clastic,sedimentary_rock

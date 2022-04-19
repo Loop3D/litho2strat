@@ -1,0 +1,11 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+2131,592,2181893,24,26.0,mottled clays,mud,101,mud,sediment_clastic,sediment
+2132,592,2181893,26,28.0,mottled clays,mud,101,mud,sediment_clastic,sediment
+2133,592,2181893,28,30.0,mottled clays,mud,101,mud,sediment_clastic,sediment
+2134,592,2181893,30,32.0,mottled clays,mud,101,mud,sediment_clastic,sediment
+2135,592,2181893,78,80.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+2136,592,2181893,80,82.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+2137,592,2181893,82,84.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+2138,592,2181893,84,86.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+2139,592,2181893,86,88.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+2140,592,2181893,94,96.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation

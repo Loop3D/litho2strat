@@ -1,0 +1,19 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+5834,592,2182317,14,15.0,weak consolidated silt-clay with trc pisolitic maghemites,mud,100,mud,sediment_clastic,sediment
+5835,592,2182317,15,16.0,weakly consolidated pisolitic maghemites in clay matrix,mud,100,mud,sediment_clastic,sediment
+5836,592,2182317,16,19.8,weak massive G-dominant hardcap development within transported cover pisolitic maghemites-clay matrix,cover,101,cover,natural_superficial_ground,surficial_rock
+5837,592,2182317,23,25.0,soft porous bedded shale and clay,mud,101,mud,sediment_clastic,sediment
+5838,592,2182317,33,36.8,massive clays after shale,mudstone,101,mudstone,clastic,sedimentary_rock
+5839,592,2182317,36,38.0,massive white clays with zone of hard massive and semi-VT G-W mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5840,592,2182317,38,40.5,harder bedded G+/- F? partially clay altered in places,mud,100,mud,sediment_clastic,sediment
+5841,592,2182317,40,41.8,dark brown almost mod-hard bedded ferruginous shale? Goethitic?,mudstone,101,mudstone,clastic,sedimentary_rock
+5842,592,2182317,41,42.2,as above but increase clay - barren,mud,100,mud,sediment_clastic,sediment
+5843,592,2182317,42,44.7,hard bedded semi-VT G mineralisation with rare bands of F-K,mineralisation,100,mineralisation,ore,mineralisation
+5844,592,2182317,49,52.0,massive mix of ferruginous clay-shale and mnr hard VT G,mud,100,mud,sediment_clastic,sediment
+5845,592,2182317,58,62.6,mostly hard massive-wk bedded and semi-VT G-H mineralisation with zones of softer crumbly ferruginous shale; SHARP AT:,mudstone,100,mudstone,clastic,sedimentary_rock
+5846,592,2182317,62,63.0,interbedded barren pink clay after shale and goethitic ferrug shales,mud,100,mud,sediment_clastic,sediment
+5847,592,2182317,64,69.0,soft bedded porous to dicey/crumbly mineralised shales - alternating between dark brown goethitic shales and deep red-brown hematised martite shales,mineralisation,100,mineralisation,ore,mineralisation
+5848,592,2182317,69,69.8,limonitic clay?,mud,101,mud,sediment_clastic,sediment
+5849,592,2182317,71,73.8,limonitic clay?,mud,101,mud,sediment_clastic,sediment
+5850,592,2182317,77,78.7,limonitic shale?  Probably barren,mudstone,100,mudstone,clastic,sedimentary_rock
+5851,592,2182317,81,86.0,EOH; strongly clay weathered and fracture unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation

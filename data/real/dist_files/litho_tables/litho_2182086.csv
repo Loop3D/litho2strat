@@ -1,0 +1,24 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+3576,592,2182086,22,24.0,Dullnon-brittle pisolitic balls,pisolith,100,pisolith,residual_deposit,surficial_rock
+3577,592,2182086,24,26.0,L BN-stained WT clay,mud,101,mud,sediment_clastic,sediment
+3578,592,2182086,26,28.0,L BN-stained WT clay,mud,101,mud,sediment_clastic,sediment
+3579,592,2182086,28,30.0,Very dark blue shaly chips?! ?FeO ?carb shale,mudstone,101,mudstone,clastic,sedimentary_rock
+3580,592,2182086,30,32.0,Very dark blue shaly chips?! ?FeO ?carb shale,mudstone,101,mudstone,clastic,sedimentary_rock
+3581,592,2182086,32,34.0,Very dark blue shaly chips?! ?FeO ?carb shale,mudstone,101,mudstone,clastic,sedimentary_rock
+3582,592,2182086,34,36.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3583,592,2182086,36,38.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3584,592,2182086,38,40.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3585,592,2182086,42,44.0,Lumpy white clay balls,mud,100,mud,sediment_clastic,sediment
+3586,592,2182086,44,46.0,Lumpy white clay balls,mud,100,mud,sediment_clastic,sediment
+3587,592,2182086,50,52.0,FeO in WT clay,mud,101,mud,sediment_clastic,sediment
+3588,592,2182086,52,54.0,FeO and soft white chert in WT clay,mud,101,mud,sediment_clastic,sediment
+3589,592,2182086,58,60.0,WT/L BN clay,mud,101,mud,sediment_clastic,sediment
+3590,592,2182086,60,62.0,Fine silty ?Q in clay,mud,101,mud,sediment_clastic,sediment
+3591,592,2182086,62,64.0,Fine silty ?Q in clay,mud,101,mud,sediment_clastic,sediment
+3592,592,2182086,66,68.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3593,592,2182086,68,70.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3594,592,2182086,80,82.0,40% Q vein? White opaque,vein,100,vein,fillings,texture_structure
+3595,592,2182086,88,90.0,Minor clay too,mud,100,mud,sediment_clastic,sediment
+3596,592,2182086,106,108.0,H still martitic,exotic_crystalline_igneous_rock,101,exotic_crystalline_igneous_rock,exotic_crystalline,igneous_rock
+3597,592,2182086,108,110.0,H still martitic,exotic_crystalline_igneous_rock,101,exotic_crystalline_igneous_rock,exotic_crystalline,igneous_rock
+3598,592,2182086,134,136.0,Softish GY massive dolomite,dolostone,101,dolostone,carbonate,sedimentary_rock

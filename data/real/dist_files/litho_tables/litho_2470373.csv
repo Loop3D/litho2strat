@@ -1,0 +1,7 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+6852,2670,2470373,1,6.0,hardpanised cover and qtz frags,cover,100,cover,natural_superficial_ground,surficial_rock
+6853,2670,2470373,16,19.0,nodules of goeth material,nodules,100,nodules,residual_deposit,surficial_rock
+6854,2670,2470373,19,20.0,clay and goeth frags,mud,100,mud,sediment_clastic,sediment
+6855,2670,2470373,20,21.0,pale clay,mud,101,mud,sediment_clastic,sediment
+6856,2670,2470373,21,22.0,ferrug rock frags and minor clay,mud,101,mud,sediment_clastic,sediment
+6857,2670,2470373,26,30.0,quartzite sst wk Fe-ox stained Woodiana sst,quartzite,100,quartzite,low_grade_metamorphic_rock,metamorphic_rock

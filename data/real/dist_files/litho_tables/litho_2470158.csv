@@ -1,0 +1,13 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+6238,2670,2470158,28,30.0,CAVITY_30,void,100,void,artificial_man_made_ground,surficial_rock
+6239,2670,2470158,76,78.0,ROUNDED CHIPS - DETRITAL ORE?,ore,101,ore,ore,mineralisation
+6240,2670,2470158,90,92.0,MIINERALISEDBIF,mineralisation,85,mineralisation,ore,mineralisation
+6241,2670,2470158,92,94.0,MIINERALISEDBIF,mineralisation,85,mineralisation,ore,mineralisation
+6242,2670,2470158,94,96.0,MIINERALISEDBIF,mineralisation,85,mineralisation,ore,mineralisation
+6243,2670,2470158,96,98.0,MIINERALISEDBIF,mineralisation,85,mineralisation,ore,mineralisation
+6244,2670,2470158,98,100.0,MIINERALISEDBIF,mineralisation,85,mineralisation,ore,mineralisation
+6245,2670,2470158,100,102.0,MIINERALISEDBIF,mineralisation,85,mineralisation,ore,mineralisation
+6246,2670,2470158,102,104.0,MIINERALISEDBIF; BASE OF COVER,cover,101,cover,natural_superficial_ground,surficial_rock
+6247,2670,2470158,102,104.0,MIINERALISEDBIF,mineralisation,85,mineralisation,ore,mineralisation
+6248,2670,2470158,104,106.0,MIINERALISEDBIF,mineralisation,85,mineralisation,ore,mineralisation
+6249,2670,2470158,106,108.0,MIINERALISEDBIF,mineralisation,85,mineralisation,ore,mineralisation

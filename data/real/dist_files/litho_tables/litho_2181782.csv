@@ -1,0 +1,63 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+959,592,2181782,0,0.86,Brown soil with 10% small gravelly pisolites of maghemite,soil,100,soil,residual_deposit,surficial_rock
+960,592,2181782,0,4.6,lightly colured silt sized particles with lighter pisolites some ferruginous and quartz fragments,mud,100,mud,sediment_clastic,sediment
+961,592,2181782,4,7.26,Silt sized particles with clay < 5% pisolites visable. Very small fragments of quartz are present though,mud,100,mud,sediment_clastic,sediment
+962,592,2181782,7,9.6,Increase in amount and size of ferruginous frags to 10% in silt size matrix,mud,100,mud,sediment_clastic,sediment
+963,592,2181782,9,12.3,Pisolitic gravel 30% 2-10mm in diam contained in a clay matrix,mud,100,mud,sediment_clastic,sediment
+964,592,2181782,12,15.5,Decrease in gravel size and amount 20% with increase in small quartZ to 10%,gravel,100,gravel,sediment_clastic,sediment
+965,592,2181782,15,18.3,Lightly colour consolidated clay little or no pisolites visable. Very small fragments of quartz are < 5%,mud,100,mud,sediment_clastic,sediment
+966,592,2181782,18,21.6,Interval larger maghemite pisos in silt/clay matrix.Gravellyrepresenting palaeosurface,mud,100,mud,sediment_clastic,sediment
+967,592,2181782,21,24.6,Massive white/red clay with few fragments,mud,100,mud,sediment_clastic,sediment
+968,592,2181782,29,31.3,Mainly all clay with lack of pisos,mud,100,mud,sediment_clastic,sediment
+969,592,2181782,31,43.35,Various shades of clay - white to red - with <5% small pisos,mud,100,mud,sediment_clastic,sediment
+970,592,2181782,43,46.17,Clay matix with poorly sorted clasts of pisos of  various size 1-20mm <400%. Mostly Maghemite.,mud,100,mud,sediment_clastic,sediment
+971,592,2181782,46,50.14,Increase in clay component to 85%. Pisos =maghemite <10% Qtz frags - <5%,mud,100,mud,sediment_clastic,sediment
+972,592,2181782,50,57.05,Clay with some silt size grains,mud,100,mud,sediment_clastic,sediment
+973,592,2181782,57,66.04,Increase in maghemite bands - with FeO chips also to 20%. Clay matrix silty/gravelly. Poorly sorted interval.,mud,100,mud,sediment_clastic,sediment
+974,592,2181782,66,66.45,Consolidated clay,mud,101,mud,sediment_clastic,sediment
+975,592,2181782,69,71.2,WT clay,mud,101,mud,sediment_clastic,sediment
+976,592,2181782,71,73.6,Running sands with clay matrix component where consolidated.Very unconsolidated between 72.8 to 73.8m,mud,100,mud,sediment_clastic,sediment
+977,592,2181782,73,77.2,Increase in clay content but still sandy to 20%. High core loss.,mud,100,mud,sediment_clastic,sediment
+978,592,2181782,77,78.4,Silty clay. Colour variation.,mud,100,mud,sediment_clastic,sediment
+979,592,2181782,78,80.1,Red/purple silt,mud,101,mud,sediment_clastic,sediment
+980,592,2181782,80,93.17,White pallid zone of clay with silt sized paticles. Very few other frags.,mud,100,mud,sediment_clastic,sediment
+981,592,2181782,93,95.0,Model has as insitu. But no evidence. FG sand and clay,mud,101,mud,sediment_clastic,sediment
+982,592,2181782,95,99.7,As above. Sandy from DK CR to BN colour. Fine grained quartz,vein,101,vein,fillings,texture_structure
+983,592,2181782,99,103.07,FG dark red/purple sand/silt. Moderately consolidated. Strong contact to below,mud,100,mud,sediment_clastic,sediment
+984,592,2181782,103,103.9,Clay band,mud,100,mud,sediment_clastic,sediment
+985,592,2181782,103,108.95,Clay with FG to C grained sandstone. Composed of quartz.Silty closer to clay bands. Colour variation bedding. Very well sorted.,mud,100,mud,sediment_clastic,sediment
+986,592,2181782,108,109.97,F to M grained sandstone. Moderately cemented. FeO chips at 109.2-109.5? Insitu?,sandstone,100,sandstone,clastic,sedimentary_rock
+987,592,2181782,109,111.6,Mainly all clay. Very small frags. Qtz?,mud,100,mud,sediment_clastic,sediment
+988,592,2181782,113,116.9,Clay afte shale. Laminations noticable. With FeO frags weathered bedrock at 114.14 to 114.3. Looks bedded. Sandy at ~115m 115.85 to 116.34,mud,100,mud,sediment_clastic,sediment
+989,592,2181782,116,117.9,Clay after F shale. With remnent microbedding. Goethite bed at 117m. Very weathered still.,mud,100,mud,sediment_clastic,sediment
+990,592,2181782,117,118.58,Clay is LT yellow with manganese. Possible silicifed G bedding?,mud,100,mud,sediment_clastic,sediment
+991,592,2181782,118,123.0,F weathered to clay. Manganese staining and weathered bedswith <5% Q frags.,mud,100,mud,sediment_clastic,sediment
+992,592,2181782,123,125.2,Very weathered manganiferous clay after shale. Quartz vein fractured/brecciated at 123.5 for 40cm. Qtz fragments 0.1 to 3mm throughout.,mud,100,mud,sediment_clastic,sediment
+993,592,2181782,125,132.5,Very weathered manganiferous clay after shale. ,mud,101,mud,sediment_clastic,sediment
+994,592,2181782,133,134.9,"Mn mineral staining and infilling on""joints""Rare thin""rotated"" and brecciated Q veins to 1cm.",vein,100,vein,fillings,texture_structure
+995,592,2181782,135,136.27,mm to cm scale compositional banding- white yb limonitic and GB manganiferous parallel to foliation. 10cm white clay band @ 153.4m 10cm limonitic band @ 136.17m.,mud,100,mud,sediment_clastic,sediment
+996,592,2181782,136,141.6,Very weathered manganiferous clay after shale. ,mud,101,mud,sediment_clastic,sediment
+997,592,2181782,141,147.4,Very weathered manganiferous clay after shale. ,mud,101,mud,sediment_clastic,sediment
+998,592,2181782,147,148.3,Pink shale fragments to 20cm Clay weathered with minor zones of manganiferous clay.,mud,101,mud,sediment_clastic,sediment
+999,592,2181782,148,149.1,GB  claysminor fragmentsof  PK clayey shales,mud,100,mud,sediment_clastic,sediment
+1000,592,2181782,149,149.9,Pink shale  moderately weathered to clays,mud,101,mud,sediment_clastic,sediment
+1001,592,2181782,149,151.9,Interval compositionally banded with 10-15cm horizons of GB clay BK ?Mn? And PK S,mud,100,mud,sediment_clastic,sediment
+1002,592,2181782,151,152.9,Zone of sheared clays with brecciated q fragments 1-10mm and brecciated C fragments to 15mm. Brecciated limonitic fragments 152.5 and 152.7m.,mud,100,mud,sediment_clastic,sediment
+1003,592,2181782,153,164.6,Clays and friable weathered  chips.L and Mn staining on fracture surfaces.. V rare 3-5cm horizons brecciated Q 3 within interval ,mud,100,mud,sediment_clastic,sediment
+1004,592,2181782,164,164.9,Brecciated Q vein in clay matrix,mud,100,mud,sediment_clastic,sediment
+1005,592,2181782,167,168.7,Pink shale Hard mod weathered.,mudstone,100,mudstone,clastic,sedimentary_rock
+1006,592,2181782,168,171.4,D BN clays with zones S,mud,100,mud,sediment_clastic,sediment
+1007,592,2181782,174,174.9,Dark cream to light pink weathered shale.,mudstone,101,mudstone,clastic,sedimentary_rock
+1008,592,2181782,174,176.2,Clay rich S brecciated Q veins 175.7 and 176m,mud,100,mud,sediment_clastic,sediment
+1009,592,2181782,177,180.8,Limonitic/goethitic mm-scale bedded ferruginous shale ,mudstone,101,mudstone,clastic,sedimentary_rock
+1010,592,2181782,180,183.3,Grey colour banded chert bands 2-20cm alternating with shaley limonite bands 5-20cm. Cherts strongly jointed  ,chert,100,chert,siliceous,sedimentary_rock
+1011,592,2181782,183,183.8,Limonitic/goethitic mm-scale bedded ferruginous shale ,mudstone,101,mudstone,clastic,sedimentary_rock
+1012,592,2181782,183,184.8,Grey colour banded strongly jointed chert bands 2-20cm alternating with shaley limonite bands 5-20cm. Core loss at end of interval,chert,100,chert,siliceous,sedimentary_rock
+1013,592,2181782,184,185.3,Limonitic/goethitic mm-scale bedded ferruginous shale ,mudstone,101,mudstone,clastic,sedimentary_rock
+1014,592,2181782,185,185.8,brecciated grey chert fragments to 1.5cm in shaley limonitic matrix ,chert,100,chert,siliceous,sedimentary_rock
+1015,592,2181782,185,186.8,Limonitic/goethitic mm-scale bedded ferruginous shale ,mudstone,101,mudstone,clastic,sedimentary_rock
+1016,592,2181782,186,187.0,Pink clayey shale marker bed,mudstone,100,mudstone,clastic,sedimentary_rock
+1017,592,2181782,187,188.0,Limonitic/goethitic mm-scale bedded ferruginous shale ,mudstone,101,mudstone,clastic,sedimentary_rock
+1018,592,2181782,188,188.3,Pink clayey shale marker bed,mudstone,100,mudstone,clastic,sedimentary_rock
+1019,592,2181782,188,188.5,Limonitic/goethitic mm-scale bedded ferruginous shale - last 4cm of  interval massive Vit-G.,mudstone,100,mudstone,clastic,sedimentary_rock
+1020,592,2181782,188,188.8,Pink clayey shale marker bed,mudstone,100,mudstone,clastic,sedimentary_rock

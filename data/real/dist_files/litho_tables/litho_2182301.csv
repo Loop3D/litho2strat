@@ -1,0 +1,28 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+5595,592,2182301,10,12.5,soft brown clay small fraction of pisolites,mud,100,mud,sediment_clastic,sediment
+5596,592,2182301,12,17.0,hardened clay almost hardcap. Manganese in patches,patches,101,patches,fillings,texture_structure
+5597,592,2182301,17,20.0,manganese mineralisation has occurred within the transported zone cementing the clays in this section the manganese poor zones are much softer and less compitent,mud,100,mud,sediment_clastic,sediment
+5598,592,2182301,20,26.0,clay dominated section manganese min. still apparent again hardness varies,mud,100,mud,sediment_clastic,sediment
+5599,592,2182301,26,30.5,majority of section is clay manganese min. still apparent again hardness varies,mud,100,mud,sediment_clastic,sediment
+5600,592,2182301,30,33.5,light brown possibly lacustrine clays layering present,mud,100,mud,sediment_clastic,sediment
+5601,592,2182301,33,38.0,more manganese present obsidian textures in places,obsidian,100,obsidian,felsic_glassy,igneous_rock
+5602,592,2182301,44,48.2,clays derived from ferrugenous shales,mud,100,mud,sediment_clastic,sediment
+5603,592,2182301,48,50.0,deep red-brown extremely weathered hematite/goethite ore with limonitic patches,patches,101,patches,fillings,texture_structure
+5604,592,2182301,50,51.5,highly weathered limonitic shales that have been weathered to clay with some equally weathered ochreous goethite. bedding is barely visable,mud,100,mud,sediment_clastic,sediment
+5605,592,2182301,51,59.0,Massive goethite martite-goethite ore core lacks compitency in places,ore,100,ore,ore,mineralisation
+5606,592,2182301,59,59.8,limonitic clays and ochreous goethite,mud,100,mud,sediment_clastic,sediment
+5607,592,2182301,59,62.0,extremely weathered hematitic shales and clays manganese mineralisation seems to have taken place,mud,100,mud,sediment_clastic,sediment
+5608,592,2182301,62,65.9,Biffy chert. planar to undulating bedding this section is very weathered ,chert,100,chert,siliceous,sedimentary_rock
+5609,592,2182301,65,67.0,interbedded Ferrugenous shale and limonite bed. Beds are barely visable due to weathering,mudstone,100,mudstone,clastic,sedimentary_rock
+5610,592,2182301,70,74.0,brecciated bif FeO bands dominate. The brecciated sections are punctuated by less broken bedded zones,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+5611,592,2182301,74,77.0,very well bedded/laminated Jasperalitic BIF beds range from around 1cm to 4cm,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+5612,592,2182301,77,80.0,panar to irregularly bedded finely laminated in places BIF chertier bands dominate the section. This section exhibits brecciation in place eg @79m,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+5613,592,2182301,80,82.5,bedding here is less well definedsome weak hematite mineralisation ,mineralisation,101,mineralisation,ore,mineralisation
+5614,592,2182301,85,87.2,Bedding planar/undulating colour ranges from dark red iron oxide bands to light grey chert bands. limonitic staining ,chert,100,chert,siliceous,sedimentary_rock
+5615,592,2182301,87,88.0,moderate to highly weathered massive chert,chert,101,chert,siliceous,sedimentary_rock
+5616,592,2182301,88,91.2,Biffy chert. planar to undulating bedding this section is very weathered rubbly in places. Some limonite earthy colours. ,chert,100,chert,siliceous,sedimentary_rock
+5617,592,2182301,106,108.6,highly brecciated zone probable fault structure/zone has been intercepted. Angular fragments of quartz and chertz charcterize this zone,fault,100,fault,breaks,texture_structure
+5618,592,2182301,108,111.5,breccciated fragments of quartz and chert in a clay matrix. Some of the quartz fragments are v. small and sandy,mud,100,mud,sediment_clastic,sediment
+5619,592,2182301,111,114.5,some bedded cherts present but there is still some fault breccia,breccia,101,breccia,fault_rock,texture_structure
+5620,592,2182301,114,118.6,breccciated fragments of quartz and chert in a clay matrix. Some of the quartz fragments are v. small and sandy,mud,100,mud,sediment_clastic,sediment
+5621,592,2182301,118,120.0,greenstone granite and clay,mud,101,mud,sediment_clastic,sediment

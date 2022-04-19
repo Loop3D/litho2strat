@@ -1,0 +1,16 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+2095,592,2181887,44,46.0,mottled clays,mud,101,mud,sediment_clastic,sediment
+2096,592,2181887,46,48.0,mottled clays,mud,101,mud,sediment_clastic,sediment
+2097,592,2181887,48,50.0,mottled clays,mud,101,mud,sediment_clastic,sediment
+2098,592,2181887,56,58.0,mottled clays,mud,101,mud,sediment_clastic,sediment
+2099,592,2181887,58,60.0,mottled clays,mud,101,mud,sediment_clastic,sediment
+2100,592,2181887,74,76.0,HARDCAPPY; with white clays,mud,101,mud,sediment_clastic,sediment
+2101,592,2181887,76,78.0,clay after shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+2102,592,2181887,90,92.0,with trc-mnr white clay,mud,101,mud,sediment_clastic,sediment
+2103,592,2181887,92,94.0,with trc-mnr white clay,mud,101,mud,sediment_clastic,sediment
+2104,592,2181887,94,96.0,with trc-mnr white clay,mud,101,mud,sediment_clastic,sediment
+2105,592,2181887,100,102.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+2106,592,2181887,108,110.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+2107,592,2181887,114,116.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+2108,592,2181887,116,118.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+2109,592,2181887,118,120.0,W or ferrug shale,mudstone,101,mudstone,clastic,sedimentary_rock

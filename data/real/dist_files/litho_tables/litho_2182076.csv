@@ -1,0 +1,35 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+3399,592,2182076,0,2.0,Chert and H frags,chert,100,chert,siliceous,sedimentary_rock
+3400,592,2182076,20,22.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3401,592,2182076,22,24.0,Pisoids of silt in clay,mud,101,mud,sediment_clastic,sediment
+3402,592,2182076,24,26.0,Pisoids of weatherd hematite in clay,mud,101,mud,sediment_clastic,sediment
+3403,592,2182076,28,30.0,Gritty clay,mud,101,mud,sediment_clastic,sediment
+3404,592,2182076,32,34.0,Gritty clay with small FeO chips,mud,100,mud,sediment_clastic,sediment
+3405,592,2182076,36,38.0,5% FeO frags in clay,mud,101,mud,sediment_clastic,sediment
+3406,592,2182076,38,40.0,Gritty clay with small FeO chips,mud,100,mud,sediment_clastic,sediment
+3407,592,2182076,40,42.0,Hard clay balls with small FeO grits,mud,100,mud,sediment_clastic,sediment
+3408,592,2182076,42,44.0,Lacustrine clay balls,mud,100,mud,sediment_clastic,sediment
+3409,592,2182076,44,46.0,Lacustrine clay balls,mud,100,mud,sediment_clastic,sediment
+3410,592,2182076,46,48.0,Clay with 20% pisoids of maghemite,mud,100,mud,sediment_clastic,sediment
+3411,592,2182076,50,52.0,5%  soft H in clay,mud,101,mud,sediment_clastic,sediment
+3412,592,2182076,52,54.0,3% soft H in clay wit trace milky WT chips,mud,100,mud,sediment_clastic,sediment
+3413,592,2182076,54,56.0,3% soft H in clay wit trace milky WT chips,mud,100,mud,sediment_clastic,sediment
+3414,592,2182076,56,58.0,2% soft H in clay wit trace milky WT chips,mud,100,mud,sediment_clastic,sediment
+3415,592,2182076,58,60.0,10% G chips in clay,mud,101,mud,sediment_clastic,sediment
+3416,592,2182076,66,68.0,Microbanded moderately enriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+3417,592,2182076,80,82.0,Microbanded ore with <5% limonite. BIF? Mostly G though,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+3418,592,2182076,82,84.0,Microbanded ore with <5% limonite. BIF? Mostly G though,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+3419,592,2182076,88,90.0,Microbanded BIF/G,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+3420,592,2182076,108,110.0,Jaspilititic. + Chert,chert,101,chert,siliceous,sedimentary_rock
+3421,592,2182076,110,112.0,Quartz and carbonate reacts to acid. Vein? With hematite and rock with grey sheen,felsic,100,felsic,felsic,igneous_rock
+3422,592,2182076,118,120.0,Change from chert to dolomite. Dolomite only found in Wittenoon. Fault? Or above is not Mt Newman. Soft shaley - stains - acid reaction - carb shale.,mudstone,101,mudstone,clastic,sedimentary_rock
+3423,592,2182076,120,122.0,Light grey. Reacts to acid. Carb shale? Dolo shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+3424,592,2182076,122,124.0,Light grey. Reacts to acid. Carb shale? Dolo shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+3425,592,2182076,126,128.0,Dolo shale? Very small frags. Soft greay acid reaction. 10% G 5% Q,felsic,100,felsic,felsic,igneous_rock
+3426,592,2182076,128,130.0,White carb reacts to acid. Xtline. WT carb reacts. Not sure what else to call it,felsic,100,felsic,felsic,igneous_rock
+3427,592,2182076,130,132.0,White carb reacts to acid. Xtline. WT carb reacts. Not sure what else to call it. 30% Q 1% B,felsic,100,felsic,felsic,igneous_rock
+3428,592,2182076,132,134.0,White carb reacts to acid. Xtline. WT carb reacts. Not sure what else to call it. 5% B 2% Q,felsic,100,felsic,felsic,igneous_rock
+3429,592,2182076,134,136.0,60% Q 20% calc shale 20% G/1,mudstone,100,mudstone,clastic,sedimentary_rock
+3430,592,2182076,138,140.0,Void/Cavity with a return of <30% chips,void,100,void,artificial_man_made_ground,surficial_rock
+3431,592,2182076,142,144.0,Carb shale? Dolomite?,dolostone,101,dolostone,carbonate,sedimentary_rock
+3432,592,2182076,146,148.0,More like carb shale. Dark.,mudstone,100,mudstone,clastic,sedimentary_rock

@@ -1,0 +1,36 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+1391,592,2181797,15,15.9,WT clays with 10% sub-rounded pisolitic maghem and hem. Broken and friable,mud,100,mud,sediment_clastic,sediment
+1392,592,2181797,15,17.82,WT/L BN clays with 5% pisolitic maghemite. Mody competent and friable,mud,100,mud,sediment_clastic,sediment
+1393,592,2181797,17,22.92,Mottled WT/RB/OG clay with 15% piso maghem and hem.  Mody competent and friable,mud,100,mud,sediment_clastic,sediment
+1394,592,2181797,22,26.0,Increasing ratio approx 50% and diametre up to 40mm of maghem and hem pisolites in a WT clay matrix,mud,100,mud,sediment_clastic,sediment
+1395,592,2181797,26,26.93,Increasing rock competency. Unbroken strongly consolidated maghem and hem pisos in WT/L BN ferruginous clay matrix,mud,100,mud,sediment_clastic,sediment
+1396,592,2181797,26,29.8,Maghem pisos and hematitic masses/lenses strongly cemented by a L BN ferrug clay matrix. Minor clay vugs and fracture fill.,fill,101,fill,artificial_man_made_ground,surficial_rock
+1397,592,2181797,29,34.05,Mottled WT/BN/RB clay dominant interval with hematitic and goethitic pisos/masss,mud,100,mud,sediment_clastic,sediment
+1398,592,2181797,34,34.84,Goethite lenses/masses in WT clay. Highly broken and friable. Weak piso texture present,mud,100,mud,sediment_clastic,sediment
+1399,592,2181797,34,37.8,L BN clay vugs/masses supported in a goethitic hardcappish texture. Moderately competent and friable. Weak piso texture present,mud,100,mud,sediment_clastic,sediment
+1400,592,2181797,37,39.12,Similar to above though more competent and showing a clearer pisolitic texture within broken clay-dominant horizons. Pisos goethite.,mud,100,mud,sediment_clastic,sediment
+1401,592,2181797,39,41.13,Very hard competent RB to D RB goethitic hardcap. Pisolitic texture destroyed. Weakly vuggy towards base,pisolith,100,pisolith,residual_deposit,surficial_rock
+1402,592,2181797,41,42.25,Sub-rounded goethitic pisos/fragments up to 25mm strongly consolidated in a L BN and WT clay,mud,101,mud,sediment_clastic,sediment
+1403,592,2181797,42,44.05,More hardcap texture. Goethitic pisolitic horizons just discernible. Clay vugs include mm-scale maghemite pisos.,mud,100,mud,sediment_clastic,sediment
+1404,592,2181797,44,45.3,More broken interval of goethitic hardcap and WT to RD clay filled fractures and cavities. Pisolitic texture barely discernible,mud,100,mud,sediment_clastic,sediment
+1405,592,2181797,45,49.22,Similar to above with remnant bedding discernible though highly disrupted. Still goethitic with ?transported pale clay cavity fill,fill,101,fill,artificial_man_made_ground,surficial_rock
+1406,592,2181797,49,50.23,Hard competent in-situ goethitic hardcap. Bedding present. Clay bands ?after shale. Minor hematite,mud,100,mud,sediment_clastic,sediment
+1407,592,2181797,50,50.56,Bedded shale with goethite. Some darker manganiferous patches. Competent though friable,mudstone,100,mudstone,clastic,sedimentary_rock
+1408,592,2181797,50,51.7,Dark GY to BK manganiferous shale. Bedding perpendicular to core axis,mudstone,100,mudstone,clastic,sedimentary_rock
+1409,592,2181797,52,53.87,BN shale with trace Mn throughout. Bedding perpendicular to core axis,mudstone,100,mudstone,clastic,sedimentary_rock
+1410,592,2181797,53,54.45,D BN manganiferous clay after Mn shale featuring a 20mm thick hematite vein at 53.95m discordant to bedding,mud,100,mud,sediment_clastic,sediment
+1411,592,2181797,54,56.67,Soft friable clay dominant with fragmented goethite and hematite beds. Minor Mn and ferrug shales.,mud,100,mud,sediment_clastic,sediment
+1412,592,2181797,56,57.55,Hard solid competent rock. Goethite mineralisation with minor clay after S. Bedding almost completely destroyed,mud,100,mud,sediment_clastic,sediment
+1413,592,2181797,61,61.8,Similar to above though bedded microbanded chert with goeth >> hematite far less deformed. Only minor fracturing and goethitic fracture fill,fill,101,fill,artificial_man_made_ground,surficial_rock
+1414,592,2181797,61,64.1,Alternating RB shale clay with solid masses of goethite minern. Highly variable hardness,mudstone,100,mudstone,clastic,sedimentary_rock
+1415,592,2181797,64,64.65,Goethite with ferrug shale shale and minor hematite. Bedding diffuse and fragmented,mudstone,100,mudstone,clastic,sedimentary_rock
+1416,592,2181797,64,64.82,Narrow D PK shale band with minor goethite,mudstone,100,mudstone,clastic,sedimentary_rock
+1417,592,2181797,64,68.89,Highly vuggy fractured and often broken interval of minerd goeth with minor ferrug shale and shale. Bedding sometimes very clear,mudstone,100,mudstone,clastic,sedimentary_rock
+1418,592,2181797,68,69.4,Weakly ferruginised shale with goethite fragments. Slickensided surface approx 60 degrees from core axis,mudstone,100,mudstone,clastic,sedimentary_rock
+1419,592,2181797,69,70.53,Bedded goethite with minor ferrug shale and trace limonite,mudstone,100,mudstone,clastic,sedimentary_rock
+1420,592,2181797,70,75.3,Less limonite content. Still mineralised with bedding clear at times. Shales present as clay lenses. Core variably competent and highly broken,mud,100,mud,sediment_clastic,sediment
+1421,592,2181797,77,90.97,Thick interval of goeth - och goeth mineralisation with variable limonite ratio. Core is half competent and half broken and often vuggy. Bedding is sometimes undisturbed though often diffuse wavy of faulted. Fractures are sparse and have a goethitic fil,mineralisation,100,mineralisation,ore,mineralisation
+1422,592,2181797,90,91.17,Shale band. Pink clay with YB limonite. Highly broken and friable,mud,100,mud,sediment_clastic,sediment
+1423,592,2181797,91,94.37,Hard competent goeth - och goeth minern. Bedding preserved. Core pitted and vuggy. <1% chert,chert,101,chert,siliceous,sedimentary_rock
+1424,592,2181797,94,95.77,Hard competent highly deformed BIF. Microbanded chert approx 30% highly fractured and brecciated. Fractures commonly mm scale though up to 15mm offsetting bedding. Fracture fill is goethitic,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+1425,592,2181797,95,96.42,Shale with goethitic frags. Includes a slickenside at approx 30% to core axis,mudstone,100,mudstone,clastic,sedimentary_rock

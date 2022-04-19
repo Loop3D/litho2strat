@@ -1,0 +1,11 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+2436,592,2181997,22,24.0,Hit water. Puggy clay.,mud,101,mud,sediment_clastic,sediment
+2437,592,2181997,24,26.0,Lacustrine. Hard puggy clay.,mud,101,mud,sediment_clastic,sediment
+2438,592,2181997,26,28.0,Hard white puggy clay balls.,mud,100,mud,sediment_clastic,sediment
+2439,592,2181997,30,32.0,Inc in very small ferrug frags in clay.,mud,101,mud,sediment_clastic,sediment
+2440,592,2181997,38,40.0,Soft piso frags. Ferruginous. Clay removed.,mud,100,mud,sediment_clastic,sediment
+2441,592,2181997,74,76.0,Minor clay.,mud,101,mud,sediment_clastic,sediment
+2442,592,2181997,94,96.0,Carb shale.,mudstone,101,mudstone,clastic,sedimentary_rock
+2443,592,2181997,96,98.0,Chips mostly chert bt stained black due to carb shale.,mudstone,101,mudstone,clastic,sedimentary_rock
+2444,592,2181997,102,104.0,Major pyrite.,massive_sulphide,101,massive_sulphide,ore,mineralisation
+2445,592,2181997,110,112.0,Hole canned early at 112m due to excessive pyrite and potential for groundwater contamination,massive_sulphide,100,massive_sulphide,ore,mineralisation

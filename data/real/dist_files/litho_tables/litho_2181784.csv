@@ -1,0 +1,24 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+1021,592,2181784,29,31.4,massive ochreous goethite mineralisation. Possibly hardcap patches of limonite staining through-out,mineralisation,100,mineralisation,ore,mineralisation
+1022,592,2181784,33,35.5,ochreous hematite/goethite ore interbedded with limonite/limonitic shale. Some patches of vitreous/crystalline martite 33.5m,mudstone,100,mudstone,clastic,sedimentary_rock
+1023,592,2181784,35,36.7,well bedded shales varying from ferrugenous to limonitic. Some small lenses of G but not a great deal. Some patches where the shale has weathered to clay,mud,101,mud,sediment_clastic,sediment
+1024,592,2181784,36,37.8,interbedded siliceous G and limonitic S thin chert beds present indicating that this  section is less mineralised,mineralisation,101,mineralisation,ore,mineralisation
+1025,592,2181784,37,40.1,highly weathered finely laminated Ferrugenous shale small beds of siliceous G. the shale isweathered to clay in places,mud,100,mud,sediment_clastic,sediment
+1026,592,2181784,40,42.2,clay derived from shales some of which are still present due to the fact they arenotas highly weathered. Beds of F and 1 are finely laminated in places,mud,100,mud,sediment_clastic,sediment
+1027,592,2181784,43,48.4,extremely weathered shales with poorley developed bedding which undulates in places. Much of this shale is highly weathered into clays,mud,101,mud,sediment_clastic,sediment
+1028,592,2181784,48,52.0,Irregular beds of shale and hematite/goethite ore with limonitic staining and clay sections. Some small vugs in places. There is obvious mineralisation but it is probably low grade,mud,100,mud,sediment_clastic,sediment
+1029,592,2181784,52,53.0,a patch of less mineralised shale derived clay,mud,101,mud,sediment_clastic,sediment
+1030,592,2181784,56,57.5,weak hematitic mineralisation. This core has a mottle look along the surface the clay has quite a talcly texture when broken off,mud,100,mud,sediment_clastic,sediment
+1031,592,2181784,57,59.0,poorly mineralised and highly weathered and broken beds of chert and siliceous hematite. Bed are irregular,mineralisation,100,mineralisation,ore,mineralisation
+1032,592,2181784,59,60.5,massive clays dominate this section of core. It is punctuated by slightly less weathered zones of interbedded siliceous G and C at 59.5 and 60.4m,mud,100,mud,sediment_clastic,sediment
+1033,592,2181784,60,62.7,well bedded chert siliceous goethite and shale at the end of the section. The lighter chert beds have v. small dots visable on the surface of the core,mudstone,100,mudstone,clastic,sedimentary_rock
+1034,592,2181784,62,63.6,The majority of this sectionis taken up by a massive red clay fairly homogenous and devoid of any original texture i.e. bedding  ,mud,100,mud,sediment_clastic,sediment
+1035,592,2181784,63,67.9,biffy cherts patches of T. Bedding planes vary from irregular to plannar,patches,100,patches,fillings,texture_structure
+1036,592,2181784,67,78.1,in this section there is weak goethitic mineralisation instead of weak hematitic  min.,mineralisation,100,mineralisation,ore,mineralisation
+1037,592,2181784,78,82.7,white chert with a lack of bedding large vugs are a characteristic of this core,chert,100,chert,siliceous,sedimentary_rock
+1038,592,2181784,84,99.1,bedded cherts with patches of shales and shales weathered to clay,mud,101,mud,sediment_clastic,sediment
+1039,592,2181784,114,118.9,the biffy chert zones represent the more compitent core in this zone with the shale derived clays usually very broken and weak ,mud,100,mud,sediment_clastic,sediment
+1040,592,2181784,126,129.5,carbonaceous shale which ranges from dark grey to black  interbedded with small lenses of chert. This section is highly weathered,mudstone,100,mudstone,clastic,sedimentary_rock
+1041,592,2181784,129,138.5,pyritic black shale which is progressively less weathered as you move downhole. The crystals of pyrite are aligned along bedding planes,mudstone,100,mudstone,clastic,sedimentary_rock
+1042,592,2181784,138,140.0,fairly even amounts of each lithology. This section sticks out in this carbonaceous shale zone ,mudstone,100,mudstone,clastic,sedimentary_rock
+1043,592,2181784,140,160.0,moderately weathered pyritic well bedded carbonaceous shale,mudstone,101,mudstone,clastic,sedimentary_rock

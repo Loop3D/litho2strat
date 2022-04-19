@@ -1,0 +1,24 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+5450,592,2182254,10,12.0,White clays,mud,101,mud,sediment_clastic,sediment
+5451,592,2182254,12,14.0,White clays,mud,101,mud,sediment_clastic,sediment
+5452,592,2182254,14,16.0,White clays,mud,101,mud,sediment_clastic,sediment
+5453,592,2182254,16,18.0,White clays,mud,101,mud,sediment_clastic,sediment
+5454,592,2182254,18,20.0,White clays,mud,101,mud,sediment_clastic,sediment
+5455,592,2182254,20,22.0,White clays,mud,101,mud,sediment_clastic,sediment
+5456,592,2182254,22,24.0,White clays,mud,101,mud,sediment_clastic,sediment
+5457,592,2182254,24,26.0,White clays,mud,101,mud,sediment_clastic,sediment
+5458,592,2182254,60,62.0,hard bedded martite mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5459,592,2182254,62,64.0,pink clay altered shale marker zone with some G,mud,100,mud,sediment_clastic,sediment
+5460,592,2182254,66,68.0,softer bedded H-dominant mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5461,592,2182254,68,70.0,softer bedded H-dominant mineralisation,mineralisation,101,mineralisation,ore,mineralisation
+5462,592,2182254,72,74.0,shaley BIF semi-enriched,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+5463,592,2182254,74,76.0,soft-mod bedded H-G mineralisation with some softer ferrug brown shales,mineralisation,100,mineralisation,ore,mineralisation
+5464,592,2182254,76,78.0,soft-mod bedded H-G mineralisation with some softer ferrug brown shales,mineralisation,100,mineralisation,ore,mineralisation
+5465,592,2182254,78,80.0,soft-mod bedded G-H mineralisation with some softer ferrug brown shales,mineralisation,100,mineralisation,ore,mineralisation
+5466,592,2182254,80,82.0,soft-mod bedded G-H mineralisation with some softer ferrug brown shales,mineralisation,100,mineralisation,ore,mineralisation
+5467,592,2182254,82,84.0,soft-mod bedded G-H mineralisation with some softer ferrug brown shales,mineralisation,100,mineralisation,ore,mineralisation
+5468,592,2182254,110,112.0,denatured chert,chert,101,chert,siliceous,sedimentary_rock
+5469,592,2182254,112,114.0,Structural qzt at CONTACT ZONE,contact,100,contact,contact,texture_structure
+5470,592,2182254,114,116.0,Structural qzt at CONTACT ZONE,contact,100,contact,contact,texture_structure
+5471,592,2182254,116,118.0,siliceous goethite denatured chert,chert,101,chert,siliceous,sedimentary_rock
+5472,592,2182254,118,120.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation

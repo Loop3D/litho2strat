@@ -1,0 +1,20 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+5779,592,2182314,22,25.2,soft bedded porous bedded shales partially clay weathered,mud,100,mud,sediment_clastic,sediment
+5780,592,2182314,25,27.9,massive pink clays after weathered shale,mudstone,101,mudstone,clastic,sedimentary_rock
+5781,592,2182314,27,32.0,mostly soft porous weak bedded-massive manganiferous clays with rare ferruginous limonitic clays,mud,101,mud,sediment_clastic,sediment
+5782,592,2182314,32,33.25,soft porous weak bedded limonitic clays/shales and clay with some manganese,mud,100,mud,sediment_clastic,sediment
+5783,592,2182314,33,34.4,soft porous weak bedded shale pink and more limonitic shale ferrug.?,mudstone,101,mudstone,clastic,sedimentary_rock
+5784,592,2182314,34,35.9,pink clays after shale,mudstone,101,mudstone,clastic,sedimentary_rock
+5785,592,2182314,35,36.4,clay and goethitic-limonitic ferrug.? shale; SHARP AT:,mud,100,mud,sediment_clastic,sediment
+5786,592,2182314,36,38.8,soft bedded porous ferruginous shale goethitic and manganese,mudstone,100,mudstone,clastic,sedimentary_rock
+5787,592,2182314,38,39.6,as above but with increased clay content,mud,100,mud,sediment_clastic,sediment
+5788,592,2182314,39,46.4,soft bedded porous ferruginous shale goethitic and manganese,mudstone,100,mudstone,clastic,sedimentary_rock
+5789,592,2182314,46,52.0,soft bedded porous ferruginous shale goethitic and pink clay-shale,mudstone,101,mudstone,clastic,sedimentary_rock
+5790,592,2182314,52,60.1,as above but with increased clay-shale bands,mud,100,mud,sediment_clastic,sediment
+5791,592,2182314,60,61.6,moslty soft bedded and porous ferruginous goethitic shale with interbedded hard VT G,mudstone,100,mudstone,clastic,sedimentary_rock
+5792,592,2182314,61,62.3,soft porous ferrug shale/clay mix,mud,100,mud,sediment_clastic,sediment
+5793,592,2182314,62,72.65,large interval of soft porous and weak bedded ferruginous G-L shale and clay,mud,101,mud,sediment_clastic,sediment
+5794,592,2182314,73,77.4,large interval of soft porous and weak bedded ferruginous G-L shale and clay; SHARP AT:,mud,100,mud,sediment_clastic,sediment
+5795,592,2182314,81,93.3,as above but increasing ferruginous goethitic-limonitic shales and interbedded clay zones,mud,100,mud,sediment_clastic,sediment
+5796,592,2182314,93,95.0,clay zone,mud,100,mud,sediment_clastic,sediment
+5797,592,2182314,103,105.6,clay after shale marker beds,mud,100,mud,sediment_clastic,sediment

@@ -1,0 +1,33 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+806,592,2181775,0,5.6,well cemented zone of maghemite frags in clay matrix,mud,100,mud,sediment_clastic,sediment
+807,592,2181775,5,10.0,poorly consolidated/highly broken zone maghemite fragments in clay matrix,mud,100,mud,sediment_clastic,sediment
+808,592,2181775,10,17.6,well cemented zone of maghemite frags in clay matrix,mud,100,mud,sediment_clastic,sediment
+809,592,2181775,17,19.5,mod cemented zone maghemite/BIFsubrounded frags in inc clay rich matrix,mud,100,mud,sediment_clastic,sediment
+810,592,2181775,19,21.8,Subrounded G & BIF frags in L BRN clay matrix,mud,100,mud,sediment_clastic,sediment
+811,592,2181775,21,24.3,Rounded frags BEd BIF and G in L BRN clay matrix w/ large BEd BIF boulders - base nearing base of transpd,mud,100,mud,sediment_clastic,sediment
+812,592,2181775,24,27.6,Rounded frags BIF and G inlight brown clay matrix - no boulders,gravel,101,gravel,sediment_clastic,sediment
+813,592,2181775,27,28.05,Boulder of BEd BIF or hardcappy?????,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+814,592,2181775,28,33.3,Detrital fragments of BIF in clay matrix???????; SHARP AT:,mud,100,mud,sediment_clastic,sediment
+815,592,2181775,33,35.3,Highly clay weathd BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+816,592,2181775,35,36.5,strongly deformed and fracture cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+817,592,2181775,36,42.1,FAULT STRUCTURE with angular rotated breccia 38.0-38.7m; almost completely clay altered 38.7 to:,mud,100,mud,sediment_clastic,sediment
+818,592,2181775,42,43.3,moderately clay weathd BIF adjacent to fault zone,mud,100,mud,sediment_clastic,sediment
+819,592,2181775,43,48.5,mod weathd highly fractured & deformed cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+820,592,2181775,48,48.8,FAULT STRUCTURE - Highly clay altd and leached rock w/ broken quartz/chert band; some rotated chert clasts,mud,100,mud,sediment_clastic,sediment
+821,592,2181775,48,51.9,deep RD-BN ferrug? shale w/ mnr interbedded cherts very soft and easily broken,mudstone,100,mudstone,clastic,sedimentary_rock
+822,592,2181775,51,53.8,Widely bedded chert w/ mnr interbedded highly fractured F shale,mudstone,101,mudstone,clastic,sedimentary_rock
+823,592,2181775,53,55.9,FAULT STRUCTURE - completely clay altered BIF and F shale with rare rotated breccias and leached broken clays,mud,101,mud,sediment_clastic,sediment
+824,592,2181775,57,58.3,clay altered zone adjacent to faulting,fault,101,fault,breaks,texture_structure
+825,592,2181775,59,60.5,weathered red shale interbedded with pale cherts with elipsoid pods present,mudstone,100,mudstone,clastic,sedimentary_rock
+826,592,2181775,62,62.9,Dominated by weathered shales small lens of chert running through the middle ,chert,100,chert,siliceous,sedimentary_rock
+827,592,2181775,62,64.3,Dominated by weathered shales Chert show fractures running with and the opposite directiono bedding,chert,100,chert,siliceous,sedimentary_rock
+828,592,2181775,65,66.5,well bedded cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+829,592,2181775,66,67.3,pale clays lightly stained red probably derived from shales,mud,100,mud,sediment_clastic,sediment
+830,592,2181775,67,68.0,pale clays lightly stained red probably derived from shales chunks of bedded cherts possible breccia,breccia,101,breccia,fault_rock,texture_structure
+831,592,2181775,71,79.0,FAULT ZONES with breccias; highly weathd and broken zone,fault,100,fault,breaks,texture_structure
+832,592,2181775,79,83.4,less weathd cherts w/ sealed fractures subparallel to core axis - and well sealed chert breccias with iron mineral cementation,chert,100,chert,siliceous,sedimentary_rock
+833,592,2181775,83,85.3,very broken core with chert/clay zones - affected by faulting,fault,101,fault,breaks,texture_structure
+834,592,2181775,89,89.2,QUARTZ VEIN,vein,101,vein,fillings,texture_structure
+835,592,2181775,89,92.3,zone highly broken cherts w/ mnr clay weathg broken along core axis sub-breccias adjacent to fault,fault,101,fault,breaks,texture_structure
+836,592,2181775,94,96.8,FAULT BRECCIA within cherts,breccia,100,breccia,fault_rock,texture_structure
+837,592,2181775,96,99.4,clays and pallid sediments approaching carbonate veined contact at:,mud,100,mud,sediment_clastic,sediment

@@ -1,0 +1,33 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+1526,592,2181839,38,40.0,hardcap-duricrust?,duricrust,101,duricrust,residual_deposit,surficial_rock
+1527,592,2181839,40,42.0,red cemented fragments = duricrust?,duricrust,101,duricrust,residual_deposit,surficial_rock
+1528,592,2181839,42,44.0,red cemented fragments = duricrust?,duricrust,101,duricrust,residual_deposit,surficial_rock
+1529,592,2181839,44,46.0,red cemented fragments = duricrust?,duricrust,101,duricrust,residual_deposit,surficial_rock
+1530,592,2181839,46,48.0,red cemented fragments = duricrust?,duricrust,101,duricrust,residual_deposit,surficial_rock
+1531,592,2181839,48,50.0,red cemented fragments = duricrust?,duricrust,101,duricrust,residual_deposit,surficial_rock
+1532,592,2181839,50,52.0,red cemented fragments = duricrust?,duricrust,101,duricrust,residual_deposit,surficial_rock
+1533,592,2181839,52,54.0,red cemented fragments = duricrust?,duricrust,101,duricrust,residual_deposit,surficial_rock
+1534,592,2181839,62,64.0,large angular dk blu-gry mass C and trc jaspilitic BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1535,592,2181839,64,66.0,large angular dk blu-gry mass C and trc jaspilitic BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1536,592,2181839,66,68.0,aa with increasing BE shale,mudstone,101,mudstone,clastic,sedimentary_rock
+1537,592,2181839,68,70.0,BE brn shale marker bed?,mudstone,100,mudstone,clastic,sedimentary_rock
+1538,592,2181839,70,72.0,BE brn shale marker bed?,mudstone,100,mudstone,clastic,sedimentary_rock
+1539,592,2181839,72,74.0,BE brn shale marker bed? With trc mass gry chert,chert,101,chert,siliceous,sedimentary_rock
+1540,592,2181839,74,76.0,BE brn shale marker bed? With trc mass gry chert,chert,101,chert,siliceous,sedimentary_rock
+1541,592,2181839,78,80.0,BE brn shale marker bed? With mass gry C and trc Q,mudstone,100,mudstone,clastic,sedimentary_rock
+1542,592,2181839,80,82.0,BE brn shale marker bed? With mass gry C and trc Q,mudstone,100,mudstone,clastic,sedimentary_rock
+1543,592,2181839,84,86.0,pale whit-gry shale,mudstone,101,mudstone,clastic,sedimentary_rock
+1544,592,2181839,86,88.0,pale whit-gry shale w/ trc Mn?,mudstone,100,mudstone,clastic,sedimentary_rock
+1545,592,2181839,96,98.0,vein Quartz mnr graphite scum on water; CONTACT?,contact,101,contact,contact,texture_structure
+1546,592,2181839,106,108.0,cherty BIF w/ interbedded H,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+1547,592,2181839,112,114.0,more shaley/clay rich,mud,100,mud,sediment_clastic,sediment
+1548,592,2181839,114,116.0,more shaley/clay rich,mud,100,mud,sediment_clastic,sediment
+1549,592,2181839,144,146.0,unenriched Mt Newman cherty BIF ,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1550,592,2181839,146,148.0,unenriched Mt Newman cherty BIF; slightly jaspilitic,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+1551,592,2181839,148,150.0,unenriched Mt Newman cherty BIF ,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1552,592,2181839,150,152.0,unenriched Mt Newman cherty BIF ,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1553,592,2181839,152,154.0,unenriched Mt Newman cherty BIF ,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1554,592,2181839,154,156.0,unenriched Mt Newman cherty BIF w/ trc bright green mass C,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+1555,592,2181839,156,158.0,unenriched Mt Newman cherty BIF w/ trc bright green mass C,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+1556,592,2181839,158,160.0,unenriched Mt Newman cherty BIF ,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+1557,592,2181839,160,162.0,EOH; unenriched Mt Newman cherty BIF ,banded_iron_formation,101,banded_iron_formation,ore,mineralisation

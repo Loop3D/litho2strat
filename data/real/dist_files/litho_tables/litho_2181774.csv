@@ -1,0 +1,15 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+792,592,2181774,47,54.5,weakly consd transp clays w/ ~30% sub-angular G; very wk HC dev in some places; GRADING INTO:,mud,100,mud,sediment_clastic,sediment
+793,592,2181774,58,59.7,mostly WHT clay of LWA with harder manganiferous coating on outside of core very wk hardcap dev in places,mud,100,mud,sediment_clastic,sediment
+794,592,2181774,59,60.5,clay after shale band; SHARP AT:,mud,100,mud,sediment_clastic,sediment
+795,592,2181774,65,68.5,softer deep red-pp F shale and mnr interBE vitW mnr to trc G only,mudstone,100,mudstone,clastic,sedimentary_rock
+796,592,2181774,69,72.0,interBE ferrug S/W and small bands of pale shale,mudstone,101,mudstone,clastic,sedimentary_rock
+797,592,2181774,72,77.4,soft clay/shale becoming increasingly ferruginous from 75.4m,mud,100,mud,sediment_clastic,sediment
+798,592,2181774,83,87.2,interBE F/T w/ small zones of shale? soft and very broken zone,mudstone,100,mudstone,clastic,sedimentary_rock
+799,592,2181774,87,88.0,zone very soft core almost reduced to soil unconsolidated - structure?,soil,100,soil,residual_deposit,surficial_rock
+800,592,2181774,95,96.7,zone goethitic shale,mudstone,101,mudstone,clastic,sedimentary_rock
+801,592,2181774,99,100.5,zone goethitic shale,mudstone,101,mudstone,clastic,sedimentary_rock
+802,592,2181774,120,121.3,shale band,mudstone,100,mudstone,clastic,sedimentary_rock
+803,592,2181774,130,134.7,hard BEd BIF partially goethised but much harder,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+804,592,2181774,134,136.5,hard cherty BIF w/ partial L alteration concentrated on joint surfaces,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+805,592,2181774,136,139.7,EOH; interBE goethitised chert/BIF and softer red shale horizons,mudstone,100,mudstone,clastic,sedimentary_rock

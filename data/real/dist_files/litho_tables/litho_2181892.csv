@@ -1,0 +1,10 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+2122,592,2181892,48,50.0,ochrerous ferrug shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+2123,592,2181892,50,52.0,ochrerous ferrug shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+2124,592,2181892,52,54.0,ochrerous ferrug shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+2125,592,2181892,54,56.0,ochrerous ferrug shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+2126,592,2181892,56,58.0,ochrerous ferrug shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+2127,592,2181892,58,60.0,ochrerous ferrug shale?,mudstone,101,mudstone,clastic,sedimentary_rock
+2128,592,2181892,102,104.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+2129,592,2181892,104,106.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation
+2130,592,2181892,106,108.0,EOH; unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation

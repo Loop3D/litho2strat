@@ -1,0 +1,20 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group
+459,592,2181751,43,44.4,Poorly-sorted matrix-supported detrital/colluvial material. Polylithic and translucent quartz granules pebbles and pisoids in a hard moderately well cemented clay matrix. ,mud,100,mud,sediment_clastic,sediment
+460,592,2181751,44,45.6,"Poorly-sorted matrix-supported detrital/colluvial material. F and S fragments in ""Poddy"" friable clay matrix.",mud,100,mud,sediment_clastic,sediment
+461,592,2181751,45,46.4,Fractured and mottled weathered shales fragments and clay -harder band,mud,100,mud,sediment_clastic,sediment
+462,592,2181751,46,50.8,Fractured and mottled weathered shales fragments and clay -softer band,mud,100,mud,sediment_clastic,sediment
+463,592,2181751,50,52.8,Clay after ferruginous shale - minor zones retain texture,mud,100,mud,sediment_clastic,sediment
+464,592,2181751,52,55.4,Clay after shale - minor zones retain texture,mud,100,mud,sediment_clastic,sediment
+465,592,2181751,55,57.3,Fractured and mottled weathered shales fragments and clay -harder band,mud,100,mud,sediment_clastic,sediment
+466,592,2181751,57,59.2,Clay after shale - minor zones retain texture,mud,100,mud,sediment_clastic,sediment
+467,592,2181751,59,63.9,Mottled pink cream yellow and brown shale and clay after shale,mudstone,101,mudstone,clastic,sedimentary_rock
+468,592,2181751,63,66.3,Mottled pink cream yellow and brown shale and clay after shale,mudstone,101,mudstone,clastic,sedimentary_rock
+469,592,2181751,66,69.1,Mottled ferruginous shale and clay with minor limonite,mud,100,mud,sediment_clastic,sediment
+470,592,2181751,69,71.4,mottled ferruginous shale with repeating 0.25m bands of limonitic shale,mudstone,101,mudstone,clastic,sedimentary_rock
+471,592,2181751,71,74.5,mottled ferruginous shale with repeating 0.25m bands of limonitic shale,mudstone,101,mudstone,clastic,sedimentary_rock
+472,592,2181751,74,77.6,Moderately hard bedded GH mineralised BIF. Fractured/brecciated but in some zones bedding trace is discernable. 3* 5cm bands limonitic F within interval,banded_iron_formation,100,banded_iron_formation,ore,mineralisation
+473,592,2181751,77,78.5,Hard bedded H mesobands to 2cm between 8cm mesobands of dark red H fines/shale. Black H coating on fractures and vughs streaks blood red.  ,mudstone,100,mudstone,clastic,sedimentary_rock
+474,592,2181751,80,81.5,Hard 1.5cm fractured beds/bands HG between soft 3cm mands Hm fines/shale.,mudstone,101,mudstone,clastic,sedimentary_rock
+475,592,2181751,90,92.7,"As above except:hard vitreous G band 90.4-90.7 and band OB-KB soft friable fines  91.4-91.7.  ?possibly a mineralised ""shaley band""?",mineralisation,100,mineralisation,ore,mineralisation
+476,592,2181751,102,103.5,Pink yellow limonitic mineralised shale band.,mudstone,100,mudstone,clastic,sedimentary_rock
+477,592,2181751,109,110.2,"Jaspilite/chert.""Biffy chert"" -pale pink/brown calcedony with microbands of BK FeO.",chert,100,chert,siliceous,sedimentary_rock
