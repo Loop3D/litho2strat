@@ -44,7 +44,6 @@ def fix_litho_name(litho):
     '''
     Convert the map lithology name to the 'CET lithology' name.
     '''
-
     # Convert things like metagranite to granite.
     if (litho[0:4] == 'meta'):
         litho = litho[4:]
@@ -53,6 +52,9 @@ def fix_litho_name(litho):
 
 #==============================================================================
 def get_unique_lithos_from_strat_data(strat_data):
+    '''
+    Returns a unique list of lithologies from strat_data.
+    '''
     lithos = list()
     for unit_name in strat_data:
         for litho in strat_data[unit_name]:
