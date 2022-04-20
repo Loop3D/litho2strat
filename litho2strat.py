@@ -49,12 +49,6 @@ def fix_litho_name(litho):
     Convert the map lithology name to the 'CET lithology' name.
     '''
 
-    if (litho == 'iron-formation'):
-        litho = 'banded_iron_formation'
-
-    if (litho == 'ultramafic'):
-        litho = 'ultramafic-rock'
-
     # Convert things like metagranite to granite.
     if (litho[0:4] == 'meta'):
         litho = litho[4:]
@@ -1038,8 +1032,8 @@ def generate_missing_lithos():
 def main():
     print('Started litho2strat')
 
-    #generate_missing_lithos()
-    #exit()
+    generate_missing_lithos()
+    exit()
 
     # Topology file.
     topology_filename = "data/real/ASUD_strat.gml"

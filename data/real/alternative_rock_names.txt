@@ -11,3 +11,5 @@ tuff, rhyolite
 mudstone, mud, turbidites, till
 sandstone, sand, quartzite
 obsidian, igneous felsic volcanic
+banded_iron_formation, iron-formation
+ultramafic, ultramafic-rock
