@@ -1,2 +1,14 @@
-mudstone, mud, turbidites
-sandstone, sand
+basalt, gabbro, mafic, mafite
+gabbro, basalt, mafic, mafite
+chert, siliceous_ooze
+coal, lignite
+dolomite, dolostone
+granite, granitoid, monzonite, felsic, aplite, monzogranite
+greywacke, greywacke, wackestone
+limestone, carbonate, framestone, grainstone, packstone, dolomite
+ore, magnetitite, massive_sulphide, mineralisation
+sandstone, silicate_sandstone
+rhyolite, tuff
+mudstone, mud, turbidites, till
+sandstone, sand, quartzite
+igneous felsic volcanic, obsidian

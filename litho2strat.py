@@ -963,7 +963,7 @@ def read_alternative_rock_names(filename):
 
     # Building a dictionary.
     for item in items:
-        names_list = item.replace(" ", "").split(",")
+        names_list = item.split(", ")
         if (len(names_list) >= 2):
             key = names_list[0]
             alternative_rick_names[key] = names_list[1:]
@@ -1035,8 +1035,8 @@ def generate_missing_lithos():
 def main():
     print('Started litho2strat')
 
-    #generate_missing_lithos()
-    #exit()
+    generate_missing_lithos()
+    exit()
 
     # Topology file.
     topology_filename = "data/real/ASUD_strat.gml"
