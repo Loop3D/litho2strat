@@ -39,10 +39,6 @@ all_lithos = []
 # Missing lithos.
 missing_lithos = set()
 
-# Converter from string to list.
-str2list = lambda x: x.strip("[]").replace("'", "").replace(" ", "").split(",")
-str2list2 = lambda x: x.strip("[]").replace("'", "").replace(" ", "").replace("?", ",").split(",") # To fix ? symbol in some names (gabbro?leucogabbro)
-
 #==============================================================================
 def fix_litho_name(litho):
     '''
@@ -108,6 +104,11 @@ def read_strat_data(dist_table_filename, alternative_rock_names):
     dist_column = 5
     # LITHNAME1 column.
     lithname1_column = 10
+
+    # Converter from string to list.
+    str2list = lambda x: x.strip("[]").replace("'", "").replace(" ", "").split(",")
+    # To fix ? symbol in some names (gabbro?leucogabbro)
+    str2list2 = lambda x: x.strip("[]").replace("'", "").replace(" ", "").replace("?", ",").split(",")
 
     # Reading the units table.
     strat_all = dict()
