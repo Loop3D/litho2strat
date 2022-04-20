@@ -159,10 +159,15 @@ def read_strat_data(dist_table_filename, alternative_rock_names):
             #=========================================
             # Adding the alternative litho names.
             #=========================================
-            for litho in lithos[:]:
-                if litho in alternative_rock_names:
-                    for alt_litho in alternative_rock_names[litho]:
-                        lithos.append(alt_litho)
+            alt_lithos = []
+            for litho in lithos:
+                for alt_names in alternative_rock_names:
+                    if litho in alt_names:
+                        alt_lithos.extend(alt_names)
+
+            lithos.extend(alt_lithos)
+            # Remove duplicates.
+            lithos = list(dict.fromkeys(lithos))
 
             #=========================================
             # Store the sorted distance map.
@@ -954,21 +959,19 @@ def read_ignore_list(filename):
 def read_alternative_rock_names(filename):
     '''
     Read the alternative rock names (synonyms).
-    Returns a dictionary where the key corresponds to a main name, and the value is a list of name alternatives.
+    Returns a list with lists of alternative names.
     '''
     with open(filename) as f:
         items = f.read().splitlines()
 
-    alternative_rick_names = dict()
+    alternative_rock_names = []
 
     # Building a dictionary.
     for item in items:
         names_list = item.split(", ")
-        if (len(names_list) >= 2):
-            key = names_list[0]
-            alternative_rick_names[key] = names_list[1:]
+        alternative_rock_names.append(names_list)
 
-    return alternative_rick_names
+    return alternative_rock_names
 
 #=============================================================================
 def generate_missing_lithos():
@@ -1035,8 +1038,8 @@ def generate_missing_lithos():
 def main():
     print('Started litho2strat')
 
-    generate_missing_lithos()
-    exit()
+    #generate_missing_lithos()
+    #exit()
 
     # Topology file.
     topology_filename = "data/real/ASUD_strat.gml"
@@ -1065,8 +1068,8 @@ def main():
     # Mark's data with known solutions.
 
     # TODO: Discuss with Mark - we have here too long Cover...
-    #collarID = 1209857
-    collarID =  353386
+    collarID = 1209857
+    #collarID =  353386
 
     # Confirmed results (using 1 closest unit & single top unit).
     #collarID = 2182336

@@ -1,14 +1,13 @@
 basalt, gabbro, mafic, mafite
-gabbro, basalt, mafic, mafite
 chert, siliceous_ooze
 coal, lignite
-dolomite, dolostone
+dolostone, dolomite
 granite, granitoid, monzonite, felsic, aplite, monzogranite
-greywacke, greywacke, wackestone
+wackestone, greywacke, greywacke
 limestone, carbonate, framestone, grainstone, packstone, dolomite
 ore, magnetitite, massive_sulphide, mineralisation
 sandstone, silicate_sandstone
-rhyolite, tuff
+tuff, rhyolite
 mudstone, mud, turbidites, till
 sandstone, sand, quartzite
-igneous felsic volcanic, obsidian
+obsidian, igneous felsic volcanic
