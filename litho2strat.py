@@ -39,12 +39,6 @@ all_lithos = []
 # Missing lithos.
 missing_lithos = set()
 
-# Alternative rock names.
-alternative_rock_names = {
-    "mudstone": ["mud", "turbidites"],
-    "sandstone": ["sand"],
-}
-
 # Converter from string to list.
 str2list = lambda x: x.strip("[]").replace("'", "").replace(" ", "").split(",")
 str2list2 = lambda x: x.strip("[]").replace("'", "").replace(" ", "").replace("?", ",").split(",") # To fix ? symbol in some names (gabbro?leucogabbro)
@@ -106,7 +100,7 @@ def add_unit_to_distance_map(unit_name, distance, lithos, litho2dist):
             litho2dist[litho].sort(key=lambda tup: tup[0])
 
 #==============================================================================
-def read_strat_data(dist_table_filename):
+def read_strat_data(dist_table_filename, alternative_rock_names):
     '''
     Building lithologies list for every unit from csv file data.
     '''
@@ -929,61 +923,6 @@ def plot_unit_probabilities(all_routes, drillsample_data, unit_names):
     pl.show()
 
 #=============================================================================
-def generate_missing_lithos():
-    '''
-    Generates a list of missing drillhole lithologies from unit data in all data files.
-    '''
-
-    # The Cover unit data file.
-    cover_unit_filename = "data/real/cover_unit.txt"
-
-    # The Ignore items list.
-    ignore_list_filename = "data/real/ignore_list.txt"
-
-    directory = "data/real/dist_files/litho_tables"
-    #directory = "data/real/dh_files/litho_tables"
-
-    # Drillsample data columns.
-    column_from = 3
-    column_to = 4
-    column_litho = 8
-
-    counter = 0
-
-    for file in os.listdir(directory):
-        counter = counter + 1
-        print("PROCESSING FILE NUMBER =", counter)
-
-        filename = os.fsdecode(file)
-        collarID = int(filename[6:-4])
-        print(collarID)
-
-        drillsample_filename = "data/real/dist_files/litho_tables/litho_" + str(collarID) + ".csv"
-        dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
-
-        #drillsample_filename = "data/real/dh_files/litho_tables/litho_" + str(collarID) + ".csv"
-        #dist_table_filename = "data/real/dh_files/dist_tables/100k_map_near_" + str(collarID) + ".csv"
-
-        # Read the drillhole ignore items list.
-        ignore_list = read_ignore_list(ignore_list_filename)
-
-        # Drill sample data.
-        drillsample_data = read_drillsample_data(drillsample_filename, column_from, column_to, column_litho, ignore_list)
-
-        # Unit lithologies and distance data.
-        strat_data, litho2dist = read_strat_data(dist_table_filename)
-
-        # Read the Cover unit lithologies.
-        add_cover_unit("Cover", cover_unit_filename, strat_data, litho2dist)
-
-        # Generating the table of possible strata paths.
-        strata_table = generate_strata_table(drillsample_data, strat_data, litho2dist)
-
-    print("Missing lithologies list:")
-    print("Number lithos missing =", len(missing_lithos))
-    print(missing_lithos)
-
-#=============================================================================
 def add_cover_unit(unit_name, filename, strat_data, litho2dist):
     '''
     Adds the custom unit with its lithologies read from file.
@@ -1012,6 +951,87 @@ def read_ignore_list(filename):
     return items
 
 #=============================================================================
+def read_alternative_rock_names(filename):
+    '''
+    Read the alternative rock names (synonyms).
+    Returns a dictionary where the key corresponds to a main name, and the value is a list of name alternatives.
+    '''
+    with open(filename) as f:
+        items = f.read().splitlines()
+
+    alternative_rick_names = dict()
+
+    # Building a dictionary.
+    for item in items:
+        names_list = item.replace(" ", "").split(",")
+        if (len(names_list) >= 2):
+            key = names_list[0]
+            alternative_rick_names[key] = names_list[1:]
+
+    return alternative_rick_names
+
+#=============================================================================
+def generate_missing_lithos():
+    '''
+    Generates a list of missing drillhole lithologies from unit data in all data files.
+    '''
+
+    # The Cover unit data file.
+    cover_unit_filename = "data/real/cover_unit.txt"
+
+    # The Ignore items list.
+    ignore_list_filename = "data/real/ignore_list.txt"
+
+    # Alternative rock names file.
+    alternative_rock_names_file = "data/real/alternative_rock_names.txt"
+
+    directory = "data/real/dist_files/litho_tables"
+    #directory = "data/real/dh_files/litho_tables"
+
+    # Drillsample data columns.
+    column_from = 3
+    column_to = 4
+    column_litho = 8
+
+    counter = 0
+
+    # Read the drillhole ignore items list.
+    ignore_list = read_ignore_list(ignore_list_filename)
+
+    # Read the alternative rock names.
+    alternative_rock_names = read_alternative_rock_names(alternative_rock_names_file)
+
+    for file in os.listdir(directory):
+        counter = counter + 1
+        print("PROCESSING FILE NUMBER =", counter)
+
+        filename = os.fsdecode(file)
+        collarID = int(filename[6:-4])
+        print(collarID)
+
+        drillsample_filename = "data/real/dist_files/litho_tables/litho_" + str(collarID) + ".csv"
+        dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
+
+        #drillsample_filename = "data/real/dh_files/litho_tables/litho_" + str(collarID) + ".csv"
+        #dist_table_filename = "data/real/dh_files/dist_tables/100k_map_near_" + str(collarID) + ".csv"
+
+        # Drill sample data.
+        drillsample_data = read_drillsample_data(drillsample_filename, column_from, column_to, column_litho, ignore_list)
+
+        # Unit lithologies and distance data.
+        strat_data, litho2dist = read_strat_data(dist_table_filename, alternative_rock_names)
+
+        # Read the Cover unit lithologies.
+        add_cover_unit("Cover", cover_unit_filename, strat_data, litho2dist)
+
+        # Generating the table of possible strata paths.
+        strata_table = generate_strata_table(drillsample_data, strat_data, litho2dist)
+
+    print("Missing lithologies list:")
+    print("Number lithos missing =", len(missing_lithos))
+    print(missing_lithos)
+
+#=============================================================================
 def main():
     print('Started litho2strat')
 
@@ -1025,8 +1045,11 @@ def main():
     # The Cover unit data file.
     cover_unit_filename = "data/real/cover_unit.txt"
 
-    # The Ignore items list.
+    # The Ignore items list file.
     ignore_list_filename = "data/real/ignore_list.txt"
+
+    # Alternative rock names file.
+    alternative_rock_names_file = "data/real/alternative_rock_names.txt"
 
     # # Mark's new data.
     # collarID = 548917
@@ -1042,8 +1065,8 @@ def main():
     # Mark's data with known solutions.
 
     # TODO: Discuss with Mark - we have here too long Cover...
-    collarID = 1209857
-    #collarID =  353386
+    #collarID = 1209857
+    collarID =  353386
 
     # Confirmed results (using 1 closest unit & single top unit).
     #collarID = 2182336
@@ -1078,8 +1101,11 @@ def main():
     # Commented because it leads to many additional routes when splitting the existing single lithos.
     #drillsample_data = group_drillhole_litho_sequence(drillsample_data)
 
+    # Read the alternative rock names.
+    alternative_rock_names = read_alternative_rock_names(alternative_rock_names_file)
+
     # Read unit lithologies and distance data.
-    strat_data, litho2dist = read_strat_data(dist_table_filename)
+    strat_data, litho2dist = read_strat_data(dist_table_filename, alternative_rock_names)
 
     # Read the Cover unit lithologies.
     add_cover_unit("Cover", cover_unit_filename, strat_data, litho2dist)

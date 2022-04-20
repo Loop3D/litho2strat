@@ -1,0 +1,2 @@
+mudstone, mud, turbidites
+sandstone, sand
