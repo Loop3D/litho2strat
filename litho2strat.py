@@ -34,8 +34,6 @@ number_nearest_units = 1
 single_top_unit = True
 
 #==============================================================================
-# List of all drillhole lithologies.
-all_lithos = []
 # Missing lithos.
 missing_lithos = set()
 
@@ -63,36 +61,34 @@ def get_unique_lithos_from_strat_data(strat_data):
 
     return unique_lithos
 
-#==============================================================================
+#===========================================================================================
 def add_unit_to_distance_map(unit_name, distance, lithos, litho2dist):
     '''
     Adds a unit with its lithologies to the distance map litho2dist.
     '''
     for litho in lithos:
-        if (litho in all_lithos):
-        # Lithology is present in drillhole data.
-            el = (distance, unit_name)
-            if (litho in litho2dist):
-                found_unit = False
-                # Iterate over distance list.
-                for tup in litho2dist[litho]:
-                    if (unit_name == tup[1]):
-                    # Found this unit in the list.
-                        found_unit = True
-                        if (distance < tup[0]):
-                            # Update element to a smaller distance.
-                            litho2dist[litho].remove(tup)
-                            litho2dist[litho].append(el)
-                        break
-                if (not found_unit):
-                    litho2dist[litho].append(el)
-            else:
-                litho2dist[litho] = [el]
-            # Sort the list by distance.
-            litho2dist[litho].sort(key=lambda tup: tup[0])
+        el = (distance, unit_name)
+        if (litho in litho2dist):
+            found_unit = False
+            # Iterate over distance list.
+            for tup in litho2dist[litho]:
+                if (unit_name == tup[1]):
+                # Found this unit in the list.
+                    found_unit = True
+                    if (distance < tup[0]):
+                        # Update element to a smaller distance.
+                        litho2dist[litho].remove(tup)
+                        litho2dist[litho].append(el)
+                    break
+            if (not found_unit):
+                litho2dist[litho].append(el)
+        else:
+            litho2dist[litho] = [el]
+        # Sort the list by distance.
+        litho2dist[litho].sort(key=lambda tup: tup[0])
 
-#==============================================================================
-def read_strat_data(dist_table_filename, alternative_rock_names):
+#====================================================================================
+def read_strat_data(dist_table_filename, drillhole_lithos, alternative_rock_names):
     '''
     Building lithologies list for every unit from csv file data.
     '''
@@ -196,8 +192,8 @@ def read_strat_data(dist_table_filename, alternative_rock_names):
     strat_filtered = dict()
     for unit_name in strat_all:
         for litho in strat_all[unit_name]:
-            if (litho in all_lithos):
-            # Lithology is present in drillhole data.
+            # Only add lithologies that are present in drillhole data.
+            if (litho in drillhole_lithos):
                 if (unit_name in strat_filtered):
                     strat_filtered[unit_name].append(litho)
                 else:
@@ -240,7 +236,7 @@ def read_drillsample_data(filename, column_from, column_to, column_litho, ignore
     Reading drill sample data from csv file.
     '''
     data = []
-    all_lithos.clear()
+    all_lithos = set()
     with open(filename, 'r') as csvfile:
         # Reading the csv data.
         csvreader = csv.reader(csvfile, delimiter=',')
@@ -258,10 +254,7 @@ def read_drillsample_data(filename, column_from, column_to, column_litho, ignore
 
             if (litho_name not in ignore_list):
                 data.append(row_formatted)
-
-                # Add lithology to the global list of all lithos.
-                if (litho_name not in all_lithos):
-                    all_lithos.append(litho_name)
+                all_lithos.add(litho_name)
 
     print(all_lithos)
     print("The number of drillhole lithologies: " + str(len(all_lithos)))
@@ -528,6 +521,17 @@ def get_unit_names(strat_data):
     for unit_name in strat_data:
         unit_names.append(unit_name)
     return unit_names
+
+#==============================================================================
+def get_drillhole_lithos(drillsample_data):
+    '''
+    Returns the drillhole lithologies from drillsample data.
+    '''
+    lithos = set()
+    for row in drillsample_data:
+        litho = row[2]
+        lithos.add(litho)
+    return lithos
 
 #==============================================================================
 def generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_data, graph):
@@ -1015,7 +1019,8 @@ def generate_missing_lithos():
         drillsample_data = read_drillsample_data(drillsample_filename, column_from, column_to, column_litho, ignore_list)
 
         # Unit lithologies and distance data.
-        strat_data, litho2dist = read_strat_data(dist_table_filename, alternative_rock_names)
+        drillhole_lithos = get_drillhole_lithos(drillsample_data)
+        strat_data, litho2dist = read_strat_data(dist_table_filename, drillhole_lithos, alternative_rock_names)
 
         # Read the Cover unit lithologies.
         add_cover_unit("Cover", cover_unit_filename, strat_data, litho2dist)
@@ -1101,7 +1106,8 @@ def main():
     alternative_rock_names = read_alternative_rock_names(alternative_rock_names_file)
 
     # Read unit lithologies and distance data.
-    strat_data, litho2dist = read_strat_data(dist_table_filename, alternative_rock_names)
+    drillhole_lithos = get_drillhole_lithos(drillsample_data)
+    strat_data, litho2dist = read_strat_data(dist_table_filename, drillhole_lithos, alternative_rock_names)
 
     # Read the Cover unit lithologies.
     add_cover_unit("Cover", cover_unit_filename, strat_data, litho2dist)
