@@ -366,9 +366,6 @@ def generate_strata_table(drillsample_data, strat_data, litho2dist):
 
     strata_table = np.full((num_rows, num_units), False)
 
-    unit_names = get_unit_names(strat_data)
-    cover_unit_index = unit_names.index('Cover')
-
     new_row_index = 0
 
     for row in drillsample_data[:]:
@@ -575,7 +572,6 @@ def generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_da
     # Going through the strata table and generating the routes.
     for row in range(1, row_max):
         current_litho = drillsample_data[row][2]
-        current_litho_index = all_lithos.index(current_litho)
         previous_litho = drillsample_data[row - 1][2]
 
         num_routes = len(all_routes)
@@ -1035,8 +1031,8 @@ def generate_missing_lithos():
 def main():
     print('Started litho2strat')
 
-    generate_missing_lithos()
-    exit()
+    #generate_missing_lithos()
+    #exit()
 
     # Topology file.
     topology_filename = "data/real/ASUD_strat.gml"
@@ -1065,11 +1061,11 @@ def main():
     # Mark's data with known solutions.
 
     # TODO: Discuss with Mark - we have here too long Cover...
-    collarID = 1209857
+    #collarID = 1209857
     #collarID =  353386
 
     # Confirmed results (using 1 closest unit & single top unit).
-    #collarID = 2182336
+    collarID = 2182336
     #collarID = 2182335
     #collarID = 2182340
     #collarID = 2182339
