@@ -923,7 +923,7 @@ def plot_unit_probabilities(all_routes, drillsample_data, unit_names):
         axs[j, 0].scatter(x_data, strat_distr[:, i], s=5, c=color, zorder=2)
 
         axs[j, 0].set_title(unit_names[i], size=9, y=0.91)
-        axs[j, 0].set_ylabel(str(j + 1))
+        axs[j, 0].set_ylabel(str(j))
 
         if (i != num_units - 1):
             # Hide tick labels.
@@ -1082,10 +1082,11 @@ def main():
 
     # TODO: Discuss with Mark - we have here too long Cover...
     #collarID = 1209857
-    #collarID =  353386
+    #collarID = 353386
+    collarID = 2182301
 
     # Confirmed results (using 1 closest unit & single top unit).
-    collarID = 2182336
+    #collarID = 2182336
     #collarID = 2182335
     #collarID = 2182340
     #collarID = 2182339
