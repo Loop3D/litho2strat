@@ -102,6 +102,8 @@ def read_strat_data(dist_table_filename, drillhole_lithos, alternative_rock_name
     dist_column = 5
     # LITHNAME1 column.
     lithname1_column = 10
+    # Description column.
+    descript_column = 3
 
     # Converter from string to list.
     str2list = lambda x: x.strip("[]").replace("'", "").replace(" ", "").split(",")
@@ -132,12 +134,17 @@ def read_strat_data(dist_table_filename, drillhole_lithos, alternative_rock_name
             unit_name = unit_name.replace(" ", "_").replace(",", "_")
 
             #=========================================
-            # Fix for "mudstone". 
-            # TODO: Add mudstone to "lithos" column in the original data.
+            # Hard fixes for "mudstone" and "coal". 
+            # TODO: Fix the original data.
             #=========================================
             lithname1 = row[lithname1_column]
             if ("mudstone" in lithname1):
                 lithos.append("mudstone")
+
+            description = row[descript_column]
+            if ("coal" in description):
+                lithos.append("coal")
+                lithos.append("lignite")
 
             #=========================================
             # Fixing the litho names.
@@ -1041,7 +1048,7 @@ def main():
 
     # Topology file.
     topology_filename = "data/real/ASUD_strat.gml"
-    #topology_filename = "data/real/graph_strat_NONE.gml"
+    #topology_filename = "data/real/ASUD_strat2.gml"
 
     # The Cover unit data file.
     cover_unit_filename = "data/real/cover_unit.txt"
