@@ -360,6 +360,7 @@ def generate_strata_table(drillsample_data, strat_data, litho2dist):
     '''
     num_rows = len(drillsample_data)
     num_units = len(strat_data)
+    unit_names = get_unit_names(strat_data)
 
     print("num_rows (before) = ", num_rows)
     print("num_units = ", num_units)
@@ -396,14 +397,16 @@ def generate_strata_table(drillsample_data, strat_data, litho2dist):
                 if (closest_unit_distance > 0):
                     print("WARNING: The closest distance to the top unit > 0! Dist =", closest_unit_distance)
 
-                for unit_index, unit_name in enumerate(strat_data):
+                for unit_name in strat_data:
                     if (unit_name == closest_unit or (add_cover and unit_name == 'Cover')):
                         litho_found = True
+                        unit_index = unit_names.index(unit_name)
                         strata_table[new_row_index, unit_index] = True
         else:
-            for unit_index, unit_name in enumerate(strat_data):
+            for unit_name in strat_data:
                 if (litho in strat_data[unit_name]):
                     litho_found = True
+                    unit_index = unit_names.index(unit_name)
                     strata_table[new_row_index, unit_index] = True
 
         if (not litho_found):
@@ -522,11 +525,16 @@ def apply_topology_constraints(graph, unit_names, strat0, strata_list):
 #==============================================================================
 def get_unit_names(strat_data):
     '''
-    Maps unit index to unit name.
+    Defines the mapping between the unit index and unit name.
     '''
     unit_names = []
     for unit_name in strat_data:
-        unit_names.append(unit_name)
+        if (unit_name == 'Cover'):
+            # Map the Cover's index to zero.
+            unit_names.insert(0, unit_name)
+        else:
+            unit_names.append(unit_name)
+
     return unit_names
 
 #==============================================================================
