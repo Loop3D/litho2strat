@@ -19,3 +19,7 @@ shear_zone
 stylolites
 vein
 complex
+ore
+magnetitite
+massive_sulphide
+mineralisation
