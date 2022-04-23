@@ -895,8 +895,16 @@ def plot_unit_probabilities(all_routes, drillsample_data, unit_names):
 
     num_rows = len(all_routes[0].path)
 
-    # Using the "From" column.
-    x_data = [float(d[0]) for d in drillsample_data[0:num_rows]]
+    #-------------------------------------------------------------
+    # Adding the "From" and "To" depths for visualisation.
+    x_data = []
+    for d in drillsample_data[0:num_rows]:
+        x_data.append(float(d[0])) # "From" depth.
+        x_data.append(float(d[1])) # "To" depth.
+
+    # Duplicate each value, as the probability is the same between the "From" and "To" depths.
+    strat_distr = np.repeat(strat_distr, 2, axis=0)
+    #-------------------------------------------------------------
 
     j = 0
     for i in range(num_units):
@@ -908,12 +916,7 @@ def plot_unit_probabilities(all_routes, drillsample_data, unit_names):
         axs[j, 0].plot(x_data, strat_distr[:, i], zorder=1, c='blue')
 
         # Set red color for zero data.
-        color = ['red' if d <= 0 else 'blue' for d in strat_distr[:, i]]
-
-        # Set green color for the route with the highest score.
-        for row in range(num_rows):
-            if (all_routes[index_max].path[row] == i):
-                color[row] = 'green'
+        color = ['red' if p <= 0 else 'blue' for p in strat_distr[:, i]]
 
         # Plot dots.
         axs[j, 0].scatter(x_data, strat_distr[:, i], s=5, c=color, zorder=2)
@@ -1079,10 +1082,11 @@ def main():
     # TODO: Discuss with Mark - we have here too long Cover...
     #collarID = 1209857
     #collarID = 353386
-    collarID = 2182301
+    #collarID = 2182301
+    #collarID = 810340
 
     # Confirmed results (using 1 closest unit & single top unit).
-    #collarID = 2182336
+    collarID = 2182336
     #collarID = 2182335
     #collarID = 2182340
     #collarID = 2182339
