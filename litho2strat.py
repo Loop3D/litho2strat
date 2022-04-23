@@ -149,12 +149,7 @@ def read_strat_data(dist_table_filename, drillhole_lithos, alternative_rock_name
             #=========================================
             # Fixing the litho names.
             #=========================================
-            lithos2 = list()
-            for litho in lithos:
-                litho2 = fix_litho_name(litho)
-                lithos2.append(litho2)
-
-            lithos = [l for l in lithos2]
+            lithos = [fix_litho_name(l) for l in lithos]
 
             #=========================================
             # Adding the alternative litho names.
@@ -166,6 +161,7 @@ def read_strat_data(dist_table_filename, drillhole_lithos, alternative_rock_name
                         alt_lithos.extend(alt_names)
 
             lithos.extend(alt_lithos)
+
             # Remove duplicates.
             lithos = list(dict.fromkeys(lithos))
 
