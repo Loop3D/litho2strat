@@ -14,7 +14,7 @@ import tracemalloc
 import os
 
 # 'Returning to the same unit' constraints.
-max_num_returns_per_unit = 1
+max_num_returns_per_unit = 2
 #---------------------------------------------------------------------------
 # Adding thickness constraints. (Requires unit thickness data).
 add_thickness_constraints = False
@@ -28,7 +28,7 @@ ignore_unit_age = True
 max_num_unit_contacts_inside_litho = 0
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
-number_nearest_units = 1
+number_nearest_units = 2
 #---------------------------------------------------------------------------
 # Use the single closest unit for the top (first) lithology.
 single_top_unit = True
@@ -233,36 +233,61 @@ def read_strat_data(dist_table_filename, drillhole_lithos, alternative_rock_name
 
     return strat_dist, litho2dist
 
-#==============================================================================
-def read_drillsample_data(filename, column_from, column_to, column_litho, ignore_list):
+#========================================================================================
+def test_column_exist(column_name, fieldnames):
+    '''
+    Tests if the column name is present in the fieldnames list.
+    '''
+    if (column_name not in fieldnames):
+        print("Error: The column name is not found in drillsample data header:", column_name)
+        exit()
+
+#========================================================================================
+def read_drillsample_data(filename, header_from, header_to, header_lithos, ignore_list):
     '''
     Reading drill sample data from csv file.
     '''
-    data = []
+    all_data = []
     all_lithos = set()
+
     with open(filename, 'r') as csvfile:
-        # Reading the csv data.
-        csvreader = csv.reader(csvfile, delimiter=',')
-        # Skipping the header.
-        next(csvreader)
+        reader = csv.DictReader(csvfile, delimiter=',')
+
+        # The header column names.
+        fieldnames = reader.fieldnames
+
+        # Sanity check.
+        test_column_exist(header_from, fieldnames)
+        test_column_exist(header_to, fieldnames)
+        test_column_exist(header_lithos, fieldnames)
+
         # Extracting the data for every csv row.
-        for row in csvreader:
+        for row in reader:
             # Extract the data columns.
-            row_formatted = list(range(3))
-            row_formatted[0] = row[column_from]  # From Depth
-            row_formatted[1] = row[column_to]    # To Depth
-            row_formatted[2] = row[column_litho] # Lithology
+            data = list(range(4))
+            data[0] = row[header_from]   # From Depth
+            data[1] = row[header_to]     # To Depth
 
-            litho_name = row_formatted[2]
+            data[3] = row[header_lithos].split(", ") # Lithologies
 
-            if (litho_name not in ignore_list):
-                data.append(row_formatted)
-                all_lithos.add(litho_name)
+            # Set the single lithology value.
+            if (isinstance(data[3], list)):
+            # List of lithologies. Pick the first one (most probable).
+                data[2] = data[3][0]
+            else:
+            # Not a list (for legacy data support).
+                data[2] = data[3]
+
+            litho = data[2]
+
+            if (litho not in ignore_list):
+                all_data.append(data)
+                all_lithos.add(litho)
 
     print(all_lithos)
     print("The number of drillhole lithologies: " + str(len(all_lithos)))
 
-    return data
+    return all_data
 
 #==============================================================================
 def group_drillhole_litho_sequence(data):
@@ -1002,11 +1027,11 @@ def generate_missing_lithos():
     directory = "data/real/dist_files/litho_tables"
     #directory = "data/real/dh_files/litho_tables"
 
-    # Drillsample data columns.
-    column_from = 3
-    column_to = 4
-    column_litho = 8
-
+    # Drillsample data column names.
+    header_from = 'Fromdepth'
+    header_to = 'Todepth'
+    header_lithos = 'Lithologies'
+    
     counter = 0
 
     # Read the drillhole ignore items list.
@@ -1023,14 +1048,14 @@ def generate_missing_lithos():
         collarID = int(filename[6:-4])
         print(collarID)
 
-        drillsample_filename = "data/real/dist_files/litho_tables/litho_" + str(collarID) + ".csv"
+        drillsample_filename = "data/real/dist_files/litho_tables_V2/litho_" + str(collarID) + ".csv"
         dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
 
         #drillsample_filename = "data/real/dh_files/litho_tables/litho_" + str(collarID) + ".csv"
         #dist_table_filename = "data/real/dh_files/dist_tables/100k_map_near_" + str(collarID) + ".csv"
 
         # Drill sample data.
-        drillsample_data = read_drillsample_data(drillsample_filename, column_from, column_to, column_litho, ignore_list)
+        drillsample_data = read_drillsample_data(drillsample_filename, header_from, header_to, header_lithos, ignore_list)
 
         # Unit lithologies and distance data.
         drillhole_lithos = get_drillhole_lithos(drillsample_data)
@@ -1066,24 +1091,25 @@ def main():
     # Alternative rock names file.
     alternative_rock_names_file = "data/real/alternative_rock_names.txt"
 
-    # # Mark's new data.
+    #----------------------------------------------------------------------------
+    # # Mark's data.
     # collarID = 548917
     # drillsample_filename = "data/real/dh_files/litho_tables/litho_" + str(collarID) + ".csv"
     # dist_table_filename = "data/real/dh_files/dist_tables/100k_map_near_" + str(collarID) + ".csv"
     #
-    # # Drillsample data columns.
-    # column_from = 4
-    # column_to = 5
-    # column_litho = 8
+    # # Drillsample data column names.
+    # header_from = 'FromDepth'
+    # header_to = 'ToDepth'
+    # header_lithos = 'CET_Litho'
 
-    #--------------------------------------------------------------------------------------------------
+    #----------------------------------------------------------------------------
     # Mark's data with known solutions.
-
+    #----------------------------------------------------------------------------
     # TODO: Discuss with Mark - we have here too long Cover...
     #collarID = 1209857
     #collarID = 353386
     #collarID = 2182301
-    #collarID = 810340
+    #collarID = 81034
 
     # Confirmed results (using 1 closest unit & single top unit).
     collarID = 2182336
@@ -1097,13 +1123,13 @@ def main():
     # TODO: Discuss with Mark - we have here conglomerate, which is rock, and then gravel, which we define as 'always Cover'. Thus we have the Cover below the rock here.
     #collarID = 1209855
 
-    drillsample_filename = "data/real/dist_files/litho_tables/litho_" + str(collarID) + ".csv"
+    drillsample_filename = "data/real/dist_files/litho_tables_V2/litho_" + str(collarID) + ".csv"
     dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
 
-    # Drillsample data columns.
-    column_from = 3
-    column_to = 4
-    column_litho = 8
+    # Drillsample data column names.
+    header_from = 'Fromdepth'
+    header_to = 'Todepth'
+    header_lithos = 'Lithologies'
 
     #--------------------------------------------------------------
     # Reading the input data.
@@ -1112,7 +1138,7 @@ def main():
     ignore_list = read_ignore_list(ignore_list_filename)
 
     # Read drill sample data.
-    drillsample_data = read_drillsample_data(drillsample_filename, column_from, column_to, column_litho, ignore_list)
+    drillsample_data = read_drillsample_data(drillsample_filename, header_from, header_to, header_lithos, ignore_list)
 
     # Group the litho sequence inside the drillhole data.
     # Commented because it leads to many additional routes when splitting the existing single lithos.
