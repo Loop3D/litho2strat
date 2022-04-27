@@ -359,6 +359,8 @@ def read_topology_data(topology_filename):
     '''
     Read topology data (gml format graph) from a file.
     '''
+    print('Importing the graph data...')
+
     # Import graph from a file.
     Gf = nx.read_gml(topology_filename)
 
@@ -371,6 +373,8 @@ def read_topology_data(topology_filename):
     if (ignore_unit_age):
     # Ignore graph edge direction defining the unit age.
         Gf = Gf.to_undirected()
+
+    print('Importing completed.')
 
     return Gf
 
@@ -1079,8 +1083,8 @@ def main():
     #exit()
 
     # Topology file.
-    topology_filename = "data/real/ASUD_strat.gml"
-    #topology_filename = "data/real/ASUD_strat2.gml"
+    #topology_filename = "data/real/ASUD_strat.gml"
+    topology_filename = "data/real/ASUD_strat2.gml"
 
     # The Cover unit data file.
     cover_unit_filename = "data/real/cover_unit.txt"
