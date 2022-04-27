@@ -270,13 +270,8 @@ def read_drillsample_data(filename, header_from, header_to, header_lithos, ignor
 
             data[3] = row[header_lithos].split(", ") # Lithologies
 
-            # Set the single lithology value.
-            if (isinstance(data[3], list)):
             # List of lithologies. Pick the first one (most probable).
-                data[2] = data[3][0]
-            else:
-            # Not a list (for legacy data support).
-                data[2] = data[3]
+            data[2] = data[3][0]
 
             litho = data[2]
 
@@ -1111,12 +1106,12 @@ def main():
     #----------------------------------------------------------------------------
     # TODO: Discuss with Mark - we have here too long Cover...
     #collarID = 1209857
-    #collarID = 353386
+    collarID = 353386
     #collarID = 2182301
     #collarID = 81034
 
     # Confirmed results (using 1 closest unit & single top unit).
-    collarID = 2182336
+    #collarID = 2182336
     #collarID = 2182335
     #collarID = 2182340
     #collarID = 2182339
