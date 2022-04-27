@@ -1,0 +1,31 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+1361,592,2181796,70,72.54,L BN fine-med quartz sands and WT coarse Q sands in a clay matrix.,mud,100,mud,sediment_clastic,sediment,,"sand, mud","101, 101"
+1362,592,2181796,72,74.6,Fine Q sand/silt in clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+1363,592,2181796,74,77.62,Med-coarse Q sands in clay matrix,mud,100,mud,sediment_clastic,sediment,,mud,101
+1364,592,2181796,77,79.02,Weakly pisolitic G in a mottled WT-RD-BN clay matrix,mud,100,mud,sediment_clastic,sediment,,mud,101
+1365,592,2181796,79,82.82,Piso G in a WT-L BN clay matrix. Hem masses/frags soft-hard 80.45 - 80.70m,mud,100,mud,sediment_clastic,sediment,,mud,100
+1366,592,2181796,93,95.35,Limonite dominant with diffuse WT clay and D BN Mn bands,mud,100,mud,sediment_clastic,sediment,,"mud, migmatite, banded_iron_formation","101, 67, 48"
+1367,592,2181796,96,100.78,L BN clay with weatherd goethitic > hematitic frags/lenses up to 100mm,mud,100,mud,sediment_clastic,sediment,,"mud, iron_sediment","101, 43"
+1368,592,2181796,104,108.5,Friable limonite and clays after shale. Minor bedded goeth and hem more indurated,mud,101,mud,sediment_clastic,sediment,,"mud, aeolinite, mineralisation","100, 64, 58"
+1369,592,2181796,108,110.1,Spoken with Westcore about washing core! Soft weathered pale microbanded chert > hem ,chert,100,chert,siliceous,sedimentary_rock,,"chert, saprock","100, 62"
+1370,592,2181796,110,110.5,Soft friable weakly goethitised chert. Faint microbanding visible,chert,100,chert,siliceous,sedimentary_rock,,chert,100
+1371,592,2181796,110,113.78,Soft friable chert. Some microbanding. Ocasional hard strongly-bedding goeth and hem,chert,100,chert,siliceous,sedimentary_rock,,"chert, head","100, 57"
+1372,592,2181796,114,115.7,Friable hem > pale microbanded chert. Bedding texture preserved. C stockworked with fractures and veinlets.,chert,100,chert,siliceous,sedimentary_rock,,"chert, vein, trachyte","100, 93, 62"
+1373,592,2181796,115,117.88,Friable massive hematitic materialwith goethitic frags and beds clearly disrupted by deformation. Several quartz veins approx 5mm thick with one at 116.02m showing well-developed euhedral Q crystals up to 10mm.,vein,100,vein,fillings,texture_structure,,"vein, komatiite, alkali_feldspar_rhyolite","100, 47, 43"
+1374,592,2181796,120,122.7,Massive with rare preserved bedding. Hem and Goeth with soft pale weathered chert frags/bands. Clay after S also,mud,100,mud,sediment_clastic,sediment,,"mud, regolith, marble, ","101, 62, 41, 0"
+1375,592,2181796,122,126.9,Pale microbanded chert > hem > goeth.,chert,100,chert,siliceous,sedimentary_rock,,chert,100
+1376,592,2181796,127,128.9,Competent bedded biffy interval. C now harder. Also orange Q vein at 127.85m,vein,100,vein,fillings,texture_structure,,vein,101
+1377,592,2181796,128,129.2,Highly broken zone. Light YB chert and goethd chert.,chert,101,chert,siliceous,sedimentary_rock,,"chert, chert","101, 101"
+1378,592,2181796,129,131.02,Less broken bedded hem > soft goethd chert > soft pale microbanded chert. Trace Q vein,vein,101,vein,fillings,texture_structure,,vein,101
+1379,592,2181796,131,134.5,Bedding barely preserved. Goeth dominant massive material cut by mm scale Q veins. Also minor clay and ?ferrug shale,mudstone,101,mudstone,clastic,sedimentary_rock,,"mud, mudstone","101, 101"
+1380,592,2181796,134,136.15,Similar to above. No apparent bedding. Hem dominant. Slickenside surface and irregular 3-15mm Q vein present,vein,100,vein,fillings,texture_structure,,"vein, mud, melilitolite","100, 55, 35"
+1381,592,2181796,136,137.5,RB ferruginous shale cut by abundant wavey parallel Q veinlets. Occasional 5+mm euhedral Q Xals,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+1382,592,2181796,137,138.8,Similar to above though Q veins thicker and less frequent approx 15% total More hematite also,vein,100,vein,fillings,texture_structure,,"vein, mud, anthracite","100, 55, 46"
+1383,592,2181796,140,142.98,Still broken and friable material dominated by both RB and D GY ?specular hematite. Vein Q significant approx 10%. Minor limonite also.,vein,100,vein,fillings,texture_structure,,"vein, till, artificial_material","100, 54, 54"
+1384,592,2181796,142,143.03,GY-OG quartz vein. Cemented highly irregular form. Some euhedral crystals included,vein,100,vein,fillings,texture_structure,,vein,100
+1385,592,2181796,143,147.9,Broken friable rock. Soft RB shale > bedded highly-specular hematitie. Still Q vein: approx 5%.,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+1386,592,2181796,148,152.6,Bedded ferrug shale with 25% specular hematite and trace 5% Q vein. Q vein increasing towards base,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, vein, iron_sand","101, 100, 67"
+1387,592,2181796,152,154.0,Broken friable interval with goeth fragments in a massive clay/limonitic matrix,mud,100,mud,sediment_clastic,sediment,,"mud, hornblendite","100, 50"
+1388,592,2181796,154,154.45,Roughly equal proportions G C and L. Modly broken and mm-scale hem beds within the chert bands,chert,100,chert,siliceous,sedimentary_rock,,"chert, blockfield, lime_microsparstone","100, 50, 40"
+1389,592,2181796,155,156.8,Roughly equal proportions 1 H and C. Goethd chert soft very crumbly. C and hem BIF hard competent,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,"chert, banded_iron_formation, tephritic_phonolite","100, 100, 40"
+1390,592,2181796,156,158.4,Chert dominant interval: approx 60%. Highy broken core,chert,100,chert,siliceous,sedimentary_rock,,chert,100

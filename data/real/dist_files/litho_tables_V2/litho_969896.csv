@@ -1,0 +1,5 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+265,60,969896,3,4.0,Opaque chert,chert,101,chert,siliceous,sedimentary_rock,,chert,101
+266,60,969896,4,5.0,Opaque chert,chert,101,chert,siliceous,sedimentary_rock,,chert,101
+267,60,969896,5,6.0,Opaque chert,chert,101,chert,siliceous,sedimentary_rock,,chert,101
+268,60,969896,6,7.0,Opaque chert - soft ?denatured,chert,100,chert,siliceous,sedimentary_rock,,chert,100

@@ -1,0 +1,5 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+6737,2670,2470319,17,36.0,Q at contact:,contact,101,contact,contact,texture_structure,,contact,101
+6738,2670,2470319,36,40.0,light and dark brown sediment bcoming cherty in places?,sediment,100,sediment,sediment,sediment,,"sediment, lignite","100, 67"
+6739,2670,2470319,54,70.0,change to more brown K and mnr CHL schist?,schist,101,schist,schist,metamorphic_rock,,"schist, channel, lignite","101, 77, 59"
+6740,2670,2470319,70,78.0,interbedded shale and basalt-volcanic?,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,101

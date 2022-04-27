@@ -1,0 +1,11 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+3566,592,2182085,28,30.0,Gritty clay. Some wihte ?lac,mud,100,mud,sediment_clastic,sediment,,mud,100
+3567,592,2182085,30,32.0,Gritty clay. Some wihte ?lac,mud,100,mud,sediment_clastic,sediment,,mud,100
+3568,592,2182085,32,34.0,Gritty clay. Some wihte ?lac,mud,100,mud,sediment_clastic,sediment,,mud,100
+3569,592,2182085,36,38.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3570,592,2182085,40,42.0,Fe-stained white clays contd,exotic_crystalline_igneous_rock,101,exotic_crystalline_igneous_rock,exotic_crystalline,igneous_rock,,mud,100
+3571,592,2182085,46,48.0,Possible BOT!? White ?lacustrine clays ending,mud,100,mud,sediment_clastic,sediment,,mud,100
+3572,592,2182085,50,52.0,This clay-rich material very likely in-situ.,mud,100,mud,sediment_clastic,sediment,,pyroclastic_sediment,57
+3573,592,2182085,54,56.0,Strata possibly forced up from thrust ,fault,101,fault,breaks,texture_structure,,fault,101
+3574,592,2182085,56,58.0,fault and weathered to a greater extent ,fault,100,fault,breaks,texture_structure,,"fault, intermediate","101, 54"
+3575,592,2182085,82,84.0,Pinkish-red dolomite,dolostone,101,dolostone,carbonate,sedimentary_rock,,dolostone,101

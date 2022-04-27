@@ -1,0 +1,14 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+539,592,2181758,0,7.0,cementd transd materail w/ high density <10mm maghemite pisoids in silt-clay matrix - monomict,mud,100,mud,sediment_clastic,sediment,,picrite,34
+540,592,2181758,7,7.6,cementd transd silt-clays with decreased clasts - clay/silt rich,mud,100,mud,sediment_clastic,sediment,,"mud, cementation_front","100, 58"
+541,592,2181758,7,9.5,matrix supported transd cover with polymict clasts - 5-40mm sub-angular clasts H G C; incg CR-PK clays,mud,101,mud,sediment_clastic,sediment,,"cover, mud, mylonite","101, 101, 47"
+542,592,2181758,9,18.5,mostly matrix cr-wt clay LWA origin? supportd transd cover - 5-10mm sub-rounded clasts G & F/S/K; brwn on outside,cover,100,cover,natural_superficial_ground,surficial_rock,,"mud, gabbroid","100, 50"
+543,592,2181758,18,22.7,as above but less clast material incg clay; grading from 22.3 into:,mud,100,mud,sediment_clastic,sediment,,"mud, exotic_crystalline_igneous_rock","101, 101"
+544,592,2181758,28,32.8,bedd Mt New enrichd BIF vitG>oG>H rich at 30-31m w/ mnr WT K remaing in vughs - very wk hardcap developt only <2% vughs,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,banded_iron_formation,100
+545,592,2181758,32,36.8,wk bedd Mt New mainly G enrichd BIF w/ interbedd Kafter shale rich zones 32.8-33.4 34.6-35m,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,mudstone,100
+546,592,2181758,40,40.7,wkly bedd vitreous G w/ mnr limonite/limonitic shale? beds; SHARP AT:,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, sapropel","100, 62"
+547,592,2181758,46,47.9,PINK SHALE RICH MARKER zone Mt New w/ mnr to trc G/oG,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, unclassified_rock","100, 46"
+548,592,2181758,61,63.9,interbedd oG/L shales & incg vitG w/ interbedd clay/S zones most obvious @ 61.3-61.8m and 63.2-63.9m,mud,100,mud,sediment_clastic,sediment,,"exotic_crystalline_igneous_rock, mud","101, 100"
+549,592,2181758,63,65.5,bedd enrichd Mt New BIF vitG>oG/L biscuity in places; SHARP AT:,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,"banded_iron_formation, sapropel","100, 62"
+550,592,2181758,65,66.9,PINK SHALE MARKER BED w/ trc vitG and Qz at 66-66.1m = structure??,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, quartz_trachyte","100, 52"
+551,592,2181758,66,71.6,intebedd hematised? S & G & trc vitH; barren shale at 69.9-70.3m; SHARP AT:,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, sapropel, iron_sediment","101, 62, 52"

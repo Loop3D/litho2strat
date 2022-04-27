@@ -1,0 +1,21 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+636,592,2181765,35,39.95,Interval of silt sized to fine grained sand forming a matrix for intermittant angular maghemite/FeO clasts.,mud,100,mud,sediment_clastic,sediment,,"mud, sand","100, 100"
+637,592,2181765,39,46.5,Possible sandstonecomposed of fine grained cemented quartz with maghemite present intermittently,sandstone,100,sandstone,clastic,sedimentary_rock,,"vein, diorite","101, 48"
+638,592,2181765,47,50.83,Silicified hardcap with goethite and quartz between 48.7m to 49m.,vein,100,vein,fillings,texture_structure,,"vein, exotic_crystalline_igneous_rock, iron_mud, gossan","101, 101, 80, 60"
+639,592,2181765,50,54.3,Goethite and och G interbedded with fissile ferrug shale,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, iron_mud, mud","101, 80, 60"
+640,592,2181765,54,54.9,Crumbly ferrug shale - weathered.,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,101
+641,592,2181765,55,63.37,Yellow F shale weathered to white clay which is limonitic in part. Fe0 frags present from 62.25m,mud,100,mud,sediment_clastic,sediment,,"mudstone, mud","101, 100"
+642,592,2181765,63,64.23,Hard mesobeds of goethite with softer F shale,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, iron_mud","101, 69"
+643,592,2181765,64,64.93,Limonitic clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+644,592,2181765,64,70.8,Thinly bedded fissile ferrug shale with minor harder G beds.,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, unclassified_rock","101, 53"
+645,592,2181765,72,73.8,Thinly bedded soft fissile material with harder goethite beds.Soft = F shale? Minor L.,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, artificial_material","100, 51"
+646,592,2181765,73,74.42,Soft weathered shale.,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+647,592,2181765,74,76.35,Interbedded F shale with minor G,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, bog","101, 50"
+648,592,2181765,76,78.08,Hard mesobeds of silicious goethite with soft F-shale/Limonite,mudstone,100,mudstone,clastic,sedimentary_rock,,"ironstone, iron_mudstone","74, 55"
+649,592,2181765,79,80.18,Soft bedded shale with darker bands <1mm.,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, chert","101, 61"
+650,592,2181765,82,83.7,Vry broken core composed of fissile shale weathered to clay - limonitic in part.,mud,100,mud,sediment_clastic,sediment,,"mudstone, mud","101, 100"
+651,592,2181765,83,88.7,Fractured hard enriched core composed of hematite/goethite some och G with minor very red hematititic shale.,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, komatiite","101, 38"
+652,592,2181765,93,97.7,Very broken core/rubble consisting of hematite/goethite weathered to limonite with minor areas of shale rich material weathered to pink clay  at 93.2mmarker bed?,mud,100,mud,sediment_clastic,sediment,,"mudstone, mud, lignite, marble","100, 100, 80, 39"
+653,592,2181765,97,99.8,Harder silicfied goethite interbedded with softer och G. Pink S bed at 95.26 to 95.6m weathered to clay in part.,mud,100,mud,sediment_clastic,sediment,,"exotic_crystalline_igneous_rock, mud, iron_sand, chert","101, 100, 59, 50"
+654,592,2181765,99,102.8,Start of McLeod. Chert micro to mesobanded beds some vitreous G and F shale weathered to pink clay .,mud,101,mud,sediment_clastic,sediment,,"mudstone, mud, chert, spilite","101, 101, 100, 47"
+655,592,2181765,102,106.0,Chert with minor jasperlite rich BIF 1-2cm bands.,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,"chert, banded_iron_formation","101, 100"

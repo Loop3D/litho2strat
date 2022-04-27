@@ -1,0 +1,19 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+3238,592,2182067,42,44.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3239,592,2182067,44,46.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3240,592,2182067,50,52.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3241,592,2182067,52,54.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3242,592,2182067,58,60.0,Calcareous material. In TRANS. ?Calcrete,calcrete,101,calcrete,residual_deposit,surficial_rock,,calcrete,101
+3243,592,2182067,60,62.0,Calcareous material. In TRANS. ?Calcrete,calcrete,101,calcrete,residual_deposit,surficial_rock,,calcrete,101
+3244,592,2182067,62,64.0,Gritty clay. Fizzes weakly,mud,100,mud,sediment_clastic,sediment,,mud,100
+3245,592,2182067,64,66.0,Also trace dol shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+3246,592,2182067,68,70.0,Gritty clay  ,mud,101,mud,sediment_clastic,sediment,,mud,101
+3247,592,2182067,70,72.0,Clay fizzes. Dol chips dont!! De-dolomitised?,mud,100,mud,sediment_clastic,sediment,,mud,100
+3248,592,2182067,78,80.0,Gritty clay. No apparent fizz,mud,100,mud,sediment_clastic,sediment,,mud,100
+3249,592,2182067,80,82.0,No clay fizz,mud,100,mud,sediment_clastic,sediment,,mud,100
+3250,592,2182067,82,84.0,No clay fizz,mud,100,mud,sediment_clastic,sediment,,mud,100
+3251,592,2182067,84,86.0,Mix of F G and H in L clay,mud,101,mud,sediment_clastic,sediment,,"mud, migmatite","101, 40"
+3252,592,2182067,96,98.0,L clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3253,592,2182067,98,100.0,L clay. Vuggy G and H,mud,100,mud,sediment_clastic,sediment,,"mud, unclassified_rock","100, 50"
+3254,592,2182067,100,102.0,L clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3255,592,2182067,154,156.0,This zone: Chert cream >> green,chert,100,chert,siliceous,sedimentary_rock,,chert,100

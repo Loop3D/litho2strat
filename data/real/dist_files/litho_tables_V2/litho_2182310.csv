@@ -1,0 +1,19 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+5715,592,2182310,0,4.6,transported silt clay and rounded maghemite-goethite fragments clay matrix; SHARP AT:,mud,100,mud,sediment_clastic,sediment,,"mud, mud, sapropel","101, 101, 62"
+5716,592,2182310,4,7.5,very strong hardcap mineralisation developed within transported material? can see some rounded fragments and maghemite?,mineralisation,100,mineralisation,ore,mineralisation,,"mineralisation, monzonite","100, 78"
+5717,592,2182310,8,8.6,VT G vuggy hardcap developed at transition zone between TransCover and definite insitu bedded ore,ore,101,ore,ore,mineralisation,,"ore, cataclasite","101, 39"
+5718,592,2182310,8,15.8,bedded vughy vitreous H-G hardcap-style ore; minimal white clays,mud,101,mud,sediment_clastic,sediment,,"ore, mud","101, 101"
+5719,592,2182310,15,18.8,hard bedded vitreous G-H mineralisation with less vughs,mineralisation,100,mineralisation,ore,mineralisation,,"mineralisation, loess","101, 46"
+5720,592,2182310,18,21.4,interbedd hard VT vughy hematite hardcap style ore and softer porous hematised shale beds,mudstone,100,mudstone,clastic,sedimentary_rock,,"ore, mudstone","101, 100"
+5721,592,2182310,23,25.1,fractured bedded goethite-goethitic hematite ore,ore,101,ore,ore,mineralisation,,ore,101
+5722,592,2182310,25,27.3,hard bedded semi-vitreous G-dominant ore; with 10-15cm band deep blue Manganese at mineralogical boundary at:,ore,100,ore,ore,mineralisation,,"ore, bonded_aggregate","101, 36"
+5723,592,2182310,27,29.1,hard beded semi-vitreous and slightly vughs W-G ore; VERY SHARP AT:,ore,100,ore,ore,mineralisation,,"ore, sapropel, beach_dune","101, 62, 53"
+5724,592,2182310,29,30.5,light YB clay after shale marker beds interbedded with H-dominant hard bedded and soft shaley mineralisation,mineralisation,101,mineralisation,ore,mineralisation,,"mineralisation, mud","101, 100"
+5725,592,2182310,30,32.7,hard bedded semi-vitreous G-H ore,ore,101,ore,ore,mineralisation,,ore,101
+5726,592,2182310,32,35.7,mod-hard bedded H-dominant mineralisation competent; increasing shale content to:,mudstone,100,mudstone,clastic,sedimentary_rock,,"mineralisation, mudstone","100, 100"
+5727,592,2182310,35,40.8,mostly hematised shales with some zones of VT H visible and some mnr clay zones; SHARP AT:,mud,100,mud,sediment_clastic,sediment,,"mudstone, mud, sapropel, vein","101, 101, 62, 53"
+5728,592,2182310,40,42.0,clay after shale marker beds,mud,100,mud,sediment_clastic,sediment,,mud,100
+5729,592,2182310,45,46.5,clay after shale marker beds,mud,100,mud,sediment_clastic,sediment,,mud,100
+5730,592,2182310,46,48.3,mostly soft bedded hematised-ferruginous shales becoming harder bedded down interval and with some clay alteration?,mud,100,mud,sediment_clastic,sediment,,"mudstone, mud","100, 100"
+5731,592,2182310,48,49.3,hard bedded semi-vitreous G-H mineralisation with shale band marking end of enrichement at:,mudstone,100,mudstone,clastic,sedimentary_rock,,"mineralisation, mudstone","101, 100"
+5732,592,2182310,49,52.0,EOH; unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,"unclassified_rock, banded_iron_formation","101, 101"

@@ -1,0 +1,23 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+6685,2670,2470304,0,2.0,colluvial BIF & chert,chert,101,chert,siliceous,sedimentary_rock,,chert,101
+6686,2670,2470304,2,4.0,colluvial BIF & chert,chert,101,chert,siliceous,sedimentary_rock,,chert,101
+6687,2670,2470304,4,6.0,pisolitic gravels w some good looking stuff,pisolith,100,pisolith,residual_deposit,surficial_rock,,gravel,100
+6688,2670,2470304,6,8.0,pisolitic gravels w some good looking stuff,pisolith,100,pisolith,residual_deposit,surficial_rock,,gravel,100
+6689,2670,2470304,8,10.0,pisolitic gravels w some good looking stuff,pisolith,100,pisolith,residual_deposit,surficial_rock,,gravel,100
+6690,2670,2470304,10,12.0,pisolitic gravels w some good looking stuff,pisolith,100,pisolith,residual_deposit,surficial_rock,,gravel,100
+6691,2670,2470304,44,46.0,lightgrey crystal rich and fiamme bearing tuff horizon?,tuff,100,tuff,volcaniclastic,igneous_rock,,"tuff, fault","100, 52"
+6692,2670,2470304,46,48.0,lightgrey crystal rich and fiamme bearing tuff horizon?,tuff,100,tuff,volcaniclastic,igneous_rock,,"tuff, fault","100, 52"
+6693,2670,2470304,50,52.0,grn lamd chert w mnr jasper- specky looking,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,banded_iron_formation,100
+6694,2670,2470304,52,54.0,grn lamd chert w mnr jasper- specky looking,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,banded_iron_formation,100
+6695,2670,2470304,54,56.0,grn lamd chert w mnr jasper- specky looking,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,banded_iron_formation,100
+6696,2670,2470304,58,60.0,with conglomerate and trc graphite/carbonaceous shale,mudstone,101,mudstone,clastic,sedimentary_rock,,"conglomerate, mudstone","101, 101"
+6697,2670,2470304,100,102.0,goe rich clays after siltstone,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+6698,2670,2470304,118,120.0,holey siltstone/shale unit,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,101
+6699,2670,2470304,120,122.0,lght brown silstone and mnr dk grey chert,chert,101,chert,siliceous,sedimentary_rock,,"chert, iron_grainstone","101, 59"
+6700,2670,2470304,124,126.0,cherty BIF and siltstone,mudstone,101,mudstone,clastic,sedimentary_rock,,"banded_iron_formation, mudstone","101, 101"
+6701,2670,2470304,126,128.0,MOSTLY CHERT WITH TRC MARTITE,chert,100,chert,siliceous,sedimentary_rock,,chert,100
+6702,2670,2470304,136,138.0,bright yellow clay coated F,mud,100,mud,sediment_clastic,sediment,,bituminous_coal,59
+6703,2670,2470304,166,168.0,CONTACT?,contact,101,contact,contact,texture_structure,,contact,101
+6704,2670,2470304,168,170.0,dk blu dolomitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+6705,2670,2470304,170,172.0,dk blu dolomitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+6706,2670,2470304,172,174.0,EOH; dk blu dolomitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,"unclassified_rock, mudstone","101, 101"

@@ -1,0 +1,13 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+510,592,2181755,3,10.1,Matrix supported colluvium.  H X G F granules and pebbles 2-20mm in H rich matrix. ,gravel,100,gravel,sediment_clastic,sediment,,"colluvium, gravel","100, 60"
+511,592,2181755,10,13.9,Poorly sorted matrix supported colluvium.  F granules and pebbles  2-60mm in CR moderately cemented matrix. 12.4-12.7m is bedded F - ?cobble/boulder of float? ,gravel,100,gravel,sediment_clastic,sediment,,"colluvium, bonded_aggregate","100, 46"
+512,592,2181755,13,18.7,Poorly sorted matrix supported colluvium.  F granules and pebbles  2-60mm in CR clay rich matrix.,mud,100,mud,sediment_clastic,sediment,,"colluvium, mud","100, 100"
+513,592,2181755,18,21.7,Poorly sorted matrix supported colluvium.  F and W granules and pebbles  2-60mm in D OR ferruginous silty matrix.,gravel,100,gravel,sediment_clastic,sediment,,"colluvium, gravel, ferruginous_deposits","100, 82, 68"
+514,592,2181755,21,22.9,Yellow pink shale 2 * 1cm zones of powdery limonite as halo around fracture surface.,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+515,592,2181755,25,28.3,5-20 mm bands of alternating Goethitic Haematite and red brown ferruginous shale.,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, foid_bearing_anorthosite","101, 50"
+516,592,2181755,28,31.4,2-10cm beds of  vitreous goethite interbedded with 2-10cm beds of o-G and ferruginous shale.,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, unclassified_rock, ironstone","101, 60, 57"
+517,592,2181755,31,32.6,Pink yellow shale bed.,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,61
+518,592,2181755,32,33.2,Broken fragments of Goethitic Haematite within red brown ferruginous shale.,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+519,592,2181755,33,36.4,"Ferruginous shale 5cm limonitic beds and 1 1.5sm bed of goethitised chert adjacent to a 4cm ""biffy chert"" bed.",mudstone,100,mudstone,clastic,sedimentary_rock,,"chert, mudstone, chert","101, 100, 100"
+520,592,2181755,36,39.5,"Pink Ferruginous shale becoming dark red brown soft F X? from 38.2m.  3cm band of ""Biffy chert"" from 38.05m",mudstone,100,mudstone,clastic,sedimentary_rock,,chert,101
+521,592,2181755,39,40.0,Pale pink/grey cherts to 3cm interbedded with pink brown weakly ferruginous shale,mudstone,101,mudstone,clastic,sedimentary_rock,,"chert, mudstone","101, 101"

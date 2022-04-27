@@ -1,0 +1,7 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+6232,2670,2470155,0,2.0,silt sand and minor gravel,gravel,101,gravel,sediment_clastic,sediment,,"sand, gravel","101, 101"
+6233,2670,2470155,2,3.0,silt gravel and qtz frags,mud,100,mud,sediment_clastic,sediment,,"gravel, foidolite","101, 56"
+6234,2670,2470155,8,14.0,clayey chips and minor vein qtzï¿½pallid,vein,100,vein,fillings,texture_structure,,"vein, china_clay","101, 67"
+6235,2670,2470155,16,19.0,pallid clays and vein qtz,mud,100,mud,sediment_clastic,sediment,,"mud, vein","101, 100"
+6236,2670,2470155,26,33.0,red purp fg massive chips after basalt?,basalt,101,basalt,mafic_fine_grained_crystalline,igneous_rock,,basalt,101
+6237,2670,2470155,40,46.0,basalt,basalt,101,basalt,mafic_fine_grained_crystalline,igneous_rock,,basalt,101

@@ -1,0 +1,5 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+6802,2670,2470362,9,14.0,haem detritals shale and pisolites,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, pisolite","101, 94"
+6803,2670,2470362,14,24.0,trans? Ferrug shale siltst and minor qtz,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, vein","100, 67"
+6804,2670,2470362,24,25.0,siltst shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+6805,2670,2470362,25,35.0,weathered Feox stained granite,granite,101,granite,felsic_coarse_grained_crystalline,igneous_rock,,granite,101

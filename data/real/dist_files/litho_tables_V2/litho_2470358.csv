@@ -1,0 +1,5 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+6788,2670,2470358,6,7.0,Poss transported Fort sst,colluvium,100,colluvium,natural_superficial_ground,surficial_rock,,colluvium,100
+6789,2670,2470358,7,10.0,sst siltst and vein qtz,vein,100,vein,fillings,texture_structure,,"vein, mudstone","100, 63"
+6790,2670,2470358,10,16.0,ferrug shale siltst,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+6791,2670,2470358,16,20.0,red purp siltst shale fine sst and qtz,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, vein","100, 67"

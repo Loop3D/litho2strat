@@ -1,0 +1,6 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+6732,2670,2470318,10,16.0,cover or insitu?,cover,100,cover,natural_superficial_ground,surficial_rock,,"cover, lignite","101, 62"
+6733,2670,2470318,16,18.0,L BRN shale/siltstone,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+6734,2670,2470318,56,64.0,grey shale Jeerinah Fm?,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+6735,2670,2470318,64,73.0,looking increasingly like CHL schist,schist,101,schist,schist,metamorphic_rock,,schist,101
+6736,2670,2470318,73,77.0,EOH; fresh CHL schist,schist,101,schist,schist,metamorphic_rock,,"unclassified_rock, schist","101, 101"

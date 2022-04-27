@@ -1,0 +1,33 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+4728,592,2182182,36,38.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4729,592,2182182,38,40.0,White clays. YB cutans on F,mud,100,mud,sediment_clastic,sediment,,mud,100
+4730,592,2182182,40,42.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4731,592,2182182,42,44.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4732,592,2182182,44,46.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4733,592,2182182,46,48.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4734,592,2182182,48,50.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4735,592,2182182,50,52.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4736,592,2182182,52,54.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4737,592,2182182,54,56.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4738,592,2182182,56,58.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4739,592,2182182,58,60.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4740,592,2182182,60,62.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4741,592,2182182,62,64.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4742,592,2182182,64,66.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4743,592,2182182,66,68.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4744,592,2182182,68,70.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4745,592,2182182,70,72.0,White clays. Q silt > Q sand ,sand,101,sand,sediment_clastic,sediment,,sand,101
+4746,592,2182182,72,74.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4747,592,2182182,74,76.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4748,592,2182182,76,78.0,Q sands in clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+4749,592,2182182,160,162.0,PINK SHALE MARKER BED,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+4750,592,2182182,166,168.0,vitreous G and m.c quartz harder interval,vein,100,vein,fillings,texture_structure,,"vein, void","100, 56"
+4751,592,2182182,168,170.0,unenriched BIF & sediments,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,sediment,101
+4752,592,2182182,170,172.0,unenriched BIF & sediments,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,sediment,101
+4753,592,2182182,172,174.0,unenriched BIF & sediments,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,sediment,101
+4754,592,2182182,174,176.0,unenriched BIF & sediments,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,sediment,101
+4755,592,2182182,176,178.0,unenriched BIF & sediments,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,sediment,101
+4756,592,2182182,178,180.0,unenriched chert & BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4757,592,2182182,180,182.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4758,592,2182182,182,184.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4759,592,2182182,184,186.0,EOH; unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,"unclassified_rock, banded_iron_formation","101, 101"

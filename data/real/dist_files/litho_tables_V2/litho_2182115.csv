@@ -1,0 +1,12 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+3866,592,2182115,26,28.0,This L RB zone: FeO-stained whitish clays ,mud,101,mud,sediment_clastic,sediment,,mud,101
+3867,592,2182115,40,42.0,No longer stained pale clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+3868,592,2182115,86,88.0,This GY clay stickier doesnt form clayballs,mud,100,mud,sediment_clastic,sediment,,mud,100
+3869,592,2182115,104,106.0,Shale/ferrug shale? Mix of chips!.. F ?S K H G,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+3870,592,2182115,108,110.0,Like a Q-G sandstone! Minor H too,sandstone,100,sandstone,clastic,sedimentary_rock,,sandstone,100
+3871,592,2182115,110,112.0,Like a Q-G sandstone! Grainy strongly foliated,sandstone,100,sandstone,clastic,sedimentary_rock,,sandstone,100
+3872,592,2182115,114,116.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3873,592,2182115,122,124.0,Gritty Q clay with coarse Q sand H and L,mud,100,mud,sediment_clastic,sediment,,"mud, sand, lag","101, 100, 50"
+3874,592,2182115,128,130.0,Gritty K with Q sand,sand,101,sand,sediment_clastic,sediment,,"sand, silicate_sandstone","101, 67"
+3875,592,2182115,156,158.0,Includes a G-?Q sandstone,sandstone,101,sandstone,clastic,sedimentary_rock,,sandstone,101
+3876,592,2182115,160,162.0,Gritty Mn clay,mud,101,mud,sediment_clastic,sediment,,mud,101

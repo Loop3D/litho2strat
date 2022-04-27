@@ -1,0 +1,36 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+3004,592,2182039,10,12.0,Silty,mud,89,mud,sediment_clastic,sediment,,mud,89
+3005,592,2182039,12,14.0,Silty,mud,89,mud,sediment_clastic,sediment,,mud,89
+3006,592,2182039,14,16.0,Clay/Silt with 60% PS,mud,100,mud,sediment_clastic,sediment,,"mud, tip","101, 50"
+3007,592,2182039,16,18.0,Clay/Silt with 60% PS,mud,100,mud,sediment_clastic,sediment,,"mud, tip","101, 50"
+3008,592,2182039,30,32.0,Hard clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3009,592,2182039,32,34.0,Hard clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3010,592,2182039,34,36.0,Hard clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3011,592,2182039,36,38.0,Hard clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3012,592,2182039,38,40.0,Hard clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3013,592,2182039,44,46.0,Hard lacustrine clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3014,592,2182039,48,50.0,Large fragments - magnetic. Close to BOT? Vein quartz - 10%,vein,100,vein,fillings,texture_structure,,"vein, carbonate_sediment","101, 47"
+3015,592,2182039,50,52.0,5% frags in hard clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3016,592,2182039,52,54.0,2%  gritty frags in hard clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3017,592,2182039,54,56.0,Change in colour and softer clay -insitu,mud,100,mud,sediment_clastic,sediment,,"mud, channel","100, 60"
+3018,592,2182039,56,58.0,Change in colour and softer clay -insitu,mud,100,mud,sediment_clastic,sediment,,"mud, channel","100, 60"
+3019,592,2182039,62,64.0,Fissile F and och G in Clay,mud,101,mud,sediment_clastic,sediment,,"mud, spilite","101, 50"
+3020,592,2182039,74,76.0,Microbanded cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3021,592,2182039,76,78.0,Jasperlite BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3022,592,2182039,78,80.0,Jasperlite BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3023,592,2182039,80,82.0,Jasperlite BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3024,592,2182039,82,84.0,Jasperlite BIF + 5% G,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,banded_iron_formation,100
+3025,592,2182039,90,92.0,Microbanded BIF with 5% Q,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,"banded_iron_formation, vein","101, 29"
+3026,592,2182039,92,94.0,Cherty BIF with 20% silicious G,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,"banded_iron_formation, siliceous_ooze","101, 64"
+3027,592,2182039,112,114.0,G + vein Q  <5%,vein,100,vein,fillings,texture_structure,,vein,100
+3028,592,2182039,116,118.0,Very fissile shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+3029,592,2182039,124,126.0,Very fissile shale  bedded w C,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+3030,592,2182039,126,128.0,Fissile khaki shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+3031,592,2182039,134,136.0,Cavity at 135-138m,void,100,void,artificial_man_made_ground,surficial_rock,,void,101
+3032,592,2182039,136,138.0,Cavity at 135-138m,void,100,void,artificial_man_made_ground,surficial_rock,,void,101
+3033,592,2182039,138,140.0,Cherty BIF with 20% silicious G,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,"banded_iron_formation, siliceous_ooze","101, 64"
+3034,592,2182039,140,142.0,Cavity,void,101,void,artificial_man_made_ground,surficial_rock,,void,101
+3035,592,2182039,142,144.0,Chert frags in Clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3036,592,2182039,144,146.0,Chert frags in Clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3037,592,2182039,146,148.0,Fissile shale andC,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+3038,592,2182039,148,150.0,Fissile shale andC,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100

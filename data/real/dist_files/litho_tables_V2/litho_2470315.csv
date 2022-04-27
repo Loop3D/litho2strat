@@ -1,0 +1,6 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+6718,2670,2470315,0,4.0,soil & colluvium;some BE or fold material,colluvium,100,colluvium,natural_superficial_ground,surficial_rock,,"colluvium, exotic_crystalline_igneous_rock, artificial_material","101, 101, 62"
+6719,2670,2470315,4,20.0,shale & siltstone mix F & pallid - Jeerinah?,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+6720,2670,2470315,20,26.0,brn siltstone/shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+6721,2670,2470315,30,44.0,schisty sheen; pallid to ferrug - Jerrinah- Roy Hill Shale? Or weathd CHL schist,schist,101,schist,schist,metamorphic_rock,,"schist, mud, schist","101, 71, 63"
+6722,2670,2470315,44,81.0,greasy sheeny Mn? GY-GN could be weathd CHL schist from basement?,schist,100,schist,schist,metamorphic_rock,,schist,100

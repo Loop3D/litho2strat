@@ -1,0 +1,11 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+2386,592,2181972,26,28.0,This zone: FeO-stained clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+2387,592,2181972,50,52.0,Some clay after shale?,mud,101,mud,sediment_clastic,sediment,,mudstone,101
+2388,592,2181972,52,54.0,Some clay after shale?,mud,101,mud,sediment_clastic,sediment,,mudstone,101
+2389,592,2181972,54,56.0,Some clay after shale?,mud,101,mud,sediment_clastic,sediment,,mudstone,101
+2390,592,2181972,56,58.0,Some clay after shale?,mud,101,mud,sediment_clastic,sediment,,mudstone,101
+2391,592,2181972,58,60.0,Some clay after shale?,mud,101,mud,sediment_clastic,sediment,,mudstone,101
+2392,592,2181972,60,62.0,Some clay after shale?,mud,101,mud,sediment_clastic,sediment,,mudstone,101
+2393,592,2181972,62,64.0,Some clay after shale?,mud,101,mud,sediment_clastic,sediment,,mudstone,101
+2394,592,2181972,64,66.0,Some clay after shale?,mud,101,mud,sediment_clastic,sediment,,mudstone,101
+2395,592,2181972,66,68.0,Some clay after shale? Contact?,contact,101,contact,contact,texture_structure,,contact,101

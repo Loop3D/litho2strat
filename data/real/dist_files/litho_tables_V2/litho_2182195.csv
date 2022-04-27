@@ -1,0 +1,23 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+4988,592,2182195,76,78.0,Running quartz sands,vein,100,vein,fillings,texture_structure,,sand,101
+4989,592,2182195,78,80.0,Running quartz sands,vein,100,vein,fillings,texture_structure,,sand,101
+4990,592,2182195,80,82.0,Running quartz sands,vein,100,vein,fillings,texture_structure,,sand,101
+4991,592,2182195,82,84.0,Running quartz sands,vein,100,vein,fillings,texture_structure,,sand,101
+4992,592,2182195,84,86.0,coarse qtz lag,lag,101,lag,residual_deposit,surficial_rock,,lag,101
+4993,592,2182195,86,88.0,coarse qtz lag,lag,101,lag,residual_deposit,surficial_rock,,lag,101
+4994,592,2182195,88,90.0,coarse qtz lag,lag,101,lag,residual_deposit,surficial_rock,,lag,101
+4995,592,2182195,90,92.0,Running quartz sands,vein,100,vein,fillings,texture_structure,,sand,101
+4996,592,2182195,92,94.0,coarse qtz lag,lag,101,lag,residual_deposit,surficial_rock,,lag,101
+4997,592,2182195,94,96.0,coarse qtz lag,lag,101,lag,residual_deposit,surficial_rock,,lag,101
+4998,592,2182195,96,98.0,Running quartz sands,vein,100,vein,fillings,texture_structure,,sand,101
+4999,592,2182195,98,100.0,Running quartz sands,vein,100,vein,fillings,texture_structure,,sand,101
+5000,592,2182195,100,102.0,coarse qtz lag,lag,101,lag,residual_deposit,surficial_rock,,lag,101
+5001,592,2182195,102,104.0,coarse qtz lag,lag,101,lag,residual_deposit,surficial_rock,,lag,101
+5002,592,2182195,104,106.0,coarse qtz lag,lag,101,lag,residual_deposit,surficial_rock,,lag,101
+5003,592,2182195,106,108.0,coarse qtz lag,lag,101,lag,residual_deposit,surficial_rock,,lag,101
+5004,592,2182195,108,110.0,coarse qtz lag,lag,101,lag,residual_deposit,surficial_rock,,lag,101
+5005,592,2182195,146,148.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+5006,592,2182195,148,150.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+5007,592,2182195,150,152.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+5008,592,2182195,152,154.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+5009,592,2182195,154,156.0,EOH; unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,"unclassified_rock, banded_iron_formation","101, 101"

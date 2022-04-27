@@ -1,0 +1,11 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+2112,592,2181891,74,76.0,with mnr pink clays - marker horizon,mud,100,mud,sediment_clastic,sediment,,mud,100
+2113,592,2181891,84,86.0,limonitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+2114,592,2181891,110,112.0,limonitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+2115,592,2181891,118,120.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+2116,592,2181891,120,122.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+2117,592,2181891,122,124.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+2118,592,2181891,124,126.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+2119,592,2181891,126,128.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+2120,592,2181891,128,130.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+2121,592,2181891,130,132.0,EOH; unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,"unclassified_rock, banded_iron_formation","101, 101"

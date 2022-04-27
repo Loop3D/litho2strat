@@ -1,0 +1,8 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+3613,592,2182093,24,26.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3614,592,2182093,26,28.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3615,592,2182093,28,30.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3616,592,2182093,30,32.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3617,592,2182093,32,34.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3618,592,2182093,118,120.0,Same pink-grey ?Q vein seen 2 holes ago?,vein,100,vein,fillings,texture_structure,,vein,100
+3619,592,2182093,124,126.0,Red-grey shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101

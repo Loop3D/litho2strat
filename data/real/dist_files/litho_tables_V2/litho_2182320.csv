@@ -1,0 +1,46 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+5885,592,2182320,18,22.6,dominated by vitreous goethite some maghemite pisoliths and clay,mud,101,mud,sediment_clastic,sediment,,"mud, apatite_magnetite_rock","101, 38"
+5886,592,2182320,22,22.9,transported laterite with minor vitreous goethite and limonite,colluvium,100,colluvium,natural_superficial_ground,surficial_rock,,"laterite, lignite, ironstone","101, 80, 65"
+5887,592,2182320,22,27.3,well rounded fragments in a silt/sand matrix,mud,100,mud,sediment_clastic,sediment,,sand,101
+5888,592,2182320,27,28.5,rounded to wll rounded hematite in ochcrous hematite and clay matrix moderately consolidated,mud,100,mud,sediment_clastic,sediment,,"mud, ridge, iron_gravel","100, 60, 52"
+5889,592,2182320,28,30.4,rounded to well rounded hematite fragments with minor maghemite in a clay matrix with minor vitreous goethite,mud,100,mud,sediment_clastic,sediment,,"mud, ironstone, ridge, iron_gravel","101, 65, 60, 51"
+5890,592,2182320,30,34.5,rounded to wll rounded hematite in ochcrous hematite and clay matrix moderately consolidated,mud,100,mud,sediment_clastic,sediment,,"mud, ridge, iron_gravel","100, 60, 52"
+5891,592,2182320,34,34.7,rounded to wll rounded hematite in ochcrous hematite and clay matrix,mud,100,mud,sediment_clastic,sediment,,"mud, ridge, iron_gravel","101, 60, 52"
+5892,592,2182320,34,38.3,rounded to wll rounded hematite in ochcrous hematite and clay matrix moderately consolidated,mud,100,mud,sediment_clastic,sediment,,"mud, ridge, iron_gravel","100, 60, 52"
+5893,592,2182320,38,43.7,rounded to wll rounded hematite in ochcrous hematite and clay matrix well consolidated,mud,100,mud,sediment_clastic,sediment,,"mud, ridge, iron_gravel","100, 60, 52"
+5894,592,2182320,43,60.6,rounded to wll rounded hematite in ochcrous hematite and clay matrix moderately consolidated,mud,100,mud,sediment_clastic,sediment,,"mud, ridge, iron_gravel","100, 60, 52"
+5895,592,2182320,60,64.4,rounded to wll rounded hematite in ochcrous hematite and clay matrix well consolidated,mud,100,mud,sediment_clastic,sediment,,"mud, ridge, iron_gravel","100, 60, 52"
+5896,592,2182320,64,65.4,mottled ochrous hematite and ferruginous shale within west angela shale,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, iron_mud","101, 56"
+5897,592,2182320,76,78.9,goethititic shale possibly limonite,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+5898,592,2182320,78,81.2,manganiferrous shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5899,592,2182320,81,81.8,manganiferrous shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5900,592,2182320,81,83.7,manganiferrous shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5901,592,2182320,83,85.1,manganiferrous shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5902,592,2182320,85,85.8,manganiferrous shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5903,592,2182320,85,86.2,manganiferrous shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5904,592,2182320,86,87.2,Fragmented blocky chert in shale. Fault zone as significant core loss?,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+5905,592,2182320,87,88.3,core loss assumed to be manganiferrous shale,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, unclassified_rock","101, 62"
+5906,592,2182320,88,89.5,manganiferrous shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5907,592,2182320,89,90.7,0.7m of core loss assumed to be shale,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, unclassified_rock","101, 62"
+5908,592,2182320,90,93.1,manganiferrous shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5909,592,2182320,93,93.8,manganiferrous shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5910,592,2182320,93,101.3,minor manganiferrous shale around 95m,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+5911,592,2182320,101,103.7,trace hematite bands in shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5912,592,2182320,103,105.1,goethite mingt be manganese? 5cm band of gritty quartz at 104.5m,vein,100,vein,fillings,texture_structure,,vein,101
+5913,592,2182320,105,105.2,chert band in shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5914,592,2182320,105,106.2,fault zone as quartz grit,silicate_sandstone,101,silicate_sandstone,siliciclastic,sedimentary_rock,,silicate_sandstone,101
+5915,592,2182320,106,106.75,trace hematite bands in shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5916,592,2182320,107,109.3,more shale present,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+5917,592,2182320,109,111.8,2.4m of core loss assumed to shale and ferruginous shale,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, mudstone, unclassified_rock","101, 101, 62"
+5918,592,2182320,114,115.8,goethititic shale possibly limonite,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+5919,592,2182320,115,117.1,more goethitic goethititic shale possibly limonite,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+5920,592,2182320,117,117.8,fault zone as quartz grit at 117.3m,silicate_sandstone,100,silicate_sandstone,siliciclastic,sedimentary_rock,,silicate_sandstone,101
+5921,592,2182320,118,118.6,Fault Zone?,fault,100,fault,breaks,texture_structure,,fault,100
+5922,592,2182320,119,121.0,more shale present mineralised bands of hematite,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+5923,592,2182320,121,122.9,powdery bif in goethitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5924,592,2182320,122,123.2,goethititic shale possibly limonite,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+5925,592,2182320,123,124.4,some goethite and hematite enrichment of bif,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,"banded_iron_formation, iron_mud","101, 80"
+5926,592,2182320,125,127.5,goethitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5927,592,2182320,127,128.2,cherty BIF in shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5928,592,2182320,128,129.0,goethitc shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5929,592,2182320,129,132.1,very broken cherty BIF and shale base of West Ang,mudstone,101,mudstone,clastic,sedimentary_rock,,"banded_iron_formation, mudstone","101, 100"

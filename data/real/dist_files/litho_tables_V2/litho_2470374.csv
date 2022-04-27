@@ -1,0 +1,8 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+6858,2670,2470374,11,13.0,trans clay and ferrug chips,mud,100,mud,sediment_clastic,sediment,,"mud, glaucophanite","101, 52"
+6859,2670,2470374,26,27.0,puggy clay and some gravel,gravel,101,gravel,sediment_clastic,sediment,,"mud, gravel","101, 101"
+6860,2670,2470374,27,30.0,puggy clay ferrug chips haem sst,mud,100,mud,sediment_clastic,sediment,,mud,100
+6861,2670,2470374,30,33.0,puggy trans clay minor ferrug chips,mud,100,mud,sediment_clastic,sediment,,mud,100
+6862,2670,2470374,33,35.0,clay and ferrug sst chips,mud,100,mud,sediment_clastic,sediment,,"mud, ferruginous_deposits","101, 51"
+6863,2670,2470374,36,37.0,Fe-ox stained quartzite sst,quartzite,100,quartzite,low_grade_metamorphic_rock,metamorphic_rock,,quartzite,100
+6864,2670,2470374,40,42.0,Woodiana quartzite fgr sst,quartzite,100,quartzite,low_grade_metamorphic_rock,metamorphic_rock,,quartzite,100

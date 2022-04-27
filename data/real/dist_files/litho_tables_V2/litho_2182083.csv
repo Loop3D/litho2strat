@@ -1,0 +1,7 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+3542,592,2182083,8,10.0,Angular pebble colluvium up to 10mm,colluvium,100,colluvium,natural_superficial_ground,surficial_rock,,colluvium,101
+3543,592,2182083,14,16.0,Angular Q and FeO pebble colluvium up to 10mm,colluvium,100,colluvium,natural_superficial_ground,surficial_rock,,"colluvium, nodules","101, 62"
+3544,592,2182083,18,20.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3545,592,2182083,48,50.0,This zone: clay %??,mud,101,mud,sediment_clastic,sediment,,mud,101
+3546,592,2182083,104,106.0,Dolomite,dolostone,101,dolostone,carbonate,sedimentary_rock,,dolostone,101
+3547,592,2182083,120,122.0,Again looks good but all chips dolomite,dolostone,101,dolostone,carbonate,sedimentary_rock,,dolostone,101

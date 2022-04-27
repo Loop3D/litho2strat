@@ -1,0 +1,22 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+3465,592,2182078,20,22.0,Clay with silty chips,mud,100,mud,sediment_clastic,sediment,,"mud, schist","101, 62"
+3466,592,2182078,28,30.0,FG - sieved out. Clay + minimal FeO,mud,100,mud,sediment_clastic,sediment,,mud,100
+3467,592,2182078,30,32.0,Small pieces of calcium carbonate,carbonate,101,carbonate,carbonate,sedimentary_rock,,carbonate,101
+3468,592,2182078,32,34.0,<3% F and Small pieces of calcium carbonate. All in clay,mud,101,mud,sediment_clastic,sediment,,"mud, banded_iron_formation","101, 50"
+3469,592,2182078,46,48.0,Pisoids of F in clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3470,592,2182078,54,56.0,Large H pisoids in hard lacustrine clay.,mud,101,mud,sediment_clastic,sediment,,mud,101
+3471,592,2182078,58,60.0,Close to BOT? More angular chips in clay,mud,101,mud,sediment_clastic,sediment,,"mud, cone","101, 67"
+3472,592,2182078,62,64.0,H chips angular. Insitu with clay?>,mud,101,mud,sediment_clastic,sediment,,"mud, glacial_deposit","101, 50"
+3473,592,2182078,76,78.0,with clay. Some pieces siliceous,mud,100,mud,sediment_clastic,sediment,,mud,100
+3474,592,2182078,86,88.0,Fault? Or start of McLeod. 10% Q,fault,100,fault,breaks,texture_structure,,fault,100
+3475,592,2182078,88,90.0,Vein Qtz - 60% With G and K,vein,100,vein,fillings,texture_structure,,"vein, fine_crystalline_sedimentary","100, 40"
+3476,592,2182078,90,92.0,High amount of large vein quartz,vein,101,vein,fillings,texture_structure,,vein,101
+3477,592,2182078,108,110.0,Carb shale <10%. Qtz - 30%,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+3478,592,2182078,112,114.0,Interbedded G/ shale carb? wit <5% Q,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+3479,592,2182078,116,118.0,Vein qtz wth small G frags?,vein,100,vein,fillings,texture_structure,,vein,100
+3480,592,2182078,118,120.0,Dolomitc shale. Fortescue?,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+3481,592,2182078,120,122.0,Crystalline dolomite,dolostone,101,dolostone,carbonate,sedimentary_rock,,dolostone,101
+3482,592,2182078,122,124.0,Crystalline dolomite,dolostone,101,dolostone,carbonate,sedimentary_rock,,dolostone,101
+3483,592,2182078,124,126.0,Crystalline dolomite,dolostone,101,dolostone,carbonate,sedimentary_rock,,dolostone,101
+3484,592,2182078,126,128.0,Crystalline dolomite,dolostone,101,dolostone,carbonate,sedimentary_rock,,dolostone,101
+3485,592,2182078,128,130.0,Crystalline dolomite,dolostone,101,dolostone,carbonate,sedimentary_rock,,dolostone,101

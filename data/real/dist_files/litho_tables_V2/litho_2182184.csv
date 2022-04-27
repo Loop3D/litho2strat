@@ -1,0 +1,38 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+4805,592,2182184,0,2.0,Transported silt grit & gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+4806,592,2182184,2,4.0,Transported silt grit & gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+4807,592,2182184,4,6.0,Transported silt grit & gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+4808,592,2182184,6,8.0,Transported silt grit & gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+4809,592,2182184,8,10.0,Transported silt grit & gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+4810,592,2182184,10,12.0,Transported silt grit & gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+4811,592,2182184,12,14.0,Transported silt grit & gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+4812,592,2182184,14,16.0,Transported silt grit & gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+4813,592,2182184,16,18.0,Transported clay & silt,mud,101,mud,sediment_clastic,sediment,,mud,101
+4814,592,2182184,18,20.0,Transported clay & silt,mud,101,mud,sediment_clastic,sediment,,mud,101
+4815,592,2182184,20,22.0,Transported clay & silt,mud,101,mud,sediment_clastic,sediment,,mud,101
+4816,592,2182184,22,24.0,Transported clay & silt,mud,101,mud,sediment_clastic,sediment,,mud,101
+4817,592,2182184,24,26.0,Transported clay & silt,mud,101,mud,sediment_clastic,sediment,,mud,101
+4818,592,2182184,26,28.0,Transported clay & silt,mud,101,mud,sediment_clastic,sediment,,mud,101
+4819,592,2182184,28,30.0,Transported clay & silt,mud,101,mud,sediment_clastic,sediment,,mud,101
+4820,592,2182184,60,62.0,Reworked LWA basal lag?,lag,101,lag,residual_deposit,surficial_rock,,lag,101
+4821,592,2182184,62,64.0,Reworked LWA basal lag?,lag,101,lag,residual_deposit,surficial_rock,,lag,101
+4822,592,2182184,64,66.0,Reworked LWA basal lag?,lag,101,lag,residual_deposit,surficial_rock,,lag,101
+4823,592,2182184,66,68.0,Reworked LWA basal lag?,lag,101,lag,residual_deposit,surficial_rock,,lag,101
+4824,592,2182184,68,70.0,Reworked LWA basal lag?,lag,101,lag,residual_deposit,surficial_rock,,lag,101
+4825,592,2182184,70,72.0,LWA mineralisation - w/ vitreous G,mineralisation,100,mineralisation,ore,mineralisation,,mineralisation,100
+4826,592,2182184,86,88.0,PINK SHALE MARKER BED,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+4827,592,2182184,120,122.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4828,592,2182184,122,124.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4829,592,2182184,124,126.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4830,592,2182184,126,128.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4831,592,2182184,128,130.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4832,592,2182184,130,132.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4833,592,2182184,132,134.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4834,592,2182184,134,136.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4835,592,2182184,136,138.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4836,592,2182184,138,140.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4837,592,2182184,140,142.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4838,592,2182184,142,144.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4839,592,2182184,144,146.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4840,592,2182184,146,148.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4841,592,2182184,148,150.0,EOH; unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,"unclassified_rock, banded_iron_formation","101, 101"

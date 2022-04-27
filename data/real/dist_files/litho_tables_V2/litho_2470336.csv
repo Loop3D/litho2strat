@@ -1,0 +1,5 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+6776,2670,2470336,18,22.0,FERRUGINOUS CLAY AND TR PISOLITES,mud,100,mud,sediment_clastic,sediment,,mud,100
+6777,2670,2470336,22,30.0,WEAK DETRITAL ORE?,ore,101,ore,ore,mineralisation,,ore,101
+6778,2670,2470336,30,43.0,SHALE; V FEW CHIPS,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, schist","101, 50"
+6779,2670,2470336,59,64.0,LIMONITIC SHALE;,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101

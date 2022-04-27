@@ -1,0 +1,11 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+4113,592,2182147,0,2.0,Trace Mn clay contam?,mud,101,mud,sediment_clastic,sediment,,mud,100
+4114,592,2182147,2,4.0,Trace Mn clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+4115,592,2182147,4,6.0,Trace Mn clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+4116,592,2182147,6,8.0,Trace Mn clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+4117,592,2182147,14,16.0,Also Mn clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+4118,592,2182147,20,22.0,Coarse angular colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock,,colluvium,101
+4119,592,2182147,30,32.0,Mn clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+4120,592,2182147,66,68.0,Mn clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+4121,592,2182147,76,78.0,Mn clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+4122,592,2182147,88,90.0,Mn clay,mud,101,mud,sediment_clastic,sediment,,mud,101

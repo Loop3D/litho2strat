@@ -1,0 +1,24 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+4874,592,2182186,0,2.0,Transported sand silt grit & Qtz gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+4875,592,2182186,2,4.0,Transported sand silt grit & Qtz gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+4876,592,2182186,4,6.0,Transported sand silt grit & Qtz gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+4877,592,2182186,6,8.0,Transported sand silt grit & Qtz gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+4878,592,2182186,8,10.0,Transported sand silt grit & Qtz gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+4879,592,2182186,10,12.0,Transported sand silt grit & Qtz gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+4880,592,2182186,68,70.0,insitu LWA material? Crusty goethite and white clay,mud,101,mud,sediment_clastic,sediment,,"mud, residual_deposit","101, 54"
+4881,592,2182186,70,72.0,insitu LWA material? Crusty goethite and white clay,mud,101,mud,sediment_clastic,sediment,,"mud, residual_deposit","101, 54"
+4882,592,2182186,108,110.0,w/ trc Qz BIF contains hard concoidal hematite - siliceous,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,banded_iron_formation,100
+4883,592,2182186,110,112.0,BIF contains hard concoidal hematite - siliceous,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,banded_iron_formation,100
+4884,592,2182186,112,114.0,BIF contains hard concoidal hematite - siliceous,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,banded_iron_formation,100
+4885,592,2182186,114,116.0,BIF contains hard concoidal hematite - siliceous,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,banded_iron_formation,100
+4886,592,2182186,116,118.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4887,592,2182186,118,120.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4888,592,2182186,132,134.0,unenriched siliceous BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4889,592,2182186,134,136.0,unenriched siliceous BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4890,592,2182186,136,138.0,unenriched siliceous BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4891,592,2182186,138,140.0,unenriched siliceous BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4892,592,2182186,140,142.0,unenriched siliceous BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4893,592,2182186,142,144.0,unenriched siliceous BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4894,592,2182186,144,146.0,unenriched siliceous BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4895,592,2182186,146,148.0,unenriched siliceous BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4896,592,2182186,148,150.0,EOH; unenriched siliceous BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,"unclassified_rock, banded_iron_formation","101, 101"

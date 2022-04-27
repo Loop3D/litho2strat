@@ -1,0 +1,31 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+2943,592,2182036,4,6.0,LWA interpreted as such - though does not show much brown shale. Sits above poorly enriched Mt Newman and McLeod,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, marble","100, 50"
+2944,592,2182036,18,20.0,Cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+2945,592,2182036,20,22.0,Mildly enriched - with chert and spotty chert?,chert,101,chert,siliceous,sedimentary_rock,,"chert, chert, mud","101, 101, 50"
+2946,592,2182036,24,26.0,Mildly enriched - with cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,"banded_iron_formation, mud","101, 50"
+2947,592,2182036,60,62.0,Microbanded cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+2948,592,2182036,62,64.0,Softer chert?,chert,101,chert,siliceous,sedimentary_rock,,chert,101
+2949,592,2182036,72,74.0,Quartz vein Faullt?,vein,101,vein,fillings,texture_structure,,vein,100
+2950,592,2182036,92,94.0,Chert + 30% soft bedded sed not FG to be shale?,chert,100,chert,siliceous,sedimentary_rock,,"mudstone, chert","101, 100"
+2951,592,2182036,98,100.0,Fissile shale with soft chert denatured + 30% hard chert,chert,101,chert,siliceous,sedimentary_rock,,"mudstone, chert","101, 101"
+2952,592,2182036,100,102.0,Fissile shale with soft chert denatured + 30% hard chert,chert,101,chert,siliceous,sedimentary_rock,,"mudstone, chert","101, 101"
+2953,592,2182036,102,104.0,Fissile shale with soft chert denatured + 30% hard chert,chert,101,chert,siliceous,sedimentary_rock,,"mudstone, chert","101, 101"
+2954,592,2182036,104,106.0,Inc in C 70% with Fissile shale ,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, felsic","101, 55"
+2955,592,2182036,106,108.0,Dark chert 75% with Q and possible felsic intrusive granitic 10%,chert,101,chert,siliceous,sedimentary_rock,,"chert, coarse_grained_plutonic_crystalline_igneous_rock, vein","101, 100, 29"
+2956,592,2182036,110,112.0,Shale? Bedded grey sed,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+2957,592,2182036,112,114.0,Large Qtz vei. Igneous fragments - with porphyritic biotite/pyroxene. Felsic intrusive?,coarse_grained_plutonic_crystalline_igneous_rock,101,coarse_grained_plutonic_crystalline_igneous_rock,coarse_grained_crystalline,igneous_rock,,"coarse_grained_plutonic_crystalline_igneous_rock, skarn","101, 43"
+2958,592,2182036,114,116.0,Chert + felsic intrusive porphyritic biotite,coarse_grained_plutonic_crystalline_igneous_rock,101,coarse_grained_plutonic_crystalline_igneous_rock,coarse_grained_crystalline,igneous_rock,,coarse_grained_plutonic_crystalline_igneous_rock,100
+2959,592,2182036,116,118.0,Chert and bedded FG seds,chert,100,chert,siliceous,sedimentary_rock,,"chert, fault","101, 53"
+2960,592,2182036,118,120.0,Chert and bedded FG seds,chert,100,chert,siliceous,sedimentary_rock,,"chert, fault","101, 53"
+2961,592,2182036,120,122.0,Chert and mssive mafic intrusiove not dolomite - no acid reation,mafic,100,mafic,mafic,igneous_rock,,"chert, felsic","101, 100"
+2962,592,2182036,122,124.0,Chert and bedded FG seds,chert,100,chert,siliceous,sedimentary_rock,,"chert, fault","101, 53"
+2963,592,2182036,124,126.0,Felsic intgrusive - frag with quartz and biotite,felsic,100,felsic,felsic,igneous_rock,,"vein, felsic, micaite","101, 100, 88"
+2964,592,2182036,130,132.0,Carb shale with chert/Q,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, chert","101, 100"
+2965,592,2182036,132,134.0,Carb shale with chert/Q,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, chert","101, 100"
+2966,592,2182036,134,136.0,Carb shale with chert/Q,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, chert","101, 100"
+2967,592,2182036,136,138.0,Mostly chert - carb staining,chert,100,chert,siliceous,sedimentary_rock,,chert,100
+2968,592,2182036,138,140.0,Carb shale washed out as clay pyrite 2%,mud,100,mud,sediment_clastic,sediment,,massive_sulphide,101
+2969,592,2182036,140,142.0,Carb shale washed out as clay pyrite 2%,mud,100,mud,sediment_clastic,sediment,,massive_sulphide,101
+2970,592,2182036,142,144.0,Carb shale washed out as clay pyrite 2%,mud,100,mud,sediment_clastic,sediment,,massive_sulphide,101
+2971,592,2182036,144,146.0,Chert black from carb shale minorwith pyrite 2% Carb shale staining,chert,101,chert,siliceous,sedimentary_rock,,mudstone,100
+2972,592,2182036,146,148.0,Chert black from carb shale minorwith pyrite 2% Carb shale staining,chert,101,chert,siliceous,sedimentary_rock,,mudstone,100

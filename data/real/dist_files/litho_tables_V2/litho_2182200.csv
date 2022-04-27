@@ -1,0 +1,18 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+5076,592,2182200,28,30.0,This C zone very soft light grey.Clay-like,mud,100,mud,sediment_clastic,sediment,,carnallite_stone,53
+5077,592,2182200,38,40.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+5078,592,2182200,40,42.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+5079,592,2182200,42,44.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+5080,592,2182200,44,46.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+5081,592,2182200,46,48.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+5082,592,2182200,48,50.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+5083,592,2182200,50,52.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+5084,592,2182200,52,54.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+5085,592,2182200,54,56.0,White clays.Mix of GLH and martitic H!,mud,100,mud,sediment_clastic,sediment,,"mud, charoitite","100, 60"
+5086,592,2182200,56,58.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+5087,592,2182200,58,60.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+5088,592,2182200,60,62.0,White clays detrital G,mud,100,mud,sediment_clastic,sediment,,mud,100
+5089,592,2182200,62,64.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+5090,592,2182200,64,66.0,White clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+5091,592,2182200,68,70.0,White clays. Minor NG and H,mud,100,mud,sediment_clastic,sediment,,"mud, unclassified_rock","100, 50"
+5092,592,2182200,108,110.0,H martitic. Chert YB and GN,chert,100,chert,siliceous,sedimentary_rock,,"chert, guano","100, 57"

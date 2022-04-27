@@ -1,0 +1,4 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+236,475,810344,803,808.8,GRANT SHALE: med grey; highly fissile shale; cleavage 90deg to c.a.,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, mudstone, sewage_sludge, mud","101, 100, 48, 40"
+237,475,810344,808,810.8,GRANT SHALE: interbedded siltstone and mudstone. highly fissile.cleavage 90 deg to c.a.,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, mudstone, mudstone, mud","101, 101, 100, 40"
+238,475,810344,810,815.8,GRANT SHALE: interbedded shale and fg light brown SA. Bedding planes 90deg to c.a.,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, mudstone, lignite, mud","101, 101, 42, 40"

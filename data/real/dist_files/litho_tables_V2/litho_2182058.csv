@@ -1,0 +1,13 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+3101,592,2182058,60,62.0,limonitic clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3102,592,2182058,66,68.0,fine-grained shale in limonitic clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3103,592,2182058,90,92.0,Pink shale marker horizon? ,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+3104,592,2182058,92,94.0,Pink shale marker horizon? ,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+3105,592,2182058,108,110.0,vitreous chert,chert,101,chert,siliceous,sedimentary_rock,,chert,101
+3106,592,2182058,110,112.0,finely laminated BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3107,592,2182058,112,114.0,finely laminated BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3108,592,2182058,118,120.0,finely laminated BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3109,592,2182058,120,122.0,finely laminated BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3110,592,2182058,122,124.0,finely laminated BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3111,592,2182058,124,126.0,finely laminated BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3112,592,2182058,130,132.0,white quartz probable vein?,vein,101,vein,fillings,texture_structure,,vein,101

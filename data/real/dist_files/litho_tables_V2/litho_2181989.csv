@@ -1,0 +1,9 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+2410,592,2181989,22,24.0,Poddy clay Relogged by Karl McNamara,mud,100,mud,sediment_clastic,sediment,,mud,100
+2411,592,2181989,40,42.0,White/ligh pink powdery clay - pallid zone?,mud,100,mud,sediment_clastic,sediment,,mud,100
+2412,592,2181989,42,44.0,White/ligh pink powdery clay - pallid zone? Relogged by Karl McNamara,mud,100,mud,sediment_clastic,sediment,,mud,100
+2413,592,2181989,44,46.0,White/ligh pink powdery clay - pallid zone?,mud,100,mud,sediment_clastic,sediment,,mud,100
+2414,592,2181989,50,52.0,End of transported zone - difficult to assess. In and out of clay. Relogged by Karl McNamara,mud,100,mud,sediment_clastic,sediment,,"colluvium, mud, glass","100, 100, 75"
+2415,592,2181989,56,58.0,Clay very FG - very little chips,mud,100,mud,sediment_clastic,sediment,,mud,100
+2416,592,2181989,62,64.0,G in L clay Relogged by Karl McNamara,mud,100,mud,sediment_clastic,sediment,,mud,100
+2417,592,2181989,80,82.0,SofterG and F shale ,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, unclassified_rock","101, 67"

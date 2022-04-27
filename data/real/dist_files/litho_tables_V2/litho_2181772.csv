@@ -1,0 +1,13 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+768,592,2181772,75,80.3,partially ferruginised LWA clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+769,592,2181772,80,83.4,med hardcap develop over BEd LWA?  With WHT clays still present 10-20% vughs,mud,100,mud,sediment_clastic,sediment,,mud,100
+770,592,2181772,89,89.95,PNK SHALE/CLAY MARKER,mud,100,mud,sediment_clastic,sediment,,mud,100
+771,592,2181772,104,106.9,Powdery ocherous lim/goeth with patches of vit goeth,patches,100,patches,fillings,texture_structure,,"orthoschist, iron_mud","54, 47"
+772,592,2181772,117,118.35,Soft clayey zone of ex-shale with goeth interbeds. Partially lim/haem.,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, iron_gravel","72, 45"
+773,592,2181772,123,124.0,Wk vuggy goeth with some pale wk haem/lim clays after shale.,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, iron_mud","101, 46"
+774,592,2181772,130,131.6,Interbedded haem/goeth/lim Fe mineralisation.,mineralisation,101,mineralisation,ore,mineralisation,,mineralisation,101
+775,592,2181772,134,135.9,Dark haem shales with lesser pale purp weath shale and goeth,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, mudstone, regolith","101, 101, 62"
+776,592,2181772,136,137.65,Interbedded haem shales vitr goeth and thin pale shale beds.,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, mudstone","100, 100"
+777,592,2181772,137,139.5,Vitr goeth with 15% lim interbeds and rare thin pale shale beds mm scale.,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, iron_gravel, intermediate","100, 64, 64"
+778,592,2181772,141,141.55,Goeth chert with pale shale bands and minor powdery lim.,mudstone,100,mudstone,clastic,sedimentary_rock,,"chert, mudstone, marl","101, 100, 62"
+779,592,2181772,142,144.0,Broken zone of goeth chert and minor powdery limonite.,chert,100,chert,siliceous,sedimentary_rock,,"chert, ironstone","101, 67"

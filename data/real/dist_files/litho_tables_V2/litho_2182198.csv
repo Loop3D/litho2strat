@@ -1,0 +1,12 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+5050,592,2182198,40,42.0,Start of white clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+5051,592,2182198,68,70.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+5052,592,2182198,70,72.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+5053,592,2182198,72,74.0,Also trace G and Q sand,sand,101,sand,sediment_clastic,sediment,,"sand, trachyte","101, 67"
+5054,592,2182198,76,78.0,Also trace Q sand,sand,101,sand,sediment_clastic,sediment,,sand,101
+5055,592,2182198,80,82.0,Q silt in clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+5056,592,2182198,82,84.0,Fine Q sand in clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+5057,592,2182198,84,86.0,Fine Q sand in clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+5058,592,2182198,86,88.0,Q sands with gritty white clay,mud,101,mud,sediment_clastic,sediment,,"sand, mud","101, 101"
+5059,592,2182198,88,90.0,Q sands with gritty white clay,mud,101,mud,sediment_clastic,sediment,,"sand, mud","101, 101"
+5060,592,2182198,108,110.0,Q sand in clay,mud,101,mud,sediment_clastic,sediment,,mud,101

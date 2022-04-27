@@ -1,0 +1,11 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+5852,592,2182318,12,14.4,mottled hardcap/laterite/transported material with vitreous goethite,colluvium,100,colluvium,natural_superficial_ground,surficial_rock,,"colluvium, ironstone","100, 65"
+5853,592,2182318,14,16.3,Mottled laterite profile possibly insitu. Vitreous goethite,laterite,100,laterite,residual_deposit,surficial_rock,,laterite,100
+5854,592,2182318,16,19.2,Mottled laterite profile possibly insitu. Vitreous goethite,laterite,100,laterite,residual_deposit,surficial_rock,,laterite,100
+5855,592,2182318,27,27.8,Possibly goethitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5856,592,2182318,27,29.4,Some shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5857,592,2182318,40,42.4,Trace shale fracture running down length of core with clay infill,mud,100,mud,sediment_clastic,sediment,,"mudstone, mud","100, 100"
+5858,592,2182318,45,46.7,alternating bands of mineralisation and shale,mudstone,101,mudstone,clastic,sedimentary_rock,,"mineralisation, mudstone","101, 101"
+5859,592,2182318,48,50.3,several 10-50mm itherbedded shale bands. Trace goethitic hematite present,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+5860,592,2182318,55,55.9,trace fine interbedded shale bands,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, trachyte","100, 77"
+5861,592,2182318,58,60.0,Goethite siliceous? minor shale bedding not continuous,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100

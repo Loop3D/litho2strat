@@ -1,0 +1,24 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+5862,592,2182319,16,19.6,Some vitreous goethite various zones of clay and minor maghemite pisoliths,mud,100,mud,sediment_clastic,sediment,,"mud, pisolith","101, 59"
+5863,592,2182319,19,20.3,Cavity fill some maghemite pisoliths,fill,100,fill,artificial_man_made_ground,surficial_rock,,fill,100
+5864,592,2182319,20,20.8,Some vitreous goethite various zones of clay and minor maghemite pisoliths,mud,100,mud,sediment_clastic,sediment,,"mud, pisolith","101, 59"
+5865,592,2182319,20,22.7,Vitreous goethite with limonite adn clay.expect high alumina,mud,100,mud,sediment_clastic,sediment,,"mud, ironstone","100, 65"
+5866,592,2182319,22,23.05,some vitreous goethitepossibly some clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+5867,592,2182319,23,24.75,some ochreous hematite and shale or clay,mud,101,mud,sediment_clastic,sediment,,"mudstone, mud, ironstone","101, 101, 65"
+5868,592,2182319,32,34.02,some trace clay infill,mud,100,mud,sediment_clastic,sediment,,mud,100
+5869,592,2182319,34,35.0,some trace clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+5870,592,2182319,35,36.8,some trace clay and shale,mudstone,101,mudstone,clastic,sedimentary_rock,,"mud, mudstone","101, 101"
+5871,592,2182319,36,39.5,potential fault on upper contact marked by clays that are not thought to be shale,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, mud","101, 100"
+5872,592,2182319,40,40.8,trace ferruginous shale?,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5873,592,2182319,41,41.5,shale 6?,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,101
+5874,592,2182319,41,41.9,possibly goethitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5875,592,2182319,42,42.55,possibly goethitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5876,592,2182319,46,47.1,shale 5?,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,101
+5877,592,2182319,48,49.3,some limonite,ironstone,81,ironstone,ironstone,sedimentary_rock,,lignite,80
+5878,592,2182319,49,50.6,5cm shale at 49.6m,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,101
+5879,592,2182319,50,51.2,very broken possibly fault zone some ferruginous shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5880,592,2182319,51,51.6,very broken possibly fault zone some ferruginous shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5881,592,2182319,54,55.5,0.8m core loss assumed to be shale shale 4?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, unclassified_rock","101, 62"
+5882,592,2182319,57,59.3,Shale 3?,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,101
+5883,592,2182319,60,60.9,limonite and shale band,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, lignite","100, 80"
+5884,592,2182319,61,62.0,some shale and limontie at the end of interval,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, lime_mudstone","101, 53"

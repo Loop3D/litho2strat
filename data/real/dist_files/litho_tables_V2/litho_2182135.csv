@@ -1,0 +1,36 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+4005,592,2182135,86,88.0,Silty Clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4006,592,2182135,88,90.0,Silty Clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4007,592,2182135,90,92.0,Silty Clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4008,592,2182135,92,94.0,Silty Clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4009,592,2182135,94,96.0,Silty Clays very rare soft brown F chips,mud,100,mud,sediment_clastic,sediment,,mud,100
+4010,592,2182135,96,98.0,Silty Clays ,mud,101,mud,sediment_clastic,sediment,,mud,101
+4011,592,2182135,98,100.0,Silty Clays ,mud,101,mud,sediment_clastic,sediment,,mud,101
+4012,592,2182135,100,102.0,Silty Clays Trace brown fg soft ferruginous chips,mud,100,mud,sediment_clastic,sediment,,mud,100
+4013,592,2182135,102,104.0,Silty Clays Trace brown fg soft ferruginous chips,mud,100,mud,sediment_clastic,sediment,,mud,100
+4014,592,2182135,104,106.0,Silty Clays Trace brown fg soft ferruginous chips,mud,100,mud,sediment_clastic,sediment,,mud,100
+4015,592,2182135,106,108.0,Silty Clays Trace brown fg soft ferruginous chips,mud,100,mud,sediment_clastic,sediment,,mud,100
+4016,592,2182135,108,110.0,Silty Clays Trace brown fg soft ferruginous chips,mud,100,mud,sediment_clastic,sediment,,mud,100
+4017,592,2182135,110,112.0,Silty Clays Trace brown fg soft ferruginous chips,mud,100,mud,sediment_clastic,sediment,,mud,100
+4018,592,2182135,112,114.0,Silty Clays Trace brown fg soft ferruginous chips,mud,100,mud,sediment_clastic,sediment,,mud,100
+4019,592,2182135,114,116.0,Silty Clays Trace brown fg soft ferruginous chips,mud,100,mud,sediment_clastic,sediment,,mud,100
+4020,592,2182135,116,118.0,Silty Clays Trace brown fg soft ferruginous chips,mud,100,mud,sediment_clastic,sediment,,mud,100
+4021,592,2182135,118,120.0,Silty clays 50% ferruginous shale-Goethitic yb cutans ?Lateritic?,mud,100,mud,sediment_clastic,sediment,,mud,100
+4022,592,2182135,120,122.0,Goethite streak on hammer plate softer than expected ?goethitised ferruginous shale? appears fractured with yb staining on fracture surfaces,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, normal_crystalline_igneous_rock","100, 47"
+4023,592,2182135,122,124.0,Goethite streak on hammer plate softer than expected ?goethitised ferruginous shale? appears fractured with yb staining on fracture surfaces,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, normal_crystalline_igneous_rock","100, 47"
+4024,592,2182135,124,126.0,Goethite streak on hammer plate softer than expected ?goethitised ferruginous shale? appears fractured with yb staining on fracture surfaces,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, normal_crystalline_igneous_rock","100, 47"
+4025,592,2182135,126,128.0,Goethite streak on hammer plate softer than expected ?goethitised ferruginous shale? appears fractured with yb staining on fracture surfaces,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, normal_crystalline_igneous_rock","100, 47"
+4026,592,2182135,128,130.0,Goethite streak on hammer plate softer than expected ?goethitised ferruginous shale? appears fractured with yb staining on fracture surfaces,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, normal_crystalline_igneous_rock","100, 47"
+4027,592,2182135,130,132.0,Goethite streak on hammer plate softer than expected ?goethitised ferruginous shale? appears fractured with yb staining on fracture surfaces,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, normal_crystalline_igneous_rock","100, 47"
+4028,592,2182135,132,134.0,Goethite streak on hammer plate softer than expected ?goethitised ferruginous shale? appears fractured with yb staining on fracture surfaces,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, normal_crystalline_igneous_rock","100, 47"
+4029,592,2182135,134,136.0,Goethite streak on hammer plate softer than expected ?goethitised ferruginous shale? appears fractured with yb staining on fracture surfaces,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, normal_crystalline_igneous_rock","100, 47"
+4030,592,2182135,164,166.0,Dark pink clays with minor G chips - ?S Band?,mud,100,mud,sediment_clastic,sediment,,"mud, landslip","101, 53"
+4031,592,2182135,166,168.0,50:50 red Ferruginous shale and G chips,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, schist","101, 50"
+4032,592,2182135,168,170.0,50:50 red Ferruginous shale and G chips,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, schist","101, 50"
+4033,592,2182135,170,172.0,50:50 red Ferruginous shale and G chips,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, schist","101, 50"
+4034,592,2182135,174,176.0,Pink clay rare G chips,mud,100,mud,sediment_clastic,sediment,,mud,100
+4035,592,2182135,176,178.0,Goethitic Hematite and ferruginous shale with hematitic streak,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, ironstone, iron_mudstone","101, 67, 63"
+4036,592,2182135,178,180.0,Goethitic Hematite and ferruginous shale with hematitic streak,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, ironstone, iron_mudstone","101, 67, 63"
+4037,592,2182135,184,186.0,"Goethite and minor ""denatured chert""",chert,100,chert,siliceous,sedimentary_rock,,"chert, iron_mud","101, 80"
+4038,592,2182135,194,196.0,Chert and ferruginous shale chips trace G,mudstone,100,mudstone,clastic,sedimentary_rock,,"chert, mudstone","101, 100"
+4039,592,2182135,196,197.0,Chert and ferruginous shale chips trace G,mudstone,100,mudstone,clastic,sedimentary_rock,,"chert, mudstone","101, 100"

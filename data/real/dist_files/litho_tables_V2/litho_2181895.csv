@@ -1,0 +1,11 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+2144,592,2181895,16,18.0,mottled clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+2145,592,2181895,18,20.0,mottled clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+2146,592,2181895,20,22.0,mottled clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+2147,592,2181895,22,24.0,mottled clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+2148,592,2181895,30,32.0,ochrerous goethitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+2149,592,2181895,32,34.0,ochrerous goethitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+2150,592,2181895,34,36.0,ochrerous goethitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+2151,592,2181895,54,56.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+2152,592,2181895,56,58.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+2153,592,2181895,58,60.0,EOH; unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,"unclassified_rock, banded_iron_formation","101, 101"

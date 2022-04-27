@@ -1,0 +1,10 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+3303,592,2182070,6,8.0,Q gravel/pebble-sized,gravel,100,gravel,sediment_clastic,sediment,,gravel,101
+3304,592,2182070,40,42.0,Gritty clay trace Y,mud,101,mud,sediment_clastic,sediment,,mud,100
+3305,592,2182070,42,44.0,Angular Q pebble in gritty white clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3306,592,2182070,44,46.0,Gritty white clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3307,592,2182070,56,58.0,20mm Q sandstone fragment,sandstone,100,sandstone,clastic,sedimentary_rock,,sandstone,100
+3308,592,2182070,68,70.0,Gritty clay  ,mud,101,mud,sediment_clastic,sediment,,mud,101
+3309,592,2182070,88,90.0,L clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3310,592,2182070,98,100.0,This zone: clay limonitic,mud,100,mud,sediment_clastic,sediment,,mud,100
+3311,592,2182070,106,108.0,This zone: clay limonitic,mud,100,mud,sediment_clastic,sediment,,mud,100

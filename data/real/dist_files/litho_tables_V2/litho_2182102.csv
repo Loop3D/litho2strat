@@ -1,0 +1,10 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+3718,592,2182102,88,90.0,fall back clean cyclone,fall,100,fall,natural_superficial_ground,surficial_rock,,fall,100
+3719,592,2182102,122,124.0,finely laminated BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3720,592,2182102,124,126.0,finely laminated BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3721,592,2182102,126,128.0,finely laminated BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3722,592,2182102,128,130.0,finely laminated BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3723,592,2182102,130,132.0,finely laminated BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3724,592,2182102,138,140.0,Quartz too,vein,100,vein,fillings,texture_structure,,vein,101
+3725,592,2182102,140,142.0,Quartz too,vein,100,vein,fillings,texture_structure,,vein,101
+3726,592,2182102,198,200.0,jasperalitic BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101

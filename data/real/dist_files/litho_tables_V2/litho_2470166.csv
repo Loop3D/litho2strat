@@ -1,0 +1,31 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+6314,2670,2470166,62,64.0,SLIGHTMINERALISATION,mineralisation,82,mineralisation,ore,mineralisation,,mineralisation,82
+6315,2670,2470166,62,64.0,WEATHD DOLOMITE AND CLAY,mud,101,mud,sediment_clastic,sediment,,mud,101
+6316,2670,2470166,64,66.0,SLIGHTMINERALISATION,mineralisation,82,mineralisation,ore,mineralisation,,mineralisation,82
+6317,2670,2470166,64,66.0,WEATHD DOLOMITE AND CLAY,mud,101,mud,sediment_clastic,sediment,,mud,101
+6318,2670,2470166,66,68.0,SLIGHTMINERALISATION,mineralisation,82,mineralisation,ore,mineralisation,,mineralisation,82
+6319,2670,2470166,66,68.0,WEATHD DOLOMITE AND CLAY,mud,101,mud,sediment_clastic,sediment,,mud,101
+6320,2670,2470166,68,70.0,SLIGHTMINERALISATION,mineralisation,82,mineralisation,ore,mineralisation,,mineralisation,82
+6321,2670,2470166,68,70.0,WEATHD DOLOMITE AND CLAY,mud,101,mud,sediment_clastic,sediment,,mud,101
+6322,2670,2470166,70,72.0,SLIGHTMINERALISATION,mineralisation,82,mineralisation,ore,mineralisation,,mineralisation,82
+6323,2670,2470166,70,72.0,WEATHD DOLOMITE AND CLAY,mud,101,mud,sediment_clastic,sediment,,mud,101
+6324,2670,2470166,72,74.0,SLIGHTMINERALISATION,mineralisation,82,mineralisation,ore,mineralisation,,mineralisation,82
+6325,2670,2470166,72,74.0,WEATHD DOLOMITE AND CLAY,mud,101,mud,sediment_clastic,sediment,,mud,101
+6326,2670,2470166,74,76.0,SLIGHTMINERALISATION,mineralisation,82,mineralisation,ore,mineralisation,,mineralisation,82
+6327,2670,2470166,74,76.0,WEATHD DOLOMITE AND CLAY,mud,101,mud,sediment_clastic,sediment,,mud,101
+6328,2670,2470166,76,78.0,SLIGHTMINERALISATION,mineralisation,82,mineralisation,ore,mineralisation,,mineralisation,82
+6329,2670,2470166,76,78.0,WEATHD DOLOMITE AND CLAY,mud,101,mud,sediment_clastic,sediment,,mud,101
+6330,2670,2470166,78,80.0,SLIGHTMINERALISATION,mineralisation,82,mineralisation,ore,mineralisation,,mineralisation,82
+6331,2670,2470166,78,80.0,WEATHD DOLOMITE AND CLAY,mud,101,mud,sediment_clastic,sediment,,mud,101
+6332,2670,2470166,80,82.0,SLIGHTMINERALISATION,mineralisation,82,mineralisation,ore,mineralisation,,mineralisation,82
+6333,2670,2470166,80,82.0,WEATHD DOLOMITE AND CLAY,mud,101,mud,sediment_clastic,sediment,,mud,101
+6334,2670,2470166,82,84.0,SLIGHTMINERALISATION,mineralisation,82,mineralisation,ore,mineralisation,,mineralisation,82
+6335,2670,2470166,82,84.0,WEATHD DOLOMITE AND CLAY,mud,101,mud,sediment_clastic,sediment,,mud,101
+6336,2670,2470166,84,86.0,SLIGHTMINERALISATION,mineralisation,82,mineralisation,ore,mineralisation,,mineralisation,82
+6337,2670,2470166,84,86.0,WEATHD DOLOMITE AND CLAY,mud,101,mud,sediment_clastic,sediment,,mud,101
+6338,2670,2470166,86,88.0,SLIGHTMINERALISATION,mineralisation,82,mineralisation,ore,mineralisation,,mineralisation,82
+6339,2670,2470166,86,88.0,WEATHD DOLOMITE AND CLAY,mud,101,mud,sediment_clastic,sediment,,mud,101
+6340,2670,2470166,88,90.0,WEATHD DOLOMITE AND CLAY,mud,101,mud,sediment_clastic,sediment,,mud,101
+6341,2670,2470166,90,92.0,LOTS OF CARBONATE,carbonate,101,carbonate,carbonate,sedimentary_rock,,carbonate,101
+6342,2670,2470166,92,94.0,LOTS OF CARBONATE,carbonate,101,carbonate,carbonate,sedimentary_rock,,carbonate,101
+6343,2670,2470166,94,96.0,LOTS OF CARBONATE; REL FRESH,carbonate,100,carbonate,carbonate,sedimentary_rock,,"carbonate, unclassified_rock","101, 63"

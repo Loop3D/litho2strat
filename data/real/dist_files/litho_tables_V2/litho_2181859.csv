@@ -1,0 +1,13 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+1831,592,2181859,0,2.0,colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock,,colluvium,101
+1832,592,2181859,2,4.0,transported HC vitG,colluvium,100,colluvium,natural_superficial_ground,surficial_rock,,colluvium,100
+1833,592,2181859,4,6.0,transported HC vitG,colluvium,100,colluvium,natural_superficial_ground,surficial_rock,,colluvium,100
+1834,592,2181859,6,8.0,transported HC vitG,colluvium,100,colluvium,natural_superficial_ground,surficial_rock,,colluvium,100
+1835,592,2181859,28,30.0,clays after shale?,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+1836,592,2181859,30,32.0,limonitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+1837,592,2181859,32,34.0,limonitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+1838,592,2181859,34,36.0,limonitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+1839,592,2181859,38,40.0,limonitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+1840,592,2181859,42,44.0,limonitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+1841,592,2181859,48,50.0,limonitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+1842,592,2181859,60,62.0,mass dark blue chert,chert,101,chert,siliceous,sedimentary_rock,,chert,101

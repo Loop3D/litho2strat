@@ -1,0 +1,32 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+2582,592,2182016,18,20.0,Base of transported very difficult to distinguished. Called here due to decrease in washed away fines which are potential matrix material.,colluvium,100,colluvium,natural_superficial_ground,surficial_rock,,"colluvium, clastic_sediment, andesite","100, 45, 44"
+2583,592,2182016,20,22.0,Possibly Bees Gorge until 92m  if faulted above Mt McRae Shale below.,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,101
+2584,592,2182016,34,36.0,Polymictic shales and chert or interbeds????,chert,100,chert,siliceous,sedimentary_rock,,"mudstone, chert, intermediate","101, 101, 67"
+2585,592,2182016,36,38.0,Polymictic shales and chert or interbeds????,chert,100,chert,siliceous,sedimentary_rock,,"mudstone, chert, intermediate","101, 101, 67"
+2586,592,2182016,38,40.0,Polymictic shales and chert or interbeds????,chert,100,chert,siliceous,sedimentary_rock,,"mudstone, chert, intermediate","101, 101, 67"
+2587,592,2182016,40,42.0,Polymictic shales and chert or interbeds????,chert,100,chert,siliceous,sedimentary_rock,,"mudstone, chert, intermediate","101, 101, 67"
+2588,592,2182016,64,66.0,Microbands of shale andchert,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+2589,592,2182016,78,80.0,Vein quartz with very mottled lithology chertish. Possible fault zone.,fault,100,fault,breaks,texture_structure,,"vein, fault","101, 100"
+2590,592,2182016,80,82.0,Vein quartz with very mottled lithology chertish. Possible fault zone.,fault,100,fault,breaks,texture_structure,,"vein, fault","101, 100"
+2591,592,2182016,82,84.0,Vein quartz with very mottled lithology chertish. Possible fault zone.,fault,100,fault,breaks,texture_structure,,"vein, fault","101, 100"
+2592,592,2182016,84,86.0,Vein quartz with very mottled lithology chertish. Possible fault zone.,fault,100,fault,breaks,texture_structure,,"vein, fault","101, 100"
+2593,592,2182016,86,88.0,Soft hematite/hematitic shalewith harder silicious H,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+2594,592,2182016,88,90.0,Soft hematite/hematitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+2595,592,2182016,92,94.0,Carb shale?,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+2596,592,2182016,100,102.0,Dolomite?,dolostone,101,dolostone,carbonate,sedimentary_rock,,dolostone,101
+2597,592,2182016,106,108.0,Dark stained chert with carb shale frags,mudstone,100,mudstone,clastic,sedimentary_rock,,"chert, mudstone","101, 100"
+2598,592,2182016,108,110.0,Microbanded BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+2599,592,2182016,110,112.0,Red jasperlite. Grey chert. Microbanded chert and BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,"chert, banded_iron_formation","101, 101"
+2600,592,2182016,114,116.0,BEE GORGE?? Does not match blue book and FMG description Microbanded grey chert,chert,101,chert,siliceous,sedimentary_rock,,"chert, blanket_bog_peat","101, 44"
+2601,592,2182016,116,118.0,BEE GORGE?? Does not match blue book and FMG description Microbanded grey chert,chert,101,chert,siliceous,sedimentary_rock,,"chert, blanket_bog_peat","101, 44"
+2602,592,2182016,118,120.0,BEE GORGE?? Does not match blue book and FMG description Microbanded grey chert,chert,101,chert,siliceous,sedimentary_rock,,"chert, blanket_bog_peat","101, 44"
+2603,592,2182016,132,134.0,Smaller softer shale - mild carbonaceous staining,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+2604,592,2182016,138,140.0,Smaller softer shale - mild carbonaceous staining,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+2605,592,2182016,142,144.0,With smaller softer bn/rd shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+2606,592,2182016,144,146.0,With smaller softer shale and carb staining,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, bituminous_coal","101, 60"
+2607,592,2182016,146,148.0,Trace pyrite,massive_sulphide,101,massive_sulphide,ore,mineralisation,,massive_sulphide,101
+2608,592,2182016,152,154.0,Smaller frags of dol shale and shale - poss carbonaceous due to black staining,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, mudstone, lacustrine_deposit","101, 100, 62"
+2609,592,2182016,154,156.0,Smaller frags of dol shale and shale - poss carbonaceous due to black staining,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, mudstone, lacustrine_deposit","101, 100, 62"
+2610,592,2182016,160,162.0,Increase in shale frags %,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+2611,592,2182016,162,164.0,Small shaley frags of dol ad shale - poss some B. + TRACE py,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+2612,592,2182016,164,166.0,Small shaley frags of dol ad shale - poss some B. + TRACE py,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100

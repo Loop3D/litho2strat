@@ -1,0 +1,46 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+4760,592,2182183,0,2.0,Transported sands grit & qtz gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+4761,592,2182183,2,4.0,Transported sands grit & qtz gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+4762,592,2182183,4,6.0,Transported sands grit & qtz gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+4763,592,2182183,6,8.0,Transported sands grit & qtz gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+4764,592,2182183,8,10.0,Transported sands grit & qtz gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+4765,592,2182183,10,12.0,Transported sands grit & qtz gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+4766,592,2182183,12,14.0,Transported sands grit & qtz gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+4767,592,2182183,14,16.0,Transported sands-clays & mnr maghemite,mud,100,mud,sediment_clastic,sediment,,colluvium,100
+4768,592,2182183,16,18.0,Transported sands-clays & mnr maghemite,mud,100,mud,sediment_clastic,sediment,,colluvium,100
+4769,592,2182183,18,20.0,Transported sands-clays & mnr maghemite,mud,100,mud,sediment_clastic,sediment,,colluvium,100
+4770,592,2182183,20,22.0,Transported sands grit & qtz gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+4771,592,2182183,22,24.0,Transported sands grit & qtz gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+4772,592,2182183,24,26.0,Reworked lacustrine clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4773,592,2182183,26,28.0,Reworked lacustrine clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4774,592,2182183,28,30.0,Reworked lacustrine clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4775,592,2182183,30,32.0,Lacustrine clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4776,592,2182183,32,34.0,Lacustrine clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4777,592,2182183,34,36.0,Lacustrine clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4778,592,2182183,36,38.0,Lacustrine clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4779,592,2182183,38,40.0,Lacustrine clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+4780,592,2182183,64,66.0,gry-grn clays manganese - fiz w/ peroxide,mud,100,mud,sediment_clastic,sediment,,mud,100
+4781,592,2182183,70,72.0,Transported running sands - clay and qtz,mud,100,mud,sediment_clastic,sediment,,"mud, vein","101, 67"
+4782,592,2182183,72,74.0,Transported running sands - clay and qtz,mud,100,mud,sediment_clastic,sediment,,"mud, vein","101, 67"
+4783,592,2182183,74,76.0,Transported running sands - clay and qtz,mud,100,mud,sediment_clastic,sediment,,"mud, vein","101, 67"
+4784,592,2182183,76,78.0,Transported running sands - clay and qtz,mud,100,mud,sediment_clastic,sediment,,"mud, vein","101, 67"
+4785,592,2182183,78,80.0,Transported running sands - clay and qtz,mud,100,mud,sediment_clastic,sediment,,"mud, vein","101, 67"
+4786,592,2182183,80,82.0,Limonitic clays w/ G fragments,mud,100,mud,sediment_clastic,sediment,,mud,100
+4787,592,2182183,82,84.0,Limonitic clays w/ G fragments,mud,100,mud,sediment_clastic,sediment,,mud,100
+4788,592,2182183,90,92.0,with white shale marker or contamination,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, disturbed_ground","100, 75"
+4789,592,2182183,108,110.0,marite,mafite,83,mafite,mafic,igneous_rock,,mafite,83
+4790,592,2182183,110,112.0,marite,mafite,83,mafite,mafic,igneous_rock,,mafite,83
+4791,592,2182183,112,114.0,marite,mafite,83,mafite,mafic,igneous_rock,,mafite,83
+4792,592,2182183,118,120.0,marite,mafite,83,mafite,mafic,igneous_rock,,mafite,83
+4793,592,2182183,120,122.0,marite,mafite,83,mafite,mafic,igneous_rock,,mafite,83
+4794,592,2182183,122,124.0,marite,mafite,83,mafite,mafic,igneous_rock,,mafite,83
+4795,592,2182183,124,126.0,marite,mafite,83,mafite,mafic,igneous_rock,,mafite,83
+4796,592,2182183,132,134.0,marite,mafite,83,mafite,mafic,igneous_rock,,mafite,83
+4797,592,2182183,138,140.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4798,592,2182183,140,142.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4799,592,2182183,142,144.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4800,592,2182183,144,146.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4801,592,2182183,146,148.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4802,592,2182183,148,150.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4803,592,2182183,150,152.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4804,592,2182183,154,156.0,EOH; unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,"unclassified_rock, banded_iron_formation","101, 101"

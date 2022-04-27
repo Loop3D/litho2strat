@@ -1,0 +1,37 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+1201,592,2181790,0,8.4,Transported siltsand grit gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+1202,592,2181790,15,25.1,Dark brown homogenous transported sands silts clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+1203,592,2181790,25,29.0,partially ferruginised clays and silts,mud,100,mud,sediment_clastic,sediment,,"mud, mud","101, 101"
+1204,592,2181790,29,35.1,Dark brown homogenous transported sands silts clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+1205,592,2181790,35,64.0,massive pink-cream lacustrine clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+1206,592,2181790,64,67.6,Transported subrounded <1cm maghemites & other materials ~45-50% cemented in white clay matrix,mud,100,mud,sediment_clastic,sediment,,mud,101
+1207,592,2181790,67,73.25,Transported pisoidal <2.5cm maghemites & other materials ~60-65% cemented in white clay  matrix,mud,100,mud,sediment_clastic,sediment,,mud,101
+1208,592,2181790,73,74.8,Clay dominant transported material with clasts maghemite and other material,mud,100,mud,sediment_clastic,sediment,,"mud, marl, lamalginite","100, 67, 62"
+1209,592,2181790,74,78.7,white clay and very fine grained silts,mud,100,mud,sediment_clastic,sediment,,"mud, mud","101, 101"
+1210,592,2181790,81,83.7,Transported sub-rounded clasts maghemites and goethite ~35-40% cemented in white clay matrix; clay increasing to:,mud,100,mud,sediment_clastic,sediment,,"mud, colluvium, mud","101, 100, 100"
+1211,592,2181790,83,86.1,variable <50% vitreous and vuggy hardcap development goethite dominant within interbedded? goethitic shales; large amountof white clays,mud,101,mud,sediment_clastic,sediment,,"mudstone, mud, mudstone","101, 101, 58"
+1212,592,2181790,86,88.0,Soft porous interbedded red ferruginous hematitic shale and limonitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, mudstone, orthoschist","101, 101, 55"
+1213,592,2181790,88,89.6,Slightly harder wk-mod bedded vitreous goethitic ore partially altered to limonit,ore,100,ore,ore,mineralisation,,"ore, iron_mud","100, 74"
+1214,592,2181790,89,90.7,soft bedded red ferruginous shaley ore with harder hematite fragments partially altered to goethite in places,ore,100,ore,ore,mineralisation,,"ore, iron_sand, carbonate_sediment","101, 67, 49"
+1215,592,2181790,90,95.1,soft porous ore close to 100% limonite,ore,100,ore,ore,mineralisation,,"ore, lignite","100, 80"
+1216,592,2181790,95,95.8,interbedded soft-porous bedded ore and hard vitreous goethitic ore interbedded H dominant and G dominant beds,ore,100,ore,ore,mineralisation,,"ore, ore, dolostone, dolostone","101, 101, 67, 53"
+1217,592,2181790,95,97.7,soft porous goethite-limonite ore,ore,101,ore,ore,mineralisation,,ore,101
+1218,592,2181790,97,102.2,interbedded soft-porous bedded ore and hard vitreous more massive ore mixture of goethitic hematite and goethite dominant vitreous & porous,ore,100,ore,ore,mineralisation,,"ore, ore, dolostone","101, 100, 49"
+1219,592,2181790,102,106.7,soft crumbly hematised-ferruginous shale hematite dominant with some goethite,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, iron_mud","100, 80"
+1220,592,2181790,106,109.3,interbedded hard vitreous G-dominant ore and softer crumbly H-dominant ore hematised shales,ore,101,ore,ore,mineralisation,,"ore, mudstone","101, 101"
+1221,592,2181790,109,109.7,PINK SHALE MARKER BED,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+1222,592,2181790,109,111.2,soft crumbly hematised shale and H dominant bedded ore,ore,101,ore,ore,mineralisation,,"mudstone, ore","101, 101"
+1223,592,2181790,111,115.4,overally slightly harder bedded vitreous H-dominant ore with increasing soft bedded hematised shale beds to:,mudstone,100,mudstone,clastic,sedimentary_rock,,"ore, mudstone","101, 100"
+1224,592,2181790,115,117.2,soft diced and porous hematite-dominant ore partially altered to goethite,ore,100,ore,ore,mineralisation,,"ore, iron_mud, duricrust","100, 80, 53"
+1225,592,2181790,117,122.3,interbedded hard vitreous goethitic hematite ore vuggy in places and some softer diced beds; INCREASING GOETHITE CONTENT TO:,ore,100,ore,ore,mineralisation,,"ore, ironstone, banded_iron_formation","100, 49, 47"
+1226,592,2181790,122,128.2,more diced softer style goethitic hematite ore with rare zones of hard vitreous G-dominant ore very broken even in vitreous bands - STRUCTURE?,ore,100,ore,ore,mineralisation,,"ore, ore","101, 100"
+1227,592,2181790,128,129.2,unenriched cherty BIF band proximal to STRUCTURE?,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,"banded_iron_formation, trachyte","100, 59"
+1228,592,2181790,129,130.7,fractured hard vitreous W-G ore - proximal to STRUCTURE?,ore,100,ore,ore,mineralisation,,"ore, trachyte","100, 59"
+1229,592,2181790,130,131.2,clay zone and some brecciated? vitreous G ore included clay band sub-parallel to core axis indicates VERTICAL STRUCTURE?,mud,100,mud,sediment_clastic,sediment,,"mud, mud, limestone/silicate_sandstone","100, 100, 45"
+1230,592,2181790,131,135.0,harder style vitreous G-W ore busted up - proximal to STRUCTURE?,ore,100,ore,ore,mineralisation,,"ore, trachyte","100, 59"
+1231,592,2181790,135,146.1,softer diced G dominant mineralisation almost wholly converted to limonite in places increasing harder vitreous G to:,mineralisation,100,mineralisation,ore,mineralisation,,"mineralisation, foid_bearing_monzonite","100, 42"
+1232,592,2181790,146,152.3,mostly harder vitreous G dominant ore with multiple zones of softer diced ore which contain greater limonite secondary feature related to structure?,ore,100,ore,ore,mineralisation,,"ore, ore, trachyte, lime_framestone","101, 101, 59, 42"
+1233,592,2181790,152,166.6,softer diced G>L mineralisation crumbly and incompetent with occasional band martite-hematised shale ,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, mineralisation, melilitolite","101, 100, 58"
+1234,592,2181790,166,167.7,hard vitrous G dominant mineralisation with very small pink shale bed at end of interval,mudstone,100,mudstone,clastic,sedimentary_rock,,"mineralisation, mudstone","101, 100"
+1235,592,2181790,167,172.0,fine sparkly martite-hematised shale converted to goethite and limonite in places crumbles to dust on picking up samples; INCREASE GOETHITE TO:,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, iron_mud, ironstone, mylonite, unclassified_rock","100, 80, 65, 51, 50"
+1236,592,2181790,174,178.0,EOH; unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,"unclassified_rock, banded_iron_formation","101, 101"

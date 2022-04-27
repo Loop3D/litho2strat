@@ -1,0 +1,8 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+2373,592,2181968,20,22.0,Cavity at 21m. Small sample,void,100,void,artificial_man_made_ground,surficial_rock,,void,100
+2374,592,2181968,28,30.0,FeO-stained clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+2375,592,2181968,30,32.0,FeO-stained clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+2376,592,2181968,32,34.0,FeO-stained clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+2377,592,2181968,74,76.0,Clay gritty. No discernible chips,mud,100,mud,sediment_clastic,sediment,,mud,100
+2378,592,2181968,90,92.0,Clay gritty. No discernible chips,mud,100,mud,sediment_clastic,sediment,,mud,100
+2379,592,2181968,96,98.0,Clay content hard to identify for,mud,100,mud,sediment_clastic,sediment,,"mud, ilmenitite","100, 56"

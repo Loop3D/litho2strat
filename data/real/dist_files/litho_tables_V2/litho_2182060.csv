@@ -1,0 +1,25 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+3150,592,2182060,36,38.0,lacustrine clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+3151,592,2182060,38,40.0,lacustrine clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+3152,592,2182060,40,42.0,lacustrine clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+3153,592,2182060,42,44.0,lacustrine clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+3154,592,2182060,44,46.0,lacustrine clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+3155,592,2182060,46,48.0,lacustrine clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+3156,592,2182060,48,50.0,lacustrine clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+3157,592,2182060,84,86.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,,sand,101
+3158,592,2182060,86,88.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,,sand,101
+3159,592,2182060,88,90.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,,sand,101
+3160,592,2182060,90,92.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,,sand,101
+3161,592,2182060,92,94.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,,sand,101
+3162,592,2182060,94,96.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,,sand,101
+3163,592,2182060,96,98.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,,sand,101
+3164,592,2182060,98,100.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,,sand,101
+3165,592,2182060,100,102.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,,sand,101
+3166,592,2182060,102,104.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,,sand,101
+3167,592,2182060,104,106.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,,sand,101
+3168,592,2182060,114,116.0,G chips tr RB F. Streak has OB tinge -Gitised shale/possible Mn tr?,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+3169,592,2182060,116,118.0,G chips tr RB F. Streak has OB tinge -Gitised shale/possible Mn tr?,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+3170,592,2182060,118,120.0,G chips tr RB F. Streak has OB tinge -Gitised shale/possible Mn tr?,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+3171,592,2182060,120,122.0,G chips tr RB F. Streak has OB tinge -Gitised shale/possible Mn tr?,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+3172,592,2182060,122,124.0,G chips tr RB F. Streak has OB tinge -Gitised shale/possible Mn tr?,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+3173,592,2182060,124,126.0,G chips tr RB F. Streak has OB tinge -Gitised shale/possible Mn tr?,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100

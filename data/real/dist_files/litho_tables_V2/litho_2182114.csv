@@ -1,0 +1,24 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+3843,592,2182114,2,4.0,Poorly-sorted colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock,,colluvium,101
+3844,592,2182114,4,6.0,Poorly-sorted colluvium. Also trace X,colluvium,100,colluvium,natural_superficial_ground,surficial_rock,,colluvium,100
+3845,592,2182114,28,30.0,Whitish clays FeO-stained,mud,100,mud,sediment_clastic,sediment,,mud,101
+3846,592,2182114,30,32.0,Whitish clays FeO-stained,mud,100,mud,sediment_clastic,sediment,,mud,101
+3847,592,2182114,32,34.0,Whitish clays FeO-stained,mud,100,mud,sediment_clastic,sediment,,mud,101
+3848,592,2182114,34,36.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3849,592,2182114,68,70.0,Silty Q clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3850,592,2182114,70,72.0,Silty Q clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3851,592,2182114,72,74.0,Fine sandy Q in clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3852,592,2182114,74,76.0,Fine sandy Q in clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3853,592,2182114,76,78.0,Fine sandy Q in clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3854,592,2182114,78,80.0,Sandy Q in clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3855,592,2182114,80,82.0,Fine sandy Q in clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3856,592,2182114,82,84.0,Poorly -sorted Q in silty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3857,592,2182114,114,116.0,Trace siltstone,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+3858,592,2182114,142,144.0,N mins metallic. ?BASE OF COVER,cover,101,cover,natural_superficial_ground,surficial_rock,,cover,101
+3859,592,2182114,144,146.0,Mix of G H Q and Q sandstone,sandstone,101,sandstone,clastic,sedimentary_rock,,"sandstone, migmatite","101, 35"
+3860,592,2182114,150,152.0,Also G and Q.Fine siliceous chips.. C or Q siltstone?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, siliceous_ooze, bog","101, 56, 50"
+3861,592,2182114,172,174.0,Light grey-brown shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+3862,592,2182114,174,176.0,Light grey-brown shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+3863,592,2182114,178,180.0,Light grey-brown shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+3864,592,2182114,202,204.0,?Basal biffy chert of WA though GN>YW,chert,100,chert,siliceous,sedimentary_rock,,chert,100
+3865,592,2182114,228,230.0,This rock like a magnetic brown shale ?T,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101

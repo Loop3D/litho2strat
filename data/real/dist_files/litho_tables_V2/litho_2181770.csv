@@ -1,0 +1,16 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+723,592,2181770,32,33.25,cementd roundd - subroundd maghemite gravels 2-50mm w/ WHT-d RD clay/silt matrix; SHARP AT: ,mud,100,mud,sediment_clastic,sediment,,"mud, sapropel","101, 62"
+724,592,2181770,33,36.7,strong HC developt in transpd? WHT-PNK clays with G/oG and vitreous G; 30-50% clays remain in vughs; SHARP AT:,mud,100,mud,sediment_clastic,sediment,,"mud, mud, sapropel, bog, void","101, 100, 62, 57, 56"
+725,592,2181770,36,37.9,strong vitH/vitG HC developt w/ trc ~10% WHT clays in vughs & incg strong BE,mud,100,mud,sediment_clastic,sediment,,mud,100
+726,592,2181770,37,38.65,wk-med vitG/oG/H HC developt with increasd PNK clay content 20-30% BEd,mud,100,mud,sediment_clastic,sediment,,"mud, peloid_phosphorite","100, 46"
+727,592,2181770,38,40.7,medium HC developt in BE Mt Newman w/ G>H & trc WHT-PINK clay decrease in vughs from39.7m,mud,100,mud,sediment_clastic,sediment,,mud,100
+728,592,2181770,40,42.1,wk-med HC developt in BE Mt Newman w/ vitG/W & trc H; inc in clays & crumbly - structure?,mud,100,mud,sediment_clastic,sediment,,"mud, foid_monzodiorite","100, 36"
+729,592,2181770,43,45.3,wk-med HC developt in BE Mt Newman G/oG dominant w/ <2% vughs trc clays @ 44-44.3m; incd H b/tween 44.8m onwards; SHARP AT:,mud,100,mud,sediment_clastic,sediment,,"mud, sapropel, chemical_waste","101, 62, 44"
+730,592,2181770,47,48.7,wk BEd Mt Newman G domt with 40% interbedded WHT clays,mud,101,mud,sediment_clastic,sediment,,"mud, dolostone","101, 40"
+731,592,2181770,56,58.5,almost massive oG/G soft and powdery trc Ks in spots?; SHARP AT:,spots,100,spots,fillings,texture_structure,,"sapropel, limestone, peridotite","62, 46, 43"
+732,592,2181770,72,72.8,CLAY AFTER PINK SHALE MARKER HORIZON,mud,100,mud,sediment_clastic,sediment,,mud,100
+733,592,2181770,74,75.9,soft BEd G/oG shale trc trc martite only; SHARP AT:,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, sapropel","100, 62"
+734,592,2181770,75,76.5,end enricht zone; interbedd pink clay after shale/ferrug S/grey 50mm chert band,mud,100,mud,sediment_clastic,sediment,,"mud, dendrites","100, 56"
+735,592,2181770,76,77.05,interbedd chert and deep red ferrug S,chert,100,chert,siliceous,sedimentary_rock,,"chert, ferruginous_deposits","101, 44"
+736,592,2181770,77,77.7,hard unenriched cherty BIF w/ fine <1mm hematite bands,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,banded_iron_formation,100
+737,592,2181770,77,78.0,EOH; interbedd oGt ferrug shale & GRY chert,chert,101,chert,siliceous,sedimentary_rock,,"unclassified_rock, chert","101, 101"

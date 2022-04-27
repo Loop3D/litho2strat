@@ -1,0 +1,12 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+3227,592,2182066,2,4.0,Sub-angular Q gravel,gravel,101,gravel,sediment_clastic,sediment,,gravel,101
+3228,592,2182066,20,22.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3229,592,2182066,48,50.0,Trace FeO. Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3230,592,2182066,50,52.0,Trace FeO. Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3231,592,2182066,52,54.0,Trace FeO. Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3232,592,2182066,54,56.0,Trace FeO. Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3233,592,2182066,56,58.0,Trace FeO. Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3234,592,2182066,58,60.0,Clay gritty with fine sand,sand,101,sand,sediment_clastic,sediment,,"sand, mud","101, 100"
+3235,592,2182066,64,66.0,Trace FeO. Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3236,592,2182066,90,92.0,Gritty limonitic clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3237,592,2182066,120,122.0,Soft pale goeth chert,chert,101,chert,siliceous,sedimentary_rock,,chert,101

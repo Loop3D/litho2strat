@@ -1,0 +1,48 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+6033,592,2182336,2,4.0,OB sands minor indurated chips trace X pisoids/granules,gravel,101,gravel,sediment_clastic,sediment,,sand,100
+6034,592,2182336,4,6.0,OB sands minor indurated chips trace X pisoids/granules,gravel,101,gravel,sediment_clastic,sediment,,sand,100
+6035,592,2182336,6,8.0,OB sands minor indurated chips trace X pisoids/granules,gravel,101,gravel,sediment_clastic,sediment,,sand,100
+6036,592,2182336,8,10.0,OB sands minor indurated chips trace X pisoids/granules,gravel,101,gravel,sediment_clastic,sediment,,sand,100
+6037,592,2182336,10,12.0,OB sands minor indurated chips trace X pisoids/granules,gravel,101,gravel,sediment_clastic,sediment,,sand,100
+6038,592,2182336,12,14.0,OB fines plus indurated ob fines cream clay chips in,mud,100,mud,sediment_clastic,sediment,,mud,100
+6039,592,2182336,14,16.0,OB fines plus indurated ob fines cream clay chips in,mud,100,mud,sediment_clastic,sediment,,mud,100
+6040,592,2182336,16,18.0,OB fines plus indurated ob fines cream clay chips in,mud,100,mud,sediment_clastic,sediment,,mud,100
+6041,592,2182336,18,20.0,OB fines plus indurated ob fines cream clay chips in,mud,100,mud,sediment_clastic,sediment,,mud,100
+6042,592,2182336,20,22.0,X and W Pisoids and pebbles with yb cutans in silty matrix,gravel,100,gravel,sediment_clastic,sediment,,"gravel, pisolite, void, soil","92, 59, 48, 29"
+6043,592,2182336,22,24.0,X and W Pisoids and pebbles with yb cutans in silty matrix,gravel,100,gravel,sediment_clastic,sediment,,"gravel, pisolite, void, soil","92, 59, 48, 29"
+6044,592,2182336,24,26.0,Pale lime green clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+6045,592,2182336,26,28.0,Pale lime green clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+6046,592,2182336,28,30.0,Powdery fines with trace Ferruginous chips and rare wh vein Q,vein,100,vein,fillings,texture_structure,,"vein, ferruginous_deposits, porphyry","100, 63, 53"
+6047,592,2182336,30,32.0,Powdery fines with rare wh vein Q - ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, porphyry","101, 53"
+6048,592,2182336,32,34.0,Powdery fines with rare wh vein Q- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, porphyry","101, 53"
+6049,592,2182336,34,36.0,Powdery fines with rare wh vein Q- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, porphyry","101, 53"
+6050,592,2182336,36,38.0,Powdery fines with rare wh vein Q- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, porphyry","101, 53"
+6051,592,2182336,38,40.0,Powdery fines with rare wh vein Q- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, porphyry","101, 53"
+6052,592,2182336,40,42.0,YB Minor purple brown intervalsPowdery fines with rare wh vein QPowdery fines with rare wh vein Q- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, vein, lime_framestone","101, 100, 42"
+6053,592,2182336,42,44.0,YB Minor purple brown intervalsPowdery fines with rare wh vein QPowdery fines with rare wh vein Q- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, vein, lime_framestone","101, 100, 42"
+6054,592,2182336,44,46.0,YB Minor purple brown intervalsPowdery fines with rare wh vein QPowdery fines with rare wh vein Q- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, vein, lime_framestone","101, 100, 42"
+6055,592,2182336,46,48.0,YB Minor purple brown intervalsPowdery fines with rare wh vein QPowdery fines with rare wh vein Q- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, vein, lime_framestone","101, 100, 42"
+6056,592,2182336,48,50.0,YB Minor purple brown intervalsPowdery fines with rare wh vein QPowdery fines with rare wh vein Q- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, vein, lime_framestone","101, 100, 42"
+6057,592,2182336,50,52.0,YB Minor purple brown intervalsPowdery fines with rare wh vein QPowdery fines with rare wh vein Q- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, vein, lime_framestone","101, 100, 42"
+6058,592,2182336,52,54.0,YB Minor purple brown intervalsPowdery fines with rare wh vein QPowdery fines with rare wh vein Q- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, vein, lime_framestone","101, 100, 42"
+6059,592,2182336,54,56.0,YB Minor purple brown intervalsPowdery fines with rare wh vein QPowdery fines with rare wh vein Q- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, vein, lime_framestone","101, 100, 42"
+6060,592,2182336,56,58.0,YB Minor purple brown intervalsPowdery fines with rare wh vein QPowdery fines with rare wh vein Q- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, vein, lime_framestone","101, 100, 42"
+6061,592,2182336,58,60.0,YB Minor purple brown intervalsPowdery fines with rare wh vein QPowdery fines with rare wh vein Q- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, vein, lime_framestone","101, 100, 42"
+6062,592,2182336,60,62.0,YB Minor purple brown intervalsPowdery fines with rare wh vein QPowdery fines with rare wh vein Q- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, vein, lime_framestone","101, 100, 42"
+6063,592,2182336,62,64.0,YB Minor purple brown intervalsPowdery fines with rare wh vein QPowdery fines with rare wh vein Q- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, vein, lime_framestone","101, 100, 42"
+6064,592,2182336,64,66.0,YB Minor purple brown intervalsPowdery fines with rare wh vein QPowdery fines with rare wh vein Q- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, vein, lime_framestone","101, 100, 42"
+6065,592,2182336,66,68.0,YB Minor purple brown intervalsPowdery fines with rare wh vein QPowdery fines with rare wh vein Q- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, vein, lime_framestone","101, 100, 42"
+6066,592,2182336,68,70.0,YB Minor purple brown intervalsPowdery fines with rare wh vein QPowdery fines with rare wh vein Q- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, vein, lime_framestone","101, 100, 42"
+6067,592,2182336,70,72.0,YB Minor purple brown intervalsPowdery fines with rare wh vein QPowdery fines with rare wh vein Q- ?Argillaceous sediment/metapelite?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, vein, lime_framestone","101, 100, 42"
+6068,592,2182336,72,74.0,Powdery fines with rare wh vein Q - ?after metabasalt/metadolerite?,dolerite,101,dolerite,mafic_coarse_grained_crystalline,igneous_rock,,"dolerite, porphyry","101, 53"
+6069,592,2182336,74,76.0,Powdery fines with rare wh vein Q- ?after metabasalt/metadolerite?,dolerite,101,dolerite,mafic_coarse_grained_crystalline,igneous_rock,,"dolerite, porphyry","101, 53"
+6070,592,2182336,76,78.0,Powdery fines with rare wh vein Q- ?after metabasalt/metadolerite?,dolerite,101,dolerite,mafic_coarse_grained_crystalline,igneous_rock,,"dolerite, porphyry","101, 53"
+6071,592,2182336,78,80.0,Powdery fines with common wh vein Q- ?after metabasalt/metadolerite?,dolerite,101,dolerite,mafic_coarse_grained_crystalline,igneous_rock,,"dolerite, porphyry","101, 53"
+6072,592,2182336,80,82.0,Powdery fines with rare wh vein Q- ?after metabasalt/metadolerite?,dolerite,101,dolerite,mafic_coarse_grained_crystalline,igneous_rock,,"dolerite, porphyry","101, 53"
+6073,592,2182336,82,84.0,Powdery fines with rare wh vein Q- ?after metabasalt/metadolerite?,dolerite,101,dolerite,mafic_coarse_grained_crystalline,igneous_rock,,"dolerite, porphyry","101, 53"
+6074,592,2182336,84,86.0,Powdery fines with rare wh vein Q- ?after metabasalt/metadolerite?,dolerite,101,dolerite,mafic_coarse_grained_crystalline,igneous_rock,,"dolerite, porphyry","101, 53"
+6075,592,2182336,86,88.0,fg metabasalt/metadolerite with igneous xtalline texture minor white vein quartz ,vein,101,vein,fillings,texture_structure,,"dolerite, vein","101, 101"
+6076,592,2182336,88,90.0,fg metabasalt/metadolerite with igneous xtalline texture minor white vein quartz ,vein,101,vein,fillings,texture_structure,,"dolerite, vein","101, 101"
+6077,592,2182336,90,92.0,fg metabasalt/metadolerite with igneous xtalline texture minor white vein quartz ,vein,101,vein,fillings,texture_structure,,"dolerite, vein","101, 101"
+6078,592,2182336,92,94.0,fg metabasalt/metadolerite with igneous xtalline texture minor white vein quartz ,vein,101,vein,fillings,texture_structure,,"dolerite, vein","101, 101"
+6079,592,2182336,94,96.0,fg metabasalt/metadolerite with igneous xtalline texture minor white vein quartz ,vein,101,vein,fillings,texture_structure,,"dolerite, vein","101, 101"

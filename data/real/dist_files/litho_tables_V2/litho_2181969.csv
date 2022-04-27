@@ -1,0 +1,5 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+2380,592,2181969,10,12.0,H soft shale-like. X hard pisolitic,pisolith,101,pisolith,residual_deposit,surficial_rock,,pisolith,101
+2381,592,2181969,36,38.0,Still some caprock material.. As above,gossan,100,gossan,residual_deposit,surficial_rock,,gossan,100
+2382,592,2181969,40,42.0,Trace clay also,mud,100,mud,sediment_clastic,sediment,,mud,101
+2383,592,2181969,42,44.0,Trace clay also,mud,100,mud,sediment_clastic,sediment,,mud,101

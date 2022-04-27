@@ -1,0 +1,31 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+6116,592,2182339,0,2.0,FGR silt/soil,soil,101,soil,residual_deposit,surficial_rock,,soil,101
+6117,592,2182339,2,4.0,FGR silt/soil,soil,101,soil,residual_deposit,surficial_rock,,soil,101
+6118,592,2182339,4,6.0,FGR silt/soil,soil,101,soil,residual_deposit,surficial_rock,,soil,101
+6119,592,2182339,6,8.0,FGR silt/soil,soil,101,soil,residual_deposit,surficial_rock,,soil,101
+6120,592,2182339,8,10.0,FGR silt/soil + zf with yellow cutans,mud,100,mud,sediment_clastic,sediment,,"mud, crusts","100, 53"
+6121,592,2182339,12,14.0,Clay rich wit 20% X,mud,100,mud,sediment_clastic,sediment,,mud,100
+6122,592,2182339,14,16.0,Hematite pisoids 30% with clay matrix and minor X,mud,100,mud,sediment_clastic,sediment,,"mud, iron_sand, soil","101, 69, 29"
+6123,592,2182339,20,22.0,Lacustrine clay? With trace F?,mud,100,mud,sediment_clastic,sediment,,mud,100
+6124,592,2182339,22,24.0,Clay and trace Q,mud,100,mud,sediment_clastic,sediment,,"mud, trachyte","101, 67"
+6125,592,2182339,24,26.0,Clay and trace F/G weathered chips,mud,100,mud,sediment_clastic,sediment,,"mud, metamorphic_rock","101, 48"
+6126,592,2182339,26,28.0,Clay and trace F/G weathered chips,mud,100,mud,sediment_clastic,sediment,,"mud, metamorphic_rock","101, 48"
+6127,592,2182339,28,30.0,Quartz in clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+6128,592,2182339,42,44.0,Vein Quartz? In fines,vein,100,vein,fillings,texture_structure,,vein,101
+6129,592,2182339,46,48.0, Quartz - In fines,vein,100,vein,fillings,texture_structure,,vein,101
+6130,592,2182339,48,50.0, Quartz - In fines,vein,100,vein,fillings,texture_structure,,vein,101
+6131,592,2182339,50,52.0, Quartz - In fines,vein,100,vein,fillings,texture_structure,,vein,101
+6132,592,2182339,58,60.0,Felsic volcanic chips. Qtz rich. Xtl Tuff?,tuff,101,tuff,volcaniclastic,igneous_rock,,tuff,101
+6133,592,2182339,72,74.0,Qtz + Stilp tuff/meta-pelite,mudstone,101,mudstone,clastic,sedimentary_rock,,tuff,101
+6134,592,2182339,74,76.0,Qtz + Stilp tuff/meta-pelite 10%,mudstone,101,mudstone,clastic,sedimentary_rock,,tuff,101
+6135,592,2182339,78,80.0,Qtz w/ bedded sed. Meta-pelite?,mudstone,101,mudstone,clastic,sedimentary_rock,,fault,48
+6136,592,2182339,80,82.0,Qtz + Intermediate Vol? Andesite?,andesite,101,andesite,intermediate_fine_grained_crystalline,igneous_rock,,andesite,101
+6137,592,2182339,84,86.0,Bedded shale like chips. Meta-pelites? With 30% Qtz looks bedded also?,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+6138,592,2182339,86,88.0,Mafic volcanic. ,mafic,100,mafic,mafic,igneous_rock,,mafic,100
+6139,592,2182339,88,90.0,Vein Q w/ 20% mafic,mafic,101,mafic,mafic,igneous_rock,,mafic,101
+6140,592,2182339,90,92.0,F to M grained xtline fragments. Granitic to Intermediate volc. ,intermediate,100,intermediate,intermediate,igneous_rock,,"alkali_feldspar_granite, banded_iron_formation, coal","51, 50, 50"
+6141,592,2182339,92,94.0,F to M grained xtline fragments. Granitic to Intermediate volc. ,intermediate,100,intermediate,intermediate,igneous_rock,,"alkali_feldspar_granite, banded_iron_formation, coal","51, 50, 50"
+6142,592,2182339,94,96.0,F to M grained xtline fragments. Granitic to Intermediate volc. ,intermediate,100,intermediate,intermediate,igneous_rock,,"alkali_feldspar_granite, banded_iron_formation, coal","51, 50, 50"
+6143,592,2182339,96,98.0,F to M grained xtline fragments. Granitic to Intermediate volc. ,intermediate,100,intermediate,intermediate,igneous_rock,,"alkali_feldspar_granite, banded_iron_formation, coal","51, 50, 50"
+6144,592,2182339,98,100.0,F to M grained xtline fragments. Granitic to Intermediate volc. ,intermediate,100,intermediate,intermediate,igneous_rock,,"alkali_feldspar_granite, banded_iron_formation, coal","51, 50, 50"
+6145,592,2182339,100,102.0,F to M grained xtline fragments. Granitic to Intermediate volc. ,intermediate,100,intermediate,intermediate,igneous_rock,,"alkali_feldspar_granite, banded_iron_formation, coal","51, 50, 50"

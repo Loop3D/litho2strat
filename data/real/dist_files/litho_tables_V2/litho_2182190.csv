@@ -1,0 +1,21 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+4931,592,2182190,56,58.0,harcap-style mineralisation?,mineralisation,101,mineralisation,ore,mineralisation,,mineralisation,101
+4932,592,2182190,58,60.0,harcap-style mineralisation?,mineralisation,101,mineralisation,ore,mineralisation,,mineralisation,101
+4933,592,2182190,60,62.0,harcap-style mineralisation?,mineralisation,101,mineralisation,ore,mineralisation,,mineralisation,101
+4934,592,2182190,62,64.0,harcap-style mineralisation?,mineralisation,101,mineralisation,ore,mineralisation,,mineralisation,101
+4935,592,2182190,68,70.0,white clay decrease grade,mud,100,mud,sediment_clastic,sediment,,mud,100
+4936,592,2182190,70,72.0,white clay decrease grade,mud,100,mud,sediment_clastic,sediment,,mud,100
+4937,592,2182190,72,74.0,white clay zone with chunks goethite - MAJOR STRUCTURE?,mud,100,mud,sediment_clastic,sediment,,"mud, iron_mudstone","100, 52"
+4938,592,2182190,74,76.0,white clay zone with chunks goethite - MAJOR STRUCTURE?,mud,100,mud,sediment_clastic,sediment,,"mud, iron_mudstone","100, 52"
+4939,592,2182190,76,78.0,white clay zone with chunks goethite - MAJOR STRUCTURE?,mud,100,mud,sediment_clastic,sediment,,"mud, iron_mudstone","100, 52"
+4940,592,2182190,80,82.0,clay and goethitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,"mud, mudstone","101, 101"
+4941,592,2182190,82,84.0,limonitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+4942,592,2182190,84,86.0,limonitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+4943,592,2182190,86,88.0,limonitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+4944,592,2182190,88,90.0,limonitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+4945,592,2182190,120,122.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4946,592,2182190,122,124.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4947,592,2182190,124,126.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4948,592,2182190,126,128.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4949,592,2182190,128,130.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+4950,592,2182190,130,132.0,EOH; unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,"unclassified_rock, banded_iron_formation","101, 101"

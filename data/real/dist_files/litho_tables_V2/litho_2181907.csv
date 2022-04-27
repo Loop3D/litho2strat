@@ -1,0 +1,19 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+2210,592,2181907,22,24.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+2211,592,2181907,24,26.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+2212,592,2181907,26,28.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+2213,592,2181907,28,30.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+2214,592,2181907,30,32.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+2215,592,2181907,44,46.0,clay after shale?,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+2216,592,2181907,46,48.0,clay after shale?,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+2217,592,2181907,48,50.0,clay after shale?,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+2218,592,2181907,50,52.0,clay after shale?,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+2219,592,2181907,52,54.0,clay after shale?,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+2220,592,2181907,54,56.0,clay after shale?,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+2221,592,2181907,56,58.0,clay after shale?,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+2222,592,2181907,58,60.0,clay after shale?,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+2223,592,2181907,60,62.0,clay after shale?,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+2224,592,2181907,62,64.0,clay after shale?,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+2225,592,2181907,92,94.0,Shale now hem-red tinged F,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+2226,592,2181907,100,102.0,Shale brown,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+2227,592,2181907,102,104.0,McLeod? Entering chert/goethd chert,chert,101,chert,siliceous,sedimentary_rock,,chert,101

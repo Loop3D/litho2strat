@@ -1,0 +1,23 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+3656,592,2182099,68,70.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3657,592,2182099,70,72.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3658,592,2182099,72,74.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3659,592,2182099,74,76.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3660,592,2182099,76,78.0,Gritty clay. ?Q,mud,100,mud,sediment_clastic,sediment,,mud,100
+3661,592,2182099,78,80.0,Gritty clay. ?Q,mud,100,mud,sediment_clastic,sediment,,mud,100
+3662,592,2182099,80,82.0,Gritty clay. Carbonaceous,mud,100,mud,sediment_clastic,sediment,,mud,100
+3663,592,2182099,88,90.0,Coarse Q sand in clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3664,592,2182099,96,98.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3665,592,2182099,98,100.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3666,592,2182099,102,104.0,Chips 95% coarse Q sand,sand,101,sand,sediment_clastic,sediment,,sand,101
+3667,592,2182099,104,106.0,Chips 80% coarse Q sand,sand,101,sand,sediment_clastic,sediment,,sand,101
+3668,592,2182099,110,112.0,N and G chips in N clay,mud,101,mud,sediment_clastic,sediment,,"mud, fan","101, 50"
+3669,592,2182099,112,114.0,N and H chips in N clay,mud,101,mud,sediment_clastic,sediment,,"mud, fan","101, 50"
+3670,592,2182099,114,116.0,N and H chips in N clay,mud,101,mud,sediment_clastic,sediment,,"mud, fan","101, 50"
+3671,592,2182099,118,120.0,Manganiferous clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3672,592,2182099,124,126.0,Vein Q?,vein,100,vein,fillings,texture_structure,,vein,100
+3673,592,2182099,126,128.0,Vein Q?,vein,100,vein,fillings,texture_structure,,vein,100
+3674,592,2182099,128,130.0,Vein Q?,vein,100,vein,fillings,texture_structure,,vein,100
+3675,592,2182099,132,134.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3676,592,2182099,134,136.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3677,592,2182099,158,160.0,Q chips only,exotic_crystalline_igneous_rock,101,exotic_crystalline_igneous_rock,exotic_crystalline,igneous_rock,,schist,50

@@ -1,0 +1,18 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+5798,592,2182315,5,16.8,mod-well consolidated transported material comprising rounded maghemites in brown clay matrix cemented at top of hole becoming more crumbly and less consolidated downhole,mud,100,mud,sediment_clastic,sediment,,"mud, mudstone","100, 49"
+5799,592,2182315,16,20.1,loosely-moderately consolidated ferruginous clays with trc rounded maghemites with v. weak hardcap development appearing towards end of interval; PROBABLY INSITU?,mud,100,mud,sediment_clastic,sediment,,"mud, magnetite_ore, fault, aegirine_nepheline_rock","101, 59, 58, 37"
+5800,592,2182315,20,25.1,hard massive vitreous G>W dominant mod-strong hardcap development within insitu?; with up to 20% vughs in places; trace pink and ferruginous clays in vughs,mud,100,mud,sediment_clastic,sediment,,"exotic_crystalline_igneous_rock, mud, trachyte, patches, dolostone","101, 100, 77, 56, 39"
+5801,592,2182315,27,27.55,pink clay after shale marker bed,mud,100,mud,sediment_clastic,sediment,,mud,100
+5802,592,2182315,27,28.3,mod-hard weakly bedded interval comprising mostly ferruginous shale and mnr harder semi-vitreous G,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, thermonatrite","101, 48"
+5803,592,2182315,28,30.9,soft-mod diced and crumbly ferruginous shale goethitic with minor clay content?,mud,100,mud,sediment_clastic,sediment,,"mudstone, mud, felsic","100, 100, 55"
+5804,592,2182315,30,33.2,mostly hard massive but highly fracture interval of semi-VT G and lesser amount of goethitic ferrug shale and clay material,mud,100,mud,sediment_clastic,sediment,,"mudstone, mud, halite_stone","101, 100, 42"
+5805,592,2182315,34,36.0,massive clays related to secondary hardcap development or brittle structures?,mud,100,mud,sediment_clastic,sediment,,"mud, barite_stone, peloid_limestone","100, 55, 44"
+5806,592,2182315,36,38.15,as per 33.2-34.8 but some white clays in fractures and coated on surface,mud,100,mud,sediment_clastic,sediment,,"mud, lime_sediment","100, 50"
+5807,592,2182315,38,40.0,as per 33.2-34.8 but some white clays in fractures and coated on surface,mud,100,mud,sediment_clastic,sediment,,"mud, lime_sediment","100, 50"
+5808,592,2182315,40,42.25,weak hard-cap style mineralisation comprising semi-vitreous vughs goethitic hematite and goethite,mineralisation,100,mineralisation,ore,mineralisation,,"mineralisation, iron_mud","100, 80"
+5809,592,2182315,42,42.9,as above but increased clay content,mud,100,mud,sediment_clastic,sediment,,mud,100
+5810,592,2182315,42,44.5,hard massive semi-vitreous G>>W mineralisation,mineralisation,101,mineralisation,ore,mineralisation,,mineralisation,101
+5811,592,2182315,44,45.5,mostly mod bedded porous ferruginous shale with interbedded semi-VT G in places and trace clays on joint surfaces,mud,100,mud,sediment_clastic,sediment,,"mudstone, mud, plastic","101, 100, 57"
+5812,592,2182315,45,45.9,small zone of ferruginous shale/clay and WEAK BRECCIAS developed within chert/quartz; appears leached,mud,100,mud,sediment_clastic,sediment,,"mud, vein, mud","101, 101, 50"
+5813,592,2182315,45,49.0,ferruginous shales with high proportion of clay contaminents grade??,mud,100,mud,sediment_clastic,sediment,,"mudstone, mud","101, 100"
+5814,592,2182315,49,50.0,EOH; pink and white clays after marker shales,mud,100,mud,sediment_clastic,sediment,,"unclassified_rock, mudstone","101, 101"

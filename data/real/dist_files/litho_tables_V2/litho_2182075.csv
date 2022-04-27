@@ -1,0 +1,31 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+3369,592,2182075,28,30.0,Pisoids of F or soft H in clay,mud,101,mud,sediment_clastic,sediment,,"mud, pisolite","101, 59"
+3370,592,2182075,30,32.0,Pisoids of F or soft H in clay,mud,101,mud,sediment_clastic,sediment,,"mud, pisolite","101, 59"
+3371,592,2182075,42,44.0,with harder clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3372,592,2182075,44,46.0,15% H pisoids in powdery clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3373,592,2182075,46,48.0,<5% H pisoids in clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3374,592,2182075,48,50.0,Lacustrine clay balls with small ferrug frags,mud,100,mud,sediment_clastic,sediment,,"mud, slag","100, 47"
+3375,592,2182075,52,54.0,<5% H frags + Q in clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3376,592,2182075,58,60.0,Hard lacustrine clay balls,mud,100,mud,sediment_clastic,sediment,,mud,100
+3377,592,2182075,60,62.0,Gritty hard clay balls,mud,100,mud,sediment_clastic,sediment,,mud,100
+3378,592,2182075,62,64.0,FG clay/sandy - all washed out,mud,100,mud,sediment_clastic,sediment,,mud,100
+3379,592,2182075,64,66.0,FG clay/sandy - all washed out,mud,100,mud,sediment_clastic,sediment,,mud,100
+3380,592,2182075,66,68.0,V FG sand with qtz,sand,100,sand,sediment_clastic,sediment,,"sand, vein","101, 67"
+3381,592,2182075,68,70.0,Clay + sand,sand,101,sand,sediment_clastic,sediment,,sand,101
+3382,592,2182075,70,72.0,Gritty hard clay balls,mud,100,mud,sediment_clastic,sediment,,mud,100
+3383,592,2182075,72,74.0,Powdery clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3384,592,2182075,74,76.0,Clay with <2% FeO grits,mud,100,mud,sediment_clastic,sediment,,"mud, silicate_sandstone","101, 101"
+3385,592,2182075,78,80.0,Yellow chert and 30% G,chert,100,chert,siliceous,sedimentary_rock,,"chert, bog","77, 50"
+3386,592,2182075,84,86.0,Chert more vitreous.,chert,100,chert,siliceous,sedimentary_rock,,chert,100
+3387,592,2182075,86,88.0,Vein Qtz - 30% fault zone? C - 15%,vein,100,vein,fillings,texture_structure,,fault,100
+3388,592,2182075,88,90.0,Vt chert 70% silicious G - 15% Q -15%,chert,100,chert,siliceous,sedimentary_rock,,chert,100
+3389,592,2182075,94,96.0,Fissile shale + chert equal 10% G,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+3390,592,2182075,102,104.0,Fissile shale + G,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+3391,592,2182075,104,106.0,Fissile shale + G,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+3392,592,2182075,124,126.0,20% YB clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3393,592,2182075,130,132.0,Clay with 40% G chips,mud,100,mud,sediment_clastic,sediment,,"mud, schist","101, 50"
+3394,592,2182075,142,144.0,Possible fault below this? Or this is not Mt Newman,fault,100,fault,breaks,texture_structure,,fault,100
+3395,592,2182075,144,146.0,Chert + silicious G with 1% Q,chert,100,chert,siliceous,sedimentary_rock,,"chert, vein","100, 29"
+3396,592,2182075,152,154.0,Chert 40% with 40% crystalline dolomite and 20% carb shale,mudstone,101,mudstone,clastic,sedimentary_rock,,"chert, dolostone, mudstone","101, 101, 101"
+3397,592,2182075,154,156.0,Crystalline dolomite,dolostone,101,dolostone,carbonate,sedimentary_rock,,dolostone,101
+3398,592,2182075,156,158.0,Crystalline dolomite + 20% Q,dolostone,100,dolostone,carbonate,sedimentary_rock,,dolostone,100

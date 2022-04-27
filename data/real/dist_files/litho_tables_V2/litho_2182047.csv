@@ -1,0 +1,11 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+3039,592,2182047,28,30.0,Light grey gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3040,592,2182047,38,40.0,Sparsely gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3041,592,2182047,52,54.0,Finely-gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3042,592,2182047,54,56.0,Finely-gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3043,592,2182047,56,58.0,Gritty clay FeO,mud,101,mud,sediment_clastic,sediment,,mud,100
+3044,592,2182047,76,78.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3045,592,2182047,86,88.0,Some fine ferruginous sandstone?,sandstone,101,sandstone,clastic,sedimentary_rock,,sandstone,101
+3046,592,2182047,122,124.0,1 soft. Shale gradational between L BN and RD,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, ridge","100, 57"
+3047,592,2182047,156,158.0,GN C far more opaque. Vein Q? perfectly clear stands out from the C,vein,100,vein,fillings,texture_structure,,vein,100
+3048,592,2182047,160,162.0,This zone: chert green/khaki green in colour,exotic_crystalline_igneous_rock,101,exotic_crystalline_igneous_rock,exotic_crystalline,igneous_rock,,chert,100

@@ -1,0 +1,6 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+3905,592,2182118,2,4.0,Poorly-sorted colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock,,colluvium,101
+3906,592,2182118,4,6.0,Poorly-sorted colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock,,colluvium,101
+3907,592,2182118,60,62.0,FeO-stained pale clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3908,592,2182118,62,64.0,FeO-stained pale clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+3909,592,2182118,118,120.0,Soft H and G .. ?shales in clay,mud,101,mud,sediment_clastic,sediment,,"mud, spots","101, 55"

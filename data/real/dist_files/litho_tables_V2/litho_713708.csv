@@ -1,0 +1,7 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+7059,2738,713708,5,21.0,ALLUVIUM-PROXIMAL LATERITIC DETRITUS,alluvium,100,alluvium,alluvial_deposit,surficial_rock,,laterite,54
+7060,2738,713708,21,43.0,GLACIAL TILL DEPOSITS-MXD PROVENANCE,till,100,till,glacigenic_deposit,surficial_rock,,till,100
+7061,2738,713708,94,103.0,FINE-GRAINED FELDSPATHIC SANDSTONE,sandstone,101,sandstone,clastic,sedimentary_rock,,sandstone,101
+7062,2738,713708,103,116.0,GRAPHITIC / CARBONACEOUS ARGILLITE,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+7063,2738,713708,116,117.0,GRAPHITIC / CARBONACEOUS ARGILLITE,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+7064,2738,713708,117,123.0,GRAPHITIC / CARBONACEOUS ARGILLITE,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101

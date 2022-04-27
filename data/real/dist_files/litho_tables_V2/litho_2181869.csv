@@ -1,0 +1,8 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+1975,592,2181869,44,46.0,mottled and ferruginised clays,mud,101,mud,sediment_clastic,sediment,,"mud, mottled_zone","101, 74"
+1976,592,2181869,62,64.0,w/ trc white clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+1977,592,2181869,64,66.0,khaki and pink clays  = MARKER BED?,mud,100,mud,sediment_clastic,sediment,,"mud, chalk","100, 60"
+1978,592,2181869,66,68.0,w/ trc white clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+1979,592,2181869,70,72.0,w/ trc white clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+1980,592,2181869,88,90.0,limonitic shale - nearing end of Mt Newman,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+1981,592,2181869,90,92.0,limonitic shale - nearing end of Mt Newman,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100

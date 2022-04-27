@@ -1,0 +1,4 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+6849,2670,2470371,17,24.0,weath prtially ferrug Fort sediments and clay,mud,101,mud,sediment_clastic,sediment,,"sediment, mud","101, 101"
+6850,2670,2470371,24,26.0,pale clays and few qtz grains,mud,100,mud,sediment_clastic,sediment,,"mud, grainstone","101, 63"
+6851,2670,2470371,28,29.0,Partially weath Jerrinah Fm dolerite?,dolerite,101,dolerite,mafic_coarse_grained_crystalline,igneous_rock,,dolerite,101

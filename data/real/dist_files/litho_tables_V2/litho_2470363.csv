@@ -1,0 +1,9 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+6806,2670,2470363,7,10.0,coarse nodular gravels and shale frags,mudstone,100,mudstone,clastic,sedimentary_rock,,"gravel, mudstone","101, 100"
+6807,2670,2470363,10,14.0,haem enriched frags and nodules,nodules,101,nodules,residual_deposit,surficial_rock,,"nodules, dolostone","92, 47"
+6808,2670,2470363,14,26.0,ferreg shales and siltstoneï¿½trans,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, exotic_crystalline_igneous_rock","101, 101"
+6809,2670,2470363,30,35.0,weath foliated siltst shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+6810,2670,2470363,35,38.0,pale soft siltst shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+6811,2670,2470363,38,41.0,ferrug shale and minor qtz,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, vein","101, 67"
+6812,2670,2470363,42,45.0,fol siltst shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+6813,2670,2470363,45,56.0,dk red purp haem siltst shale minor qtz,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100

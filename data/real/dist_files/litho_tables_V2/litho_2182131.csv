@@ -1,0 +1,6 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+3954,592,2182131,24,26.0,Grainy siliceous chips - ?sandstone or weird C,sandstone,100,sandstone,clastic,sedimentary_rock,,"sandstone, felsic","101, 55"
+3955,592,2182131,40,42.0,WT and L BN clay,mud,101,mud,sediment_clastic,sediment,,"mud, waste","101, 57"
+3956,592,2182131,42,44.0,WT clay with trace FeO,mud,100,mud,sediment_clastic,sediment,,"mud, trachyte","101, 59"
+3957,592,2182131,44,46.0,WT clay with trace FeO,mud,100,mud,sediment_clastic,sediment,,"mud, trachyte","101, 59"
+3958,592,2182131,46,48.0,WT clay with trace FeO,mud,100,mud,sediment_clastic,sediment,,"mud, trachyte","101, 59"

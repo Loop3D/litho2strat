@@ -1,0 +1,8 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+5570,592,2182286,50,52.0,? FIZZY SILT,mud,101,mud,sediment_clastic,sediment,,mud,101
+5571,592,2182286,90,92.0,ASPESTOS?,asbestos,88,asbestos,artificial_man_made_ground,surficial_rock,,asbestos,88
+5572,592,2182286,104,106.0,QUARTZ,vein,101,vein,fillings,texture_structure,,vein,101
+5573,592,2182286,108,110.0,VOID,void,101,void,artificial_man_made_ground,surficial_rock,,void,101
+5574,592,2182286,110,112.0,VOID,void,101,void,artificial_man_made_ground,surficial_rock,,void,101
+5575,592,2182286,172,174.0,TRACE SHALE,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+5576,592,2182286,176,178.0,SPECULAR HTRACE SHALE,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101

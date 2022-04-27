@@ -1,0 +1,18 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+1777,592,2181856,12,14.0,quartz rich at base gravels,vein,100,vein,fillings,texture_structure,,gravel,101
+1778,592,2181856,14,16.0,clay-rich,mud,100,mud,sediment_clastic,sediment,,,
+1779,592,2181856,44,46.0,with tiny pisolitic maghemites,pisolith,100,pisolith,residual_deposit,surficial_rock,,pisolith,100
+1780,592,2181856,46,48.0,with tiny pisolitic maghemites,pisolith,100,pisolith,residual_deposit,surficial_rock,,pisolith,100
+1781,592,2181856,98,100.0,clays after shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+1782,592,2181856,100,102.0,clays after shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+1783,592,2181856,102,104.0,clays after shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+1784,592,2181856,104,106.0,clays after shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+1785,592,2181856,106,108.0,clays after shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+1786,592,2181856,130,132.0,red hematised or ferruginous shale,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, iron_mud","101, 76"
+1787,592,2181856,134,136.0,hematised shale? Biscuity,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+1788,592,2181856,136,138.0,hematised shale? Biscuity,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+1789,592,2181856,138,140.0,hematised shale? Biscuity,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+1790,592,2181856,140,142.0,hematised shale? Biscuity,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+1791,592,2181856,156,158.0,hematised or ferrug shale?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, iron_mud","101, 76"
+1792,592,2181856,158,160.0,hematised or ferrug shale?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, iron_mud","101, 76"
+1793,592,2181856,160,162.0,hematised or ferrug shale?,mudstone,101,mudstone,clastic,sedimentary_rock,,"mudstone, iron_mud","101, 76"

@@ -1,0 +1,23 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+1261,592,2181792,32,33.6,clay and quartz grains +- maghematite,mud,100,mud,sediment_clastic,sediment,,"mud, vein","101, 100"
+1262,592,2181792,33,37.66,white massive clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+1263,592,2181792,37,39.3,clay and minor granular rounded quartz,vein,101,vein,fillings,texture_structure,,"mud, vein","101, 101"
+1264,592,2181792,39,40.5,clay and small - large detrital pisolitic maghematite,mud,100,mud,sediment_clastic,sediment,,"mud, pisolith","101, 100"
+1265,592,2181792,40,43.7,white massive clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+1266,592,2181792,43,48.65,clay +- trace small pisolitic maghematite,mud,100,mud,sediment_clastic,sediment,,mud,100
+1267,592,2181792,48,53.24,clay and rounded qtz grains sandy,mud,100,mud,sediment_clastic,sediment,,"mud, grainstones","101, 56"
+1268,592,2181792,53,54.2,increasing pisolitic,pisolith,101,pisolith,residual_deposit,surficial_rock,,pisolith,101
+1269,592,2181792,54,56.85,clay and detrital pisolite,pisolite,101,pisolite,residual_deposit,surficial_rock,,"mud, pisolite","101, 101"
+1270,592,2181792,56,58.4,as above with ore fragments,ore,100,ore,ore,mineralisation,,"exotic_crystalline_igneous_rock, ore","101, 100"
+1271,592,2181792,59,61.2,Hardcap colluvium and detrital ore + interstitial clay,mud,101,mud,sediment_clastic,sediment,,"colluvium, mud","101, 101"
+1272,592,2181792,61,62.7,dense laminted ore,ore,101,ore,ore,mineralisation,,ore,101
+1273,592,2181792,62,66.53,as above plus interstital clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+1274,592,2181792,66,71.2,hematite and hematised shale bedding disrupted vugs filled with clay,mud,101,mud,sediment_clastic,sediment,,"mud, mudstone, pegmatite","101, 100, 82"
+1275,592,2181792,71,74.55,fragmentation increasing interstitial clay in vugs decreasing,mud,100,mud,sediment_clastic,sediment,,mud,100
+1276,592,2181792,74,76.7,bedding disrupted clay interstitially,mud,100,mud,sediment_clastic,sediment,,mud,100
+1277,592,2181792,76,82.7,rock disrupted friable and increase in clay,mud,101,mud,sediment_clastic,sediment,,"mud, fine_crystalline_sedimentary","101, 100"
+1278,592,2181792,111,116.1,clay increases,mud,100,mud,sediment_clastic,sediment,,mud,100
+1279,592,2181792,116,118.46,clay rich and goethite +QV,mud,100,mud,sediment_clastic,sediment,,"mud, iron_mud","100, 80"
+1280,592,2181792,118,120.2,increasing clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+1281,592,2181792,120,122.21,minor to trace chert,chert,101,chert,siliceous,sedimentary_rock,,"chert, ","101, 0"
+1282,592,2181792,122,125.16,goethitised chert/chert,chert,101,chert,siliceous,sedimentary_rock,,chert,101

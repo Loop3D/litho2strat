@@ -1,0 +1,9 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+1472,592,2181804,62,64.0,Finely laminated BIF with some enrichment,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,"banded_iron_formation, fault","101, 70"
+1473,592,2181804,72,74.0,Finely laminated BIF with some enrichment,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,"banded_iron_formation, fault","101, 70"
+1474,592,2181804,74,76.0,Finely laminated BIF with some enrichment,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,"banded_iron_formation, fault","101, 70"
+1475,592,2181804,80,82.0,Interbedded hematite and chert,chert,101,chert,siliceous,sedimentary_rock,,"chert, pegmatite","101, 82"
+1476,592,2181804,82,84.0,Interbedded hematite and chert,chert,101,chert,siliceous,sedimentary_rock,,"chert, pegmatite","101, 82"
+1477,592,2181804,84,86.0,Limonitic shale/clay with chert bands,mud,100,mud,sediment_clastic,sediment,,"mud, chert","101, 100"
+1478,592,2181804,86,88.0,Limonitic shale/clay with chert bands,mud,100,mud,sediment_clastic,sediment,,"mud, chert","101, 100"
+1479,592,2181804,88,90.0,Limonitic shale/clay with chert bands,mud,100,mud,sediment_clastic,sediment,,"mud, chert","101, 100"

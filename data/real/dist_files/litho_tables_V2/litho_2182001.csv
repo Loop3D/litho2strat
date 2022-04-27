@@ -1,0 +1,15 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+2492,592,2182001,18,20.0,CLAY WASHED OUT,mud,100,mud,sediment_clastic,sediment,,mud,100
+2493,592,2182001,20,22.0,CLAY WASHED OUT,mud,100,mud,sediment_clastic,sediment,,mud,100
+2494,592,2182001,22,24.0,CLAY WASHED OUT,mud,100,mud,sediment_clastic,sediment,,mud,100
+2495,592,2182001,24,26.0,Lacustrine clay balls,mud,100,mud,sediment_clastic,sediment,,mud,100
+2496,592,2182001,44,46.0,light green clay powder,mud,100,mud,sediment_clastic,sediment,,mud,100
+2497,592,2182001,46,48.0,white clay powder,mud,100,mud,sediment_clastic,sediment,,mud,100
+2498,592,2182001,52,54.0,clay powder to slop,mud,100,mud,sediment_clastic,sediment,,"mud, void","100, 67"
+2499,592,2182001,54,56.0,clay powder to slop,mud,100,mud,sediment_clastic,sediment,,"mud, void","100, 67"
+2500,592,2182001,56,58.0,clay powder to slop,mud,100,mud,sediment_clastic,sediment,,"mud, void","100, 67"
+2501,592,2182001,68,70.0,Either green clay chips or highly weathered chert,chert,101,chert,siliceous,sedimentary_rock,,"chert, mud","101, 100"
+2502,592,2182001,70,72.0,carb shale and chert,chert,101,chert,siliceous,sedimentary_rock,,"mudstone, chert","101, 101"
+2503,592,2182001,94,96.0,MasSive FG BK rock...mafic lignite?,lignite,101,lignite,organic_rich,sedimentary_rock,,lignite,101
+2504,592,2182001,98,100.0,Possible mudstone/lignite? Ot as soft as shale no evidence of bedding.,lignite,100,lignite,organic_rich,sedimentary_rock,,lignite,100
+2505,592,2182001,100,102.0,Possible mudstone/lignite? Ot as soft as shale no evidence of bedding.,lignite,100,lignite,organic_rich,sedimentary_rock,,lignite,100

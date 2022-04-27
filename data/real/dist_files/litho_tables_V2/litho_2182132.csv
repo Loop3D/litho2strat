@@ -1,0 +1,29 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+3959,592,2182132,26,28.0,Weakly-consold sandstone ,sandstone,101,sandstone,clastic,sedimentary_rock,,sandstone,101
+3960,592,2182132,28,30.0,Weakly-consold sandstone ,sandstone,101,sandstone,clastic,sedimentary_rock,,sandstone,101
+3961,592,2182132,30,32.0,Sandy clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+3962,592,2182132,32,34.0,Sandy clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+3963,592,2182132,40,42.0,Sandy clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+3964,592,2182132,42,44.0,Sandy clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+3965,592,2182132,44,46.0,Sandy clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+3966,592,2182132,46,48.0,Sandy clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+3967,592,2182132,48,50.0,Silty clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+3968,592,2182132,50,52.0,Silty clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+3969,592,2182132,52,54.0,Silty clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+3970,592,2182132,54,56.0,Silty clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+3971,592,2182132,56,58.0,Silty clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+3972,592,2182132,58,60.0,Silty clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+3973,592,2182132,60,62.0,Silty clays,mud,101,mud,sediment_clastic,sediment,,mud,101
+3974,592,2182132,76,78.0,denatured chert,chert,101,chert,siliceous,sedimentary_rock,,chert,101
+3975,592,2182132,78,80.0,denatured chert,chert,101,chert,siliceous,sedimentary_rock,,chert,101
+3976,592,2182132,116,118.0,jasperlitic BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3977,592,2182132,118,120.0,jasperlitic BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3978,592,2182132,120,122.0,jasperlitic BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3979,592,2182132,122,124.0,jasperlitic BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3980,592,2182132,124,126.0,jasperlitic BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3981,592,2182132,126,128.0,jasperlitic BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3982,592,2182132,128,130.0,jasperlitic BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3983,592,2182132,130,132.0,finely laminated BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3984,592,2182132,132,134.0,finely laminated BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3985,592,2182132,134,136.0,finely laminated BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+3986,592,2182132,136,138.0,finely laminated BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101

@@ -1,0 +1,21 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+2923,592,2182035,0,2.0,Polylithic frags and soil,soil,101,soil,residual_deposit,surficial_rock,,"soil, pisolith","101, 62"
+2924,592,2182035,18,20.0,Brown silt/soil ,soil,101,soil,residual_deposit,surficial_rock,,soil,101
+2925,592,2182035,28,30.0,White pallid clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+2926,592,2182035,42,44.0,Clay after shale minute fragments -gritty clay,mudstone,101,mudstone,clastic,sedimentary_rock,,mud,101
+2927,592,2182035,44,46.0,Clay after shale minute fragments -gritty clay,mudstone,101,mudstone,clastic,sedimentary_rock,,mud,101
+2928,592,2182035,46,48.0,Clay after shale minute fragments -gritty clay,mudstone,101,mudstone,clastic,sedimentary_rock,,mud,101
+2929,592,2182035,48,50.0,Clay after shale minute fragments -gritty clay,mudstone,101,mudstone,clastic,sedimentary_rock,,mud,101
+2930,592,2182035,50,52.0,Clay after shale minute fragments -gritty clay,mudstone,101,mudstone,clastic,sedimentary_rock,,mud,101
+2931,592,2182035,52,54.0,Clay after shale minute fragments -gritty clay,mudstone,101,mudstone,clastic,sedimentary_rock,,mud,101
+2932,592,2182035,54,56.0,Clay after shale minute fragments -gritty clay,mudstone,101,mudstone,clastic,sedimentary_rock,,mud,101
+2933,592,2182035,56,58.0,Clay after shale minute fragments -gritty clay,mudstone,101,mudstone,clastic,sedimentary_rock,,mud,101
+2934,592,2182035,58,60.0,Clay after shale minute fragments -gritty clay,mudstone,101,mudstone,clastic,sedimentary_rock,,mud,101
+2935,592,2182035,60,62.0,Gritty clay. Only chip found viteous strongly magntic crushed,mud,100,mud,sediment_clastic,sediment,,mud,100
+2936,592,2182035,62,64.0,Gritty clay. Only chip found mody soft siliceous C/Q,mud,100,mud,sediment_clastic,sediment,,mud,100
+2937,592,2182035,64,66.0,Gritty clay. Chips often soft granular and siliceous. Some hard cherty present,mud,100,mud,sediment_clastic,sediment,,"mud, serpentinite","100, 50"
+2938,592,2182035,70,72.0,Gritty clay. Chips L BN siliceous like fine sandstone,sandstone,101,sandstone,clastic,sedimentary_rock,,sandstone,101
+2939,592,2182035,100,102.0,Gritty clay FeO?,mud,101,mud,sediment_clastic,sediment,,mud,100
+2940,592,2182035,102,104.0,Gritty clay FeO?,mud,101,mud,sediment_clastic,sediment,,mud,100
+2941,592,2182035,132,134.0,Rich blood-red hematitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+2942,592,2182035,158,160.0,Gritty clay FeO?,mud,101,mud,sediment_clastic,sediment,,mud,100

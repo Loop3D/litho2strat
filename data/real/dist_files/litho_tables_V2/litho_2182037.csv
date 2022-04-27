@@ -1,0 +1,32 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+2973,592,2182037,2,4.0,Colluvium. Cobbles of J/C,gravel,100,gravel,sediment_clastic,sediment,,colluvium,100
+2974,592,2182037,18,20.0,Chert w/ 20% H,chert,100,chert,siliceous,sedimentary_rock,,chert,100
+2975,592,2182037,30,32.0,BIFy C + CLAY after S,mud,101,mud,sediment_clastic,sediment,,mud,101
+2976,592,2182037,32,34.0,Powdery off WT clay with minute frags,mud,100,mud,sediment_clastic,sediment,,"mud, foidolite","101, 67"
+2977,592,2182037,34,36.0,Powdery off WT clay with minute C frags,mud,100,mud,sediment_clastic,sediment,,"mud, foidolite","101, 61"
+2978,592,2182037,36,38.0,Powdery off WT clay with minute C frags,mud,100,mud,sediment_clastic,sediment,,"mud, foidolite","101, 61"
+2979,592,2182037,38,40.0,Spotty frags - Intrusive,coarse_grained_plutonic_crystalline_igneous_rock,101,coarse_grained_plutonic_crystalline_igneous_rock,coarse_grained_crystalline,igneous_rock,,coarse_grained_plutonic_crystalline_igneous_rock,101
+2980,592,2182037,46,48.0,Chert with 1 10%,chert,100,chert,siliceous,sedimentary_rock,,chert,101
+2981,592,2182037,52,54.0,Clay washed out from20% to G 60% + Q >10% - Vein? Fault?,fault,101,fault,breaks,texture_structure,,"fault, mud","101, 100"
+2982,592,2182037,66,68.0,Chert,chert,101,chert,siliceous,sedimentary_rock,,chert,101
+2983,592,2182037,68,70.0,Chert,chert,101,chert,siliceous,sedimentary_rock,,chert,101
+2984,592,2182037,74,76.0,Cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+2985,592,2182037,76,78.0,Cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+2986,592,2182037,80,82.0,Green chert with clay after shale  10%,mud,100,mud,sediment_clastic,sediment,,"chert, mudstone","101, 101"
+2987,592,2182037,96,98.0,Microbanded cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+2988,592,2182037,98,100.0,Microbanded cherty BIF + G,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,banded_iron_formation,100
+2989,592,2182037,100,102.0,In clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+2990,592,2182037,102,104.0,20% mod enriched G in cherty BIF,exotic_crystalline_igneous_rock,101,exotic_crystalline_igneous_rock,exotic_crystalline,igneous_rock,,banded_iron_formation,101
+2991,592,2182037,106,108.0,Cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,101
+2992,592,2182037,108,110.0,Weakly enriched  H in cherty BIF soft,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,100
+2993,592,2182037,110,112.0,Weakly enriched  H in cherty BIF soft,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,100
+2994,592,2182037,112,114.0,Weakly enriched  H in cherty BIF soft,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,100
+2995,592,2182037,120,122.0,Cherty BIF H + 10% Q,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,,banded_iron_formation,100
+2996,592,2182037,128,130.0,Small chips - cherty BIFminor enrichment,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,100
+2997,592,2182037,130,132.0,Small chips - cherty BIFminor enrichment,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,,banded_iron_formation,100
+2998,592,2182037,138,140.0,Fissile grey shale 60% C - 30%,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+2999,592,2182037,140,142.0,Fissile microbanded shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+3000,592,2182037,142,144.0,Fissile microbanded shale 60% C - 40%,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+3001,592,2182037,144,146.0,Sofy grey shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+3002,592,2182037,146,148.0,Soft grey shale,mudstone,101,mudstone,clastic,sedimentary_rock,,mudstone,101
+3003,592,2182037,148,150.0,Carb shale with C 30%,mudstone,100,mudstone,clastic,sedimentary_rock,,"mudstone, mud","101, 40"

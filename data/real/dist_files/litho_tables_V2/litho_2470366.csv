@@ -1,0 +1,13 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+6829,2670,2470366,2,6.0,hardpanised silt and minor gravel,gravel,101,gravel,sediment_clastic,sediment,,"mud, gravel","101, 101"
+6830,2670,2470366,6,8.0,pisolitic gravels,pisolith,100,pisolith,residual_deposit,surficial_rock,,gravel,101
+6831,2670,2470366,10,15.0,nodular and sub-angular fragments,nodules,100,nodules,residual_deposit,surficial_rock,,"nodules, framestone","101, 67"
+6832,2670,2470366,20,22.0,haem shale + minor goeth,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+6833,2670,2470366,22,31.0,ferrug rock frags and clay,mud,101,mud,sediment_clastic,sediment,,"mud, unclassified_rock","101, 50"
+6834,2670,2470366,31,33.0,pallid clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+6835,2670,2470366,33,34.0,ferrug shale and clay,mud,101,mud,sediment_clastic,sediment,,"mudstone, mud","101, 101"
+6836,2670,2470366,34,36.0,clay,mud,101,mud,sediment_clastic,sediment,,mud,101
+6837,2670,2470366,36,38.0,ferrug seds and clay,mud,101,mud,sediment_clastic,sediment,,"mud, foidolite","101, 60"
+6838,2670,2470366,38,42.0,red purp siltst shale fgr sst,mudstone,100,mudstone,clastic,sedimentary_rock,,mudstone,100
+6839,2670,2470366,42,46.0,pale clay with ferrug shale bands,mud,100,mud,sediment_clastic,sediment,,"mud, mudstone","101, 100"
+6840,2670,2470366,49,50.0,clay shaley chips and minor qtz,mud,100,mud,sediment_clastic,sediment,,"mud, vein","100, 67"

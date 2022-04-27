@@ -1,0 +1,6 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Unnamed: 10,Lithologies,Scores
+5523,592,2182274,62,64.0,QUARTZ SANDS?,vein,100,vein,fillings,texture_structure,,sand,101
+5524,592,2182274,64,66.0,QUARTZ SANDS?,vein,100,vein,fillings,texture_structure,,sand,101
+5525,592,2182274,66,68.0,QUARTZ SANDS?,vein,100,vein,fillings,texture_structure,,sand,101
+5526,592,2182274,86,88.0,MAGNETITE?,magnetitite,90,magnetitite,exotic_crystalline,igneous_rock,,magnetitite,90
+5527,592,2182274,92,94.0,MAGNETITE?,magnetitite,90,magnetitite,exotic_crystalline,igneous_rock,,magnetitite,90
