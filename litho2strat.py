@@ -10,17 +10,18 @@ import csv
 import numpy as np
 import matplotlib.pylab as pl
 import networkx as nx
+from dataclasses import dataclass
 import tracemalloc
 import os
 
 # 'Returning to the same unit' constraints.
-max_num_returns_per_unit = 2
+max_num_returns_per_unit = 3
 #---------------------------------------------------------------------------
 # Adding thickness constraints. (Requires unit thickness data).
 add_thickness_constraints = False
 #---------------------------------------------------------------------------
 # Adding unit contacts topology (extracted from map data).
-add_topology_constraints = True
+add_topology_constraints = False
 # Ignore topology graph edge direction defining the unit age.
 ignore_unit_age = True
 #---------------------------------------------------------------------------
@@ -242,8 +243,19 @@ def test_column_exist(column_name, fieldnames):
         print("Error: The column name is not found in drillsample data header:", column_name)
         exit()
 
-#========================================================================================
-def read_drillsample_data(filename, header_from, header_to, header_lithos, ignore_list):
+#========================================================================================================
+@dataclass
+class DrillSampleHeader:
+    '''
+    Contains the names of drillsample header data columns.
+    '''
+    depth_from: str
+    depth_to: str
+    lithos: str
+    scores: str
+
+#========================================================================================================
+def read_drillsample_data(filename, header, ignore_list):
     '''
     Reading drill sample data from csv file.
     '''
@@ -257,18 +269,20 @@ def read_drillsample_data(filename, header_from, header_to, header_lithos, ignor
         fieldnames = reader.fieldnames
 
         # Sanity check.
-        test_column_exist(header_from, fieldnames)
-        test_column_exist(header_to, fieldnames)
-        test_column_exist(header_lithos, fieldnames)
+        test_column_exist(header.depth_from, fieldnames)
+        test_column_exist(header.depth_to, fieldnames)
+        test_column_exist(header.lithos, fieldnames)
+        test_column_exist(header.scores, fieldnames)
 
         # Extracting the data for every csv row.
         for row in reader:
             # Extract the data columns.
             data = list(range(4))
-            data[0] = row[header_from]   # From Depth
-            data[1] = row[header_to]     # To Depth
+            data[0] = row[header.depth_from]
+            data[1] = row[header.depth_to]
 
-            data[3] = row[header_lithos].split(", ") # Lithologies
+            # Lithologies
+            data[3] = row[header.lithos].split(", ")
 
             # List of lithologies. Pick the first one (most probable).
             data[2] = data[3][0]
@@ -1027,11 +1041,7 @@ def generate_missing_lithos():
     #directory = "data/real/dh_files/litho_tables"
 
     # Drillsample data column names.
-    header_from = 'Fromdepth'
-    header_to = 'Todepth'
-    header_lithos = 'Lithologies'
-    
-    counter = 0
+    drillsample_header = DrillSampleHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
 
     # Read the drillhole ignore items list.
     ignore_list = read_ignore_list(ignore_list_filename)
@@ -1039,6 +1049,7 @@ def generate_missing_lithos():
     # Read the alternative rock names.
     alternative_rock_names = read_alternative_rock_names(alternative_rock_names_file)
 
+    counter = 0
     for file in os.listdir(directory):
         counter = counter + 1
         print("PROCESSING FILE NUMBER =", counter)
@@ -1054,7 +1065,7 @@ def generate_missing_lithos():
         #dist_table_filename = "data/real/dh_files/dist_tables/100k_map_near_" + str(collarID) + ".csv"
 
         # Drill sample data.
-        drillsample_data = read_drillsample_data(drillsample_filename, header_from, header_to, header_lithos, ignore_list)
+        drillsample_data = read_drillsample_data(drillsample_filename, drillsample_header, ignore_list)
 
         # Unit lithologies and distance data.
         drillhole_lithos = get_drillhole_lithos(drillsample_data)
@@ -1097,16 +1108,14 @@ def main():
     # dist_table_filename = "data/real/dh_files/dist_tables/100k_map_near_" + str(collarID) + ".csv"
     #
     # # Drillsample data column names.
-    # header_from = 'FromDepth'
-    # header_to = 'ToDepth'
-    # header_lithos = 'CET_Litho'
+    # drillsample_header = DrillSampleHeader('FromDepth', 'ToDepth', 'CET_Litho', 'Scores')
 
     #----------------------------------------------------------------------------
     # Mark's data with known solutions.
     #----------------------------------------------------------------------------
     # TODO: Discuss with Mark - we have here too long Cover...
     #collarID = 1209857
-    collarID = 353386
+    #collarID = 353386
     #collarID = 2182301
     #collarID = 81034
 
@@ -1120,15 +1129,13 @@ def main():
     #collarID = 2182334
 
     # TODO: Discuss with Mark - we have here conglomerate, which is rock, and then gravel, which we define as 'always Cover'. Thus we have the Cover below the rock here.
-    #collarID = 1209855
+    collarID = 1209855
 
     drillsample_filename = "data/real/dist_files/litho_tables_V2/litho_" + str(collarID) + ".csv"
     dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
 
     # Drillsample data column names.
-    header_from = 'Fromdepth'
-    header_to = 'Todepth'
-    header_lithos = 'Lithologies'
+    drillsample_header = DrillSampleHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
 
     #--------------------------------------------------------------
     # Reading the input data.
@@ -1137,7 +1144,7 @@ def main():
     ignore_list = read_ignore_list(ignore_list_filename)
 
     # Read drill sample data.
-    drillsample_data = read_drillsample_data(drillsample_filename, header_from, header_to, header_lithos, ignore_list)
+    drillsample_data = read_drillsample_data(drillsample_filename, drillsample_header, ignore_list)
 
     # Group the litho sequence inside the drillhole data.
     # Commented because it leads to many additional routes when splitting the existing single lithos.
