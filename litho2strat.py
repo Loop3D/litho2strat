@@ -254,7 +254,7 @@ class DrillSampleHeader:
     depth_to: str
     lithos: str
     scores: str
-    
+
 #========================================================================================================
 @dataclass
 class DrillSampleDataRow:
@@ -265,6 +265,8 @@ class DrillSampleDataRow:
     depth_to: float = 0.
     lithos: List[str] = field(default_factory=list)
     scores: List[int] = field(default_factory=list)
+    # TODO: Temporary for transition to several lithos support.
+    litho: str = ''
 
 #========================================================================================================
 def read_drillsample_data(filename, header, ignore_list):
@@ -289,33 +291,23 @@ def read_drillsample_data(filename, header, ignore_list):
         # Extracting the data for every csv row.
         for row in reader:
             # Extract the data columns.
-            data = list(range(4))
-            data[0] = row[header.depth_from]
-            data[1] = row[header.depth_to]
-
-            # Lithologies
-            data[3] = row[header.lithos].split(", ")
-
-            # List of lithologies. Pick the first one (most probable).
-            data[2] = data[3][0]
-
-            litho = data[2]
-
-            if (litho not in ignore_list):
-                all_data.append(data)
-                all_lithos.add(litho)
-
-            #---------------------------------------------
             data = DrillSampleDataRow()
             data.depth_from = float(row[header.depth_from])
             data.depth_to = float(row[header.depth_to])
             data.lithos = row[header.lithos].split(", ")
             data.scores = [int(s) for s in row[header.scores].split(", ")]
 
+            # TODO: Temporary for transition to several lithos support.
+            data.litho = data.lithos[0]
+
             # Sanity check.
             if (len(data.lithos) != len(data.scores)):
                 print("Error: number of lithos differs from the number of scores for:", data)
                 exit()
+
+            if (data.litho not in ignore_list):
+                all_data.append(data)
+                all_lithos.add(data.litho)
 
     print(all_lithos)
     print("The number of drillhole lithologies: " + str(len(all_lithos)))
@@ -428,7 +420,7 @@ def generate_strata_table(drillsample_data, strat_data, litho2dist):
     new_row_index = 0
 
     for row in drillsample_data[:]:
-        litho = row[2]
+        litho = row.litho
         litho_found = False
 
         if (new_row_index == 0 and single_top_unit):
@@ -532,7 +524,7 @@ def get_thickness_change(drillsample_data, row):
     Returns a thickness change for a given row in the drillhole sample.
     '''
     # "To" - "From"
-    return float(drillsample_data[row][1]) - float(drillsample_data[row][0])
+    return drillsample_data[row].depth_to - drillsample_data[row].depth_from
 
 #==============================================================================
 def get_min_strata_thickness(thickness_data):
@@ -602,7 +594,7 @@ def get_drillhole_lithos(drillsample_data):
     '''
     lithos = set()
     for row in drillsample_data:
-        litho = row[2]
+        litho = row.litho
         lithos.add(litho)
     return lithos
 
@@ -648,8 +640,8 @@ def generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_da
 
     # Going through the strata table and generating the routes.
     for row in range(1, row_max):
-        current_litho = drillsample_data[row][2]
-        previous_litho = drillsample_data[row - 1][2]
+        current_litho = drillsample_data[row].litho
+        previous_litho = drillsample_data[row - 1].litho
 
         num_routes = len(all_routes)
         all_routes_number.append(num_routes)
@@ -799,7 +791,7 @@ def write_routes_to_file(filename, drillsample_data, all_routes):
     f = open(filename, "w")
     num_rows = len(drillsample_data)
     for row in range(num_rows):
-        depth = float(drillsample_data[row][0])
+        depth = drillsample_data[row].depth_from
         f.write("%f " % depth)
         # Calculate the number of unique strata for this depth.
         unique_units = set([])
@@ -838,7 +830,7 @@ def plot_routes(drillsample_data, routes, strat_distr):
     print("Plotting the routes...")
 
     # Using the "From" column.
-    x_data = [float(d[0]) for d in drillsample_data]
+    x_data = [d.depth_from for d in drillsample_data]
 
     for route in routes:
         pl.plot(x_data, route.path, '.-')
@@ -961,8 +953,8 @@ def plot_unit_probabilities(all_routes, drillsample_data, unit_names):
     # Adding the "From" and "To" depths for visualisation.
     x_data = []
     for d in drillsample_data[0:num_rows]:
-        x_data.append(float(d[0])) # "From" depth.
-        x_data.append(float(d[1])) # "To" depth.
+        x_data.append(d.depth_from)
+        x_data.append(d.depth_to)
 
     # Duplicate each value, as the probability is the same between the "From" and "To" depths.
     strat_distr = np.repeat(strat_distr, 2, axis=0)
@@ -1144,7 +1136,7 @@ def main():
     #collarID = 81034
 
     # Confirmed results (using 1 closest unit & single top unit).
-    #collarID = 2182336
+    collarID = 2182336
     #collarID = 2182335
     #collarID = 2182340
     #collarID = 2182339
@@ -1153,7 +1145,7 @@ def main():
     #collarID = 2182334
 
     # TODO: Discuss with Mark - we have here conglomerate, which is rock, and then gravel, which we define as 'always Cover'. Thus we have the Cover below the rock here.
-    collarID = 1209855
+    #collarID = 1209855
 
     drillsample_filename = "data/real/dist_files/litho_tables_V2/litho_" + str(collarID) + ".csv"
     dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
