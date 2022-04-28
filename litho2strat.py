@@ -10,7 +10,8 @@ import csv
 import numpy as np
 import matplotlib.pylab as pl
 import networkx as nx
-from dataclasses import dataclass
+from dataclasses import dataclass, field
+from typing import List
 import tracemalloc
 import os
 
@@ -253,6 +254,17 @@ class DrillSampleHeader:
     depth_to: str
     lithos: str
     scores: str
+    
+#========================================================================================================
+@dataclass
+class DrillSampleDataRow:
+    '''
+    Contains the names of drillsample data row.
+    '''
+    depth_from: float = 0.
+    depth_to: float = 0.
+    lithos: List[str] = field(default_factory=list)
+    scores: List[int] = field(default_factory=list)
 
 #========================================================================================================
 def read_drillsample_data(filename, header, ignore_list):
@@ -292,6 +304,18 @@ def read_drillsample_data(filename, header, ignore_list):
             if (litho not in ignore_list):
                 all_data.append(data)
                 all_lithos.add(litho)
+
+            #---------------------------------------------
+            data = DrillSampleDataRow()
+            data.depth_from = float(row[header.depth_from])
+            data.depth_to = float(row[header.depth_to])
+            data.lithos = row[header.lithos].split(", ")
+            data.scores = [int(s) for s in row[header.scores].split(", ")]
+
+            # Sanity check.
+            if (len(data.lithos) != len(data.scores)):
+                print("Error: number of lithos differs from the number of scores for:", data)
+                exit()
 
     print(all_lithos)
     print("The number of drillhole lithologies: " + str(len(all_lithos)))
