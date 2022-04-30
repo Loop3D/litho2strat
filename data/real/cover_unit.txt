@@ -21,4 +21,4 @@ mud
 sand
 mudstone
 sandstone
-lignite
+#lignite

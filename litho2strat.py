@@ -16,7 +16,7 @@ import tracemalloc
 import os
 
 # 'Returning to the same unit' constraints.
-max_num_returns_per_unit = 3
+max_num_returns_per_unit = 2
 #---------------------------------------------------------------------------
 # Adding thickness constraints. (Requires unit thickness data).
 add_thickness_constraints = False
@@ -294,20 +294,27 @@ def read_drillsample_data(filename, header, ignore_list):
             data = DrillSampleDataRow()
             data.depth_from = float(row[header.depth_from])
             data.depth_to = float(row[header.depth_to])
-            data.lithos = row[header.lithos].split(", ")
-            data.scores = [int(s) for s in row[header.scores].split(", ")]
+
+            lithos = row[header.lithos].split(", ")
+            scores = [int(s) for s in row[header.scores].split(", ")]
 
             # TODO: Temporary for transition to several lithos support.
-            data.litho = data.lithos[0]
+            data.litho = lithos[0]
 
             # Sanity check.
-            if (len(data.lithos) != len(data.scores)):
-                print("Error: number of lithos differs from the number of scores for:", data)
+            if (len(lithos) != len(scores)):
+                print("Error: number of lithos differs from the number of scores for:", row)
                 exit()
 
-            if (data.litho not in ignore_list):
-                all_data.append(data)
-                all_lithos.add(data.litho)
+            # Filter the lithos and scores based on the Ignore list of lithos.
+            for index, litho in enumerate(lithos):
+                if (litho not in ignore_list):
+                    data.lithos.append(litho)
+                    data.scores.append(scores[index])
+                    # Gather all unique lithos.
+                    all_lithos.add(litho)
+
+            all_data.append(data)
 
     print(all_lithos)
     print("The number of drillhole lithologies: " + str(len(all_lithos)))
@@ -432,52 +439,65 @@ def generate_strata_table(drillsample_data, strat_data, litho2dist):
     new_row_index = 0
 
     for row in drillsample_data[:]:
-        litho = row.litho
-        litho_found = False
+        #litho = row.litho
+        any_litho_found = False
 
-        if (new_row_index == 0 and single_top_unit):
-        # Use only the closest unit for the top lithology.
-            if (litho in litho2dist):
-                # Sorted distance list for this lithology.
-                dist_list = litho2dist[litho]
+        # Loop over lithos in the current drillsample row.
+        for litho in row.lithos[:]:
+            litho_found = False
 
-                # Adding Cover if it is present for this litho.
-                add_cover = False
-                for item in dist_list:
-                    if (item[1] == 'Cover'):
-                        add_cover = True
-                        closest_unit = 'Cover'
-                        closest_unit_distance = item[0]
+            if (new_row_index == 0 and single_top_unit):
+            # Use only the closest unit for the top lithology.
+                if (litho in litho2dist):
+                    # Sorted distance list for this lithology.
+                    dist_list = litho2dist[litho]
 
-                # Finding the closest unit that is not Cover.
-                for item in dist_list:
-                    if (item[1] != 'Cover'):
-                        closest_unit = item[1]
-                        closest_unit_distance = item[0]
-                        break
+                    # Adding Cover if it is present for this litho.
+                    add_cover = False
+                    for item in dist_list:
+                        if (item[1] == 'Cover'):
+                            add_cover = True
+                            closest_unit = 'Cover'
+                            closest_unit_distance = item[0]
 
-                if (closest_unit_distance > 0):
-                    print("WARNING: The closest distance to the top unit > 0! Dist =", closest_unit_distance)
+                    # Finding the closest unit that is not Cover.
+                    for item in dist_list:
+                        if (item[1] != 'Cover'):
+                            closest_unit = item[1]
+                            closest_unit_distance = item[0]
+                            break
 
+                    if (closest_unit_distance > 0):
+                        print("WARNING: The closest distance to the top unit > 0! Dist =", closest_unit_distance)
+
+                    for unit_name in strat_data:
+                        if (unit_name == closest_unit or (add_cover and unit_name == 'Cover')):
+                            litho_found = True
+                            unit_index = unit_names.index(unit_name)
+                            strata_table[new_row_index, unit_index].path_exists = True
+                            strata_table[new_row_index, unit_index].lithos.append(litho)
+            else:
                 for unit_name in strat_data:
-                    if (unit_name == closest_unit or (add_cover and unit_name == 'Cover')):
+                    if (litho in strat_data[unit_name]):
                         litho_found = True
                         unit_index = unit_names.index(unit_name)
                         strata_table[new_row_index, unit_index].path_exists = True
                         strata_table[new_row_index, unit_index].lithos.append(litho)
-        else:
-            for unit_name in strat_data:
-                if (litho in strat_data[unit_name]):
-                    litho_found = True
-                    unit_index = unit_names.index(unit_name)
-                    strata_table[new_row_index, unit_index].path_exists = True
-                    strata_table[new_row_index, unit_index].lithos.append(litho)
 
-        if (not litho_found):
-        # Drillhole lithology not found in units.
-            print("WARNING: Drillhole lithology not found in units data: ", litho)
-            missing_lithos.add(litho)
+            if (not litho_found):
+            # Drillhole lithology not found in units data.
+                print("WARNING: Drillhole lithologies not found in units data: ", litho)
 
+                # Remove this lithology and its score from drillsample data for the current row.
+                del row.scores[row.lithos.index(litho)]
+                row.lithos.remove(litho)
+
+                # Update the missing lithos list.
+                missing_lithos.add(litho)
+            else:
+                any_litho_found = True
+
+        if (not any_litho_found):
             # Treat this as "no data".
             drillsample_data.remove(row)
         else:
@@ -488,7 +508,7 @@ def generate_strata_table(drillsample_data, strat_data, litho2dist):
 
     if (num_rows == 0):
         print('No data left!!!')
-        return np.full((0, 0), False)
+        return np.ndarray(shape=[num_rows, num_units], dtype=object)
 
     # Remove rows due to missing lithologies.
     strata_table = strata_table[0:num_rows, :]
@@ -654,15 +674,9 @@ def generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_da
 
     # Going through the strata table and generating the routes.
     for row in range(1, row_max):
+        # TODO: change to the litho from the route taken from strata_table[].lithos.
         current_litho = drillsample_data[row].litho
         previous_litho = drillsample_data[row - 1].litho
-
-        num_routes = len(all_routes)
-        all_routes_number.append(num_routes)
-
-        print("ROW = ", row - 1, previous_litho, num_routes)
-        if (num_routes == 0):
-            break
 
         thickness_change = get_thickness_change(drillsample_data, row)
         new_routes = []
@@ -783,9 +797,15 @@ def generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_da
         # Addig new routes.
         all_routes.extend(new_routes)
 
-        if (row == row_max - 1):
-            # Print info for the last row.
-            print("ROW = ", row, current_litho, len(all_routes))
+        # Update the number of routes.
+        num_routes = len(all_routes)
+        all_routes_number.append(num_routes)
+
+        # Print the info.
+        print("ROW = ", row, drillsample_data[row].lithos, num_routes)
+
+        if (num_routes == 0):
+            break
 
     #------------------------------------------------------------------
     # Adding the final number of routes.
@@ -1150,7 +1170,7 @@ def main():
     #collarID = 810340
 
     # Confirmed results (using 1 closest unit & single top unit).
-    collarID = 2182336
+    #collarID = 2182336
     #collarID = 2182335
     #collarID = 2182340
     #collarID = 2182339
@@ -1159,7 +1179,7 @@ def main():
     #collarID = 2182334
 
     # TODO: Discuss with Mark - we have here conglomerate, which is rock, and then gravel, which we define as 'always Cover'. Thus we have the Cover below the rock here.
-    #collarID = 1209855
+    collarID = 1209855
 
     drillsample_filename = "data/real/dist_files/litho_tables_V2/litho_" + str(collarID) + ".csv"
     dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
