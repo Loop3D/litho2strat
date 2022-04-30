@@ -403,6 +403,15 @@ def read_topology_data(topology_filename):
 
     return Gf
 
+#========================================================================================================
+@dataclass
+class StrataTableElement:
+    '''
+    The element of a strata table.
+    '''
+    path_exists: bool = False
+    lithos: List[str] = field(default_factory=list)
+
 #==============================================================================
 def generate_strata_table(drillsample_data, strat_data, litho2dist):
     '''
@@ -415,7 +424,10 @@ def generate_strata_table(drillsample_data, strat_data, litho2dist):
     print("num_rows (before) = ", num_rows)
     print("num_units = ", num_units)
 
-    strata_table = np.full((num_rows, num_units), False)
+    strata_table = np.ndarray(shape=[num_rows, num_units], dtype=object)
+
+    # Initialize with default objects.
+    strata_table.flat = [StrataTableElement() for _ in strata_table.flat]
 
     new_row_index = 0
 
@@ -451,13 +463,15 @@ def generate_strata_table(drillsample_data, strat_data, litho2dist):
                     if (unit_name == closest_unit or (add_cover and unit_name == 'Cover')):
                         litho_found = True
                         unit_index = unit_names.index(unit_name)
-                        strata_table[new_row_index, unit_index] = True
+                        strata_table[new_row_index, unit_index].path_exists = True
+                        strata_table[new_row_index, unit_index].lithos.append(litho)
         else:
             for unit_name in strat_data:
                 if (litho in strat_data[unit_name]):
                     litho_found = True
                     unit_index = unit_names.index(unit_name)
-                    strata_table[new_row_index, unit_index] = True
+                    strata_table[new_row_index, unit_index].path_exists = True
+                    strata_table[new_row_index, unit_index].lithos.append(litho)
 
         if (not litho_found):
         # Drillhole lithology not found in units.
@@ -624,7 +638,7 @@ def generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_da
     thickness_change = get_thickness_change(drillsample_data, row)
 
     for strat in range(num_units):
-        if (strata_table[row, strat]):
+        if (strata_table[row, strat].path_exists):
             new_route = StrataRoute()
             new_route.add_first_position(strat, thickness_change, num_units)
             # Adding new route into the list.
@@ -654,7 +668,7 @@ def generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_da
         new_routes = []
 
         # Allowed strata units for a unit change.
-        strata_allowed = [strat for strat in range(num_units) if (strata_table[row, strat])]
+        strata_allowed = [strat for strat in range(num_units) if (strata_table[row, strat].path_exists)]
 
         if (current_litho == previous_litho):
             litho_sequence_length = litho_sequence_length + 1
@@ -749,7 +763,7 @@ def generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_da
                 # Apply unit thickness constraints.
                 can_stay = can_stay and (current_thickness < max_strata_thickness[strat0])
 
-            path_exists = strata_table[row, strat0]
+            path_exists = strata_table[row, strat0].path_exists
 
             can_stay = can_stay and path_exists
 
@@ -1133,7 +1147,7 @@ def main():
     #collarID = 1209857
     #collarID = 353386
     #collarID = 2182301
-    #collarID = 81034
+    #collarID = 810340
 
     # Confirmed results (using 1 closest unit & single top unit).
     collarID = 2182336
