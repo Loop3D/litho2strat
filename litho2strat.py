@@ -295,6 +295,10 @@ def read_drillsample_data(filename, header, ignore_list):
             data.depth_from = float(row[header.depth_from])
             data.depth_to = float(row[header.depth_to])
 
+            if (row[header.lithos] == ''):
+                # No data - skip the row.
+                continue
+
             lithos = row[header.lithos].split(", ")
             scores = [int(s) for s in row[header.scores].split(", ")]
 
