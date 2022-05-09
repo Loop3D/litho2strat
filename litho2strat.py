@@ -27,7 +27,7 @@ add_topology_constraints = False
 ignore_unit_age = True
 #---------------------------------------------------------------------------
 # The number of unit contacts inside the same litholgy sequence.
-max_num_unit_contacts_inside_litho = 0
+max_num_unit_contacts_inside_litho = 1
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
 number_nearest_units = 2
@@ -678,9 +678,11 @@ def generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_da
 
     # Going through the strata table and generating the routes.
     for row in range(1, row_max):
-        # TODO: change to the litho from the route taken from strata_table[].lithos.
-        current_litho = drillsample_data[row].litho
-        previous_litho = drillsample_data[row - 1].litho
+        # The drillhole lithos.
+        # Note: we deliberately consider the full list of drillsample lithos instead of lithos- on the route.
+        # Because considering the route lithos may lead to exponential growth of number of routes due to frequent unit change.
+        current_lithos = drillsample_data[row].lithos
+        previous_lithos = drillsample_data[row - 1].lithos
 
         thickness_change = get_thickness_change(drillsample_data, row)
         new_routes = []
@@ -688,8 +690,10 @@ def generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_da
         # Allowed strata units for a unit change.
         strata_allowed = [strat for strat in range(num_units) if (strata_table[row, strat].path_exists)]
 
-        if (current_litho == previous_litho):
+        same_lithos = False
+        if (set(current_lithos) == set(previous_lithos)):
             litho_sequence_length = litho_sequence_length + 1
+            same_lithos = True
         else:
             litho_sequence_length = 1
 
@@ -705,7 +709,7 @@ def generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_da
             can_change = True
 
             # Add 'unit contacts inside the same litho' constraints.
-            if (current_litho == previous_litho):
+            if (same_lithos):
                 # Constrain the maximum number of unit contacts inside a litho sequence.
                 if (route.num_unit_contacts_inside_litho >= max_num_unit_contacts_inside_litho):
                     can_change = False
@@ -764,7 +768,7 @@ def generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_da
                         new_route.unit_visited[strat] += 1
 
                         # Processing the unit contact inside the same lithology sequence.
-                        if (current_litho == previous_litho):
+                        if (same_lithos):
                             new_route.num_unit_contacts_inside_litho = route.num_unit_contacts_inside_litho + 1
                         else:
                             new_route.num_unit_contacts_inside_litho = 0
@@ -1187,6 +1191,10 @@ def main():
 
     drillsample_filename = "data/real/dist_files/litho_tables_V2/litho_" + str(collarID) + ".csv"
     dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
+
+    # Synthetic test.
+    drillsample_filename = "data/real/test/litho_1.csv"
+    dist_table_filename = "data/real/test/map_1.csv"
 
     # Drillsample data column names.
     drillsample_header = DrillSampleHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
