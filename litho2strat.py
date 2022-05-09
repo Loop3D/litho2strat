@@ -16,7 +16,7 @@ import tracemalloc
 import os
 
 # 'Returning to the same unit' constraints.
-max_num_returns_per_unit = 2
+max_num_returns_per_unit = 1
 #---------------------------------------------------------------------------
 # Adding thickness constraints. (Requires unit thickness data).
 add_thickness_constraints = False
@@ -27,7 +27,7 @@ add_topology_constraints = False
 ignore_unit_age = True
 #---------------------------------------------------------------------------
 # The number of unit contacts inside the same litholgy sequence.
-max_num_unit_contacts_inside_litho = 1
+max_num_unit_contacts_inside_litho = 0
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
 number_nearest_units = 2
@@ -265,8 +265,6 @@ class DrillSampleDataRow:
     depth_to: float = 0.
     lithos: List[str] = field(default_factory=list)
     scores: List[int] = field(default_factory=list)
-    # TODO: Temporary for transition to several lithos support.
-    litho: str = ''
 
 #========================================================================================================
 def read_drillsample_data(filename, header, ignore_list):
@@ -301,9 +299,6 @@ def read_drillsample_data(filename, header, ignore_list):
 
             lithos = row[header.lithos].split(", ")
             scores = [int(s) for s in row[header.scores].split(", ")]
-
-            # TODO: Temporary for transition to several lithos support.
-            data.litho = lithos[0]
 
             # Sanity check.
             if (len(lithos) != len(scores)):
@@ -630,11 +625,11 @@ def get_drillhole_lithos(drillsample_data):
     '''
     Returns the drillhole lithologies from drillsample data.
     '''
-    lithos = set()
+    all_lithos = set()
     for row in drillsample_data:
-        litho = row.litho
-        lithos.add(litho)
-    return lithos
+        lithos = row.lithos
+        all_lithos.update(lithos)
+    return all_lithos
 
 #==============================================================================
 def generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_data, graph):
@@ -1178,7 +1173,7 @@ def main():
     #collarID = 810340
 
     # Confirmed results (using 1 closest unit & single top unit).
-    #collarID = 2182336
+    collarID = 2182336
     #collarID = 2182335
     #collarID = 2182340
     #collarID = 2182339
@@ -1187,14 +1182,14 @@ def main():
     #collarID = 2182334
 
     # TODO: Discuss with Mark - we have here conglomerate, which is rock, and then gravel, which we define as 'always Cover'. Thus we have the Cover below the rock here.
-    collarID = 1209855
+    #collarID = 1209855
 
     drillsample_filename = "data/real/dist_files/litho_tables_V2/litho_" + str(collarID) + ".csv"
     dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
 
     # Synthetic test.
-    drillsample_filename = "data/real/test/litho_1.csv"
-    dist_table_filename = "data/real/test/map_1.csv"
+    #drillsample_filename = "data/real/test/litho_1.csv"
+    #dist_table_filename = "data/real/test/map_1.csv"
 
     # Drillsample data column names.
     drillsample_header = DrillSampleHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
