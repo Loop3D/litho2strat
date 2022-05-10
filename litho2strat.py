@@ -1011,12 +1011,14 @@ def plot_unit_probabilities(all_routes, drillsample_data, unit_names):
     strat_distr = np.repeat(strat_distr, 2, axis=0)
     #-------------------------------------------------------------
 
-    j = 0
+    # Skip empty units.
+    nonempty_units = []
     for i in range(num_units):
-        if (sum(strat_distr[:, i]) == 0):
-            # Skip empty units.
-            continue
+        if (sum(strat_distr[:, i]) != 0):
+            nonempty_units.append(i)
 
+    j = 0
+    for index, i in enumerate(nonempty_units):
         # Plot lines.
         axs[j].plot(x_data, strat_distr[:, i], zorder=1, c='blue')
 
@@ -1026,10 +1028,10 @@ def plot_unit_probabilities(all_routes, drillsample_data, unit_names):
         # Plot dots.
         axs[j].scatter(x_data, strat_distr[:, i], s=5, c=color, zorder=2)
 
-        axs[j].set_title(unit_names[i], size=9, y=0.91)
+        axs[j].set_title(unit_names[i], size=9, y=0.98)
         axs[j].set_ylabel(str(j))
 
-        if (i != num_units - 1):
+        if (index != len(nonempty_units) - 1):
             # Hide tick labels.
             axs[j].set_xticklabels([])
 
@@ -1183,13 +1185,13 @@ def main():
     # TODO: Discuss with Mark - we have here too long Cover...
     #collarID = 1209857
     #collarID = 353386
-    #collarID = 2182301
+    collarID = 2182301
 
     # (!) Has wacke at row = 28 which is not passing topology constraints! To discuss with Mark.
     #collarID = 810340
 
     # Confirmed results (using 1 closest unit & single top unit).
-    collarID = 2182336
+    #collarID = 2182336
     #collarID = 2182335
     #collarID = 2182340
     #collarID = 2182339
