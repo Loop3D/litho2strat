@@ -1,0 +1,33 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+3433,592,2182077,18,20.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3434,592,2182077,48,50.0,Harder clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3435,592,2182077,50,52.0,Harder clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3436,592,2182077,56,58.0,Hard clay with small F? Pisoids,mud,100,mud,sediment_clastic,sediment,"mud, dolostone","101, 45"
+3437,592,2182077,58,60.0,Reddish soft FeO pisoids in clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3438,592,2182077,60,62.0,Calcrete  Calcirum Carbonate chips large in lacustrine clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3439,592,2182077,62,64.0,Calcrete  Calcirum Carbonate chips large in lacustrine clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3440,592,2182077,64,66.0,Calcrete  Calcirum Carbonate chips large in lacustrine clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3441,592,2182077,66,68.0,Calcrete  Calcirum Carbonate chips large in lacustrine clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3442,592,2182077,68,70.0,Calcrete  Calcirum Carbonate chips large in lacustrine clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3443,592,2182077,70,72.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3444,592,2182077,72,74.0,Ferruginous pisoids in clay. Soft G/F,mud,100,mud,sediment_clastic,sediment,mud,100
+3445,592,2182077,74,76.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3446,592,2182077,86,88.0,Fissile shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+3447,592,2182077,94,96.0,Clay could be contamination? <10% Q,mud,100,mud,sediment_clastic,sediment,mud,100
+3448,592,2182077,96,98.0,Vein Qtz - larger 15-20%. ,vein,100,vein,fillings,texture_structure,vein,100
+3449,592,2182077,102,104.0,Vein Qtz - larger 15-20%. ,vein,100,vein,fillings,texture_structure,vein,100
+3450,592,2182077,104,106.0,BIFFY G with softer F shale. <5% Q,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, banded_iron_formation","100, 60"
+3451,592,2182077,106,108.0,bif ,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+3452,592,2182077,108,110.0,BIF - mod enriched. <15% C,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,banded_iron_formation,100
+3453,592,2182077,110,112.0,BIF - mod enriched. < 5% C,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,banded_iron_formation,100
+3454,592,2182077,114,116.0,BIF jaspilite withmod enriched H,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,banded_iron_formation,100
+3455,592,2182077,120,122.0,Crystalline dolomite,dolostone,101,dolostone,carbonate,sedimentary_rock,dolostone,101
+3456,592,2182077,122,124.0,Dolomite _ jaspilite,dolostone,100,dolostone,carbonate,sedimentary_rock,dolostone,100
+3457,592,2182077,124,126.0,BIF Hematite weakwith <20% yellow C,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,banded_iron_formation,100
+3458,592,2182077,126,128.0,Soft shaley/clay. Minor J. Unenriched,mud,100,mud,sediment_clastic,sediment,mud,100
+3459,592,2182077,128,130.0,Dolomite shale carb shale normal shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+3460,592,2182077,132,134.0,Crystalline dolomite,dolostone,101,dolostone,carbonate,sedimentary_rock,dolostone,101
+3461,592,2182077,134,136.0,Crystalline dolomite,dolostone,101,dolostone,carbonate,sedimentary_rock,dolostone,101
+3462,592,2182077,136,138.0,Crystalline dolomite,dolostone,101,dolostone,carbonate,sedimentary_rock,dolostone,101
+3463,592,2182077,138,140.0,Crystalline dolomite in clay.,mud,101,mud,sediment_clastic,sediment,mud,101
+3464,592,2182077,140,142.0,Crystalline dolomite in clay.,mud,101,mud,sediment_clastic,sediment,mud,101

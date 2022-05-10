@@ -1,0 +1,5 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+1827,592,2181858,0,2.0,colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock,colluvium,101
+1828,592,2181858,8,10.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1829,592,2181858,10,12.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1830,592,2181858,12,14.0,unenriched BIF; SHARP AT:,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"banded_iron_formation, sapropel","101, 62"

@@ -1,0 +1,6 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+5220,592,2182232,24,26.0,Lim clay,mud,101,mud,sediment_clastic,sediment,mud,101
+5221,592,2182232,26,28.0,Lim clay,mud,101,mud,sediment_clastic,sediment,mud,101
+5222,592,2182232,28,30.0,Lim clay,mud,101,mud,sediment_clastic,sediment,mud,101
+5223,592,2182232,30,32.0,Lim clay,mud,101,mud,sediment_clastic,sediment,mud,101
+5224,592,2182232,32,34.0,Lim clay. ?Magnetite? Black and extremely mag,mud,100,mud,sediment_clastic,sediment,"mud, metal","100, 50"

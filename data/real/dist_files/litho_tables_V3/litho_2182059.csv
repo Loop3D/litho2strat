@@ -1,0 +1,38 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+3113,592,2182059,34,36.0,V. Small quartz grains,vein,100,vein,fillings,texture_structure,vein,100
+3114,592,2182059,36,38.0,V. Small quartz grains,vein,100,vein,fillings,texture_structure,vein,100
+3115,592,2182059,38,40.0,V. Small quartz grains,vein,100,vein,fillings,texture_structure,vein,100
+3116,592,2182059,40,42.0,V. Small quartz grains,vein,100,vein,fillings,texture_structure,vein,100
+3117,592,2182059,42,44.0,V. Small quartz grains,vein,100,vein,fillings,texture_structure,vein,100
+3118,592,2182059,44,46.0,V. Small quartz grains,vein,100,vein,fillings,texture_structure,vein,100
+3119,592,2182059,46,48.0,V. Small quartz grains,vein,100,vein,fillings,texture_structure,vein,100
+3120,592,2182059,48,50.0,V. Small quartz grains,vein,100,vein,fillings,texture_structure,vein,100
+3121,592,2182059,50,52.0,V. Small quartz grains,vein,100,vein,fillings,texture_structure,vein,100
+3122,592,2182059,52,54.0,lacustrine clays,mud,101,mud,sediment_clastic,sediment,mud,101
+3123,592,2182059,54,56.0,lacustrine clays,mud,101,mud,sediment_clastic,sediment,mud,101
+3124,592,2182059,56,58.0,lacustrine clays,mud,101,mud,sediment_clastic,sediment,mud,101
+3125,592,2182059,58,60.0,lacustrine clays,mud,101,mud,sediment_clastic,sediment,mud,101
+3126,592,2182059,60,62.0,lacustrine clays,mud,101,mud,sediment_clastic,sediment,mud,101
+3127,592,2182059,62,64.0,lacustrine clays,mud,101,mud,sediment_clastic,sediment,mud,101
+3128,592,2182059,64,66.0,lacustrine clays,mud,101,mud,sediment_clastic,sediment,mud,101
+3129,592,2182059,66,68.0,lacustrine clays & fine quartz,vein,101,vein,fillings,texture_structure,vein,101
+3130,592,2182059,68,70.0,lacustrine clays & fine quartz,vein,101,vein,fillings,texture_structure,vein,101
+3131,592,2182059,70,72.0,lacustrine clays & fine quartz,vein,101,vein,fillings,texture_structure,vein,101
+3132,592,2182059,72,74.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,sand,101
+3133,592,2182059,74,76.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,sand,101
+3134,592,2182059,76,78.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,sand,101
+3135,592,2182059,78,80.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,sand,101
+3136,592,2182059,80,82.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,sand,101
+3137,592,2182059,82,84.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,sand,101
+3138,592,2182059,84,86.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,sand,101
+3139,592,2182059,86,88.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,sand,101
+3140,592,2182059,88,90.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,sand,101
+3141,592,2182059,90,92.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,sand,101
+3142,592,2182059,92,94.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,sand,101
+3143,592,2182059,94,96.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,sand,101
+3144,592,2182059,96,98.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,sand,101
+3145,592,2182059,98,100.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,sand,101
+3146,592,2182059,100,102.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,sand,101
+3147,592,2182059,102,104.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,sand,101
+3148,592,2182059,104,106.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,sand,101
+3149,592,2182059,106,108.0,"fine quartz ""running sands""",vein,100,vein,fillings,texture_structure,sand,101

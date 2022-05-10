@@ -1,0 +1,35 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+2735,592,2182022,30,32.0,clay balls,mud,100,mud,sediment_clastic,sediment,mud,100
+2736,592,2182022,44,46.0,pebble band pebbles W to 3cm rare pebbles WH vn qx ,gravel,100,gravel,sediment_clastic,sediment,"gravel, pebble_grade_limestone","60, 48"
+2737,592,2182022,46,48.0,pebble band pebbles W to 3cm rare pebbles WH vn qx ,gravel,100,gravel,sediment_clastic,sediment,"gravel, pebble_grade_limestone","60, 48"
+2738,592,2182022,50,52.0,pebbles/fr of ZW Zh and rare ZX in clayey/silty sample,gravel,100,gravel,sediment_clastic,sediment,"gravel, lime_sediment","55, 42"
+2739,592,2182022,52,54.0,pebbles/fr of ZW Zh and rare ZX in clayey/silty sample,gravel,100,gravel,sediment_clastic,sediment,"gravel, lime_sediment","55, 42"
+2740,592,2182022,56,58.0,Clays,mud,101,mud,sediment_clastic,sediment,mud,101
+2741,592,2182022,58,60.0,Clays,mud,101,mud,sediment_clastic,sediment,mud,101
+2742,592,2182022,60,62.0,Clays,mud,101,mud,sediment_clastic,sediment,mud,101
+2743,592,2182022,62,64.0,Clays,mud,101,mud,sediment_clastic,sediment,mud,101
+2744,592,2182022,64,66.0,Clays,mud,101,mud,sediment_clastic,sediment,mud,101
+2745,592,2182022,66,68.0,Clays,mud,101,mud,sediment_clastic,sediment,mud,101
+2746,592,2182022,68,70.0,Clays,mud,101,mud,sediment_clastic,sediment,mud,101
+2747,592,2182022,70,72.0,Clays,mud,101,mud,sediment_clastic,sediment,mud,101
+2748,592,2182022,72,74.0,Clays,mud,101,mud,sediment_clastic,sediment,mud,101
+2749,592,2182022,74,76.0,Clays with trace white qz fragments,mud,100,mud,sediment_clastic,sediment,"mud, framestone","101, 52"
+2750,592,2182022,76,78.0,Clays with trace white qz fragments,mud,100,mud,sediment_clastic,sediment,"mud, framestone","101, 52"
+2751,592,2182022,78,80.0,Clays with trace white qz fragments,mud,100,mud,sediment_clastic,sediment,"mud, framestone","101, 52"
+2752,592,2182022,84,86.0,Dirty GB ferruginous shale - Mn stained?,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+2753,592,2182022,86,88.0,Dirty GB ferruginous shale - Mn stained?,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+2754,592,2182022,88,90.0,Dirty GB ferruginous shale - Mn stained?,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+2755,592,2182022,90,92.0,Pale grey green chert lesser F,chert,100,chert,siliceous,sedimentary_rock,chert,100
+2756,592,2182022,94,96.0,Dirty GB F with less Chert,chert,101,chert,siliceous,sedimentary_rock,"chert, diorite","101, 47"
+2757,592,2182022,96,98.0,Chips F dirty GB stain?N? fragments angular white vein qz,vein,100,vein,fillings,texture_structure,vein,100
+2758,592,2182022,108,110.0,Chert doesnot look like chem sed. Sample contains GN chert but also brittle nonmassive chert and Q and also wel bedded chips of siicified F,chert,100,chert,siliceous,sedimentary_rock,"chert, unclassified_rock, vein","100, 44, 29"
+2759,592,2182022,114,116.0,Rare F chips are well BE. Whiter Chert pieces microbanded with v rare% blackbands. After being wet with acid it turns yellow as it dries. ,felsic,100,felsic,felsic,igneous_rock,"chert, felsic, iron_mudstone","100, 100, 55"
+2760,592,2182022,118,120.0,;,exotic_crystalline_igneous_rock,101,exotic_crystalline_igneous_rock,exotic_crystalline,igneous_rock,,
+2761,592,2182022,120,122.0,Chert frags in dark brown mousse.,chert,100,chert,siliceous,sedimentary_rock,chert,100
+2762,592,2182022,122,124.0,Chert frags in dark brown mousse.,chert,100,chert,siliceous,sedimentary_rock,chert,100
+2763,592,2182022,142,144.0,Chert out G in. Botroidal G on fracture surfaces.V common goethitised F chips. Sample still has GB mousse component.,chert,100,chert,siliceous,sedimentary_rock,chert,100
+2764,592,2182022,158,160.0,Contains 25% chips pink shale marker band.,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+2765,592,2182022,196,198.0,45% chips soft yellow shale,mudstone,101,mudstone,clastic,sedimentary_rock,coal_shale,57
+2766,592,2182022,198,200.0,20% chips soft pink shale. Water now red not limonitic,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+2767,592,2182022,200,202.0,20% chips soft pink shale. 5% W. Water now red not limonitic,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+2768,592,2182022,202,204.0,70%G 25%W 5%chert,chert,101,chert,siliceous,sedimentary_rock,chert,101

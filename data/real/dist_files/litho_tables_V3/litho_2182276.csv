@@ -1,0 +1,16 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+5544,592,2182276,88,90.0,QUARTZ SANDS,vein,100,vein,fillings,texture_structure,sand,101
+5545,592,2182276,90,92.0,QUARTZ SANDS,vein,100,vein,fillings,texture_structure,sand,101
+5546,592,2182276,92,94.0,QUARTZ SANDS,vein,100,vein,fillings,texture_structure,sand,101
+5547,592,2182276,96,98.0,SAND,sand,101,sand,sediment_clastic,sediment,sand,101
+5548,592,2182276,98,100.0,SAND,sand,101,sand,sediment_clastic,sediment,sand,101
+5549,592,2182276,100,102.0,SAND,sand,101,sand,sediment_clastic,sediment,sand,101
+5550,592,2182276,102,104.0,FINE TO COARSE GRAINED SAND,sand,101,sand,sediment_clastic,sediment,sand,101
+5551,592,2182276,108,110.0,QUARTZ SANDS,vein,100,vein,fillings,texture_structure,sand,101
+5552,592,2182276,118,120.0,QUARTZ SANDS,vein,100,vein,fillings,texture_structure,sand,101
+5553,592,2182276,124,126.0,QUARTZ SANDS,vein,100,vein,fillings,texture_structure,sand,101
+5554,592,2182276,138,140.0,QUARTZ SANDS,vein,100,vein,fillings,texture_structure,sand,101
+5555,592,2182276,142,144.0,QUARTZ SANDS,vein,100,vein,fillings,texture_structure,sand,101
+5556,592,2182276,144,146.0,QUARTZ SANDS,vein,100,vein,fillings,texture_structure,sand,101
+5557,592,2182276,146,148.0,QUARTZ SANDS,vein,100,vein,fillings,texture_structure,sand,101
+5558,592,2182276,148,150.0,QUARTZ SANDS,vein,100,vein,fillings,texture_structure,sand,101

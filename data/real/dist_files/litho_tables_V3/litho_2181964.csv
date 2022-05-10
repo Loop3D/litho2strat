@@ -1,0 +1,5 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+2367,592,2181964,38,40.0,F or very soft H. No clear foliation. Base of transported,colluvium,101,colluvium,natural_superficial_ground,surficial_rock,"colluvium, banded_iron_formation","101, 50"
+2368,592,2181964,50,52.0,LWA/MNM contact?,contact,101,contact,contact,texture_structure,contact,101
+2369,592,2181964,64,66.0,MNM/MacLod contact?,contact,101,contact,contact,texture_structure,contact,101
+2370,592,2181964,106,108.0,Red clay ball. Chips 90% F,mud,100,mud,sediment_clastic,sediment,mud,100

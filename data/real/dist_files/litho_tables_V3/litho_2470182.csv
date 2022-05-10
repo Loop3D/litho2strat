@@ -1,0 +1,17 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+6354,2670,2470182,62,64.0,BRECCIATED,breccia,82,breccia,fault_rock,texture_structure,breccia,82
+6355,2670,2470182,64,66.0,BRECCIATED,breccia,82,breccia,fault_rock,texture_structure,breccia,82
+6356,2670,2470182,66,68.0,BRECCIATED,breccia,82,breccia,fault_rock,texture_structure,breccia,82
+6357,2670,2470182,68,70.0,BRECCIATED BANDED DOLOMITE; JOINT OX,dolostone,100,dolostone,carbonate,sedimentary_rock,"dolostone, foidolite","101, 53"
+6358,2670,2470182,68,70.0,MAFIC?;BRECCIATED;ALTERED,mafic,100,mafic,mafic,igneous_rock,"mafic, breccia, aplite","101, 82, 80"
+6359,2670,2470182,70,72.0,CHERT;PLUSALTEREDMAFIC?,chert,100,chert,siliceous,sedimentary_rock,"chert, plastic","101, 60"
+6360,2670,2470182,70,72.0,BRECCIATED BANDED DOLOMITE; JOINT OX,dolostone,100,dolostone,carbonate,sedimentary_rock,"dolostone, foidolite","101, 53"
+6361,2670,2470182,72,74.0,BRECCIATED BANDED DOLOMITE; JOINT OX,dolostone,100,dolostone,carbonate,sedimentary_rock,"dolostone, foidolite","101, 53"
+6362,2670,2470182,74,76.0,BRECCIATED BANDED DOLOMITE; JOINT OX,dolostone,100,dolostone,carbonate,sedimentary_rock,"dolostone, foidolite","101, 53"
+6363,2670,2470182,76,78.0,BRECCIATED BANDED DOLOMITE; JOINT OX,dolostone,100,dolostone,carbonate,sedimentary_rock,"dolostone, foidolite","101, 53"
+6364,2670,2470182,78,80.0,BRECCIATED BANDED DOLOMITE; JOINT OX,dolostone,100,dolostone,carbonate,sedimentary_rock,"dolostone, foidolite","101, 53"
+6365,2670,2470182,80,82.0,FRESH DOLOMITE,dolostone,101,dolostone,carbonate,sedimentary_rock,dolostone,101
+6366,2670,2470182,82,84.0,FRESH DOLOMITE,dolostone,101,dolostone,carbonate,sedimentary_rock,dolostone,101
+6367,2670,2470182,84,86.0,FRESH DOLOMITE,dolostone,101,dolostone,carbonate,sedimentary_rock,dolostone,101
+6368,2670,2470182,86,88.0,FRESH DOLOMITE,dolostone,101,dolostone,carbonate,sedimentary_rock,dolostone,101
+6369,2670,2470182,88,90.0,FRESH DOLOMITE,dolostone,101,dolostone,carbonate,sedimentary_rock,dolostone,101

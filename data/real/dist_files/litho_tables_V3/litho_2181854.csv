@@ -1,0 +1,10 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+1742,592,2181854,0,2.0,colluvium on top of hill,colluvium,100,colluvium,natural_superficial_ground,surficial_rock,colluvium,100
+1743,592,2181854,2,4.0,strong hardcap developt w/ mostly vitreous G; some tiny pisolitic maghemites in interval,pisolith,100,pisolith,residual_deposit,surficial_rock,"pisolith, pyroxenite","100, 41"
+1744,592,2181854,8,10.0,v.wk hardcap development more clay rich,mud,100,mud,sediment_clastic,sediment,mud,100
+1745,592,2181854,24,26.0,increasing shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+1746,592,2181854,30,32.0,pallid wht shale/clay and F,mud,100,mud,sediment_clastic,sediment,"mud, banded_iron_formation","101, 50"
+1747,592,2181854,32,34.0,pallid wht shale/clay and F,mud,100,mud,sediment_clastic,sediment,"mud, banded_iron_formation","101, 50"
+1748,592,2181854,34,36.0,pallid wht shale/clay and F,mud,100,mud,sediment_clastic,sediment,"mud, banded_iron_formation","101, 50"
+1749,592,2181854,36,38.0,pallid wht shale/clay,mud,101,mud,sediment_clastic,sediment,mud,101
+1750,592,2181854,38,40.0,pallid wht shale/clay,mud,101,mud,sediment_clastic,sediment,mud,101

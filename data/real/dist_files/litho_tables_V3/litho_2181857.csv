@@ -1,0 +1,34 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+1794,592,2181857,0,2.0,silts,mud,89,mud,sediment_clastic,sediment,mud,101
+1795,592,2181857,2,4.0,silts,mud,89,mud,sediment_clastic,sediment,mud,101
+1796,592,2181857,4,6.0,silts,mud,89,mud,sediment_clastic,sediment,mud,101
+1797,592,2181857,6,8.0,silts,mud,89,mud,sediment_clastic,sediment,mud,101
+1798,592,2181857,8,10.0,silts,mud,89,mud,sediment_clastic,sediment,mud,101
+1799,592,2181857,10,12.0,silts,mud,89,mud,sediment_clastic,sediment,mud,101
+1800,592,2181857,12,14.0,silts,mud,89,mud,sediment_clastic,sediment,mud,101
+1801,592,2181857,14,16.0,increase clays,mud,101,mud,sediment_clastic,sediment,mud,101
+1802,592,2181857,30,32.0,clay after transd shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+1803,592,2181857,32,34.0,clay after transd shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+1804,592,2181857,34,36.0,clay after transd shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+1805,592,2181857,36,38.0,clay after transd shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+1806,592,2181857,38,40.0,clay after transd shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+1807,592,2181857,40,42.0,clay after transd shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+1808,592,2181857,44,46.0,transd/insitu contact,contact,101,contact,contact,texture_structure,contact,101
+1809,592,2181857,94,96.0,cherts,chert,91,chert,siliceous,sedimentary_rock,chert,101
+1810,592,2181857,118,120.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1811,592,2181857,120,122.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1812,592,2181857,122,124.0,unenriched shaley BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1813,592,2181857,126,128.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1814,592,2181857,128,130.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1815,592,2181857,140,142.0,shaley BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1816,592,2181857,142,144.0,shaley BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1817,592,2181857,152,154.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1818,592,2181857,154,156.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1819,592,2181857,156,158.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1820,592,2181857,158,160.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1821,592,2181857,160,162.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1822,592,2181857,162,164.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1823,592,2181857,164,166.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1824,592,2181857,166,168.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1825,592,2181857,168,170.0,shaley BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1826,592,2181857,170,172.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101

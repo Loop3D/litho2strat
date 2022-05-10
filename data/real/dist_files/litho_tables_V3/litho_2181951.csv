@@ -1,0 +1,6 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+2322,592,2181951,18,20.0,Base of transported cover,cover,101,cover,natural_superficial_ground,surficial_rock,cover,101
+2323,592,2181951,56,58.0,Pink-white clay interval. Marker?,mud,100,mud,sediment_clastic,sediment,mud,100
+2324,592,2181951,60,62.0,Chert more grainy. Denatured?,chert,100,chert,siliceous,sedimentary_rock,chert,100
+2325,592,2181951,62,64.0,Hematitic blood-red shale. Translucent chert,chert,101,chert,siliceous,sedimentary_rock,chert,101
+2326,592,2181951,64,66.0,Blue/colourless chert,chert,101,chert,siliceous,sedimentary_rock,chert,101

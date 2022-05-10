@@ -1,0 +1,11 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+6871,2670,2470379,16,17.0,pale puggy clay and ferrug frags,mud,100,mud,sediment_clastic,sediment,"mud, ferruginous_deposits","101, 50"
+6872,2670,2470379,17,18.0,trans chert BIF and clay,mud,101,mud,sediment_clastic,sediment,"banded_iron_formation, mud","101, 101"
+6873,2670,2470379,18,21.0,transported chips of mixed provenance,colluvium,100,colluvium,natural_superficial_ground,surficial_rock,colluvium,100
+6874,2670,2470379,21,23.0,mixed chert qtz seds,chert,100,chert,siliceous,sedimentary_rock,chert,100
+6875,2670,2470379,23,24.0,cherty BIF shale and qtz,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, vein","101, 67"
+6876,2670,2470379,24,26.0,shale ferrug shale qtz,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+6877,2670,2470379,27,29.0,ferrug shale and goeth chips,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, surficial_peat","101, 53"
+6878,2670,2470379,29,31.0,clay and goeth/ferrug frags,mud,100,mud,sediment_clastic,sediment,"mud, ferruginous_deposits","101, 53"
+6879,2670,2470379,31,33.0,clay and haem/ferrug shale,mudstone,101,mudstone,clastic,sedimentary_rock,"mud, mudstone","101, 101"
+6880,2670,2470379,33,51.0,Interbedded pale clay and ferrug sediment bands,mud,100,mud,sediment_clastic,sediment,"mud, sediment","101, 100"

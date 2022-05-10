@@ -1,0 +1,19 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+5733,592,2182312,0,2.05,mod-well consolidated transported cover comprising round maghemites in red clay matrix; SHARP AT:,mud,100,mud,sediment_clastic,sediment,"mud, sapropel","101, 62"
+5734,592,2182312,2,8.9,massive sub-rounded and angular transported fragments of dark grey hard manganese cemented in clay matrix minor H/W black streak moderately consolidated; SHARP AT:,mud,100,mud,sediment_clastic,sediment,"mud, sapropel","100, 62"
+5735,592,2182312,8,10.0,soft-mod bedded red shale and clay probably insitu,mud,100,mud,sediment_clastic,sediment,"mudstone, mud","101, 100"
+5736,592,2182312,10,11.6,hard bedded insitu interbedded light red ferruginous shale and goethitic hematite-hamatite unsure of grade up to 5% vughs,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, iron_gravel, lignite, lamprophyre","101, 63, 62, 46"
+5737,592,2182312,11,15.6,mod-hard interbedded hematite dominant mineralisation - soft bedded shale lays and harder sem-vitreous hematite and trace goethite becoming more shale rich to:,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, mudstone, pegmatite","100, 100, 70"
+5738,592,2182312,18,21.5,mixture of clay and slightly more ferruginous clay/shales  soft and crumbly to weak; grade decrease?,mud,100,mud,sediment_clastic,sediment,"mud, mud, corium, iron_gravel","101, 100, 62, 55"
+5739,592,2182312,21,23.8,soft-mod bedded porous goethitic ferruginous shales with mnr clay contaminants white,mud,100,mud,sediment_clastic,sediment,"mudstone, mud","101, 100"
+5740,592,2182312,25,27.1,mixture of soft bedded porous goethitic and limonitic ferruginous shale with increasing semi-VT massive G mineralisation towards end of interval,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, mineralisation, tephritic_phonolite","101, 100, 46"
+5741,592,2182312,30,31.0,clay after shale marker zone,mud,100,mud,sediment_clastic,sediment,mud,100
+5742,592,2182312,31,35.45,mixture semi-VT harder W-G mineralisation developed within more H-dominant ferruginous shaley material could be considered as hematised shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+5743,592,2182312,35,36.0,soft bedded porous hematised shale deep red,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+5744,592,2182312,36,39.6,semi-VT harder W-H massive mineralistaion developed within more H-dominant ferruginous shaley material with increasing pink clays down interval to:,mud,100,mud,sediment_clastic,sediment,"mud, slag","100, 39"
+5745,592,2182312,39,40.7,as above but with increased pink clay content unsure of grades porous and soft but competent,mud,100,mud,sediment_clastic,sediment,"mud, cementation_front, coarse_grained_plutonic_crystalline_igneous_rock","100, 52, 0"
+5746,592,2182312,40,42.1,soft bedded porous hematised-ferruginous shale with trc bands of hematite,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, ironstone","101, 58"
+5747,592,2182312,42,42.85,soft porous bedded shale markers,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+5748,592,2182312,46,47.1,barren clay after shale bed,mud,100,mud,sediment_clastic,sediment,mud,100
+5749,592,2182312,47,47.8,soft bedded porous hematised-ferruginous shale; SHARP AT:,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, sapropel","101, 62"
+5750,592,2182312,52,56.0,EOH; unenriched mostly cherty BIF with interbedded pink shales,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"unclassified_rock, banded_iron_formation, mudstone","101, 101, 101"

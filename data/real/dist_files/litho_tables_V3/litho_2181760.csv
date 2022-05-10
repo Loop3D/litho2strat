@@ -1,0 +1,7 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+565,592,2181760,6,8.1,Poorly sorted F W and G pebbles to 2cm in FG clay/silt matrix. Vughy and goethitised zones after ferruginisation/wk hardcapping.,mud,100,mud,sediment_clastic,sediment,"mud, gravel, foid_monzosyenite, fault","100, 80, 49, 48"
+566,592,2181760,8,10.0,F W and G granules and pebbles in fg ZF matrix overprinted by Ferruginous zones/hardcapped zones G.,gravel,100,gravel,sediment_clastic,sediment,"gravel, flow, ferruginous_deposits","82, 57, 43"
+567,592,2181760,11,15.4,Bedding poorly defined/fractured and increase in clays from above interval. Vughy 11.1-12.2m.,mud,100,mud,sediment_clastic,sediment,"mud, banded_iron_formation","100, 41"
+568,592,2181760,15,16.5,Poorly bedded  W mineralised  Mt Newman. Rare to minor CR clays in pods/beds to 0.5cm.,mud,100,mud,sediment_clastic,sediment,"mineralisation, mud","100, 100"
+569,592,2181760,32,33.5,Pink/grey soft fissile shale ?marker?,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,100
+570,592,2181760,33,43.1,Hematitic ferruginous shale. Minor 1-5cm zones of harder H/W rare 1-2 cm bands micro bedded grey S,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100

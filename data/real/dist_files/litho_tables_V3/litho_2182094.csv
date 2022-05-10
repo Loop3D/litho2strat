@@ -1,0 +1,10 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+3620,592,2182094,12,14.0,Gravel/pebble colluvium. Also trace X,gravel,100,gravel,sediment_clastic,sediment,gravel,100
+3621,592,2182094,14,16.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3622,592,2182094,16,18.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3623,592,2182094,18,20.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3624,592,2182094,26,28.0,generally appear transported.,colluvium,101,colluvium,natural_superficial_ground,surficial_rock,colluvium,101
+3625,592,2182094,34,36.0,Unenriched BIF.,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+3626,592,2182094,36,38.0,Unenriched BIF.,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+3627,592,2182094,38,40.0,Unenriched BIF.,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+3628,592,2182094,40,42.0,Unenriched BIF.,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101

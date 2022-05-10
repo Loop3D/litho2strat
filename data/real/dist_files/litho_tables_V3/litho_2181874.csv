@@ -1,0 +1,4 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+1995,592,2181874,54,56.0,lacustrine clays,mud,101,mud,sediment_clastic,sediment,mud,101
+1996,592,2181874,56,58.0,lacustrine clays,mud,101,mud,sediment_clastic,sediment,mud,101
+1997,592,2181874,58,60.0,lacustrine clays,mud,101,mud,sediment_clastic,sediment,mud,101

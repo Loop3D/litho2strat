@@ -1,0 +1,23 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+4436,592,2182158,0,2.0,Colluvium polymictic pebbles and granules in Silty/sandy matrix,gravel,100,gravel,sediment_clastic,sediment,"colluvium, gravel","100, 59"
+4437,592,2182158,2,4.0,Colluvium polymictic pebbles and granules in Silty/sandy matrix,gravel,100,gravel,sediment_clastic,sediment,"colluvium, gravel","100, 59"
+4438,592,2182158,4,6.0,Colluvium polymictic pebbles and granules in Silty/sandy matrix,gravel,100,gravel,sediment_clastic,sediment,"colluvium, gravel","100, 59"
+4439,592,2182158,6,8.0,Colluvium polymictic pebbles and granules in Silty/sandy matrix,gravel,100,gravel,sediment_clastic,sediment,"colluvium, gravel","100, 59"
+4440,592,2182158,8,10.0,Colluvium polymictic pebbles and granules in Silty/sandy matrix,gravel,100,gravel,sediment_clastic,sediment,"colluvium, gravel","100, 59"
+4441,592,2182158,10,12.0,Colluvium polymictic pebbles and granules in Silty/sandy matrix,gravel,100,gravel,sediment_clastic,sediment,"colluvium, gravel","100, 59"
+4442,592,2182158,12,14.0,Colluvium pisoid rich polymictic pebbles and granules in Silty/sandy matrix,gravel,100,gravel,sediment_clastic,sediment,"colluvium, gravel","100, 59"
+4443,592,2182158,22,24.0,as above + cr clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4444,592,2182158,30,32.0,pale green silty clays trace ferruginous chips,mud,100,mud,sediment_clastic,sediment,mud,100
+4445,592,2182158,32,34.0,pale green silty clays trace ferruginous chips,mud,100,mud,sediment_clastic,sediment,mud,100
+4446,592,2182158,34,36.0,pale green silty clays trace ferruginous chips,mud,100,mud,sediment_clastic,sediment,mud,100
+4447,592,2182158,36,38.0,pale green silty clays trace ferruginous chips,mud,100,mud,sediment_clastic,sediment,mud,100
+4448,592,2182158,38,40.0,pale green silty clays trace ferruginous chips,mud,100,mud,sediment_clastic,sediment,mud,100
+4449,592,2182158,40,42.0,pale green silty clays trace ferruginous chips,mud,100,mud,sediment_clastic,sediment,mud,100
+4450,592,2182158,42,44.0,pale green silty clays trace ferruginous chips,mud,100,mud,sediment_clastic,sediment,mud,100
+4451,592,2182158,44,46.0,pale green silty clays trace ferruginous chips,mud,100,mud,sediment_clastic,sediment,mud,100
+4452,592,2182158,56,58.0,Asaboveclay rich,mud,100,mud,sediment_clastic,sediment,ceramic,54
+4453,592,2182158,58,60.0,Asaboveclay rich,mud,100,mud,sediment_clastic,sediment,ceramic,54
+4454,592,2182158,110,112.0,the clay is weathered carbonaceous shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+4455,592,2182158,112,114.0,the clay is weathered carbonaceous shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+4456,592,2182158,114,116.0,the clay is weathered carbonaceous shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+4457,592,2182158,116,118.0,the clay is weathered carbonaceous shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101

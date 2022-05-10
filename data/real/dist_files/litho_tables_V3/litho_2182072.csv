@@ -1,0 +1,14 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+3321,592,2182072,18,20.0,Gritty clay ,mud,101,mud,sediment_clastic,sediment,mud,101
+3322,592,2182072,20,22.0,Gritty clay ,mud,101,mud,sediment_clastic,sediment,mud,101
+3323,592,2182072,22,24.0,Gritty clay ,mud,101,mud,sediment_clastic,sediment,mud,101
+3324,592,2182072,28,30.0,This zone: Gritty white FeO-satained clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3325,592,2182072,32,34.0,Gritty clay ,mud,101,mud,sediment_clastic,sediment,mud,101
+3326,592,2182072,34,36.0,Gritty clay ,mud,101,mud,sediment_clastic,sediment,mud,101
+3327,592,2182072,56,58.0,Gritty clay ,mud,101,mud,sediment_clastic,sediment,mud,101
+3328,592,2182072,58,60.0,Gritty clay ,mud,101,mud,sediment_clastic,sediment,mud,101
+3329,592,2182072,60,62.0,Gritty clay ,mud,101,mud,sediment_clastic,sediment,mud,101
+3330,592,2182072,62,64.0,Gritty clay ,mud,101,mud,sediment_clastic,sediment,mud,101
+3331,592,2182072,70,72.0,?Lim clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3332,592,2182072,104,106.0,This zone: chert stained black,chert,100,chert,siliceous,sedimentary_rock,chert,100
+3333,592,2182072,110,112.0,Pyrite,massive_sulphide,101,massive_sulphide,ore,mineralisation,massive_sulphide,101

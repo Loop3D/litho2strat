@@ -1,0 +1,21 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+5930,592,2182322,0,0.8,0.4m core loss assumed tobe to be soil andmaghemite,soil,100,soil,residual_deposit,surficial_rock,"soil, dolostone","100, 52"
+5931,592,2182322,0,1.25,transported or insitu hardcapping?,colluvium,100,colluvium,natural_superficial_ground,surficial_rock,"colluvium, lime_grainstone","101, 50"
+5932,592,2182322,1,1.5,Cavity fill,fill,101,fill,artificial_man_made_ground,surficial_rock,fill,101
+5933,592,2182322,1,2.55,transported or insitu hardcapping?,colluvium,100,colluvium,natural_superficial_ground,surficial_rock,"colluvium, lime_grainstone","101, 50"
+5934,592,2182322,2,3.3,Cavity fill. 0.7m of core loss assumed to be cavity fill as on either side of the core block,fill,100,fill,artificial_man_made_ground,surficial_rock,"fill, fill","100, 100"
+5935,592,2182322,3,5.7,insitu laterite probably Newman,laterite,101,laterite,residual_deposit,surficial_rock,laterite,100
+5936,592,2182322,24,29.1,trace shale bands core loss assumed to be friable mineralisation,mineralisation,101,mineralisation,ore,mineralisation,"mineralisation, mudstone","101, 100"
+5937,592,2182322,29,29.6,0.4m of core loss assumed to be shale,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, unclassified_rock","101, 62"
+5938,592,2182322,29,30.1,trace shale bands,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+5939,592,2182322,30,31.9,shale band 6?,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+5940,592,2182322,32,32.7,very friable mineralisation,mineralisation,101,mineralisation,ore,mineralisation,mineralisation,101
+5941,592,2182322,34,35.2,very friable shaley mineralisation,mineralisation,101,mineralisation,ore,mineralisation,mineralisation,101
+5942,592,2182322,35,36.7,very friable shaley mineralisation,mineralisation,101,mineralisation,ore,mineralisation,mineralisation,101
+5943,592,2182322,38,39.4,1.3m core loss 0.1m hematite ferriguinous shale possibly a fault zone at baseof this interval,fault,100,fault,breaks,texture_structure,mudstone,100
+5944,592,2182322,39,39.5,very broken appears to be a fault zone,fault,100,fault,breaks,texture_structure,"fault, sparstone","100, 52"
+5945,592,2182322,40,42.5,very shaley or powdery BIF with minor hematite goethite mineralisation,mineralisation,101,mineralisation,ore,mineralisation,"banded_iron_formation, mineralisation, mudstone","101, 101, 91"
+5946,592,2182322,42,45.5,very shaley or powdery BIF with minor hematite goethite mineralisation,mineralisation,101,mineralisation,ore,mineralisation,"banded_iron_formation, mineralisation, mudstone","101, 101, 91"
+5947,592,2182322,45,46.0,fault zone within very shaley or powdery BIF with minor hematite goethite mineralisation,mineralisation,101,mineralisation,ore,mineralisation,"banded_iron_formation, mineralisation, fault","101, 101, 100"
+5948,592,2182322,46,48.5,very shaley or powdery BIF with minor hematite goethite mineralisation,mineralisation,101,mineralisation,ore,mineralisation,"banded_iron_formation, mineralisation, mudstone","101, 101, 91"
+5949,592,2182322,48,50.0,very shaley or powdery BIF with minor hematite goethite mineralisation,mineralisation,101,mineralisation,ore,mineralisation,"banded_iron_formation, mineralisation, mudstone","101, 101, 91"

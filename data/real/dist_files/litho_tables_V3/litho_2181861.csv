@@ -1,0 +1,20 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+1861,592,2181861,18,20.0,transd clays after weathd clay?,mud,101,mud,sediment_clastic,sediment,mud,101
+1862,592,2181861,20,22.0,transd clays after weathd clay?,mud,101,mud,sediment_clastic,sediment,mud,101
+1863,592,2181861,22,24.0,transd clays after weathd clay?,mud,101,mud,sediment_clastic,sediment,mud,101
+1864,592,2181861,24,26.0,transd clays after weathd clay?,mud,101,mud,sediment_clastic,sediment,mud,101
+1865,592,2181861,26,28.0,transd clays after weathd clay?,mud,101,mud,sediment_clastic,sediment,mud,101
+1866,592,2181861,30,32.0,transd clays after weathd clay?,mud,101,mud,sediment_clastic,sediment,mud,101
+1867,592,2181861,32,34.0,transd clays after weathd clay?,mud,101,mud,sediment_clastic,sediment,mud,101
+1868,592,2181861,46,48.0,clay after weathd shales,mud,100,mud,sediment_clastic,sediment,mudstone,101
+1869,592,2181861,48,50.0,clay after weathd shales,mud,100,mud,sediment_clastic,sediment,mudstone,101
+1870,592,2181861,50,52.0,clay after weathd shales,mud,100,mud,sediment_clastic,sediment,mudstone,101
+1871,592,2181861,52,54.0,clay after weathd shales,mud,100,mud,sediment_clastic,sediment,mudstone,101
+1872,592,2181861,54,56.0,clay after weathd shales,mud,100,mud,sediment_clastic,sediment,mudstone,101
+1873,592,2181861,56,58.0,clay after weathd shales,mud,100,mud,sediment_clastic,sediment,mudstone,101
+1874,592,2181861,58,60.0,clay after weathd shales,mud,100,mud,sediment_clastic,sediment,mudstone,101
+1875,592,2181861,86,88.0,cherty BIFs; CONTACT?,contact,101,contact,contact,texture_structure,"contact, chert","101, 62"
+1876,592,2181861,98,100.0,shaley BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1877,592,2181861,108,110.0,limonitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+1878,592,2181861,158,160.0,cherty BIFs limonitic shale?,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+1879,592,2181861,160,162.0,EOH; cherty BIFslimonitic shale?,mudstone,101,mudstone,clastic,sedimentary_rock,"unclassified_rock, mudstone","101, 101"

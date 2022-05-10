@@ -1,0 +1,39 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+2650,592,2182018,0,2.0,Very large BIF/Chert cobbles with minimum fines. Looks insitu bu could be a result of uplift. Hard ground.,gravel,100,gravel,sediment_clastic,sediment,"banded_iron_formation, gravel","100, 35"
+2651,592,2182018,2,4.0,Large chert pieces with maghemite and some silt/soil. Fragmented. Breccia?,breccia,101,breccia,fault_rock,texture_structure,"breccia, chert, monzonite","101, 100, 78"
+2652,592,2182018,28,30.0,Pale green chert,chert,101,chert,siliceous,sedimentary_rock,chert,101
+2653,592,2182018,30,32.0,Bees Gorge - looks like felsic material. Chert banded + massive quartz,vein,101,vein,fillings,texture_structure,vein,101
+2654,592,2182018,32,34.0,Bees Gorge - looks like felsic material. Chert banded + massive quartz,vein,101,vein,fillings,texture_structure,vein,101
+2655,592,2182018,34,36.0,Bees Gorge - looks like felsic material. Chert banded + massive quartz,vein,101,vein,fillings,texture_structure,vein,101
+2656,592,2182018,36,38.0,Bees Gorge - looks like felsic material. Chert banded + massive quartz,vein,101,vein,fillings,texture_structure,vein,101
+2657,592,2182018,38,40.0,Bees Gorge - looks like felsic material. Chert banded + massive quartz,vein,101,vein,fillings,texture_structure,vein,101
+2658,592,2182018,40,42.0,Bees Gorge - looks like felsic material. Chert banded + massive quartz,vein,101,vein,fillings,texture_structure,vein,101
+2659,592,2182018,42,44.0,TUFF?? Marker,tuff,100,tuff,volcaniclastic,igneous_rock,tuff,100
+2660,592,2182018,44,46.0,TUFF?? Marker,tuff,100,tuff,volcaniclastic,igneous_rock,tuff,100
+2661,592,2182018,56,58.0,Cherty BIF with minor shale,mudstone,101,mudstone,clastic,sedimentary_rock,"banded_iron_formation, mudstone","101, 101"
+2662,592,2182018,60,62.0,High amount of vein quartz,vein,101,vein,fillings,texture_structure,vein,101
+2663,592,2182018,62,64.0,Microbanded BIF Jasperlite wih grey chert,chert,101,chert,siliceous,sedimentary_rock,chert,101
+2664,592,2182018,64,66.0,Microbanded BIF wih grey chert,chert,101,chert,siliceous,sedimentary_rock,chert,101
+2665,592,2182018,66,68.0,Microbanded BIFy chert,chert,101,chert,siliceous,sedimentary_rock,chert,101
+2666,592,2182018,68,70.0,Microanded BIFy chert plus possible crystal tuff,tuff,101,tuff,volcaniclastic,igneous_rock,tuff,101
+2667,592,2182018,70,72.0,Microanded BIFy chert plus possible crystal tuff,tuff,101,tuff,volcaniclastic,igneous_rock,tuff,101
+2668,592,2182018,80,82.0,Foliated shales - mildly ferruginous-increase in chert,chert,101,chert,siliceous,sedimentary_rock,chert,101
+2669,592,2182018,82,84.0,TUFF?? Marker,tuff,100,tuff,volcaniclastic,igneous_rock,tuff,100
+2670,592,2182018,86,88.0,TUFF?? Marker,tuff,100,tuff,volcaniclastic,igneous_rock,tuff,100
+2671,592,2182018,88,90.0,Bedded shale with silicious G/H and minor enrichment. Sulphides wihin shale bands. Very bright. Felsic volcanic???,felsic,100,felsic,felsic,igneous_rock,"mudstone, felsic, siliceous_ooze","101, 100, 59"
+2672,592,2182018,92,94.0,Microanded chert wit silicious G. Mottles and vuggy,chert,100,chert,siliceous,sedimentary_rock,"chert, void","100, 36"
+2673,592,2182018,98,100.0,Weakly goethiic chert,chert,101,chert,siliceous,sedimentary_rock,chert,101
+2674,592,2182018,100,102.0,Weakly goethiic chert,chert,101,chert,siliceous,sedimentary_rock,chert,101
+2675,592,2182018,104,106.0,Silicious goethitewih cryptocrystaline chert/,chert,101,chert,siliceous,sedimentary_rock,chert,101
+2676,592,2182018,106,108.0,Massive chert,chert,101,chert,siliceous,sedimentary_rock,chert,101
+2677,592,2182018,110,112.0,Cherty goethitetsome mild enrichment+ red shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+2678,592,2182018,118,120.0,Some Tuff like fragments,tuff,100,tuff,volcaniclastic,igneous_rock,tuff,100
+2679,592,2182018,120,122.0,shale/mudstone. Turbidite? Felsic Volcanic?,felsic,100,felsic,felsic,igneous_rock,felsic,100
+2680,592,2182018,124,126.0,Soft redshale and minor black shale,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, mudstone","101, 101"
+2681,592,2182018,128,130.0,Red streaksin lackshale - reacts o acid.,felsic,101,felsic,felsic,igneous_rock,felsic,101
+2682,592,2182018,150,152.0,3 = Limestone,limestone,101,limestone,carbonate,sedimentary_rock,limestone,101
+2683,592,2182018,152,154.0,3 = Limestone,limestone,101,limestone,carbonate,sedimentary_rock,limestone,101
+2684,592,2182018,160,162.0,small frags - react to acid,felsic,101,felsic,felsic,igneous_rock,"felsic, bonded_aggregate","101, 46"
+2685,592,2182018,174,176.0,Trace carb shale - black residue,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+2686,592,2182018,178,180.0,and trace pyrite,massive_sulphide,101,massive_sulphide,ore,mineralisation,massive_sulphide,101
+2687,592,2182018,186,188.0,EOH due to broken hose - and in dolomite for 30 + metres,dolostone,100,dolostone,carbonate,sedimentary_rock,"unclassified_rock, dolostone, sandstone","100, 100, 59"

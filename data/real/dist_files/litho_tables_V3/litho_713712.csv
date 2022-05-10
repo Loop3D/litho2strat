@@ -1,0 +1,3 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+7073,2738,713712,1,20.0,ALLUVIUM-PROXIMAL LATERITIC DETRITUS,alluvium,100,alluvium,alluvial_deposit,surficial_rock,laterite,54
+7074,2738,713712,20,56.5,GLACIAL TILL DEPOSITS-MXD PROVENANCE,till,100,till,glacigenic_deposit,surficial_rock,till,100

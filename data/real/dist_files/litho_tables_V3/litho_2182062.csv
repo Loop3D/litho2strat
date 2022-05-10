@@ -1,0 +1,4 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+3198,592,2182062,74,76.0,Rounded coarse sand/gravel Q in clay matrix,mud,100,mud,sediment_clastic,sediment,mud,101
+3199,592,2182062,140,142.0,??CONTACT between members,contact,100,contact,contact,texture_structure,contact,100
+3200,592,2182062,176,178.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101

@@ -1,0 +1,23 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+3079,592,2182057,18,20.0,15% pisoids F in clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3080,592,2182057,20,22.0,Mix of powdery fines and hard lacustrine clay balls,mud,100,mud,sediment_clastic,sediment,"mud, dolerite","100, 43"
+3081,592,2182057,22,24.0,Mix of powdery fines and hard lacustrine clay balls,mud,100,mud,sediment_clastic,sediment,"mud, dolerite","100, 43"
+3082,592,2182057,24,26.0,Mix of powdery fines and hard lacustrine clay balls,mud,100,mud,sediment_clastic,sediment,"mud, dolerite","100, 43"
+3083,592,2182057,28,30.0,Hard lac clay balls,mud,100,mud,sediment_clastic,sediment,mud,100
+3084,592,2182057,48,50.0,Goethite detrital? in clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3085,592,2182057,50,52.0,Goethite detrital? in clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3086,592,2182057,52,54.0,Chert and Goethite detrital? in clay,mud,101,mud,sediment_clastic,sediment,"chert, mud","101, 101"
+3087,592,2182057,54,56.0,Goethite detrital? in clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3088,592,2182057,60,62.0,Unsure if in situ. Does not match sections. But no evidence for transported. Angular chips. But in fines,colluvium,100,colluvium,natural_superficial_ground,surficial_rock,colluvium,100
+3089,592,2182057,62,64.0,Unsure if in situ. Does not match sections. But no evidenc for transported. Angular chips. But in fines,colluvium,100,colluvium,natural_superficial_ground,surficial_rock,colluvium,100
+3090,592,2182057,68,70.0,Increase in chert 60%,chert,101,chert,siliceous,sedimentary_rock,chert,101
+3091,592,2182057,70,72.0,Increase in chert 70%,chert,101,chert,siliceous,sedimentary_rock,chert,101
+3092,592,2182057,74,76.0,Increase in chert 70%,chert,101,chert,siliceous,sedimentary_rock,chert,101
+3093,592,2182057,76,78.0,Increase in chert 60% + 20% G,chert,100,chert,siliceous,sedimentary_rock,chert,100
+3094,592,2182057,110,112.0,jasperlitic BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+3095,592,2182057,112,114.0,jasperlitic BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+3096,592,2182057,114,116.0,some finely laminated bif observed,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,banded_iron_formation,100
+3097,592,2182057,116,118.0,finely bedded hematitic BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+3098,592,2182057,122,124.0,some finely laminated bif observed,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,banded_iron_formation,100
+3099,592,2182057,124,126.0,some finely laminated bif observed,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,banded_iron_formation,100
+3100,592,2182057,134,136.0,finely laminated hematized BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101

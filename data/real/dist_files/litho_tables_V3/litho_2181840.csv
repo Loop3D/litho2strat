@@ -1,0 +1,17 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+1558,592,2181840,50,52.0,base of transported,colluvium,101,colluvium,natural_superficial_ground,surficial_rock,colluvium,101
+1559,592,2181840,78,80.0,trc chert,chert,101,chert,siliceous,sedimentary_rock,chert,101
+1560,592,2181840,82,84.0,trc chert,chert,101,chert,siliceous,sedimentary_rock,chert,101
+1561,592,2181840,146,148.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1562,592,2181840,148,150.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1563,592,2181840,152,154.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1564,592,2181840,154,156.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1565,592,2181840,156,158.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1566,592,2181840,158,160.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1567,592,2181840,160,162.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1568,592,2181840,162,164.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1569,592,2181840,164,166.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1570,592,2181840,166,168.0,hematitic shaley BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1571,592,2181840,168,170.0,shale rich BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1572,592,2181840,170,172.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1573,592,2181840,172,174.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101

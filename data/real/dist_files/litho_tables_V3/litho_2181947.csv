@@ -1,0 +1,7 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+2314,592,2181947,54,56.0,Black stained clay. Frags very fine.,mud,100,mud,sediment_clastic,sediment,mud,100
+2315,592,2181947,68,70.0,small frags of g in orange clay.,mud,101,mud,sediment_clastic,sediment,mud,101
+2316,592,2181947,70,72.0,some chert presentwith unitin pink clay.,mud,101,mud,sediment_clastic,sediment,mud,101
+2317,592,2181947,102,104.0,harder g. With yellow chert,chert,101,chert,siliceous,sedimentary_rock,chert,56
+2318,592,2181947,130,132.0,Possible denatured chert Soft.,chert,100,chert,siliceous,sedimentary_rock,chert,100
+2319,592,2181947,144,146.0,Enriched G with brown clay,mud,101,mud,sediment_clastic,sediment,"mud, herbicide","101, 53"

@@ -1,0 +1,33 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+3271,592,2182069,32,34.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3272,592,2182069,38,40.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3273,592,2182069,42,44.0,This zone: White clay FeO-stained,mud,100,mud,sediment_clastic,sediment,mud,101
+3274,592,2182069,44,46.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3275,592,2182069,56,58.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3276,592,2182069,58,60.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3277,592,2182069,60,62.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3278,592,2182069,62,64.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3279,592,2182069,66,68.0,Q pebbles angular to sub-rounded,gravel,100,gravel,sediment_clastic,sediment,alluvium,56
+3280,592,2182069,72,74.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3281,592,2182069,74,76.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3282,592,2182069,76,78.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3283,592,2182069,78,80.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3284,592,2182069,80,82.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3285,592,2182069,82,84.0,Q ?sand. Coarse sand to gravel approx 25% - not included in % column,gravel,100,gravel,sediment_clastic,sediment,"sand, gravel","101, 100"
+3286,592,2182069,84,86.0,Q ?sand. Coarse sand to gravel approx 25% - not included in % column,gravel,100,gravel,sediment_clastic,sediment,"sand, gravel","101, 100"
+3287,592,2182069,86,88.0,Q ?sand. Coarse sand to gravel approx 30% - not included in % column,gravel,100,gravel,sediment_clastic,sediment,"sand, gravel","101, 100"
+3288,592,2182069,88,90.0,Q ?sand. Coarse sand to gravel approx 15% - not included in % column,gravel,100,gravel,sediment_clastic,sediment,"sand, gravel","101, 100"
+3289,592,2182069,90,92.0,Q ?sand. Coarse sand to gravel approx 15% - not included in % column,gravel,100,gravel,sediment_clastic,sediment,"sand, gravel","101, 100"
+3290,592,2182069,92,94.0,Q ?sand. Coarse sand to gravel approx 25% - not included in % column,gravel,100,gravel,sediment_clastic,sediment,"sand, gravel","101, 100"
+3291,592,2182069,94,96.0,Q ?sand. Coarse sand to gravel approx 30% - not included in % column,gravel,100,gravel,sediment_clastic,sediment,"sand, gravel","101, 100"
+3292,592,2182069,96,98.0,Q ?sand. Coarse sand to gravel approx 20% - not included in % column,gravel,100,gravel,sediment_clastic,sediment,"sand, gravel","101, 100"
+3293,592,2182069,98,100.0,Gritty clay. Coarse sand to gravel approx 5% - not included in % column,mud,100,mud,sediment_clastic,sediment,"sand, gravel","101, 100"
+3294,592,2182069,100,102.0,Q ?sand. Coarse sand to gravel approx 20% - not included in % column,gravel,100,gravel,sediment_clastic,sediment,"sand, gravel","101, 100"
+3295,592,2182069,102,104.0,Q ?sand. Coarse sand to gravel approx 45% - not included in % column,gravel,100,gravel,sediment_clastic,sediment,"sand, gravel","101, 100"
+3296,592,2182069,104,106.0,Q ?sand. Coarse sand to gravel approx 45% - not included in % column,gravel,100,gravel,sediment_clastic,sediment,"sand, gravel","101, 100"
+3297,592,2182069,106,108.0,Q ?sand. Coarse sand to gravel approx 30% - not included in % column,gravel,100,gravel,sediment_clastic,sediment,"sand, gravel","101, 100"
+3298,592,2182069,108,110.0,Q ?sand. Coarse sand to gravel approx 30% - not included in % column,gravel,100,gravel,sediment_clastic,sediment,"sand, gravel","101, 100"
+3299,592,2182069,110,112.0,Q ?sand. Vuggy soft goethite,sand,100,sand,sediment_clastic,sediment,sand,100
+3300,592,2182069,116,118.0,Limonitic clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3301,592,2182069,122,124.0,Significant L and Q. Angular Q gravel/pebble.. Trans?,gravel,100,gravel,sediment_clastic,sediment,"gravel, lignite","100, 60"
+3302,592,2182069,130,132.0,Still angular gravel. ,gravel,101,gravel,sediment_clastic,sediment,gravel,101

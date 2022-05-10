@@ -1,0 +1,15 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+5393,592,2182250,24,26.0,White clays. ?F/soft H,mud,100,mud,sediment_clastic,sediment,mud,100
+5394,592,2182250,26,28.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+5395,592,2182250,28,30.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+5396,592,2182250,30,32.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+5397,592,2182250,32,34.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+5398,592,2182250,48,50.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+5399,592,2182250,50,52.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+5400,592,2182250,54,56.0,Siliceous clay trace Q sand,sand,101,sand,sediment_clastic,sediment,sand,101
+5401,592,2182250,56,58.0,Siliceous clay trace Q sand,sand,101,sand,sediment_clastic,sediment,sand,101
+5402,592,2182250,58,60.0,Siliceous clay,mud,101,mud,sediment_clastic,sediment,mud,101
+5403,592,2182250,60,62.0,Siliceous clay,mud,101,mud,sediment_clastic,sediment,mud,101
+5404,592,2182250,62,64.0,Siliceous clay,mud,101,mud,sediment_clastic,sediment,mud,101
+5405,592,2182250,64,66.0,Siliceous clay,mud,101,mud,sediment_clastic,sediment,mud,101
+5406,592,2182250,66,68.0,More angular alluvial Q,alluvium,100,alluvium,alluvial_deposit,surficial_rock,alluvium,100

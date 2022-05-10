@@ -1,0 +1,3 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+6730,2670,2470317,6,8.0,cemented pisolitic laterite,laterite,101,laterite,residual_deposit,surficial_rock,laterite,101
+6731,2670,2470317,17,18.0,yellow siltstone,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,86

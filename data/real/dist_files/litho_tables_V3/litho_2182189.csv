@@ -1,0 +1,15 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+4917,592,2182189,18,20.0,silcrete,silcrete,101,silcrete,siliceous,sedimentary_rock,silcrete,101
+4918,592,2182189,40,42.0,Transported pisolitic maghemites & clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4919,592,2182189,42,44.0,Transported pisolitic maghemites & clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4920,592,2182189,44,46.0,Transported pisolitic maghemites with goethite hardcap replacement of white clays - pisoids & goethite fragments,mud,100,mud,sediment_clastic,sediment,"colluvium, mud","100, 100"
+4921,592,2182189,46,48.0,Transported pisolitic maghemites with goethite hardcap replacement of white clays - pisoids & goethite fragments,mud,100,mud,sediment_clastic,sediment,"colluvium, mud","100, 100"
+4922,592,2182189,48,50.0,Transported pisolitic maghemites with goethite hardcap replacement of white clays - pisoids & goethite fragments,mud,100,mud,sediment_clastic,sediment,"colluvium, mud","100, 100"
+4923,592,2182189,66,68.0,ferruginous shale with tiny martite beds,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, ironstone","101, 60"
+4924,592,2182189,72,74.0,limonitic clay after shale w/ some hard conchoidal G fragments,mud,100,mud,sediment_clastic,sediment,mud,100
+4925,592,2182189,104,106.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+4926,592,2182189,106,108.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+4927,592,2182189,108,110.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+4928,592,2182189,110,112.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+4929,592,2182189,112,114.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+4930,592,2182189,114,116.0,EOH; unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,"unclassified_rock, banded_iron_formation","101, 101"

@@ -1,0 +1,4 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+6192,2670,2470143,0,2.0,colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock,colluvium,101
+6193,2670,2470143,10,18.0,PS gravel,gravel,101,gravel,sediment_clastic,sediment,gravel,101
+6194,2670,2470143,44,47.0,C-O-G = Marra Mamba BIF?,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101

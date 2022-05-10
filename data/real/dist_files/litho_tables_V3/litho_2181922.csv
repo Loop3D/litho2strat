@@ -1,0 +1,7 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+2267,592,2181922,12,14.0,Gritty clay.. FeO,mud,100,mud,sediment_clastic,sediment,mud,100
+2268,592,2181922,56,58.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2269,592,2181922,58,60.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2270,592,2181922,60,62.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2271,592,2181922,64,66.0,Contact?,contact,101,contact,contact,texture_structure,contact,101
+2272,592,2181922,108,110.0,Very red hematitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101

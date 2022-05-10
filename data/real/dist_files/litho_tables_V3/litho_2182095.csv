@@ -1,0 +1,8 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+3629,592,2182095,16,18.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3630,592,2182095,18,20.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3631,592,2182095,28,30.0,YB cutaneous X with minor WT K. Transported,colluvium,101,colluvium,natural_superficial_ground,surficial_rock,"colluvium, lacustrine_deposit","101, 44"
+3632,592,2182095,30,32.0,G or H unclear. Also trace clay,mud,101,mud,sediment_clastic,sediment,"mud, bog","101, 50"
+3633,592,2182095,32,34.0,Appears G-dominant. Still trace clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3634,592,2182095,42,44.0,Bit more pale clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3635,592,2182095,44,46.0,Approx = G and H. Signif whitish clay,mud,101,mud,sediment_clastic,sediment,"mud, saprock","101, 53"

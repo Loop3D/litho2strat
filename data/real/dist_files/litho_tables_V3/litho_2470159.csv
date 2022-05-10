@@ -1,0 +1,16 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+6250,2670,2470159,0,2.0,ZO=FERRICRETE,ferricrete,100,ferricrete,residual_deposit,surficial_rock,coarse_grained_plutonic_crystalline_igneous_rock,0
+6251,2670,2470159,2,4.0,ZO=FERRICRETE,ferricrete,100,ferricrete,residual_deposit,surficial_rock,coarse_grained_plutonic_crystalline_igneous_rock,0
+6252,2670,2470159,4,6.0,ZO=FERRICRETE,ferricrete,100,ferricrete,residual_deposit,surficial_rock,coarse_grained_plutonic_crystalline_igneous_rock,0
+6253,2670,2470159,78,80.0,DOLOMITE AND SHALE; STRUCTURE?,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, trachyte","101, 59"
+6254,2670,2470159,80,82.0,DOLOMITE - JOINT OXIDN,dolostone,100,dolostone,carbonate,sedimentary_rock,dolostone,100
+6255,2670,2470159,82,84.0,DOLOMITE - JOINT OXIDN,dolostone,100,dolostone,carbonate,sedimentary_rock,dolostone,100
+6256,2670,2470159,84,86.0,DOLOMITE - JOINT OXIDN,dolostone,100,dolostone,carbonate,sedimentary_rock,dolostone,100
+6257,2670,2470159,86,88.0,DOLOMITE - JOINT OXIDN,dolostone,100,dolostone,carbonate,sedimentary_rock,dolostone,100
+6258,2670,2470159,88,90.0,DOLOMITE - JOINT OXIDN,dolostone,100,dolostone,carbonate,sedimentary_rock,dolostone,100
+6259,2670,2470159,90,92.0,DOLOMITE - JOINT OXIDN,dolostone,100,dolostone,carbonate,sedimentary_rock,dolostone,100
+6260,2670,2470159,92,94.0,DOLOMITE - JOINT OXIDN,dolostone,100,dolostone,carbonate,sedimentary_rock,dolostone,100
+6261,2670,2470159,94,96.0,DOLOMITE - JOINT OXIDN,dolostone,100,dolostone,carbonate,sedimentary_rock,dolostone,100
+6262,2670,2470159,96,98.0,DOLOMITE - JOINT OXIDN,dolostone,100,dolostone,carbonate,sedimentary_rock,dolostone,100
+6263,2670,2470159,98,100.0,FINE TO MED GRAINED DOLOMITE FRESH,dolostone,100,dolostone,carbonate,sedimentary_rock,dolostone,100
+6264,2670,2470159,100,102.0,FINE TO MED GRAINED DOLOMITE FRESH,dolostone,100,dolostone,carbonate,sedimentary_rock,dolostone,100

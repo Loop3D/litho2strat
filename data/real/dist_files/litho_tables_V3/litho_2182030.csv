@@ -1,0 +1,83 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+2841,592,2182030,0,2.0,sand and rock frags,sand,100,sand,sediment_clastic,sediment,"sand, fine_crystalline_sedimentary","101, 100"
+2842,592,2182030,14,16.0,coarser nodular gravels,nodules,100,nodules,residual_deposit,surficial_rock,gravel,101
+2843,592,2182030,18,20.0,Chert and biffy chert,chert,101,chert,siliceous,sedimentary_rock,"chert, chert","101, 101"
+2844,592,2182030,20,22.0,Banded chert ferrug chert,chert,101,chert,siliceous,sedimentary_rock,chert,101
+2845,592,2182030,22,24.0,Mix of chert ferrug chert and shale,mudstone,101,mudstone,clastic,sedimentary_rock,"chert, mudstone","101, 101"
+2846,592,2182030,24,26.0,Banded chert and minor jasp,chert,100,chert,siliceous,sedimentary_rock,"chert, banded_iron_formation","101, 80"
+2847,592,2182030,26,28.0,Green banded chert and minor jasp,chert,100,chert,siliceous,sedimentary_rock,"chert, banded_iron_formation","101, 80"
+2848,592,2182030,28,30.0,Green banded chert and minor translucent chert and red jasp,chert,100,chert,siliceous,sedimentary_rock,"chert, chert, banded_iron_formation","101, 101, 80"
+2849,592,2182030,30,32.0,green to kh silic finely banded shales jasp biffy chert rare chert,chert,101,chert,siliceous,sedimentary_rock,"chert, metasomatic_rock","101, 83"
+2850,592,2182030,38,40.0,Biffy chert jasp silic shale and some limonite,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, lignite","101, 80"
+2851,592,2182030,40,42.0,Biffy chert jasp silic shale and some limonite,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, lignite","101, 80"
+2852,592,2182030,42,44.0,Chert with minor feox staining minor qtz,chert,100,chert,siliceous,sedimentary_rock,"chert, rock_waste","101, 50"
+2853,592,2182030,44,46.0,green to kh silic finely banded shales jasp biffy chert rare chert,chert,101,chert,siliceous,sedimentary_rock,"chert, metasomatic_rock","101, 83"
+2854,592,2182030,46,48.0,brecc zone with chert BIF frags and goeth in matrix,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"banded_iron_formation, regolith, redox_zone","100, 62, 60"
+2855,592,2182030,50,52.0,Partially vuggy qtz chert goeth and feox staining,chert,100,chert,siliceous,sedimentary_rock,"chert, rock_waste","100, 60"
+2856,592,2182030,52,54.0,Chert vuggy geoth infill qtz....part of fault zone?,chert,100,chert,siliceous,sedimentary_rock,chert,100
+2857,592,2182030,54,56.0,Banded chert and biffy chert minor goeth,chert,100,chert,siliceous,sedimentary_rock,"chert, chert","101, 100"
+2858,592,2182030,56,58.0,Greenish finely banded chert to biffy chert,chert,101,chert,siliceous,sedimentary_rock,"chert, chert","101, 101"
+2859,592,2182030,58,60.0,Finely banded chert to biffy chert minor goeth,chert,100,chert,siliceous,sedimentary_rock,"chert, chert","101, 100"
+2860,592,2182030,60,62.0,Chert to cherty BIF/jasp with yellow clay and few gritty sst chips,mud,100,mud,sediment_clastic,sediment,"chert, sandstone, banded_iron_formation, mud","101, 101, 100, 73"
+2861,592,2182030,62,64.0,Chert to cherty BIF/jasp with yellow clay and few gritty sst chips,mud,100,mud,sediment_clastic,sediment,"chert, sandstone, banded_iron_formation, mud","101, 101, 100, 73"
+2862,592,2182030,64,66.0,Chert to cherty BIF/jasp with yellow clay and few gritty sst chips,mud,100,mud,sediment_clastic,sediment,"chert, sandstone, banded_iron_formation, mud","101, 101, 100, 73"
+2863,592,2182030,66,68.0,Chert to cherty BIF with Mn in fracture zones,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"chert, banded_iron_formation, trachyte","101, 101, 53"
+2864,592,2182030,68,70.0,Chert to cherty BIF with Mn in fracture zones,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"chert, banded_iron_formation, trachyte","101, 101, 53"
+2865,592,2182030,70,72.0,Chert to cherty BIF minor Mn,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"chert, banded_iron_formation","101, 100"
+2866,592,2182030,72,74.0,Chert to herty BIF ith minor Mn,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"chert, banded_iron_formation","101, 100"
+2867,592,2182030,74,76.0,Cherty BIF biffy chert lim fg sediment bands are minor,sediment,100,sediment,sediment,sediment,sediment,100
+2868,592,2182030,76,78.0,Cherty BIF biffy chert lim fg sediment bands are minor,sediment,100,sediment,sediment,sediment,sediment,100
+2869,592,2182030,78,80.0,Cherty BIF biffy chert  and some fg yell br seds,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"chert, coarse_grained_plutonic_crystalline_igneous_rock","101, 41"
+2870,592,2182030,80,82.0,black chert and fmg limonitic volcaniclastic,chert,100,chert,siliceous,sedimentary_rock,"chert, volcaniclastic_breccia","101, 63"
+2871,592,2182030,82,84.0,BIF and herty BIF with minor haem,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"banded_iron_formation, banded_iron_formation, mudstone","101, 101, 67"
+2872,592,2182030,84,86.0,Banded chert BIF with some qtz bxd in part,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"banded_iron_formation, paraquartzite","101, 48"
+2873,592,2182030,86,88.0,feox stained chert to cherty BIF minor yell vclastic chips,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"chert, banded_iron_formation","101, 100"
+2874,592,2182030,88,90.0,feox stained chert to cherty BIF minor yell vclastic chips,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"chert, banded_iron_formation","101, 100"
+2875,592,2182030,90,92.0,feox stained chert to cherty BIF minor yell vclastic chips,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"chert, banded_iron_formation","101, 100"
+2876,592,2182030,92,94.0,feox stained chert to cherty BIF minor yell vclastic chips,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"chert, banded_iron_formation","101, 100"
+2877,592,2182030,94,96.0,Chert to cherty BIF minor goeth chips.,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"chert, banded_iron_formation","101, 100"
+2878,592,2182030,96,98.0,BIF and shale/seds some haem staining,mudstone,100,mudstone,clastic,sedimentary_rock,"banded_iron_formation, mudstone","101, 100"
+2879,592,2182030,98,100.0,mix of BIF qtz chert and porous goeth infilling,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"chert, infilled_ground","101, 54"
+2880,592,2182030,100,102.0,BIF and shale + some goeth,mudstone,100,mudstone,clastic,sedimentary_rock,"banded_iron_formation, mudstone","101, 100"
+2881,592,2182030,102,104.0,chert to biffy chert and goeth/lim on fractures,chert,100,chert,siliceous,sedimentary_rock,"chert, chert, iron_mud","101, 101, 47"
+2882,592,2182030,104,106.0,BIF to cherty BIF some haem rich chips. Mnr qtz,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"banded_iron_formation, banded_iron_formation","101, 100"
+2883,592,2182030,106,108.0,BIF to cherty BIF some haem rich chips. Mnr qtz,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"banded_iron_formation, banded_iron_formation","101, 100"
+2884,592,2182030,108,110.0,BIF to cherty BIF minor haem rich chips,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"banded_iron_formation, banded_iron_formation","101, 100"
+2885,592,2182030,110,112.0,BIF to cherty BIF minor haem enriched chips,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"banded_iron_formation, banded_iron_formation","101, 100"
+2886,592,2182030,112,114.0,BIF to cherty BIF minor goeth/haem rich chips,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"banded_iron_formation, banded_iron_formation","101, 100"
+2887,592,2182030,114,116.0,Mix of feox stained chert to cherty BIF and minor shale/seds,mudstone,100,mudstone,clastic,sedimentary_rock,"chert, banded_iron_formation, mudstone","101, 101, 100"
+2888,592,2182030,116,118.0,feox stnd crudely bedded dolomites? Some cht and BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,"banded_iron_formation, dolostone","101, 100"
+2889,592,2182030,118,120.0,dk gray chert mnr wk silic fg seds rare BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2890,592,2182030,120,122.0,chert to cherty BIF some haem enriched chips,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"chert, banded_iron_formation","101, 100"
+2891,592,2182030,122,124.0,BIF andsome chert some haem enrichment,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,banded_iron_formation,100
+2892,592,2182030,124,126.0,BIF and multicoloured shale minor haem,mudstone,100,mudstone,clastic,sedimentary_rock,"banded_iron_formation, mudstone","101, 100"
+2893,592,2182030,126,128.0,Carbonaceous shale shale dolomitic? Shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+2894,592,2182030,128,130.0,Carbonaceous shale shale dolomitic? Shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+2895,592,2182030,130,132.0,pale shale BIF and minor goeth chips,mudstone,100,mudstone,clastic,sedimentary_rock,"banded_iron_formation, surficial_peat","101, 53"
+2896,592,2182030,132,134.0,Carbonaceous shale ,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+2897,592,2182030,136,138.0,Shale minor carb shale minor goeth,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+2898,592,2182030,140,142.0,Black carb and silic shale,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, mudstone","101, 57"
+2899,592,2182030,142,144.0,Silic dark shale and some carb shale,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, mudstone","101, 101"
+2900,592,2182030,144,146.0,Pale chert some black carb shale mnr qtz,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+2901,592,2182030,146,148.0,Pale chert some black carb shale mnr qtz,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+2902,592,2182030,148,150.0,Calcareous and carbonaceous shale.,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, travertine","101, 74"
+2903,592,2182030,150,152.0,Carbonate sediment and black carb shale,mudstone,101,mudstone,clastic,sedimentary_rock,"sediment, mudstone","101, 101"
+2904,592,2182030,152,154.0,Carbonate sediment and black carb shale,mudstone,101,mudstone,clastic,sedimentary_rock,"sediment, mudstone","101, 101"
+2905,592,2182030,154,156.0,Carbonate sediment and black carb shale,mudstone,101,mudstone,clastic,sedimentary_rock,"sediment, mudstone","101, 101"
+2906,592,2182030,156,158.0,Black carb shale and minor calcareous seds,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, travertine","101, 75"
+2907,592,2182030,158,160.0,Black carb shale and minor calcareous seds,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, travertine","101, 75"
+2908,592,2182030,160,162.0,Black carb shale and minor calcareous seds,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, travertine","101, 75"
+2909,592,2182030,162,164.0,Black shale wk silic,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+2910,592,2182030,164,166.0,Black carb shale wk silic,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+2911,592,2182030,166,168.0,Shalechert minor dissem py,mudstone,100,mudstone,clastic,sedimentary_rock,opaline_chert,55
+2912,592,2182030,168,170.0,black shale dol and trc dissem py,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, dissogenite","100, 50"
+2913,592,2182030,172,174.0,dolomite massive and lesser black shale,mudstone,101,mudstone,clastic,sedimentary_rock,"dolostone, mudstone","101, 101"
+2914,592,2182030,174,176.0,dolomite massive and lesser black shale,mudstone,101,mudstone,clastic,sedimentary_rock,"dolostone, mudstone","101, 101"
+2915,592,2182030,176,178.0,dolomite massive and lesser black shale,mudstone,101,mudstone,clastic,sedimentary_rock,"dolostone, mudstone","101, 101"
+2916,592,2182030,178,180.0,dolomite massive and lesser black shale,mudstone,101,mudstone,clastic,sedimentary_rock,"dolostone, mudstone","101, 101"
+2917,592,2182030,180,182.0,dolomite massive and minor black shale,mudstone,101,mudstone,clastic,sedimentary_rock,"dolostone, mudstone","101, 101"
+2918,592,2182030,182,184.0,dolomite massive and minor black shale,mudstone,101,mudstone,clastic,sedimentary_rock,"dolostone, mudstone","101, 101"
+2919,592,2182030,184,186.0,dolomite massive and minor black shale,mudstone,101,mudstone,clastic,sedimentary_rock,"dolostone, mudstone","101, 101"
+2920,592,2182030,186,188.0,massive dol ith carb strs. Mnr black shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+2921,592,2182030,188,190.0,massive dol ith carb strs. Mnr black shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+2922,592,2182030,190,192.0,massive dol ith carb strs. Mnr black shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101

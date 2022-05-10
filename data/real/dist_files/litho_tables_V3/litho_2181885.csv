@@ -1,0 +1,29 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+2038,592,2181885,96,98.0,running quartz sands and clay,mud,101,mud,sediment_clastic,sediment,"sand, mud","101, 101"
+2039,592,2181885,98,100.0,running quartz sands and clay,mud,101,mud,sediment_clastic,sediment,"sand, mud","101, 101"
+2040,592,2181885,100,102.0,running quartz sands and clay,mud,101,mud,sediment_clastic,sediment,"sand, mud","101, 101"
+2041,592,2181885,102,104.0,running quartz sands and clay,mud,101,mud,sediment_clastic,sediment,"sand, mud","101, 101"
+2042,592,2181885,104,106.0,running quartz sands and clay,mud,101,mud,sediment_clastic,sediment,"sand, mud","101, 101"
+2043,592,2181885,106,108.0,running quartz sands and clay,mud,101,mud,sediment_clastic,sediment,"sand, mud","101, 101"
+2044,592,2181885,108,110.0,running quartz sands and clay,mud,101,mud,sediment_clastic,sediment,"sand, mud","101, 101"
+2045,592,2181885,122,124.0,hematised vs ferrug shale? With trc martite present ,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+2046,592,2181885,158,160.0,ferrug dk brown shale?,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+2047,592,2181885,160,162.0,ferrug dk brown shale?,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+2048,592,2181885,162,164.0,ferrug dk brown shale?; SHARP AT:,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, sapropel","101, 62"
+2049,592,2181885,164,166.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2050,592,2181885,166,168.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2051,592,2181885,168,170.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2052,592,2181885,170,172.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2053,592,2181885,172,174.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2054,592,2181885,174,176.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2055,592,2181885,176,178.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2056,592,2181885,178,180.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2057,592,2181885,180,182.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2058,592,2181885,182,184.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2059,592,2181885,184,186.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2060,592,2181885,186,188.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2061,592,2181885,188,190.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2062,592,2181885,190,192.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2063,592,2181885,192,194.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2064,592,2181885,194,196.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2065,592,2181885,196,198.0,EOH; unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,"unclassified_rock, banded_iron_formation","101, 101"

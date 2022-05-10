@@ -1,0 +1,13 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+780,592,2181773,62,68.9,mod consd maghemite gravels in deep red clay matrix; SHARP AT:,mud,100,mud,sediment_clastic,sediment,"mud, sapropel","101, 62"
+781,592,2181773,68,69.6,DRILLERS MUD/CUTTINGS ETC?,mud,100,mud,sediment_clastic,sediment,mud,100
+782,592,2181773,69,71.4,zone cons angular frags G in deep red clay matrix weak HC dev in places?,mud,100,mud,sediment_clastic,sediment,mud,100
+783,592,2181773,73,73.8,DRILLERS MUD/CUTTINGS ETC?,mud,100,mud,sediment_clastic,sediment,mud,100
+784,592,2181773,84,85.7,limonitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+785,592,2181773,87,89.0,soft hematised shale w/ mnr oG in broken zones,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+786,592,2181773,91,93.3,limonitic shale; SHARP AT:,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, sapropel","101, 62"
+787,592,2181773,93,93.6,DRILLERS MUD/CUTTINGS ETC?,mud,100,mud,sediment_clastic,sediment,mud,100
+788,592,2181773,93,96.3,interbedded zone shale/F/H??,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+789,592,2181773,104,105.3,shale band,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+790,592,2181773,106,107.4,shale band,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+791,592,2181773,113,115.4,EOH; fractured and completely deformed chert,chert,101,chert,siliceous,sedimentary_rock,"unclassified_rock, chert, trachyte","101, 101, 57"

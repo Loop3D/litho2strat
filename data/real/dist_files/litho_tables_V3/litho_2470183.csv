@@ -1,0 +1,24 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+6370,2670,2470183,40,42.0,CLAY AND DOLOMITE,dolostone,101,dolostone,carbonate,sedimentary_rock,dolostone,101
+6371,2670,2470183,42,44.0,CLAY AND DOLOMITE,dolostone,101,dolostone,carbonate,sedimentary_rock,dolostone,101
+6372,2670,2470183,42,44.0,CLAYANDDOOMITE;TRANSPORTED?,colluvium,101,colluvium,natural_superficial_ground,surficial_rock,"colluvium, dolostone","101, 64"
+6373,2670,2470183,44,46.0,CLAY AND DOLOMITE,dolostone,101,dolostone,carbonate,sedimentary_rock,dolostone,101
+6374,2670,2470183,46,48.0,CLAY AND DOLOMITE,dolostone,101,dolostone,carbonate,sedimentary_rock,dolostone,101
+6375,2670,2470183,48,50.0,CLAY AND DOLOMITE,dolostone,101,dolostone,carbonate,sedimentary_rock,dolostone,101
+6376,2670,2470183,50,52.0,CLAY AND DOLOMITE,dolostone,101,dolostone,carbonate,sedimentary_rock,dolostone,101
+6377,2670,2470183,52,54.0,CLAY AND DOLOMITE,dolostone,101,dolostone,carbonate,sedimentary_rock,dolostone,101
+6378,2670,2470183,54,56.0,MANGAN SHALE,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+6379,2670,2470183,56,58.0,MANGAN SHALE  AND CHERT,chert,101,chert,siliceous,sedimentary_rock,chert,101
+6380,2670,2470183,58,60.0,CHERT,chert,101,chert,siliceous,sedimentary_rock,chert,101
+6381,2670,2470183,64,66.0,DOLOMITE - WEATHERED,dolostone,100,dolostone,carbonate,sedimentary_rock,dolostone,101
+6382,2670,2470183,66,68.0,DOLOMITE - WEATHERED,dolostone,100,dolostone,carbonate,sedimentary_rock,dolostone,101
+6383,2670,2470183,68,70.0,DOLOMITE - WEATHERED,dolostone,100,dolostone,carbonate,sedimentary_rock,dolostone,101
+6384,2670,2470183,70,72.0,DOLOMITE - WEATHERED,dolostone,100,dolostone,carbonate,sedimentary_rock,dolostone,101
+6385,2670,2470183,72,74.0,CHERT;CHERTYSED?;ALTERED?,chert,100,chert,siliceous,sedimentary_rock,"chert, aplite, chert","101, 80, 71"
+6386,2670,2470183,76,78.0,BRECCIATED,breccia,82,breccia,fault_rock,texture_structure,breccia,82
+6387,2670,2470183,80,82.0,WEATH DOLOMITE,dolostone,101,dolostone,carbonate,sedimentary_rock,dolostone,101
+6388,2670,2470183,82,84.0,WEATH DOLOMITE,dolostone,101,dolostone,carbonate,sedimentary_rock,dolostone,101
+6389,2670,2470183,84,86.0,BRECCIATED,breccia,82,breccia,fault_rock,texture_structure,breccia,82
+6390,2670,2470183,90,92.0,BLEACHED SILICIFIED? LOCALLY BEDDED DOLOMITE; FINE GRAINED,dolostone,100,dolostone,carbonate,sedimentary_rock,dolostone,101
+6391,2670,2470183,92,94.0,BLEACHED LOCALLY BEDDED DOLOMITE; FINE GRAINED,dolostone,100,dolostone,carbonate,sedimentary_rock,dolostone,101
+6392,2670,2470183,94,96.0,BLEACHED LOCALLY BEDDED DOLOMITE; FINE GRAINED,dolostone,100,dolostone,carbonate,sedimentary_rock,dolostone,101

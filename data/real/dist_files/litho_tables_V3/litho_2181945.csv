@@ -1,0 +1,8 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+2305,592,2181945,32,34.0,Inc in clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2306,592,2181945,42,44.0,Inc in clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2307,592,2181945,46,48.0,chips very smallin clay - possibly shale before clay.,mud,101,mud,sediment_clastic,sediment,mud,101
+2308,592,2181945,48,50.0,Ssample mainly all sloppy clay - possible L or oG,mud,100,mud,sediment_clastic,sediment,"mud, bog","100, 80"
+2309,592,2181945,50,52.0,Still strong  in clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2310,592,2181945,70,72.0,Inc in clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2311,592,2181945,84,86.0,Start of Mcleod - hard yellow chert with VT G,chert,100,chert,siliceous,sedimentary_rock,"quartzose_chert, silicate_sandstone","50, 50"

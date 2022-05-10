@@ -1,0 +1,25 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+3334,592,2182073,18,20.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3335,592,2182073,20,22.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3336,592,2182073,22,24.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3337,592,2182073,24,26.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3338,592,2182073,26,28.0,Gritty clay.. Becoming white ?leached/?lacustrine,mud,100,mud,sediment_clastic,sediment,mud,100
+3339,592,2182073,28,30.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3340,592,2182073,30,32.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3341,592,2182073,32,34.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3342,592,2182073,34,36.0,Gritty clay.. Still white ?FeO-stained?,mud,100,mud,sediment_clastic,sediment,mud,100
+3343,592,2182073,36,38.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3344,592,2182073,42,44.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3345,592,2182073,48,50.0,Still WT clays,mud,101,mud,sediment_clastic,sediment,mud,101
+3346,592,2182073,54,56.0,Gritty white clay ,mud,101,mud,sediment_clastic,sediment,mud,101
+3347,592,2182073,56,58.0,Gritty white clay ,mud,101,mud,sediment_clastic,sediment,mud,101
+3348,592,2182073,58,60.0,Gritty white clay ,mud,101,mud,sediment_clastic,sediment,mud,101
+3349,592,2182073,66,68.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3350,592,2182073,68,70.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3351,592,2182073,70,72.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3352,592,2182073,84,86.0,WT-RD-GN chert. Banding very weak,chert,100,chert,siliceous,sedimentary_rock,chert,100
+3353,592,2182073,86,88.0,WT-RD-GN chert. Banding very weak,chert,100,chert,siliceous,sedimentary_rock,chert,100
+3354,592,2182073,88,90.0,WT-RD-GN chert. Banding very weak,chert,100,chert,siliceous,sedimentary_rock,chert,100
+3355,592,2182073,136,138.0,H still martitic,exotic_crystalline_igneous_rock,101,exotic_crystalline_igneous_rock,exotic_crystalline,igneous_rock,basalt,55
+3356,592,2182073,140,142.0,H still martitic,exotic_crystalline_igneous_rock,101,exotic_crystalline_igneous_rock,exotic_crystalline,igneous_rock,basalt,55
+3357,592,2182073,146,148.0,H still martitic,exotic_crystalline_igneous_rock,101,exotic_crystalline_igneous_rock,exotic_crystalline,igneous_rock,basalt,55

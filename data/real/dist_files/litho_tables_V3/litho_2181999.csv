@@ -1,0 +1,12 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+2472,592,2181999,18,20.0,Detrital ore.,ore,101,ore,ore,mineralisation,ore,101
+2473,592,2181999,24,26.0,Lacustrine clay. Very hard for clay.,mud,100,mud,sediment_clastic,sediment,mud,101
+2474,592,2181999,26,28.0,Lacustrine clay. Very hard for clay.,mud,100,mud,sediment_clastic,sediment,mud,101
+2475,592,2181999,28,30.0,Ferruginous fragments very small inhard lacustrine clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2476,592,2181999,30,32.0,Ferruginous fragments very small inhard lacustrine clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2477,592,2181999,32,34.0,Ferruginous fragments very small inhard lacustrine clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2478,592,2181999,34,36.0,Ferruginous fragments very small inhard lacustrine clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2479,592,2181999,36,38.0,Ferruginous fragments very small inhard lacustrine clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2480,592,2181999,38,40.0,Ferruginous fragments very small inhard lacustrine clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2481,592,2181999,42,44.0,Puggy clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2482,592,2181999,48,50.0,Clay softer/powdery,mud,100,mud,sediment_clastic,sediment,mud,100

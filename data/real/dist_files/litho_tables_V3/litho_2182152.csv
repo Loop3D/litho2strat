@@ -1,0 +1,62 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+4200,592,2182152,0,2.0,Colluvium sands and polymictic granules and pebbles,gravel,101,gravel,sediment_clastic,sediment,"sand, gravel, gravel","101, 93, 92"
+4201,592,2182152,2,4.0,Colluvium sands and polymictic granules and pebbles,gravel,101,gravel,sediment_clastic,sediment,"sand, gravel, gravel","101, 93, 92"
+4202,592,2182152,4,6.0,Colluvium sands and polymictic granules and pebbles,gravel,101,gravel,sediment_clastic,sediment,"sand, gravel, gravel","101, 93, 92"
+4203,592,2182152,6,8.0,Colluvium sands and polymictic granules and pebbles,gravel,101,gravel,sediment_clastic,sediment,"sand, gravel, gravel","101, 93, 92"
+4204,592,2182152,8,10.0,Colluvium sands and polymictic granules and pebbles,gravel,101,gravel,sediment_clastic,sediment,"sand, gravel, gravel","101, 93, 92"
+4205,592,2182152,10,12.0,Colluvium sands and polymictic granules and pebbles,gravel,101,gravel,sediment_clastic,sediment,"sand, gravel, gravel","101, 93, 92"
+4206,592,2182152,12,14.0,Colluvium sands and polymictic granules and pebbles,gravel,101,gravel,sediment_clastic,sediment,"sand, gravel, gravel","101, 93, 92"
+4207,592,2182152,16,18.0,Colluvium sands and polymictic granules,gravel,101,gravel,sediment_clastic,sediment,"sand, gravel","101, 93"
+4208,592,2182152,18,20.0,Colluvium sands and polymictic granules ,gravel,101,gravel,sediment_clastic,sediment,"sand, gravel","101, 93"
+4209,592,2182152,20,22.0,Colluvium sands and polymictic granules ,gravel,101,gravel,sediment_clastic,sediment,"sand, gravel","101, 93"
+4210,592,2182152,22,24.0,Colluvium sands and polymictic granules ,gravel,101,gravel,sediment_clastic,sediment,"sand, gravel","101, 93"
+4211,592,2182152,24,26.0,Colluvium sands and polymictic granules ,gravel,101,gravel,sediment_clastic,sediment,"sand, gravel","101, 93"
+4212,592,2182152,26,28.0,Sandy clays pale green tinge,mud,100,mud,sediment_clastic,sediment,mud,100
+4213,592,2182152,28,30.0,Sandy clays pale green tinge,mud,100,mud,sediment_clastic,sediment,mud,100
+4214,592,2182152,30,32.0,Sticky silty clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4215,592,2182152,32,34.0,Sticky silty clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4216,592,2182152,34,36.0,Sticky silty clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4217,592,2182152,36,38.0,Sticky silty clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4218,592,2182152,38,40.0,Sticky silty clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4219,592,2182152,40,42.0,Sticky silty clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4220,592,2182152,42,44.0,Sticky silty clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4221,592,2182152,44,46.0,brittle silty clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4222,592,2182152,46,48.0,brittle silty clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4223,592,2182152,48,50.0,Sticky silty clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4224,592,2182152,50,52.0,Sticky silty clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4225,592,2182152,52,54.0,brittle silty clays-- ?sap?,mud,100,mud,sediment_clastic,sediment,mud,100
+4226,592,2182152,54,56.0,brittle silty clays-- ?sap?,mud,100,mud,sediment_clastic,sediment,mud,100
+4227,592,2182152,56,58.0,brittle silty clays-- ?sap?,mud,100,mud,sediment_clastic,sediment,mud,100
+4228,592,2182152,58,60.0,brittle silty clays-- ?sap?,mud,100,mud,sediment_clastic,sediment,mud,100
+4229,592,2182152,60,62.0,Goethitic ferruginous chips in clay matrix ,mud,100,mud,sediment_clastic,sediment,mud,101
+4230,592,2182152,62,64.0,Goethitic ferruginous chips in clay matrix ,mud,100,mud,sediment_clastic,sediment,mud,101
+4231,592,2182152,64,66.0,Silty clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4232,592,2182152,66,68.0,Massive goethite bedded shale and chert,chert,101,chert,siliceous,sedimentary_rock,"mudstone, chert","101, 101"
+4233,592,2182152,68,70.0,Massive goethite bedded shale and chert,chert,101,chert,siliceous,sedimentary_rock,"mudstone, chert","101, 101"
+4234,592,2182152,92,94.0,Cherty BIF? H chips + bedded ?denatured C?,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,banded_iron_formation,100
+4235,592,2182152,94,96.0,Cherty BIF? H chips + bedded ?denatured C?,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,banded_iron_formation,100
+4236,592,2182152,96,98.0,rare Vein Q-?fault? Cherty BIF H chips + bedded ?denatured C?,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,banded_iron_formation,100
+4237,592,2182152,100,102.0,Chert minor H chips,chert,100,chert,siliceous,sedimentary_rock,chert,100
+4238,592,2182152,102,104.0,Chert trace H chips,chert,100,chert,siliceous,sedimentary_rock,chert,100
+4239,592,2182152,104,106.0,Chert trace H chips,chert,100,chert,siliceous,sedimentary_rock,chert,100
+4240,592,2182152,106,108.0,Chert trace H chips,chert,100,chert,siliceous,sedimentary_rock,chert,100
+4241,592,2182152,108,110.0,Chert trace H chips,chert,100,chert,siliceous,sedimentary_rock,chert,100
+4242,592,2182152,110,112.0,Chert trace H chips,chert,100,chert,siliceous,sedimentary_rock,chert,100
+4243,592,2182152,112,114.0,Chert trace H chips,chert,100,chert,siliceous,sedimentary_rock,chert,100
+4244,592,2182152,114,116.0,Chert trace H chips,chert,100,chert,siliceous,sedimentary_rock,chert,100
+4245,592,2182152,116,118.0,Chert trace H chips,chert,100,chert,siliceous,sedimentary_rock,chert,100
+4246,592,2182152,118,120.0,Chert trace H chips,chert,100,chert,siliceous,sedimentary_rock,chert,100
+4247,592,2182152,120,122.0,Chert trace H chips,chert,100,chert,siliceous,sedimentary_rock,chert,100
+4248,592,2182152,122,124.0,Chert trace H chips,chert,100,chert,siliceous,sedimentary_rock,chert,100
+4249,592,2182152,124,126.0,Chert trace H chips,chert,100,chert,siliceous,sedimentary_rock,chert,100
+4250,592,2182152,126,128.0,ChertS chips rich in green phyllo-silicate ?chloritic?,chert,100,chert,siliceous,sedimentary_rock,chert,100
+4251,592,2182152,128,130.0,Pale green chert shale chips oxidised RB but phyllo silicate  still  discernable,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+4252,592,2182152,130,132.0,Pale green chert shale chips oxidised RB but phyllo silicate  still  discernable,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+4253,592,2182152,132,134.0,Pale green chert ,chert,101,chert,siliceous,sedimentary_rock,chert,101
+4254,592,2182152,134,136.0,Pale green chert ,chert,101,chert,siliceous,sedimentary_rock,chert,101
+4255,592,2182152,136,138.0,Pale green chert ,chert,101,chert,siliceous,sedimentary_rock,chert,101
+4256,592,2182152,138,140.0,Chloritic/?stilpnomelane? Metasediment,sediment,101,sediment,sediment,sediment,sediment,101
+4257,592,2182152,140,142.0,Pale green chert ,chert,101,chert,siliceous,sedimentary_rock,chert,101
+4258,592,2182152,142,144.0,Dark olive green S weakly oxidised with phyllo silicate no   longer visible and pale green chert ,chert,101,chert,siliceous,sedimentary_rock,"chert, limestone/silicate_sandstone, aeolian_deposit","101, 52, 44"
+4259,592,2182152,152,154.0,GN vfg  ?metasediment?,sediment,101,sediment,sediment,sediment,sediment,101
+4260,592,2182152,154,156.0,GN vfg  ?metasediment?,sediment,101,sediment,sediment,sediment,sediment,101

@@ -1,0 +1,9 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+451,592,2181750,59,65.5,Interbedded light yell brn limonitic clay after shale and lesser harder goeth bands. Minor Mn,mud,100,mud,sediment_clastic,sediment,"mudstone, chert","101, 50"
+452,592,2181750,65,66.3,Interbedded dk gray and pale gray Mn shale. Soft.,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, wacke","100, 50"
+453,592,2181750,66,72.6,Limonitic clay/soft shale lesser goeth and minor Mn mineralisation.,mineralisation,101,mineralisation,ore,mineralisation,"mineralisation, mud","101, 100"
+454,592,2181750,72,78.0,Interbedded haem and limonitic clay/shale and harder goethitic beds. Minor Mn evident in fractured zones.,mud,100,mud,sediment_clastic,sediment,"mudstone, mudstone, foid_bearing_trachyte","101, 67, 40"
+455,592,2181750,78,89.9,Ocherous limonitic clay and thin goethite bands. Minor haem. Traces of Mn still visible.,mud,100,mud,sediment_clastic,sediment,"mud, andesite","101, 44"
+456,592,2181750,89,93.0,Interbedded goethite and ferrug shale with minor limonitic clays.,mud,101,mud,sediment_clastic,sediment,"mudstone, mud, iron_mud","101, 101, 80"
+457,592,2181750,93,95.4,Hard vuggy goeth and goeth chert hardcap type ore with minor ferrug shale and lim clay.,mud,101,mud,sediment_clastic,sediment,"ore, mudstone, mud, iron_mud","101, 101, 101, 52"
+458,592,2181750,95,100.0,Goethite and ferrug shale haem in part.,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, iron_mud","100, 80"

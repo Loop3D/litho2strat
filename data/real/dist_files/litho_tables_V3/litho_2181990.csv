@@ -1,0 +1,13 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+2418,592,2181990,26,28.0,Hardcap mineralisation Relogged by Karl McNamara,mineralisation,100,mineralisation,ore,mineralisation,mineralisation,100
+2419,592,2181990,28,30.0,Minor F and Q grainswithin poddy clay Relogged by Karl McNamara,mud,100,mud,sediment_clastic,sediment,"mud, banded_iron_formation","100, 50"
+2420,592,2181990,30,32.0,Hardcap mineralisation Relogged by Karl McNamara,mineralisation,100,mineralisation,ore,mineralisation,mineralisation,100
+2421,592,2181990,32,34.0,Hardcap mineralisation Relogged by Karl McNamara,mineralisation,100,mineralisation,ore,mineralisation,mineralisation,100
+2422,592,2181990,36,38.0,Hardcap mineralisation Relogged by Karl McNamara,mineralisation,100,mineralisation,ore,mineralisation,mineralisation,100
+2423,592,2181990,40,42.0,Model had this interval as Transported to 90m it is clearly insitu after checking with Meg and Todd Relogged by Karl McNamara,colluvium,100,colluvium,natural_superficial_ground,surficial_rock,"colluvium, kame, china_clay, unclassified_rock","101, 57, 48, 43"
+2424,592,2181990,44,46.0,Fragments in clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2425,592,2181990,46,48.0,Fragments in clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2426,592,2181990,48,50.0,Fragments in clay Relogged by Karl McNamara,mud,100,mud,sediment_clastic,sediment,mud,100
+2427,592,2181990,50,52.0,Fragments in clay. With minor ochG Relogged by Karl McNamara,mud,100,mud,sediment_clastic,sediment,mud,100
+2428,592,2181990,52,54.0,Fragments in clay. With minor ochG,mud,100,mud,sediment_clastic,sediment,mud,100
+2429,592,2181990,64,66.0,Chert band - but surrounded by enriched? Relogged by Karl McNamara,chert,100,chert,siliceous,sedimentary_rock,chert,100

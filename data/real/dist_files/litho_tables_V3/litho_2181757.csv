@@ -1,0 +1,8 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+532,592,2181757,13,21.3,RB H and F pebbles to 3cm matrix supported by cream K,gravel,100,gravel,sediment_clastic,sediment,"gravel, colluvium, herbicide","80, 64, 46"
+533,592,2181757,21,24.5,Mottled cream clays/ferruginised zones W and G. W granules and pebbles to 1.5 cm and poddy white clays to 2cm on core surface. ?weak hardcapping of transcover?,mud,100,mud,sediment_clastic,sediment,"mud, mud, gravel, gravel, cataclasite","101, 100, 92, 74, 41"
+534,592,2181757,24,25.5,"As above fragments finer grained to 1.5 and more goethitic. Zone at 24.5 contains ""micro pisoids"" to 1mm with YB cutans v wkly magnetic - appears in-situ development rather than transported.",colluvium,101,colluvium,natural_superficial_ground,surficial_rock,"colluvium, framestone, iron_mudstone","101, 57, 48"
+535,592,2181757,25,27.2,Weakly developed hardcap. Vughs and clay filled pods. Ferruginisation W at top of interval becoming more G with depth.,mud,100,mud,sediment_clastic,sediment,"mud, earth, andesite","100, 60, 39"
+536,592,2181757,35,35.9,Pink shale band,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+537,592,2181757,41,49.8,1-5 cm G beds in YE/YB limonitic F. 3* 20cm powdery OB zones. 2*2cm cr clay beds in bottom 25cm of interval,mud,100,mud,sediment_clastic,sediment,mud,100
+538,592,2181757,58,59.9,Olive brown shale band Pink for top 25cm. ?marker horizon?,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100

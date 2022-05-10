@@ -1,0 +1,9 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+3727,592,2182103,114,116.0,metallic grey Mn shale extreme reaction with peroxide,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, banded_iron_formation","100, 71"
+3728,592,2182103,116,118.0,metallic grey Mn shale extreme reaction with peroxide,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, banded_iron_formation","100, 71"
+3729,592,2182103,150,152.0,finely laminated BIF + Mn clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3730,592,2182103,152,154.0,Mn clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3731,592,2182103,196,198.0,very soft goethite + limonitic clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3732,592,2182103,198,200.0,specular martite + limonitic clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3733,592,2182103,200,202.0,very soft goethite + limonitic clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3734,592,2182103,202,204.0,specular martite + limonitic clay,mud,101,mud,sediment_clastic,sediment,mud,101

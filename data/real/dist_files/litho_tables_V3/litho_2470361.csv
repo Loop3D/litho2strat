@@ -1,0 +1,5 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+6798,2670,2470361,6,9.0,coarse nodular gravel and rock frags,gravel,100,gravel,sediment_clastic,sediment,"gravel, fine_crystalline_sedimentary","101, 100"
+6799,2670,2470361,9,11.0,haem detritals and shale,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, fault","101, 57"
+6800,2670,2470361,11,14.0,detrital ferrug shale and siltst,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, mud","101, 80"
+6801,2670,2470361,20,32.0,weathered Feox stained granite,granite,101,granite,felsic_coarse_grained_crystalline,igneous_rock,granite,101

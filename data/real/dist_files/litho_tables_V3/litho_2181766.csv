@@ -1,0 +1,17 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+656,592,2181766,33,35.9,Graded bed from sandy material at top of interval to pebbley conglomerate with haematite pebbles to 4cm in matrix of H silts rich in maghemite pisoids,gravel,100,gravel,sediment_clastic,sediment,"conglomerate, mud, iron_gravel, residual_deposit","101, 100, 65, 44"
+657,592,2181766,35,37.2,well consolidated moderately sorted sands to 1.5mm in clay rich matrix. Rare subangular chert pebbles.,gravel,101,gravel,sediment_clastic,sediment,"sand, mud","101, 100"
+658,592,2181766,37,41.0,Vughy goethitic hardcap overprinting pebbly colluvium with  H and Goethitic H frags to 3cm. Minor clay filling of vughs near base of interval. ,mud,100,mud,sediment_clastic,sediment,"colluvium, mud, unclassified_rock, magnetitite","101, 100, 50, 50"
+659,592,2181766,41,41.6,Clay band within Hardcap,mud,100,mud,sediment_clastic,sediment,mud,100
+660,592,2181766,41,46.2,Vughy goethitic hardcap overprinting pebbly colluvium with  H and Goethitic H frags to 3cm. Minor clay filling of vughs near base of interval. ,mud,100,mud,sediment_clastic,sediment,"colluvium, mud, unclassified_rock, magnetitite","101, 100, 50, 50"
+661,592,2181766,46,47.8,Hardcap less well developed with clay bands and lenses to 8cm.,mud,100,mud,sediment_clastic,sediment,"mud, loess, sapropelite","100, 67, 44"
+662,592,2181766,47,59.3,Cream yellow and pink clays. Rare zones retaining fragments of less weathered ferruginous shales in mottled clay matrix.,mud,100,mud,sediment_clastic,sediment,"mud, creep","101, 57"
+663,592,2181766,62,66.4,"Dark YB Ferruginous shale.Bedding visible on some fracture surfaces. Feels ""light"" lower SG compared to mineralised shales in Mt. Newman.",mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, mudstone","100, 100"
+664,592,2181766,66,67.2,Pink Brown clayey shale.,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+665,592,2181766,67,82.1,"Dark YB Ferruginous shale.Bedding visible on some fracture surfaces. Feels ""light"" lower SG compared to mineralised shales in Mt. Newman. Rare cream/pink clayey shale bds 10-40 cm.",mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, mudstone","100, 100"
+666,592,2181766,82,87.1,D YB well defined mm-2cm scale interbeddeded D BN Goethite and D YB Ferruginous shale bands. Common semi-vit-G bands to 2cm as discs within softer F.,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, dissogenite, iron_gravel","100, 54, 47"
+667,592,2181766,87,87.9,Dark yellow shale band.,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,55
+668,592,2181766,87,91.0,D RB well defined mm-2cm scale interbeddeded D BN Goethite D RB goethitic hematite and minor D YB Ferruginous shale bands. ,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, iron_gravel","100, 36"
+669,592,2181766,91,93.0,D YB ferruginous shale. Minor 1-2cm bands G and goethitic hematite.,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, iron_mudstone","100, 63"
+670,592,2181766,93,94.9,D RB massive goethitic hematite bands to 15cm minor hard goethite bands. Rare limonitic ferruginous shale bands to 4cm.,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, andesite","100, 55"
+671,592,2181766,109,110.1,Yellow/pink shale marker horizon.,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100

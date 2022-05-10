@@ -1,0 +1,19 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+1843,592,2181860,22,24.0,transd clay after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+1844,592,2181860,24,26.0,transd clay after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+1845,592,2181860,26,28.0,harcappy? Insitu/transp cemented colluvium at BOT?,colluvium,100,colluvium,natural_superficial_ground,surficial_rock,colluvium,100
+1846,592,2181860,28,30.0,harcappy? Insitu/transp cemented colluvium at BOT?,colluvium,100,colluvium,natural_superficial_ground,surficial_rock,colluvium,100
+1847,592,2181860,30,32.0,harcappy? Insitu/transp cemented colluvium at BOT?,colluvium,100,colluvium,natural_superficial_ground,surficial_rock,colluvium,100
+1848,592,2181860,64,66.0,clay after shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+1849,592,2181860,72,74.0,clay after shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+1850,592,2181860,84,86.0,W or hematised/ferrug shale?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, flow","101, 40"
+1851,592,2181860,86,88.0,W or hematised/ferrug shale?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, flow","101, 40"
+1852,592,2181860,88,90.0,W or hematised/ferrug shale?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, flow","101, 40"
+1853,592,2181860,90,92.0,W or hematised/ferrug shale?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, flow","101, 40"
+1854,592,2181860,92,94.0,W or hematised/ferrug shale?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, flow","101, 40"
+1855,592,2181860,94,96.0,W or hematised/ferrug shale?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, flow","101, 40"
+1856,592,2181860,106,108.0,too siliceous,siliceous_ooze,81,siliceous_ooze,sediment_ooze,sediment,siliceous_ooze,78
+1857,592,2181860,108,110.0,interbedded BIF and F shale,mudstone,101,mudstone,clastic,sedimentary_rock,"banded_iron_formation, mudstone","101, 101"
+1858,592,2181860,110,112.0,interbedded BIF and F shale,mudstone,101,mudstone,clastic,sedimentary_rock,"banded_iron_formation, mudstone","101, 101"
+1859,592,2181860,112,114.0,interbedded BIF and F shale,mudstone,101,mudstone,clastic,sedimentary_rock,"banded_iron_formation, mudstone","101, 101"
+1860,592,2181860,142,144.0,bright pink clay after shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101

@@ -1,0 +1,34 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+6909,2670,2470381,44,46.0,BASE OF TRANS COVER,cover,101,cover,natural_superficial_ground,surficial_rock,cover,101
+6910,2670,2470381,46,48.0,FERRUGINOUS SHALE,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+6911,2670,2470381,46,48.0,MAFICS,mafic,91,mafic,mafic,igneous_rock,mafic,91
+6912,2670,2470381,48,50.0,MAFICS,mafic,91,mafic,mafic,igneous_rock,mafic,91
+6913,2670,2470381,50,52.0,MAFICS,mafic,91,mafic,mafic,igneous_rock,mafic,91
+6914,2670,2470381,52,54.0,MAFICS,mafic,91,mafic,mafic,igneous_rock,mafic,91
+6915,2670,2470381,52,54.0,V FEW CHIPS! WHITE CLAY AND QZ,mud,100,mud,sediment_clastic,sediment,mud,100
+6916,2670,2470381,54,56.0,MAFICS,mafic,91,mafic,mafic,igneous_rock,mafic,91
+6917,2670,2470381,56,58.0,WEATHERED FISSILE/FOL FERRUG SHALE,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+6918,2670,2470381,56,58.0,MAFICS,mafic,91,mafic,mafic,igneous_rock,mafic,91
+6919,2670,2470381,58,60.0,MAFICS,mafic,91,mafic,mafic,igneous_rock,mafic,91
+6920,2670,2470381,60,62.0,MAFICS,mafic,91,mafic,mafic,igneous_rock,mafic,91
+6921,2670,2470381,62,64.0,MAFICS,mafic,91,mafic,mafic,igneous_rock,mafic,91
+6922,2670,2470381,64,66.0,MAFICS,mafic,91,mafic,mafic,igneous_rock,mafic,91
+6923,2670,2470381,66,68.0,MAFICS,mafic,91,mafic,mafic,igneous_rock,mafic,91
+6924,2670,2470381,68,70.0,MAFICS,mafic,91,mafic,mafic,igneous_rock,mafic,91
+6925,2670,2470381,70,72.0,MAFICS,mafic,91,mafic,mafic,igneous_rock,mafic,91
+6926,2670,2470381,72,74.0,weathered granite,granite,101,granite,felsic_coarse_grained_crystalline,igneous_rock,granite,101
+6927,2670,2470381,72,74.0,MAFICS,mafic,91,mafic,mafic,igneous_rock,mafic,91
+6928,2670,2470381,74,76.0,weathered granite,granite,101,granite,felsic_coarse_grained_crystalline,igneous_rock,granite,101
+6929,2670,2470381,76,78.0,weathered granite,granite,101,granite,felsic_coarse_grained_crystalline,igneous_rock,granite,101
+6930,2670,2470381,78,80.0,weathered granite,granite,101,granite,felsic_coarse_grained_crystalline,igneous_rock,granite,101
+6931,2670,2470381,80,82.0,weathered granite,granite,101,granite,felsic_coarse_grained_crystalline,igneous_rock,granite,101
+6932,2670,2470381,82,84.0,weathered granite,granite,101,granite,felsic_coarse_grained_crystalline,igneous_rock,granite,101
+6933,2670,2470381,84,86.0,weathered granite,granite,101,granite,felsic_coarse_grained_crystalline,igneous_rock,granite,101
+6934,2670,2470381,86,88.0,weathered granite,granite,101,granite,felsic_coarse_grained_crystalline,igneous_rock,granite,101
+6935,2670,2470381,88,90.0,weathered granite,granite,101,granite,felsic_coarse_grained_crystalline,igneous_rock,granite,101
+6936,2670,2470381,90,92.0,weathered granite,granite,101,granite,felsic_coarse_grained_crystalline,igneous_rock,granite,101
+6937,2670,2470381,92,94.0,weathered granite,granite,101,granite,felsic_coarse_grained_crystalline,igneous_rock,granite,101
+6938,2670,2470381,94,96.0,weathered granite,granite,101,granite,felsic_coarse_grained_crystalline,igneous_rock,granite,101
+6939,2670,2470381,96,98.0,weathered granite,granite,101,granite,felsic_coarse_grained_crystalline,igneous_rock,granite,101
+6940,2670,2470381,98,100.0,weathered granite,granite,101,granite,felsic_coarse_grained_crystalline,igneous_rock,granite,101
+6941,2670,2470381,100,102.0,weathered granite,granite,101,granite,felsic_coarse_grained_crystalline,igneous_rock,granite,101

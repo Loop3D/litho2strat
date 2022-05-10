@@ -1,0 +1,16 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+2007,592,2181881,80,82.0,clay and qtz sand,sand,101,sand,sediment_clastic,sediment,"mud, sand","101, 101"
+2008,592,2181881,82,84.0,clay and qtz sand,sand,101,sand,sediment_clastic,sediment,"mud, sand","101, 101"
+2009,592,2181881,84,86.0,clay and qtz sand,sand,101,sand,sediment_clastic,sediment,"mud, sand","101, 101"
+2010,592,2181881,86,88.0,clay and fmgr qtz sand,sand,101,sand,sediment_clastic,sediment,"mud, sand","101, 101"
+2011,592,2181881,88,90.0,clay and fmgr qtz sand,sand,101,sand,sediment_clastic,sediment,"mud, sand","101, 101"
+2012,592,2181881,90,92.0,fmgr qtz sand and clay,mud,101,mud,sediment_clastic,sediment,"sand, mud","101, 101"
+2013,592,2181881,92,94.0,fmgr qtz sand and clay,mud,101,mud,sediment_clastic,sediment,"sand, mud","101, 101"
+2014,592,2181881,94,96.0,fmgr qtz sand and clay,mud,101,mud,sediment_clastic,sediment,"sand, mud","101, 101"
+2015,592,2181881,96,98.0,fmgr qtz sand and clay,mud,101,mud,sediment_clastic,sediment,"sand, mud","101, 101"
+2016,592,2181881,98,100.0,fmgr qtz sand and clay,mud,101,mud,sediment_clastic,sediment,"sand, mud","101, 101"
+2017,592,2181881,100,102.0,fmgr qtz sand and clay,mud,101,mud,sediment_clastic,sediment,"sand, mud","101, 101"
+2018,592,2181881,102,104.0,fmgr qtz sand and clay,mud,101,mud,sediment_clastic,sediment,"sand, mud","101, 101"
+2019,592,2181881,104,106.0,puggy clay and qtz sand,sand,101,sand,sediment_clastic,sediment,"mud, sand","101, 101"
+2020,592,2181881,106,108.0,puggy clay and minor pyritic rock frags,mud,100,mud,sediment_clastic,sediment,"mud, syenitoid","101, 62"
+2021,592,2181881,190,192.0,minor pale chert/shale chips,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100

@@ -1,0 +1,14 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+491,592,2181753,3,9.34,Dk rd pisolites of magnetic maghemite in a red/brown soil matrix.                   ,soil,100,soil,residual_deposit,surficial_rock,soil,101
+492,592,2181753,9,14.74,Lt to dk red pisolites of G colluvial frags showing some bedding in matrix of white clay with mino maghemite.,mud,100,mud,sediment_clastic,sediment,"mud, mud, monzonite","101, 67, 61"
+493,592,2181753,14,16.95,Zone of clay rich unit grading into silicified material 8 or 1with vughs intbd G oGi n part. LWA?,mud,100,mud,sediment_clastic,sediment,"mud, marl, interglacial_marine_deposits","100, 67, 36"
+494,592,2181753,16,18.38,Hetrogeneously weathered F shale altered to lt bn/wht clay in part. LWA?,mud,100,mud,sediment_clastic,sediment,"mudstone, mud","100, 100"
+495,592,2181753,18,21.64,Dk rd bn bedd H-G containing clay rich band at 21.4m to 21.6m      ,mud,100,mud,sediment_clastic,sediment,"mud, coarse_grained_plutonic_crystalline_igneous_rock","100, 0"
+496,592,2181753,21,23.87,BN  F-shale altered to white clay with minor G bds,mud,100,mud,sediment_clastic,sediment,"mud, aplite, bog","101, 62, 57"
+497,592,2181753,23,26.2,Dk brn beds of vughy G inbd with F weathd to white clay infilling vughs.,mud,100,mud,sediment_clastic,sediment,"mud, earth, bituminous_coal","100, 62, 39"
+498,592,2181753,26,27.0,Dk bn beds of weakly sheared G inbd with F weathd to white clay,mud,101,mud,sediment_clastic,sediment,"mud, earth, unclassified_rock","101, 62, 35"
+499,592,2181753,27,30.41,Zone of bdd G to oG intebd with F-S with MA band of F-S  from 27.2to 27.9. Fault zone?,fault,100,fault,breaks,texture_structure,"fault, sinter, boundstone","100, 53, 50"
+500,592,2181753,34,36.16,Increase in fractures of interbd G to oG with yellow/brown fissile shale.,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, bog, lacustrine_deposit","101, 80, 49"
+501,592,2181753,36,38.16,Weakly bedded to MA band of Fer Shale with mm thick Fe iche bands near base of unit. Very broken.,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, chert","101, 43"
+502,592,2181753,38,40.06,Bedded H with some possible martite vughy to fractured through unit interbd with F to T shale.,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, skarn, unclassified_rock, marine_deposit, banded_iron_formation","101, 57, 50, 50, 50"
+503,592,2181753,62,63.58,Inc in % of F over G. Weatherd to WT K in part with 3-5mm bandsof shale.,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, weathered_rock, lamprophyre","101, 53, 50"

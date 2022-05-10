@@ -1,0 +1,3 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+2346,592,2181958,34,36.0,Possible contact between members?,contact,100,contact,contact,texture_structure,contact,100
+2347,592,2181958,50,52.0,Clay after shale?,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101

@@ -1,0 +1,8 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+6203,2670,2470150,0,2.0,cemented soil and colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock,"soil, colluvium","101, 101"
+6204,2670,2470150,2,10.0,cemented soil,soil,101,soil,residual_deposit,surficial_rock,soil,101
+6205,2670,2470150,24,31.0,pisolitic gravel & thick lacustrine mud - wet samples,mud,100,mud,sediment_clastic,sediment,mud,100
+6206,2670,2470150,41,52.0,blu-crm K after dolomitic? shale/siltstone,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+6207,2670,2470150,52,55.0,clay after lamd pallid pnk-brn S/O,mud,100,mud,sediment_clastic,sediment,mud,100
+6208,2670,2470150,55,58.0,blu lamd siltstone,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+6209,2670,2470150,58,68.0,drill rig breaking siltstone up to clay,mud,101,mud,sediment_clastic,sediment,"mudstone, mud","101, 101"

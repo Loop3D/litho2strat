@@ -1,0 +1,31 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+738,592,2181771,0,51.4,massive wk-mottled transd clays,mud,101,mud,sediment_clastic,sediment,mud,101
+739,592,2181771,51,52.6,poorly cemented silts/sands/clay with high % Quartz sand content,mud,100,mud,sediment_clastic,sediment,"mud, sand","101, 100"
+740,592,2181771,52,57.05,massive transpd silts and clays,mud,101,mud,sediment_clastic,sediment,"mud, mud","101, 101"
+741,592,2181771,57,60.2,massive pallid WHT sands and tiny quartz fragments - lacustrine clays cemented; SHARP AT:,mud,100,mud,sediment_clastic,sediment,"sand, mud, sapropel","101, 100, 62"
+742,592,2181771,60,60.7,cemented sub-rounded maghemites in clay matrix <100mm clasts; SHARP AT:,mud,100,mud,sediment_clastic,sediment,"mud, sapropel","100, 62"
+743,592,2181771,63,64.7,trc hardcap devt over pisolitic material compd of maghemite gravels 30% in clay matrix w/ trc only vitG,mud,100,mud,sediment_clastic,sediment,mud,100
+744,592,2181771,66,68.0,trc hardcap devt over transd? material mostly compd of clay trc vitG; <1% vughs; SHARP AT:,mud,100,mud,sediment_clastic,sediment,"mud, sapropel, lamprophyre","100, 62, 46"
+745,592,2181771,68,68.4,BEd Mt Newman H/W domt enrichment mnr clay <0.05% vughs,mud,100,mud,sediment_clastic,sediment,mud,100
+746,592,2181771,72,73.9,softer interBEd zones of hardcappy goethitisation and goethitic shale powdery/massive,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, ironstone","100, 48"
+747,592,2181771,73,75.45,deep red interBEd hematised shale and martite-hematite; SHARP AT:,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, sapropel","101, 62"
+748,592,2181771,75,76.45,interBEd vitG and goethitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, intermediate","101, 72"
+749,592,2181771,76,77.25,zone goethitic shale w/ interBEd shale and clay = decreased grade,mud,100,mud,sediment_clastic,sediment,"mudstone, mud","101, 100"
+750,592,2181771,77,80.6,interBEd goethitic shale and harder G bands mnr goethitic hematite,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, komatiite","101, 53"
+751,592,2181771,80,84.85,soft biscuity goethitic/ochrerous goethitic shale; colour change at:,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, channel","101, 60"
+752,592,2181771,84,89.6,softbisuity goethitic/ocrerous goethitic shale w/mnr zones harder vitreous G; very broken - STRUCTURE?,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, gabbroid","100, 56"
+753,592,2181771,89,91.0,interBEd ochrerous goethitic shale & light pink clay/shale - MARKER HORIZON?,mud,100,mud,sediment_clastic,sediment,mud,100
+754,592,2181771,91,92.7,interBEd soft deep red hematitised shale&vit H; GRADING INTO:,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, coarse_grained_plutonic_crystalline_igneous_rock","100, 0"
+755,592,2181771,92,97.2,ochrerous goethitic shale and interBEd vit G,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, intermediate","101, 69"
+756,592,2181771,97,100.35,soft interBEd zones of deep red hematised shale/vitH and smaller zones of goethic ferrug S; SHARP AT:,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, sapropel, ferruginous_deposits","100, 62, 48"
+757,592,2181771,100,103.2,hard goethitised cherty BIF completely broken - STRUCTURE,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,banded_iron_formation,100
+758,592,2181771,103,104.4,PINK MARKER HORIZON with small band interBEd chert,chert,101,chert,siliceous,sedimentary_rock,"chert, fault","101, 67"
+759,592,2181771,104,105.9,mosty goethitic shale becoming increasingly cherty goethitised chert? from 105.4m; SHARP AT:,mudstone,100,mudstone,clastic,sedimentary_rock,"chert, sapropel","101, 62"
+760,592,2181771,105,106.8,hardy cherty BIF unenriched,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,banded_iron_formation,100
+761,592,2181771,108,111.3,interBEd G/goethitic shale w/ inc goethitised chert/BIF from 109.9m,mudstone,100,mudstone,clastic,sedimentary_rock,banded_iron_formation,101
+762,592,2181771,111,113.8,hard unenriched cherty BIF completely deformed w/ random cracking and bedding in chert folded along core axis - STRUCTURE,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"banded_iron_formation, chert","100, 100"
+763,592,2181771,113,117.8,soft hematised shale w/ trc vitH crumbly,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+764,592,2181771,117,119.2,brittle completely broken and leached hematitic shale - STRUCTURE STRUCTURE - water flow,flow,101,flow,natural_superficial_ground,surficial_rock,"mudstone, bonded_aggregate","100, 45"
+765,592,2181771,119,119.8,soft hematisded shale leached to lesser extent,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, fault","100, 62"
+766,592,2181771,121,127.85,hard unenriched partially goethitised cherty BIF w/ interBEd ferrug shales goethite rich,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,mudstone,100
+767,592,2181771,130,134.0,EOH; hard cherty partiall goethitised BIF w/ inteBEd ferrug S,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"unclassified_rock, banded_iron_formation","101, 100"

@@ -1,0 +1,9 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+6768,2670,2470330,10,32.0,HIGHLY WEATHD MAFIC; WEAKLY FOLIATED,mafic,100,mafic,mafic,igneous_rock,mafic,101
+6769,2670,2470330,32,46.0,LESS SAPROLITIC CLAY,mud,101,mud,sediment_clastic,sediment,mud,101
+6770,2670,2470330,46,59.0,SOME SAPROCK; MASSIVE TO WEAKLY FOL MAFIC,mafic,101,mafic,mafic,igneous_rock,"saprock, mafic","101, 101"
+6771,2670,2470330,59,62.0,SAPROCK; TR QZ; CHLORITIC,saprock,100,saprock,residual_deposit,surficial_rock,"saprock, chloritolite, asphalt","101, 76, 50"
+6772,2670,2470330,62,70.0,SAPROCK; TR QZ; CHLORITIC,saprock,100,saprock,residual_deposit,surficial_rock,"saprock, chloritolite, asphalt","101, 76, 50"
+6773,2670,2470330,70,76.0,SAPROCK; CHLORITIC,saprock,100,saprock,residual_deposit,surficial_rock,"saprock, chloritolite","101, 76"
+6774,2670,2470330,76,80.0,GREY CLAY WITH SOME SAPROCK CHIPS; HIT WATER TABLE 76M BUT DRY SAMPLES STILL,mud,100,mud,sediment_clastic,sediment,"mud, chlorite_amphibolite","100, 38"
+6775,2670,2470330,80,92.0,FRESH ROCK; BLEACHED MAFIC W TR QZ,mafic,100,mafic,mafic,igneous_rock,"mafic, unclassified_rock","100, 86"

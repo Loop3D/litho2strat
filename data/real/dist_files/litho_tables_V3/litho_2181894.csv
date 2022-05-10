@@ -1,0 +1,4 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+2141,592,2181894,24,26.0,mottled clays,mud,101,mud,sediment_clastic,sediment,mud,101
+2142,592,2181894,26,28.0,mottled clays,mud,101,mud,sediment_clastic,sediment,mud,101
+2143,592,2181894,28,30.0,mottled clays,mud,101,mud,sediment_clastic,sediment,mud,101

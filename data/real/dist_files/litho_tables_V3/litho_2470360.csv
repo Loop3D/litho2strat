@@ -1,0 +1,6 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+6793,2670,2470360,7,11.0,Frags of shale siltst,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+6794,2670,2470360,11,12.0,pisolitic gravel,gravel,101,gravel,sediment_clastic,sediment,gravel,101
+6795,2670,2470360,12,13.0,detrital rock frags and gravel,gravel,101,gravel,sediment_clastic,sediment,"gravel, sedimentary_rock","101, 54"
+6796,2670,2470360,23,25.0,red purp siltst shale fine sst and qtz,mudstone,100,mudstone,clastic,sedimentary_rock,"sandstone, vein","101, 67"
+6797,2670,2470360,25,41.0,weath granite,granite,101,granite,felsic_coarse_grained_crystalline,igneous_rock,granite,101

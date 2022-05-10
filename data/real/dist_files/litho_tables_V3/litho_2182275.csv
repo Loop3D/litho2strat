@@ -1,0 +1,17 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+5528,592,2182275,68,70.0,QUARTZ SANDS,vein,100,vein,fillings,texture_structure,sand,101
+5529,592,2182275,70,72.0,QUARTZ SANDS,vein,100,vein,fillings,texture_structure,sand,101
+5530,592,2182275,72,74.0,QUARTZ SANDS,vein,100,vein,fillings,texture_structure,sand,101
+5531,592,2182275,74,76.0,QUARTZ SANDS,vein,100,vein,fillings,texture_structure,sand,101
+5532,592,2182275,76,78.0,QUARTZ SANDS,vein,100,vein,fillings,texture_structure,sand,101
+5533,592,2182275,78,80.0,QUARTZ SANDS,vein,100,vein,fillings,texture_structure,sand,101
+5534,592,2182275,84,86.0,DOLERITE PIECES? QUARTZ SANDS,dolerite,100,dolerite,mafic_coarse_grained_crystalline,igneous_rock,sand,101
+5535,592,2182275,86,88.0,QUARTZ SANDS,vein,100,vein,fillings,texture_structure,sand,101
+5536,592,2182275,88,90.0,QUARTZ SANDS,vein,100,vein,fillings,texture_structure,sand,101
+5537,592,2182275,90,92.0,QUARTZ SANDS,vein,100,vein,fillings,texture_structure,sand,101
+5538,592,2182275,92,94.0,QUARTZ SANDS,vein,100,vein,fillings,texture_structure,sand,101
+5539,592,2182275,100,102.0,QUARTZ SANDS,vein,100,vein,fillings,texture_structure,sand,101
+5540,592,2182275,108,110.0,SHALE PRESENT?,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+5541,592,2182275,110,112.0,SHALE PRESENT?,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+5542,592,2182275,112,114.0,SHALE PRESENT?,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+5543,592,2182275,152,154.0,MINOR SHALE?,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101

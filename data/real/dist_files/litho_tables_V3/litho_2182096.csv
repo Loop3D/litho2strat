@@ -1,0 +1,12 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+3636,592,2182096,30,32.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3637,592,2182096,32,34.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+3638,592,2182096,36,38.0,This zone of cream-coloured clays is really ,mud,100,mud,sediment_clastic,sediment,mud,100
+3639,592,2182096,38,40.0,white clay with trace FeO,mud,100,mud,sediment_clastic,sediment,"mud, trachyte","101, 59"
+3640,592,2182096,50,52.0,Sandstone,sandstone,101,sandstone,clastic,sedimentary_rock,sandstone,101
+3641,592,2182096,52,54.0,Sandstone,sandstone,101,sandstone,clastic,sedimentary_rock,sandstone,101
+3642,592,2182096,82,84.0,Soft pale Q vein. Crystal faces just discernible,vein,100,vein,fillings,texture_structure,vein,100
+3643,592,2182096,84,86.0,Cavity 85 - 86.5m!,void,100,void,artificial_man_made_ground,surficial_rock,void,101
+3644,592,2182096,86,88.0,Cavity 85 - 86.5m!,void,100,void,artificial_man_made_ground,surficial_rock,void,101
+3645,592,2182096,88,90.0,Soft altered ?weathered L BN dolomite with trace Mang,dolostone,100,dolostone,carbonate,sedimentary_rock,"dolostone, anthracite","101, 70"
+3646,592,2182096,90,92.0,Soft altered ?weathered L BN dolomite with trace Mang,dolostone,100,dolostone,carbonate,sedimentary_rock,"dolostone, anthracite","101, 70"

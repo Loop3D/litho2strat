@@ -1,0 +1,24 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+4680,592,2182180,40,42.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4681,592,2182180,42,44.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4682,592,2182180,44,46.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4683,592,2182180,46,48.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4684,592,2182180,48,50.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4685,592,2182180,50,52.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4686,592,2182180,52,54.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4687,592,2182180,54,56.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4688,592,2182180,56,58.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4689,592,2182180,58,60.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4690,592,2182180,60,62.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4691,592,2182180,62,64.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4692,592,2182180,64,66.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4693,592,2182180,66,68.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4694,592,2182180,68,70.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4695,592,2182180,70,72.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4696,592,2182180,72,74.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4697,592,2182180,74,76.0,White clays,mud,101,mud,sediment_clastic,sediment,mud,101
+4698,592,2182180,76,78.0,Rounded well-sorted Q sands in white clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4699,592,2182180,78,80.0,Rounded well-sorted Q sands in white clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4700,592,2182180,80,82.0,Rounded well-sorted Q sands in white clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4701,592,2182180,96,98.0,Q silt and rounded well-sorted Q sands,mud,100,mud,sediment_clastic,sediment,"mud, sand","101, 101"
+4702,592,2182180,190,192.0,now significant SiO2,exotic_crystalline_igneous_rock,101,exotic_crystalline_igneous_rock,exotic_crystalline,igneous_rock,mud,57

@@ -1,0 +1,30 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+914,592,2181779,3,5.9,Dk BN well consolidated soil with < 2mm sized maghemite chips 20%,soil,100,soil,residual_deposit,surficial_rock,"soil, magnetite_ore","101, 55"
+915,592,2181779,5,9.35,LT CR well consolidated sand/soil with magnetic chips <1mm size,sand,100,sand,sediment_clastic,sediment,"soil, ophicarbonate","101, 65"
+916,592,2181779,9,12.3,Dk RB well consolidated silty sand broken between 11.2m and 11.9m,sand,100,sand,sediment_clastic,sediment,"sand, coarse_grained_plutonic_crystalline_igneous_rock","100, 0"
+917,592,2181779,12,13.95,Silty sand matrix 60% with 40% rounded pisoids consisting of H/Q/trace X,sand,100,sand,sediment_clastic,sediment,"sand, comenditic_trachyte","101, 40"
+918,592,2181779,13,16.6,Well cemented sands consisting of rounded quartz and minor ferruginous frags,vein,100,vein,fillings,texture_structure,"vein, ferruginous_deposits","101, 67"
+919,592,2181779,16,18.1,Well consolidated clay + 10% grits sand,mud,100,mud,sediment_clastic,sediment,sand,101
+920,592,2181779,20,21.6,Increase in sand fragments in clay - 20% of frags = ferruginous,mud,100,mud,sediment_clastic,sediment,mud,100
+921,592,2181779,21,40.05,Red/brown and LT CR clay with < 5% sandy grits. Shows natural fractures featuring polised ends and slickensides,mud,100,mud,sediment_clastic,sediment,"mud, silicate_sandstone, lignite, slide","101, 100, 67, 67"
+922,592,2181779,40,44.2,aa clay rich but increase in ferruginous frags <1mm diam to 15-20%,mud,100,mud,sediment_clastic,sediment,mud,100
+923,592,2181779,44,48.8,60% M matrix w/ ps of X 30% and larger 5mm G frags ~ 48.4 . Small consolidated rounded X pisoids at 47.9m to 48.1m.  Clay band at 48.55 to 48.68m,mud,100,mud,sediment_clastic,sediment,"mud, carbonate_sediment, complex, coarse_grained_plutonic_crystalline_igneous_rock","100, 35, 33, 0"
+924,592,2181779,48,50.58,Clay rich bands with VG hardcap,mud,100,mud,sediment_clastic,sediment,"mud, banded_iron_formation","100, 55"
+925,592,2181779,53,56.95,Bedded hardcap - hematitic with vughs infilled by clay and shale,mudstone,101,mudstone,clastic,sedimentary_rock,"mud, mudstone, pegmatite","101, 101, 64"
+926,592,2181779,56,62.98,Clay after shale with grits from shale beds,mud,100,mud,sediment_clastic,sediment,"mudstone, mudstone","101, 100"
+927,592,2181779,62,63.7,Possible manganiferous staining of clay from weathered shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+928,592,2181779,63,67.78,Ferruginous shale weathered to clay.Highly fractured and weathered.,mud,100,mud,sediment_clastic,sediment,"mudstone, mud","101, 100"
+929,592,2181779,68,84.7,Microbanded highly weathered but relatively competent ferruginous shale. Hematitic frags and red shale at 75.9m to 76.6 and 78.5m to 79.8 and 81.7 to 84.45,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, mudstone, coarse_grained_plutonic_crystalline_igneous_rock","101, 100, 0"
+930,592,2181779,84,86.3,Khaki brown broken shale with limonitic type clay associated with fractures,mud,100,mud,sediment_clastic,sediment,"mudstone, mud, trachyte","101, 100, 62"
+931,592,2181779,86,89.1,Highly weathered F Shale relatively competent,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+932,592,2181779,92,93.7,Massive and clay rich showing strong jointing patterns with polished slickensides,mud,100,mud,sediment_clastic,sediment,"mud, limestone/silicate_sandstone","100, 53"
+933,592,2181779,93,97.8,Banded cherty BIF - well weathered. Iron rich bands - goethiticweathered to limonite clays.Highly broken and fractured associated with limonite,mud,100,mud,sediment_clastic,sediment,"banded_iron_formation, mud, lignite, diamicton","100, 100, 80, 51"
+934,592,2181779,97,98.55,F shale that hasblack section in centre of interval. Carbonaceous?,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+935,592,2181779,98,99.8,Banded chert micro and meso banded with F shale. Highly broken and weathered,mudstone,100,mudstone,clastic,sedimentary_rock,"chert, mudstone, bituminous_coal","100, 100, 64"
+936,592,2181779,99,104.2,Microbanded F shale with 2% ferruginous chips. Shows strong planes of weakness/jointing with polished slickensides,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, limestone/silicate_sandstone, ferruginous_deposits","101, 53, 44"
+937,592,2181779,104,106.4,Interbedded microbanded F shale and meso banded ferruginous chert with iron rich bands weathered to limonite and showing some H enrichment,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, chert, lignite, banded_iron_formation, iron_sediment","101, 101, 80, 61, 47"
+938,592,2181779,106,108.8,Interbedded weathered ferruginous shale with 40% chert beds where core is very broken.,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, chert","101, 100"
+939,592,2181779,111,118.8,Very broken and weathered interval of G minor H that is bedded with softer F shale och G and the weathering product of limonite clay.,mud,101,mud,sediment_clastic,sediment,"mud, mudstone, unclassified_rock, iron_gravel","101, 100, 62, 59"
+940,592,2181779,132,137.0,Very soft G or F due to soft shaley lamination microbedded with soft yellow och G limonite with clay bands within interval at: 135.9 and 136.95 for 20cm,mud,100,mud,sediment_clastic,sediment,"mud, dune, ironstone, spots, dolostone, coarse_grained_plutonic_crystalline_igneous_rock","100, 67, 61, 55, 47, 0"
+941,592,2181779,141,144.5,Very broken and fractured C 65% with interbeds of G/H and softer F 15%. Chert is denatured and soft from 141.4m to 142.95 and at 144.20 to 144.40,chert,100,chert,siliceous,sedimentary_rock,"chert, spots, unclassified_rock, cracks, intermediate, coarse_grained_plutonic_crystalline_igneous_rock","100, 67, 62, 57, 56, 0"
+942,592,2181779,147,150.0,Microbedded weathered F shale with highly weathered G/H and och G. Very broken.,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, fault, fault","101, 56, 50"

@@ -1,0 +1,7 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+6425,2670,2470232,80,82.0,POSSIBLE_FAULT-ZONE,fault,100,fault,breaks,texture_structure,,
+6426,2670,2470232,82,84.0,POSSIBLE_FAULT-ZONE,fault,100,fault,breaks,texture_structure,,
+6427,2670,2470232,84,86.0,POSSIBLE_FAULT-ZONE,fault,100,fault,breaks,texture_structure,,
+6428,2670,2470232,86,88.0,POSSIBLE_FAULT-ZONE,fault,100,fault,breaks,texture_structure,,
+6429,2670,2470232,88,90.0,POSSIBLE_FAULT-ZONE,fault,100,fault,breaks,texture_structure,,
+6430,2670,2470232,90,92.0,POSSIBLE_FAULT-ZONE,fault,100,fault,breaks,texture_structure,,

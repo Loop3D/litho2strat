@@ -1,0 +1,23 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+1574,592,2181843,0,2.0,cemented soil/silt and mnr maghemite,mud,100,mud,sediment_clastic,sediment,"mud, monzonite","101, 64"
+1575,592,2181843,2,4.0,cemented soil/silt and mnr maghemite,mud,100,mud,sediment_clastic,sediment,"mud, monzonite","101, 64"
+1576,592,2181843,4,6.0,more clay rich softer,mud,100,mud,sediment_clastic,sediment,mud,100
+1577,592,2181843,18,20.0,pink clay after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+1578,592,2181843,20,22.0,pink clay after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+1579,592,2181843,22,24.0,pink clay after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+1580,592,2181843,24,26.0,pink clay after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+1581,592,2181843,26,28.0,pink clay after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+1582,592,2181843,56,58.0,quartz lag at base of transported,colluvium,101,colluvium,natural_superficial_ground,surficial_rock,colluvium,101
+1583,592,2181843,58,60.0,quartz lag at base of transported,colluvium,101,colluvium,natural_superficial_ground,surficial_rock,colluvium,101
+1584,592,2181843,60,62.0,quartz lag at base of transported,colluvium,101,colluvium,natural_superficial_ground,surficial_rock,colluvium,101
+1585,592,2181843,68,70.0,unenriched BIF?,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1586,592,2181843,70,72.0,unenriched BIF?,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1587,592,2181843,76,78.0,clays after shale? Broken in cyclone,mud,100,mud,sediment_clastic,sediment,mud,100
+1588,592,2181843,78,80.0,clays after shale? Broken in cyclone,mud,100,mud,sediment_clastic,sediment,mud,100
+1589,592,2181843,80,82.0,shaley BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1590,592,2181843,116,118.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1591,592,2181843,120,122.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1592,592,2181843,122,124.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1593,592,2181843,124,126.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1594,592,2181843,126,128.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+1595,592,2181843,128,130.0,unenriched BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101

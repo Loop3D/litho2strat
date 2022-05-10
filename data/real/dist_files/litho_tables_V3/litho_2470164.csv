@@ -1,0 +1,20 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+6285,2670,2470164,36,38.0,HIGHLY WEATHERED DOLOMITE?,dolostone,101,dolostone,carbonate,sedimentary_rock,dolostone,101
+6286,2670,2470164,38,40.0,HIGHLY WEATHERED DOLOMITE?,dolostone,101,dolostone,carbonate,sedimentary_rock,dolostone,101
+6287,2670,2470164,40,42.0,HIGHLY WEATHERED DOLOMITE?,dolostone,101,dolostone,carbonate,sedimentary_rock,dolostone,101
+6288,2670,2470164,48,50.0,FINE POWDERY CLAY,mud,101,mud,sediment_clastic,sediment,mud,101
+6289,2670,2470164,50,52.0,FINE POWDERY CLAY,mud,101,mud,sediment_clastic,sediment,mud,101
+6290,2670,2470164,52,54.0,FINE POWDERY CLAY,mud,101,mud,sediment_clastic,sediment,mud,101
+6291,2670,2470164,54,56.0,FINE POWDERY CLAY,mud,101,mud,sediment_clastic,sediment,mud,101
+6292,2670,2470164,56,58.0,FINE POWDERY CLAY,mud,101,mud,sediment_clastic,sediment,mud,101
+6293,2670,2470164,60,62.0,INTEBEDEDCHERT+DOLOMITE,dolostone,100,dolostone,carbonate,sedimentary_rock,coarse_grained_plutonic_crystalline_igneous_rock,0
+6294,2670,2470164,62,64.0,INTEBEDEDCHERT+DOLOMITE,dolostone,100,dolostone,carbonate,sedimentary_rock,coarse_grained_plutonic_crystalline_igneous_rock,0
+6295,2670,2470164,64,66.0,INTEBEDEDCHERT+DOLOMITE,dolostone,100,dolostone,carbonate,sedimentary_rock,coarse_grained_plutonic_crystalline_igneous_rock,0
+6296,2670,2470164,66,68.0,INTEBEDEDCHERT+DOLOMITE,dolostone,100,dolostone,carbonate,sedimentary_rock,coarse_grained_plutonic_crystalline_igneous_rock,0
+6297,2670,2470164,68,70.0,INTEBEDEDCHERT+DOLOMITE,dolostone,100,dolostone,carbonate,sedimentary_rock,coarse_grained_plutonic_crystalline_igneous_rock,0
+6298,2670,2470164,70,72.0,INTEBEDEDCHERT+DOLOMITE,dolostone,100,dolostone,carbonate,sedimentary_rock,coarse_grained_plutonic_crystalline_igneous_rock,0
+6299,2670,2470164,72,74.0,INTEBEDEDCHERT+DOLOMITE,dolostone,100,dolostone,carbonate,sedimentary_rock,coarse_grained_plutonic_crystalline_igneous_rock,0
+6300,2670,2470164,74,76.0,INTEBEDEDCHERT+DOLOMITE,dolostone,100,dolostone,carbonate,sedimentary_rock,coarse_grained_plutonic_crystalline_igneous_rock,0
+6301,2670,2470164,76,78.0,INTEBEDEDCHERT+DOLOMITE,dolostone,100,dolostone,carbonate,sedimentary_rock,coarse_grained_plutonic_crystalline_igneous_rock,0
+6302,2670,2470164,78,80.0,INTEBEDEDCHERT+DOLOMITE,dolostone,100,dolostone,carbonate,sedimentary_rock,coarse_grained_plutonic_crystalline_igneous_rock,0
+6303,2670,2470164,80,82.0,INTEBEDEDCHERT+DOLOMITE,dolostone,100,dolostone,carbonate,sedimentary_rock,coarse_grained_plutonic_crystalline_igneous_rock,0

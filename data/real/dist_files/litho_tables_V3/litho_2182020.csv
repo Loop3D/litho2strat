@@ -1,0 +1,17 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+2688,592,2182020,24,26.0,Small G frags and shale in clay aftter shale,mud,101,mud,sediment_clastic,sediment,"mudstone, fall","101, 47"
+2689,592,2182020,48,50.0,Lacustrine clay balls,mud,100,mud,sediment_clastic,sediment,mud,100
+2690,592,2182020,50,52.0,Lacustrine clay balls,mud,100,mud,sediment_clastic,sediment,mud,100
+2691,592,2182020,84,86.0,Stronger Mn with G in clay,mud,101,mud,sediment_clastic,sediment,"mud, mine_stone","101, 67"
+2692,592,2182020,88,90.0,In sloppy clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2693,592,2182020,104,106.0,F shale/och G with G frag,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, fault_gouge","100, 47"
+2694,592,2182020,108,110.0,Very low chip return in brown sloppy clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2695,592,2182020,110,112.0,Very low chip return in brown sloppy clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2696,592,2182020,112,114.0,Very low chip return in brown sloppy clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2697,592,2182020,116,118.0,F shale/och G with G frag,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, fault_gouge","100, 47"
+2698,592,2182020,126,128.0,F shale/och G with  softer G frag. Limonitic slop,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, lime_microstone","100, 50"
+2699,592,2182020,128,130.0,F shale/och G with  softer G frag. Limonitic slop,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, lime_microstone","100, 50"
+2700,592,2182020,136,138.0,Softer ochG/F shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+2701,592,2182020,144,146.0,Softer ochG/F shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+2702,592,2182020,146,148.0,Trace pink F-shale with G and minor och-G,mudstone,100,mudstone,clastic,sedimentary_rock,"trachyte, bog","77, 50"
+2703,592,2182020,154,156.0,Chert - microbanded laminations. McLeod?,chert,100,chert,siliceous,sedimentary_rock,chert,100

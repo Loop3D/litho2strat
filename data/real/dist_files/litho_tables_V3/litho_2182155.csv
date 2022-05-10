@@ -1,0 +1,46 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+4391,592,2182155,0,2.0,Sandy/silty colluvium polymictic pebbles and granules,gravel,101,gravel,sediment_clastic,sediment,"colluvium, gravel","100, 93"
+4392,592,2182155,2,4.0,Sandy/silty colluvium polymictic pebbles and granules,gravel,101,gravel,sediment_clastic,sediment,"colluvium, gravel","100, 93"
+4393,592,2182155,4,6.0,Sandy/silty colluvium polymictic pebbles and granules,gravel,101,gravel,sediment_clastic,sediment,"colluvium, gravel","100, 93"
+4394,592,2182155,6,8.0,silty colluvium polymictic pebbles and granules,gravel,101,gravel,sediment_clastic,sediment,"colluvium, gravel","100, 93"
+4395,592,2182155,8,10.0,silty colluvium polymictic pebbles and granules,gravel,101,gravel,sediment_clastic,sediment,"colluvium, gravel","100, 93"
+4396,592,2182155,10,12.0,silty colluvium polymictic pebbles and granules,gravel,101,gravel,sediment_clastic,sediment,"colluvium, gravel","100, 93"
+4397,592,2182155,12,14.0,silty colluvium polymictic pebbles and granules,gravel,101,gravel,sediment_clastic,sediment,"colluvium, gravel","100, 93"
+4398,592,2182155,14,16.0,silty colluvium polymictic pebbles and granules,gravel,101,gravel,sediment_clastic,sediment,"colluvium, gravel","100, 93"
+4399,592,2182155,20,22.0,Sandy  siltsQ+X pebbles this interval,gravel,100,gravel,sediment_clastic,sediment,colluvium,53
+4400,592,2182155,40,42.0,silty colluviumminor CR clay chips,mud,100,mud,sediment_clastic,sediment,mud,100
+4401,592,2182155,42,44.0,silty colluviumminor CR clay chips,mud,100,mud,sediment_clastic,sediment,mud,100
+4402,592,2182155,76,78.0,Sandy clay Q to 2.5mm,mud,100,mud,sediment_clastic,sediment,mud,100
+4403,592,2182155,78,80.0,Sandy clay Q to 2.5mm,mud,100,mud,sediment_clastic,sediment,mud,100
+4404,592,2182155,92,94.0,Pale blue shale VFG disseminated pyrite ,massive_sulphide,101,massive_sulphide,ore,mineralisation,massive_sulphide,101
+4405,592,2182155,94,96.0,Black pyritic shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+4406,592,2182155,96,98.0,Pale blue shale VFG disseminated pyrite ,massive_sulphide,101,massive_sulphide,ore,mineralisation,massive_sulphide,101
+4407,592,2182155,98,100.0,Black pyritic shale ?foliated light chips ?lignite vs sheared shale?,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+4408,592,2182155,100,102.0,Mix pyritic shale and Dk BN F,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, burned_rock","101, 44"
+4409,592,2182155,102,104.0,Cr clays stained by chips Py shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+4410,592,2182155,104,106.0,Cr clays stained ,mud,100,mud,sediment_clastic,sediment,mud,100
+4411,592,2182155,106,108.0,OG clays and chips F,mud,100,mud,sediment_clastic,sediment,"mud, schist","101, 50"
+4412,592,2182155,108,110.0,Light yellow clays,mud,101,mud,sediment_clastic,sediment,mud,64
+4413,592,2182155,110,112.0,Blue black chips - ?Mn minerals or black shale ?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, glaucophanite","101, 47"
+4414,592,2182155,112,114.0,Blue black chips - ?Mn minerals or black shale ?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, glaucophanite","101, 47"
+4415,592,2182155,114,116.0,Blue black chips - ?Mn minerals or black shale ?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, glaucophanite","101, 47"
+4416,592,2182155,116,118.0,Blue black chips - ?Mn minerals or black shale ?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, glaucophanite","101, 47"
+4417,592,2182155,118,120.0,Blue black chips - ?Mn minerals or black shale ?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, glaucophanite","101, 47"
+4418,592,2182155,120,122.0,Blue black chips - ?Mn minerals or black shale ?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, glaucophanite","101, 47"
+4419,592,2182155,122,124.0,Blue black chips - ?Mn minerals or black shale ?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, glaucophanite","101, 47"
+4420,592,2182155,124,126.0,Blue black chips - ?Mn minerals or black shale ?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, glaucophanite","101, 47"
+4421,592,2182155,126,128.0,Blue black chips - ?Mn minerals or black shale ?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, glaucophanite","101, 47"
+4422,592,2182155,128,130.0,Blue black chips - ?Mn minerals or black shale ?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, glaucophanite","101, 47"
+4423,592,2182155,130,132.0,Blue black chips - ?Mn minerals or black shale ?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, glaucophanite","101, 47"
+4424,592,2182155,132,134.0,Blue black chips - ?Mn minerals or black shale ?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, glaucophanite","101, 47"
+4425,592,2182155,134,136.0,Blue black chips - ?Mn minerals or black shale ?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, glaucophanite","101, 47"
+4426,592,2182155,136,138.0,Blue black chips - ?Mn minerals or black shale ?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, glaucophanite","101, 47"
+4427,592,2182155,142,144.0,Goethite and F goethite chips/pebbles to 3cm,gravel,100,gravel,sediment_clastic,sediment,"iron_mud, iron_gravel","80, 54"
+4428,592,2182155,144,146.0,Goethite and F goethite chips/pebbles to 3cm,gravel,100,gravel,sediment_clastic,sediment,"iron_mud, iron_gravel","80, 54"
+4429,592,2182155,146,148.0,Goethite and F goethite chips/pebbles to 3cm,gravel,100,gravel,sediment_clastic,sediment,"iron_mud, iron_gravel","80, 54"
+4430,592,2182155,148,150.0,Goethite and F goethite chips/pebbles to 3cm,gravel,100,gravel,sediment_clastic,sediment,"iron_mud, iron_gravel","80, 54"
+4431,592,2182155,162,164.0,Goethite trace vein Q ?fault?,fault,101,fault,breaks,texture_structure,fault,101
+4432,592,2182155,164,166.0,Goethite trace vein Q ?fault?,fault,101,fault,breaks,texture_structure,fault,101
+4433,592,2182155,174,176.0,Chips dk BR Fand Gtrace vein Q ,vein,100,vein,fillings,texture_structure,vein,100
+4434,592,2182155,176,178.0,Chips dk BR Fand Gtrace vein Q ,vein,100,vein,fillings,texture_structure,vein,100
+4435,592,2182155,178,180.0,"Chips dk BR Fand Gingreen ?silicate mineral"" shale",mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101

@@ -1,0 +1,7 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+6762,2670,2470329,18,22.0,cemented heavy pisolitic gravels,pisolith,100,pisolith,residual_deposit,surficial_rock,gravel,101
+6763,2670,2470329,34,40.0,harder zone shale w/ deeply weathd G/H; vuggy hardcap zone?,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, mudstone","100, 52"
+6764,2670,2470329,44,45.0,angular vuggy detrital ore?,ore,101,ore,ore,mineralisation,ore,101
+6765,2670,2470329,45,54.0,w/ mnr chert/qtz at contact zone,contact,100,contact,contact,texture_structure,contact,100
+6766,2670,2470329,54,59.0,Roy Hill Shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+6767,2670,2470329,59,80.0,EOH; Roy Hill Shale,mudstone,101,mudstone,clastic,sedimentary_rock,"unclassified_rock, mudstone","101, 101"

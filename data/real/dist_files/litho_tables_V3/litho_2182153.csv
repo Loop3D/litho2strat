@@ -1,0 +1,57 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+4261,592,2182153,0,2.0,Polymictic pebbles and granules in silty/sandy matrix,gravel,100,gravel,sediment_clastic,sediment,"gravel, gravel","92, 59"
+4262,592,2182153,2,4.0,Polymictic pebbles and granules in silty/sandy matrix,gravel,100,gravel,sediment_clastic,sediment,"gravel, gravel","92, 59"
+4263,592,2182153,4,6.0,Polymictic pebbles and granules in silty/sandy matrix,gravel,100,gravel,sediment_clastic,sediment,"gravel, gravel","92, 59"
+4264,592,2182153,6,8.0,Polymictic pebbles and granules in silty/sandy matrix,gravel,100,gravel,sediment_clastic,sediment,"gravel, gravel","92, 59"
+4265,592,2182153,8,10.0,Polymictic pebbles and granules in silty/sandy matrix,gravel,100,gravel,sediment_clastic,sediment,"gravel, gravel","92, 59"
+4266,592,2182153,10,12.0,Polymictic pebbles and granules in silty/sandy matrix,gravel,100,gravel,sediment_clastic,sediment,"gravel, gravel","92, 59"
+4267,592,2182153,12,14.0,Polymictic pebbles and granules in silty/sandy matrix,gravel,100,gravel,sediment_clastic,sediment,"gravel, gravel","92, 59"
+4268,592,2182153,14,16.0,Sandy silt few pebbles,gravel,101,gravel,sediment_clastic,sediment,mud,100
+4269,592,2182153,16,18.0,Sandy silt few pebbles,gravel,101,gravel,sediment_clastic,sediment,mud,100
+4270,592,2182153,18,20.0,Sandy silt,mud,101,mud,sediment_clastic,sediment,mud,101
+4271,592,2182153,20,22.0,Sandy silt pebbly interval,mud,100,mud,sediment_clastic,sediment,mud,100
+4272,592,2182153,22,24.0,Sandy silt,mud,101,mud,sediment_clastic,sediment,mud,101
+4273,592,2182153,24,26.0,Sandy silt,mud,101,mud,sediment_clastic,sediment,mud,101
+4274,592,2182153,26,28.0,silty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4275,592,2182153,28,30.0,silty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4276,592,2182153,30,32.0,silty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4277,592,2182153,32,34.0,silty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4278,592,2182153,34,36.0,silty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4279,592,2182153,36,38.0,silty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4280,592,2182153,38,40.0,silty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4281,592,2182153,40,42.0,silty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4282,592,2182153,42,44.0,silty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4283,592,2182153,44,46.0,silty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4284,592,2182153,46,48.0,silty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4285,592,2182153,48,50.0,silty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4286,592,2182153,50,52.0,silty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4287,592,2182153,52,54.0,silty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4288,592,2182153,54,56.0,silty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4289,592,2182153,56,58.0,silty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4290,592,2182153,58,60.0,silty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4291,592,2182153,60,62.0,silty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4292,592,2182153,62,64.0,silty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4293,592,2182153,64,66.0,silty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4294,592,2182153,66,68.0,silty claytrace dirty green mineral coating white clay chips,mud,100,mud,sediment_clastic,sediment,mud,100
+4295,592,2182153,68,70.0,silty claytrace dirty green mineral coating white clay chips,mud,100,mud,sediment_clastic,sediment,mud,100
+4296,592,2182153,70,72.0,silty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4297,592,2182153,72,74.0,silty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+4298,592,2182153,74,76.0,White silty clay chips trace Ferruginous  +/-   manganiferous  shaley material staining sample OG,mud,100,mud,sediment_clastic,sediment,mud,100
+4299,592,2182153,76,78.0,White silty clay chips trace Ferruginous +/- manganiferousshaleymaterialstainingsampleOG,mud,100,mud,sediment_clastic,sediment,mud,100
+4300,592,2182153,78,80.0,White silty clay chips trace Ferruginous +/- manganiferousshaleymaterialstainingsampleOG,mud,100,mud,sediment_clastic,sediment,mud,100
+4301,592,2182153,80,82.0,White silty clay chips trace Ferruginous +/- manganiferousshaleymaterialstainingsampleOG,mud,100,mud,sediment_clastic,sediment,mud,100
+4302,592,2182153,82,84.0,White silty clay chips trace Ferruginous +/- manganiferousshaleymaterialstainingsampleOG,mud,100,mud,sediment_clastic,sediment,mud,100
+4303,592,2182153,84,86.0,White silty clay chips minor chips green/black phyllosilicate rich chips staining sample OG,mud,100,mud,sediment_clastic,sediment,mud,100
+4304,592,2182153,86,88.0,White silty clay chips minor chips green/black phyllosilicate rich chips staining sample OG,mud,100,mud,sediment_clastic,sediment,mud,100
+4305,592,2182153,88,90.0,"Sample as ""running sand"" Q grains to 3mm in wet clay",mud,101,mud,sediment_clastic,sediment,"mud, sand","101, 100"
+4306,592,2182153,90,92.0,Clays with minor green/black chips effervesce with peroxide-?Mn?,mud,100,mud,sediment_clastic,sediment,"mud, monzonite, glaucophanite","101, 60, 51"
+4307,592,2182153,96,98.0,Dk Olive green brown manganiferous shales and clay.,mud,101,mud,sediment_clastic,sediment,"mudstone, mud","101, 101"
+4308,592,2182153,98,100.0,Dk Olive green brown manganiferous shales and clay.,mud,101,mud,sediment_clastic,sediment,"mudstone, mud","101, 101"
+4309,592,2182153,100,102.0,Dk Olive green brown manganiferous shales and clay.,mud,101,mud,sediment_clastic,sediment,"mudstone, mud","101, 101"
+4310,592,2182153,102,104.0,Dk Olive green brown manganiferous shales and clay.,mud,101,mud,sediment_clastic,sediment,"mudstone, mud","101, 101"
+4311,592,2182153,104,106.0,Dk Olive green brown manganiferous shales and clay.,mud,101,mud,sediment_clastic,sediment,"mudstone, mud","101, 101"
+4312,592,2182153,106,108.0,Dk Olive green brown manganiferous shales and clay.,mud,101,mud,sediment_clastic,sediment,"mudstone, mud","101, 101"
+4313,592,2182153,128,130.0,Biffy chert,chert,101,chert,siliceous,sedimentary_rock,chert,101
+4314,592,2182153,130,132.0,Cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+4315,592,2182153,148,150.0,Cavity 149-150m,void,100,void,artificial_man_made_ground,surficial_rock,void,101
+4316,592,2182153,150,152.0,Cavity no sample return,void,100,void,artificial_man_made_ground,surficial_rock,void,100

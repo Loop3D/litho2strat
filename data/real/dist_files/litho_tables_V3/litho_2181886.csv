@@ -1,0 +1,30 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+2066,592,2181886,30,32.0,mottled clays,mud,101,mud,sediment_clastic,sediment,mud,101
+2067,592,2181886,32,34.0,mottled clays,mud,101,mud,sediment_clastic,sediment,mud,101
+2068,592,2181886,34,36.0,mottled clays,mud,101,mud,sediment_clastic,sediment,mud,101
+2069,592,2181886,36,38.0,mottled clays,mud,101,mud,sediment_clastic,sediment,mud,101
+2070,592,2181886,38,40.0,mottled clays,mud,101,mud,sediment_clastic,sediment,mud,101
+2071,592,2181886,44,46.0,hardcap over transported,colluvium,101,colluvium,natural_superficial_ground,surficial_rock,colluvium,101
+2072,592,2181886,46,48.0,hardcap over transported,colluvium,101,colluvium,natural_superficial_ground,surficial_rock,colluvium,101
+2073,592,2181886,48,50.0,clays after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+2074,592,2181886,50,52.0,clays after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+2075,592,2181886,52,54.0,clays after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+2076,592,2181886,54,56.0,clays after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+2077,592,2181886,56,58.0,clays after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+2078,592,2181886,58,60.0,clays after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+2079,592,2181886,60,62.0,clays after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+2080,592,2181886,62,64.0,clays after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+2081,592,2181886,64,66.0,clays after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+2082,592,2181886,66,68.0,clays after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+2083,592,2181886,68,70.0,clays after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+2084,592,2181886,70,72.0,clays after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+2085,592,2181886,72,74.0,clays after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+2086,592,2181886,74,76.0,clays after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+2087,592,2181886,76,78.0,clays after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+2088,592,2181886,78,80.0,clays after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+2089,592,2181886,80,82.0,clays after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+2090,592,2181886,82,84.0,clays after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+2091,592,2181886,84,86.0,clays after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+2092,592,2181886,102,104.0,clays after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+2093,592,2181886,104,106.0,clays after shales?,mud,100,mud,sediment_clastic,sediment,mudstone,101
+2094,592,2181886,106,108.0,EOH; clays after shales?,mud,100,mud,sediment_clastic,sediment,"unclassified_rock, mudstone","101, 101"

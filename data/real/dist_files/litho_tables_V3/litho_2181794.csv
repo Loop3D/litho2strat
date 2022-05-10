@@ -1,0 +1,25 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+1303,592,2181794,44,53.12,White clay mottled RB by 5% hem frags/lenses. Hem staning the WT clay producing a YB halo ,mud,100,mud,sediment_clastic,sediment,mud,100
+1304,592,2181794,53,54.9,Sparsely pisolitic G>H interval in mottled WT clays. FeO approx 10%,mud,100,mud,sediment_clastic,sediment,mud,100
+1305,592,2181794,54,55.0,?Possible contamination from uphole.Quartz sands in clay,mud,101,mud,sediment_clastic,sediment,mud,101
+1306,592,2181794,55,55.5,YB-PK-WT mottled clay with 5% dentritic Mn ?pyrolusite,mud,100,mud,sediment_clastic,sediment,"mud, rhyolite","101, 58"
+1307,592,2181794,55,57.1,Mottled clay with diffuse hematitie frags/staining throughout. Trace Mn coatings,mud,100,mud,sediment_clastic,sediment,"mud, coarse_grained_plutonic_crystalline_igneous_rock","101, 34"
+1308,592,2181794,57,57.2,Rounded pebbles up to 60mm of Q sandstone and hematite in RB clay. Also minor maghemite,mud,100,mud,sediment_clastic,sediment,"sandstone, mud, gravel","101, 100, 63"
+1309,592,2181794,57,58.97,Return to RB-YB mottled WT clay. 5% maghemite,mud,100,mud,sediment_clastic,sediment,"mud, foredune","100, 57"
+1310,592,2181794,58,66.5,Strongly pisolitic interval. Subrounded to strongly rounded maghemite in WT clay. Material highly broken due to drill bit,mud,100,mud,sediment_clastic,sediment,"pisolith, mud, till","100, 100, 62"
+1311,592,2181794,66,68.4,Very hard strongly lithified maghemite pisolite. Cement ?siliceous and pale with D BN rounded maghem >>hem,pisolite,100,pisolite,residual_deposit,surficial_rock,"pisolite, mudstone, monzonite","100, 67, 43"
+1312,592,2181794,68,71.1,Mottled RB-WT pisolite. Rounded hem and maghem pisolites often showing a pale cutaneous skin in a hem/clay groundmass,mud,100,mud,sediment_clastic,sediment,"pisolite, mud","100, 100"
+1313,592,2181794,71,72.1,Hard solid bedded goeth with och goeth and 5% lenses/nodules of WT clay after S ,mud,101,mud,sediment_clastic,sediment,"mud, iron_mud, orthoschist","101, 61, 60"
+1314,592,2181794,72,73.2,Vuggy vitreous goetiitic hardcap. Remnant bedding apparent. L GY clay after S lenses/nodules,nodules,101,nodules,residual_deposit,surficial_rock,mud,100
+1315,592,2181794,75,80.6,Ochreous goeth interval. Faint bedding apparent. Trace WT clays,mud,101,mud,sediment_clastic,sediment,mud,101
+1316,592,2181794,80,84.3,Bedded goeth with 20% disrupted limonitic beds/lenses/nodules. Occas clay beds,mud,100,mud,sediment_clastic,sediment,"mud, regolith","100, 62"
+1317,592,2181794,84,91.6,Mody broken ferr shale dominant interval. Approx 30% goethitic bands/masses and 5% lim lenses. Bedded development deteriorates with depth.,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, earth, iron_sediment","100, 60, 48"
+1318,592,2181794,96,101.0,moderately to very broken limonitc and trace goeth chert,chert,101,chert,siliceous,sedimentary_rock,"chert, lignite","101, 64"
+1319,592,2181794,101,102.2,friable hematite and  goeth chert / ferruginous shale,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, migmatite","101, 58"
+1320,592,2181794,111,112.0,bedded goeth chert and goeth ,chert,100,chert,siliceous,sedimentary_rock,"chert, regolith","101, 62"
+1321,592,2181794,123,125.0,goeth and bedded ferruginous shale,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, regolith","101, 62"
+1322,592,2181794,125,126.3,ferruginous shales and clay ,mud,101,mud,sediment_clastic,sediment,"mudstone, mud","101, 101"
+1323,592,2181794,147,149.1,chert and goeth chert plus trace limonite,chert,100,chert,siliceous,sedimentary_rock,"chert, chert","101, 100"
+1324,592,2181794,151,154.1,chert dissapears,chert,100,chert,siliceous,sedimentary_rock,chert,100
+1325,592,2181794,154,155.0,purple finely laminated chert and clays,mud,101,mud,sediment_clastic,sediment,"chert, mud","101, 101"
+1326,592,2181794,155,157.6,goethite limonite ore,ore,101,ore,ore,mineralisation,ore,101

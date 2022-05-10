@@ -1,0 +1,16 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+838,592,2181776,14,17.5,well cemented X/G subrounded frags in pink clay matrix; GRADING INTO:,mud,100,mud,sediment_clastic,sediment,"mud, coarse_grained_plutonic_crystalline_igneous_rock","101, 0"
+839,592,2181776,17,18.4,almost maghemite clast-supported pisolitic material with pink clays; SHARP AT:,mud,100,mud,sediment_clastic,sediment,"mud, pisolith, sapropel","101, 100, 62"
+840,592,2181776,18,21.3,mod hardcap dev over transported material w/ VT G; increase clay content from 20.5m; SHARP AT:,mud,100,mud,sediment_clastic,sediment,"colluvium, mud, sapropel","100, 100, 62"
+841,592,2181776,21,22.0,pisolitic gravels and clays loosely consolidated,mud,100,mud,sediment_clastic,sediment,"gravel, mud","101, 100"
+842,592,2181776,23,27.9,strong hardcap dev with VT W/G over BEd material inc. clays in some zones,mud,100,mud,sediment_clastic,sediment,"mud, mudstone","101, 52"
+843,592,2181776,27,29.85,FAULT STRUCTURE - with clay bands and rounded breccias adjacent,mud,100,mud,sediment_clastic,sediment,"breccia, fault, mud","101, 100, 100"
+844,592,2181776,29,31.95,FAULT ZONE?  Clay altd w/ small zone retaining VT Gc hardcap; SHARP AT:,mud,100,mud,sediment_clastic,sediment,"mud, sapropel","100, 62"
+845,592,2181776,32,33.4,clay zone - possible structure rounded frags at 32.7m,mud,100,mud,sediment_clastic,sediment,mud,100
+846,592,2181776,33,34.8,wk-mod hardcap over clays,mud,101,mud,sediment_clastic,sediment,mud,101
+847,592,2181776,34,35.4,clay-shale marker,mud,100,mud,sediment_clastic,sediment,marble,67
+848,592,2181776,37,38.2,clay rich,mud,100,mud,sediment_clastic,sediment,mud,100
+849,592,2181776,45,45.3,FAULT STRUCTURE - leached clays,mud,101,mud,sediment_clastic,sediment,mud,101
+850,592,2181776,45,47.4,laminated grey shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+851,592,2181776,49,51.3,laminated grey shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+852,592,2181776,53,54.0,laminated grey shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101

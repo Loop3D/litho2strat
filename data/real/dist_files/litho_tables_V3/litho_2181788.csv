@@ -1,0 +1,28 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+1151,592,2181788,32,36.6,clay and qtz sands,mud,100,mud,sediment_clastic,sediment,"mud, sand","101, 101"
+1152,592,2181788,36,38.0,clay qtz sands and trc pisoids,mud,100,mud,sediment_clastic,sediment,"sand, pisolith","101, 70"
+1153,592,2181788,38,42.4,clay and qtz sands,mud,100,mud,sediment_clastic,sediment,"mud, sand","101, 101"
+1154,592,2181788,42,43.9,transported clays,mud,101,mud,sediment_clastic,sediment,mud,101
+1155,592,2181788,43,45.5,transported clays with some 10% fragments other lithologies G F,mud,100,mud,sediment_clastic,sediment,"mud, melilitolite","101, 46"
+1156,592,2181788,45,48.4,hard maghemite & goethite pisoids 60% cemented in hard cream-pink clay matrix; SHARP AT:,mud,100,mud,sediment_clastic,sediment,"mud, sapropel","101, 62"
+1157,592,2181788,48,49.5,Hardcap vitreous goethite development in transported material?  No bedding mnr whit clays only,mud,100,mud,sediment_clastic,sediment,mud,101
+1158,592,2181788,49,53.3,Hardcap development with vitreous G H and some white clays within bedded? Mt. Newman 10% vughs overall with little clays,mud,100,mud,sediment_clastic,sediment,"mud, mud, mass_movement, iron_mud","101, 100, 50, 50"
+1159,592,2181788,53,55.3,Moderately bedded goethitic and ferruginous shales with vitreous G fragments with white clays on surfacs unsure of %,mud,100,mud,sediment_clastic,sediment,"mudstone, mud, iron_mud, migmatite","101, 100, 67, 52"
+1160,592,2181788,57,57.65,shale bed altered to clay,mud,101,mud,sediment_clastic,sediment,"mud, mudstone","101, 100"
+1161,592,2181788,57,59.3,interbedded goethite-shale decrease in grade,mudstone,100,mudstone,clastic,sedimentary_rock,iron_gravel,55
+1162,592,2181788,59,61.9,interbedded vitreous G>H style ore,ore,101,ore,ore,mineralisation,ore,101
+1163,592,2181788,61,62.75,clay zone with shale and mnr iron oxides around clay clasts,mud,100,mud,sediment_clastic,sediment,"mudstone, mud, mud","101, 100, 100"
+1164,592,2181788,62,65.4,hard interbedded G>H style ore with trace pink and white clays increasing,mud,100,mud,sediment_clastic,sediment,"ore, mud, trachyte","101, 100, 77"
+1165,592,2181788,65,67.5,G>H bedded ore but increase ferruginous shale or shale decrease grade,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, mudstone","101, 100"
+1166,592,2181788,70,71.7,increasing G with some white clays,mud,101,mud,sediment_clastic,sediment,"mud, mineralisation","101, 54"
+1167,592,2181788,71,72.3,clay altered shale bed,mud,100,mud,sediment_clastic,sediment,mud,100
+1168,592,2181788,72,74.2,softer goethite trc limonite bedded ore,ore,101,ore,ore,mineralisation,ore,101
+1169,592,2181788,74,76.25,softer ferruginous limonitic shale with some clay contamination,mud,100,mud,sediment_clastic,sediment,"mudstone, mud","101, 100"
+1170,592,2181788,76,77.8,bedded goethite ore with trc ferruginous shales and trc limonitic shales,ore,100,ore,ore,mineralisation,"ore, mudstone, mudstone","101, 101, 101"
+1171,592,2181788,77,79.8,bedded goethitic ore with some white clay contaminants,mud,100,mud,sediment_clastic,sediment,"ore, mud","101, 100"
+1172,592,2181788,79,81.4,bedded goethite ore mostly vitreous,ore,100,ore,ore,mineralisation,ore,100
+1173,592,2181788,81,81.8,hematised martitic redbrown shale band,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+1174,592,2181788,81,83.5,softer goethite bedded ore with some limonite and trc white clays,mud,101,mud,sediment_clastic,sediment,"ore, mud, lignite","101, 101, 80"
+1175,592,2181788,98,99.1,shale contaminated,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+1176,592,2181788,102,102.75,clay altered shale marker bed,mud,100,mud,sediment_clastic,sediment,mud,100
+1177,592,2181788,108,112.0,EOH; unenriched chert BIF with some ferruginous shales at 111.5m,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"unclassified_rock, banded_iron_formation, mudstone","101, 101, 101"

@@ -1,0 +1,4 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+2401,592,2181977,32,34.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2402,592,2181977,36,38.0,Green chert,chert,101,chert,siliceous,sedimentary_rock,chert,101
+2403,592,2181977,38,40.0,Aqua green chert,chert,101,chert,siliceous,sedimentary_rock,chert,101

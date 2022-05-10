@@ -1,0 +1,37 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+7015,353,4029677,6,7.0,Rare small pebbles,gravel,101,gravel,sediment_clastic,sediment,gravel,58
+7016,353,4029677,7,8.0,Well rounded pebbles,gravel,101,gravel,sediment_clastic,sediment,pebble_grade_limestone,51
+7017,353,4029677,8,9.0,Well rounded pebbles,gravel,101,gravel,sediment_clastic,sediment,pebble_grade_limestone,51
+7018,353,4029677,9,10.0,Well rounded pebbles,gravel,101,gravel,sediment_clastic,sediment,pebble_grade_limestone,51
+7019,353,4029677,10,11.0,Well rounded pebbles,gravel,101,gravel,sediment_clastic,sediment,pebble_grade_limestone,51
+7020,353,4029677,11,12.0,Well rounded pebbles,gravel,101,gravel,sediment_clastic,sediment,pebble_grade_limestone,51
+7021,353,4029677,12,13.0,Rare glauconitic clay?,mud,101,mud,sediment_clastic,sediment,mud,101
+7022,353,4029677,13,14.0,Rare glauconitic clay?,mud,101,mud,sediment_clastic,sediment,mud,101
+7023,353,4029677,14,15.0,Rare glauconitic clay?,mud,101,mud,sediment_clastic,sediment,mud,101
+7024,353,4029677,15,16.0,Rare glauconitic clay?,mud,101,mud,sediment_clastic,sediment,mud,101
+7025,353,4029677,16,17.0,Rare glauconitic clay?,mud,101,mud,sediment_clastic,sediment,mud,101
+7026,353,4029677,17,18.0,Rare glauconitic clay?,mud,101,mud,sediment_clastic,sediment,mud,101
+7027,353,4029677,18,19.0,Rare glauconitic clay?,mud,101,mud,sediment_clastic,sediment,mud,101
+7028,353,4029677,19,20.0,Granite big pebble?,granite,100,granite,felsic_coarse_grained_crystalline,igneous_rock,granite,100
+7029,353,4029677,20,21.0,Granite chips and rounded pebbles,gravel,101,gravel,sediment_clastic,sediment,"granite, gravel","100, 63"
+7030,353,4029677,21,22.0,Jasper quartz pebbles and calcite band in sandstone,sandstone,101,sandstone,clastic,sedimentary_rock,"sandstone, banded_iron_formation","101, 100"
+7031,353,4029677,22,23.0,Glauconitic claystone and calcite in fracture,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, lime_framestone","101, 71"
+7032,353,4029677,24,25.0,Rare glauconitic claystone,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+7033,353,4029677,25,26.0,Rare glauconitic claystone,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+7034,353,4029677,26,27.0,Rare glauconitic claystone Manganese oxide,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+7035,353,4029677,27,28.0,Rare glauconitic claystone Manganese oxide,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+7036,353,4029677,30,31.0,Black organic mud?,mud,101,mud,sediment_clastic,sediment,mud,101
+7037,353,4029677,37,38.0,Quartz sand and grits,sand,100,sand,sediment_clastic,sediment,"sand, silicate_sandstone","101, 101"
+7038,353,4029677,38,39.0,Quartz sand and grits,sand,100,sand,sediment_clastic,sediment,"sand, silicate_sandstone","101, 101"
+7039,353,4029677,39,40.0,Quartz sand and grits,sand,100,sand,sediment_clastic,sediment,"sand, silicate_sandstone","101, 101"
+7040,353,4029677,40,41.0,Chert and quartz pebbles,gravel,101,gravel,sediment_clastic,sediment,"chert, vein","101, 100"
+7041,353,4029677,41,42.0,Weathered granitoid derived? white clay,granitoid,100,granitoid,felsic_coarse_grained_crystalline,igneous_rock,mud,101
+7042,353,4029677,42,43.0,Weathered granitoid derived? white clay,granitoid,100,granitoid,felsic_coarse_grained_crystalline,igneous_rock,mud,101
+7043,353,4029677,43,44.0,Weathered granitoid derived? white clay,granitoid,100,granitoid,felsic_coarse_grained_crystalline,igneous_rock,mud,101
+7044,353,4029677,44,45.0,Weathered granitoid derived? white clayOxidized sandstone chips,granitoid,100,granitoid,felsic_coarse_grained_crystalline,igneous_rock,granitoid,100
+7045,353,4029677,45,46.0,Weathered granitoid derived? white clay,granitoid,100,granitoid,felsic_coarse_grained_crystalline,igneous_rock,mud,101
+7046,353,4029677,46,47.0,Weathered granitoid derived? white clayQuartz with tourmaline,granitoid,100,granitoid,felsic_coarse_grained_crystalline,igneous_rock,"granitoid, morainic_deposits","100, 71"
+7047,353,4029677,47,48.0,Weathered granitoid?,granitoid,101,granitoid,felsic_coarse_grained_crystalline,igneous_rock,granitoid,101
+7048,353,4029677,48,49.0,Weathered granitoid?,granitoid,101,granitoid,felsic_coarse_grained_crystalline,igneous_rock,granitoid,101
+7049,353,4029677,49,50.0,Weathered granitoid?,granitoid,101,granitoid,felsic_coarse_grained_crystalline,igneous_rock,granitoid,101
+7050,353,4029677,50,51.0,Weathered granitoid?,granitoid,101,granitoid,felsic_coarse_grained_crystalline,igneous_rock,granitoid,101

@@ -1,0 +1,5 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+2340,592,2181955,32,34.0,Base of transported,colluvium,101,colluvium,natural_superficial_ground,surficial_rock,colluvium,101
+2341,592,2181955,58,60.0,Possible LWA/Mt Newman contact,contact,101,contact,contact,texture_structure,contact,101
+2342,592,2181955,74,76.0,Possible Mt Newman/MacLeod contact,contact,101,contact,contact,texture_structure,contact,101
+2343,592,2181955,88,90.0,Colourless chert,chert,101,chert,siliceous,sedimentary_rock,chert,101

@@ -1,0 +1,11 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+522,592,2181756,3,8.2,RB cementd almost clast supportd <5mm maghemite pisoids transcover with silt/clay; some larger  subrounded clasts of vitreous ZG,mud,100,mud,sediment_clastic,sediment,"mud, coastal_barrier_deposit, lime_pseudosparstone","101, 50, 36"
+523,592,2181756,8,9.5,matrix CR-PK clay supportd transd cover w/ subroundd clasts maghemite; SHARP AT:  ,cover,100,cover,natural_superficial_ground,surficial_rock,"mud, sapropel","100, 62"
+524,592,2181756,9,10.4,v.wk HC developt in LWA CR clays after S? brwn coating on outside of core; SHARP AT:,mud,100,mud,sediment_clastic,sediment,"mud, sapropel","100, 62"
+525,592,2181756,13,14.6,little to no HC developt in LWA clays; brown on outside of core,mud,100,mud,sediment_clastic,sediment,"mud, syenite, trachytoid","101, 71, 50"
+526,592,2181756,14,15.7,strong HC developt in LWA with vitG/F & mnr wht-pk clays in 5% vughs,mud,100,mud,sediment_clastic,sediment,"mud, dolostone","100, 49"
+527,592,2181756,29,31.4,strngly bedd vitG/F w/ some WT clays,mud,101,mud,sediment_clastic,sediment,mud,101
+528,592,2181756,31,31.7,CR-PK clays after shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+529,592,2181756,34,34.5,oGoethitic shale? & pallid PK shale - decreased grade?,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+530,592,2181756,34,35.6,interbedd F/vitW and pallid clays - decrease grade? SHARP AT:,mud,100,mud,sediment_clastic,sediment,"mud, intermediate","100, 64"
+531,592,2181756,37,38.9,soft fissile deep red ferrug S & mnr pallid clays,mud,101,mud,sediment_clastic,sediment,mud,101

@@ -1,0 +1,18 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+2183,592,2181899,36,38.0,ochrerous goethitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+2184,592,2181899,38,40.0,ochrerous goethitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+2185,592,2181899,42,44.0,ochrerous goethitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+2186,592,2181899,44,46.0,ochrerous goethitic shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+2187,592,2181899,46,48.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2188,592,2181899,48,50.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2189,592,2181899,50,52.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2190,592,2181899,52,54.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2191,592,2181899,54,56.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2192,592,2181899,56,58.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2193,592,2181899,58,60.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2194,592,2181899,60,62.0,or denatured chert,chert,101,chert,siliceous,sedimentary_rock,chert,101
+2195,592,2181899,62,64.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2196,592,2181899,64,66.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2197,592,2181899,66,68.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2198,592,2181899,68,70.0,unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+2199,592,2181899,70,72.0,EOH; unenriched cherty BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,"unclassified_rock, banded_iron_formation","101, 101"

@@ -1,0 +1,4 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+3950,592,2182129,140,142.0,Very faint carbonate?,carbonate,101,carbonate,carbonate,sedimentary_rock,carbonate,101
+3951,592,2182129,142,144.0,Very faint carbonate?,carbonate,101,carbonate,carbonate,sedimentary_rock,carbonate,101
+3952,592,2182129,150,152.0,Sub-metallic mod magnetic H. Red clay,mud,101,mud,sediment_clastic,sediment,mud,101

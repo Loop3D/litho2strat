@@ -1,0 +1,55 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+6631,2670,2470303,0,2.0,angular colluvium?,colluvium,101,colluvium,natural_superficial_ground,surficial_rock,colluvium,101
+6632,2670,2470303,2,4.0,w/ strngly BE cherts and BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,"chert, banded_iron_formation","101, 101"
+6633,2670,2470303,4,6.0,trans BIF minzd? and chert,chert,101,chert,siliceous,sedimentary_rock,"chert, banded_iron_formation","101, 100"
+6634,2670,2470303,10,12.0,heavy minzd pisolitic gravels w/ metallic magnetic mineral X or martite-hematite??,pisolith,100,pisolith,residual_deposit,surficial_rock,gravel,100
+6635,2670,2470303,12,14.0,heavy minzd pisolitic gravels w/ metallic magnetic mineral X or martite-hematite??,pisolith,100,pisolith,residual_deposit,surficial_rock,gravel,100
+6636,2670,2470303,14,16.0,heavy minzd pisolitic gravels w/ metallic magnetic mineral X or martite-hematite??,pisolith,100,pisolith,residual_deposit,surficial_rock,gravel,100
+6637,2670,2470303,16,18.0,heavy minzd pisolitic gravels w/ metallic magnetic mineral X or martite-hematite??,pisolith,100,pisolith,residual_deposit,surficial_rock,gravel,100
+6638,2670,2470303,28,30.0,insitu? siltstone & mnr chert,chert,101,chert,siliceous,sedimentary_rock,chert,101
+6639,2670,2470303,32,34.0,possibly still transported,colluvium,101,colluvium,natural_superficial_ground,surficial_rock,colluvium,101
+6640,2670,2470303,34,36.0,definitel insitu drk blu siliceous dolomite? Little fizz prob just chert,chert,101,chert,siliceous,sedimentary_rock,chert,101
+6641,2670,2470303,36,38.0,dk blu massive chert,chert,101,chert,siliceous,sedimentary_rock,chert,101
+6642,2670,2470303,38,40.0,bedded chert and light blue-grey lamd siltstone or volcanicastic?,mudstone,100,mudstone,clastic,sedimentary_rock,"chert, mudstone, volcaniclastic_mud","101, 101, 84"
+6643,2670,2470303,40,42.0,lght blu bedded volcaniclastic sandstone? QZ?,sandstone,100,sandstone,clastic,sedimentary_rock,sandstone,100
+6644,2670,2470303,42,44.0,lght blu bedded volcaniclastic sandstone? QZ?,sandstone,100,sandstone,clastic,sedimentary_rock,sandstone,100
+6645,2670,2470303,44,46.0,poorly BE dk blue chert,chert,101,chert,siliceous,sedimentary_rock,chert,101
+6646,2670,2470303,46,48.0,clay after pallid silstone,mud,100,mud,sediment_clastic,sediment,mud,100
+6647,2670,2470303,48,50.0,qz-chet  & clay after pallid silstone volcaniclastic?,mud,100,mud,sediment_clastic,sediment,mud,100
+6648,2670,2470303,50,52.0,qz-chet  & clay after pallid silstone volcaniclastic?,mud,100,mud,sediment_clastic,sediment,mud,100
+6649,2670,2470303,52,54.0,lght grey chert and mnr Q,chert,100,chert,siliceous,sedimentary_rock,"chert, marl","101, 44"
+6650,2670,2470303,54,56.0,lght grey chert and mnr Q,chert,100,chert,siliceous,sedimentary_rock,"chert, marl","101, 44"
+6651,2670,2470303,58,60.0,k after shale/siltstone,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+6652,2670,2470303,60,62.0,k after shale/siltstone,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+6653,2670,2470303,62,64.0,k after shale/siltstone,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+6654,2670,2470303,64,66.0,k after shale/siltstone,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+6655,2670,2470303,66,68.0,k after shale/siltstone,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+6656,2670,2470303,68,70.0,k after shale/siltstone,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+6657,2670,2470303,70,72.0,k after shale/siltstone,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+6658,2670,2470303,72,74.0,dk brn fg sandstone/siltstone ferrug and goethitic,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, iron_mud","100, 67"
+6659,2670,2470303,74,76.0,dk brn fg sandstone/siltstone ferrug and goethitic,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, iron_mud","100, 67"
+6660,2670,2470303,76,78.0,dk brn fg sandstone/siltstone ferrug and goethitic,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, iron_mud","100, 67"
+6661,2670,2470303,78,80.0,dk brn fg sandstone/siltstone ferrug and goethitic,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, iron_mud","100, 67"
+6662,2670,2470303,80,82.0,clays after shale/silstone?,mud,100,mud,sediment_clastic,sediment,mud,100
+6663,2670,2470303,82,84.0,clays after shale/silstone?,mud,100,mud,sediment_clastic,sediment,mud,100
+6664,2670,2470303,84,86.0,BIF with hematite?,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"banded_iron_formation, pegmatite","101, 82"
+6665,2670,2470303,86,88.0,BIF with hematite?,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"banded_iron_formation, pegmatite","101, 82"
+6666,2670,2470303,88,90.0,BIF with mnr sed and Qz,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"banded_iron_formation, mineralisation, vein","101, 67, 50"
+6667,2670,2470303,90,92.0,BIF with mnr sed and Qz,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"banded_iron_formation, mineralisation, vein","101, 67, 50"
+6668,2670,2470303,92,94.0,BIF with mnr sed and Qz,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"banded_iron_formation, mineralisation, vein","101, 67, 50"
+6669,2670,2470303,94,96.0,BIF mainly chert w/ trc Q and chert spotty appearance,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,"banded_iron_formation, chert","100, 100"
+6670,2670,2470303,96,98.0,BIF mainly chert w/ trc Q-C-J spotty appearance,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,banded_iron_formation,100
+6671,2670,2470303,98,100.0,BIF mainly chert w/ trc Q-C-J spotty appearance,banded_iron_formation,100,banded_iron_formation,ore,mineralisation,banded_iron_formation,100
+6672,2670,2470303,100,102.0,w/ light brn calcereous shale weathd to holes = Mnt mcrae shale?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, mudstone","101, 100"
+6673,2670,2470303,102,104.0,w/ light brn calcereous shale weathd to holes = Mnt mcrae shale?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, mudstone","101, 100"
+6674,2670,2470303,104,106.0,w/ light brn calcereous shale weathd to holes = Mnt mcrae shale?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, mudstone","101, 100"
+6675,2670,2470303,106,108.0,w/ light brn calcereous shale weathd to holes = Mnt mcrae shale?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, mudstone","101, 100"
+6676,2670,2470303,108,110.0,w/ light brn calcereous shale weathd to holes = Mnt mcrae shale?,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, mudstone","101, 100"
+6677,2670,2470303,110,112.0,w/ dissolution nodules - holey appearance,nodules,100,nodules,residual_deposit,surficial_rock,dialtion_shear_bands,39
+6678,2670,2470303,116,118.0,dk blue cherty dolomitic sediment,sediment,101,sediment,sediment,sediment,sediment,101
+6679,2670,2470303,118,120.0,deep red Fwith mnr dk blue dolomitic cherty? sediment,sediment,101,sediment,sediment,sediment,sediment,101
+6680,2670,2470303,120,122.0,deep red Fwith mnr dk blue dolomitic cherty? sediment,sediment,101,sediment,sediment,sediment,sediment,101
+6681,2670,2470303,122,124.0,dk bl mass dolomite w mnr F shales,dolostone,100,dolostone,carbonate,sedimentary_rock,mudstone,101
+6682,2670,2470303,124,126.0,dk bl mass dolomite w mnr F shales,dolostone,100,dolostone,carbonate,sedimentary_rock,mudstone,101
+6683,2670,2470303,126,128.0,dk bl mass dolomite w mnr F shales,dolostone,100,dolostone,carbonate,sedimentary_rock,mudstone,101
+6684,2670,2470303,128,130.0,trc pyrite,massive_sulphide,101,massive_sulphide,ore,mineralisation,massive_sulphide,101

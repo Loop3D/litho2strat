@@ -1,0 +1,15 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+672,592,2181767,17,18.9,Transported pisos of maghemite in a white clay matrix. Angular poorly sorted colluvium,colluvium,101,colluvium,natural_superficial_ground,surficial_rock,colluvium,101
+673,592,2181767,18,20.2,Very hard and bvuggy  hardcap/silicious G looks insitu but is followedby transported material.,colluvium,100,colluvium,natural_superficial_ground,surficial_rock,colluvium,100
+674,592,2181767,20,21.23,Pisolites of maghemite in  whit clay matrix with large clasts of hardcap possible that previous hardcap was a very large clast.,mud,100,mud,sediment_clastic,sediment,"mud, volcaniclastic_breccia","101, 44"
+675,592,2181767,21,26.21,Hardcap of bedded goethite with pebbly horizons and vughs infilled by clay/silt. Complex transport horizon,mud,100,mud,sediment_clastic,sediment,"mud, iron_mud, fault","100, 67, 67"
+676,592,2181767,26,29.95,Complex interval where bedrock is present as 8/G BUT IS FOLLED BY VERY ANGULAR FRAGMENTED MATERIAL IN A CLAY MATRIX. Maghemite  - in bands. Possible structure - fault slump of hardcap.,mud,100,mud,sediment_clastic,sediment,mud,100
+677,592,2181767,29,31.1,Bedded G + H with minor shale that is weathered through interval.,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, regolith","100, 36"
+678,592,2181767,37,40.62,Grey/green clay after shale with minor pebbly horizons.,mud,100,mud,sediment_clastic,sediment,"mudstone, fault","101, 67"
+679,592,2181767,40,44.1,Ferruginous shale weathered to clay through a very hetrogenous interval with vugh infilled by clay,mud,101,mud,sediment_clastic,sediment,"mudstone, mud, mud","101, 101, 100"
+680,592,2181767,44,49.72,Limonitic clay nneds of harder G and fissile F shale.,mudstone,101,mudstone,clastic,sedimentary_rock,"mudstone, mud","101, 100"
+681,592,2181767,49,54.57,Highly weathered G - to L clay - fissile in part,mud,100,mud,sediment_clastic,sediment,"mud, fault","100, 56"
+682,592,2181767,54,57.71,Bedded white/yellow shale with weathered to clay in part. Inc in F towards end of interval,mud,100,mud,sediment_clastic,sediment,"mud, mudstone","100, 77"
+683,592,2181767,57,60.96,F shale interbedded with grey clay after shale.,mud,101,mud,sediment_clastic,sediment,"mudstone, mudstone","101, 101"
+684,592,2181767,65,66.4,Broken rubbly soft hemtitic shale with minor weatherd hematite.,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, iron_sand","101, 67"
+685,592,2181767,68,69.12,Ferrug shale weathered to pinkish clay marker horizon?,mud,101,mud,sediment_clastic,sediment,"mudstone, mud","101, 100"

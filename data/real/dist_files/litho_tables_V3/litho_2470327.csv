@@ -1,0 +1,5 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+6751,2670,2470327,16,22.0,INSITU OR COLLUVIUM,colluvium,101,colluvium,natural_superficial_ground,surficial_rock,colluvium,101
+6752,2670,2470327,30,52.0,Roy Hill Shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+6753,2670,2470327,52,71.0,weathd Fortescue interbedded basalt and shale,mudstone,101,mudstone,clastic,sedimentary_rock,"basalt, mudstone, foredune","101, 101, 50"
+6754,2670,2470327,71,74.0,EOH; foliated basalt,basalt,101,basalt,mafic_fine_grained_crystalline,igneous_rock,"unclassified_rock, basalt","101, 101"

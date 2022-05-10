@@ -1,0 +1,6 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+2259,592,2181918,20,22.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2260,592,2181918,28,30.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2261,592,2181918,30,32.0,Gritty clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2262,592,2181918,42,44.0,Base of cover?,cover,101,cover,natural_superficial_ground,surficial_rock,cover,101
+2263,592,2181918,96,98.0,Red clay,mud,101,mud,sediment_clastic,sediment,mud,101

@@ -1,0 +1,9 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+3599,592,2182087,112,114.0,probably a fault zone,fault,100,fault,breaks,texture_structure,fault,100
+3600,592,2182087,140,142.0,very finely laminated BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+3601,592,2182087,142,144.0,very finely laminated BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+3602,592,2182087,144,146.0,very finely laminated BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+3603,592,2182087,146,148.0,very finely laminated BIF,banded_iron_formation,101,banded_iron_formation,ore,mineralisation,banded_iron_formation,101
+3604,592,2182087,192,194.0,Signif N and C trace Q vein? Contamination?,vein,100,vein,fillings,texture_structure,"vein, banded_iron_formation","100, 55"
+3605,592,2182087,244,246.0,Trace manganese. Clay ?after shale,mud,101,mud,sediment_clastic,sediment,mudstone,101
+3606,592,2182087,246,248.0,Trace ?manganeiferous shale. Very weak reaction,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100

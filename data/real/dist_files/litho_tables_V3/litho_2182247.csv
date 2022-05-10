@@ -1,0 +1,4 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+5360,592,2182247,18,20.0,White clay,mud,101,mud,sediment_clastic,sediment,mud,101
+5361,592,2182247,20,22.0,White clay,mud,101,mud,sediment_clastic,sediment,mud,101
+5362,592,2182247,22,24.0,White clay,mud,101,mud,sediment_clastic,sediment,mud,101

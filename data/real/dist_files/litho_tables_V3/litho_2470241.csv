@@ -1,0 +1,8 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+6444,2670,2470241,66,68.0,DENATURED_CHERT,chert,101,chert,siliceous,sedimentary_rock,chert,101
+6445,2670,2470241,68,70.0,DENATURED_CHERT,chert,101,chert,siliceous,sedimentary_rock,chert,101
+6446,2670,2470241,70,72.0,DENATURED_CHERT,chert,101,chert,siliceous,sedimentary_rock,chert,101
+6447,2670,2470241,72,74.0,DENATURED_CHERT,chert,101,chert,siliceous,sedimentary_rock,chert,101
+6448,2670,2470241,74,76.0,DENATURED_CHERT,chert,101,chert,siliceous,sedimentary_rock,chert,101
+6449,2670,2470241,76,78.0,DENATURED_CHERT,chert,101,chert,siliceous,sedimentary_rock,chert,101
+6450,2670,2470241,78,80.0,poss base of cover,cover,101,cover,natural_superficial_ground,surficial_rock,cover,101

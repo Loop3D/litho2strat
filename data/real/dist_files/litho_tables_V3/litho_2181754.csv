@@ -1,0 +1,7 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+504,592,2181754,5,12.0, OB colluvium. F fragments matrix supported in a fg moderately well cemented silty matrix. <5% pisoids FeOs and Maghaemite.,colluvium,100,colluvium,natural_superficial_ground,surficial_rock,"colluvium, monzonite","100, 74"
+505,592,2181754,14,16.8,Polymictic granules and pebbles to 1.5cm in clay matrix.,mud,100,mud,sediment_clastic,sediment,"mud, gravel, gravel","101, 93, 92"
+506,592,2181754,16,31.3,Poorly sorted pebbly colluvium. Polymictic clasts to 5cm in mottled cream clay matrix. Matrix variably ferruginised in mottled RB/YB zones visible on broken core faces.,mud,100,mud,sediment_clastic,sediment,"colluvium, mud","100, 100"
+507,592,2181754,31,41.5,S and F overprinted by mottled hard zones of goethitised/haemitised shale. ?Weak hardcapping of LWA? Distinctive pods/elipsoids of clay to 2.5cm on outer surface of core - ?presursors to vughs?,mud,100,mud,sediment_clastic,sediment,"mud, lamprophyre, dolostone, coarse_grained_plutonic_crystalline_igneous_rock","101, 46, 42, 0"
+508,592,2181754,59,60.9,Mottled  L YB and L RB F with mottled zones G. Mottled clay elipsoids to 5cm visible on outer surfaces of core.,mud,100,mud,sediment_clastic,sediment,"mud, mottled_zone, granulite, metamorphic_rock","100, 58, 43, 40"
+509,592,2181754,71,71.9, pink/yellow ferruginous shale horizon.,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100

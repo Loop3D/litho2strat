@@ -1,0 +1,8 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+6755,2670,2470328,8,14.0,GRADE? Cemented pisolitic gravel,gravel,101,gravel,sediment_clastic,sediment,gravel,101
+6756,2670,2470328,32,47.0,K after shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+6757,2670,2470328,54,68.0,Upper Fortescue or cover?,cover,101,cover,natural_superficial_ground,surficial_rock,"cover, foredune","101, 52"
+6758,2670,2470328,68,70.0,Upper Fortescue or cover?,cover,101,cover,natural_superficial_ground,surficial_rock,"cover, foredune","101, 52"
+6759,2670,2470328,70,80.0,Upper Fortescue or cover?,cover,101,cover,natural_superficial_ground,surficial_rock,"cover, foredune","101, 52"
+6760,2670,2470328,80,86.0,interbeded shale and basalt,basalt,101,basalt,mafic_fine_grained_crystalline,igneous_rock,"mudstone, basalt","101, 101"
+6761,2670,2470328,86,92.0,EOH; fold chl schist,schist,101,schist,schist,metamorphic_rock,"unclassified_rock, schist","101, 101"

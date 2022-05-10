@@ -1,0 +1,32 @@
+,Company_ID,CollarID,Fromdepth,Todepth,Comment,CET_Comment,Comment_Score,detailed_lithology,lithology_subgroup,lithology_group,Lithologies,Scores
+2704,592,2182021,8,10.0,and trace quartz,vein,101,vein,fillings,texture_structure,vein,101
+2705,592,2182021,16,18.0,and trace quartz. 17-18 POWDERY,vein,100,vein,fillings,texture_structure,vein,100
+2706,592,2182021,22,24.0,Goethite/Maghemite pisoids in claywith quartz. Also soil/shale,mudstone,101,mudstone,clastic,sedimentary_rock,mudstone,101
+2707,592,2182021,26,28.0,Most chips ZX in massive claythat was FGR,mud,100,mud,sediment_clastic,sediment,china_clay,47
+2708,592,2182021,28,30.0,Lacustrine hard ball clay with very minor ZX poss contamination,mud,100,mud,sediment_clastic,sediment,"mud, disturbed_ground","101, 63"
+2709,592,2182021,32,34.0,In powder and clay,mud,101,mud,sediment_clastic,sediment,"mud, gravel","101, 57"
+2710,592,2182021,48,50.0,With lacustrine clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2711,592,2182021,50,52.0,With lacustrine clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2712,592,2182021,56,58.0,With clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2713,592,2182021,70,72.0,Pink clay very small G fragments at different intervals,mud,100,mud,sediment_clastic,sediment,mud,100
+2714,592,2182021,72,74.0,Pink clay very small G fragments at different intervals,mud,100,mud,sediment_clastic,sediment,mud,100
+2715,592,2182021,74,76.0,Clay and shale with G,mud,100,mud,sediment_clastic,sediment,"mud, mudstone, bog","101, 101, 50"
+2716,592,2182021,80,82.0,White clay with small G frags. Silicified in part but also softer in part,mud,100,mud,sediment_clastic,sediment,"mud, lime_sparstone","101, 45"
+2717,592,2182021,82,84.0,Mostly shale. Ferruginous. Very small frags. Could be Goethitic. Or stillLWA,mudstone,100,mudstone,clastic,sedimentary_rock,mudstone,100
+2718,592,2182021,90,92.0,Enriched - clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2719,592,2182021,92,94.0,Softer G F? washed out of clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2720,592,2182021,94,96.0,Softer G F? washed out of clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2721,592,2182021,96,98.0,Mn mins and staining of clays/G,mud,100,mud,sediment_clastic,sediment,"mud, mine_dumps","100, 50"
+2722,592,2182021,98,100.0,Mn mins and staining of clays/G,mud,100,mud,sediment_clastic,sediment,"mud, mine_dumps","100, 50"
+2723,592,2182021,100,102.0,Mn mins and staining of clays/G,mud,100,mud,sediment_clastic,sediment,"mud, mine_dumps","100, 50"
+2724,592,2182021,102,104.0,Mn mins and staining of clays/G,mud,100,mud,sediment_clastic,sediment,"mud, mine_dumps","100, 50"
+2725,592,2182021,104,106.0,Mn mins and staining of clays/G,mud,100,mud,sediment_clastic,sediment,"mud, mine_dumps","100, 50"
+2726,592,2182021,106,108.0,Mn mins and staining of clays/G,mud,100,mud,sediment_clastic,sediment,"mud, mine_dumps","100, 50"
+2727,592,2182021,108,110.0,Mn mins and staining of clays/G,mud,100,mud,sediment_clastic,sediment,"mud, mine_dumps","100, 50"
+2728,592,2182021,116,118.0,Trace quartz + clayshale,mudstone,101,mudstone,clastic,sedimentary_rock,vein,100
+2729,592,2182021,118,120.0,Small frags of G/F shale in clay,mud,101,mud,sediment_clastic,sediment,mud,101
+2730,592,2182021,124,126.0,G softerpossibly F shale with hard G,mudstone,100,mudstone,clastic,sedimentary_rock,"mudstone, bog","101, 50"
+2731,592,2182021,126,128.0,White clay with G.,mud,100,mud,sediment_clastic,sediment,"mud, bog","101, 50"
+2732,592,2182021,138,140.0,Sloppy N clay?,mud,101,mud,sediment_clastic,sediment,mud,101
+2733,592,2182021,182,184.0,Goethite + Chert,chert,101,chert,siliceous,sedimentary_rock,chert,101
+2734,592,2182021,184,186.0,Chert + minor enriched G,chert,100,chert,siliceous,sedimentary_rock,chert,100
