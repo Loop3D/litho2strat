@@ -20,8 +20,8 @@ soil
 mud
 sand
 ################
-mudstone
-sandstone
+#mudstone
+#sandstone
 ################
 # Transcover:
 ################
