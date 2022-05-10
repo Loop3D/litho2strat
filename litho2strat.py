@@ -34,6 +34,9 @@ number_nearest_units = 2
 #---------------------------------------------------------------------------
 # Use the single closest unit for the top (first) lithology.
 single_top_unit = True
+#---------------------------------------------------------------------------
+# Minimum score for drillhole lithologies to use them.
+min_drillhole_litho_score = 80
 
 #==============================================================================
 # Missing lithos.
@@ -305,9 +308,10 @@ def read_drillsample_data(filename, header, ignore_list):
                 print("Error: number of lithos differs from the number of scores for:", row)
                 exit()
 
-            # Filter the lithos and scores based on the Ignore list of lithos.
+            # Filter the lithos and scores based on the ignore list and based on the minimum score.
             for index, litho in enumerate(lithos):
-                if (litho not in ignore_list):
+                if (litho not in ignore_list
+                    and scores[index] >= min_drillhole_litho_score):
                     data.lithos.append(litho)
                     data.scores.append(scores[index])
                     # Gather all unique lithos.
@@ -1173,7 +1177,7 @@ def main():
     #collarID = 810340
 
     # Confirmed results (using 1 closest unit & single top unit).
-    collarID = 2182336
+    #collarID = 2182336
     #collarID = 2182335
     #collarID = 2182340
     #collarID = 2182339
@@ -1182,9 +1186,9 @@ def main():
     #collarID = 2182334
 
     # TODO: Discuss with Mark - we have here conglomerate, which is rock, and then gravel, which we define as 'always Cover'. Thus we have the Cover below the rock here.
-    #collarID = 1209855
+    collarID = 1209855
 
-    drillsample_filename = "data/real/dist_files/litho_tables_V2/litho_" + str(collarID) + ".csv"
+    drillsample_filename = "data/real/dist_files/litho_tables_V3/litho_" + str(collarID) + ".csv"
     dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
 
     # Synthetic test.
