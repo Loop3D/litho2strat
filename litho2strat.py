@@ -1028,7 +1028,7 @@ def plot_unit_probabilities(all_routes, drillsample_data, unit_names):
         # Plot dots.
         axs[j].scatter(x_data, strat_distr[:, i], s=5, c=color, zorder=2)
 
-        axs[j].set_title(unit_names[i], size=9, y=0.98)
+        axs[j].set_title(unit_names[i], size=9, y=0.97)
         axs[j].set_ylabel(str(j))
 
         if (index != len(nonempty_units) - 1):
@@ -1041,6 +1041,7 @@ def plot_unit_probabilities(all_routes, drillsample_data, unit_names):
         j += 1
  
     #pl.tight_layout()
+    pl.subplots_adjust(hspace = 0.5)
  
     pl.xlabel('Depth')
     pl.show()
@@ -1185,6 +1186,8 @@ def main():
     # TODO: Discuss with Mark - we have here too long Cover...
     #collarID = 1209857
     #collarID = 353386
+
+    # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, min_drillhole_litho_score = 70)
     collarID = 2182301
 
     # (!) Has wacke at row = 28 which is not passing topology constraints! To discuss with Mark.
