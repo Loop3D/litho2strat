@@ -16,13 +16,13 @@ import tracemalloc
 import os
 
 # 'Returning to the same unit' constraints.
-max_num_returns_per_unit = 1
+max_num_returns_per_unit = 2
 #---------------------------------------------------------------------------
 # Adding thickness constraints. (Requires unit thickness data).
 add_thickness_constraints = False
 #---------------------------------------------------------------------------
 # Adding unit contacts topology (extracted from map data).
-add_topology_constraints = False
+add_topology_constraints = True
 # Ignore topology graph edge direction defining the unit age.
 ignore_unit_age = True
 #---------------------------------------------------------------------------
@@ -30,7 +30,7 @@ ignore_unit_age = True
 max_num_unit_contacts_inside_litho = 0
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
-number_nearest_units = 2000
+number_nearest_units = 3
 #---------------------------------------------------------------------------
 # Use the single closest unit for the top (first) lithology.
 single_top_unit = True
@@ -811,7 +811,7 @@ def generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_da
         all_routes_number.append(num_routes)
 
         # Print the info.
-        print("ROW = ", row, drillsample_data[row].lithos, num_routes)
+        print("ROW =", row, drillsample_data[row].depth_from, drillsample_data[row].lithos, num_routes)
 
         if (num_routes == 0):
             break
@@ -1144,8 +1144,8 @@ def generate_missing_lithos():
 def main():
     print('Started litho2strat')
 
-    generate_missing_lithos()
-    exit()
+    #generate_missing_lithos()
+    #exit()
 
     # Topology file.
     #topology_filename = "data/real/ASUD_strat.gml"
@@ -1176,6 +1176,8 @@ def main():
     #collarID = 1209857
     #collarID = 353386
     #collarID = 2182301
+
+    # (!) Has wacke at row = 28 which is not passing topology constraints! To discuss with Mark.
     #collarID = 810340
 
     # Confirmed results (using 1 closest unit & single top unit).
