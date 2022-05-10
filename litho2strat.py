@@ -30,7 +30,7 @@ ignore_unit_age = True
 max_num_unit_contacts_inside_litho = 0
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
-number_nearest_units = 200
+number_nearest_units = 2
 #---------------------------------------------------------------------------
 # Use the single closest unit for the top (first) lithology.
 single_top_unit = True
@@ -994,7 +994,7 @@ def plot_unit_probabilities(all_routes, drillsample_data, unit_names):
     for i in range(num_units):
         if (sum(strat_distr[:, i]) != 0):
             num_units_nonempty += 1
-    fig, axs = pl.subplots(num_units_nonempty, sharey=True, squeeze=False)
+    fig, axs = pl.subplots(num_units_nonempty, sharey=True, squeeze=True)
 
     fig.suptitle('Probability of occurrence for every unit.', y=0.96)
 
@@ -1018,23 +1018,23 @@ def plot_unit_probabilities(all_routes, drillsample_data, unit_names):
             continue
 
         # Plot lines.
-        axs[j, 0].plot(x_data, strat_distr[:, i], zorder=1, c='blue')
+        axs[j].plot(x_data, strat_distr[:, i], zorder=1, c='blue')
 
         # Set red color for zero data.
         color = ['red' if p <= 0 else 'blue' for p in strat_distr[:, i]]
 
         # Plot dots.
-        axs[j, 0].scatter(x_data, strat_distr[:, i], s=5, c=color, zorder=2)
+        axs[j].scatter(x_data, strat_distr[:, i], s=5, c=color, zorder=2)
 
-        axs[j, 0].set_title(unit_names[i], size=9, y=0.91)
-        axs[j, 0].set_ylabel(str(j))
+        axs[j].set_title(unit_names[i], size=9, y=0.91)
+        axs[j].set_ylabel(str(j))
 
         if (i != num_units - 1):
             # Hide tick labels.
-            axs[j, 0].set_xticklabels([])
+            axs[j].set_xticklabels([])
 
         # Add vertical lines.
-        axs[j, 0].xaxis.grid(True)
+        axs[j].xaxis.grid(True)
 
         j += 1
  
@@ -1189,7 +1189,7 @@ def main():
     #collarID = 810340
 
     # Confirmed results (using 1 closest unit & single top unit).
-    #collarID = 2182336
+    collarID = 2182336
     #collarID = 2182335
     #collarID = 2182340
     #collarID = 2182339
@@ -1198,7 +1198,7 @@ def main():
     #collarID = 2182334
 
     # (!) Cannot pass topo constraints for row = 5 for mudstone-granite contact when both sanstone and mudstone are excluded from Cover.
-    collarID = 1209855
+    #collarID = 1209855
 
     drillsample_filename = "data/real/dist_files/litho_tables_V3/litho_" + str(collarID) + ".csv"
     dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
