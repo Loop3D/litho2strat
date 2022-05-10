@@ -16,7 +16,7 @@ import tracemalloc
 import os
 
 # 'Returning to the same unit' constraints.
-max_num_returns_per_unit = 1
+max_num_returns_per_unit = 2
 #---------------------------------------------------------------------------
 # Adding thickness constraints. (Requires unit thickness data).
 add_thickness_constraints = False
@@ -30,13 +30,13 @@ ignore_unit_age = True
 max_num_unit_contacts_inside_litho = 0
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
-number_nearest_units = 6
+number_nearest_units = 200
 #---------------------------------------------------------------------------
 # Use the single closest unit for the top (first) lithology.
 single_top_unit = True
 #---------------------------------------------------------------------------
 # Minimum score for drillhole lithologies to use them.
-min_drillhole_litho_score = 80
+min_drillhole_litho_score = 70
 
 #==============================================================================
 # Missing lithos.
@@ -681,8 +681,15 @@ def generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_da
 
     litho_sequence_length = 1
 
+    # Print the starting info.
+    row = 0
+    print("Processing row =", row, drillsample_data[row].depth_from, drillsample_data[row].lithos, len(all_routes))
+
     # Going through the strata table and generating the routes.
     for row in range(1, row_max):
+        # Print the info.
+        print("Processing row =", row, drillsample_data[row].depth_from, drillsample_data[row].lithos, len(all_routes))
+
         # The drillhole lithos.
         # Note: we deliberately consider the full list of drillsample lithos instead of lithos- on the route.
         # Because considering the route lithos may lead to exponential growth of number of routes due to frequent unit change.
@@ -813,9 +820,6 @@ def generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_da
         # Update the number of routes.
         num_routes = len(all_routes)
         all_routes_number.append(num_routes)
-
-        # Print the info.
-        print("ROW =", row, drillsample_data[row].depth_from, drillsample_data[row].lithos, num_routes)
 
         if (num_routes == 0):
             break
@@ -1193,7 +1197,7 @@ def main():
     #collarID = 2182335
     #collarID = 2182334
 
-    # (!) For topo constraints need to set number_nearest_units = 6 (for granite-mudstone contact).
+    # (!) Cannot pass topo constraints for row = 5 for mudstone-granite contact when both sanstone and mudstone are excluded from Cover.
     collarID = 1209855
 
     drillsample_filename = "data/real/dist_files/litho_tables_V3/litho_" + str(collarID) + ".csv"
