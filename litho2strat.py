@@ -36,7 +36,7 @@ number_nearest_units = 2
 single_top_unit = True
 #---------------------------------------------------------------------------
 # Minimum score for drillhole lithologies to use them.
-min_drillhole_litho_score = 80
+min_drillhole_litho_score = 70
 
 #==============================================================================
 # Missing lithos.
@@ -312,12 +312,15 @@ def read_drillsample_data(filename, header, ignore_list):
             for index, litho in enumerate(lithos):
                 if (litho not in ignore_list
                     and scores[index] >= min_drillhole_litho_score):
+                    # Adding lithology and its score.
                     data.lithos.append(litho)
                     data.scores.append(scores[index])
+
                     # Gather all unique lithos.
                     all_lithos.add(litho)
 
-            all_data.append(data)
+            if (len(data.lithos) > 0):
+                all_data.append(data)
 
     print(all_lithos)
     print("The number of drillhole lithologies: " + str(len(all_lithos)))
@@ -442,7 +445,6 @@ def generate_strata_table(drillsample_data, strat_data, litho2dist):
     new_row_index = 0
 
     for row in drillsample_data[:]:
-        #litho = row.litho
         any_litho_found = False
 
         # Loop over lithos in the current drillsample row.
@@ -1142,8 +1144,8 @@ def generate_missing_lithos():
 def main():
     print('Started litho2strat')
 
-    #generate_missing_lithos()
-    #exit()
+    generate_missing_lithos()
+    exit()
 
     # Topology file.
     #topology_filename = "data/real/ASUD_strat.gml"
