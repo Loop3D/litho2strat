@@ -1,14 +1,23 @@
-basalt, gabbro, mafic, mafite
-chert, siliceous_ooze
-coal, lignite, sedimentary-rock
-syenogranite, syenite
-granite, granitoid, monzonite, felsic, aplite, monzogranite
+basalt, gabbro, mafic, mafite, foid_monzogabbro, gabbroid
+chert, siliceous_ooze, agate, opaline_chert, opaline_porcellanite, quartzose_chert
+coal, lignite, anthracite, bituminous_coal, sapropelic_coal
+sedimentary_rock, sedimentary-rock, anhydrite_stone, clastic_sediment, clastic_sedimentary_rock, deltaic_deposits, fine_crystalline_sedimentary, glacial_deposit, glacitectonite, gypsum_stone, halite_stone, interglacial_lacustrine_deposits, interglacial_marine_deposits, intertidal_deposit, iron_sediment, lacustrine_deposit, marine_deposit, morainic_deposits, olistostrome, organic_rich_sediment, peloid_phosphorite, phosphate_sediment, pisoid_phosphorite, sapropelite, siliceous_rock, supratidal_deposit
+syenogranite, syenite, foid_bearing_alkali_feldspar_syenite, foid_bearing_syenite, foid_monzosyenite, foid_syenite, syenitoid
+granite, granitoid, monzonite, felsic, aplite, monzogranite, albitized_granite, alkali_feldspar_granite
 greywacke, greywacke, wacke
-limestone, carbonate, framestone, grainstone, packstone, dolomite, wackestone, dolostone, dolomite
-sandstone, silicate_sandstone
-tuff, rhyolite
+limestone, carbonate, framestone, grainstone, grainstones, iron_grainstone, packstone, dolomite, wackestone, dolostone, dolomite, boundstone, chalk, lime_framestone, lime_grainstone, lime_microsparstone, lime_microstone, lime_mudstone, lime_pseudosparstone, lime_sediment, lime_sparstone, lime_wackestone
+sandstone, silicate_sandstone, calcarenite, lithic_arenite, paraquartzite, quartz_arenite, quartzite
+tuff, rhyolite, alkali_feldspar_rhyolite, comenditic_rhyolite
 mudstone, mud, turbidites, till
 sandstone, sand, quartzite
 obsidian, igneous felsic volcanic, volcanic, carbonatite
-banded_iron_formation, iron-formation, ironstone
-ultramafic, ultramafic-rock
+### Merge the below three lines with the above (obsidian)???
+volcanic_rock, fine_grained_volcanic_normal_crystalline_igneous_rock, foid_bearing_latite, hyaloclastite, scoria, sideromelane, spilite, tephritic_phonolite, tephritoid, tuff_breccia
+volcanoclastic, pyroclastic_sediment, volcaniclastic_sandstone, volcaniclastic_siltstone, volcaniclastic_breccia, volcaniclastic_mud
+volcanosediment, tuffaceous_sediment, tuffaceous_sedimentary_rock
+banded_iron_formation, iron-formation, ironstone, ferruginous_deposits, ilmenitite, ironstone
+ultramafic, ultramafic-rock, ultramafic_rock, fine_grained_ultramafic_rock, hornblendite, lamproite, lamprophyre, serpentinite
+amphibolite, chlorite_amphibolite, glaucophanite
+trachyte, comenditic_trachyte, foid_bearing_trachyte, quartz_trachyte, trachytic_rock
+schist, orthoschist, whiteschist
+marble, calc_silicate_rock, contact_marble, skarn

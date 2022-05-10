@@ -30,13 +30,13 @@ ignore_unit_age = True
 max_num_unit_contacts_inside_litho = 0
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
-number_nearest_units = 2
+number_nearest_units = 2000
 #---------------------------------------------------------------------------
 # Use the single closest unit for the top (first) lithology.
 single_top_unit = True
 #---------------------------------------------------------------------------
 # Minimum score for drillhole lithologies to use them.
-min_drillhole_litho_score = 70
+min_drillhole_litho_score = 80
 
 #==============================================================================
 # Missing lithos.
