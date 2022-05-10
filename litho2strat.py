@@ -39,10 +39,6 @@ single_top_unit = True
 min_drillhole_litho_score = 70
 
 #==============================================================================
-# Missing lithos.
-missing_lithos = set()
-
-#==============================================================================
 def fix_litho_name(litho):
     '''
     Convert the map lithology name to the 'CET lithology' name.
@@ -444,6 +440,9 @@ def generate_strata_table(drillsample_data, strat_data, litho2dist):
 
     new_row_index = 0
 
+    # Missing lithologies.
+    missing_lithos = set()
+
     for row in drillsample_data[:]:
         any_litho_found = False
 
@@ -513,12 +512,12 @@ def generate_strata_table(drillsample_data, strat_data, litho2dist):
 
     if (num_rows == 0):
         print('No data left!!!')
-        return np.ndarray(shape=[num_rows, num_units], dtype=object)
+        return np.ndarray(shape=[num_rows, num_units], dtype=object), set()
 
     # Remove rows due to missing lithologies.
     strata_table = strata_table[0:num_rows, :]
 
-    return strata_table
+    return strata_table, missing_lithos
 
 #==============================================================================
 '''
@@ -647,7 +646,7 @@ def generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_da
     Generating stratigraphic routes.
     '''
     # Generating the table of possible strata paths.
-    strata_table = generate_strata_table(drillsample_data, strat_data, litho2dist)
+    strata_table, missing_lithos = generate_strata_table(drillsample_data, strat_data, litho2dist)
 
     # Unit index to unit name mapping.
     unit_names = get_unit_names(strat_data)
@@ -1119,6 +1118,9 @@ def generate_missing_lithos():
     # Read the alternative rock names.
     alternative_rock_names = read_alternative_rock_names(alternative_rock_names_file)
 
+    # All missing lithologies.
+    all_missing_lithos = set()
+
     counter = 0
     for file in os.listdir(directory):
         counter = counter + 1
@@ -1145,11 +1147,13 @@ def generate_missing_lithos():
         add_cover_unit("Cover", cover_unit_filename, strat_data, litho2dist)
 
         # Generating the table of possible strata paths.
-        strata_table = generate_strata_table(drillsample_data, strat_data, litho2dist)
+        strata_table, missing_lithos = generate_strata_table(drillsample_data, strat_data, litho2dist)
+
+        all_missing_lithos.update(missing_lithos)
 
     print("Missing lithologies list:")
-    print("Number lithos missing =", len(missing_lithos))
-    print(missing_lithos)
+    print("Number lithos missing =", len(all_missing_lithos))
+    print(all_missing_lithos)
 
 #=============================================================================
 def main():
