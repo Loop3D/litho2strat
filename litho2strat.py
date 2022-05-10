@@ -16,7 +16,7 @@ import tracemalloc
 import os
 
 # 'Returning to the same unit' constraints.
-max_num_returns_per_unit = 2
+max_num_returns_per_unit = 1
 #---------------------------------------------------------------------------
 # Adding thickness constraints. (Requires unit thickness data).
 add_thickness_constraints = False
@@ -30,7 +30,7 @@ ignore_unit_age = True
 max_num_unit_contacts_inside_litho = 0
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
-number_nearest_units = 3
+number_nearest_units = 6
 #---------------------------------------------------------------------------
 # Use the single closest unit for the top (first) lithology.
 single_top_unit = True
@@ -605,6 +605,10 @@ def apply_topology_constraints(graph, unit_names, strat0, strata_list):
     Apply unit topology (connectivity) constraints:
         remove from the input unit list the units not connected to a given one (strat0).
     '''
+    # Cover can be in contact with any unit.
+    if (unit_names[strat0] == 'Cover'):
+        return
+
     if (unit_names[strat0] in graph.nodes()):
         for strat in strata_list[:]:
             if (not graph.has_edge(unit_names[strat0], unit_names[strat])):
@@ -1189,7 +1193,7 @@ def main():
     #collarID = 2182335
     #collarID = 2182334
 
-    # TODO: Discuss with Mark - we have here conglomerate, which is rock, and then gravel, which we define as 'always Cover'. Thus we have the Cover below the rock here.
+    # (!) For topo constraints need to set number_nearest_units = 6 (for granite-mudstone contact).
     collarID = 1209855
 
     drillsample_filename = "data/real/dist_files/litho_tables_V3/litho_" + str(collarID) + ".csv"
