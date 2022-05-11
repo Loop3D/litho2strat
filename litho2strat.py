@@ -6,14 +6,10 @@
   The University of Western Australia
 '''
 
-import csv
 import numpy as np
 import matplotlib.pylab as pl
 import networkx as nx
-from dataclasses import dataclass, field
-from typing import List
-import tracemalloc
-import os
+#import tracemalloc
 
 from strata_solver import generate_strat_routes, get_unit_names
 from data_readers import read_strat_data, read_drillsample_data, read_thickness_data, \

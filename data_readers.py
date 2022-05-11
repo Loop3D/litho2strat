@@ -11,7 +11,6 @@ import numpy as np
 import networkx as nx
 from dataclasses import dataclass, field
 from typing import List
-import os
 
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
