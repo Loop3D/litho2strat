@@ -18,9 +18,6 @@ max_num_unit_contacts_inside_litho = 0
 #---------------------------------------------------------------------------
 # Use the single closest unit for the top (first) lithology.
 single_top_unit = True
-#---------------------------------------------------------------------------
-# The number of nearest units (for distance constraints).
-number_nearest_units = 3
 
 #========================================================================================================
 @dataclass
@@ -65,8 +62,8 @@ def filter_strat_data_based_on_drillhole_lithos(strat_data, drillsample_data):
 
     return strat_filtered
 
-#==============================================================================
-def filter_strat_data_based_on_distance(strat_data, litho2dist):
+#=======================================================================================
+def filter_strat_data_based_on_distance(strat_data, litho2dist, number_nearest_units):
     '''
     Filter units based on the distance from drillhole.
     '''

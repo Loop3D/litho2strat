@@ -26,6 +26,9 @@ add_thickness_constraints = False
 #---------------------------------------------------------------------------
 # Adding unit contacts topology (extracted from map data).
 add_topology_constraints = True
+#---------------------------------------------------------------------------
+# The number of nearest units (for distance constraints).
+number_nearest_units = 3
 
 #==============================================================================
 def write_routes_to_file(filename, drillsample_data, all_routes):
@@ -308,7 +311,7 @@ def generate_missing_lithos():
         # Filter strat data.
         # TODO: Move to one function that applies these two filters/constraints.
         strat_data = filter_strat_data_based_on_drillhole_lithos(strat_data, drillsample_data)
-        strat_data = filter_strat_data_based_on_distance(strat_data, litho2dist)
+        strat_data = filter_strat_data_based_on_distance(strat_data, litho2dist, number_nearest_units)
 
         # Read the Cover unit lithologies.
         add_cover_unit("Cover", cover_unit_filename, strat_data, litho2dist)
@@ -407,7 +410,7 @@ def main():
     # Filter strat data.
     # TODO: Move to one function that applies these two filters/constraints.
     strat_data = filter_strat_data_based_on_drillhole_lithos(strat_data, drillsample_data)
-    strat_data = filter_strat_data_based_on_distance(strat_data, litho2dist)
+    strat_data = filter_strat_data_based_on_distance(strat_data, litho2dist, number_nearest_units)
 
     # Read the Cover unit lithologies.
     add_cover_unit("Cover", cover_unit_filename, strat_data, litho2dist)
