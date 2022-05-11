@@ -654,6 +654,8 @@ def generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_da
     num_rows = strata_table.shape[0]
     num_units = strata_table.shape[1]
 
+    add_thickness_constraints = (len(thickness_data) > 0)
+
     # Extract strata thikcness to lists (faster data structures).
     min_strata_thickness = get_min_strata_thickness(thickness_data)
     max_strata_thickness = get_max_strata_thickness(thickness_data)
