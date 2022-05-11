@@ -12,10 +12,6 @@ import networkx as nx
 from dataclasses import dataclass, field
 from typing import List
 
-#---------------------------------------------------------------------------
-# Ignore topology graph edge direction defining the unit age.
-ignore_unit_age = True
-
 #==============================================================================
 def fix_litho_name(litho):
     '''
@@ -277,7 +273,7 @@ def read_thickness_data(filename):
     return data
 
 #==============================================================================
-def read_topology_data(topology_filename):
+def read_topology_data(topology_filename, ignore_unit_age):
     '''
     Read topology data (gml format graph) from a file.
     '''

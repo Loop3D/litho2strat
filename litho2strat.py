@@ -26,6 +26,8 @@ add_thickness_constraints = False
 #---------------------------------------------------------------------------
 # Adding unit contacts topology (extracted from map data).
 add_topology_constraints = True
+# Ignore topology graph edge direction defining the unit age.
+ignore_unit_age = True
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
 number_nearest_units = 3
@@ -431,7 +433,7 @@ def main():
     # Read topology data.
     graph = nx.Graph()
     if (add_topology_constraints):
-        graph = read_topology_data(topology_filename)
+        graph = read_topology_data(topology_filename, ignore_unit_age)
         # Sanity check: check that strata units exist in the graph.
         for unit_name in strat_data:
             if unit_name not in graph.nodes():
