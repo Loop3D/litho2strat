@@ -318,52 +318,6 @@ def read_drillsample_data(filename, header, ignore_list):
     return all_data
 
 #==============================================================================
-def group_drillhole_litho_sequence(data):
-    '''
-    Group the litho sequence by name (inside the drillhole data), leaving at most N in each group,
-    corresponding to number of contacts inside the litho sequence.
-    '''
-    data_grouped = []
-    N = max_num_unit_contacts_inside_litho + 1
-    current_litho = ""
-    from_depth = float(data[0][0])
-    to_depth = float(data[0][1])
-
-    data_mod = [d for d in data]
-    data_mod.append([0, 0, "last_litho_name_for_following_calculation"])
-
-    for index, row in enumerate(data_mod):
-
-        prev_litho = current_litho
-        current_litho = row[2]
-
-        if (current_litho != prev_litho and index > 0):
-        # Change of litho name.
-            total_thickness = to_depth - from_depth
-            local_thickness = total_thickness / float(N)
-            litho = prev_litho
-
-            print("Grouping lithos for:", from_depth, to_depth, litho)
-
-            # Generate local grouped lithos.
-            for i in range(N):
-                from_depth_local = from_depth + float(i) * local_thickness
-                to_depth_local = from_depth_local + local_thickness
-
-                row_grouped = list(range(3))
-                row_grouped[0] = from_depth_local
-                row_grouped[1] = to_depth_local
-                row_grouped[2] = litho
-
-                data_grouped.append(row_grouped)
-
-            # Update the starting depth for the following grouped lithos.
-            from_depth = float(row[0])
-        to_depth = float(row[1])
-
-    return data_grouped
-
-#==============================================================================
 def read_thickness_data(filename):
     '''
     Reading thickness data from csv file.
@@ -811,10 +765,6 @@ def main():
 
     # Read drill sample data.
     drillsample_data = read_drillsample_data(drillsample_filename, drillsample_header, ignore_list)
-
-    # Group the litho sequence inside the drillhole data.
-    # Commented because it leads to many additional routes when splitting the existing single lithos.
-    #drillsample_data = group_drillhole_litho_sequence(drillsample_data)
 
     # Read the alternative rock names.
     alternative_rock_names = read_alternative_rock_names(alternative_rock_names_file)
