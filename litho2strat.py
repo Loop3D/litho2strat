@@ -11,7 +11,9 @@ import matplotlib.pylab as pl
 import networkx as nx
 #import tracemalloc
 
-from strata_solver import generate_strat_routes, get_unit_names
+from strata_solver import generate_strat_routes, get_unit_names, \
+    filter_strat_data_based_on_drillhole_lithos, filter_strat_data_based_on_distance
+
 from data_readers import read_strat_data, read_drillsample_data, read_thickness_data, \
     read_topology_data, read_ignore_list, read_alternative_rock_names, \
     DrillSampleHeader, add_unit_to_distance_map
@@ -22,17 +24,6 @@ add_thickness_constraints = False
 #---------------------------------------------------------------------------
 # Adding unit contacts topology (extracted from map data).
 add_topology_constraints = True
-
-#==============================================================================
-def get_drillhole_lithos(drillsample_data):
-    '''
-    Returns the drillhole lithologies from drillsample data.
-    '''
-    all_lithos = set()
-    for row in drillsample_data:
-        lithos = row.lithos
-        all_lithos.update(lithos)
-    return all_lithos
 
 #==============================================================================
 def write_routes_to_file(filename, drillsample_data, all_routes):
@@ -310,8 +301,7 @@ def generate_missing_lithos():
         drillsample_data = read_drillsample_data(drillsample_filename, drillsample_header, ignore_list)
 
         # Unit lithologies and distance data.
-        drillhole_lithos = get_drillhole_lithos(drillsample_data)
-        strat_data, litho2dist = read_strat_data(dist_table_filename, drillhole_lithos, alternative_rock_names)
+        strat_data, litho2dist = read_strat_data(dist_table_filename, alternative_rock_names)
 
         # Read the Cover unit lithologies.
         add_cover_unit("Cover", cover_unit_filename, strat_data, litho2dist)
@@ -405,8 +395,12 @@ def main():
     alternative_rock_names = read_alternative_rock_names(alternative_rock_names_file)
 
     # Read unit lithologies and distance data.
-    drillhole_lithos = get_drillhole_lithos(drillsample_data)
-    strat_data, litho2dist = read_strat_data(dist_table_filename, drillhole_lithos, alternative_rock_names)
+    strat_data, litho2dist = read_strat_data(dist_table_filename, alternative_rock_names)
+
+    # Filter strat data.
+    # TODO: Move to one function that applies these two filters/constraints.
+    strat_data = filter_strat_data_based_on_drillhole_lithos(strat_data, drillsample_data)
+    strat_data = filter_strat_data_based_on_distance(strat_data, litho2dist)
 
     # Read the Cover unit lithologies.
     add_cover_unit("Cover", cover_unit_filename, strat_data, litho2dist)

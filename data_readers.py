@@ -13,9 +13,6 @@ from dataclasses import dataclass, field
 from typing import List
 
 #---------------------------------------------------------------------------
-# The number of nearest units (for distance constraints).
-number_nearest_units = 3
-#---------------------------------------------------------------------------
 # Minimum score for drillhole lithologies to use them.
 min_drillhole_litho_score = 70
 #---------------------------------------------------------------------------
@@ -73,7 +70,7 @@ def add_unit_to_distance_map(unit_name, distance, lithos, litho2dist):
         litho2dist[litho].sort(key=lambda tup: tup[0])
 
 #====================================================================================
-def read_strat_data(dist_table_filename, drillhole_lithos, alternative_rock_names):
+def read_strat_data(dist_table_filename, alternative_rock_names):
     '''
     Building lithologies list for every unit from csv file data.
     '''
@@ -151,7 +148,7 @@ def read_strat_data(dist_table_filename, drillhole_lithos, alternative_rock_name
             lithos = list(dict.fromkeys(lithos))
 
             #=========================================
-            # Store the sorted distance map.
+            # Store unit in the sorted distance map.
             #=========================================
             add_unit_to_distance_map(unit_name, distance, lithos, litho2dist)
 
@@ -172,51 +169,7 @@ def read_strat_data(dist_table_filename, drillhole_lithos, alternative_rock_name
     print(unique_lithos)
     print("The total number of lithologies: " + str(len(unique_lithos)))
 
-    #=====================================================================
-    # Filter units based on the drillhole lithologies: 
-    # Remove lithologies, that are not present in the drillhole data.
-    # Remove the units that do not contain the drillhole lithos.
-    #=====================================================================
-    strat_filtered = dict()
-    for unit_name in strat_all:
-        for litho in strat_all[unit_name]:
-            # Only add lithologies that are present in drillhole data.
-            if (litho in drillhole_lithos):
-                if (unit_name in strat_filtered):
-                    strat_filtered[unit_name].append(litho)
-                else:
-                    strat_filtered[unit_name] = [litho]
-
-    print("The number of filtered units: " + str(len(strat_filtered)))
-
-    #=====================================================================
-    unique_lithos = get_unique_lithos_from_strat_data(strat_filtered)
-
-    print(unique_lithos)
-    print("The filtered number of lithologies: " + str(len(unique_lithos)))
-
-    #=====================================================================
-    # Filter units based on the distance from drillhole.
-    #=====================================================================
-    strat_dist = dict()
-    for unit_name in strat_filtered:
-        for litho in strat_filtered[unit_name]:
-            # Sorted distance list for this lithology.
-            dist_list = litho2dist[litho]
-
-            # Consider only N closest codes.
-            for el in dist_list[:number_nearest_units]:
-                unit_name_nearest = el[1]
-                if (unit_name == unit_name_nearest):
-                    if (unit_name in strat_dist):
-                        strat_dist[unit_name].append(litho)
-                    else:
-                        strat_dist[unit_name] = [litho]
-                    break
-
-    print("The number of filtered (by distance) units: " + str(len(strat_dist)))
-
-    return strat_dist, litho2dist
+    return strat_all, litho2dist
 
 #========================================================================================
 def test_column_exist(column_name, fieldnames):

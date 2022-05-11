@@ -18,6 +18,9 @@ max_num_unit_contacts_inside_litho = 0
 #---------------------------------------------------------------------------
 # Use the single closest unit for the top (first) lithology.
 single_top_unit = True
+#---------------------------------------------------------------------------
+# The number of nearest units (for distance constraints).
+number_nearest_units = 3
 
 #========================================================================================================
 @dataclass
@@ -27,6 +30,65 @@ class StrataTableElement:
     '''
     path_exists: bool = False
     lithos: List[str] = field(default_factory=list)
+
+#==============================================================================
+def get_drillhole_lithos(drillsample_data):
+    '''
+    Returns the drillhole lithologies from drillsample data.
+    '''
+    all_lithos = set()
+    for row in drillsample_data:
+        lithos = row.lithos
+        all_lithos.update(lithos)
+    return all_lithos
+
+#========================================================================================================
+def filter_strat_data_based_on_drillhole_lithos(strat_data, drillsample_data):
+    '''
+    Filter units based on the drillhole lithologies: 
+        - Remove lithologies, that are not present in the drillhole data.
+        - Remove the units that do not contain the drillhole lithos.
+    '''
+    drillhole_lithos = get_drillhole_lithos(drillsample_data)
+
+    strat_filtered = dict()
+    for unit_name in strat_data:
+        for litho in strat_data[unit_name]:
+            # Only add lithologies that are present in drillhole data.
+            if (litho in drillhole_lithos):
+                if (unit_name in strat_filtered):
+                    strat_filtered[unit_name].append(litho)
+                else:
+                    strat_filtered[unit_name] = [litho]
+
+    print("The number of filtered units: " + str(len(strat_filtered)))
+
+    return strat_filtered
+
+#==============================================================================
+def filter_strat_data_based_on_distance(strat_data, litho2dist):
+    '''
+    Filter units based on the distance from drillhole.
+    '''
+    strat_dist = dict()
+    for unit_name in strat_data:
+        for litho in strat_data[unit_name]:
+            # Sorted distance list for this lithology.
+            dist_list = litho2dist[litho]
+
+            # Consider only N closest unit codes.
+            for el in dist_list[:number_nearest_units]:
+                unit_name_nearest = el[1]
+                if (unit_name == unit_name_nearest):
+                    if (unit_name in strat_dist):
+                        strat_dist[unit_name].append(litho)
+                    else:
+                        strat_dist[unit_name] = [litho]
+                    break
+
+    print("The number of filtered (by distance) units: " + str(len(strat_dist)))
+
+    return strat_dist
 
 #==============================================================================
 def generate_strata_table(drillsample_data, strat_data, litho2dist):
