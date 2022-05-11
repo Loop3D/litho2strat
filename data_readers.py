@@ -13,9 +13,6 @@ from dataclasses import dataclass, field
 from typing import List
 
 #---------------------------------------------------------------------------
-# Minimum score for drillhole lithologies to use them.
-min_drillhole_litho_score = 70
-#---------------------------------------------------------------------------
 # Ignore topology graph edge direction defining the unit age.
 ignore_unit_age = True
 
@@ -203,7 +200,7 @@ class DrillSampleDataRow:
     scores: List[int] = field(default_factory=list)
 
 #========================================================================================================
-def read_drillsample_data(filename, header, ignore_list):
+def read_drillsample_data(filename, header, ignore_list, min_litho_score):
     '''
     Reading drill sample data from csv file.
     '''
@@ -244,7 +241,7 @@ def read_drillsample_data(filename, header, ignore_list):
             # Filter the lithos and scores based on the ignore list and based on the minimum score.
             for index, litho in enumerate(lithos):
                 if (litho not in ignore_list
-                    and scores[index] >= min_drillhole_litho_score):
+                    and scores[index] >= min_litho_score):
                     # Adding lithology and its score.
                     data.lithos.append(litho)
                     data.scores.append(scores[index])

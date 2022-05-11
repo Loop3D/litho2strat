@@ -29,6 +29,9 @@ add_topology_constraints = True
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
 number_nearest_units = 3
+#---------------------------------------------------------------------------
+# Minimum score for drillhole lithologies to use them.
+min_drillhole_litho_score = 70
 
 #==============================================================================
 def write_routes_to_file(filename, drillsample_data, all_routes):
@@ -303,7 +306,7 @@ def generate_missing_lithos():
         #dist_table_filename = "data/real/dh_files/dist_tables/100k_map_near_" + str(collarID) + ".csv"
 
         # Drill sample data.
-        drillsample_data = read_drillsample_data(drillsample_filename, drillsample_header, ignore_list)
+        drillsample_data = read_drillsample_data(drillsample_filename, drillsample_header, ignore_list, min_drillhole_litho_score)
 
         # Unit lithologies and distance data.
         strat_data, litho2dist = read_strat_data(dist_table_filename, alternative_rock_names)
@@ -404,7 +407,7 @@ def main():
     ignore_list = read_ignore_list(ignore_list_filename)
 
     # Read drill sample data.
-    drillsample_data = read_drillsample_data(drillsample_filename, drillsample_header, ignore_list)
+    drillsample_data = read_drillsample_data(drillsample_filename, drillsample_header, ignore_list, min_drillhole_litho_score)
 
     # Read the alternative rock names.
     alternative_rock_names = read_alternative_rock_names(alternative_rock_names_file)
