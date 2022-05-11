@@ -9,10 +9,12 @@
 import numpy as np
 import matplotlib.pylab as pl
 import networkx as nx
+import os
 #import tracemalloc
 
 from strata_solver import generate_strat_routes, get_unit_names, \
-    filter_strat_data_based_on_drillhole_lithos, filter_strat_data_based_on_distance
+    filter_strat_data_based_on_drillhole_lithos, filter_strat_data_based_on_distance, \
+    generate_strata_table
 
 from data_readers import read_strat_data, read_drillsample_data, read_thickness_data, \
     read_topology_data, read_ignore_list, read_alternative_rock_names, \
@@ -302,6 +304,11 @@ def generate_missing_lithos():
 
         # Unit lithologies and distance data.
         strat_data, litho2dist = read_strat_data(dist_table_filename, alternative_rock_names)
+
+        # Filter strat data.
+        # TODO: Move to one function that applies these two filters/constraints.
+        strat_data = filter_strat_data_based_on_drillhole_lithos(strat_data, drillsample_data)
+        strat_data = filter_strat_data_based_on_distance(strat_data, litho2dist)
 
         # Read the Cover unit lithologies.
         add_cover_unit("Cover", cover_unit_filename, strat_data, litho2dist)
