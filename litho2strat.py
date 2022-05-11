@@ -358,6 +358,9 @@ def main():
     # Mark's data with known solutions.
     #----------------------------------------------------------------------------
 
+    # (!) Cannot pass topo constraints for row = 5 for mudstone-granite contact when both sanstone and mudstone are excluded from Cover.
+    #collarID = 1209855
+
     # (!) Gravel issue for CollarId=1209857, at depth=244m
     #collarID = 1209857
 
@@ -379,8 +382,10 @@ def main():
     #collarID = 2182335
     #collarID = 2182334
 
-    # (!) Cannot pass topo constraints for row = 5 for mudstone-granite contact when both sanstone and mudstone are excluded from Cover.
-    #collarID = 1209855
+    # (!) Strange gravel at 10m, which looks like real gravel, but there are ricks above...
+    #collarID = 2470303
+    # (!) Strange gravel at 4m, which looks like real gravel, but there are ricks above...
+    #collarID = 2470304
 
     drillsample_filename = "data/real/dist_files/litho_tables_V3/litho_" + str(collarID) + ".csv"
     dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
