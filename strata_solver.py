@@ -137,8 +137,7 @@ def generate_strata_table(drillsample_data, strat_data, litho2dist):
                             closest_unit_distance = item[0]
                             break
 
-                    if (closest_unit_distance > 0):
-                        print("WARNING: The closest distance to the top unit > 0! Dist =", closest_unit_distance)
+                    print('Closest top unit info (litho, unit, distance):', [litho, closest_unit, closest_unit_distance])
 
                     for unit_name in strat_data:
                         if (unit_name == closest_unit or (add_cover and unit_name == 'Cover')):
@@ -146,6 +145,7 @@ def generate_strata_table(drillsample_data, strat_data, litho2dist):
                             unit_index = unit_names.index(unit_name)
                             strata_table[new_row_index, unit_index].path_exists = True
                             strata_table[new_row_index, unit_index].lithos.append(litho)
+
             else:
                 for unit_name in strat_data:
                     if (litho in strat_data[unit_name]):
