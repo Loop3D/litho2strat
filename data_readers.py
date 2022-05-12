@@ -94,6 +94,9 @@ def read_strat_data(dist_table_filename, alternative_rock_names):
     # Lithology to distance and unitname mapping.
     litho2dist = dict()
 
+    # List of unique lithos in the map data (disregarding the alternative names).
+    unique_lithos_original = set()
+
     with open(dist_table_filename, 'r') as csvfile:
         # Reading the csv data.
         csvreader = csv.reader(csvfile, delimiter=',')
@@ -130,6 +133,9 @@ def read_strat_data(dist_table_filename, alternative_rock_names):
             lithos = [fix_litho_name(l) for l in lithos]
 
             #-----------------------------------------
+            unique_lithos_original.update(lithos)
+
+            #-----------------------------------------
             # Adding the alternative litho names.
             #-----------------------------------------
             alt_lithos = []
@@ -161,10 +167,8 @@ def read_strat_data(dist_table_filename, alternative_rock_names):
     print("The total number of units: " + str(len(strat_all)))
 
     #------------------------------------------------------------------------
-    unique_lithos = get_unique_lithos_from_strat_data(strat_all)
-
-    print("The total number of lithologies: " + str(len(unique_lithos)))
-    print(unique_lithos)
+    print("The total number of (original) lithologies: " + str(len(unique_lithos_original)))
+    print(sorted(unique_lithos_original))
 
     return strat_all, litho2dist
 
