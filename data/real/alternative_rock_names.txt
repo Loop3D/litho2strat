@@ -10,10 +10,8 @@ sandstone, silicate_sandstone, calcarenite, lithic_arenite, paraquartzite, quart
 tuff, rhyolite, alkali_feldspar_rhyolite, comenditic_rhyolite
 mudstone, mud, turbidites, till
 sandstone, sand, quartzite
-obsidian, igneous felsic volcanic, volcanic, carbonatite
-### Merge the below three lines with the above (obsidian)???
-volcanic_rock, fine_grained_volcanic_normal_crystalline_igneous_rock, foid_bearing_latite, hyaloclastite, scoria, sideromelane, spilite, tephritic_phonolite, tephritoid, tuff_breccia
-volcanoclastic, pyroclastic_sediment, volcaniclastic_sandstone, volcaniclastic_siltstone, volcaniclastic_breccia, volcaniclastic_mud
+obsidian, igneous felsic volcanic, volcanic, carbonatite, volcanic_rock, fine_grained_volcanic_normal_crystalline_igneous_rock, foid_bearing_latite, hyaloclastite, scoria, sideromelane, spilite, tephritic_phonolite, tephritoid, tuff_breccia
+volcanic, volcanoclastic, pyroclastic_sediment, volcaniclastic_sandstone, volcaniclastic_siltstone, volcaniclastic_breccia, volcaniclastic_mud
 volcanosediment, tuffaceous_sediment, tuffaceous_sedimentary_rock
 banded_iron_formation, iron-formation, ironstone, ferruginous_deposits, ilmenitite, ironstone
 ultramafic, ultramafic-rock, ultramafic_rock, fine_grained_ultramafic_rock, hornblendite, lamproite, lamprophyre, serpentinite
@@ -21,3 +19,8 @@ amphibolite, chlorite_amphibolite, glaucophanite
 trachyte, comenditic_trachyte, foid_bearing_trachyte, quartz_trachyte, trachytic_rock
 schist, orthoschist, whiteschist
 marble, calc_silicate_rock, contact_marble, skarn
+metasomatic_rock, albitized_granite
+migmatite, gneiss, paragneiss, orthogneiss
+marl, lime_mudstone
+morainic_deposits, till
+gypsum_stone, evaporite
