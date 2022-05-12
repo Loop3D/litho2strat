@@ -30,10 +30,10 @@ add_topology_constraints = True
 ignore_unit_age = True
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
-number_nearest_units = 3
+number_nearest_units = 2
 #---------------------------------------------------------------------------
 # Minimum score for drillhole lithologies to use them.
-min_drillhole_litho_score = 70
+min_drillhole_litho_score = 80
 
 #==============================================================================
 def write_routes_to_file(filename, drillsample_data, all_routes):
@@ -334,8 +334,8 @@ def generate_missing_lithos():
 def main():
     print('Started litho2strat')
 
-    #generate_missing_lithos()
-    #exit()
+    generate_missing_lithos()
+    exit()
 
     # Topology file.
     #topology_filename = "data/real/ASUD_strat.gml"
@@ -373,7 +373,7 @@ def main():
     #collarID = 353386
 
     # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, min_drillhole_litho_score = 70)
-    collarID = 2182301
+    #collarID = 2182301
 
     # (!) Has wacke at row = 28 which is not passing topology constraints! To discuss with Mark.
     #collarID = 810340
@@ -391,6 +391,9 @@ def main():
     #collarID = 2470303
     # (!) Strange gravel at 4m, which looks like real gravel, but there are ricks above...
     #collarID = 2470304
+
+    # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, min_drillhole_litho_score = 70)
+    collarID = 2182076
 
     drillsample_filename = "data/real/dist_files/litho_tables_V3/litho_" + str(collarID) + ".csv"
     dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"

@@ -19,8 +19,5 @@ amphibolite, chlorite_amphibolite, glaucophanite
 trachyte, comenditic_trachyte, foid_bearing_trachyte, quartz_trachyte, trachytic_rock
 schist, orthoschist, whiteschist
 marble, calc_silicate_rock, contact_marble, skarn
-metasomatic_rock, albitized_granite
 migmatite, gneiss, paragneiss, orthogneiss
-marl, lime_mudstone
-morainic_deposits, till
 gypsum_stone, evaporite
