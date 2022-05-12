@@ -17,6 +17,9 @@ def fix_litho_name(litho):
     '''
     Convert the map lithology name to the 'CET lithology' name.
     '''
+    # Stripping the whitespaces.
+    litho = litho.strip()
+
     # Convert things like metagranite to granite.
     if (litho[0:4] == 'meta'):
         litho = litho[4:]
@@ -108,10 +111,10 @@ def read_strat_data(dist_table_filename, alternative_rock_names):
             # Convert the unitname to align it with format used in the topology graph.
             unit_name = unit_name.replace(" ", "_").replace(",", "_")
 
-            #=========================================
+            #-----------------------------------------
             # Hard fixes for "mudstone" and "coal". 
             # TODO: Fix the original data.
-            #=========================================
+            #-----------------------------------------
             lithname1 = row[lithname1_column]
             if ("mudstone" in lithname1):
                 lithos.append("mudstone")
@@ -121,14 +124,14 @@ def read_strat_data(dist_table_filename, alternative_rock_names):
                 lithos.append("coal")
                 lithos.append("lignite")
 
-            #=========================================
+            #-----------------------------------------
             # Fixing the litho names.
-            #=========================================
+            #-----------------------------------------
             lithos = [fix_litho_name(l) for l in lithos]
 
-            #=========================================
+            #-----------------------------------------
             # Adding the alternative litho names.
-            #=========================================
+            #-----------------------------------------
             alt_lithos = []
             for litho in lithos:
                 for alt_names in alternative_rock_names:
@@ -140,13 +143,14 @@ def read_strat_data(dist_table_filename, alternative_rock_names):
             # Remove duplicates.
             lithos = list(dict.fromkeys(lithos))
 
-            #=========================================
+            #-----------------------------------------
             # Store unit in the sorted distance map.
-            #=========================================
+            #-----------------------------------------
             add_unit_to_distance_map(unit_name, distance, lithos, litho2dist)
 
-            #=========================================
+            #-----------------------------------------
             # Adding the lithos to the dictionary (excluding the duplicates).
+            #-----------------------------------------
             if unit_name in strat_all:
                 for litho in lithos:
                     if litho not in strat_all[unit_name]:
@@ -156,11 +160,11 @@ def read_strat_data(dist_table_filename, alternative_rock_names):
 
     print("The total number of units: " + str(len(strat_all)))
 
-    #=====================================================================
+    #------------------------------------------------------------------------
     unique_lithos = get_unique_lithos_from_strat_data(strat_all)
 
-    print(unique_lithos)
     print("The total number of lithologies: " + str(len(unique_lithos)))
+    print(unique_lithos)
 
     return strat_all, litho2dist
 
@@ -236,6 +240,9 @@ def read_drillsample_data(filename, header, ignore_list, min_litho_score):
 
             # Filter the lithos and scores based on the ignore list and based on the minimum score.
             for index, litho in enumerate(lithos):
+                # Stripping the whitespaces.
+                litho = litho.strip()
+
                 if (litho not in ignore_list
                     and scores[index] >= min_litho_score):
                     # Adding lithology and its score.
