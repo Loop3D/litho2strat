@@ -365,6 +365,8 @@ def generate_strat_routes(spar, strat_data, litho2dist, drillsample_data, thickn
     '''
     Generating stratigraphic routes.
     '''
+    print('Starting strata solver with:', spar)
+
     # Generating the table of possible strata paths.
     strata_table, missing_lithos = generate_strata_table(drillsample_data, strat_data, litho2dist, spar.single_top_unit)
 

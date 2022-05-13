@@ -21,7 +21,6 @@ from data_readers import read_strat_data, read_drillsample_data, read_thickness_
     read_topology_data, read_ignore_list, read_alternative_rock_names, \
     DrillSampleHeader, add_unit_to_distance_map
 
-spar = StrataSolverParameters()
 #==============================================================================
 # Adding unit contacts topology (extracted from map data).
 add_topology_constraints = True
@@ -29,7 +28,7 @@ add_topology_constraints = True
 ignore_unit_age = True
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
-number_nearest_units = 2
+number_nearest_units = 3
 #---------------------------------------------------------------------------
 # Minimum score for drillhole lithologies to use them.
 min_drillhole_litho_score = 70
@@ -38,6 +37,8 @@ min_drillhole_litho_score = 70
 # Note: use this for max_num_unit_contacts_inside_litho > 0 to avoid the solution number to blow.
 group_drillhole_lithos = False
 #---------------------------------------------------------------------------
+spar = StrataSolverParameters()
+
 # 'Returning to the same unit' constraints.
 spar.max_num_returns_per_unit = 2
 #---------------------------------------------------------------------------
@@ -385,10 +386,10 @@ def main():
     #collarID = 1209857
 
     # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, max_num_unit_contacts_inside_litho = 0)
-    collarID = 353386
+    #collarID = 353386
 
     # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, max_num_unit_contacts_inside_litho = 0)
-    #collarID = 2182301
+    collarID = 2182301
 
     # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, max_num_unit_contacts_inside_litho = 0)
     #collarID = 2182076
@@ -409,6 +410,8 @@ def main():
     #collarID = 2470303
     # (!) Strange gravel at 4m, which looks like real gravel, but there are rocks above...
     #collarID = 2470304
+
+    print('collarID =', collarID)
 
     drillsample_filename = "data/real/dist_files/litho_tables_V3/litho_" + str(collarID) + ".csv"
     dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
