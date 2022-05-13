@@ -25,7 +25,7 @@ from data_readers import read_strat_data, read_drillsample_data, read_thickness_
 add_thickness_constraints = False
 #---------------------------------------------------------------------------
 # Adding unit contacts topology (extracted from map data).
-add_topology_constraints = True
+add_topology_constraints = False
 # Ignore topology graph edge direction defining the unit age.
 ignore_unit_age = True
 #---------------------------------------------------------------------------
@@ -398,8 +398,8 @@ def main():
     dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
 
     # Synthetic test.
-    #drillsample_filename = "data/real/test/litho_1.csv"
-    #dist_table_filename = "data/real/test/map_1.csv"
+    drillsample_filename = "data/real/test/litho_2.csv"
+    dist_table_filename = "data/real/test/map_2.csv"
 
     # Drillsample data column names.
     drillsample_header = DrillSampleHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
