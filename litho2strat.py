@@ -15,18 +15,16 @@ import os
 from strata_solver import generate_strat_routes, get_unit_names, \
     filter_strat_data_based_on_drillhole_lithos, filter_strat_data_based_on_distance, \
     generate_strata_table, group_drillhole_litho_sequence, \
-    max_num_unit_contacts_inside_litho
+    StrataSolverParameters
 
 from data_readers import read_strat_data, read_drillsample_data, read_thickness_data, \
     read_topology_data, read_ignore_list, read_alternative_rock_names, \
     DrillSampleHeader, add_unit_to_distance_map
 
-#---------------------------------------------------------------------------
-# Adding thickness constraints. (Requires unit thickness data).
-add_thickness_constraints = False
-#---------------------------------------------------------------------------
+spar = StrataSolverParameters()
+#==============================================================================
 # Adding unit contacts topology (extracted from map data).
-add_topology_constraints = False
+add_topology_constraints = True
 # Ignore topology graph edge direction defining the unit age.
 ignore_unit_age = True
 #---------------------------------------------------------------------------
@@ -34,11 +32,24 @@ ignore_unit_age = True
 number_nearest_units = 2
 #---------------------------------------------------------------------------
 # Minimum score for drillhole lithologies to use them.
-min_drillhole_litho_score = 80
+min_drillhole_litho_score = 70
 #---------------------------------------------------------------------------
 # Group drillhole lithology sequence.
 # Note: use this for max_num_unit_contacts_inside_litho > 0 to avoid the solution number to blow.
-group_drillhole_lithos = True
+group_drillhole_lithos = False
+#---------------------------------------------------------------------------
+# 'Returning to the same unit' constraints.
+spar.max_num_returns_per_unit = 2
+#---------------------------------------------------------------------------
+# The number of unit contacts inside the same litholgy sequence.
+spar.max_num_unit_contacts_inside_litho = 0
+#---------------------------------------------------------------------------
+# Use the single closest unit for the top (first) lithology.
+spar.single_top_unit = True
+
+#---------------------------------------------------------------------------
+# Adding thickness constraints. (Requires unit thickness data).
+add_thickness_constraints = False
 
 #==============================================================================
 def write_routes_to_file(filename, drillsample_data, all_routes):
@@ -326,7 +337,7 @@ def generate_missing_lithos():
         add_cover_unit("Cover", cover_unit_filename, strat_data, litho2dist)
 
         # Generating the table of possible strata paths.
-        strata_table, missing_lithos = generate_strata_table(drillsample_data, strat_data, litho2dist)
+        strata_table, missing_lithos = generate_strata_table(drillsample_data, strat_data, litho2dist, spar.single_top_unit)
 
         all_missing_lithos.update(missing_lithos)
 
@@ -373,11 +384,14 @@ def main():
     # (!) Gravel issue for CollarId=1209857, at depth=244m
     #collarID = 1209857
 
-    # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, min_drillhole_litho_score = 70)
+    # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, max_num_unit_contacts_inside_litho = 0)
     collarID = 353386
 
-    # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, min_drillhole_litho_score = 70)
+    # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, max_num_unit_contacts_inside_litho = 0)
     #collarID = 2182301
+
+    # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, max_num_unit_contacts_inside_litho = 0)
+    #collarID = 2182076
 
     # (!) Has wacke at row = 28 which is not passing topology constraints! To discuss with Mark.
     #collarID = 810340
@@ -391,13 +405,10 @@ def main():
     #collarID = 2182335
     #collarID = 2182334
 
-    # (!) Strange gravel at 10m, which looks like real gravel, but there are ricks above...
+    # (!) Strange gravel at 10m, which looks like real gravel, but there are rocks above...
     #collarID = 2470303
-    # (!) Strange gravel at 4m, which looks like real gravel, but there are ricks above...
+    # (!) Strange gravel at 4m, which looks like real gravel, but there are rocks above...
     #collarID = 2470304
-
-    # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, min_drillhole_litho_score = 70)
-    #collarID = 2182076
 
     drillsample_filename = "data/real/dist_files/litho_tables_V3/litho_" + str(collarID) + ".csv"
     dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
@@ -405,8 +416,8 @@ def main():
     # Synthetic test.
     # Note: The tests #1 and #2 show very different probabilities for max_num_unit_contacts_inside_litho = 0 and 1, i.e., a constant and linear increasing transition.
     # IMPORTANT: For these tests, set max_num_returns_per_unit = 0.
-    drillsample_filename = "data/tests/litho_2.csv"
-    dist_table_filename = "data/tests/map_2.csv"
+    #drillsample_filename = "data/tests/litho_2.csv"
+    #dist_table_filename = "data/tests/map_2.csv"
 
     # Drillsample data column names.
     drillsample_header = DrillSampleHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
@@ -422,7 +433,7 @@ def main():
 
     if (group_drillhole_lithos):
         # Group the drillsample lithologies.
-        drillsample_data = group_drillhole_litho_sequence(drillsample_data, max_num_unit_contacts_inside_litho)
+        drillsample_data = group_drillhole_litho_sequence(drillsample_data, spar.max_num_unit_contacts_inside_litho)
 
     # Read the alternative rock names.
     alternative_rock_names = read_alternative_rock_names(alternative_rock_names_file)
@@ -456,7 +467,7 @@ def main():
     #--------------------------------------------------------------
 #    tracemalloc.start()
 
-    all_routes, all_routes_number = generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_data, graph)
+    all_routes, all_routes_number = generate_strat_routes(spar, strat_data, litho2dist, drillsample_data, thickness_data, graph)
 
     print("Total number of routes = ", len(all_routes))
 

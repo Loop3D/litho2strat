@@ -12,14 +12,18 @@ from typing import List
 
 from data_readers import DrillSampleDataRow
 
-# 'Returning to the same unit' constraints.
-max_num_returns_per_unit = 0
-#---------------------------------------------------------------------------
-# The number of unit contacts inside the same litholgy sequence.
-max_num_unit_contacts_inside_litho = 1
-#---------------------------------------------------------------------------
-# Use the single closest unit for the top (first) lithology.
-single_top_unit = True
+#========================================================================================================
+@dataclass
+class StrataSolverParameters:
+    '''
+    The strata solver parameters holder.
+    '''
+    # 'Returning to the same unit' constraints.
+    max_num_returns_per_unit: int = 0
+    # The number of unit contacts inside the same litholgy sequence.
+    max_num_unit_contacts_inside_litho = 0
+    # Use the single closest unit for the top (first) lithology.
+    single_top_unit: bool = False
 
 #========================================================================================================
 @dataclass
@@ -89,8 +93,8 @@ def filter_strat_data_based_on_distance(strat_data, litho2dist, number_nearest_u
 
     return strat_dist
 
-#==============================================================================
-def generate_strata_table(drillsample_data, strat_data, litho2dist):
+#=======================================================================================
+def generate_strata_table(drillsample_data, strat_data, litho2dist, single_top_unit):
     '''
     Generates the stratigraphic table, and unit names list.
     '''
@@ -255,14 +259,14 @@ def flatten(S):
     return S[:1] + flatten(S[1:])
 
 #==============================================================================
-def apply_max_num_returns_constraint(route, strata_list):
+def apply_max_num_returns_constraint(route, strata_list, max_num_returns):
     '''
     Apply the "maximum number of returns to a unit" constraint:
         remove from the input unit list the units where the route cannot return anymore.
     '''
     # Apply the "max number of returns" constraint.
     for strat in strata_list[:]:
-        if (route.unit_visited[strat] - 1 >= max_num_returns_per_unit):
+        if (route.unit_visited[strat] - 1 >= max_num_returns):
         # Reached the maximum numer of local returns (to this unit).
             strata_list.remove(strat)
 
@@ -356,13 +360,13 @@ def group_drillhole_litho_sequence(data, max_num_unit_contacts):
 
     return data_grouped
 
-#==============================================================================
-def generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_data, graph):
+#=======================================================================================================
+def generate_strat_routes(spar, strat_data, litho2dist, drillsample_data, thickness_data, graph):
     '''
     Generating stratigraphic routes.
     '''
     # Generating the table of possible strata paths.
-    strata_table, missing_lithos = generate_strata_table(drillsample_data, strat_data, litho2dist)
+    strata_table, missing_lithos = generate_strata_table(drillsample_data, strat_data, litho2dist, spar.single_top_unit)
 
     # Unit index to unit name mapping.
     unit_names = get_unit_names(strat_data)
@@ -442,7 +446,7 @@ def generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_da
             # Add 'unit contacts inside the same litho' constraints.
             if (same_lithos):
                 # Constrain the maximum number of unit contacts inside a litho sequence.
-                if (route.num_unit_contacts_inside_litho >= max_num_unit_contacts_inside_litho):
+                if (route.num_unit_contacts_inside_litho >= spar.max_num_unit_contacts_inside_litho):
                     can_change = False
             else:
                 # Reset.
@@ -459,7 +463,7 @@ def generate_strat_routes(strat_data, litho2dist, drillsample_data, thickness_da
                 strata_list = [s for s in strata_allowed if (s != strat0 and unit_names[s] != "Cover")]
 
                 # Applying the "maximum number of returns to a unit" constraint.
-                apply_max_num_returns_constraint(route, strata_list)
+                apply_max_num_returns_constraint(route, strata_list, spar.max_num_returns_per_unit)
 
                 # Apply unit topology constraints.
                 if (add_topology_constraints):
