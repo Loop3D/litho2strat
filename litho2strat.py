@@ -14,7 +14,8 @@ import os
 
 from strata_solver import generate_strat_routes, get_unit_names, \
     filter_strat_data_based_on_drillhole_lithos, filter_strat_data_based_on_distance, \
-    generate_strata_table
+    generate_strata_table, group_drillhole_litho_sequence, \
+    max_num_unit_contacts_inside_litho
 
 from data_readers import read_strat_data, read_drillsample_data, read_thickness_data, \
     read_topology_data, read_ignore_list, read_alternative_rock_names, \
@@ -34,6 +35,10 @@ number_nearest_units = 2
 #---------------------------------------------------------------------------
 # Minimum score for drillhole lithologies to use them.
 min_drillhole_litho_score = 80
+#---------------------------------------------------------------------------
+# Group drillhole lithology sequence.
+# Note: use this for max_num_unit_contacts_inside_litho > 0 to avoid the solution number to blow.
+group_drillhole_lithos = True
 
 #==============================================================================
 def write_routes_to_file(filename, drillsample_data, all_routes):
@@ -398,6 +403,8 @@ def main():
     dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
 
     # Synthetic test.
+    # Note: The tests #1 and #2 show very different probabilities for max_num_unit_contacts_inside_litho = 0 and 1, i.e., a constant and linear increasing transition.
+    # IMPORTANT: For these tests, set max_num_returns_per_unit = 0.
     drillsample_filename = "data/tests/litho_2.csv"
     dist_table_filename = "data/tests/map_2.csv"
 
@@ -412,6 +419,10 @@ def main():
 
     # Read drill sample data.
     drillsample_data = read_drillsample_data(drillsample_filename, drillsample_header, ignore_list, min_drillhole_litho_score)
+
+    if (group_drillhole_lithos):
+        # Group the drillsample lithologies.
+        drillsample_data = group_drillhole_litho_sequence(drillsample_data, max_num_unit_contacts_inside_litho)
 
     # Read the alternative rock names.
     alternative_rock_names = read_alternative_rock_names(alternative_rock_names_file)
