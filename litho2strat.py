@@ -398,8 +398,8 @@ def main():
     dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
 
     # Synthetic test.
-    drillsample_filename = "data/real/test/litho_2.csv"
-    dist_table_filename = "data/real/test/map_2.csv"
+    drillsample_filename = "data/tests/litho_2.csv"
+    dist_table_filename = "data/tests/map_2.csv"
 
     # Drillsample data column names.
     drillsample_header = DrillSampleHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
