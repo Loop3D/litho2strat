@@ -198,29 +198,24 @@ A class for storing the stratigraphic route.
 class StrataRoute:
     __slots__ = 'to_remove', 'path', 'current_thickness', 'unit_visited', 'num_unit_contacts_inside_litho'
 
-    def __init__(self):
+    def __init__(self, num_units):
         # Flag for removal.
         self.to_remove = False
+        # Containts the number of times each unit was visited.
+        self.unit_visited = np.zeros((num_units), dtype=int)
+        # The number of unit contacts inside the same lithology sequence.
+        self.num_unit_contacts_inside_litho = 0
 
-    # Adding the first position to the route.
-    # This method essentially initializes the route.
-    def add_first_position(self, strat, thickness_change, num_units):
+    def add_first_position(self, strat, thickness_change):
+        '''
+        Adds the first position to the route.
+        '''
         # Unit index for every drillhole data.
         self.path = [strat]
         # The thickness of the last strata unit.
         self.current_thickness = thickness_change
-        # Containts the number of times each unit was visited.
-        self.unit_visited = np.zeros((num_units), dtype=int)
         # Mark this unit as 'visited'.
         self.unit_visited[strat] += 1
-        # The number of unit contacts inside the same lithology sequence.
-        self.num_unit_contacts_inside_litho = 0
-
-    def __str__(self):
-        return str(self.path)
-
-    def __repr__(self):
-        return str(self.path)
 
     def get_strata_sequence(self):
         '''
@@ -393,8 +388,8 @@ def generate_strat_routes(spar, strat_data, litho2dist, drillsample_data, thickn
 
     for strat in range(num_units):
         if (strata_table[row, strat].path_exists):
-            new_route = StrataRoute()
-            new_route.add_first_position(strat, thickness_change, num_units)
+            new_route = StrataRoute(num_units)
+            new_route.add_first_position(strat, thickness_change)
             # Adding new route into the list.
             all_routes.append(new_route)
 
@@ -478,12 +473,12 @@ def generate_strat_routes(spar, strat_data, litho2dist, drillsample_data, thickn
                     # Looking to which strata unit we can change.
                     for strat in strata_list:
                         # Making the new route.
-                        new_route = StrataRoute()
+                        new_route = StrataRoute(num_units)
                         # New path contains the reference to the old path, and the new route position.
                         # Note: we are not copying the full old path, but only store a reference to it to save memory.
                         new_route.path = [old_path, strat]
                         new_route.current_thickness = thickness_change
-                        new_route.unit_visited = np.array(route.unit_visited)
+                        np.copyto(new_route.unit_visited, route.unit_visited)
 
                         # Count this unit as visited.
                         new_route.unit_visited[strat] += 1
