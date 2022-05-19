@@ -28,32 +28,6 @@ def fix_litho_name(litho):
 
     return litho
 
-#===========================================================================================
-def add_unit_to_distance_map(unit_name, distance, lithos, litho2dist):
-    '''
-    Adds a unit with its lithologies to the distance map litho2dist.
-    '''
-    for litho in lithos:
-        el = (distance, unit_name)
-        if (litho in litho2dist):
-            found_unit = False
-            # Iterate over distance list.
-            for tup in litho2dist[litho]:
-                if (unit_name == tup[1]):
-                # Found this unit in the list.
-                    found_unit = True
-                    if (distance < tup[0]):
-                        # Update element to a smaller distance.
-                        litho2dist[litho].remove(tup)
-                        litho2dist[litho].append(el)
-                    break
-            if (not found_unit):
-                litho2dist[litho].append(el)
-        else:
-            litho2dist[litho] = [el]
-        # Sort the list by distance.
-        litho2dist[litho].sort(key=lambda tup: tup[0])
-
 #====================================================================================
 def read_strat_data(dist_table_filename, alternative_rock_names):
     '''
@@ -77,14 +51,11 @@ def read_strat_data(dist_table_filename, alternative_rock_names):
     # To fix ? symbol in some names (gabbro?leucogabbro)
     str2list2 = lambda x: x.strip("[]").replace("'", "").replace(" ", "").replace("?", ",").split(",")
 
-    # Reading the units table.
-    strat_all = dict()
-
-    # Lithology to distance and unitname mapping.
-    litho2dist = dict()
-
     # List of unique lithos in the map data (disregarding the alternative names).
     unique_lithos_original = set()
+
+    # Create the object with strata data.
+    strata_data = StrataData()
 
     with open(dist_table_filename, 'r') as csvfile:
         # Reading the csv data.
@@ -141,28 +112,24 @@ def read_strat_data(dist_table_filename, alternative_rock_names):
             #-----------------------------------------
             # Store unit in the sorted distance map.
             #-----------------------------------------
-            add_unit_to_distance_map(unit_name, distance, lithos, litho2dist)
+            strata_data.add_unit_to_distance_map(unit_name, distance, lithos)
 
             #-----------------------------------------
             # Adding the lithos to the dictionary (excluding the duplicates).
+            # TODO: Move this to a method of StrataData class.
             #-----------------------------------------
-            if unit_name in strat_all:
+            if unit_name in strata_data.unit2litho:
                 for litho in lithos:
-                    if litho not in strat_all[unit_name]:
-                        strat_all[unit_name].append(litho)
+                    if litho not in strata_data.unit2litho[unit_name]:
+                        strata_data.unit2litho[unit_name].append(litho)
             else:
-                strat_all[unit_name] = list(dict.fromkeys(lithos)) # Remove duplicates.
+                strata_data.unit2litho[unit_name] = list(dict.fromkeys(lithos)) # Remove duplicates.
 
-    print("The total number of units: " + str(len(strat_all)))
+    print("The total number of units:", len(strata_data.unit2litho))
 
     #------------------------------------------------------------------------
-    print("The total number of (original) lithologies: " + str(len(unique_lithos_original)))
+    print("The total number of (original) lithologies:", len(unique_lithos_original))
     print(sorted(unique_lithos_original))
-
-    # Create the object with strata data.
-    strata_data = StrataData()
-    strata_data.unit2litho = strat_all
-    strata_data.litho2dist = litho2dist
 
     return strata_data
 

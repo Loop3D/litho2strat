@@ -18,7 +18,7 @@ from strata_solver import generate_strat_routes, \
 
 from data_readers import read_strat_data, read_drillsample_data, read_thickness_data, \
     read_topology_data, read_ignore_list, read_alternative_rock_names, \
-    DrillSampleHeader, add_unit_to_distance_map
+    DrillSampleHeader
 
 #==============================================================================
 # Adding unit contacts topology (extracted from map data).
@@ -260,24 +260,6 @@ def plot_unit_probabilities(all_routes, drillsample_data, unit_names):
     pl.xlabel('Depth')
     pl.show()
 
-#=============================================================================
-def add_cover_unit(unit_name, filename, strat_data, litho2dist):
-    '''
-    Adds the custom unit with its lithologies read from file.
-    '''
-    with open(filename) as f:
-        lithos = f.read().splitlines()
-
-    # Adding unit data to strat_data.
-    if (unit_name in strat_data):
-        strat_data[unit_name].append(lithos)
-    else:
-        strat_data[unit_name] = lithos
-
-    # Adding unit data to the distance map litho2dist.
-    distance = 0.
-    add_unit_to_distance_map(unit_name, distance, lithos, litho2dist)
-
 #==============================================================================
 def get_drillhole_lithos(drillsample_data):
     '''
@@ -346,7 +328,7 @@ def generate_missing_lithos():
         strata_data.filter_strat_data_based_on_distance(number_nearest_units)
 
         # Read the Cover unit lithologies.
-        add_cover_unit("Cover", cover_unit_filename, strata_data.unit2litho, strata_data.litho2dist)
+        strata_data.add_cover_unit("Cover", cover_unit_filename)
 
         # Generating the table of possible strata paths.
         strata_table, missing_lithos = generate_strata_table(drillsample_data, strata_data, spar.single_top_unit)
@@ -463,7 +445,7 @@ def main():
     print("Filtered unit lithologies:", strata_data.get_unique_lithos())
 
     # Read the Cover unit lithologies.
-    add_cover_unit("Cover", cover_unit_filename, strata_data.unit2litho, strata_data.litho2dist)
+    strata_data.add_cover_unit("Cover", cover_unit_filename)
 
     # Read thickness data.
     thickness_data = []

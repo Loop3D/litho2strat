@@ -95,4 +95,48 @@ class StrataData:
 
         self.unit2litho = strat_dist
 
+    #===========================================================================================
+    def add_unit_to_distance_map(self, unit_name, distance, lithos):
+        '''
+        Adds a unit with its lithologies to the distance map.
+        '''
+        for litho in lithos:
+            el = (distance, unit_name)
+            if (litho in self.litho2dist):
+                found_unit = False
+                # Iterate over distance list.
+                for tup in self.litho2dist[litho]:
+                    if (unit_name == tup[1]):
+                    # Found this unit in the list.
+                        found_unit = True
+                        if (distance < tup[0]):
+                            # Update element to a smaller distance.
+                            self.litho2dist[litho].remove(tup)
+                            self.litho2dist[litho].append(el)
+                        break
+                if (not found_unit):
+                    self.litho2dist[litho].append(el)
+            else:
+                self.litho2dist[litho] = [el]
+            # Sort the list by distance.
+            self.litho2dist[litho].sort(key=lambda tup: tup[0])
+
+    #=============================================================================
+    def add_cover_unit(self, unit_name, filename):
+        '''
+        Adds the custom unit with its lithologies read from a file.
+        '''
+        with open(filename) as f:
+            lithos = f.read().splitlines()
+
+        # Adding unit data to strat_data.
+        if (unit_name in self.unit2litho):
+            self.unit2litho[unit_name].append(lithos)
+        else:
+            self.unit2litho[unit_name] = lithos
+
+        # Adding unit data to the distance map.
+        distance = 0.
+        self.add_unit_to_distance_map(unit_name, distance, lithos)
+
 #========================================================================================================
