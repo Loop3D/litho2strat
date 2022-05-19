@@ -36,6 +36,19 @@ class StrataData:
 
         return unit_names
 
+    #==============================================================================
+    def get_unique_lithos(self):
+        '''
+        Returns a unique list of lithologies.
+        '''
+        lithos = list()
+        for unit_name in self.unit2litho:
+            for litho in self.unit2litho[unit_name]:
+                lithos.append(litho)
+        unique_lithos = list(dict.fromkeys(lithos))
+
+        return unique_lithos
+
     #========================================================================================================
     def filter_strat_data_based_on_drillhole_lithos(self, drillhole_lithos):
         '''

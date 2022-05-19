@@ -320,7 +320,7 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
             all_routes.append(new_route)
 
     print("Starting routes:")
-    print(all_routes)
+    print([r.path for r in all_routes])
 
     row_max = num_rows
     print("row_max = ", row_max)

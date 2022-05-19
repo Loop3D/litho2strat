@@ -28,19 +28,6 @@ def fix_litho_name(litho):
 
     return litho
 
-#==============================================================================
-def get_unique_lithos_from_strat_data(strat_data):
-    '''
-    Returns a unique list of lithologies from strat_data.
-    '''
-    lithos = list()
-    for unit_name in strat_data:
-        for litho in strat_data[unit_name]:
-            lithos.append(litho)
-    unique_lithos = list(dict.fromkeys(lithos))
-
-    return unique_lithos
-
 #===========================================================================================
 def add_unit_to_distance_map(unit_name, distance, lithos, litho2dist):
     '''
