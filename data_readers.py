@@ -116,14 +116,8 @@ def read_strat_data(dist_table_filename, alternative_rock_names):
 
             #-----------------------------------------
             # Adding the lithos to the dictionary (excluding the duplicates).
-            # TODO: Move this to a method of StrataData class.
             #-----------------------------------------
-            if unit_name in strata_data.unit2litho:
-                for litho in lithos:
-                    if litho not in strata_data.unit2litho[unit_name]:
-                        strata_data.unit2litho[unit_name].append(litho)
-            else:
-                strata_data.unit2litho[unit_name] = list(dict.fromkeys(lithos)) # Remove duplicates.
+            strata_data.add_unit_to_units_map(unit_name, lithos)
 
     print("The total number of units:", strata_data.get_num_units())
 

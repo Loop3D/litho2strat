@@ -103,6 +103,19 @@ class StrataData:
         print("The number of filtered (by distance) units:", self.get_num_units())
 
     #===========================================================================================
+    def add_unit_to_units_map(self, unit_name, lithos):
+        '''
+        Adds a unit with its lithologies to the units map.
+        '''
+        if unit_name in self.unit2litho:
+            for litho in lithos:
+                if litho not in self.unit2litho[unit_name]:
+                    self.unit2litho[unit_name].append(litho)
+        else:
+            # Adding a new unit, with unique list of lithologies.
+            self.unit2litho[unit_name] = list(dict.fromkeys(lithos))
+
+    #===========================================================================================
     def add_unit_to_distance_map(self, unit_name, distance, lithos):
         '''
         Adds a unit with its lithologies to the distance map.
