@@ -125,7 +125,7 @@ def read_strat_data(dist_table_filename, alternative_rock_names):
             else:
                 strata_data.unit2litho[unit_name] = list(dict.fromkeys(lithos)) # Remove duplicates.
 
-    print("The total number of units:", len(strata_data.unit2litho))
+    print("The total number of units:", strata_data.get_num_units())
 
     #------------------------------------------------------------------------
     print("The total number of (original) lithologies:", len(unique_lithos_original))

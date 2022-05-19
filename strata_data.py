@@ -22,6 +22,13 @@ class StrataData:
     litho2dist: Dict[str, list] = field(default_factory=dict)
 
     #========================================================================================================
+    def get_num_units(self):
+        '''
+        Returns the number of units.
+        '''
+        return len(self.unit2litho)
+
+    #========================================================================================================
     def get_unit_names(self):
         '''
         Defines the mapping between the unit index and unit name.
@@ -66,9 +73,9 @@ class StrataData:
                     else:
                         strat_filtered[unit_name] = [litho]
 
-        print("The number of filtered units: " + str(len(strat_filtered)))
-
         self.unit2litho = strat_filtered
+
+        print("The number of filtered units:", self.get_num_units())
 
     #=======================================================================================
     def filter_strat_data_based_on_distance(self, number_nearest_units):
@@ -91,9 +98,9 @@ class StrataData:
                             strat_dist[unit_name] = [litho]
                         break
 
-        print("The number of filtered (by distance) units: " + str(len(strat_dist)))
-
         self.unit2litho = strat_dist
+
+        print("The number of filtered (by distance) units:", self.get_num_units())
 
     #===========================================================================================
     def add_unit_to_distance_map(self, unit_name, distance, lithos):
