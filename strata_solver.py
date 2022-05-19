@@ -356,17 +356,17 @@ def group_drillhole_litho_sequence(data, max_num_unit_contacts):
     return data_grouped
 
 #=======================================================================================================
-def generate_strat_routes(spar, strat_data, litho2dist, drillsample_data, thickness_data, graph):
+def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, graph):
     '''
     Generating stratigraphic routes.
     '''
     print('Starting strata solver with:', spar)
 
     # Generating the table of possible strata paths.
-    strata_table, missing_lithos = generate_strata_table(drillsample_data, strat_data, litho2dist, spar.single_top_unit)
+    strata_table, missing_lithos = generate_strata_table(drillsample_data, strata_data.unit2litho, strata_data.litho2dist, spar.single_top_unit)
 
     # Unit index to unit name mapping.
-    unit_names = get_unit_names(strat_data)
+    unit_names = get_unit_names(strata_data.unit2litho)
 
     num_rows = strata_table.shape[0]
     num_units = strata_table.shape[1]

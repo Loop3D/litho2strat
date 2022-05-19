@@ -12,6 +12,8 @@ import networkx as nx
 from dataclasses import dataclass, field
 from typing import List
 
+from strata_data import StrataData
+
 #==============================================================================
 def fix_litho_name(litho):
     '''
@@ -170,7 +172,12 @@ def read_strat_data(dist_table_filename, alternative_rock_names):
     print("The total number of (original) lithologies: " + str(len(unique_lithos_original)))
     print(sorted(unique_lithos_original))
 
-    return strat_all, litho2dist
+    # Create the object with strata data.
+    strata_data = StrataData()
+    strata_data.unit2litho = strat_all
+    strata_data.litho2dist = litho2dist
+
+    return strata_data
 
 #========================================================================================
 def test_column_exist(column_name, fieldnames):

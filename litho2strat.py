@@ -328,17 +328,17 @@ def generate_missing_lithos():
         drillsample_data = read_drillsample_data(drillsample_filename, drillsample_header, ignore_list, min_drillhole_litho_score)
 
         # Unit lithologies and distance data.
-        strat_data, litho2dist = read_strat_data(dist_table_filename, alternative_rock_names)
+        strata_data = read_strat_data(dist_table_filename, alternative_rock_names)
 
         # Filter strat data.
-        strat_data = filter_strat_data_based_on_drillhole_lithos(strat_data, drillsample_data)
-        strat_data = filter_strat_data_based_on_distance(strat_data, litho2dist, number_nearest_units)
+        strata_data.unit2litho = filter_strat_data_based_on_drillhole_lithos(strata_data.unit2litho, drillsample_data)
+        strata_data.unit2litho = filter_strat_data_based_on_distance(strata_data.unit2litho, strata_data.litho2dist, number_nearest_units)
 
         # Read the Cover unit lithologies.
-        add_cover_unit("Cover", cover_unit_filename, strat_data, litho2dist)
+        add_cover_unit("Cover", cover_unit_filename, strata_data.unit2litho, strata_data.litho2dist)
 
         # Generating the table of possible strata paths.
-        strata_table, missing_lithos = generate_strata_table(drillsample_data, strat_data, litho2dist, spar.single_top_unit)
+        strata_table, missing_lithos = generate_strata_table(drillsample_data, strata_data.unit2litho, strata_data.litho2dist, spar.single_top_unit)
 
         all_missing_lithos.update(missing_lithos)
 
@@ -442,14 +442,14 @@ def main():
     alternative_rock_names = read_alternative_rock_names(alternative_rock_names_file)
 
     # Read unit lithologies and distance data.
-    strat_data, litho2dist = read_strat_data(dist_table_filename, alternative_rock_names)
+    strata_data = read_strat_data(dist_table_filename, alternative_rock_names)
 
     # Filter strat data.
-    strat_data = filter_strat_data_based_on_drillhole_lithos(strat_data, drillsample_data)
-    strat_data = filter_strat_data_based_on_distance(strat_data, litho2dist, number_nearest_units)
+    strata_data.unit2litho = filter_strat_data_based_on_drillhole_lithos(strata_data.unit2litho, drillsample_data)
+    strata_data.unit2litho = filter_strat_data_based_on_distance(strata_data.unit2litho, strata_data.litho2dist, number_nearest_units)
 
     # Read the Cover unit lithologies.
-    add_cover_unit("Cover", cover_unit_filename, strat_data, litho2dist)
+    add_cover_unit("Cover", cover_unit_filename, strata_data.unit2litho, strata_data.litho2dist)
 
     # Read thickness data.
     thickness_data = []
@@ -461,7 +461,7 @@ def main():
     if (add_topology_constraints):
         graph = read_topology_data(topology_filename, ignore_unit_age)
         # Sanity check: check that strata units exist in the graph.
-        for unit_name in strat_data:
+        for unit_name in strata_data.unit2litho:
             if unit_name not in graph.nodes():
                 print("WARNING: Not found graph unit: ", unit_name)
 
@@ -470,7 +470,7 @@ def main():
     #--------------------------------------------------------------
 #    tracemalloc.start()
 
-    all_routes, all_routes_number = generate_strat_routes(spar, strat_data, litho2dist, drillsample_data, thickness_data, graph)
+    all_routes, all_routes_number = generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, graph)
 
     print("Total number of routes = ", len(all_routes))
 
@@ -493,7 +493,7 @@ def main():
     #write_routes_to_file("strata.txt", drillsample_data, all_routes)
 
     # Plot unit probabilities.
-    unit_names = get_unit_names(strat_data)
+    unit_names = get_unit_names(strata_data.unit2litho)
     plot_unit_probabilities(all_routes, drillsample_data, unit_names)
 
 #=============================================================================
