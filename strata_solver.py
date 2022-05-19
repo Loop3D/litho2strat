@@ -94,13 +94,13 @@ def filter_strat_data_based_on_distance(strat_data, litho2dist, number_nearest_u
     return strat_dist
 
 #=======================================================================================
-def generate_strata_table(drillsample_data, strat_data, litho2dist, single_top_unit):
+def generate_strata_table(drillsample_data, strata_data, single_top_unit):
     '''
     Generates the stratigraphic table, and unit names list.
     '''
     num_rows = len(drillsample_data)
-    num_units = len(strat_data)
-    unit_names = get_unit_names(strat_data)
+    num_units = len(strata_data.unit2litho)
+    unit_names = strata_data.get_unit_names()
 
     print("num_rows (before) = ", num_rows)
     print("num_units = ", num_units)
@@ -124,9 +124,9 @@ def generate_strata_table(drillsample_data, strat_data, litho2dist, single_top_u
 
             if (new_row_index == 0 and single_top_unit):
             # Use only the closest unit for the top lithology.
-                if (litho in litho2dist):
+                if (litho in strata_data.litho2dist):
                     # Sorted distance list for this lithology.
-                    dist_list = litho2dist[litho]
+                    dist_list = strata_data.litho2dist[litho]
 
                     # Adding Cover if it is present for this litho.
                     add_cover = False
@@ -145,7 +145,7 @@ def generate_strata_table(drillsample_data, strat_data, litho2dist, single_top_u
 
                     print('Closest top unit info (litho, unit, distance):', [litho, closest_unit, closest_unit_distance])
 
-                    for unit_name in strat_data:
+                    for unit_name in strata_data.unit2litho:
                         if (unit_name == closest_unit or (add_cover and unit_name == 'Cover')):
                             litho_found = True
                             unit_index = unit_names.index(unit_name)
@@ -153,8 +153,8 @@ def generate_strata_table(drillsample_data, strat_data, litho2dist, single_top_u
                             strata_table[new_row_index, unit_index].lithos.append(litho)
 
             else:
-                for unit_name in strat_data:
-                    if (litho in strat_data[unit_name]):
+                for unit_name in strata_data.unit2litho:
+                    if (litho in strata_data.unit2litho[unit_name]):
                         litho_found = True
                         unit_index = unit_names.index(unit_name)
                         strata_table[new_row_index, unit_index].path_exists = True
@@ -282,21 +282,6 @@ def apply_topology_constraints(graph, unit_names, strat0, strata_list):
                 strata_list.remove(strat)
 
 #==============================================================================
-def get_unit_names(strat_data):
-    '''
-    Defines the mapping between the unit index and unit name.
-    '''
-    unit_names = []
-    for unit_name in strat_data:
-        if (unit_name == 'Cover'):
-            # Map the Cover's index to zero.
-            unit_names.insert(0, unit_name)
-        else:
-            unit_names.append(unit_name)
-
-    return unit_names
-
-#==============================================================================
 def group_drillhole_litho_sequence(data, max_num_unit_contacts):
     '''
     Group the litho sequence by name (inside the drillhole data), leaving at most N in each group,
@@ -363,10 +348,10 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
     print('Starting strata solver with:', spar)
 
     # Generating the table of possible strata paths.
-    strata_table, missing_lithos = generate_strata_table(drillsample_data, strata_data.unit2litho, strata_data.litho2dist, spar.single_top_unit)
+    strata_table, missing_lithos = generate_strata_table(drillsample_data, strata_data, spar.single_top_unit)
 
     # Unit index to unit name mapping.
-    unit_names = get_unit_names(strata_data.unit2litho)
+    unit_names = strata_data.get_unit_names()
 
     num_rows = strata_table.shape[0]
     num_units = strata_table.shape[1]

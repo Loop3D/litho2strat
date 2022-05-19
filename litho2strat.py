@@ -12,7 +12,7 @@ import networkx as nx
 import os
 #import tracemalloc
 
-from strata_solver import generate_strat_routes, get_unit_names, \
+from strata_solver import generate_strat_routes, \
     filter_strat_data_based_on_drillhole_lithos, filter_strat_data_based_on_distance, \
     generate_strata_table, group_drillhole_litho_sequence, \
     StrataSolverParameters
@@ -338,7 +338,7 @@ def generate_missing_lithos():
         add_cover_unit("Cover", cover_unit_filename, strata_data.unit2litho, strata_data.litho2dist)
 
         # Generating the table of possible strata paths.
-        strata_table, missing_lithos = generate_strata_table(drillsample_data, strata_data.unit2litho, strata_data.litho2dist, spar.single_top_unit)
+        strata_table, missing_lithos = generate_strata_table(drillsample_data, strata_data, spar.single_top_unit)
 
         all_missing_lithos.update(missing_lithos)
 
@@ -493,7 +493,7 @@ def main():
     #write_routes_to_file("strata.txt", drillsample_data, all_routes)
 
     # Plot unit probabilities.
-    unit_names = get_unit_names(strata_data.unit2litho)
+    unit_names = strata_data.get_unit_names()
     plot_unit_probabilities(all_routes, drillsample_data, unit_names)
 
 #=============================================================================

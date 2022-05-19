@@ -21,4 +21,19 @@ class StrataData:
     # Maps the lithology name to the sorted list of distances to units with corresponding unit names.
     litho2dist: Dict[str, list] = field(default_factory=dict)
 
+    #----------------------------------------------------------------------------------------------------
+    def get_unit_names(self):
+        '''
+        Defines the mapping between the unit index and unit name.
+        '''
+        unit_names = []
+        for unit_name in self.unit2litho:
+            if (unit_name == 'Cover'):
+                # Map the Cover's index to zero.
+                unit_names.insert(0, unit_name)
+            else:
+                unit_names.append(unit_name)
+
+        return unit_names
+
 #========================================================================================================
