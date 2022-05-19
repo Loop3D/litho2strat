@@ -12,12 +12,19 @@ import networkx as nx
 import os
 #import tracemalloc
 
-from strata_solver import generate_strat_routes, \
-    generate_strata_table, group_drillhole_litho_sequence, \
+from strata_solver import \
+    generate_strat_routes, \
+    generate_strata_table, \
+    group_drillhole_litho_sequence, \
     StrataSolverParameters
 
-from data_readers import read_strat_data, read_drillsample_data, read_thickness_data, \
-    read_topology_data, read_ignore_list, read_alternative_rock_names, \
+from data_readers import \
+    read_strat_data, \
+    read_drillsample_data, \
+    read_thickness_data, \
+    read_topology_data, \
+    read_ignore_list, \
+    read_alternative_rock_names, \
     DrillSampleHeader
 
 #==============================================================================
