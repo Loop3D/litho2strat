@@ -464,7 +464,8 @@ def main():
     if (add_topology_constraints):
         graph = read_topology_data(topology_filename, ignore_unit_age)
         # Sanity check: check that strata units exist in the graph.
-        for unit_name in strata_data.unit2litho:
+        unit_names = strata_data.get_unit_names()
+        for unit_name in unit_names:
             if unit_name not in graph.nodes():
                 print("WARNING: Not found graph unit: ", unit_name)
 
