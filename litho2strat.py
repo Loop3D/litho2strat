@@ -13,7 +13,6 @@ import os
 #import tracemalloc
 
 from strata_solver import generate_strat_routes, \
-    filter_strat_data_based_on_drillhole_lithos, filter_strat_data_based_on_distance, \
     generate_strata_table, group_drillhole_litho_sequence, \
     StrataSolverParameters
 
@@ -279,6 +278,17 @@ def add_cover_unit(unit_name, filename, strat_data, litho2dist):
     distance = 0.
     add_unit_to_distance_map(unit_name, distance, lithos, litho2dist)
 
+#==============================================================================
+def get_drillhole_lithos(drillsample_data):
+    '''
+    Returns the drillhole lithologies from drillsample data.
+    '''
+    all_lithos = set()
+    for row in drillsample_data:
+        lithos = row.lithos
+        all_lithos.update(lithos)
+    return all_lithos
+
 #=============================================================================
 def generate_missing_lithos():
     '''
@@ -331,8 +341,9 @@ def generate_missing_lithos():
         strata_data = read_strat_data(dist_table_filename, alternative_rock_names)
 
         # Filter strat data.
-        strata_data.unit2litho = filter_strat_data_based_on_drillhole_lithos(strata_data.unit2litho, drillsample_data)
-        strata_data.unit2litho = filter_strat_data_based_on_distance(strata_data.unit2litho, strata_data.litho2dist, number_nearest_units)
+        drillhole_lithos = get_drillhole_lithos(drillsample_data)
+        strata_data.filter_strat_data_based_on_drillhole_lithos(drillhole_lithos)
+        strata_data.filter_strat_data_based_on_distance(number_nearest_units)
 
         # Read the Cover unit lithologies.
         add_cover_unit("Cover", cover_unit_filename, strata_data.unit2litho, strata_data.litho2dist)
@@ -445,8 +456,9 @@ def main():
     strata_data = read_strat_data(dist_table_filename, alternative_rock_names)
 
     # Filter strat data.
-    strata_data.unit2litho = filter_strat_data_based_on_drillhole_lithos(strata_data.unit2litho, drillsample_data)
-    strata_data.unit2litho = filter_strat_data_based_on_distance(strata_data.unit2litho, strata_data.litho2dist, number_nearest_units)
+    drillhole_lithos = get_drillhole_lithos(drillsample_data)
+    strata_data.filter_strat_data_based_on_drillhole_lithos(drillhole_lithos)
+    strata_data.filter_strat_data_based_on_distance(number_nearest_units)
 
     # Read the Cover unit lithologies.
     add_cover_unit("Cover", cover_unit_filename, strata_data.unit2litho, strata_data.litho2dist)
