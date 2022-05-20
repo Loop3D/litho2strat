@@ -208,6 +208,17 @@ def read_drillsample_data(filename, header, ignore_list, min_litho_score):
     return drillsample_data
 
 #==============================================================================
+@dataclass
+class ThicknessDataElement:
+    '''
+    The thickness data element
+    '''
+    # Mean unit thickness.
+    mean: float = 0.
+    # The thickness variation range.
+    range: float = 0.
+
+#==============================================================================
 def read_thickness_data(filename):
     '''
     Reading thickness data from csv file.
@@ -220,9 +231,9 @@ def read_thickness_data(filename):
         next(csvreader)
         # Extracting the data for every csv row.
         for row in csvreader:
-            thickness = [0, 0]
-            thickness[0] = float(row[1]) # "thickness_mean".
-            thickness[1] = float(row[2]) # "thickess_range".
+            thickness = ThicknessDataElement()
+            thickness.mean = float(row[1])
+            thickness.range = float(row[2])
             data.append(thickness)
     return data
 

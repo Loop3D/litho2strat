@@ -163,16 +163,6 @@ class StrataRoute:
         return tuple([v for i, v in enumerate(self.path) if i == 0 or v != self.path[i - 1]])
 
 #==============================================================================
-def get_min_strata_thickness(thickness_data):
-    # "thickness_mean" - "thickess_range"
-    return [data[0] - data[1] for data in thickness_data]
-
-#==============================================================================
-def get_max_strata_thickness(thickness_data):
-    # "thickness_mean" + "thickess_range"
-    return [data[0] + data[1] for data in thickness_data]
-
-#==============================================================================
 def flatten(S):
     '''
     Flattens the multilevel list of lists.
@@ -233,8 +223,8 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
     add_topology_constraints = (graph.number_of_nodes() > 0)
 
     # Extract strata thikcness to lists (faster data structures).
-    min_strata_thickness = get_min_strata_thickness(thickness_data)
-    max_strata_thickness = get_max_strata_thickness(thickness_data)
+    min_strata_thickness = [d.mean - d.range for d in thickness_data]
+    max_strata_thickness = [d.mean + d.range for d in thickness_data]
 
     all_routes = []
     all_routes_number = []
