@@ -7,7 +7,6 @@
 '''
 
 import csv
-import numpy as np
 import networkx as nx
 from dataclasses import dataclass
 
@@ -221,7 +220,7 @@ def read_thickness_data(filename):
         next(csvreader)
         # Extracting the data for every csv row.
         for row in csvreader:
-            thickness = np.array([0, 0], dtype='f')
+            thickness = [0, 0]
             thickness[0] = float(row[1]) # "thickness_mean".
             thickness[1] = float(row[2]) # "thickess_range".
             data.append(thickness)
