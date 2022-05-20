@@ -75,7 +75,7 @@ class StrataData:
 
         self.unit2litho = strat_filtered
 
-        print("The number of filtered units:", self.get_num_units())
+        print("The number of filtered (by drillhole lithos) units:", self.get_num_units())
 
     #=======================================================================================
     def filter_strat_data_based_on_distance(self, number_nearest_units):
