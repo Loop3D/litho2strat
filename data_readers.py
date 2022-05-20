@@ -9,8 +9,7 @@
 import csv
 import numpy as np
 import networkx as nx
-from dataclasses import dataclass, field
-from typing import List
+from dataclasses import dataclass
 
 from strata_data import StrataData
 from drillsample_data import DrillSampleDataRow, DrillsampleData
