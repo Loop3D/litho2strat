@@ -10,8 +10,6 @@ import numpy as np
 from dataclasses import dataclass, field
 from typing import List
 
-from data_readers import DrillSampleDataRow
-
 #========================================================================================================
 @dataclass
 class StrataSolverParameters:
@@ -213,65 +211,6 @@ def apply_topology_constraints(graph, unit_names, strat0, strata_list):
             if (not graph.has_edge(unit_names[strat0], unit_names[strat])):
                 # Units are not connected. Skip this unit.
                 strata_list.remove(strat)
-
-#==============================================================================
-def group_drillhole_litho_sequence(data, max_num_unit_contacts):
-    '''
-    Group the litho sequence by name (inside the drillhole data), leaving at most N in each group,
-    corresponding to number of contacts inside the litho sequence.
-    '''
-    N = max_num_unit_contacts + 1
-    current_litho = data[0].lithos
-    from_depth = data[0].depth_from
-    to_depth = data[0].depth_to
-
-    data_mod = [d for d in data]
-    data_mod.append(DrillSampleDataRow())
-
-    num_same_lithos = 0
-    data_grouped = []
-
-    for index, row in enumerate(data_mod):
-
-        prev_litho = current_litho
-        current_litho = row.lithos
-
-        if (set(current_litho) != set(prev_litho) and index > 0):
-        # Detected a change of lithology name.
-            if (num_same_lithos == 1):
-                # Don't split single data rows.
-                N_adj = 1
-            else:
-                N_adj = N
-
-            total_thickness = to_depth - from_depth
-            local_thickness = total_thickness / float(N_adj)
-            litho = prev_litho
-
-            print("Grouping lithos for:", from_depth, to_depth, litho, num_same_lithos, N_adj)
-
-            # Generate the local grouped lithos.
-            for i in range(N_adj):
-                from_depth_local = from_depth + float(i) * local_thickness
-                to_depth_local = from_depth_local + local_thickness
-
-                row_grouped = DrillSampleDataRow()
-                row_grouped.depth_from = from_depth_local
-                row_grouped.depth_to = to_depth_local
-                row_grouped.lithos = litho
-
-                data_grouped.append(row_grouped)
-
-            # Update the starting depth for the following grouped lithos.
-            from_depth = row.depth_from
-            # Reset the number of lithos.
-            num_same_lithos = 1
-        else:
-            num_same_lithos = num_same_lithos + 1
-
-        to_depth = row.depth_to
-
-    return data_grouped
 
 #=======================================================================================================
 def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, graph):

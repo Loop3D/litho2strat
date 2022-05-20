@@ -15,7 +15,6 @@ import os
 from strata_solver import \
     generate_strat_routes, \
     generate_strata_table, \
-    group_drillhole_litho_sequence, \
     StrataSolverParameters
 
 from data_readers import \
@@ -423,9 +422,9 @@ def main():
     # Read drill sample data.
     drillsample_data = read_drillsample_data(drillsample_filename, drillsample_header, ignore_list, min_drillhole_litho_score)
 
-    # if (group_drillhole_lithos):
-    #     # Group the drillsample lithologies.
-    #     drillsample_data = group_drillhole_litho_sequence(drillsample_data, spar.max_num_unit_contacts_inside_litho)
+    if (group_drillhole_lithos):
+        # Group the drillsample lithologies.
+        drillsample_data.group_drillhole_litho_sequence(spar.max_num_unit_contacts_inside_litho)
 
     # Read the alternative rock names.
     alternative_rock_names = read_alternative_rock_names(alternative_rock_names_file)
