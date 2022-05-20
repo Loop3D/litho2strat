@@ -29,3 +29,9 @@ class DrillsampleData:
     # Maps the unit name to the list of its lithologies.
     rows: List[DrillSampleDataRow] = field(default_factory=list)
 
+    #========================================================================================================
+    def get_num_rows(self):
+        '''
+        Returns the number of rows.
+        '''
+        return len(self.rows)

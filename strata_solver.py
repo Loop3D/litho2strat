@@ -39,7 +39,7 @@ def generate_strata_table(drillsample_data, strata_data, single_top_unit):
     '''
     Generates the stratigraphic table, and unit names list.
     '''
-    num_rows = len(drillsample_data.rows)
+    num_rows = drillsample_data.get_num_rows()
     num_units = strata_data.get_num_units()
     unit_names = strata_data.get_unit_names()
 
@@ -120,7 +120,7 @@ def generate_strata_table(drillsample_data, strata_data, single_top_unit):
         else:
             new_row_index += 1
 
-    num_rows = len(drillsample_data.rows)
+    num_rows = drillsample_data.get_num_rows()
     print("num_rows (after) = ", num_rows)
 
     if (num_rows == 0):

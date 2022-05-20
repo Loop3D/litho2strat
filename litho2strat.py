@@ -64,9 +64,9 @@ def write_routes_to_file(filename, drillsample_data, all_routes):
     Writing stratigraphic routes to file.
     '''
     f = open(filename, "w")
-    num_rows = len(drillsample_data)
+    num_rows = drillsample_data.get_num_rows()
     for row in range(num_rows):
-        depth = drillsample_data[row].depth_from
+        depth = drillsample_data.rows[row].depth_from
         f.write("%f " % depth)
         # Calculate the number of unique strata for this depth.
         unique_units = set([])
@@ -273,7 +273,7 @@ def get_drillhole_lithos(drillsample_data):
     Returns the drillhole lithologies from drillsample data.
     '''
     all_lithos = set()
-    for row in drillsample_data:
+    for row in drillsample_data.rows:
         lithos = row.lithos
         all_lithos.update(lithos)
     return all_lithos
@@ -445,7 +445,7 @@ def main():
     strata_data = read_strat_data(dist_table_filename, alternative_rock_names)
 
     # Filter strat data.
-    drillhole_lithos = get_drillhole_lithos(drillsample_data.rows)
+    drillhole_lithos = get_drillhole_lithos(drillsample_data)
     strata_data.filter_strat_data_based_on_drillhole_lithos(drillhole_lithos)
     strata_data.filter_strat_data_based_on_distance(number_nearest_units)
 
