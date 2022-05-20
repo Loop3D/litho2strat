@@ -39,7 +39,7 @@ def generate_strata_table(drillsample_data, strata_data, single_top_unit):
     '''
     Generates the stratigraphic table, and unit names list.
     '''
-    num_rows = len(drillsample_data)
+    num_rows = len(drillsample_data.rows)
     num_units = strata_data.get_num_units()
     unit_names = strata_data.get_unit_names()
 
@@ -56,7 +56,7 @@ def generate_strata_table(drillsample_data, strata_data, single_top_unit):
     # Missing lithologies.
     missing_lithos = set()
 
-    for row in drillsample_data[:]:
+    for row in drillsample_data.rows[:]:
         any_litho_found = False
 
         # Loop over lithos in the current drillsample row.
@@ -116,11 +116,11 @@ def generate_strata_table(drillsample_data, strata_data, single_top_unit):
 
         if (not any_litho_found):
             # Treat this as "no data".
-            drillsample_data.remove(row)
+            drillsample_data.rows.remove(row)
         else:
             new_row_index += 1
 
-    num_rows = len(drillsample_data)
+    num_rows = len(drillsample_data.rows)
     print("num_rows (after) = ", num_rows)
 
     if (num_rows == 0):
@@ -310,7 +310,7 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
 
     # Set the initial routes.
     row = 0
-    thickness_change = get_thickness_change(drillsample_data, row)
+    thickness_change = get_thickness_change(drillsample_data.rows, row)
 
     for strat in range(num_units):
         if (strata_table[row, strat].path_exists):
@@ -329,20 +329,20 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
 
     # Print the starting info.
     row = 0
-    print("Processed row =", row, drillsample_data[row].depth_from, drillsample_data[row].lithos, len(all_routes))
+    print("Processed row =", row, drillsample_data.rows[row].depth_from, drillsample_data.rows[row].lithos, len(all_routes))
 
     # Going through the strata table and generating the routes.
     for row in range(1, row_max):
         # Print the info.
-        print("Processing row =", row, drillsample_data[row].depth_from, drillsample_data[row].lithos, end = "\r")
+        print("Processing row =", row, drillsample_data.rows[row].depth_from, drillsample_data.rows[row].lithos, end = "\r")
 
         # The drillhole lithos.
         # Note: we deliberately consider the full list of drillsample lithos instead of lithos- on the route.
         # Because considering the route lithos may lead to exponential growth of number of routes due to frequent unit change.
-        current_lithos = drillsample_data[row].lithos
-        previous_lithos = drillsample_data[row - 1].lithos
+        current_lithos = drillsample_data.rows[row].lithos
+        previous_lithos = drillsample_data.rows[row - 1].lithos
 
-        thickness_change = get_thickness_change(drillsample_data, row)
+        thickness_change = get_thickness_change(drillsample_data.rows, row)
         new_routes = []
 
         # Allowed strata units for a unit change.
@@ -452,7 +452,7 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
         all_routes_number.append(num_routes)
 
         # Print the info.
-        print("Processed row =", row, drillsample_data[row].depth_from, drillsample_data[row].lithos, num_routes)
+        print("Processed row =", row, drillsample_data.rows[row].depth_from, drillsample_data.rows[row].lithos, num_routes)
 
         if (num_routes == 0):
             break

@@ -13,6 +13,7 @@ from dataclasses import dataclass, field
 from typing import List
 
 from strata_data import StrataData
+from drillsample_data import DrillSampleDataRow, DrillsampleData
 
 #==============================================================================
 def fix_litho_name(litho):
@@ -148,23 +149,12 @@ class DrillSampleHeader:
     scores: str
 
 #========================================================================================================
-@dataclass
-class DrillSampleDataRow:
-    '''
-    Contains the names of drillsample data row.
-    '''
-    depth_from: float = 0.
-    depth_to: float = 0.
-    lithos: List[str] = field(default_factory=list)
-    scores: List[int] = field(default_factory=list)
-
-#========================================================================================================
 def read_drillsample_data(filename, header, ignore_list, min_litho_score):
     '''
     Reading drill sample data from csv file.
     '''
-    all_data = []
     all_lithos = set()
+    drillsample_data = DrillsampleData()
 
     with open(filename, 'r') as csvfile:
         reader = csv.DictReader(csvfile, delimiter=',')
@@ -212,12 +202,12 @@ def read_drillsample_data(filename, header, ignore_list, min_litho_score):
                     all_lithos.add(litho)
 
             if (len(data.lithos) > 0):
-                all_data.append(data)
+                drillsample_data.rows.append(data)
 
     print(all_lithos)
     print("The number of drillhole lithologies: " + str(len(all_lithos)))
 
-    return all_data
+    return drillsample_data
 
 #==============================================================================
 def read_thickness_data(filename):

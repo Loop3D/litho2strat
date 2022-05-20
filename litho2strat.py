@@ -105,7 +105,7 @@ def plot_routes(drillsample_data, routes, strat_distr):
     print("Plotting the routes...")
 
     # Using the "From" column.
-    x_data = [d.depth_from for d in drillsample_data]
+    x_data = [d.depth_from for d in drillsample_data.rows]
 
     for route in routes:
         pl.plot(x_data, route.path, '.-')
@@ -224,7 +224,7 @@ def plot_unit_probabilities(all_routes, drillsample_data, unit_names):
     #-------------------------------------------------------------
     # Adding the "From" and "To" depths for visualisation.
     x_data = []
-    for d in drillsample_data[0:num_rows]:
+    for d in drillsample_data.rows[0:num_rows]:
         x_data.append(d.depth_from)
         x_data.append(d.depth_to)
 
@@ -434,9 +434,9 @@ def main():
     # Read drill sample data.
     drillsample_data = read_drillsample_data(drillsample_filename, drillsample_header, ignore_list, min_drillhole_litho_score)
 
-    if (group_drillhole_lithos):
-        # Group the drillsample lithologies.
-        drillsample_data = group_drillhole_litho_sequence(drillsample_data, spar.max_num_unit_contacts_inside_litho)
+    # if (group_drillhole_lithos):
+    #     # Group the drillsample lithologies.
+    #     drillsample_data = group_drillhole_litho_sequence(drillsample_data, spar.max_num_unit_contacts_inside_litho)
 
     # Read the alternative rock names.
     alternative_rock_names = read_alternative_rock_names(alternative_rock_names_file)
@@ -445,7 +445,7 @@ def main():
     strata_data = read_strat_data(dist_table_filename, alternative_rock_names)
 
     # Filter strat data.
-    drillhole_lithos = get_drillhole_lithos(drillsample_data)
+    drillhole_lithos = get_drillhole_lithos(drillsample_data.rows)
     strata_data.filter_strat_data_based_on_drillhole_lithos(drillhole_lithos)
     strata_data.filter_strat_data_based_on_distance(number_nearest_units)
 
