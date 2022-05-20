@@ -165,14 +165,6 @@ class StrataRoute:
         return tuple([v for i, v in enumerate(self.path) if i == 0 or v != self.path[i - 1]])
 
 #==============================================================================
-def get_thickness_change(drillsample_data, row):
-    '''
-    Returns a thickness change for a given row in the drillhole sample.
-    '''
-    # "To" - "From"
-    return drillsample_data[row].depth_to - drillsample_data[row].depth_from
-
-#==============================================================================
 def get_min_strata_thickness(thickness_data):
     # "thickness_mean" - "thickess_range"
     return [data[0] - data[1] for data in thickness_data]
@@ -310,7 +302,7 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
 
     # Set the initial routes.
     row = 0
-    thickness_change = get_thickness_change(drillsample_data.rows, row)
+    thickness_change = drillsample_data.get_thickness_change(row)
 
     for strat in range(num_units):
         if (strata_table[row, strat].path_exists):
@@ -342,7 +334,7 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
         current_lithos = drillsample_data.rows[row].lithos
         previous_lithos = drillsample_data.rows[row - 1].lithos
 
-        thickness_change = get_thickness_change(drillsample_data.rows, row)
+        thickness_change = drillsample_data.get_thickness_change(row)
         new_routes = []
 
         # Allowed strata units for a unit change.

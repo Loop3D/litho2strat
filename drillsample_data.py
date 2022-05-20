@@ -46,3 +46,12 @@ class DrillsampleData:
             lithos = row.lithos
             all_lithos.update(lithos)
         return all_lithos
+
+    #==============================================================================
+    def get_thickness_change(self, row):
+        '''
+        Returns a thickness change for a given row in the drillhole sample.
+        '''
+        # "To" - "From"
+        return self.rows[row].depth_to - self.rows[row].depth_from
+
