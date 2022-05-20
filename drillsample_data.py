@@ -29,9 +29,20 @@ class DrillsampleData:
     # Maps the unit name to the list of its lithologies.
     rows: List[DrillSampleDataRow] = field(default_factory=list)
 
-    #========================================================================================================
+    #==============================================================================
     def get_num_rows(self):
         '''
         Returns the number of rows.
         '''
         return len(self.rows)
+
+    #==============================================================================
+    def get_drillhole_lithos(self):
+        '''
+        Returns the drillhole lithologies.
+        '''
+        all_lithos = set()
+        for row in self.rows:
+            lithos = row.lithos
+            all_lithos.update(lithos)
+        return all_lithos

@@ -267,17 +267,6 @@ def plot_unit_probabilities(all_routes, drillsample_data, unit_names):
     pl.xlabel('Depth')
     pl.show()
 
-#==============================================================================
-def get_drillhole_lithos(drillsample_data):
-    '''
-    Returns the drillhole lithologies from drillsample data.
-    '''
-    all_lithos = set()
-    for row in drillsample_data.rows:
-        lithos = row.lithos
-        all_lithos.update(lithos)
-    return all_lithos
-
 #=============================================================================
 def generate_missing_lithos():
     '''
@@ -330,7 +319,7 @@ def generate_missing_lithos():
         strata_data = read_strat_data(dist_table_filename, alternative_rock_names)
 
         # Filter strat data.
-        drillhole_lithos = get_drillhole_lithos(drillsample_data)
+        drillhole_lithos = drillsample_data.get_drillhole_lithos()
         strata_data.filter_strat_data_based_on_drillhole_lithos(drillhole_lithos)
         strata_data.filter_strat_data_based_on_distance(number_nearest_units)
 
@@ -445,7 +434,7 @@ def main():
     strata_data = read_strat_data(dist_table_filename, alternative_rock_names)
 
     # Filter strat data.
-    drillhole_lithos = get_drillhole_lithos(drillsample_data)
+    drillhole_lithos = drillsample_data.get_drillhole_lithos()
     strata_data.filter_strat_data_based_on_drillhole_lithos(drillhole_lithos)
     strata_data.filter_strat_data_based_on_distance(number_nearest_units)
 
