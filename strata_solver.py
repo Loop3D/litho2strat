@@ -19,7 +19,7 @@ class StrataSolverParameters:
     # 'Returning to the same unit' constraints.
     max_num_returns_per_unit: int = 0
     # The number of unit contacts inside the same litholgy sequence.
-    max_num_unit_contacts_inside_litho = 0
+    max_num_unit_contacts_inside_litho: int = 0
     # Use the single closest unit for the top (first) lithology.
     single_top_unit: bool = False
 
