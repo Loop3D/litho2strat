@@ -24,7 +24,7 @@ from data_readers import \
     read_topology_data, \
     read_ignore_list, \
     read_alternative_rock_names, \
-    DrillSampleHeader, \
+    DrillSampleDataHeader, \
     StrataDataHeader
 
 #==============================================================================
@@ -286,7 +286,7 @@ def generate_missing_lithos():
     #directory = "data/real/dh_files/litho_tables"
 
     # Drillsample data column names.
-    drillsample_header = DrillSampleHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
+    drillsample_header = DrillSampleDataHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
 
     # Strata data csv file column names.
     strata_data_header = StrataDataHeader('UNITNAME', 'lithos', 'distance', 'DESCRIPTN')
@@ -365,7 +365,7 @@ def main():
     # dist_table_filename = "data/real/dh_files/dist_tables/100k_map_near_" + str(collarID) + ".csv"
     #
     # # Drillsample data column names.
-    # drillsample_header = DrillSampleHeader('FromDepth', 'ToDepth', 'CET_Litho', 'Scores')
+    # drillsample_header = DrillSampleDataHeader('FromDepth', 'ToDepth', 'CET_Litho', 'Scores')
 
     #----------------------------------------------------------------------------
     # Mark's data with known solutions.
@@ -415,7 +415,7 @@ def main():
     #dist_table_filename = "data/tests/map_2.csv"
 
     # Drillsample data csv file column names.
-    drillsample_header = DrillSampleHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
+    drillsample_header = DrillSampleDataHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
 
     # Strata data csv file column names.
     strata_data_header = StrataDataHeader('UNITNAME', 'lithos', 'distance', 'DESCRIPTN')

@@ -136,9 +136,9 @@ def read_strat_data(header, filename, alternative_rock_names):
 
 #========================================================================================================
 @dataclass
-class DrillSampleHeader:
+class DrillSampleDataHeader:
     '''
-    Contains the names of drillsample header data columns in a csv file..
+    Contains the names of drillsample header data columns in a csv file.
     '''
     depth_from: str
     depth_to: str
