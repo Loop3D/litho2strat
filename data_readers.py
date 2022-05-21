@@ -146,7 +146,7 @@ class DrillSampleDataHeader:
     scores: str
 
 #========================================================================================================
-def read_drillsample_data(filename, header, ignore_list, min_litho_score):
+def read_drillsample_data(header, filename, ignore_list, min_litho_score):
     '''
     Reading drill sample data from csv file.
     '''

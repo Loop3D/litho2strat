@@ -316,7 +316,7 @@ def generate_missing_lithos():
         #dist_table_filename = "data/real/dh_files/dist_tables/100k_map_near_" + str(collarID) + ".csv"
 
         # Drill sample data.
-        drillsample_data = read_drillsample_data(drillsample_filename, drillsample_header, ignore_list, min_drillhole_litho_score)
+        drillsample_data = read_drillsample_data(drillsample_header, drillsample_filename, ignore_list, min_drillhole_litho_score)
 
         # Unit lithologies and distance data.
         strata_data = read_strat_data(strata_data_header, dist_table_filename, alternative_rock_names)
@@ -427,7 +427,7 @@ def main():
     ignore_list = read_ignore_list(ignore_list_filename)
 
     # Read drill sample data.
-    drillsample_data = read_drillsample_data(drillsample_filename, drillsample_header, ignore_list, min_drillhole_litho_score)
+    drillsample_data = read_drillsample_data(drillsample_header, drillsample_filename, ignore_list, min_drillhole_litho_score)
 
     if (group_drillhole_lithos):
         # Group the drillsample lithologies.
