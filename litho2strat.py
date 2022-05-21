@@ -24,7 +24,8 @@ from data_readers import \
     read_topology_data, \
     read_ignore_list, \
     read_alternative_rock_names, \
-    DrillSampleHeader
+    DrillSampleHeader, \
+    StrataDataHeader
 
 #==============================================================================
 # Adding unit contacts topology (extracted from map data).
@@ -287,6 +288,9 @@ def generate_missing_lithos():
     # Drillsample data column names.
     drillsample_header = DrillSampleHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
 
+    # Strata data csv file column names.
+    strata_data_header = StrataDataHeader('UNITNAME', 'lithos', 'distance', 'DESCRIPTN')
+
     # Read the drillhole ignore items list.
     ignore_list = read_ignore_list(ignore_list_filename)
 
@@ -315,7 +319,7 @@ def generate_missing_lithos():
         drillsample_data = read_drillsample_data(drillsample_filename, drillsample_header, ignore_list, min_drillhole_litho_score)
 
         # Unit lithologies and distance data.
-        strata_data = read_strat_data(dist_table_filename, alternative_rock_names)
+        strata_data = read_strat_data(strata_data_header, dist_table_filename, alternative_rock_names)
 
         # Filter strat data.
         drillhole_lithos = drillsample_data.get_drillhole_lithos()
@@ -410,8 +414,11 @@ def main():
     #drillsample_filename = "data/tests/litho_2.csv"
     #dist_table_filename = "data/tests/map_2.csv"
 
-    # Drillsample data column names.
+    # Drillsample data csv file column names.
     drillsample_header = DrillSampleHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
+
+    # Strata data csv file column names.
+    strata_data_header = StrataDataHeader('UNITNAME', 'lithos', 'distance', 'DESCRIPTN')
 
     #--------------------------------------------------------------
     # Reading the input data.
@@ -430,7 +437,7 @@ def main():
     alternative_rock_names = read_alternative_rock_names(alternative_rock_names_file)
 
     # Read unit lithologies and distance data.
-    strata_data = read_strat_data(dist_table_filename, alternative_rock_names)
+    strata_data = read_strat_data(strata_data_header, dist_table_filename, alternative_rock_names)
 
     # Filter strat data.
     drillhole_lithos = drillsample_data.get_drillhole_lithos()

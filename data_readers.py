@@ -27,27 +27,32 @@ def fix_litho_name(litho):
 
     return litho
 
+#========================================================================================
+def test_column_exist(column_name, fieldnames):
+    '''
+    Tests if the column name is present in the fieldnames list.
+    '''
+    if (column_name not in fieldnames):
+        print("Error: The column name is not found in the csv file:", column_name)
+        exit()
+
+#========================================================================================================
+@dataclass
+class StrataDataHeader:
+    '''
+    Contains the names of strata data header columns in a csv file.
+    '''
+    unitname: str
+    lithos: str
+    distance: str
+    description: str
+
 #====================================================================================
-def read_strat_data(dist_table_filename, alternative_rock_names):
+def read_strat_data(header, filename, alternative_rock_names):
     '''
     Building lithologies list for every unit from csv file data.
     '''
-    # Unit code column number.
-    code_column = 1
-    # Unit name column number.
-    unitname_column = 2
-    # Lithology list column number.
-    lithos_column = 4
-    # Distance column number.
-    dist_column = 5
-    # LITHNAME1 column.
-    lithname1_column = 10
-    # Description column.
-    descript_column = 3
-
-    # Converter from string to list.
-    str2list = lambda x: x.strip("[]").replace("'", "").replace(" ", "").split(",")
-    # To fix ? symbol in some names (gabbro?leucogabbro)
+    # Added "?" fix ? symbol in some names (gabbro?leucogabbro)
     str2list2 = lambda x: x.strip("[]").replace("'", "").replace(" ", "").replace("?", ",").split(",")
 
     # List of unique lithos in the map data (disregarding the alternative names).
@@ -56,32 +61,35 @@ def read_strat_data(dist_table_filename, alternative_rock_names):
     # Create the object with strata data.
     strata_data = StrataData()
 
-    with open(dist_table_filename, 'r') as csvfile:
-        # Reading the csv data.
-        csvreader = csv.reader(csvfile, delimiter=',')
-        # Skipping the header.
-        next(csvreader)
-        # Extracting the lighology list for every csv row (strata unit).
-        for row in csvreader:
+    with open(filename, 'r') as csvfile:
+        reader = csv.DictReader(csvfile, delimiter=',')
+
+        # The header column names.
+        fieldnames = reader.fieldnames
+
+        # Sanity check.
+        test_column_exist(header.unitname, fieldnames)
+        test_column_exist(header.lithos, fieldnames)
+        test_column_exist(header.distance, fieldnames)
+        test_column_exist(header.description, fieldnames)
+
+        # Extracting the data for every csv row.
+        for row in reader:
             # Extract the list of lithologies.
-            lithos = str2list2(row[lithos_column])
+            lithos = str2list2(row[header.lithos])
             # Distance to the unit code.
-            distance = float(row[dist_column])
+            distance = float(row[header.distance])
             # Unit name.
-            unit_name = row[unitname_column]
+            unit_name = row[header.unitname]
 
             # Convert the unitname to align it with format used in the topology graph.
             unit_name = unit_name.replace(" ", "_").replace(",", "_")
 
             #-----------------------------------------
-            # Hard fixes for "mudstone" and "coal". 
+            # Hard fixes for "coal".
             # TODO: Fix the original data.
             #-----------------------------------------
-            lithname1 = row[lithname1_column]
-            if ("mudstone" in lithname1):
-                lithos.append("mudstone")
-
-            description = row[descript_column]
+            description = row[header.description]
             if ("coal" in description):
                 lithos.append("coal")
                 lithos.append("lignite")
@@ -126,20 +134,11 @@ def read_strat_data(dist_table_filename, alternative_rock_names):
 
     return strata_data
 
-#========================================================================================
-def test_column_exist(column_name, fieldnames):
-    '''
-    Tests if the column name is present in the fieldnames list.
-    '''
-    if (column_name not in fieldnames):
-        print("Error: The column name is not found in drillsample data header:", column_name)
-        exit()
-
 #========================================================================================================
 @dataclass
 class DrillSampleHeader:
     '''
-    Contains the names of drillsample header data columns.
+    Contains the names of drillsample header data columns in a csv file..
     '''
     depth_from: str
     depth_to: str
