@@ -49,14 +49,11 @@ def print_unique_routes(all_routes, num_print_paths):
                 break
 
 #=============================================================================
-def plot_routes(drillsample_data, routes, strat_distr):
+def plot_routes(routes, x_data):
     '''
     Plot and display the routes.
     '''
     print("Plotting the routes...")
-
-    # Using the "From" column.
-    x_data = [d.depth_from for d in drillsample_data.rows]
 
     for route in routes:
         pl.plot(x_data, route.path, '.-')
@@ -65,8 +62,13 @@ def plot_routes(drillsample_data, routes, strat_distr):
     pl.ylabel('Strata unit index')
     pl.show()
 
-    #------------------------------------------
-    # Plot route probabilities.
+#=============================================================================
+def plot_route_probability(routes, x_data, strat_distr):
+    '''
+    Plot and display the route probability.
+    '''
+    print("Plotting the route probability...")
+
     num_rows = len(routes[0].path)
 
     for route in routes:
@@ -145,8 +147,14 @@ def plot_unit_probabilities(all_routes, drillsample_data, unit_names):
     index_max = indexes_max[0]
 
     #------------------------------------------
+    top_routes = [all_routes[i] for i in indexes_max[0:ntop]]
+    x_data = drillsample_data.get_depth_data()
+
     # Print the most probable routes.
-    plot_routes(drillsample_data, [all_routes[i] for i in indexes_max[0:ntop]], strat_distr)
+    plot_routes(top_routes, x_data)
+
+    # Print the probability of the most probable routes.
+    plot_route_probability(top_routes, x_data, strat_distr)
 
     #------------------------------------------
     # Print if there are multiple best routes.
