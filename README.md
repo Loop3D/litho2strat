@@ -1,6 +1,6 @@
 # litho2strat
 
-Dependencies: numpy, matplotlib
+Dependencies: numpy, networkx, matplotlib
 
 Usage:
 ```shell
