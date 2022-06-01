@@ -30,7 +30,8 @@ from solution_utils import \
     print_unique_routes, \
     plot_route_scores, \
     plot_top_routes, \
-    plot_unit_probabilities
+    plot_unit_probabilities, \
+    write_best_route_to_file
 
 #==============================================================================
 # Adding unit contacts topology (extracted from map data).
@@ -294,6 +295,9 @@ def main():
 
     # Plot unit probabilities.
     plot_unit_probabilities(strat_solution)
+
+    # Write the best route to file.
+    write_best_route_to_file(strat_solution, "best_route.txt")
 
 #=============================================================================
 if __name__ == "__main__":

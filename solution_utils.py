@@ -10,27 +10,6 @@ import numpy as np
 import matplotlib.pylab as pl
 
 #==============================================================================
-def write_routes_to_file(filename, drillsample_data, all_routes):
-    '''
-    Writing stratigraphic routes to file.
-    '''
-    f = open(filename, "w")
-    num_rows = drillsample_data.get_num_rows()
-    for row in range(num_rows):
-        depth = drillsample_data.rows[row].depth_from
-        f.write("%f " % depth)
-        # Calculate the number of unique strata for this depth.
-        unique_units = set([])
-        for route in all_routes:
-            unique_units.add(route.path[row])
-        f.write("%d " % len(unique_units))
-
-        for route in all_routes:
-            f.write("%d " % route.path[row])
-        f.write("\n")
-    f.close()
-
-#==============================================================================
 def print_unique_routes(all_routes, num_print_paths):
     '''
     Print all unique routes (i.e., with unique strata sequence).
@@ -87,6 +66,38 @@ def plot_route_scores(strat_solution):
     pl.xlabel('Route score')
     pl.ylabel('Frequency')
     pl.show()
+
+#==============================================================================
+def write_best_route_to_file(strat_solution, filename):
+    '''
+    Write a route with the highest score to file.
+    '''
+    # Extraxt the index of the best route.
+    indexes_max = np.argsort(-strat_solution.route_scores)
+    index_max = indexes_max[0]
+
+    print("Writing to file the route with score:", strat_solution.route_scores[index_max])
+
+    with open(filename, "w") as file:
+        # Write the number of units.
+        num_units = len(strat_solution.unit_names)
+        file.write("%d\n" % num_units)
+
+        # Write unit names.
+        for index, unit_name in enumerate(strat_solution.unit_names):
+            file.write("%d,%s\n" % (index, unit_name))
+
+        # Write stratigraphy.
+        num_rows = len(strat_solution.depth_data.depth_from)
+        for row in range(num_rows):
+            # Extract depths for this row.
+            depth_from = strat_solution.depth_data.depth_from[row]
+            depth_to = strat_solution.depth_data.depth_to[row]
+
+            # Extract unit index.
+            unit_index = strat_solution.routes[index_max].path[row]
+
+            file.write("%f,%f,%d\n" % (depth_from, depth_to, unit_index))
 
 #=============================================================================
 def plot_top_routes(strat_solution):
