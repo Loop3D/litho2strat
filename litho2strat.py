@@ -285,7 +285,7 @@ def main():
 
     # Plot unit probabilities.
     unit_names = strata_data.get_unit_names()
-    plot_unit_probabilities(strat_solution.routes, drillsample_data, unit_names)
+    plot_unit_probabilities(strat_solution, drillsample_data, unit_names)
 
 #=============================================================================
 if __name__ == "__main__":

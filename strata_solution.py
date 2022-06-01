@@ -24,13 +24,13 @@ class StrataSolution:
         num_units = len(self.unit_names)
 
         # Building the distribution of unit presence at every depth.
-        self.strat_distr = get_strat_distr(routes, num_units)
+        self.strat_distr = _get_strat_distr(routes, num_units)
 
         # Calculate the route scores (based on path probability).
-        self.route_scores = get_route_scores(routes, self.strat_distr)
+        self.route_scores = _get_route_scores(routes, self.strat_distr)
 
 #=============================================================================
-def get_strat_distr(all_routes, num_units):
+def _get_strat_distr(all_routes, num_units):
     '''
     Returns the distribution of unit presence at every depth.
     '''
@@ -46,7 +46,7 @@ def get_strat_distr(all_routes, num_units):
     return strat_distr
 
 #=============================================================================
-def get_route_scores(all_routes, strat_distr):
+def _get_route_scores(all_routes, strat_distr):
     '''
     Returns the route scores (based on path probability).
     Needs strat_distr returned by get_strat_distr().

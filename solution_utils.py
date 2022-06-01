@@ -83,54 +83,18 @@ def plot_route_probability(routes, x_data, strat_distr):
     pl.show()
 
 #=============================================================================
-def get_strat_distr(all_routes, num_units):
-    '''
-    Returns the distribution of unit presence at every depth.
-    '''
-    num_rows = len(all_routes[0].path)
-    strat_distr = np.zeros((num_rows, num_units))
-
-    for route in all_routes:
-        for row, unit_index in enumerate(route.path):
-            strat_distr[row, unit_index] += 1
-
-    # Normalize.
-    strat_distr = strat_distr / float(len(all_routes))
-    return strat_distr
-
-#=============================================================================
-def get_route_scores(all_routes, strat_distr):
-    '''
-    Returns the route scores (based on path probability).
-    Needs strat_distr returned by get_strat_distr().
-    '''
-    num_rows = len(all_routes[0].path)
-    route_scores = np.zeros(len(all_routes), dtype=float)
-
-    for route_index, route in enumerate(all_routes):
-        for row, unit_index in enumerate(route.path):
-            route_scores[route_index] += strat_distr[row, unit_index]
-
-    # Normalize.
-    route_scores = route_scores / float(num_rows)
-    return route_scores
-
-#=============================================================================
-def plot_unit_probabilities(all_routes, drillsample_data, unit_names):
+def plot_unit_probabilities(strat_solution, drillsample_data, unit_names):
     '''
     Generate a plot with probability of occurence for each unit.
     '''
-    if (len(all_routes) == 0):
+    if (len(strat_solution.routes) == 0):
         return
 
     num_units = len(unit_names)
 
-    # Building the distribution of unit presence at every depth.
-    strat_distr = get_strat_distr(all_routes, num_units)
-
     #------------------------------------------
     # Plot distribution of the route scores (based on path probability).
-    route_scores = get_route_scores(all_routes, strat_distr)
+    route_scores = strat_solution.route_scores
 
     pl.hist(route_scores, bins = 50)
     pl.xlabel('Route score')
@@ -147,14 +111,14 @@ def plot_unit_probabilities(all_routes, drillsample_data, unit_names):
     index_max = indexes_max[0]
 
     #------------------------------------------
-    top_routes = [all_routes[i] for i in indexes_max[0:ntop]]
+    top_routes = [strat_solution.routes[i] for i in indexes_max[0:ntop]]
     x_data = drillsample_data.get_depth_data()
 
     # Print the most probable routes.
     plot_routes(top_routes, x_data)
 
     # Print the probability of the most probable routes.
-    plot_route_probability(top_routes, x_data, strat_distr)
+    plot_route_probability(top_routes, x_data, strat_solution.strat_distr)
 
     #------------------------------------------
     # Print if there are multiple best routes.
@@ -170,15 +134,17 @@ def plot_unit_probabilities(all_routes, drillsample_data, unit_names):
     # Increasing the figure size.
     pl.rcParams["figure.figsize"] = (12.8, 9.6) # Default size = (6.4, 4.8)
 
+    # Count the number of non-empty units.
     num_units_nonempty = 0
     for i in range(num_units):
-        if (sum(strat_distr[:, i]) != 0):
+        if (sum(strat_solution.strat_distr[:, i]) != 0):
             num_units_nonempty += 1
+
     fig, axs = pl.subplots(num_units_nonempty, sharey=True, squeeze=True)
 
     fig.suptitle('Probability of occurrence for every unit.', y=0.96)
 
-    num_rows = len(all_routes[0].path)
+    num_rows = len(strat_solution.routes[0].path)
 
     #-------------------------------------------------------------
     # Adding the "From" and "To" depths for visualisation.
@@ -188,7 +154,7 @@ def plot_unit_probabilities(all_routes, drillsample_data, unit_names):
         x_data.append(d.depth_to)
 
     # Duplicate each value, as the probability is the same between the "From" and "To" depths.
-    strat_distr = np.repeat(strat_distr, 2, axis=0)
+    strat_distr = np.repeat(strat_solution.strat_distr, 2, axis=0)
     #-------------------------------------------------------------
 
     # Skip empty units.
