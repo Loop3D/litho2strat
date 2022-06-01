@@ -7,7 +7,6 @@
 '''
 
 import matplotlib.pylab as pl
-import networkx as nx
 import os
 #import tracemalloc
 
@@ -254,7 +253,7 @@ def main():
         thickness_data = read_thickness_data(thickness_filename)
 
     # Read topology data.
-    graph = nx.Graph()
+    graph = None
     if (add_topology_constraints):
         graph = read_topology_data(topology_filename, ignore_unit_age)
         # Sanity check: check that strata units exist in the graph.

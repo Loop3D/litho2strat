@@ -222,7 +222,7 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
 
     # Local flags are based on the function input data.
     add_thickness_constraints = (len(thickness_data) > 0)
-    add_topology_constraints = (graph.number_of_nodes() > 0)
+    add_topology_constraints = (graph != None)
 
     # Extract strata thikcness to lists (faster data structures).
     min_strata_thickness = [d.mean - d.range for d in thickness_data]
