@@ -6,7 +6,6 @@
   The University of Western Australia
 '''
 
-import numpy as np
 import matplotlib.pylab as pl
 import networkx as nx
 import os
