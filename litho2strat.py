@@ -29,6 +29,8 @@ from data_readers import \
 
 from solution_utils import \
     print_unique_routes, \
+    plot_route_scores, \
+    plot_top_routes, \
     plot_unit_probabilities
 
 #==============================================================================
@@ -283,9 +285,14 @@ def main():
     # Print all unique routes (i.e., unique strata sequence).
     print_unique_routes(strat_solution.routes, 10)
 
+    # Plot route scores.
+    plot_route_scores(strat_solution)
+
+    # Plot top routes and their probabilities.
+    plot_top_routes(strat_solution, drillsample_data)
+
     # Plot unit probabilities.
-    unit_names = strata_data.get_unit_names()
-    plot_unit_probabilities(strat_solution, drillsample_data, unit_names)
+    plot_unit_probabilities(strat_solution, drillsample_data)
 
 #=============================================================================
 if __name__ == "__main__":

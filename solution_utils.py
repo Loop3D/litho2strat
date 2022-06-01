@@ -83,23 +83,25 @@ def plot_route_probability(routes, x_data, strat_distr):
     pl.show()
 
 #=============================================================================
-def plot_unit_probabilities(strat_solution, drillsample_data, unit_names):
+def plot_route_scores(strat_solution):
     '''
-    Generate a plot with probability of occurence for each unit.
+    Plot distribution of the route scores (based on path probability).
+    '''
+    pl.hist(strat_solution.route_scores, bins = 50)
+    pl.xlabel('Route score')
+    pl.ylabel('Frequency')
+    pl.show()
+
+#=============================================================================
+def plot_top_routes(strat_solution, drillsample_data):
+    '''
+    Plot top routes and their probability.
     '''
     if (len(strat_solution.routes) == 0):
         return
 
-    num_units = len(unit_names)
-
-    #------------------------------------------
-    # Plot distribution of the route scores (based on path probability).
+    num_units = len(strat_solution.unit_names)
     route_scores = strat_solution.route_scores
-
-    pl.hist(route_scores, bins = 50)
-    pl.xlabel('Route score')
-    pl.ylabel('Frequency')
-    pl.show()
 
     #------------------------------------------
     # Top scores.
@@ -120,19 +122,18 @@ def plot_unit_probabilities(strat_solution, drillsample_data, unit_names):
     # Print the probability of the most probable routes.
     plot_route_probability(top_routes, x_data, strat_solution.strat_distr)
 
-    #------------------------------------------
-    # Print if there are multiple best routes.
-    multiple_best_routes = False
-    if (len(indexes_max) > 1):
-        if (route_scores[indexes_max[0]] == route_scores[indexes_max[1]]):
-            multiple_best_routes = True
+#=============================================================================
+def plot_unit_probabilities(strat_solution, drillsample_data):
+    '''
+    Generate a plot with probability of occurence for each unit.
+    '''
+    if (len(strat_solution.routes) == 0):
+        return
 
-    print("Multiple best routes: ", multiple_best_routes)
-
-    #------------------------------------------
-    # Generating the plots.
     # Increasing the figure size.
     pl.rcParams["figure.figsize"] = (12.8, 9.6) # Default size = (6.4, 4.8)
+
+    num_units = len(strat_solution.unit_names)
 
     # Count the number of non-empty units.
     num_units_nonempty = 0
@@ -174,7 +175,7 @@ def plot_unit_probabilities(strat_solution, drillsample_data, unit_names):
         # Plot dots.
         axs[j].scatter(x_data, strat_distr[:, i], s=5, c=color, zorder=2)
 
-        axs[j].set_title(unit_names[i], size=9, y=0.97)
+        axs[j].set_title(strat_solution.unit_names[i], size=9, y=0.97)
         axs[j].set_ylabel(str(j))
 
         if (index != len(nonempty_units) - 1):
