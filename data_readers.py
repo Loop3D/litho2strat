@@ -199,10 +199,11 @@ def read_drillsample_data(header, filename, ignore_list, min_litho_score):
                     all_lithos.add(litho)
 
             if (len(data.lithos) > 0):
+                # Add data row.
                 drillsample_data.rows.append(data)
 
-    print(all_lithos)
-    print("The number of drillhole lithologies: " + str(len(all_lithos)))
+    print("The number of drillhole lithologies:", len(all_lithos))
+    print(sorted(all_lithos))
 
     return drillsample_data
 

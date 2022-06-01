@@ -240,7 +240,9 @@ def main():
     strata_data.filter_strat_data_based_on_drillhole_lithos(drillhole_lithos)
     strata_data.filter_strat_data_based_on_distance(number_nearest_units)
 
-    print("Filtered unit lithologies:", strata_data.get_unique_lithos())
+    filtered_lithos = strata_data.get_unique_lithos()
+    print("The number of filtered unit lithologies:", len(filtered_lithos))
+    print("Filtered unit lithologies:", sorted(filtered_lithos))
 
     # Read the Cover unit lithologies.
     strata_data.add_cover_unit("Cover", cover_unit_filename)

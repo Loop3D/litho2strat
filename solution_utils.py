@@ -53,8 +53,6 @@ def plot_routes(routes, x_data):
     '''
     Plot and display the routes.
     '''
-    print("Plotting the routes...")
-
     for route in routes:
         pl.plot(x_data, route.path, '.-')
 
@@ -67,8 +65,6 @@ def plot_route_probability(routes, x_data, strat_distr):
     '''
     Plot and display the route probability.
     '''
-    print("Plotting the route probability...")
-
     num_rows = len(routes[0].path)
 
     for route in routes:
