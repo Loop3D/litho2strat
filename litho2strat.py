@@ -264,9 +264,9 @@ def main():
     #--------------------------------------------------------------
 #    tracemalloc.start()
 
-    all_routes, all_routes_number = generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, graph)
+    strat_solution = generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, graph)
 
-    print("Total number of routes = ", len(all_routes))
+    print("Total number of routes = ", len(strat_solution.routes))
 
 #    current, peak = tracemalloc.get_traced_memory()
 #    print("Current memory usage is {} MB; Peak was {} MB".format(current / 10**6, peak / 10**6))
@@ -277,18 +277,15 @@ def main():
     # Plot the number of processed routes at each row.
     pl.xlabel('Row number')
     pl.ylabel('Number of routes')
-    pl.plot(all_routes_number)
+    pl.plot(strat_solution.routes_number)
     pl.show()
 
     # Print all unique routes (i.e., unique strata sequence).
-    print_unique_routes(all_routes, 10)
-
-    # Write results to the file.
-    #write_routes_to_file("strata.txt", drillsample_data, all_routes)
+    print_unique_routes(strat_solution.routes, 10)
 
     # Plot unit probabilities.
     unit_names = strata_data.get_unit_names()
-    plot_unit_probabilities(all_routes, drillsample_data, unit_names)
+    plot_unit_probabilities(strat_solution.routes, drillsample_data, unit_names)
 
 #=============================================================================
 if __name__ == "__main__":

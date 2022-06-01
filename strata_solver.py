@@ -10,6 +10,8 @@ import numpy as np
 from dataclasses import dataclass, field
 from typing import List
 
+from strata_solution import StrataSolution
+
 #========================================================================================================
 @dataclass
 class StrataSolverParameters:
@@ -386,4 +388,7 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
     for route in all_routes:
         route.path = flatten(route.path)
 
-    return all_routes, all_routes_number
+    # Create the solution object.
+    solution = StrataSolution(all_routes, all_routes_number, unit_names)
+
+    return solution
