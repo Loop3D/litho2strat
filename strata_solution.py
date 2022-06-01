@@ -13,13 +13,15 @@ class StrataSolution:
     '''
     The solutions of the Strata Solver, with their scores.
     '''
-    def __init__(self, routes, routes_number, unit_names):
+    def __init__(self, routes, routes_number, unit_names, depth_data):
         # The strata solution paths.
         self.routes = routes
         # The number of solutions for every drillsample raw.
         self.routes_number = routes_number
         # The unit names.
         self.unit_names = unit_names
+        # Depth data.
+        self.depth_data = depth_data
 
         num_units = len(self.unit_names)
 

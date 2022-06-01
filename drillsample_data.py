@@ -22,6 +22,15 @@ class DrillSampleDataRow:
 
 #========================================================================================================
 @dataclass
+class DepthData:
+    '''
+    Contains the drillsample depth data.
+    '''
+    depth_from: List[int] = field(default_factory=list)
+    depth_to: List[int] = field(default_factory=list)
+
+#========================================================================================================
+@dataclass
 class DrillsampleData:
     '''
     The drillsample data needed for the Strata Solver.
@@ -52,7 +61,9 @@ class DrillsampleData:
         '''
         Returns the depth data.
         '''
-        depth_data = [d.depth_from for d in self.rows]
+        depth_data = DepthData()
+        depth_data.depth_from = [d.depth_from for d in self.rows]
+        depth_data.depth_to = [d.depth_to for d in self.rows]
         return depth_data
 
     #==============================================================================

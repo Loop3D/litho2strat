@@ -389,6 +389,7 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
         route.path = flatten(route.path)
 
     # Create the solution object.
-    solution = StrataSolution(all_routes, all_routes_number, unit_names)
+    depth_data = drillsample_data.get_depth_data()
+    solution = StrataSolution(all_routes, all_routes_number, unit_names, depth_data)
 
     return solution

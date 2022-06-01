@@ -89,7 +89,7 @@ def plot_route_scores(strat_solution):
     pl.show()
 
 #=============================================================================
-def plot_top_routes(strat_solution, drillsample_data):
+def plot_top_routes(strat_solution):
     '''
     Plot top routes and their probability.
     '''
@@ -110,7 +110,7 @@ def plot_top_routes(strat_solution, drillsample_data):
 
     #------------------------------------------
     top_routes = [strat_solution.routes[i] for i in indexes_max[0:ntop]]
-    x_data = drillsample_data.get_depth_data()
+    x_data = strat_solution.depth_data.depth_from
 
     # Print the most probable routes.
     plot_routes(top_routes, x_data)
@@ -119,7 +119,7 @@ def plot_top_routes(strat_solution, drillsample_data):
     plot_route_probability(top_routes, x_data, strat_solution.strat_distr)
 
 #=============================================================================
-def plot_unit_probabilities(strat_solution, drillsample_data):
+def plot_unit_probabilities(strat_solution):
     '''
     Generate a plot with probability of occurence for each unit.
     '''
@@ -146,9 +146,9 @@ def plot_unit_probabilities(strat_solution, drillsample_data):
     #-------------------------------------------------------------
     # Adding the "From" and "To" depths for visualisation.
     x_data = []
-    for d in drillsample_data.rows[0:num_rows]:
-        x_data.append(d.depth_from)
-        x_data.append(d.depth_to)
+    for i in range(num_rows):
+        x_data.append(strat_solution.depth_data.depth_from[i])
+        x_data.append(strat_solution.depth_data.depth_to[i])
 
     # Duplicate each value, as the probability is the same between the "From" and "To" depths.
     strat_distr = np.repeat(strat_solution.strat_distr, 2, axis=0)

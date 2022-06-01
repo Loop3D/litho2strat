@@ -290,10 +290,10 @@ def main():
     plot_route_scores(strat_solution)
 
     # Plot top routes and their probabilities.
-    plot_top_routes(strat_solution, drillsample_data)
+    plot_top_routes(strat_solution)
 
     # Plot unit probabilities.
-    plot_unit_probabilities(strat_solution, drillsample_data)
+    plot_unit_probabilities(strat_solution)
 
 #=============================================================================
 if __name__ == "__main__":
