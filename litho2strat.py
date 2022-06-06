@@ -142,8 +142,7 @@ def main():
     #exit()
 
     # Topology file.
-    #topology_filename = "data/real/ASUD_strat.gml"
-    topology_filename = "data/real/ASUD_strat2.gml"
+    topology_filename = "data/real/ASUD_strat3.gml"
 
     # The Cover unit data file.
     cover_unit_filename = "data/real/cover_unit.txt"
@@ -153,15 +152,6 @@ def main():
 
     # Alternative rock names file.
     alternative_rock_names_file = "data/real/alternative_rock_names.txt"
-
-    #----------------------------------------------------------------------------
-    # # Mark's data.
-    # collarID = 548917
-    # drillsample_filename = "data/real/dh_files/litho_tables/litho_" + str(collarID) + ".csv"
-    # dist_table_filename = "data/real/dh_files/dist_tables/100k_map_near_" + str(collarID) + ".csv"
-    #
-    # # Drillsample data column names.
-    # drillsample_header = DrillSampleDataHeader('FromDepth', 'ToDepth', 'CET_Litho', 'Scores')
 
     #----------------------------------------------------------------------------
     # Mark's data with known solutions.
@@ -177,13 +167,13 @@ def main():
     #collarID = 353386
 
     # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, max_num_unit_contacts_inside_litho = 0)
-    #collarID = 2182301
+    collarID = 2182301
 
     # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, max_num_unit_contacts_inside_litho = 0)
     #collarID = 2182076
 
     # (!) Has wacke at row = 28 which is not passing topology constraints! To discuss with Mark.
-    collarID = 810340
+    #collarID = 810340
 
     # Confirmed results (using 1 closest unit & single top unit).
     #collarID = 2182336
