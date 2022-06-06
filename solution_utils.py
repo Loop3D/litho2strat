@@ -72,6 +72,9 @@ def write_best_route_to_file(strat_solution, filename):
     '''
     Write a route with the highest score to file.
     '''
+    if (len(strat_solution.route_scores) == 0):
+        return
+
     # Extraxt the index of the best route.
     indexes_max = np.argsort(-strat_solution.route_scores)
     index_max = indexes_max[0]

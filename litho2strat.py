@@ -177,13 +177,13 @@ def main():
     #collarID = 353386
 
     # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, max_num_unit_contacts_inside_litho = 0)
-    collarID = 2182301
+    #collarID = 2182301
 
     # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, max_num_unit_contacts_inside_litho = 0)
     #collarID = 2182076
 
     # (!) Has wacke at row = 28 which is not passing topology constraints! To discuss with Mark.
-    #collarID = 810340
+    collarID = 810340
 
     # Confirmed results (using 1 closest unit & single top unit).
     #collarID = 2182336
@@ -191,7 +191,6 @@ def main():
     #collarID = 2182340
     #collarID = 2182339
     #collarID = 2182338
-    #collarID = 2182335
     #collarID = 2182334
 
     # (!) Strange gravel at 10m, which looks like real gravel, but there are rocks above...
