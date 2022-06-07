@@ -68,18 +68,20 @@ def plot_route_scores(strat_solution):
     pl.show()
 
 #==============================================================================
-def write_best_route_to_file(strat_solution, filename):
+def write_best_routes_to_file(strat_solution, filename, ntop):
     '''
-    Write a route with the highest score to file.
+    Write the best ntop routes to file.
     '''
     if (len(strat_solution.route_scores) == 0):
         return
 
-    # Extraxt the index of the best route.
-    indexes_max = np.argsort(-strat_solution.route_scores)
-    index_max = indexes_max[0]
+    # Extract the indexes of the best routes.
+    route_indexes = np.argsort(-strat_solution.route_scores)
+    num_routes = len(route_indexes)
 
-    print("Writing to file the route with score:", strat_solution.route_scores[index_max])
+    if (ntop > num_routes):
+        # Adjust ntop if we have less routes.
+        ntop = num_routes
 
     with open(filename, "w") as file:
         # Write the number of units.
@@ -90,17 +92,26 @@ def write_best_route_to_file(strat_solution, filename):
         for index, unit_name in enumerate(strat_solution.unit_names):
             file.write("%d,%s\n" % (index, unit_name))
 
-        # Write stratigraphy.
         num_rows = len(strat_solution.depth_data.depth_from)
+
+        file.write("%d,%d,%d\n" % (num_rows, ntop, num_routes))
+
+        # Write stratigraphy.
         for row in range(num_rows):
             # Extract depths for this row.
             depth_from = strat_solution.depth_data.depth_from[row]
             depth_to = strat_solution.depth_data.depth_to[row]
 
-            # Extract unit index.
-            unit_index = strat_solution.routes[index_max].path[row]
+            # Write depth data.
+            file.write("%f,%f" % (depth_from, depth_to))
 
-            file.write("%f,%f,%d\n" % (depth_from, depth_to, unit_index))
+            # Write the best routes.
+            for route_index in route_indexes[0:ntop]:
+                # Extract unit index.
+                unit_index = strat_solution.routes[route_index].path[row]
+                file.write(",%d" % unit_index)
+
+            file.write("\n")
 
 #=============================================================================
 def plot_top_routes(strat_solution):

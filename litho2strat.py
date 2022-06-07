@@ -30,7 +30,7 @@ from solution_utils import \
     plot_route_scores, \
     plot_top_routes, \
     plot_unit_probabilities, \
-    write_best_route_to_file
+    write_best_routes_to_file
 
 #==============================================================================
 # Adding unit contacts topology (extracted from map data).
@@ -176,7 +176,7 @@ def main():
     #collarID = 810340
 
     # Confirmed results (using 1 closest unit & single top unit).
-    #collarID = 2182336
+    collarID = 2182336
     #collarID = 2182335
     #collarID = 2182340
     #collarID = 2182339
@@ -285,7 +285,7 @@ def main():
     plot_unit_probabilities(strat_solution)
 
     # Write the best route to file.
-    write_best_route_to_file(strat_solution, "best_route.txt")
+    write_best_routes_to_file(strat_solution, "best_route.txt", 10)
 
 #=============================================================================
 if __name__ == "__main__":
