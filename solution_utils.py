@@ -105,12 +105,16 @@ def write_best_routes_to_file(strat_solution, filename, ntop):
             # Write depth data.
             file.write("%f,%f" % (depth_from, depth_to))
 
-            # Write the best routes.
+            # Write unit indexes.
             for route_index in route_indexes[0:ntop]:
-                # Extract unit index.
                 unit_index = strat_solution.routes[route_index].path[row]
                 file.write(",%d" % unit_index)
 
+            # Write probabilities.
+            for route_index in route_indexes[0:ntop]:
+                unit_index = strat_solution.routes[route_index].path[row]
+                route_proba = strat_solution.strat_distr[row, unit_index]
+                file.write(",%.3f" % route_proba)
             file.write("\n")
 
 #=============================================================================
