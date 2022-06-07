@@ -42,7 +42,7 @@ ignore_unit_age = True
 number_nearest_units = 3
 #---------------------------------------------------------------------------
 # Minimum score for drillhole lithologies to use them.
-min_drillhole_litho_score = 70
+min_drillhole_litho_score = 80
 #---------------------------------------------------------------------------
 # Group drillhole lithology sequence.
 # Note: use this for max_num_unit_contacts_inside_litho > 0 to avoid the solution number to blow.
@@ -284,8 +284,9 @@ def main():
     # Plot unit probabilities.
     plot_unit_probabilities(strat_solution)
 
-    # Write the best route to file.
-    write_best_routes_to_file(strat_solution, "best_route.txt", 10)
+    # Write the best routes to file.
+    filename = "best_routes_" + str(collarID) + ".txt"
+    write_best_routes_to_file(strat_solution, filename, 10)
 
 #=============================================================================
 if __name__ == "__main__":
