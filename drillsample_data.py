@@ -38,6 +38,9 @@ class DrillsampleData:
     # Maps the unit name to the list of its lithologies.
     rows: List[DrillSampleDataRow] = field(default_factory=list)
 
+    # Cover part.
+    rows_cover: List[DrillSampleDataRow] = field(default_factory=list)
+
     #==============================================================================
     def get_num_rows(self):
         '''
@@ -133,6 +136,20 @@ class DrillsampleData:
 
         self.rows = data_grouped
 
+    #==============================================================================
+    def remove_cover(self, cover_lithos_filename, threshold):
+        '''
+        Removes the cover.
+        '''
+        cover_index = self.identify_cover(cover_lithos_filename, threshold)
+
+        if (cover_index >= 0):
+            print("REMOVING THE COVER until depth =", self.rows[cover_index].depth_to)
+ 
+            self.rows_cover = self.rows[0:cover_index + 1]
+            self.rows = self.rows[cover_index + 1:]
+
+    #==============================================================================
     @staticmethod
     def __has_cover_litho(lithos, cover_lithos):
         for litho in lithos:
@@ -140,6 +157,7 @@ class DrillsampleData:
                 return True
         return False
 
+    #==============================================================================
     @staticmethod
     def __all_cover_lithos(lithos, cover_lithos):
         for litho in lithos:
@@ -147,11 +165,12 @@ class DrillsampleData:
                 return False
         return True
 
-    def identify_cover(self, cover_lithos_filename):
+    #==============================================================================
+    def identify_cover(self, cover_lithos_filename, threshold):
         '''
-        Identifies and removes the cover.
+        Identifies the cover.
         '''
-        print("Identidying the Cover...")
+        print("Identifying the Cover...")
 
         # Read the Cover lithologies.
         with open(cover_lithos_filename) as f:
@@ -179,3 +198,7 @@ class DrillsampleData:
 
                 cover_ratio = cover_length / total_length
                 print("Cover ratio:", cover_ratio)
+
+                if (cover_ratio >= threshold):
+                    return cover_index
+        return -1

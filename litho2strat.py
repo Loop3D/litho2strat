@@ -48,6 +48,9 @@ min_drillhole_litho_score = 80
 # Note: use this for max_num_unit_contacts_inside_litho > 0 to avoid the solution number to blow.
 group_drillhole_lithos = False
 #---------------------------------------------------------------------------
+# The cover ration threshold (relative length) for removing the cover.
+cover_ratio_threshold = 0.65
+#---------------------------------------------------------------------------
 spar = StrataSolverParameters()
 
 # 'Returning to the same unit' constraints.
@@ -167,7 +170,7 @@ def main():
     #collarID = 353386
 
     # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, max_num_unit_contacts_inside_litho = 0)
-    collarID = 2182301
+    #collarID = 2182301
 
     # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, max_num_unit_contacts_inside_litho = 0)
     #collarID = 2182076
@@ -178,7 +181,7 @@ def main():
     # Confirmed results (using 1 closest unit & single top unit).
     #collarID = 2182336
     #collarID = 2182335
-    #collarID = 2182340
+    collarID = 2182340
     #collarID = 2182339
     #collarID = 2182338
     #collarID = 2182334
@@ -214,8 +217,8 @@ def main():
     # Read drill sample data.
     drillsample_data = read_drillsample_data(drillsample_header, drillsample_filename, ignore_list, min_drillhole_litho_score)
 
-    drillsample_data.identify_cover(cover_unit_filename)
-    exit()
+    # Remove the Cover.
+    drillsample_data.remove_cover(cover_unit_filename, cover_ratio_threshold)
 
     if (group_drillhole_lithos):
         # Group the drillsample lithologies.
