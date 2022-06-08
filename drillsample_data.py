@@ -140,6 +140,13 @@ class DrillsampleData:
                 return True
         return False
 
+    @staticmethod
+    def __all_cover_lithos(lithos, cover_lithos):
+        for litho in lithos:
+            if (litho not in cover_lithos):
+                return False
+        return True
+
     def identify_cover(self, cover_lithos_filename):
         '''
         Identifies and removes the cover.
@@ -152,7 +159,7 @@ class DrillsampleData:
 
         # Iterate from the bottom to top, and search for the Cover.
         for index, row in reversed(list(enumerate(self.rows))):
-            print(index, row.lithos)
+            print(index, row.depth_to, row.lithos)
 
             found_cover_litho = self.__has_cover_litho(row.lithos, cover_lithos)
 
@@ -166,6 +173,7 @@ class DrillsampleData:
                     row = self.rows[i]
                     thickness = row.depth_to - row.depth_from
                     total_length += thickness
+
                     if (self.__has_cover_litho(row.lithos, cover_lithos)):
                         cover_length += thickness
 

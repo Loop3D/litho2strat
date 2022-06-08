@@ -167,7 +167,7 @@ def main():
     #collarID = 353386
 
     # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, max_num_unit_contacts_inside_litho = 0)
-    #collarID = 2182301
+    collarID = 2182301
 
     # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, max_num_unit_contacts_inside_litho = 0)
     #collarID = 2182076
@@ -184,7 +184,7 @@ def main():
     #collarID = 2182334
 
     # (!) Strange gravel at 10m, which looks like real gravel, but there are rocks above...
-    collarID = 2470303
+    #collarID = 2470303
     # (!) Strange gravel at 4m, which looks like real gravel, but there are rocks above...
     #collarID = 2470304
 
