@@ -133,3 +133,41 @@ class DrillsampleData:
 
         self.rows = data_grouped
 
+    @staticmethod
+    def __has_cover_litho(lithos, cover_lithos):
+        for litho in lithos:
+            if (litho in cover_lithos):
+                return True
+        return False
+
+    def identify_cover(self, cover_lithos_filename):
+        '''
+        Identifies and removes the cover.
+        '''
+        print("Identidying the Cover...")
+
+        # Read the Cover lithologies.
+        with open(cover_lithos_filename) as f:
+            cover_lithos = f.read().splitlines()
+
+        # Iterate from the bottom to top, and search for the Cover.
+        for index, row in reversed(list(enumerate(self.rows))):
+            print(index, row.lithos)
+
+            found_cover_litho = self.__has_cover_litho(row.lithos, cover_lithos)
+
+            if (found_cover_litho):
+                cover_index = index
+                total_length = 0.
+                cover_length = 0.
+
+                # Calcualte the total and cover lenghts.
+                for i in reversed(range(cover_index + 1)):
+                    row = self.rows[i]
+                    thickness = row.depth_to - row.depth_from
+                    total_length += thickness
+                    if (self.__has_cover_litho(row.lithos, cover_lithos)):
+                        cover_length += thickness
+
+                cover_ratio = cover_length / total_length
+                print("Cover ratio:", cover_ratio)

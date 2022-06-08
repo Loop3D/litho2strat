@@ -167,7 +167,7 @@ def main():
     #collarID = 353386
 
     # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, max_num_unit_contacts_inside_litho = 0)
-    collarID = 2182301
+    #collarID = 2182301
 
     # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, max_num_unit_contacts_inside_litho = 0)
     #collarID = 2182076
@@ -176,7 +176,7 @@ def main():
     #collarID = 810340
 
     # Confirmed results (using 1 closest unit & single top unit).
-    collarID = 2182336
+    #collarID = 2182336
     #collarID = 2182335
     #collarID = 2182340
     #collarID = 2182339
@@ -184,7 +184,7 @@ def main():
     #collarID = 2182334
 
     # (!) Strange gravel at 10m, which looks like real gravel, but there are rocks above...
-    #collarID = 2470303
+    collarID = 2470303
     # (!) Strange gravel at 4m, which looks like real gravel, but there are rocks above...
     #collarID = 2470304
 
@@ -213,6 +213,9 @@ def main():
 
     # Read drill sample data.
     drillsample_data = read_drillsample_data(drillsample_header, drillsample_filename, ignore_list, min_drillhole_litho_score)
+
+    drillsample_data.identify_cover(cover_unit_filename)
+    exit()
 
     if (group_drillhole_lithos):
         # Group the drillsample lithologies.
