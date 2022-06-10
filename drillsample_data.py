@@ -184,7 +184,7 @@ class DrillsampleData:
         for index, row in reversed(list(enumerate(self.rows))):
             print(index, row.depth_to, row.lithos)
 
-            found_cover_litho = self.__has_cover_litho(row.lithos, cover_lithos)
+            found_cover_litho = self.__all_cover_lithos(row.lithos, cover_lithos)
 
             if (found_cover_litho):
                 cover_index = index
@@ -197,7 +197,7 @@ class DrillsampleData:
                     thickness = row.depth_to - row.depth_from
                     total_length += thickness
 
-                    if (self.__has_cover_litho(row.lithos, cover_lithos)):
+                    if (self.__all_cover_lithos(row.lithos, cover_lithos)):
                         cover_length += thickness
 
                 cover_ratio = cover_length / total_length
