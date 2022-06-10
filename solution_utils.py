@@ -166,7 +166,7 @@ def plot_unit_probabilities(strat_solution):
         if (sum(strat_solution.strat_distr[:, i]) != 0):
             num_units_nonempty += 1
 
-    fig, axs = pl.subplots(num_units_nonempty, sharey=True, squeeze=True)
+    fig, axs = pl.subplots(nrows=num_units_nonempty, ncols=1, sharey=True, squeeze=False)
 
     fig.suptitle('Probability of occurrence for every unit.', y=0.96)
 
@@ -192,23 +192,23 @@ def plot_unit_probabilities(strat_solution):
     j = 0
     for index, i in enumerate(nonempty_units):
         # Plot lines.
-        axs[j].plot(x_data, strat_distr[:, i], zorder=1, c='blue')
+        axs[j, 0].plot(x_data, strat_distr[:, i], zorder=1, c='blue')
 
         # Set red color for zero data.
         color = ['red' if p <= 0 else 'blue' for p in strat_distr[:, i]]
 
         # Plot dots.
-        axs[j].scatter(x_data, strat_distr[:, i], s=5, c=color, zorder=2)
+        axs[j, 0].scatter(x_data, strat_distr[:, i], s=5, c=color, zorder=2)
 
-        axs[j].set_title(strat_solution.unit_names[i], size=9, y=0.97)
-        axs[j].set_ylabel(str(j))
+        axs[j, 0].set_title(strat_solution.unit_names[i], size=9, y=0.97)
+        axs[j, 0].set_ylabel(str(j))
 
         if (index != len(nonempty_units) - 1):
             # Hide tick labels.
-            axs[j].set_xticklabels([])
+            axs[j, 0].set_xticklabels([])
 
         # Add vertical lines.
-        axs[j].xaxis.grid(True)
+        axs[j, 0].xaxis.grid(True)
 
         j += 1
  

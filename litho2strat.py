@@ -60,7 +60,7 @@ spar.max_num_returns_per_unit = 2
 spar.max_num_unit_contacts_inside_litho = 0
 #---------------------------------------------------------------------------
 # Use the single closest unit for the top (first) lithology.
-spar.single_top_unit = False
+spar.single_top_unit = True
 
 #---------------------------------------------------------------------------
 # Adding thickness constraints. (Requires unit thickness data).
@@ -179,12 +179,12 @@ def main():
     #collarID = 810340
 
     # Confirmed results (using 1 closest unit & single top unit).
-    collarID = 2182336
+    #collarID = 2182336
     #collarID = 2182335
     #collarID = 2182340
     #collarID = 2182339
     #collarID = 2182338
-    #collarID = 2182334
+    collarID = 2182334
 
     # (!) Strange gravel at 10m, which looks like real gravel, but there are rocks above...
     #collarID = 2470303
