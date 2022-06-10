@@ -160,12 +160,7 @@ def plot_unit_probabilities(strat_solution):
     pl.rcParams["figure.figsize"] = (12.8, 9.6) # Default size = (6.4, 4.8)
 
     num_units = len(strat_solution.unit_names)
-
-    # Count the number of non-empty units.
-    num_units_nonempty = 0
-    for i in range(num_units):
-        if (sum(strat_solution.strat_distr[:, i]) != 0):
-            num_units_nonempty += 1
+    num_units_nonempty = strat_solution.num_nonempty_units()
 
     fig, axs = pl.subplots(nrows=num_units_nonempty, ncols=1, sharey=True, squeeze=False)
 
@@ -186,9 +181,9 @@ def plot_unit_probabilities(strat_solution):
 
     # Skip empty units.
     nonempty_units = []
-    for i in range(num_units):
-        if (sum(strat_distr[:, i]) != 0):
-            nonempty_units.append(i)
+    for index, unit_name in enumerate(strat_solution.unit_names):
+        if (strat_solution.unit_nonempty(unit_name)):
+            nonempty_units.append(index)
 
     j = 0
     for index, i in enumerate(nonempty_units):
