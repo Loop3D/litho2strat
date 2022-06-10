@@ -149,6 +149,10 @@ class DrillsampleData:
             self.rows_cover = self.rows[0:cover_index + 1]
             self.rows = self.rows[cover_index + 1:]
 
+            # Print the removed Cover lithologies.
+            for index, row in reversed(list(enumerate(self.rows_cover))):
+                print("Removed cover:", row.depth_to, row.lithos)
+
     #==============================================================================
     @staticmethod
     def __has_cover_litho(lithos, cover_lithos):
