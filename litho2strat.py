@@ -179,12 +179,12 @@ def main():
     #collarID = 810340
 
     # Confirmed results (using 1 closest unit & single top unit).
-    #collarID = 2182336
-    collarID = 2182335
-    #collarID = 2182340
-    #collarID = 2182339
-    #collarID = 2182338
     #collarID = 2182334
+    #collarID = 2182335
+    #collarID = 2182336
+    collarID = 2182338
+    #collarID = 2182339
+    #collarID = 2182340
 
     # (!) Strange gravel at 10m, which looks like real gravel, but there are rocks above...
     #collarID = 2470303

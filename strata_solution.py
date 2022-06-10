@@ -32,6 +32,28 @@ class StrataSolution:
         # Calculate the route scores (based on path probability).
         self.route_scores = _get_route_scores(routes, self.strat_distr)
 
+    #=====================================================================
+    def unit_nonempty(self, unit_name):
+        '''
+        Checks if the unit has nonzero probability.
+        '''
+        unit_index = self.unit_names.index(unit_name)
+        if (sum(self.strat_distr[:, unit_index]) != 0):
+            return True
+        else:
+            return False
+
+    #=====================================================================
+    def num_nonempty_units(self):
+        '''
+        Returns the number of non-empty units.
+        '''
+        counter = 0
+        for unit_name in self.unit_names:
+            if self.unit_nonempty(unit_name):
+                counter += 1
+        return counter
+
 #=============================================================================
 def _get_strat_distr(all_routes, num_rows, num_units):
     '''

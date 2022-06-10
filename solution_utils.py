@@ -85,12 +85,13 @@ def write_best_routes_to_file(strat_solution, filename, ntop):
 
     with open(filename, "w") as file:
         # Write the number of units.
-        num_units = len(strat_solution.unit_names)
+        num_units = strat_solution.num_nonempty_units()
         file.write("%d\n" % num_units)
 
         # Write unit names.
         for index, unit_name in enumerate(strat_solution.unit_names):
-            file.write("%d,%s\n" % (index, unit_name))
+            if (strat_solution.unit_nonempty(unit_name)):
+                file.write("%d,%s\n" % (index, unit_name))
 
         num_rows = len(strat_solution.depth_data.depth_from)
 
