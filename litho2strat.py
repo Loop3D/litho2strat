@@ -60,7 +60,7 @@ spar.max_num_returns_per_unit = 2
 spar.max_num_unit_contacts_inside_litho = 0
 #---------------------------------------------------------------------------
 # Use the single closest unit for the top (first) lithology.
-spar.single_top_unit = True
+spar.single_top_unit = False
 
 #---------------------------------------------------------------------------
 # Adding thickness constraints. (Requires unit thickness data).
@@ -145,7 +145,7 @@ def main():
     #exit()
 
     # Topology file.
-    topology_filename = "data/real/ASUD_strat3.gml"
+    topology_filename = "data/real/ASUD_strat4.gml"
 
     # The Cover unit data file.
     cover_unit_filename = "data/real/cover_unit.txt"
@@ -180,11 +180,11 @@ def main():
 
     # Confirmed results (using 1 closest unit & single top unit).
     #collarID = 2182336
-    #collarID = 2182335
+    collarID = 2182335
     #collarID = 2182340
     #collarID = 2182339
     #collarID = 2182338
-    collarID = 2182334
+    #collarID = 2182334
 
     # (!) Strange gravel at 10m, which looks like real gravel, but there are rocks above...
     #collarID = 2470303

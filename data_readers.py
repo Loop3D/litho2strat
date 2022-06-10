@@ -83,7 +83,7 @@ def read_strat_data(header, filename, alternative_rock_names):
             unit_name = row[header.unitname]
 
             # Convert the unitname to align it with format used in the topology graph.
-            unit_name = unit_name.replace(" ", "_").replace(",", "_").replace("-", "_")
+            unit_name = unit_name.replace(" ", "_").replace(",", "_").replace("-", "_").lower()
 
             #-----------------------------------------
             # Hard fixes for "coal".
@@ -250,6 +250,8 @@ def read_topology_data(topology_filename, ignore_unit_age):
     # Modify the graph to have node names = unit names.
     for node in Gf.nodes():
         unit_name = Gf.nodes[node]['LabelGraphics']['text']
+        # Convert to lowercase.
+        unit_name = unit_name.lower()
         mapping = {node:unit_name}
         Gf = nx.relabel_nodes(Gf, mapping)
 
