@@ -30,7 +30,8 @@ from solution_utils import \
     plot_route_scores, \
     plot_top_routes, \
     plot_unit_probabilities, \
-    write_best_routes_to_file
+    write_best_routes_to_file, \
+    draw_strata_logs
 
 #==============================================================================
 # Adding unit contacts topology (extracted from map data).
@@ -179,7 +180,7 @@ def main():
     #collarID = 810340
 
     # (!) Strange gravel at 10m, which looks like real gravel, but there are rocks above...
-    #collarID = 2470303
+    collarID = 2470303
     # (!) Strange gravel at 4m, which looks like real gravel, but there are rocks above...
     #collarID = 2470304
 
@@ -200,7 +201,7 @@ def main():
     #collarID = 2182310
     #collarID = 2182312
     #collarID = 2182313
-    collarID = 2182314
+    #collarID = 2182314
     #collarID = 2182315
     #collarID = 2182316
     #collarID = 2182317
@@ -289,14 +290,11 @@ def main():
     #--------------------------------------------------------------
     # Plot the results.
     #--------------------------------------------------------------
-    # Plot the number of processed routes at each row.
-    pl.xlabel('Row number')
-    pl.ylabel('Number of routes')
-    pl.plot(strat_solution.routes_number)
-    pl.show()
-
     # Print all unique routes (i.e., unique strata sequence).
     print_unique_routes(strat_solution.routes, 10)
+
+    # Draw strata logs.
+    draw_strata_logs(strat_solution)
 
     # Plot route scores.
     plot_route_scores(strat_solution)

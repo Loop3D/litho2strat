@@ -8,6 +8,51 @@
 
 import numpy as np
 import matplotlib.pylab as pl
+from matplotlib.patches import Rectangle
+import brewer2mpl
+
+#==============================================================================
+def draw_strata_logs(strat_solution):
+    '''
+    Drawing the strata logs.
+    '''
+    print("Drawing the strata logs...")
+
+    # Note this colorbar only has 12 colors maximum.
+    color_map = brewer2mpl.get_map('Paired', 'Qualitative', 12)
+    colors = [c for c in color_map.mpl_colors]
+
+    num_units = len(strat_solution.unit_names)
+    if (num_units > 12):
+        color_map = brewer2mpl.get_map('Pastel1', 'Qualitative', 9)
+        colors2 = [c for c in color_map.mpl_colors]
+        colors.extend(colors2)
+
+    num_routes = min(len(strat_solution.routes), 200)
+    x_max = strat_solution.depth_data.depth_to[-1]
+    y_max = float(num_routes) + 0.5
+
+    # Define figure dimensions.
+    fig = pl.figure()
+    pl.xlim(0, x_max)
+    pl.ylim(0.5, y_max)
+
+    currentAxis = pl.gca()
+
+    for i in range(num_routes):
+        for row, unit_index in enumerate(strat_solution.routes[i].path):
+            x1 = strat_solution.depth_data.depth_from[row]
+            x2 = strat_solution.depth_data.depth_to[row]
+            y1 = 0.5 + float(i)
+            y2 = 0.5 + float(i + 1)
+            dx = x2 - x1
+            dy = y2 - y1
+            # Adding rectangle.
+            currentAxis.add_patch(Rectangle((x1, y1), dx, dy, facecolor=colors[unit_index]))
+
+    pl.xlabel('Depth')
+    pl.ylabel('Stratigraphy')
+    pl.show()
 
 #==============================================================================
 def print_unique_routes(all_routes, num_print_paths):
