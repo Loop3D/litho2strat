@@ -211,6 +211,10 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
     '''
     print('Starting strata solver with:', spar)
 
+    if (len(drillsample_data.rows) == 0):
+        # Empty drillsample data - return.
+        return StrataSolution([], [], [], drillsample_data.get_depth_data())
+
     # Generating the table of possible strata paths.
     strata_table, missing_lithos = generate_strata_table(drillsample_data, strata_data, spar.single_top_unit)
 

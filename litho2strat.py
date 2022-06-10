@@ -54,7 +54,7 @@ cover_ratio_threshold = 0.65
 spar = StrataSolverParameters()
 
 # 'Returning to the same unit' constraints.
-spar.max_num_returns_per_unit = 2
+spar.max_num_returns_per_unit = 1
 #---------------------------------------------------------------------------
 # The number of unit contacts inside the same litholgy sequence.
 spar.max_num_unit_contacts_inside_litho = 0
@@ -178,18 +178,35 @@ def main():
     # (!) Has wacke at row = 28 which is not passing topology constraints! To discuss with Mark.
     #collarID = 810340
 
-    # Confirmed results (using 1 closest unit & single top unit).
-    #collarID = 2182334
-    #collarID = 2182335
-    #collarID = 2182336
-    collarID = 2182338
-    #collarID = 2182339
-    #collarID = 2182340
-
     # (!) Strange gravel at 10m, which looks like real gravel, but there are rocks above...
     #collarID = 2470303
     # (!) Strange gravel at 4m, which looks like real gravel, but there are rocks above...
     #collarID = 2470304
+
+    # First small cluster.
+    #collarID = 2182334
+    #collarID = 2182335
+    #collarID = 2182336
+    #collarID = 2182338
+    #collarID = 2182339
+    #collarID = 2182340
+
+    # Second cluster (crossing the boundary of two units on the map).
+    #collarID = 2182301
+    #collarID = 2182306
+    #collarID = 2182307
+    #collarID = 2182308
+    #collarID = 2182309
+    #collarID = 2182310
+    #collarID = 2182312
+    #collarID = 2182313
+    collarID = 2182314
+    #collarID = 2182315
+    #collarID = 2182316
+    #collarID = 2182317
+    #collarID = 2182318
+    #collarID = 2182319
+
 
     print('collarID =', collarID)
 
