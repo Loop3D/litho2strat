@@ -156,6 +156,12 @@ def main():
     # Alternative rock names file.
     alternative_rock_names_file = "data/real/alternative_rock_names.txt"
 
+    # Drillsample data csv file column names.
+    drillsample_header = DrillSampleDataHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
+
+    # Strata data csv file column names.
+    strata_data_header = StrataDataHeader('UNITNAME', 'lithos', 'distance', 'DESCRIPTN')
+
     #----------------------------------------------------------------------------
     # Mark's data with known solutions.
     #----------------------------------------------------------------------------
@@ -191,112 +197,95 @@ def main():
     #collarID = 2182339
     #collarID = 2182340
 
-    # Second cluster (crossing the boundary of two units on the map).
-    #collarID = 2182301
-    #collarID = 2182306
-    #collarID = 2182307
-    collarID = 2182308
-    #collarID = 2182309
-    #collarID = 2182310
-    #collarID = 2182312
-    #collarID = 2182313
-    #collarID = 2182314
-    #collarID = 2182315
-    #collarID = 2182316
-    #collarID = 2182317
-    #collarID = 2182318
-    #collarID = 2182319
-
-
-    print('collarID =', collarID)
-
-    drillsample_filename = "data/real/dist_files/litho_tables_V3/litho_" + str(collarID) + ".csv"
-    dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
-
-    # Synthetic test.
-    # Note: The tests #1 and #2 show very different probabilities for max_num_unit_contacts_inside_litho = 0 and 1, i.e., a constant and linear increasing transition.
-    # IMPORTANT: For these tests, set max_num_returns_per_unit = 0.
-    #drillsample_filename = "data/tests/litho_2.csv"
-    #dist_table_filename = "data/tests/map_2.csv"
-
-    # Drillsample data csv file column names.
-    drillsample_header = DrillSampleDataHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
-
-    # Strata data csv file column names.
-    strata_data_header = StrataDataHeader('UNITNAME', 'lithos', 'distance', 'DESCRIPTN')
-
-    #--------------------------------------------------------------
-    # Reading the input data.
-    #--------------------------------------------------------------
-    # Read the drillhole ignore items list.
-    ignore_list = read_ignore_list(ignore_list_filename)
-
-    # Read drill sample data.
-    drillsample_data = read_drillsample_data(drillsample_header, drillsample_filename, ignore_list, min_drillhole_litho_score)
-
-    # Remove the Cover.
-    drillsample_data.remove_cover(cover_unit_filename, cover_ratio_threshold)
-
-    if (group_drillhole_lithos):
-        # Group the drillsample lithologies.
-        drillsample_data.group_drillhole_litho_sequence(spar.max_num_unit_contacts_inside_litho)
-
-    # Read the alternative rock names.
-    alternative_rock_names = read_alternative_rock_names(alternative_rock_names_file)
-
-    # Read unit lithologies and distance data.
-    strata_data = read_strat_data(strata_data_header, dist_table_filename, alternative_rock_names)
-
-    # Filter strat data.
-    drillhole_lithos = drillsample_data.get_drillhole_lithos()
-    strata_data.filter_strat_data_based_on_drillhole_lithos(drillhole_lithos)
-    strata_data.filter_strat_data_based_on_distance(number_nearest_units)
-
-    filtered_lithos = strata_data.get_unique_lithos()
-    print("The number of filtered unit lithologies:", len(filtered_lithos))
-    print("Filtered unit lithologies:", sorted(filtered_lithos))
-
-    # Read the Cover unit lithologies.
-    #strata_data.add_cover_unit("Cover", cover_unit_filename)
-
-    # Read thickness data.
-    thickness_data = []
-    if (add_thickness_constraints):
-        thickness_data = read_thickness_data(thickness_filename)
-
-    # Read topology data.
+    # Read topology data (the same for all collarIDs).
     graph = None
     if (add_topology_constraints):
         graph = read_topology_data(topology_filename, ignore_unit_age)
-        # Sanity check: check that strata units exist in the graph.
-        unit_names = strata_data.get_unit_names()
-        for unit_name in unit_names:
-            if unit_name not in graph.nodes():
-                print("WARNING: Not found graph unit: ", unit_name)
 
-    #--------------------------------------------------------------
-    # Generating the stratigraphies.
-    #--------------------------------------------------------------
-    strat_solution = generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, graph)
+    #====================================================================================
+    # Process the list of CollarIDs.
+    #====================================================================================
+    # Second cluster (crossing the boundary of two units on the map).
+    collarIDs = [2182301, 2182306, 2182307, 2182308, 2182309, 2182310]
+    collarIDs.extend(list(range(2182312, 2182319 + 1)))
 
-    print("Total number of routes = ", len(strat_solution.routes))
+    display_plots = False
 
-    #--------------------------------------------------------------
-    # Plot the results.
-    #--------------------------------------------------------------
-    strat_solution.collarID = collarID
+    for collarID in collarIDs:
 
-    # Print all unique routes (i.e., unique strata sequence).
-    print_unique_routes(strat_solution.routes, 10)
+        print('collarID =', collarID)
 
-    # Draw strata logs.
-    draw_strata_logs(strat_solution)
+        drillsample_filename = "data/real/dist_files/litho_tables_V3/litho_" + str(collarID) + ".csv"
+        dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
 
-    # Plot unit probabilities.
-    plot_unit_probabilities(strat_solution)
+        # Synthetic test.
+        # Note: The tests #1 and #2 show very different probabilities for max_num_unit_contacts_inside_litho = 0 and 1, i.e., a constant and linear increasing transition.
+        # IMPORTANT: For these tests, set max_num_returns_per_unit = 0.
+        #drillsample_filename = "data/tests/litho_2.csv"
+        #dist_table_filename = "data/tests/map_2.csv"
 
-    # Write the best routes to file.
-    write_best_routes_to_file(strat_solution, 10)
+        #--------------------------------------------------------------
+        # Reading the input data.
+        #--------------------------------------------------------------
+        # Read the drillhole ignore items list.
+        ignore_list = read_ignore_list(ignore_list_filename)
+
+        # Read drill sample data.
+        drillsample_data = read_drillsample_data(drillsample_header, drillsample_filename, ignore_list, min_drillhole_litho_score)
+
+        # Remove the Cover.
+        drillsample_data.remove_cover(cover_unit_filename, cover_ratio_threshold)
+
+        if (group_drillhole_lithos):
+            # Group the drillsample lithologies.
+            drillsample_data.group_drillhole_litho_sequence(spar.max_num_unit_contacts_inside_litho)
+
+        # Read the alternative rock names.
+        alternative_rock_names = read_alternative_rock_names(alternative_rock_names_file)
+
+        # Read unit lithologies and distance data.
+        strata_data = read_strat_data(strata_data_header, dist_table_filename, alternative_rock_names)
+
+        # Filter strat data.
+        drillhole_lithos = drillsample_data.get_drillhole_lithos()
+        strata_data.filter_strat_data_based_on_drillhole_lithos(drillhole_lithos)
+        strata_data.filter_strat_data_based_on_distance(number_nearest_units)
+
+        filtered_lithos = strata_data.get_unique_lithos()
+        print("The number of filtered unit lithologies:", len(filtered_lithos))
+        print("Filtered unit lithologies:", sorted(filtered_lithos))
+
+        # Read the Cover unit lithologies.
+        #strata_data.add_cover_unit("Cover", cover_unit_filename)
+
+        # Read thickness data.
+        thickness_data = []
+        if (add_thickness_constraints):
+            thickness_data = read_thickness_data(thickness_filename)
+
+        #--------------------------------------------------------------
+        # Generating the stratigraphies.
+        #--------------------------------------------------------------
+        strat_solution = generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, graph)
+
+        print("Total number of routes = ", len(strat_solution.routes))
+
+        #--------------------------------------------------------------
+        # Plot the results.
+        #--------------------------------------------------------------
+        strat_solution.collarID = collarID
+
+        # Print all unique routes (i.e., unique strata sequence).
+        print_unique_routes(strat_solution.routes, 10)
+
+        # Draw strata logs.
+        draw_strata_logs(strat_solution, display_plots)
+
+        # Plot unit probabilities.
+        plot_unit_probabilities(strat_solution, display_plots)
+
+        # Write the best routes to file.
+        write_best_routes_to_file(strat_solution, 10)
 
 #=============================================================================
 if __name__ == "__main__":

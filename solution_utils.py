@@ -11,7 +11,7 @@ import matplotlib.pylab as pl
 from matplotlib.patches import Rectangle
 
 #==============================================================================
-def draw_strata_logs(strat_solution):
+def draw_strata_logs(strat_solution, display_plot):
     '''
     Drawing the strata logs.
     '''
@@ -66,7 +66,8 @@ def draw_strata_logs(strat_solution):
     filename = "strata_logs_" + str(strat_solution.collarID) + ".png"
     pl.savefig(filename)
 
-    pl.show()
+    if display_plot:
+        pl.show()
 
 #==============================================================================
 def print_unique_routes(all_routes, num_print_paths):
@@ -210,7 +211,7 @@ def plot_top_routes(strat_solution):
     plot_route_probability(top_routes, x_data, strat_solution.strat_distr)
 
 #=============================================================================
-def plot_unit_probabilities(strat_solution):
+def plot_unit_probabilities(strat_solution, display_plot):
     '''
     Generate a plot with probability of occurence for each unit.
     '''
@@ -277,7 +278,8 @@ def plot_unit_probabilities(strat_solution):
     filename = "unit_proba_" + str(strat_solution.collarID) + ".png"
     pl.savefig(filename)
 
-    pl.show()
+    if display_plot:
+        pl.show()
 
 #=============================================================================
 

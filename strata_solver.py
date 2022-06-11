@@ -228,6 +228,12 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
     add_thickness_constraints = (len(thickness_data) > 0)
     add_topology_constraints = (graph != None)
 
+    if (add_topology_constraints):
+        # Sanity check: check that strata units exist in the graph.
+        for unit_name in unit_names:
+            if unit_name not in graph.nodes():
+                print("WARNING: Not found graph unit: ", unit_name)
+
     # Extract strata thikcness to lists (faster data structures).
     min_strata_thickness = [d.mean - d.range for d in thickness_data]
     max_strata_thickness = [d.mean + d.range for d in thickness_data]
