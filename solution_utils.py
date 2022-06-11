@@ -9,6 +9,9 @@
 import numpy as np
 import matplotlib.pylab as pl
 from matplotlib.patches import Rectangle
+import os
+
+output_folder = "output"
 
 #==============================================================================
 def draw_strata_logs(strat_solution, display_plot):
@@ -63,11 +66,14 @@ def draw_strata_logs(strat_solution, display_plot):
     pl.ylabel('Stratigraphy')
 
     # Save image.
-    filename = "strata_logs_" + str(strat_solution.collarID) + ".png"
+    filename = output_folder + "/strata_logs_" + str(strat_solution.collarID) + ".png"
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
     pl.savefig(filename)
 
     if display_plot:
         pl.show()
+
+    pl.close(pl.gcf())
 
 #==============================================================================
 def print_unique_routes(all_routes, num_print_paths):
@@ -135,7 +141,8 @@ def write_best_routes_to_file(strat_solution, ntop):
     if (len(strat_solution.route_scores) == 0):
         return
 
-    filename = "best_routes_" + str(strat_solution.collarID) + ".txt"
+    filename = output_folder + "/best_routes_" + str(strat_solution.collarID) + ".txt"
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
 
     # Extract the indexes of the best routes.
     route_indexes = np.argsort(-strat_solution.route_scores)
@@ -275,11 +282,14 @@ def plot_unit_probabilities(strat_solution, display_plot):
     pl.xlabel('Depth')
 
     # Save image.
-    filename = "unit_proba_" + str(strat_solution.collarID) + ".png"
+    filename = output_folder + "/unit_proba_" + str(strat_solution.collarID) + ".png"
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
     pl.savefig(filename)
 
     if display_plot:
         pl.show()
+
+    pl.close(pl.gcf())
 
 #=============================================================================
 
