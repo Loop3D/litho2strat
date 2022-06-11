@@ -189,14 +189,6 @@ def main():
     # (!) Strange gravel at 4m, which looks like real gravel, but there are rocks above...
     #collarID = 2470304
 
-    # First small cluster.
-    #collarID = 2182334
-    #collarID = 2182335
-    #collarID = 2182336
-    #collarID = 2182338
-    #collarID = 2182339
-    #collarID = 2182340
-
     # Read topology data (the same for all collarIDs).
     graph = None
     if (add_topology_constraints):
@@ -205,9 +197,12 @@ def main():
     #====================================================================================
     # Process the list of CollarIDs.
     #====================================================================================
+    # First small cluster.
+    collarIDs = [2182334, 2182335, 2182336, 2182338, 2182339, 2182340]
+
     # Second cluster (crossing the boundary of two units on the map).
-    collarIDs = [2182301, 2182306, 2182307, 2182308, 2182309, 2182310]
-    collarIDs.extend(list(range(2182312, 2182319 + 1)))
+    #collarIDs = [2182301, 2182306, 2182307, 2182308, 2182309, 2182310]
+    #collarIDs.extend(list(range(2182312, 2182319 + 1)))
 
     display_plots = False
 
