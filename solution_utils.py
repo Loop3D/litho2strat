@@ -9,7 +9,6 @@
 import numpy as np
 import matplotlib.pylab as pl
 from matplotlib.patches import Rectangle
-import brewer2mpl
 
 #==============================================================================
 def draw_strata_logs(strat_solution):
@@ -18,16 +17,24 @@ def draw_strata_logs(strat_solution):
     '''
     print("Drawing the strata logs...")
 
-    # Note this colorbar only has 12 colors maximum.
-    color_map = brewer2mpl.get_map('Paired', 'Qualitative', 12)
-    colors = [c for c in color_map.mpl_colors]
+    # Define qualitative palette.
+    colors = [pl.cm.tab20(i) for i in range(20)]
 
-    num_units = len(strat_solution.unit_names)
-    if (num_units > 12):
-        color_map = brewer2mpl.get_map('Pastel1', 'Qualitative', 9)
-        colors2 = [c for c in color_map.mpl_colors]
-        colors.extend(colors2)
+    # Map nonempty units to continous index.
+    # We use that instead of original index, as we do not have many qualitative colors in the colormap.
+    counter = 0
+    unit_index_nonempty = dict()
+    for index, unit_name in enumerate(strat_solution.unit_names):
+        if strat_solution.unit_nonempty(unit_name):
+            unit_index_nonempty[index] = counter
+            counter += 1
 
+    print("Num nonempty units:", counter)
+    if (counter > 20):
+        print("Too many units! Adjust the color map.")
+        return
+
+    # Calculate the figure size.
     num_routes = min(len(strat_solution.routes), 200)
     x_max = strat_solution.depth_data.depth_to[-1]
     y_max = float(num_routes) + 0.5
@@ -47,8 +54,10 @@ def draw_strata_logs(strat_solution):
             y2 = 0.5 + float(i + 1)
             dx = x2 - x1
             dy = y2 - y1
+
             # Adding rectangle.
-            currentAxis.add_patch(Rectangle((x1, y1), dx, dy, facecolor=colors[unit_index]))
+            color_index = unit_index_nonempty[unit_index]
+            currentAxis.add_patch(Rectangle((x1, y1), dx, dy, facecolor=colors[color_index]))
 
     pl.xlabel('Depth')
     pl.ylabel('Stratigraphy')

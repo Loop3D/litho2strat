@@ -180,7 +180,7 @@ def main():
     #collarID = 810340
 
     # (!) Strange gravel at 10m, which looks like real gravel, but there are rocks above...
-    collarID = 2470303
+    #collarID = 2470303
     # (!) Strange gravel at 4m, which looks like real gravel, but there are rocks above...
     #collarID = 2470304
 
@@ -196,7 +196,7 @@ def main():
     #collarID = 2182301
     #collarID = 2182306
     #collarID = 2182307
-    #collarID = 2182308
+    collarID = 2182308
     #collarID = 2182309
     #collarID = 2182310
     #collarID = 2182312
