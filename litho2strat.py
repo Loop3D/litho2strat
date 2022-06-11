@@ -8,7 +8,6 @@
 
 import matplotlib.pylab as pl
 import os
-#import tracemalloc
 
 from strata_solver import \
     generate_strat_routes, \
@@ -278,14 +277,9 @@ def main():
     #--------------------------------------------------------------
     # Generating the stratigraphies.
     #--------------------------------------------------------------
-#    tracemalloc.start()
-
     strat_solution = generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, graph)
 
     print("Total number of routes = ", len(strat_solution.routes))
-
-#    current, peak = tracemalloc.get_traced_memory()
-#    print("Current memory usage is {} MB; Peak was {} MB".format(current / 10**6, peak / 10**6))
 
     #--------------------------------------------------------------
     # Plot the results.
@@ -295,12 +289,6 @@ def main():
 
     # Draw strata logs.
     draw_strata_logs(strat_solution)
-
-    # Plot route scores.
-    plot_route_scores(strat_solution)
-
-    # Plot top routes and their probabilities.
-    plot_top_routes(strat_solution)
 
     # Plot unit probabilities.
     plot_unit_probabilities(strat_solution)
