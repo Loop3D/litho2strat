@@ -22,6 +22,8 @@ class StrataSolution:
         self.unit_names = unit_names
         # Depth data.
         self.depth_data = depth_data
+        # Drillhole collar ID.
+        self.collarID = 0
 
         num_units = len(self.unit_names)
         num_rows = len(depth_data.depth_from)

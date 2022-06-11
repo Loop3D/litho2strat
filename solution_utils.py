@@ -61,6 +61,11 @@ def draw_strata_logs(strat_solution):
 
     pl.xlabel('Depth')
     pl.ylabel('Stratigraphy')
+
+    # Save image.
+    filename = "strata_logs_" + str(strat_solution.collarID) + ".png"
+    pl.savefig(filename)
+
     pl.show()
 
 #==============================================================================
@@ -122,12 +127,14 @@ def plot_route_scores(strat_solution):
     pl.show()
 
 #==============================================================================
-def write_best_routes_to_file(strat_solution, filename, ntop):
+def write_best_routes_to_file(strat_solution, ntop):
     '''
     Write the best ntop routes to file.
     '''
     if (len(strat_solution.route_scores) == 0):
         return
+
+    filename = "best_routes_" + str(strat_solution.collarID) + ".txt"
 
     # Extract the indexes of the best routes.
     route_indexes = np.argsort(-strat_solution.route_scores)
@@ -264,8 +271,12 @@ def plot_unit_probabilities(strat_solution):
  
     #pl.tight_layout()
     pl.subplots_adjust(hspace = 0.5)
- 
     pl.xlabel('Depth')
+
+    # Save image.
+    filename = "unit_proba_" + str(strat_solution.collarID) + ".png"
+    pl.savefig(filename)
+
     pl.show()
 
 #=============================================================================

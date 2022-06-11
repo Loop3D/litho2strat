@@ -284,6 +284,8 @@ def main():
     #--------------------------------------------------------------
     # Plot the results.
     #--------------------------------------------------------------
+    strat_solution.collarID = collarID
+
     # Print all unique routes (i.e., unique strata sequence).
     print_unique_routes(strat_solution.routes, 10)
 
@@ -294,8 +296,7 @@ def main():
     plot_unit_probabilities(strat_solution)
 
     # Write the best routes to file.
-    filename = "best_routes_" + str(collarID) + ".txt"
-    write_best_routes_to_file(strat_solution, filename, 10)
+    write_best_routes_to_file(strat_solution, 10)
 
 #=============================================================================
 if __name__ == "__main__":
