@@ -27,7 +27,6 @@ from data_readers import \
 from solution_utils import \
     print_unique_routes, \
     plot_route_scores, \
-    plot_top_routes, \
     plot_unit_probabilities, \
     write_best_routes_to_file, \
     draw_solution_logs

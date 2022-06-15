@@ -123,36 +123,6 @@ def print_unique_routes(all_routes, num_print_paths):
                 break
 
 #=============================================================================
-def plot_routes(routes, x_data):
-    '''
-    Plot and display the routes.
-    '''
-    for route in routes:
-        pl.plot(x_data, route.path, '.-')
-
-    pl.xlabel('Depth')
-    pl.ylabel('Strata unit index')
-    pl.show()
-
-#=============================================================================
-def plot_route_probability(routes, x_data, strat_distr):
-    '''
-    Plot and display the route probability.
-    '''
-    num_rows = len(routes[0].path)
-
-    for route in routes:
-        route_proba = np.zeros(num_rows)
-        for row in range(num_rows):
-            unit_index = route.path[row]
-            route_proba[row] = strat_distr[row, unit_index]
-        pl.plot(x_data, route_proba, '.-')
-
-    pl.xlabel('Depth')
-    pl.ylabel('Probability')
-    pl.show()
-
-#=============================================================================
 def plot_route_scores(strat_solution):
     '''
     Plot distribution of the route scores (based on path probability).
@@ -215,36 +185,6 @@ def write_best_routes_to_file(strat_solution, ntop):
                 route_proba = strat_solution.strat_distr[row, unit_index]
                 file.write(",%.3f" % route_proba)
             file.write("\n")
-
-#=============================================================================
-def plot_top_routes(strat_solution):
-    '''
-    Plot top routes and their probability.
-    '''
-    if (len(strat_solution.routes) == 0):
-        return
-
-    num_units = len(strat_solution.unit_names)
-    route_scores = strat_solution.route_scores
-
-    #------------------------------------------
-    # Top scores.
-    indexes_max = np.argsort(-route_scores) # A minus here to have largest to smallest score order.
-    ntop = 10
-    print('Top indexes: ', indexes_max[0:ntop])
-    print('Top scores: ', route_scores[indexes_max[0:ntop]])
-
-    index_max = indexes_max[0]
-
-    #------------------------------------------
-    top_routes = [strat_solution.routes[i] for i in indexes_max[0:ntop]]
-    x_data = strat_solution.depth_data.depth_from
-
-    # Print the most probable routes.
-    plot_routes(top_routes, x_data)
-
-    # Print the probability of the most probable routes.
-    plot_route_probability(top_routes, x_data, strat_solution.strat_distr)
 
 #=============================================================================
 def plot_unit_probabilities(strat_solution, display_plot):
