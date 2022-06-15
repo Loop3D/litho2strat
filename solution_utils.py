@@ -15,77 +15,32 @@ import os
 output_folder = "output"
 
 #==============================================================================
-def draw_strata_logs(strat_solution, display_plot):
+def draw_solution_logs(strat_solution, display_plot, type):
     '''
-    Drawing the strata logs.
+    Drawing solution logs.
     '''
-    print("Drawing the strata logs...")
+    print("Drawing solution logs, type =", type)
 
-    # Define qualitative palette.
+    # Qualitative palette.
     colors = [pl.cm.tab20(i) for i in range(20)]
-
-    # Map nonempty units to continous index.
-    # We use that instead of original index, as we do not have many qualitative colors in the colormap.
-    counter = 0
-    unit_index_nonempty = dict()
-    for index, unit_name in enumerate(strat_solution.unit_names):
-        if strat_solution.unit_nonempty(unit_name):
-            unit_index_nonempty[index] = counter
-            counter += 1
-
-    print("Num nonempty units:", counter)
-    if (counter > 20):
-        print("Too many units! Adjust the color map.")
-        return
-
-    # Calculate the figure size.
-    num_routes = min(len(strat_solution.routes), 200)
-    x_max = strat_solution.depth_data.depth_to[-1]
-    y_max = float(num_routes) + 0.5
-
-    # Define figure dimensions.
-    fig = pl.figure()
-    pl.xlim(0, x_max)
-    pl.ylim(0.5, y_max)
-
-    currentAxis = pl.gca()
-
-    for i in range(num_routes):
-        for row, unit_index in enumerate(strat_solution.routes[i].path):
-            x1 = strat_solution.depth_data.depth_from[row]
-            x2 = strat_solution.depth_data.depth_to[row]
-            y1 = 0.5 + float(i)
-            y2 = 0.5 + float(i + 1)
-            dx = x2 - x1
-            dy = y2 - y1
-
-            # Adding rectangle.
-            color_index = unit_index_nonempty[unit_index]
-            currentAxis.add_patch(Rectangle((x1, y1), dx, dy, facecolor=colors[color_index]))
-
-    pl.xlabel('Depth')
-    pl.ylabel('Stratigraphy')
-
-    # Save image.
-    filename = output_folder + "/strata_logs_" + str(strat_solution.collarID) + ".png"
-    os.makedirs(os.path.dirname(filename), exist_ok=True)
-    pl.savefig(filename)
-
-    if display_plot:
-        pl.show()
-
-    pl.close(pl.gcf())
-
-#==============================================================================
-def draw_proba_logs(strat_solution, display_plot):
-    '''
-    Drawing the route probability logs.
-    '''
-    print("Drawing the oute probability logs...")
-
     # Gradient palette.
     cmap = pl.get_cmap('viridis')
 
+    if (type == 'strat'):
+        # Map nonempty units to continous index.
+        # We use that instead of original index, as we do not have many qualitative colors in the colormap.
+        counter = 0
+        unit_index_nonempty = dict()
+        for index, unit_name in enumerate(strat_solution.unit_names):
+            if strat_solution.unit_nonempty(unit_name):
+                unit_index_nonempty[index] = counter
+                counter += 1
+
+        print("Num nonempty units:", counter)
+        if (counter > 20):
+            print("Too many units! Adjust the color map.")
+            return
+
     # Calculate the figure size.
     num_routes = min(len(strat_solution.routes), 200)
     x_max = strat_solution.depth_data.depth_to[-1]
@@ -98,8 +53,13 @@ def draw_proba_logs(strat_solution, display_plot):
 
     currentAxis = pl.gca()
 
+    # Top scores (a minus here to have largest to smallest score order).
+    indexes_max = np.argsort(-strat_solution.route_scores)
+
     for i in range(num_routes):
-        for row, unit_index in enumerate(strat_solution.routes[i].path):
+        # Select the sorted by score solution index.
+        route_index = indexes_max[i]
+        for row, unit_index in enumerate(strat_solution.routes[route_index].path):
             x1 = strat_solution.depth_data.depth_from[row]
             x2 = strat_solution.depth_data.depth_to[row]
             y1 = 0.5 + float(i)
@@ -108,18 +68,34 @@ def draw_proba_logs(strat_solution, display_plot):
             dy = y2 - y1
 
             # Adding rectangle.
-            route_proba = strat_solution.strat_distr[row, unit_index]
-            currentAxis.add_patch(Rectangle((x1, y1), dx, dy, facecolor=cmap(route_proba)))
+            if (type == 'strat'):
+            # Draw stratigraphy log.
+                color_index = unit_index_nonempty[unit_index]
+                currentAxis.add_patch(Rectangle((x1, y1), dx, dy, facecolor=colors[color_index]))
+            else:
+            # Draw route probabilities.
+                route_proba = strat_solution.strat_distr[row, unit_index]
+                currentAxis.add_patch(Rectangle((x1, y1), dx, dy, facecolor=cmap(route_proba)))
+
+    if (type == 'strat'):
+        ylabel = 'Stratigraphy'
+        file_prefix = "strata_logs_"
+        add_colorbar = False
+    else:
+        ylabel = 'Probability'
+        file_prefix = "proba_logs_"
+        add_colorbar = True
 
     pl.xlabel('Depth')
-    pl.ylabel('Probability')
+    pl.ylabel(ylabel)
 
-    # Show the colorbar.
-    cax, _ = cbar.make_axes(currentAxis) 
-    cb2 = cbar.ColorbarBase(cax, cmap=cmap)
+    if (add_colorbar):
+        # Show the colorbar.
+        cax, _ = cbar.make_axes(currentAxis) 
+        cb2 = cbar.ColorbarBase(cax, cmap=cmap)
 
     # Save image.
-    filename = output_folder + "/proba_logs_" + str(strat_solution.collarID) + ".png"
+    filename = output_folder + "/" + file_prefix + str(strat_solution.collarID) + ".png"
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     pl.savefig(filename)
 
@@ -127,7 +103,6 @@ def draw_proba_logs(strat_solution, display_plot):
         pl.show()
 
     pl.close(pl.gcf())
-
 
 #==============================================================================
 def print_unique_routes(all_routes, num_print_paths):
