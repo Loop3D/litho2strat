@@ -9,6 +9,7 @@
 import numpy as np
 import matplotlib.pylab as pl
 from matplotlib.patches import Rectangle
+import matplotlib.colorbar as cbar
 import os
 
 output_folder = "output"
@@ -74,6 +75,59 @@ def draw_strata_logs(strat_solution, display_plot):
         pl.show()
 
     pl.close(pl.gcf())
+
+#==============================================================================
+def draw_proba_logs(strat_solution, display_plot):
+    '''
+    Drawing the route probability logs.
+    '''
+    print("Drawing the oute probability logs...")
+
+    # Gradient palette.
+    cmap = pl.get_cmap('viridis')
+
+    # Calculate the figure size.
+    num_routes = min(len(strat_solution.routes), 200)
+    x_max = strat_solution.depth_data.depth_to[-1]
+    y_max = float(num_routes) + 0.5
+
+    # Define figure dimensions.
+    fig = pl.figure()
+    pl.xlim(0, x_max)
+    pl.ylim(0.5, y_max)
+
+    currentAxis = pl.gca()
+
+    for i in range(num_routes):
+        for row, unit_index in enumerate(strat_solution.routes[i].path):
+            x1 = strat_solution.depth_data.depth_from[row]
+            x2 = strat_solution.depth_data.depth_to[row]
+            y1 = 0.5 + float(i)
+            y2 = 0.5 + float(i + 1)
+            dx = x2 - x1
+            dy = y2 - y1
+
+            # Adding rectangle.
+            route_proba = strat_solution.strat_distr[row, unit_index]
+            currentAxis.add_patch(Rectangle((x1, y1), dx, dy, facecolor=cmap(route_proba)))
+
+    pl.xlabel('Depth')
+    pl.ylabel('Probability')
+
+    # Show the colorbar.
+    cax, _ = cbar.make_axes(currentAxis) 
+    cb2 = cbar.ColorbarBase(cax, cmap=cmap)
+
+    # Save image.
+    filename = output_folder + "/proba_logs_" + str(strat_solution.collarID) + ".png"
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+    pl.savefig(filename)
+
+    if display_plot:
+        pl.show()
+
+    pl.close(pl.gcf())
+
 
 #==============================================================================
 def print_unique_routes(all_routes, num_print_paths):
