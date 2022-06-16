@@ -195,7 +195,7 @@ def main():
     # Process the list of CollarIDs.
     #====================================================================================
     # First small cluster of 6.
-    collarIDs = [2182334, 2182335, 2182336, 2182338, 2182339, 2182340]
+    #collarIDs = [2182334, 2182335, 2182336, 2182338, 2182339, 2182340]
 
     # Second cluster of 14 (crossing the boundary of two units on the map).
     #collarIDs = [2182301, 2182306, 2182307, 2182308, 2182309, 2182310]
@@ -209,7 +209,7 @@ def main():
     # No data files: 2470193 
     #collarIDs = [2470196]
 
-    #collarIDs = [2470303]
+    collarIDs = [2470303]
 
     display_plots = True
 

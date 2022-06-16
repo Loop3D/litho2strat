@@ -9,6 +9,8 @@
 import numpy as np
 import matplotlib.pylab as pl
 from matplotlib.patches import Rectangle
+from matplotlib.collections import PatchCollection
+from matplotlib.colors import ListedColormap
 import matplotlib.colorbar as cbar
 import csv
 import os
@@ -20,7 +22,7 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename 
     '''
     Drawing solution logs.
     '''
-    num_routes = min(len(strat_solution.routes), 200)
+    num_routes = min(len(strat_solution.routes), 1000)
     if (num_routes == 0):
         return
 
@@ -75,6 +77,8 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename 
     # Top scores (a minus here to have largest to smallest score order).
     indexes_max = np.argsort(-strat_solution.route_scores)
 
+    patches = []
+    color_list = []
     for i in range(num_routes):
         # Select the sorted by score solution index.
         route_index = indexes_max[i]
@@ -86,7 +90,7 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename 
             dx = x2 - x1
             dy = y2 - y1
 
-            # Adding rectangle.
+            # Define the rectangle color.
             if (type == 'strat'):
             # Draw stratigraphy log.
                 if (unit_colors_filename != ""):
@@ -99,11 +103,22 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename 
                 else:
                     color_index = unit_index_nonempty[unit_index]
                     color = colors[color_index]
-                currentAxis.add_patch(Rectangle((x1, y1), dx, dy, facecolor=color))
             else:
             # Draw route probabilities.
                 route_proba = strat_solution.strat_distr[row, unit_index]
-                currentAxis.add_patch(Rectangle((x1, y1), dx, dy, facecolor=cmap(route_proba)))
+                color = cmap(route_proba)
+
+            # Adding rectangle.
+            patches.append(Rectangle((x1, y1), dx, dy))
+            color_list.append(color)
+
+    # Define patches collection with colormap.
+    patches_cmap = ListedColormap(color_list)
+    patches_collection = PatchCollection(patches, cmap=patches_cmap)
+    patches_collection.set_array(np.arange(len(patches)))
+
+    # Add rectangle collection to the figure.
+    currentAxis.add_collection(patches_collection)
 
     if (type == 'strat'):
         ylabel = 'Stratigraphy'
