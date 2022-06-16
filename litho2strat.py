@@ -186,11 +186,6 @@ def main():
     # (!) Has wacke at row = 28 which is not passing topology constraints! To discuss with Mark.
     #collarID = 810340
 
-    # (!) Strange gravel at 10m, which looks like real gravel, but there are rocks above...
-    #collarID = 2470303
-    # (!) Strange gravel at 4m, which looks like real gravel, but there are rocks above...
-    #collarID = 2470304
-
     # Read topology data (the same for all collarIDs).
     graph = None
     if (add_topology_constraints):
@@ -199,12 +194,20 @@ def main():
     #====================================================================================
     # Process the list of CollarIDs.
     #====================================================================================
-    # First small cluster.
-    collarIDs = [2182334, 2182335, 2182336, 2182338, 2182339, 2182340]
+    # First small cluster of 6.
+    #collarIDs = [2182334, 2182335, 2182336, 2182338, 2182339, 2182340]
 
-    # Second cluster (crossing the boundary of two units on the map).
+    # Second cluster of 14 (crossing the boundary of two units on the map).
     #collarIDs = [2182301, 2182306, 2182307, 2182308, 2182309, 2182310]
     #collarIDs.extend(list(range(2182312, 2182319 + 1)))
+
+    # Third cluster of 18 (in the area with several units touching).
+    collarIDs = [2182009, 2182013, 2182016, 2182029, 2182047, 2470197, 2470200, 2470301, 2470303, 2470304, 2470305]
+    # Empty ones: 2182010, 2182035, 2470196
+    # No solutions found: 2182017, 2182018
+    # Solution number blows: 2182030
+    # No data files: 2470193 
+    #collarIDs = [2470196]
 
     display_plots = True
 
