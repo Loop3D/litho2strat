@@ -20,6 +20,10 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename 
     '''
     Drawing solution logs.
     '''
+    num_routes = min(len(strat_solution.routes), 200)
+    if (num_routes == 0):
+        return
+
     print("Drawing solution logs, type =", type)
 
     # Qualitative palette.
@@ -56,7 +60,6 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename 
                 return
 
     # Calculate the figure size.
-    num_routes = min(len(strat_solution.routes), 200)
     x_max = strat_solution.depth_data.depth_to[-1]
     y_max = float(num_routes) + 0.5
 
