@@ -10,12 +10,13 @@ import numpy as np
 import matplotlib.pylab as pl
 from matplotlib.patches import Rectangle
 import matplotlib.colorbar as cbar
+import csv
 import os
 
 output_folder = "output"
 
 #==============================================================================
-def draw_solution_logs(strat_solution, display_plot, type):
+def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename = ""):
     '''
     Drawing solution logs.
     '''
@@ -27,19 +28,32 @@ def draw_solution_logs(strat_solution, display_plot, type):
     cmap = pl.get_cmap('viridis')
 
     if (type == 'strat'):
-        # Map nonempty units to continous index.
-        # We use that instead of original index, as we do not have many qualitative colors in the colormap.
-        counter = 0
-        unit_index_nonempty = dict()
-        for index, unit_name in enumerate(strat_solution.unit_names):
-            if strat_solution.unit_nonempty(unit_name):
-                unit_index_nonempty[index] = counter
-                counter += 1
+        if (unit_colors_filename != ""):
+        # Define colors using the colormap provided in the file.
+            unit_colors = dict()
+            with open(unit_colors_filename, 'r') as csvfile:
+                reader = csv.DictReader(csvfile, delimiter=',')
+                # Extracting the data for every csv row.
+                for row in reader:
+                    unit_name = row['UNITNAME']
+                    # Convert the unitname to align it with format used in the topology graph.
+                    unit_name = unit_name.replace(" ", "_").replace(",", "_").replace("-", "_").lower()
+                    # Add colour to dictionary.
+                    unit_colors[unit_name] = row['colour']
+        else:
+            # Map nonempty units to continous index.
+            # We use that instead of original index, as we do not have many qualitative colors in the colormap.
+            counter = 0
+            unit_index_nonempty = dict()
+            for index, unit_name in enumerate(strat_solution.unit_names):
+                if strat_solution.unit_nonempty(unit_name):
+                    unit_index_nonempty[index] = counter
+                    counter += 1
 
-        print("Num nonempty units:", counter)
-        if (counter > 20):
-            print("Too many units! Adjust the color map.")
-            return
+            print("Num nonempty units:", counter)
+            if (counter > 20):
+                print("Too many units! Adjust the color map.")
+                return
 
     # Calculate the figure size.
     num_routes = min(len(strat_solution.routes), 200)
@@ -70,8 +84,17 @@ def draw_solution_logs(strat_solution, display_plot, type):
             # Adding rectangle.
             if (type == 'strat'):
             # Draw stratigraphy log.
-                color_index = unit_index_nonempty[unit_index]
-                currentAxis.add_patch(Rectangle((x1, y1), dx, dy, facecolor=colors[color_index]))
+                if (unit_colors_filename != ""):
+                    unit_name = strat_solution.unit_names[unit_index]
+                    if (unit_name in unit_colors):
+                        color = unit_colors[unit_name]
+                    else:
+                        print("WARNING: No color in the color map found for unit name =", unit_name)
+                        color = "#000000"
+                else:
+                    color_index = unit_index_nonempty[unit_index]
+                    color = colors[color_index]
+                currentAxis.add_patch(Rectangle((x1, y1), dx, dy, facecolor=color))
             else:
             # Draw route probabilities.
                 route_proba = strat_solution.strat_distr[row, unit_index]

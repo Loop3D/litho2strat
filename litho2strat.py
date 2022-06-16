@@ -78,7 +78,7 @@ def generate_missing_lithos():
     ignore_list_filename = "data/real/ignore_list.txt"
 
     # Alternative rock names file.
-    alternative_rock_names_file = "data/real/alternative_rock_names.txt"
+    alternative_rock_names_filename = "data/real/alternative_rock_names.txt"
 
     directory = "data/real/dist_files/litho_tables"
     #directory = "data/real/dh_files/litho_tables"
@@ -93,7 +93,7 @@ def generate_missing_lithos():
     ignore_list = read_ignore_list(ignore_list_filename)
 
     # Read the alternative rock names.
-    alternative_rock_names = read_alternative_rock_names(alternative_rock_names_file)
+    alternative_rock_names = read_alternative_rock_names(alternative_rock_names_filename)
 
     # All missing lithologies.
     all_missing_lithos = set()
@@ -153,7 +153,10 @@ def main():
     ignore_list_filename = "data/real/ignore_list.txt"
 
     # Alternative rock names file.
-    alternative_rock_names_file = "data/real/alternative_rock_names.txt"
+    alternative_rock_names_filename = "data/real/alternative_rock_names.txt"
+
+    # Unit colours for drawing stratigraphy logs.
+    unit_colors_filename = "data/real/500kibg_colours.csv"
 
     # Drillsample data csv file column names.
     drillsample_header = DrillSampleDataHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
@@ -198,7 +201,6 @@ def main():
     #====================================================================================
     # First small cluster.
     collarIDs = [2182334, 2182335, 2182336, 2182338, 2182339, 2182340]
-    #collarIDs = [2182336]
 
     # Second cluster (crossing the boundary of two units on the map).
     #collarIDs = [2182301, 2182306, 2182307, 2182308, 2182309, 2182310]
@@ -236,7 +238,7 @@ def main():
             drillsample_data.group_drillhole_litho_sequence(spar.max_num_unit_contacts_inside_litho)
 
         # Read the alternative rock names.
-        alternative_rock_names = read_alternative_rock_names(alternative_rock_names_file)
+        alternative_rock_names = read_alternative_rock_names(alternative_rock_names_filename)
 
         # Read unit lithologies and distance data.
         strata_data = read_strat_data(strata_data_header, dist_table_filename, alternative_rock_names)
@@ -274,7 +276,7 @@ def main():
         print_unique_routes(strat_solution.routes, 10)
 
         # Draw stratigraphy logs.
-        draw_solution_logs(strat_solution, display_plots, 'strat')
+        draw_solution_logs(strat_solution, display_plots, 'strat', unit_colors_filename)
 
         # Draw probability logs.
         draw_solution_logs(strat_solution, display_plots, 'proba')
