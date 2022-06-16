@@ -26,6 +26,8 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename 
 
     print("Drawing solution logs, type =", type)
 
+    pl.rcParams["figure.figsize"] = (12.8, 9.6) # Default size = (6.4, 4.8)
+
     # Qualitative palette.
     colors = [pl.cm.tab20(i) for i in range(20)]
     # Gradient palette.
