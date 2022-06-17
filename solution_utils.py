@@ -75,11 +75,11 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename 
     y_max = float(num_routes_displayed) + 0.5
 
     # Define figure dimensions.
-    fig = pl.figure()
     pl.xlim(0, x_max)
     pl.ylim(0.5, y_max)
 
     currentAxis = pl.gca()
+    currentAxis.set_title(str(strat_solution.collarID))
 
     # Top scores (a minus here to have largest to smallest score order).
     indexes_max = np.argsort(-strat_solution.route_scores)
@@ -254,7 +254,8 @@ def plot_unit_probabilities(strat_solution, display_plot):
 
     fig, axs = pl.subplots(nrows=num_units_nonempty, ncols=1, sharey=True, squeeze=False)
 
-    fig.suptitle('Probability of occurrence for every unit.', y=0.96)
+    title = "Probability of occurrence for every unit. CollarID = " + str(strat_solution.collarID)
+    fig.suptitle(title, y=0.96)
 
     num_rows = len(strat_solution.routes[0].path)
 
