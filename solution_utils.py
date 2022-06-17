@@ -277,11 +277,22 @@ def plot_unit_probabilities(strat_solution, display_plot):
 
     j = 0
     for index, i in enumerate(nonempty_units):
+        y_data = strat_distr[:, i]
+
         # Plot lines.
-        axs[j, 0].plot(x_data, strat_distr[:, i], zorder=1, c='blue')
+        axs[j, 0].plot(x_data, y_data, zorder=1, c='blue')
+
+        # Plot missing data segments.
+        for k in range(1, num_rows):
+            pair_x = [x_data[2 * k - 1], x_data[2 * k]]
+            pair_y = [y_data[2 * k - 1], y_data[2 * k]]
+            if (pair_x[1] > pair_x[0]):
+                # Plot line segment.
+                axs[j, 0].plot(pair_x, pair_y, zorder=2, c='red')
 
         # Set red color for zero data.
-        color = ['red' if p <= 0 else 'blue' for p in strat_distr[:, i]]
+        #color = ['red' if p <= 0 else 'blue' for p in strat_distr[:, i]]
+        color = 'blue'
 
         # Plot dots.
         axs[j, 0].scatter(x_data, strat_distr[:, i], s=5, c=color, zorder=2)
