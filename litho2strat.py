@@ -202,14 +202,14 @@ def main():
     #collarIDs.extend(list(range(2182312, 2182319 + 1)))
 
     # Third cluster of 18 (in the area with several units touching).
-    #collarIDs = [2182009, 2182013, 2182016, 2182029, 2182047, 2470197, 2470200, 2470301, 2470303, 2470304, 2470305]
+    collarIDs = [2182009, 2182013, 2182016, 2182029, 2182047, 2470197, 2470200, 2470301, 2470303, 2470304, 2470305]
     # Empty ones: 2182010, 2182035, 2470196
     # No solutions found: 2182017, 2182018
     # Solution number blows: 2182030
     # No data files: 2470193 
     #collarIDs = [2470196]
 
-    collarIDs = [2470303]
+    #collarIDs = [2470303]
 
     display_plots = True
 

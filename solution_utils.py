@@ -22,9 +22,16 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename 
     '''
     Drawing solution logs.
     '''
-    num_routes = min(len(strat_solution.routes), 1000)
+    num_routes = len(strat_solution.routes)
     if (num_routes == 0):
         return
+
+    # Determine the number of routes to display (cannot show too many routes due to pixel size limitations).
+    max_routes_displayed = 1000
+    if (num_routes > max_routes_displayed):
+        num_routes_displayed = max_routes_displayed
+    else:
+        num_routes_displayed = num_routes
 
     print("Drawing solution logs, type =", type)
 
@@ -65,7 +72,7 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename 
 
     # Calculate the figure size.
     x_max = strat_solution.depth_data.depth_to[-1]
-    y_max = float(num_routes) + 0.5
+    y_max = float(num_routes_displayed) + 0.5
 
     # Define figure dimensions.
     fig = pl.figure()
@@ -79,9 +86,11 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename 
 
     patches = []
     color_list = []
-    for i in range(num_routes):
+    for i in range(num_routes_displayed):
+        # Sample the index uniformly (to show high and low score routes).
+        ind = int(float(i) / float(num_routes_displayed) * float(num_routes))
         # Select the sorted by score solution index.
-        route_index = indexes_max[i]
+        route_index = indexes_max[ind]
         for row, unit_index in enumerate(strat_solution.routes[route_index].path):
             x1 = strat_solution.depth_data.depth_from[row]
             x2 = strat_solution.depth_data.depth_to[row]
