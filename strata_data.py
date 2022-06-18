@@ -18,8 +18,11 @@ class StrataData:
     # Maps the unit name to the list of its lithologies.
     unit2litho: Dict[str, list] = field(default_factory=dict)
 
-    # Maps the lithology name to the sorted list of distances to units with corresponding unit names.
+    # Maps the lithology name to the sorted list of distances-to-units with corresponding unit names.
     litho2dist: Dict[str, list] = field(default_factory=dict)
+
+    # Unit to shortest distance map.
+    unit2dist: Dict[str, float] = field(default_factory=dict)
 
     #========================================================================================================
     def get_num_units(self):
@@ -120,6 +123,19 @@ class StrataData:
         '''
         Adds a unit with its lithologies to the distance map.
         '''
+        #---------------------------------------------------
+        # Adding unit to unit2dist map.
+        #---------------------------------------------------
+        if (unit_name in self.unit2dist):
+            if (distance < self.unit2dist[unit_name]):
+                # Found a shorter distance - updating data.
+                self.unit2dist[unit_name] = distance
+        else:
+            self.unit2dist[unit_name] = distance
+
+        #---------------------------------------------------
+        # Adding unit to litho2dist map.
+        #---------------------------------------------------
         for litho in lithos:
             el = (distance, unit_name)
             if (litho in self.litho2dist):
