@@ -13,7 +13,7 @@ class StrataSolution:
     '''
     The solutions of the Strata Solver, with their scores.
     '''
-    def __init__(self, routes, routes_number, unit_names, depth_data):
+    def __init__(self, routes, routes_number, unit_names, depth_data, unit2dist):
         # The strata solution paths.
         self.routes = routes
         # The number of solutions for every drillsample raw.
@@ -33,6 +33,9 @@ class StrataSolution:
 
         # Calculate the route scores (based on path probability).
         self.route_scores = _get_route_scores(routes, self.strat_distr)
+
+        # Calculate the route distance scores (based on RMS distance to units).
+        self.dist_scores = _get_distance_scores(routes, unit_names, unit2dist)
 
     #=====================================================================
     def unit_nonempty(self, unit_name):
@@ -77,7 +80,6 @@ def _get_strat_distr(all_routes, num_rows, num_units):
 def _get_route_scores(all_routes, strat_distr):
     '''
     Returns the route scores (based on path probability).
-    Needs strat_distr returned by get_strat_distr().
     '''
     num_rows = strat_distr.shape[0]
     route_scores = np.zeros(len(all_routes), dtype=float)
@@ -91,4 +93,28 @@ def _get_route_scores(all_routes, strat_distr):
         route_scores = route_scores / float(num_rows)
 
     return route_scores
+
+#=============================================================================
+def _get_distance_scores(all_routes, unit_names, unit2dist):
+    '''
+    Returns the route scores (based on root mean square distance to units).
+    '''
+    dist_scores = np.zeros(len(all_routes), dtype=float)
+
+    if (len(all_routes) == 0):
+        return dist_scores
+
+    num_rows = len(all_routes[0].path)
+
+    for route_index, route in enumerate(all_routes):
+        for row, unit_index in enumerate(route.path):
+            unit_name = unit_names[unit_index]
+            distance = unit2dist[unit_name]
+            dist_scores[route_index] += distance**2
+
+    # Normalize.
+    if (num_rows > 0):
+        dist_scores = np.sqrt(dist_scores / float(num_rows))
+
+    return dist_scores
 
