@@ -18,7 +18,7 @@ import os
 output_folder = "output"
 
 #==============================================================================
-def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename = ""):
+def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename, graph = None):
     '''
     Drawing solution logs.
     '''
@@ -91,7 +91,11 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename 
         ind = int(float(i) / float(num_routes_displayed) * float(num_routes))
         # Select the sorted by score solution index.
         route_index = indexes_max[ind]
-        for row, unit_index in enumerate(strat_solution.routes[route_index].path):
+
+        path_size = len(strat_solution.routes[route_index].path)
+        for row in range(path_size):
+            unit_index = strat_solution.routes[route_index].path[row]
+
             x1 = strat_solution.depth_data.depth_from[row]
             x2 = strat_solution.depth_data.depth_to[row]
             y1 = 0.5 + float(i)
@@ -112,10 +116,28 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename 
                 else:
                     color_index = unit_index_nonempty[unit_index]
                     color = colors[color_index]
-            else:
+
+            elif (type == 'proba'):
             # Draw route probabilities.
                 route_proba = strat_solution.strat_distr[row, unit_index]
                 color = cmap(route_proba)
+
+            elif (type == 'age'):
+            # Draw age alignment.
+                if (row < path_size - 1):
+                    # Next unit in the log.
+                    unit_index2 = strat_solution.routes[route_index].path[row + 1]
+                    unit_name = strat_solution.unit_names[unit_index]
+                    unit_name2 = strat_solution.unit_names[unit_index2]
+                    # Graph edge.
+                    e = (unit_name, unit_name2)
+                    # Check the edge exists in the graph.
+                    if (unit_name == unit_name2 or graph.has_edge(*e)):
+                        color = '#00FF00'
+                    else:
+                        color = '#FF0000'
+                else:
+                    color = '#000000'
 
             # Adding rectangle.
             patches.append(Rectangle((x1, y1), dx, dy))
@@ -133,10 +155,14 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename 
         ylabel = 'Stratigraphy'
         file_prefix = "strata_logs_"
         add_colorbar = False
-    else:
+    elif (type == 'proba'):
         ylabel = 'Probability'
         file_prefix = "proba_logs_"
         add_colorbar = True
+    elif (type == 'age'):
+        ylabel = 'Age alignment'
+        file_prefix = "age_logs_"
+        add_colorbar = False
 
     pl.xlabel('Depth')
     pl.ylabel(ylabel)

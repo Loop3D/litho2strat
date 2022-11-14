@@ -31,11 +31,13 @@ from solution_utils import \
     write_best_routes_to_file, \
     draw_solution_logs
 
+spar = StrataSolverParameters()
+
 #==============================================================================
 # Adding unit contacts topology (extracted from map data).
 add_topology_constraints = True
 # Ignore topology graph edge direction defining the unit age.
-ignore_unit_age = True
+spar.ignore_unit_age = True
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
 number_nearest_units = 3
@@ -50,7 +52,6 @@ group_drillhole_lithos = False
 # The cover ration threshold (relative length) for removing the cover.
 cover_ratio_threshold = 0.65
 #---------------------------------------------------------------------------
-spar = StrataSolverParameters()
 
 # 'Returning to the same unit' constraints.
 spar.max_num_returns_per_unit = 1
@@ -189,7 +190,7 @@ def main():
     # Read topology data (the same for all collarIDs).
     graph = None
     if (add_topology_constraints):
-        graph = read_topology_data(topology_filename, ignore_unit_age)
+        graph = read_topology_data(topology_filename)
 
     #====================================================================================
     # Process the list of CollarIDs.
@@ -209,7 +210,7 @@ def main():
     # No data files: 2470193 
     #collarIDs = [2470196]
 
-    #collarIDs = [2470303]
+    collarIDs = [2470303]
 
     display_plots = True
 
@@ -284,7 +285,10 @@ def main():
         draw_solution_logs(strat_solution, display_plots, 'strat', unit_colors_filename)
 
         # Draw probability logs.
-        draw_solution_logs(strat_solution, display_plots, 'proba')
+        draw_solution_logs(strat_solution, display_plots, 'proba', '')
+
+        # Draw the age-rule logs.
+        draw_solution_logs(strat_solution, display_plots, 'age', '', graph)
 
         # Plot unit probabilities.
         plot_unit_probabilities(strat_solution, display_plots)

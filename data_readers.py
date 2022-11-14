@@ -238,7 +238,7 @@ def read_thickness_data(filename):
     return data
 
 #==============================================================================
-def read_topology_data(topology_filename, ignore_unit_age):
+def read_topology_data(topology_filename):
     '''
     Read topology data (gml format graph) from a file.
     '''
@@ -255,12 +255,7 @@ def read_topology_data(topology_filename, ignore_unit_age):
         mapping = {node:unit_name}
         Gf = nx.relabel_nodes(Gf, mapping)
 
-    if (ignore_unit_age):
-    # Ignore graph edge direction defining the unit age.
-        Gf = Gf.to_undirected()
-
     print('Importing completed.')
-
     return Gf
 
 #=============================================================================
