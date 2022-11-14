@@ -124,20 +124,33 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
 
             elif (type == 'age'):
             # Draw age alignment.
-                if (row < path_size - 1):
-                    # Next unit in the log.
-                    unit_index2 = strat_solution.routes[route_index].path[row + 1]
-                    unit_name = strat_solution.unit_names[unit_index]
-                    unit_name2 = strat_solution.unit_names[unit_index2]
-                    # Graph edge.
-                    e = (unit_name, unit_name2)
-                    # Check the edge exists in the graph.
-                    if (unit_name == unit_name2 or graph.has_edge(*e)):
-                        color = '#00FF00'
-                    else:
-                        color = '#FF0000'
+                # Find the next unit in the log.
+                unit_index2 = unit_index
+                for j in range(row + 1, path_size):
+                    unit_index2 = strat_solution.routes[route_index].path[j]
+                    # Returns the first unit change.
+                    if (unit_index2 != unit_index):
+                        break
+
+                last_unit = False
+                if (unit_index2 == unit_index):
+                    last_unit = True
+
+                unit_name = strat_solution.unit_names[unit_index]
+                unit_name2 = strat_solution.unit_names[unit_index2]
+
+                # Graph edge.
+                e = (unit_name, unit_name2)
+
+                if (last_unit):
+                # Mark the last unit with black color.
+                    color = "#000000"
+                elif (graph.has_edge(*e)):
+                # Unit contact is aligned with the age.
+                    color = '#00FF00'
                 else:
-                    color = '#000000'
+                # Not aligned - draw with red color.
+                    color = '#FF0000'
 
             # Adding rectangle.
             patches.append(Rectangle((x1, y1), dx, dy))
