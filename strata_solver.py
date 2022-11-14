@@ -26,6 +26,8 @@ class StrataSolverParameters:
     single_top_unit: bool = False
     # Flag for using the unit age to determine connectivity.
     ignore_unit_age: bool = False
+    # 'Age alignment' constraints: the maximum number of times the age direction can flip.
+    max_num_age_flips: int = 0
 
 #========================================================================================================
 @dataclass
@@ -139,7 +141,7 @@ def generate_strata_table(drillsample_data, strata_data, single_top_unit):
 A class for storing the stratigraphic route.
 '''
 class StrataRoute:
-    __slots__ = 'to_remove', 'path', 'current_thickness', 'unit_visited', 'num_unit_contacts_inside_litho'
+    __slots__ = 'to_remove', 'path', 'current_thickness', 'unit_visited', 'num_unit_contacts_inside_litho', 'num_age_flips', 'is_age_aligned', 'num_contacts'
 
     def __init__(self, num_units):
         # Flag for removal.
@@ -148,6 +150,12 @@ class StrataRoute:
         self.unit_visited = np.zeros((num_units), dtype=int)
         # The number of unit contacts inside the same lithology sequence.
         self.num_unit_contacts_inside_litho = 0
+        # The current number of age direction flips.
+        self.num_age_flips = 0
+        # Flag for the age direction of the last unit contact.
+        self.is_age_aligned = False
+        # The number of unit contacts.
+        self.num_contacts = 0
 
     def add_first_position(self, strat, thickness_change):
         '''
@@ -280,7 +288,7 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
         print("Processing row =", row, drillsample_data.rows[row].depth_from, drillsample_data.rows[row].lithos, end = "\r")
 
         # The drillhole lithos.
-        # Note: we deliberately consider the full list of drillsample lithos instead of lithos- on the route.
+        # Note: we deliberately consider the full list of drillsample lithos instead of lithos on the route.
         # Because considering the route lithos may lead to exponential growth of number of routes due to frequent unit change.
         current_lithos = drillsample_data.rows[row].lithos
         previous_lithos = drillsample_data.rows[row - 1].lithos
@@ -343,6 +351,21 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
                     for strat in strata_list:
                         # Making the new route.
                         new_route = StrataRoute(num_units)
+
+                        # Processing age flips.
+                        e = (unit_names[strat0], unit_names[strat])
+                        new_route.is_age_aligned = graph.has_edge(*e)
+                        if (route.num_contacts > 0):
+                            if (new_route.is_age_aligned != route.is_age_aligned):
+                                new_route.num_age_flips = route.num_age_flips + 1
+                            else:
+                                new_route.num_age_flips = route.num_age_flips
+
+                        # Apply the age alignment constraints.
+                        if (new_route.num_age_flips > spar.max_num_age_flips):
+                            # Skip this route. 
+                            continue
+
                         # New path contains the reference to the old path, and the new route position.
                         # Note: we are not copying the full old path, but only store a reference to it to save memory.
                         new_route.path = [old_path, strat]
@@ -357,6 +380,8 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
                             new_route.num_unit_contacts_inside_litho = route.num_unit_contacts_inside_litho + 1
                         else:
                             new_route.num_unit_contacts_inside_litho = 0
+
+                        new_route.num_contacts = route.num_contacts + 1
 
                         # Adding new route into the list.
                         new_routes.append(new_route)
