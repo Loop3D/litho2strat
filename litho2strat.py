@@ -34,8 +34,8 @@ from solution_utils import \
 spar = StrataSolverParameters()
 
 #==============================================================================
-# Adding unit contacts topology constraints (extracted from map data).
-add_topology_constraints = True
+# Unit contact topology constraints (extracted from map data).
+spar.add_topology_constraints = True
 # 'Age alignment' constraints: the maximum number of times the age direction can flip.
 spar.max_num_age_flips = 1
 #---------------------------------------------------------------------------
@@ -189,7 +189,7 @@ def main():
 
     # Read topology data (the same for all collarIDs).
     graph = None
-    if (add_topology_constraints):
+    if (spar.add_topology_constraints):
         graph = read_topology_data(topology_filename)
 
     #====================================================================================

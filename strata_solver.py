@@ -18,14 +18,16 @@ class StrataSolverParameters:
     '''
     The strata solver parameters holder.
     '''
+    # Unit contact topology constraints.
+    add_topology_constraints: bool = False
+    # 'Age alignment' constraints: the maximum number of times the age direction can flip.
+    max_num_age_flips: int = 0
     # 'Returning to the same unit' constraints.
     max_num_returns_per_unit: int = 0
     # The number of unit contacts inside the same litholgy sequence.
     max_num_unit_contacts_inside_litho: int = 0
     # Use the single closest unit for the top (first) lithology.
     single_top_unit: bool = False
-    # 'Age alignment' constraints: the maximum number of times the age direction can flip.
-    max_num_age_flips: int = 0
 
 #========================================================================================================
 @dataclass
@@ -237,9 +239,8 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
 
     # Local flags are based on the function input data.
     add_thickness_constraints = (len(thickness_data) > 0)
-    add_topology_constraints = (graph != None)
 
-    if (add_topology_constraints):
+    if (spar.add_topology_constraints):
         # Sanity check: check that strata units exist in the graph.
         for unit_name in unit_names:
             if unit_name not in graph.nodes():
@@ -333,7 +334,7 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
                 apply_max_num_returns_constraint(route, strata_list, spar.max_num_returns_per_unit)
 
                 # Apply unit topology constraints.
-                if (add_topology_constraints):
+                if (spar.add_topology_constraints):
                     apply_topology_constraints(graph, unit_names, strat0, strata_list)
 
                 if (len(strata_list) != 0):
