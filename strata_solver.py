@@ -346,19 +346,20 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
                         # Making the new route.
                         new_route = StrataRoute(num_units)
 
-                        # Processing age flips.
-                        e = (unit_names[strat0], unit_names[strat])
-                        new_route.is_age_aligned = graph.has_edge(*e)
-                        if (route.num_contacts > 0):
-                            if (new_route.is_age_aligned != route.is_age_aligned):
-                                new_route.num_age_flips = route.num_age_flips + 1
-                            else:
-                                new_route.num_age_flips = route.num_age_flips
-
-                        # Apply the age alignment constraints.
-                        if (new_route.num_age_flips > spar.max_num_age_flips):
-                            # Skip this route. 
-                            continue
+                        if (spar.add_topology_constraints):
+                            # Processing age flips.
+                            e = (unit_names[strat0], unit_names[strat])
+                            new_route.is_age_aligned = graph.has_edge(*e)
+                            if (route.num_contacts > 0):
+                                if (new_route.is_age_aligned != route.is_age_aligned):
+                                    new_route.num_age_flips = route.num_age_flips + 1
+                                else:
+                                    new_route.num_age_flips = route.num_age_flips
+    
+                            # Apply the age alignment constraints.
+                            if (new_route.num_age_flips > spar.max_num_age_flips):
+                                # Skip this route. 
+                                continue
 
                         # New path contains the reference to the old path, and the new route position.
                         # Note: we are not copying the full old path, but only store a reference to it to save memory.
