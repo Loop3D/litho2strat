@@ -34,12 +34,10 @@ from solution_utils import \
 spar = StrataSolverParameters()
 
 #==============================================================================
-# Adding unit contacts topology (extracted from map data).
+# Adding unit contacts topology constraints (extracted from map data).
 add_topology_constraints = True
-# Ignore topology graph edge direction defining the unit age.
-spar.ignore_unit_age = True
 # 'Age alignment' constraints: the maximum number of times the age direction can flip.
-spar.max_num_age_flips = 2
+spar.max_num_age_flips = 1
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
 number_nearest_units = 3
@@ -212,8 +210,8 @@ def main():
     # No data files: 2470193 
     #collarIDs = [2470196]
 
-    collarIDs = [2470303]
-    collarIDs = [2470303, 2182029]
+    #collarIDs = [2470303]
+    collarIDs = [2182029]
 
     display_plots = True
 

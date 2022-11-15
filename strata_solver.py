@@ -24,8 +24,6 @@ class StrataSolverParameters:
     max_num_unit_contacts_inside_litho: int = 0
     # Use the single closest unit for the top (first) lithology.
     single_top_unit: bool = False
-    # Flag for using the unit age to determine connectivity.
-    ignore_unit_age: bool = False
     # 'Age alignment' constraints: the maximum number of times the age direction can flip.
     max_num_age_flips: int = 0
 
@@ -199,7 +197,7 @@ def apply_max_num_returns_constraint(route, strata_list, max_num_returns):
             strata_list.remove(strat)
 
 #==============================================================================
-def apply_topology_constraints(graph, unit_names, strat0, strata_list, ignore_unit_age):
+def apply_topology_constraints(graph, unit_names, strat0, strata_list):
     '''
     Apply unit topology (connectivity) constraints:
         remove from the input unit list the units not connected to a given one (strat0).
@@ -210,17 +208,12 @@ def apply_topology_constraints(graph, unit_names, strat0, strata_list, ignore_un
 
     if (unit_names[strat0] in graph.nodes()):
         for strat in strata_list[:]:
-            e = (unit_names[strat0], unit_names[strat])
-            if (not ignore_unit_age):
-                if (not graph.has_edge(*e)):
-                    # Units are not connected. Skip this unit.
-                    strata_list.remove(strat)
-            else:
             # NOTE: We test both edges here instead of converting graph to undirected, as we need to keep the age info in the graph.
-                e2 = (unit_names[strat], unit_names[strat0])
-                if (not graph.has_edge(*e) and not graph.has_edge(*e2)):
-                    # Units are not connected. Skip this unit.
-                    strata_list.remove(strat)
+            e = (unit_names[strat0], unit_names[strat])
+            e2 = (unit_names[strat], unit_names[strat0])
+            if (not graph.has_edge(*e) and not graph.has_edge(*e2)):
+                # Units are not connected. Skip this unit.
+                strata_list.remove(strat)
 
 #=======================================================================================================
 def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, graph):
@@ -341,7 +334,7 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
 
                 # Apply unit topology constraints.
                 if (add_topology_constraints):
-                    apply_topology_constraints(graph, unit_names, strat0, strata_list, spar.ignore_unit_age)
+                    apply_topology_constraints(graph, unit_names, strat0, strata_list)
 
                 if (len(strata_list) != 0):
                     # Copy the route to create references to it below.
