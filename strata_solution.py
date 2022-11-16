@@ -32,7 +32,7 @@ class StrataSolution:
         self.strat_distr = _get_strat_distr(routes, num_rows, num_units)
 
         # Calculate the route scores (based on path probability).
-        self.route_scores = _get_route_scores(routes, self.strat_distr)
+        self.route_scores = _get_route_scores(routes, self.strat_distr, self.depth_data)
 
         # Calculate the route distance scores (based on RMS distance to units).
         self.dist_scores = _get_distance_scores(routes, unit_names, unit2dist)
@@ -77,7 +77,7 @@ def _get_strat_distr(all_routes, num_rows, num_units):
     return strat_distr
 
 #=============================================================================
-def _get_route_scores(all_routes, strat_distr):
+def _get_route_scores(all_routes, strat_distr, depth_data):
     '''
     Returns the route scores (based on path probability).
     '''
@@ -85,12 +85,14 @@ def _get_route_scores(all_routes, strat_distr):
     route_scores = np.zeros(len(all_routes), dtype=float)
 
     for route_index, route in enumerate(all_routes):
+        total_length = 0.
         for row, unit_index in enumerate(route.path):
-            route_scores[route_index] += strat_distr[row, unit_index]
-
-    # Normalize.
-    if (num_rows > 0):
-        route_scores = route_scores / float(num_rows)
+            length = depth_data.depth_to[row] - depth_data.depth_from[row]
+            # Scale with the length as some data rows have different lenghts.
+            route_scores[route_index] += strat_distr[row, unit_index] * length
+            total_length += length
+        # Normalize with the total drillhole length coverage.
+        route_scores[route_index] /= total_length
 
     return route_scores
 
