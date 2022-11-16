@@ -6,7 +6,6 @@
   The University of Western Australia
 '''
 
-import matplotlib.pylab as pl
 import os
 
 from strata_solver import \

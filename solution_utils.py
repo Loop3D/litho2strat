@@ -7,7 +7,7 @@
 '''
 
 import numpy as np
-import matplotlib.pylab as pl
+import matplotlib.pyplot as pl
 from matplotlib.patches import Rectangle
 from matplotlib.collections import PatchCollection
 from matplotlib.colors import ListedColormap
