@@ -125,13 +125,20 @@ def generate_missing_lithos():
         strata_data.filter_strat_data_based_on_drillhole_lithos(drillhole_lithos)
         strata_data.filter_strat_data_based_on_distance(number_nearest_units)
 
-        # Read the Cover unit lithologies.
-        strata_data.add_cover_unit("Cover", cover_unit_filename)
-
         # Generating the table of possible strata paths.
         strata_table, missing_lithos = generate_strata_table(drillsample_data, strata_data, spar.single_top_unit)
 
         all_missing_lithos.update(missing_lithos)
+
+    # Reading the cover lithos list.
+    with open(cover_unit_filename) as f:
+        cover_lithos = f.read().splitlines()
+
+    # Remove cover lithos from the missing lithos list.
+    all_missing_lithos_list = list(all_missing_lithos)
+    for litho in all_missing_lithos_list:
+        if (litho in cover_lithos):
+            all_missing_lithos.remove(litho)
 
     print("Missing lithologies list:")
     print("Number lithos missing =", len(all_missing_lithos))
@@ -141,8 +148,8 @@ def generate_missing_lithos():
 def main():
     print('Started litho2strat')
 
-    #generate_missing_lithos()
-    #exit()
+    generate_missing_lithos()
+    exit()
 
     # Topology file.
     topology_filename = "data/real/ASUD_strat4.gml"
@@ -258,9 +265,6 @@ def main():
         filtered_lithos = strata_data.get_unique_lithos()
         print("The number of filtered unit lithologies:", len(filtered_lithos))
         print("Filtered unit lithologies:", sorted(filtered_lithos))
-
-        # Read the Cover unit lithologies.
-        #strata_data.add_cover_unit("Cover", cover_unit_filename)
 
         # Read thickness data.
         thickness_data = []
