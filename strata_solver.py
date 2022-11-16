@@ -73,25 +73,13 @@ def generate_strata_table(drillsample_data, strata_data, single_top_unit):
                     # Sorted distance list for this lithology.
                     dist_list = strata_data.litho2dist[litho]
 
-                    # Adding Cover if it is present for this litho.
-                    add_cover = False
-                    for item in dist_list:
-                        if (item[1] == 'Cover'):
-                            add_cover = True
-                            closest_unit = 'Cover'
-                            closest_unit_distance = item[0]
-
-                    # Finding the closest unit that is not Cover.
-                    for item in dist_list:
-                        if (item[1] != 'Cover'):
-                            closest_unit = item[1]
-                            closest_unit_distance = item[0]
-                            break
+                    closest_unit_distance = dist_list[0][0]
+                    closest_unit = dist_list[0][1]
 
                     print('Closest top unit info (litho, unit, distance):', [litho, closest_unit, closest_unit_distance])
 
                     for unit_name in strata_data.unit2litho:
-                        if (unit_name == closest_unit or (add_cover and unit_name == 'Cover')):
+                        if (unit_name == closest_unit):
                             litho_found = True
                             unit_index = unit_names.index(unit_name)
                             strata_table[new_row_index, unit_index].path_exists = True
@@ -204,10 +192,6 @@ def apply_topology_constraints(graph, unit_names, strat0, strata_list):
     Apply unit topology (connectivity) constraints:
         remove from the input unit list the units not connected to a given one (strat0).
     '''
-    # Cover can be in contact with any unit.
-    if (unit_names[strat0] == 'Cover'):
-        return
-
     if (unit_names[strat0] in graph.nodes()):
         for strat in strata_list[:]:
             # NOTE: We test both edges here instead of converting graph to undirected, as we need to keep the age info in the graph.
@@ -327,8 +311,8 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
                     can_change = can_change and (current_thickness >= min_strata_thickness[strat0])
 
             if (can_change):
-                # Strata units excluding the current one, and excluding the Cover (as we cannot change to Cover, but only can start from it).
-                strata_list = [s for s in strata_allowed if (s != strat0 and unit_names[s] != "Cover")]
+                # Strata units excluding the current one.
+                strata_list = [s for s in strata_allowed if (s != strat0)]
 
                 # Applying the "maximum number of returns to a unit" constraint.
                 apply_max_num_returns_constraint(route, strata_list, spar.max_num_returns_per_unit)

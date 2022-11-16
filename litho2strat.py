@@ -60,7 +60,7 @@ spar.max_num_returns_per_unit = 1
 spar.max_num_unit_contacts_inside_litho = 0
 #---------------------------------------------------------------------------
 # Use the single closest unit for the top (first) lithology.
-spar.single_top_unit = False
+spar.single_top_unit = True
 
 #---------------------------------------------------------------------------
 # Adding thickness constraints. (Requires unit thickness data).
@@ -148,8 +148,8 @@ def generate_missing_lithos():
 def main():
     print('Started litho2strat')
 
-    generate_missing_lithos()
-    exit()
+    #generate_missing_lithos()
+    #exit()
 
     # Topology file.
     topology_filename = "data/real/ASUD_strat4.gml"
@@ -217,8 +217,8 @@ def main():
     # No data files: 2470193 
     #collarIDs = [2470196]
 
-    #collarIDs = [2470303]
-    collarIDs = [2182029]
+    collarIDs = [2470303]
+    #collarIDs = [2182029]
 
     display_plots = True
 

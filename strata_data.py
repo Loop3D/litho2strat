@@ -38,11 +38,7 @@ class StrataData:
         '''
         unit_names = []
         for unit_name in self.unit2litho:
-            if (unit_name == 'Cover'):
-                # Map the Cover's index to zero.
-                unit_names.insert(0, unit_name)
-            else:
-                unit_names.append(unit_name)
+            unit_names.append(unit_name)
 
         return unit_names
 
@@ -156,23 +152,5 @@ class StrataData:
                 self.litho2dist[litho] = [el]
             # Sort the list by distance.
             self.litho2dist[litho].sort(key=lambda tup: tup[0])
-
-    #=============================================================================
-    def add_cover_unit(self, unit_name, filename):
-        '''
-        Adds the custom unit with its lithologies read from a file.
-        '''
-        with open(filename) as f:
-            lithos = f.read().splitlines()
-
-        # Adding unit data to strat_data.
-        if (unit_name in self.unit2litho):
-            self.unit2litho[unit_name].append(lithos)
-        else:
-            self.unit2litho[unit_name] = lithos
-
-        # Adding unit data to the distance map.
-        distance = 0.
-        self.add_unit_to_distance_map(unit_name, distance, lithos)
 
 #========================================================================================================
