@@ -12,10 +12,70 @@ from matplotlib.patches import Rectangle
 from matplotlib.collections import PatchCollection
 from matplotlib.colors import ListedColormap
 import matplotlib.colorbar as cbar
+import networkx as nx
 import csv
 import os
 
 output_folder = "output"
+
+#==============================================================================
+def draw_solution_graph(strat_solution):
+    '''
+    Drawing solution topology graph, with edges weighted by unit contact frequency (among all solutions).
+    '''
+    G = nx.Graph()
+
+    for route in strat_solution.routes:
+        unique_route = route.get_strata_sequence()
+        for i in range(len(unique_route) - 1):
+            e = (unique_route[i], unique_route[i + 1])
+            if (not G.has_edge(*e)):
+                G.add_edge(*e, weight=1)
+            else:
+                # Increase the edge weight.
+                G[e[0]][e[1]]['weight'] = G[e[0]][e[1]]['weight'] + 1
+
+    # Define node names.
+    nodes_mapping = dict()
+    for unit_index, unit_name in enumerate(strat_solution.unit_names):
+        nodes_mapping[unit_index] = unit_name
+
+    # Label graph nodes with unit names.
+    G = nx.relabel_nodes(G, nodes_mapping)
+
+    pos = nx.spring_layout(G)
+
+    edges = nx.get_edge_attributes(G, 'weight')
+    nodelist = G.nodes()
+
+    # Scale the edges weight with the minimum weight.
+    min_weight = float(min(edges.values()))
+    edges = {key: value / min_weight for key, value in edges.items()}
+
+    pl.figure(figsize=(12, 8))
+
+    # Draw the graph.
+    nx.draw_networkx_nodes(G, pos,
+                           nodelist=nodelist,
+                           node_size=400,
+                           node_color='black',
+                           alpha=0.5)
+
+    nx.draw_networkx_edges(G, pos,
+                           edgelist=edges.keys(),
+                           width=list(edges.values()),
+                           edge_color='lightblue',
+                           alpha=0.9)
+
+    nx.draw_networkx_labels(G, pos=pos,
+                            labels=dict(zip(nodelist,nodelist)),
+                            font_color='black')
+
+    # Set margins for the axes so that nodes aren't clipped.
+    ax = pl.gca()
+    ax.margins(0.20)
+    pl.axis("off")
+    pl.show()
 
 #==============================================================================
 def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename, graph = None):

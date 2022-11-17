@@ -23,12 +23,7 @@ from data_readers import \
     DrillSampleDataHeader, \
     StrataDataHeader
 
-from solution_utils import \
-    print_unique_routes, \
-    plot_route_scores, \
-    plot_unit_probabilities, \
-    write_best_routes_to_file, \
-    draw_solution_logs
+from solution_utils import *
 
 spar = StrataSolverParameters()
 
@@ -296,6 +291,9 @@ def main():
 
         # Plot unit probabilities.
         plot_unit_probabilities(strat_solution, display_plots)
+
+        # Draw the topology graph of all solution routes.
+        draw_solution_graph(strat_solution)
 
         # Write the best routes to file.
         write_best_routes_to_file(strat_solution, 10)
