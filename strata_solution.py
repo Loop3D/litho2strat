@@ -173,6 +173,9 @@ def _calculate_graph_route_scores(solution):
                 # Adding the graph edge weight to the score.
                 weight = solution.graph[e[0]][e[1]]['weight']
                 score = score + weight
+            else:
+                # Sanity check.
+                raise('Error: an edge is not found in the solution graph!')
         graph_route_scores[route_index] = score
 
     return graph_route_scores
