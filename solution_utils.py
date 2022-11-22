@@ -269,6 +269,21 @@ def plot_route_scores(scores):
     pl.ylabel('Frequency')
     pl.show()
 
+#=============================================================================
+def plot_solution_correlation(solution):
+    '''
+    Plot the correlation of solution scores from different drillholes.
+    '''
+    if (len(solution.external_graph_route_scores_list) == 0):
+        return
+
+    x = solution.graph_route_scores
+    y = solution.external_graph_route_scores_list[0]
+
+    pl.scatter(x, y, s=5)
+
+    pl.show()
+
 #==============================================================================
 def write_best_routes_to_file(strat_solution, ntop):
     '''

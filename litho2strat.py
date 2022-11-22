@@ -212,9 +212,12 @@ def main():
     #collarIDs = [2470196]
 
     collarIDs = [2470303]
-    #collarIDs = [2182029]
+    collarIDs = [2470303, 2182029]
 
     display_plots = True
+
+    # Stores solutions for different drillholes.
+    strat_solutions = []
 
     for collarID in collarIDs:
 
@@ -269,13 +272,15 @@ def main():
         # Generating the stratigraphies.
         #--------------------------------------------------------------
         strat_solution = generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, graph)
+        strat_solution.collarID = collarID
 
         print("Total number of routes = ", len(strat_solution.routes))
+
+        strat_solutions.append(strat_solution)
 
         #--------------------------------------------------------------
         # Plot the results.
         #--------------------------------------------------------------
-        strat_solution.collarID = collarID
 
         # Print all unique routes (i.e., unique strata sequence).
         print_unique_routes(strat_solution.routes, 10)
@@ -300,6 +305,22 @@ def main():
 
         # Write the best routes to file.
         write_best_routes_to_file(strat_solution, 10)
+
+    #-------------------------------------------------------------------------
+    # Analyze the solution correletion between different drillholes.
+    #-------------------------------------------------------------------------
+
+    # Loop over all solutipon pairs.
+    for i in range(len(strat_solutions)):
+        graph = strat_solutions[i].graph
+        for j in range(len(strat_solutions)):
+            if (i != j):
+                # Calculate solution scores based on external graph.
+                graph_route_scores = strat_solutions[j].calculate_graph_route_scores(graph)
+                strat_solutions[j].external_graph_route_scores_list.append(graph_route_scores)
+
+    for solution in strat_solutions:
+        plot_solution_correlation(solution)
 
 #=============================================================================
 if __name__ == "__main__":

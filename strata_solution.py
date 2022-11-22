@@ -42,7 +42,10 @@ class StrataSolution:
         self.graph = _build_solution_graph(self)
 
         # Calculate the route scores based on the solution graph.
-        self.graph_route_scores = _calculate_graph_route_scores(self)
+        self.graph_route_scores = self.calculate_graph_route_scores(self.graph)
+
+        # Scores calculated using graphs from other drillholes.
+        self.external_graph_route_scores_list = []
 
     #=====================================================================
     def unit_nonempty(self, unit_name):
@@ -54,6 +57,30 @@ class StrataSolution:
             return True
         else:
             return False
+
+    #=============================================================================
+    def calculate_graph_route_scores(self, graph):
+        '''
+        Calculate the route scores based on the solution topology graph.
+        Note: it can use the external solution graph from other drillholes.
+        '''
+        graph_route_scores = np.zeros(len(self.routes), dtype=int)
+        unit_names = self.unit_names
+
+        for route_index, route in enumerate(self.routes):
+            unique_route = route.get_strata_sequence()
+            score = 0
+            for i in range(len(unique_route) - 1):
+                # Graph edge.
+                e = (unit_names[unique_route[i]], unit_names[unique_route[i + 1]])
+                if (graph.has_edge(*e)):
+                # When using the external graph (from another drillhole) it may not have this edge.
+                    # Adding the graph edge weight to the score.
+                    weight = graph[e[0]][e[1]]['weight']
+                    score = score + weight
+            graph_route_scores[route_index] = score
+
+        return graph_route_scores
 
     #=====================================================================
     def num_nonempty_units(self):
@@ -154,28 +181,3 @@ def _build_solution_graph(solution):
     G = nx.relabel_nodes(G, nodes_mapping)
 
     return G
-
-#=============================================================================
-def _calculate_graph_route_scores(solution):
-    '''
-    Calculate the route scores based on the solution topology graph.
-    '''
-    graph_route_scores = np.zeros(len(solution.routes), dtype=int)
-    unit_names = solution.unit_names
-
-    for route_index, route in enumerate(solution.routes):
-        unique_route = route.get_strata_sequence()
-        score = 0
-        for i in range(len(unique_route) - 1):
-            # Graph edge.
-            e = (unit_names[unique_route[i]], unit_names[unique_route[i + 1]])
-            if (solution.graph.has_edge(*e)):
-                # Adding the graph edge weight to the score.
-                weight = solution.graph[e[0]][e[1]]['weight']
-                score = score + weight
-            else:
-                # Sanity check.
-                raise('Error: an edge is not found in the solution graph!')
-        graph_route_scores[route_index] = score
-
-    return graph_route_scores
