@@ -280,6 +280,10 @@ def plot_solution_correlation(solution):
     x = solution.graph_route_scores
     y = solution.external_graph_route_scores_list[0]
 
+    # Pearson correlation coefficient.
+    rho = np.corrcoef(x, y)[0][1]
+    print("Correlation coeff rho = ", rho)
+
     pl.scatter(x, y, s=5)
 
     pl.show()

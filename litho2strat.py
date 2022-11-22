@@ -31,7 +31,7 @@ spar = StrataSolverParameters()
 # Unit contact topology constraints (extracted from map data).
 spar.add_topology_constraints = True
 # 'Age alignment' constraints: the maximum number of times the age direction can flip.
-spar.max_num_age_flips = 2
+spar.max_num_age_flips = 3
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
 number_nearest_units = 3
