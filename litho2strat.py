@@ -31,7 +31,7 @@ spar = StrataSolverParameters()
 # Unit contact topology constraints (extracted from map data).
 spar.add_topology_constraints = True
 # 'Age alignment' constraints: the maximum number of times the age direction can flip.
-spar.max_num_age_flips = 1
+spar.max_num_age_flips = 2
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
 number_nearest_units = 3
@@ -54,7 +54,7 @@ spar.max_num_returns_per_unit = 1
 spar.max_num_unit_contacts_inside_litho = 0
 #---------------------------------------------------------------------------
 # Use the single closest unit for the top (first) lithology.
-spar.single_top_unit = True
+spar.single_top_unit = False
 
 #---------------------------------------------------------------------------
 # Adding thickness constraints. (Requires unit thickness data).
@@ -294,6 +294,9 @@ def main():
 
         # Draw the topology graph of all solution routes.
         draw_solution_graph(strat_solution)
+
+        # Plot histogram of solution scores.
+        plot_route_scores(strat_solution.graph_route_scores)
 
         # Write the best routes to file.
         write_best_routes_to_file(strat_solution, 10)

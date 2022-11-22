@@ -260,11 +260,11 @@ def print_unique_routes(all_routes, num_print_paths):
                 break
 
 #=============================================================================
-def plot_route_scores(strat_solution):
+def plot_route_scores(scores):
     '''
-    Plot distribution of the route scores (based on path probability).
+    Plot distribution of the route scores.
     '''
-    pl.hist(strat_solution.route_scores, bins = 50)
+    pl.hist(scores, bins = 50)
     pl.xlabel('Route score')
     pl.ylabel('Frequency')
     pl.show()
