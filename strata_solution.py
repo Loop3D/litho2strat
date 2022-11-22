@@ -29,13 +29,13 @@ class StrataSolution:
         num_rows = len(depth_data.depth_from)
 
         # Building the distribution of unit presence at every depth.
-        self.strat_distr = _get_strat_distr(routes, num_rows, num_units)
+        self.strat_distr = _calculate_strat_distr(routes, num_rows, num_units)
 
         # Calculate the route scores (based on path probability).
-        self.route_scores = _get_route_scores(routes, self.strat_distr, self.depth_data)
+        self.route_scores = _calculate_route_scores(routes, self.strat_distr, self.depth_data)
 
         # Calculate the route distance scores (based on RMS distance to units).
-        self.dist_scores = _get_distance_scores(routes, unit_names, unit2dist)
+        #self.dist_scores = _calculate_distance_scores(routes, unit_names, unit2dist)
 
     #=====================================================================
     def unit_nonempty(self, unit_name):
@@ -60,9 +60,9 @@ class StrataSolution:
         return counter
 
 #=============================================================================
-def _get_strat_distr(all_routes, num_rows, num_units):
+def _calculate_strat_distr(all_routes, num_rows, num_units):
     '''
-    Returns the distribution of unit presence at every depth.
+    Calculates the distribution of unit presence at every depth.
     '''
     strat_distr = np.zeros((num_rows, num_units))
 
@@ -77,9 +77,9 @@ def _get_strat_distr(all_routes, num_rows, num_units):
     return strat_distr
 
 #=============================================================================
-def _get_route_scores(all_routes, strat_distr, depth_data):
+def _calculate_route_scores(all_routes, strat_distr, depth_data):
     '''
-    Returns the route scores (based on path probability).
+    Calculates the route scores (based on path probability).
     '''
     num_rows = strat_distr.shape[0]
     route_scores = np.zeros(len(all_routes), dtype=float)
@@ -97,9 +97,9 @@ def _get_route_scores(all_routes, strat_distr, depth_data):
     return route_scores
 
 #=============================================================================
-def _get_distance_scores(all_routes, unit_names, unit2dist):
+def _calculate_distance_scores(all_routes, unit_names, unit2dist):
     '''
-    Returns the route scores (based on root mean square distance to units).
+    Calculates the route scores (based on root mean square distance to units).
     '''
     dist_scores = np.zeros(len(all_routes), dtype=float)
 
