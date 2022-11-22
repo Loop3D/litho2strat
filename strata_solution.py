@@ -7,11 +7,12 @@
 '''
 
 import numpy as np
+import networkx as nx
 
 #========================================================================================================
 class StrataSolution:
     '''
-    The solutions of the Strata Solver, with their scores.
+    Stores solutions of the Strata Solver, with their metadata and calculated scores.
     '''
     def __init__(self, routes, routes_number, unit_names, depth_data, unit2dist):
         # The strata solution paths.
@@ -36,6 +37,9 @@ class StrataSolution:
 
         # Calculate the route distance scores (based on RMS distance to units).
         #self.dist_scores = _calculate_distance_scores(routes, unit_names, unit2dist)
+
+        # Build the solution topology graph.
+        self.graph = _build_solution_graph(self)
 
     #=====================================================================
     def unit_nonempty(self, unit_name):
@@ -119,4 +123,31 @@ def _calculate_distance_scores(all_routes, unit_names, unit2dist):
         dist_scores = np.sqrt(dist_scores / float(num_rows))
 
     return dist_scores
+
+#=============================================================================
+def _build_solution_graph(strat_solution):
+    '''
+    Builds the solution topology graph, with edges weighted by unit contact frequency (among all solution routes).
+    '''
+    G = nx.Graph()
+
+    for route in strat_solution.routes:
+        unique_route = route.get_strata_sequence()
+        for i in range(len(unique_route) - 1):
+            e = (unique_route[i], unique_route[i + 1])
+            if (not G.has_edge(*e)):
+                G.add_edge(*e, weight=1)
+            else:
+                # Increase the edge weight.
+                G[e[0]][e[1]]['weight'] = G[e[0]][e[1]]['weight'] + 1
+
+    # Define graph node names.
+    nodes_mapping = dict()
+    for unit_index, unit_name in enumerate(strat_solution.unit_names):
+        nodes_mapping[unit_index] = unit_name
+
+    # Label graph nodes with unit names.
+    G = nx.relabel_nodes(G, nodes_mapping)
+
+    return G
 

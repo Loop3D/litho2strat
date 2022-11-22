@@ -284,13 +284,13 @@ def main():
         draw_solution_logs(strat_solution, display_plots, 'strat', unit_colors_filename)
 
         # Draw probability logs.
-        draw_solution_logs(strat_solution, display_plots, 'proba', '')
+        #draw_solution_logs(strat_solution, display_plots, 'proba', '')
 
         # Draw the age-rule logs.
-        draw_solution_logs(strat_solution, display_plots, 'age', '', graph)
+        #draw_solution_logs(strat_solution, display_plots, 'age', '', graph)
 
         # Plot unit probabilities.
-        plot_unit_probabilities(strat_solution, display_plots)
+        #plot_unit_probabilities(strat_solution, display_plots)
 
         # Draw the topology graph of all solution routes.
         draw_solution_graph(strat_solution)

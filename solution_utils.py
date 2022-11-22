@@ -23,25 +23,7 @@ def draw_solution_graph(strat_solution):
     '''
     Drawing solution topology graph, with edges weighted by unit contact frequency (among all solutions).
     '''
-    G = nx.Graph()
-
-    for route in strat_solution.routes:
-        unique_route = route.get_strata_sequence()
-        for i in range(len(unique_route) - 1):
-            e = (unique_route[i], unique_route[i + 1])
-            if (not G.has_edge(*e)):
-                G.add_edge(*e, weight=1)
-            else:
-                # Increase the edge weight.
-                G[e[0]][e[1]]['weight'] = G[e[0]][e[1]]['weight'] + 1
-
-    # Define node names.
-    nodes_mapping = dict()
-    for unit_index, unit_name in enumerate(strat_solution.unit_names):
-        nodes_mapping[unit_index] = unit_name
-
-    # Label graph nodes with unit names.
-    G = nx.relabel_nodes(G, nodes_mapping)
+    G = strat_solution.graph
 
     pos = nx.spring_layout(G)
 
