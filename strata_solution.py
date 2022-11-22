@@ -41,6 +41,9 @@ class StrataSolution:
         # Build the solution topology graph.
         self.graph = _build_solution_graph(self)
 
+        # Calculate the route scores based on the solution graph.
+        self.graph_route_scores = _calculate_graph_route_scores(self)
+
     #=====================================================================
     def unit_nonempty(self, unit_name):
         '''
@@ -125,17 +128,18 @@ def _calculate_distance_scores(all_routes, unit_names, unit2dist):
     return dist_scores
 
 #=============================================================================
-def _build_solution_graph(strat_solution):
+def _build_solution_graph(solution):
     '''
     Builds the solution topology graph, with edges weighted by unit contact frequency (among all solution routes).
     '''
     G = nx.Graph()
 
-    for route in strat_solution.routes:
+    for route in solution.routes:
         unique_route = route.get_strata_sequence()
         for i in range(len(unique_route) - 1):
             e = (unique_route[i], unique_route[i + 1])
             if (not G.has_edge(*e)):
+                # Adding a new graph edge.
                 G.add_edge(*e, weight=1)
             else:
                 # Increase the edge weight.
@@ -143,7 +147,7 @@ def _build_solution_graph(strat_solution):
 
     # Define graph node names.
     nodes_mapping = dict()
-    for unit_index, unit_name in enumerate(strat_solution.unit_names):
+    for unit_index, unit_name in enumerate(solution.unit_names):
         nodes_mapping[unit_index] = unit_name
 
     # Label graph nodes with unit names.
@@ -151,3 +155,24 @@ def _build_solution_graph(strat_solution):
 
     return G
 
+#=============================================================================
+def _calculate_graph_route_scores(solution):
+    '''
+    Calculate the route scores based on the solution topology graph.
+    '''
+    graph_route_scores = np.zeros(len(solution.routes), dtype=int)
+    unit_names = solution.unit_names
+
+    for route_index, route in enumerate(solution.routes):
+        unique_route = route.get_strata_sequence()
+        score = 0
+        for i in range(len(unique_route) - 1):
+            # Graph edge.
+            e = (unit_names[unique_route[i]], unit_names[unique_route[i + 1]])
+            if (solution.graph.has_edge(*e)):
+                # Adding the graph edge weight to the score.
+                weight = solution.graph[e[0]][e[1]]['weight']
+                score = score + weight
+        graph_route_scores[route_index] = score
+
+    return graph_route_scores
