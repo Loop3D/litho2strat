@@ -54,7 +54,7 @@ spar.max_num_returns_per_unit = 1
 spar.max_num_unit_contacts_inside_litho = 0
 #---------------------------------------------------------------------------
 # Use the single closest unit for the top (first) lithology.
-spar.single_top_unit = True
+spar.single_top_unit = False
 
 #---------------------------------------------------------------------------
 # Adding thickness constraints. (Requires unit thickness data).
@@ -209,10 +209,14 @@ def main():
     # No solutions found: 2182017, 2182018
     # Solution number blows: 2182030
     # No data files: 2470193 
-    #collarIDs = [2470196]
 
     collarIDs = [2470303]
+
+    # Strong correlation.
     collarIDs = [2470303, 2182029]
+
+    # No correlation example.
+    collarIDs = [2470303, 2182308]
 
     display_plots = True
 
