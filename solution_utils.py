@@ -60,7 +60,8 @@ def draw_solution_graph(strat_solution):
     pl.show()
 
 #==============================================================================
-def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename, graph = None):
+def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
+                       sample_scores_uniformly, graph):
     '''
     Drawing solution logs.
     '''
@@ -73,7 +74,7 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
         return
 
     # Determine the number of routes to display (cannot show too many routes due to pixel size limitations).
-    max_routes_displayed = 100
+    max_routes_displayed = 10
     if (num_routes > max_routes_displayed):
         num_routes_displayed = max_routes_displayed
     else:
@@ -127,16 +128,24 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
     currentAxis = pl.gca()
     currentAxis.set_title(str(strat_solution.collarID))
 
-    # Top scores (a minus here to have largest to smallest score order).
+    # Top scores (a minus here to have the largest-to-smallest score order).
     indexes_max = np.argsort(-strat_solution.route_scores)
 
     patches = []
     color_list = []
+
     for i in range(num_routes_displayed):
-        # Sample the index uniformly (to show high and low score routes).
-        ind = int(float(i) / float(num_routes_displayed) * float(num_routes))
+        if (sample_scores_uniformly):
+            # Sample the index uniformly (to show high and low score routes).
+            ind = int(float(i) / float(num_routes_displayed) * float(num_routes))
+        else:
+            # Showing the top score routes.
+            ind = i
+
         # Select the sorted by score solution index.
         route_index = indexes_max[ind]
+
+        #print("score = ", strat_solution.route_scores[route_index])
 
         path_size = len(strat_solution.routes[route_index].path)
         for row in range(path_size):

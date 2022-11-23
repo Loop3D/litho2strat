@@ -31,7 +31,7 @@ spar = StrataSolverParameters()
 # Unit contact topology constraints (extracted from map data).
 spar.add_topology_constraints = True
 # 'Age alignment' constraints: the maximum number of times the age direction can flip.
-spar.max_num_age_flips = 3
+spar.max_num_age_flips = 2
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
 number_nearest_units = 3
@@ -54,7 +54,7 @@ spar.max_num_returns_per_unit = 1
 spar.max_num_unit_contacts_inside_litho = 0
 #---------------------------------------------------------------------------
 # Use the single closest unit for the top (first) lithology.
-spar.single_top_unit = False
+spar.single_top_unit = True
 
 #---------------------------------------------------------------------------
 # Adding thickness constraints. (Requires unit thickness data).
@@ -286,13 +286,13 @@ def main():
         print_unique_routes(strat_solution.routes, 10)
 
         # Draw stratigraphy logs.
-        draw_solution_logs(strat_solution, display_plots, 'strat', unit_colors_filename)
+        draw_solution_logs(strat_solution, display_plots, 'strat', unit_colors_filename, True, None)
 
         # Draw probability logs.
-        #draw_solution_logs(strat_solution, display_plots, 'proba', '')
+        #draw_solution_logs(strat_solution, display_plots, 'proba', '', True, None)
 
         # Draw the age-rule logs.
-        #draw_solution_logs(strat_solution, display_plots, 'age', '', graph)
+        #draw_solution_logs(strat_solution, display_plots, 'age', '', True, graph)
 
         # Plot unit probabilities.
         #plot_unit_probabilities(strat_solution, display_plots)
@@ -307,7 +307,7 @@ def main():
         write_best_routes_to_file(strat_solution, 10)
 
     #-------------------------------------------------------------------------
-    # Analyze the solution correletion between different drillholes.
+    # Analyze solution correletion between different drillholes.
     #-------------------------------------------------------------------------
 
     # Loop over all solutipon pairs.
@@ -321,6 +321,17 @@ def main():
 
     for solution in strat_solutions:
         plot_solution_correlation(solution)
+
+    #-------------------------------------------------------------------------
+    # Calculate a new route score equal to the sum of graph scores ovel all drillholes.
+    for solution in strat_solutions:
+        solution.route_scores = solution.graph_route_scores
+        for external_graph_route_scores in solution.external_graph_route_scores_list:
+            solution.route_scores = solution.route_scores + external_graph_route_scores
+
+    # Show the most correlated solution logs.
+    for solution in strat_solutions:
+        draw_solution_logs(solution, display_plots, 'strat', unit_colors_filename, False, None)
 
 #=============================================================================
 if __name__ == "__main__":

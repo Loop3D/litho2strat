@@ -41,7 +41,7 @@ class StrataSolution:
         # Build the solution topology graph.
         self.graph = _build_solution_graph(self)
 
-        # Calculate the route scores based on the solution graph.
+        # Calculate the route scores based on its own solution graph.
         self.graph_route_scores = self.calculate_graph_route_scores(self.graph)
 
         # Scores calculated using graphs from other drillholes.
