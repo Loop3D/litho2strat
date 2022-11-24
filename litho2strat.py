@@ -328,11 +328,44 @@ def main():
 
     #-------------------------------------------------------------------------
     # Calculate a new route score equal to the sum of graph scores ovel all drillholes.
-    for solution in strat_solutions:
-        solution.route_scores = solution.graph_route_scores
-        for external_graph_route_scores in solution.external_graph_route_scores_list:
-            solution.route_scores = solution.route_scores + external_graph_route_scores
+    #-------------------------------------------------------------------------
+    # for solution in strat_solutions:
+    #     solution.route_scores = solution.graph_route_scores
+    #     for external_graph_route_scores in solution.external_graph_route_scores_list:
+    #         solution.route_scores = solution.route_scores + external_graph_route_scores
 
+
+    #-------------------------------------------------------------------------
+    # Calculate a new score based on the graph intersection.
+    #-------------------------------------------------------------------------
+    # Loop over all solutipon pairs.
+    for i in range(len(strat_solutions)):
+        strat_solutions[i].route_scores = np.zeros(len(strat_solutions[i].routes), dtype=float)
+        graph1 = strat_solutions[i].graph
+        unit_names = strat_solutions[i].unit_names
+
+        for j in range(len(strat_solutions)):
+            if (i != j):
+                graph2 = strat_solutions[j].graph
+
+                for route_index, route in enumerate(strat_solutions[i].routes):
+                    unique_route = route.get_strata_sequence()
+                    score = 0
+
+                    for k in range(len(unique_route) - 1):
+                        # Graph edge.
+                        e = (unit_names[unique_route[k]], unit_names[unique_route[k + 1]])
+                        if (graph1.has_edge(*e) and graph2.has_edge(*e)):
+                            weight1 = graph1[e[0]][e[1]]['weight']
+                            weight2 = graph2[e[0]][e[1]]['weight']
+                            score = score + weight1 + weight2
+
+                    strat_solutions[i].route_scores[route_index] = strat_solutions[i].route_scores[route_index] + score
+
+    for solution in strat_solutions:
+        plot_route_scores(solution.route_scores)
+
+    #-------------------------------------------------------------------------
     # Show the most correlated solution logs.
     for solution in strat_solutions:
         draw_solution_logs(solution, display_plots, 'strat', unit_colors_filename, False, None)
