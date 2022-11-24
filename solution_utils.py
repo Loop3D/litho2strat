@@ -30,24 +30,21 @@ def draw_solution_graph(strat_solution):
     edges = nx.get_edge_attributes(G, 'weight')
     nodelist = G.nodes()
 
-    # Scale the edges weight with the minimum weight.
-    min_weight = float(min(edges.values()))
-    edges = {key: value / min_weight for key, value in edges.items()}
-
     pl.figure(figsize=(12, 8))
 
     # Draw the graph.
     nx.draw_networkx_nodes(G, pos,
                            nodelist=nodelist,
-                           node_size=400,
+                           node_size=300,
                            node_color='black',
                            alpha=0.5)
 
     nx.draw_networkx_edges(G, pos,
                            edgelist=edges.keys(),
-                           width=list(edges.values()),
-                           edge_color='lightblue',
-                           alpha=0.9)
+                           width = 10.0,
+                           edge_color=list(edges.values()),
+                           edge_cmap=pl.cm.Blues,
+                           alpha=0.8)
 
     nx.draw_networkx_labels(G, pos=pos,
                             labels=dict(zip(nodelist,nodelist)),
