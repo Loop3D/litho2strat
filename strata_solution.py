@@ -159,7 +159,7 @@ def _build_solution_graph(solution):
     '''
     Builds the solution topology graph, with edges weighted by unit contact frequency (among all solution routes).
     '''
-    G = nx.Graph()
+    G = nx.DiGraph()
 
     for route in solution.routes:
         unique_route = route.get_strata_sequence()
