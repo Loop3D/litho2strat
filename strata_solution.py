@@ -163,15 +163,21 @@ def _build_solution_graph(solution):
 
     for route in solution.routes:
         unique_route = route.get_strata_sequence()
+        route_edges = set()
         for i in range(len(unique_route) - 1):
             unit_name1 = solution.unit_names[unique_route[i]]
             unit_name2 = solution.unit_names[unique_route[i + 1]]
             e = (unit_name1, unit_name2)
-            if (not G.has_edge(*e)):
-                # Adding a new graph edge.
-                G.add_edge(*e, weight=1)
-            else:
-                # Increase the edge weight.
-                G[e[0]][e[1]]['weight'] = G[e[0]][e[1]]['weight'] + 1
+
+            if (e not in route_edges):
+            # Count only once each contact type on the route.
+            # Note: they still will be included into the route score multiple times if we calculate the score based on all route contacts.
+                route_edges.add(e)
+                if (not G.has_edge(*e)):
+                    # Adding a new graph edge.
+                    G.add_edge(*e, weight=1)
+                else:
+                    # Increase the edge weight.
+                    G[e[0]][e[1]]['weight'] = G[e[0]][e[1]]['weight'] + 1
 
     return G

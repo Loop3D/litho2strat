@@ -210,13 +210,13 @@ def main():
     # Solution number blows: 2182030
     # No data files: 2470193 
 
+    # No correlation example.
+    #collarIDs = [2470303, 2182308]
+
     collarIDs = [2470303]
 
     # Strong correlation.
     collarIDs = [2470303, 2182029]
-
-    # No correlation example.
-    collarIDs = [2470303, 2182308]
 
     display_plots = True
 

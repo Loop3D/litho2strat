@@ -74,7 +74,7 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
         return
 
     # Determine the number of routes to display (cannot show too many routes due to pixel size limitations).
-    max_routes_displayed = 10
+    max_routes_displayed = 100
     if (num_routes > max_routes_displayed):
         num_routes_displayed = max_routes_displayed
     else:
