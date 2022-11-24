@@ -164,20 +164,14 @@ def _build_solution_graph(solution):
     for route in solution.routes:
         unique_route = route.get_strata_sequence()
         for i in range(len(unique_route) - 1):
-            e = (unique_route[i], unique_route[i + 1])
+            unit_name1 = solution.unit_names[unique_route[i]]
+            unit_name2 = solution.unit_names[unique_route[i + 1]]
+            e = (unit_name1, unit_name2)
             if (not G.has_edge(*e)):
                 # Adding a new graph edge.
                 G.add_edge(*e, weight=1)
             else:
                 # Increase the edge weight.
                 G[e[0]][e[1]]['weight'] = G[e[0]][e[1]]['weight'] + 1
-
-    # Define graph node names.
-    nodes_mapping = dict()
-    for unit_index, unit_name in enumerate(solution.unit_names):
-        nodes_mapping[unit_index] = unit_name
-
-    # Label graph nodes with unit names.
-    G = nx.relabel_nodes(G, nodes_mapping)
 
     return G
