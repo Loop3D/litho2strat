@@ -25,7 +25,7 @@ def draw_solution_graph(strat_solution):
     '''
     G = strat_solution.graph
 
-    pos = nx.spring_layout(G)
+    pos = nx.circular_layout(G)
 
     edges = nx.get_edge_attributes(G, 'weight')
     nodelist = G.nodes()
@@ -44,7 +44,8 @@ def draw_solution_graph(strat_solution):
                            width = 10.0,
                            edge_color=list(edges.values()),
                            edge_cmap=pl.cm.Blues,
-                           alpha=0.8)
+                           alpha=0.8,
+                           arrowsize=20)
 
     nx.draw_networkx_labels(G, pos=pos,
                             labels=dict(zip(nodelist,nodelist)),
