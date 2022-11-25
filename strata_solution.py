@@ -9,6 +9,10 @@
 import numpy as np
 import networkx as nx
 
+class StratSequence:
+    def __init__(self, path):
+        self.path = path
+
 #========================================================================================================
 class StrataSolution:
     '''
@@ -64,11 +68,11 @@ class StrataSolution:
         Calculate the route scores based on the solution topology graph.
         Note: it can use the external solution graph from other drillholes.
         '''
-        graph_route_scores = np.zeros(len(self.routes), dtype=int)
+        graph_route_scores = np.zeros(len(self.unique_routes), dtype=int)
         unit_names = self.unit_names
 
-        for route_index, route in enumerate(self.routes):
-            unique_route = route.get_strata_sequence()
+        for route_index, route in enumerate(self.unique_routes):
+            unique_route = route.path
             score = 0
             for i in range(len(unique_route) - 1):
                 # Graph edge.
@@ -95,9 +99,15 @@ class StrataSolution:
 
 #=============================================================================
 def _calculate_unique_routes(routes):
-    unique_routes = set([])
+    unique_route_paths = set()
     for route in routes:
-        unique_routes.add(route.get_strata_sequence())
+        unique_route_paths.add(route.get_strata_sequence())
+
+    unique_routes = []
+    for path in unique_route_paths:
+        route = StratSequence(path)
+        unique_routes.append(route)
+
     return unique_routes
 
 #=============================================================================
@@ -144,8 +154,8 @@ def _build_solution_graph(solution):
     '''
     G = nx.DiGraph()
 
-    for route in solution.routes:
-        unique_route = route.get_strata_sequence()
+    for route in solution.unique_routes:
+        unique_route = route.path
         route_edges = set()
         for i in range(len(unique_route) - 1):
             unit_name1 = solution.unit_names[unique_route[i]]

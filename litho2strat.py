@@ -31,10 +31,10 @@ spar = StrataSolverParameters()
 # Unit contact topology constraints (extracted from map data).
 spar.add_topology_constraints = True
 # 'Age alignment' constraints: the maximum number of times the age direction can flip.
-spar.max_num_age_flips = 2
+spar.max_num_age_flips = 1
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
-number_nearest_units = 3
+number_nearest_units = 2
 #---------------------------------------------------------------------------
 # Minimum score for drillhole lithologies to use them.
 min_drillhole_litho_score = 80
@@ -310,8 +310,6 @@ def main():
         # Write the best routes to file.
         write_best_routes_to_file(strat_solution, 10)
 
-    return
-
     #-------------------------------------------------------------------------
     # Analyze solution correletion between different drillholes.
     #-------------------------------------------------------------------------
@@ -339,7 +337,7 @@ def main():
     #-------------------------------------------------------------------------
     # Show the most correlated solution logs.
     for solution in strat_solutions:
-        draw_solution_logs(solution, display_plots, 'strat', unit_colors_filename, False, None)
+        draw_solution_logs(solution, display_plots, 'strat-seq', unit_colors_filename, False, None)
 
 #=============================================================================
 if __name__ == "__main__":

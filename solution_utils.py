@@ -63,7 +63,12 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
     '''
     Drawing solution logs.
     '''
-    num_routes = len(strat_solution.routes)
+    if (type == 'strat-seq'):
+        routes = strat_solution.unique_routes
+    else:
+        routes = strat_solution.routes
+
+    num_routes = len(routes)
     if (num_routes == 0):
         return
 
@@ -72,7 +77,7 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
         return
 
     # Determine the number of routes to display (cannot show too many routes due to pixel size limitations).
-    max_routes_displayed = 100
+    max_routes_displayed = 10
     if (num_routes > max_routes_displayed):
         num_routes_displayed = max_routes_displayed
     else:
@@ -87,7 +92,7 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
     # Gradient palette.
     cmap = pl.get_cmap('viridis')
 
-    if (type == 'strat'):
+    if (type == 'strat' or type == 'strat-seq'):
         if (unit_colors_filename != ""):
         # Define colors using the colormap provided in the file.
             unit_colors = dict()
@@ -116,7 +121,10 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
                 return
 
     # Calculate the figure size.
-    x_max = strat_solution.depth_data.depth_to[-1]
+    if (type == 'strat-seq'):
+        x_max = 6
+    else:
+        x_max = strat_solution.depth_data.depth_to[-1]
     y_max = float(num_routes_displayed) + 0.5
 
     # Define figure dimensions.
@@ -143,21 +151,24 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
         # Select the sorted by score solution index.
         route_index = indexes_max[ind]
 
-        #print("score = ", strat_solution.route_scores[route_index])
-
-        path_size = len(strat_solution.routes[route_index].path)
+        path_size = len(routes[route_index].path)
         for row in range(path_size):
-            unit_index = strat_solution.routes[route_index].path[row]
+            unit_index = routes[route_index].path[row]
 
-            x1 = strat_solution.depth_data.depth_from[row]
-            x2 = strat_solution.depth_data.depth_to[row]
+            if (type == 'strat-seq'):
+                x1 = 0.5 + float(row)
+                x2 = 0.5 + float(row + 1)
+            else:
+                x1 = strat_solution.depth_data.depth_from[row]
+                x2 = strat_solution.depth_data.depth_to[row]
+
             y1 = 0.5 + float(i)
             y2 = 0.5 + float(i + 1)
             dx = x2 - x1
             dy = y2 - y1
 
             # Define the rectangle color.
-            if (type == 'strat'):
+            if (type == 'strat' or type == 'strat-seq'):
             # Draw stratigraphy log.
                 if (unit_colors_filename != ""):
                     unit_name = strat_solution.unit_names[unit_index]
@@ -217,9 +228,15 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
     # Add rectangle collection to the figure.
     currentAxis.add_collection(patches_collection)
 
+    xlabel = 'Depth'
     if (type == 'strat'):
         ylabel = 'Stratigraphy'
         file_prefix = "strata_logs_"
+        add_colorbar = False
+    elif (type == 'strat-seq'):
+        xlabel = 'Strata sequence'
+        ylabel = 'Stratigraphy sequence'
+        file_prefix = "strata_seq_"
         add_colorbar = False
     elif (type == 'proba'):
         ylabel = 'Probability'
@@ -230,7 +247,7 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
         file_prefix = "age_logs_"
         add_colorbar = False
 
-    pl.xlabel('Depth')
+    pl.xlabel(xlabel)
     pl.ylabel(ylabel)
 
     if (add_colorbar):
@@ -258,7 +275,7 @@ def print_unique_routes(solution, num_print_paths):
     print("Number of unique routes = ", len(unique_routes))
     if (num_print_paths > 0):
         for index, route in enumerate(unique_routes):
-            print(route)
+            print(route.path)
             if (index >= num_print_paths - 1):
                 break
 
