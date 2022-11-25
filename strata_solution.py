@@ -35,9 +35,6 @@ class StrataSolution:
         # Calculate the route scores (based on path probability).
         self.route_scores = _calculate_route_scores(routes, self.strat_distr, self.depth_data)
 
-        # Calculate the route distance scores (based on RMS distance to units).
-        #self.dist_scores = _calculate_distance_scores(routes, unit_names, unit2dist)
-
         # Build the solution topology graph.
         self.graph = _build_solution_graph(self)
 
@@ -129,30 +126,6 @@ def _calculate_route_scores(all_routes, strat_distr, depth_data):
         route_scores[route_index] /= total_length
 
     return route_scores
-
-#=============================================================================
-def _calculate_distance_scores(all_routes, unit_names, unit2dist):
-    '''
-    Calculates the route scores (based on root mean square distance to units).
-    '''
-    dist_scores = np.zeros(len(all_routes), dtype=float)
-
-    if (len(all_routes) == 0):
-        return dist_scores
-
-    num_rows = len(all_routes[0].path)
-
-    for route_index, route in enumerate(all_routes):
-        for row, unit_index in enumerate(route.path):
-            unit_name = unit_names[unit_index]
-            distance = unit2dist[unit_name]
-            dist_scores[route_index] += distance**2
-
-    # Normalize.
-    if (num_rows > 0):
-        dist_scores = np.sqrt(dist_scores / float(num_rows))
-
-    return dist_scores
 
 #=============================================================================
 def _build_solution_graph(solution):
