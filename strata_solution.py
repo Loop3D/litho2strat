@@ -35,6 +35,9 @@ class StrataSolution:
         # Calculate the route scores (based on path probability).
         self.route_scores = _calculate_route_scores(routes, self.strat_distr, self.depth_data)
 
+        # Calcualte unique routes (e.g. two routes A-A-B-B-C and A-B-B-B-C become one route A-B-C).
+        self.unique_routes = _calculate_unique_routes(routes)
+
         # Build the solution topology graph.
         self.graph = _build_solution_graph(self)
 
@@ -89,6 +92,13 @@ class StrataSolution:
             if self.unit_nonempty(unit_name):
                 counter += 1
         return counter
+
+#=============================================================================
+def _calculate_unique_routes(routes):
+    unique_routes = set([])
+    for route in routes:
+        unique_routes.add(route.get_strata_sequence())
+    return unique_routes
 
 #=============================================================================
 def _calculate_strat_distr(all_routes, num_rows, num_units):

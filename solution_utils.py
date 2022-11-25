@@ -249,21 +249,17 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
     pl.close(pl.gcf())
 
 #==============================================================================
-def print_unique_routes(all_routes, num_print_paths):
+def print_unique_routes(solution, num_print_paths):
     '''
     Print all unique routes (i.e., with unique strata sequence).
     '''
-    unique_routes = set([])
-    for route in all_routes:
-        unique_routes.add(route.get_strata_sequence())
+    unique_routes = solution.unique_routes
 
     print("Number of unique routes = ", len(unique_routes))
     if (num_print_paths > 0):
-        num = 0
-        for route in unique_routes:
-            num += 1
+        for index, route in enumerate(unique_routes):
             print(route)
-            if (num >= num_print_paths):
+            if (index >= num_print_paths - 1):
                 break
 
 #=============================================================================

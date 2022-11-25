@@ -287,7 +287,7 @@ def main():
         #--------------------------------------------------------------
 
         # Print all unique routes (i.e., unique strata sequence).
-        print_unique_routes(strat_solution.routes, 10)
+        print_unique_routes(strat_solution, 10)
 
         # Draw stratigraphy logs.
         draw_solution_logs(strat_solution, display_plots, 'strat', unit_colors_filename, True, None)
@@ -309,6 +309,8 @@ def main():
 
         # Write the best routes to file.
         write_best_routes_to_file(strat_solution, 10)
+
+    return
 
     #-------------------------------------------------------------------------
     # Analyze solution correletion between different drillholes.
