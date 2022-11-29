@@ -74,7 +74,8 @@ class StrataSolution:
         for route_index, route in enumerate(self.unique_routes):
             unique_route = route.path
             score = 0
-            for i in range(len(unique_route) - 1):
+            num_contacts = len(unique_route) - 1
+            for i in range(num_contacts):
                 # Graph edge.
                 e = (unit_names[unique_route[i]], unit_names[unique_route[i + 1]])
                 if (graph.has_edge(*e)):
@@ -82,7 +83,12 @@ class StrataSolution:
                     # Adding the graph edge weight to the score.
                     weight = graph[e[0]][e[1]]['weight']
                     score = score + weight
-            graph_route_scores[route_index] = score
+
+            if (num_contacts > 0):
+                # Normalize the score with the number of contacts.
+                graph_route_scores[route_index] = float(score) / float(num_contacts)
+            else:
+                graph_route_scores[route_index] = 0.
 
         return graph_route_scores
 

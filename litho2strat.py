@@ -31,10 +31,10 @@ spar = StrataSolverParameters()
 # Unit contact topology constraints (extracted from map data).
 spar.add_topology_constraints = True
 # 'Age alignment' constraints: the maximum number of times the age direction can flip.
-spar.max_num_age_flips = 1
+spar.max_num_age_flips = 20
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
-number_nearest_units = 2
+number_nearest_units = 3
 #---------------------------------------------------------------------------
 # Minimum score for drillhole lithologies to use them.
 min_drillhole_litho_score = 80
@@ -54,7 +54,7 @@ spar.max_num_returns_per_unit = 1
 spar.max_num_unit_contacts_inside_litho = 0
 #---------------------------------------------------------------------------
 # Use the single closest unit for the top (first) lithology.
-spar.single_top_unit = True
+spar.single_top_unit = False
 
 #---------------------------------------------------------------------------
 # Adding thickness constraints. (Requires unit thickness data).
