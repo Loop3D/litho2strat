@@ -68,12 +68,13 @@ class StrataSolution:
         Calculate the route scores based on the solution topology graph.
         Note: it can use the external solution graph from other drillholes.
         '''
-        graph_route_scores = np.zeros(len(self.unique_routes), dtype=int)
+        num_routes = len(self.unique_routes)
+        graph_route_scores = np.zeros(num_routes, dtype=float)
         unit_names = self.unit_names
 
         for route_index, route in enumerate(self.unique_routes):
             unique_route = route.path
-            score = 0
+            score = 0.
             num_contacts = len(unique_route) - 1
             for i in range(num_contacts):
                 # Graph edge.
@@ -159,8 +160,9 @@ def _build_solution_graph(solution):
     Builds the solution topology graph, with edges weighted by unit contact frequency (among all solution routes).
     '''
     G = nx.DiGraph()
+    routes = solution.unique_routes
 
-    for route in solution.unique_routes:
+    for route in routes:
         unique_route = route.path
         route_edges = set()
         for i in range(len(unique_route) - 1):
@@ -178,5 +180,9 @@ def _build_solution_graph(solution):
                 else:
                     # Increase the edge weight.
                     G[e[0]][e[1]]['weight'] = G[e[0]][e[1]]['weight'] + 1
+
+    # Normalize the edge weight.
+    for u, v, d in G.edges(data=True):
+        G[u][v]['weight'] = float(d['weight']) / float(len(routes))
 
     return G
