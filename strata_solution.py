@@ -160,26 +160,28 @@ def _build_solution_graph(solution):
     Builds the solution topology graph, with edges weighted by unit contact frequency (among all solution routes).
     '''
     G = nx.DiGraph()
-    routes = solution.unique_routes
+    #routes = solution.unique_routes
+    routes = solution.routes
 
     for route in routes:
-        unique_route = route.path
         route_edges = set()
-        for i in range(len(unique_route) - 1):
-            unit_name1 = solution.unit_names[unique_route[i]]
-            unit_name2 = solution.unit_names[unique_route[i + 1]]
-            e = (unit_name1, unit_name2)
+        for i in range(len(route.path) - 1):
+            unit_name1 = solution.unit_names[route.path[i]]
+            unit_name2 = solution.unit_names[route.path[i + 1]]
 
-            if (e not in route_edges):
-            # Count only once each contact type on the route.
-            # Note: they still will be included into the route score multiple times if we calculate the score based on all route contacts.
-                route_edges.add(e)
-                if (not G.has_edge(*e)):
-                    # Adding a new graph edge.
-                    G.add_edge(*e, weight=1)
-                else:
-                    # Increase the edge weight.
-                    G[e[0]][e[1]]['weight'] = G[e[0]][e[1]]['weight'] + 1
+            if (unit_name1 != unit_name2):
+                e = (unit_name1, unit_name2)
+
+                if (e not in route_edges):
+                # Count only once each contact type on the route.
+                # Note: they still will be included into the route score multiple times when we calculate the score based on all contacts on the route.
+                    route_edges.add(e)
+                    if (not G.has_edge(*e)):
+                        # Adding a new graph edge.
+                        G.add_edge(*e, weight=1)
+                    else:
+                        # Increase the edge weight.
+                        G[e[0]][e[1]]['weight'] = G[e[0]][e[1]]['weight'] + 1
 
     # Normalize the edge weight.
     for u, v, d in G.edges(data=True):
