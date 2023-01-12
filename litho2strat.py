@@ -347,8 +347,15 @@ def main():
         route_indexes = []
         for unique_route_index in unique_route_indexes:
             # Select a corresponding full route.
-            # TODO: choose the route with the highest own route score.
-            route_index = solution.unique_routes[unique_route_index].route_indexes[0]
+            #route_index = solution.unique_routes[unique_route_index].route_indexes[0]
+
+            # Choose the full route with the highest own route score.
+            best_score = -1.
+            for index in solution.unique_routes[unique_route_index].route_indexes:
+                route_score = solution.route_scores[index]
+                if (route_score > best_score):
+                    route_index = index
+
             route_indexes.append(route_index)
 
         # Draw full routes (corresponding to strata sequences).
