@@ -10,8 +10,11 @@ import numpy as np
 import networkx as nx
 
 class StratSequence:
-    def __init__(self, path):
+    def __init__(self, path, route_indexes):
+        # Unique route path.
         self.path = path
+        # Indexes of original full routes.
+        self.route_indexes = route_indexes
 
 #========================================================================================================
 class StrataSolution:
@@ -106,14 +109,20 @@ class StrataSolution:
 
 #=============================================================================
 def _calculate_unique_routes(routes):
-    unique_route_paths = set()
-    for route in routes:
-        unique_route_paths.add(route.get_strata_sequence())
+    # Building a dictionary with keys = unique route paths, and values = list of indexes of the original routes.
+    unique2full = dict()
+    for route_index, route in enumerate(routes):
+        unique_path = route.get_strata_sequence()
+        if (unique_path in unique2full):
+            unique2full[unique_path].append(route_index)
+        else:
+            unique2full[unique_path] = [route_index]
 
+    # Build a list of unique routes.
     unique_routes = []
-    for path in unique_route_paths:
-        route = StratSequence(path)
-        unique_routes.append(route)
+    for key, value in unique2full.items():
+        unique_route = StratSequence(key, value)
+        unique_routes.append(unique_route)
 
     return unique_routes
 
