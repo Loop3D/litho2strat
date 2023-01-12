@@ -54,6 +54,8 @@ class StrataSolution:
         # Scores calculated using graphs from other drillholes.
         self.external_graph_route_scores_list = []
 
+        self.unique_route_scores = []
+
     #=====================================================================
     def unit_nonempty(self, unit_name):
         '''

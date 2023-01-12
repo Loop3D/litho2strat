@@ -59,14 +59,16 @@ def draw_solution_graph(strat_solution):
 
 #==============================================================================
 def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
-                       sample_scores_uniformly, graph):
+                       sample_scores_uniformly, graph, custom_route_indexes):
     '''
     Drawing solution logs.
     '''
     if (type == 'strat-seq'):
         routes = strat_solution.unique_routes
+        route_scores = strat_solution.unique_route_scores
     else:
         routes = strat_solution.routes
+        route_scores = strat_solution.route_scores
 
     num_routes = len(routes)
     if (num_routes == 0):
@@ -134,8 +136,12 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
     currentAxis = pl.gca()
     currentAxis.set_title(str(strat_solution.collarID))
 
-    # Top scores (a minus here to have the largest-to-smallest score order).
-    indexes_max = np.argsort(-strat_solution.route_scores)
+    # Select routes to display.
+    if (len(custom_route_indexes) == 0):
+        # Top scores (a minus here to have the largest-to-smallest score order).
+        route_indexes = np.argsort(-route_scores)
+    else:
+        route_indexes = custom_route_indexes
 
     patches = []
     color_list = []
@@ -149,7 +155,7 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
             ind = i
 
         # Select the sorted by score solution index.
-        route_index = indexes_max[ind]
+        route_index = route_indexes[ind]
 
         path_size = len(routes[route_index].path)
         for row in range(path_size):

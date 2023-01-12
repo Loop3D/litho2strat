@@ -290,13 +290,13 @@ def main():
         print_unique_routes(strat_solution, 10)
 
         # Draw stratigraphy logs.
-        draw_solution_logs(strat_solution, display_plots, 'strat', unit_colors_filename, True, None)
+        #draw_solution_logs(strat_solution, display_plots, 'strat', unit_colors_filename, True, None, [])
 
         # Draw probability logs.
-        #draw_solution_logs(strat_solution, display_plots, 'proba', '', True, None)
+        #draw_solution_logs(strat_solution, display_plots, 'proba', '', True, None, [])
 
         # Draw the age-rule logs.
-        #draw_solution_logs(strat_solution, display_plots, 'age', '', True, graph)
+        #draw_solution_logs(strat_solution, display_plots, 'age', '', True, graph, [])
 
         # Plot unit probabilities.
         #plot_unit_probabilities(strat_solution, display_plots)
@@ -327,17 +327,32 @@ def main():
         plot_solution_correlation(solution)
 
     #-------------------------------------------------------------------------
-    # Calculate a new route score equal to the sum of graph scores ovel all drillholes.
+    # Calculate a correlated route score (as the sum of graph scores ovel all drillholes).
     #-------------------------------------------------------------------------
     for solution in strat_solutions:
-        solution.route_scores = solution.graph_route_scores
+        solution.unique_route_scores = solution.graph_route_scores
         for external_graph_route_scores in solution.external_graph_route_scores_list:
-            solution.route_scores = solution.route_scores + external_graph_route_scores
+            solution.unique_route_scores = solution.unique_route_scores + external_graph_route_scores
 
     #-------------------------------------------------------------------------
-    # Show the most correlated solution logs.
+    # Draw the most correlated strata sequences.
     for solution in strat_solutions:
-        draw_solution_logs(solution, display_plots, 'strat-seq', unit_colors_filename, False, None)
+        draw_solution_logs(solution, display_plots, 'strat-seq', unit_colors_filename, False, None, [])
+
+    # Draw full routes (corresponding to the most correlated strata sequences).
+    for solution in strat_solutions:
+        # Sorted indexes by score.
+        unique_route_indexes = np.argsort(-solution.unique_route_scores)
+        # Retrieve corresponding full route indexes.
+        route_indexes = []
+        for unique_route_index in unique_route_indexes:
+            # Select a corresponding full route.
+            # TODO: choose the route with the highest own route score.
+            route_index = solution.unique_routes[unique_route_index].route_indexes[0]
+            route_indexes.append(route_index)
+
+        # Draw full routes (corresponding to strata sequences).
+        draw_solution_logs(solution, display_plots, 'strat', unit_colors_filename, False, None, route_indexes)
 
 #=============================================================================
 if __name__ == "__main__":
