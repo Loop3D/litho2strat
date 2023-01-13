@@ -98,6 +98,10 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
     '''
     Drawing solution logs.
     '''
+    if (type == 'age' and graph == None):
+        # No graph supplied.
+        return
+
     if (type == 'strat-seq'):
         routes = strat_solution.unique_routes
         route_scores = strat_solution.unique_route_scores
@@ -109,9 +113,12 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
     if (num_routes == 0):
         return
 
-    if (type == 'age' and graph == None):
-        # No graph supplied.
-        return
+    # Select routes to display.
+    if (len(custom_route_indexes) == 0):
+        # Top scores (a minus here to have the largest-to-smallest score order).
+        route_indexes = np.argsort(-route_scores)
+    else:
+        route_indexes = custom_route_indexes
 
     # Determine the number of routes to display (cannot show too many routes due to pixel size limitations).
     max_routes_displayed = 10
@@ -127,13 +134,14 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
     # Gradient palette.
     cmap = pl.get_cmap('viridis')
 
+    # Retrieve the unit colormap.
     if (type == 'strat' or type == 'strat-seq'):
-        # Retrieve the unit colormap.
         unit_colors = _get_unit_colors(strat_solution, unit_colors_filename)
 
     # Calculate the figure size.
     if (type == 'strat-seq'):
-        x_max = 6
+        max_num_units = max(len(routes[i].path) for i in route_indexes[:num_routes_displayed])
+        x_max = float(max_num_units) + 0.5
     else:
         x_max = strat_solution.depth_data.depth_to[-1]
     y_max = float(num_routes_displayed) + 0.5
@@ -144,13 +152,6 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
 
     currentAxis = pl.gca()
     currentAxis.set_title(str(strat_solution.collarID))
-
-    # Select routes to display.
-    if (len(custom_route_indexes) == 0):
-        # Top scores (a minus here to have the largest-to-smallest score order).
-        route_indexes = np.argsort(-route_scores)
-    else:
-        route_indexes = custom_route_indexes
 
     patches = []
     color_list = []
