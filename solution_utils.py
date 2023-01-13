@@ -93,6 +93,59 @@ def _get_unit_colors(strat_solution, unit_colors_filename):
     return unit_colors
 
 #==============================================================================
+def _get_rectangular_color(type, unit_colors, strat_solution, route, row, graph):
+    '''
+    Retrieve the rectangular color.
+    '''
+    unit_index = route.path[row]
+
+    if (type == 'strat' or type == 'strat-seq'):
+    # Draw stratigraphy log.
+        unit_name = strat_solution.unit_names[unit_index]
+        if (unit_name in unit_colors):
+            color = unit_colors[unit_name]
+        else:
+            print("WARNING: No color in the color map found for unit name =", unit_name)
+            color = "#000000"
+
+    elif (type == 'proba'):
+    # Draw route probabilities.
+        route_proba = strat_solution.strat_distr[row, unit_index]
+        color = cmap(route_proba)
+
+    elif (type == 'age'):
+    # Draw age alignment.
+        # Find the next unit in the log.
+        unit_index2 = unit_index
+        for j in range(row + 1, path_size):
+            unit_index2 = route.path[j]
+            # Returns the first unit change.
+            if (unit_index2 != unit_index):
+                break
+
+        last_unit = False
+        if (unit_index2 == unit_index):
+            last_unit = True
+
+        unit_name = strat_solution.unit_names[unit_index]
+        unit_name2 = strat_solution.unit_names[unit_index2]
+
+        # Graph edge.
+        e = (unit_name, unit_name2)
+
+        if (last_unit):
+        # Mark the last unit with black color.
+            color = "#000000"
+        elif (graph.has_edge(*e)):
+        # Unit contact is aligned with the age.
+            color = '#00FF00'
+        else:
+        # Not aligned - draw with red color.
+            color = '#FF0000'
+
+    return color
+
+#==============================================================================
 def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
                        sample_scores_uniformly, graph, custom_route_indexes):
     '''
@@ -163,14 +216,12 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
         else:
             # Showing the top score routes.
             ind = i
-
-        # Select the sorted by score solution index.
+        # Select the route index.
         route_index = route_indexes[ind]
 
         path_size = len(routes[route_index].path)
-        for row in range(path_size):
-            unit_index = routes[route_index].path[row]
 
+        for row in range(path_size):
             if (type == 'strat-seq'):
                 x1 = 0.5 + float(row)
                 x2 = 0.5 + float(row + 1)
@@ -184,49 +235,7 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
             dy = y2 - y1
 
             # Define the rectangle color.
-            if (type == 'strat' or type == 'strat-seq'):
-            # Draw stratigraphy log.
-                unit_name = strat_solution.unit_names[unit_index]
-                if (unit_name in unit_colors):
-                    color = unit_colors[unit_name]
-                else:
-                    print("WARNING: No color in the color map found for unit name =", unit_name)
-                    color = "#000000"
-
-            elif (type == 'proba'):
-            # Draw route probabilities.
-                route_proba = strat_solution.strat_distr[row, unit_index]
-                color = cmap(route_proba)
-
-            elif (type == 'age'):
-            # Draw age alignment.
-                # Find the next unit in the log.
-                unit_index2 = unit_index
-                for j in range(row + 1, path_size):
-                    unit_index2 = strat_solution.routes[route_index].path[j]
-                    # Returns the first unit change.
-                    if (unit_index2 != unit_index):
-                        break
-
-                last_unit = False
-                if (unit_index2 == unit_index):
-                    last_unit = True
-
-                unit_name = strat_solution.unit_names[unit_index]
-                unit_name2 = strat_solution.unit_names[unit_index2]
-
-                # Graph edge.
-                e = (unit_name, unit_name2)
-
-                if (last_unit):
-                # Mark the last unit with black color.
-                    color = "#000000"
-                elif (graph.has_edge(*e)):
-                # Unit contact is aligned with the age.
-                    color = '#00FF00'
-                else:
-                # Not aligned - draw with red color.
-                    color = '#FF0000'
+            color = _get_rectangular_color(type, unit_colors, strat_solution, routes[route_index], row, graph)
 
             # Adding rectangle.
             patches.append(Rectangle((x1, y1), dx, dy))
