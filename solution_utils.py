@@ -58,6 +58,41 @@ def draw_solution_graph(strat_solution):
     pl.show()
 
 #==============================================================================
+def _get_unit_colors(strat_solution, unit_colors_filename):
+    '''
+    Define unit colors. Use a colormap from a file or a qualitative colormap.
+    '''
+    unit_colors = dict()
+    if (unit_colors_filename != ""):
+        # Define colors using the colormap from a file.
+        with open(unit_colors_filename, 'r') as csvfile:
+            reader = csv.DictReader(csvfile, delimiter=',')
+            # Extracting the data for every csv row.
+            for row in reader:
+                unit_name = row['UNITNAME']
+                # Convert the unitname to align it with format used in the topology graph.
+                unit_name = unit_name.replace(" ", "_").replace(",", "_").replace("-", "_").lower()
+                # Add colour to dictionary.
+                unit_colors[unit_name] = row['colour']
+    else:
+        # Qualitative palette.
+        colors = [pl.cm.tab20(i) for i in range(20)]
+
+        # Define qualitative color map for nonempty units.
+        color_index = 0
+        for index, unit_name in enumerate(strat_solution.unit_names):
+            if strat_solution.unit_nonempty(unit_name):
+                unit_colors[unit_name] = colors[color_index]
+                color_index += 1
+
+        print("Num nonempty units:", color_index)
+        if (color_index > 20):
+            print("Too many units! Adjust the color map.")
+            exit(0)
+
+    return unit_colors
+
+#==============================================================================
 def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
                        sample_scores_uniformly, graph, custom_route_indexes):
     '''
@@ -89,38 +124,12 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
 
     pl.rcParams["figure.figsize"] = (12.8, 9.6) # Default size = (6.4, 4.8)
 
-    # Qualitative palette.
-    colors = [pl.cm.tab20(i) for i in range(20)]
     # Gradient palette.
     cmap = pl.get_cmap('viridis')
 
     if (type == 'strat' or type == 'strat-seq'):
-        if (unit_colors_filename != ""):
-        # Define colors using the colormap provided in the file.
-            unit_colors = dict()
-            with open(unit_colors_filename, 'r') as csvfile:
-                reader = csv.DictReader(csvfile, delimiter=',')
-                # Extracting the data for every csv row.
-                for row in reader:
-                    unit_name = row['UNITNAME']
-                    # Convert the unitname to align it with format used in the topology graph.
-                    unit_name = unit_name.replace(" ", "_").replace(",", "_").replace("-", "_").lower()
-                    # Add colour to dictionary.
-                    unit_colors[unit_name] = row['colour']
-        else:
-            # Map nonempty units to continous index.
-            # We use that instead of original index, as we do not have many qualitative colors in the colormap.
-            counter = 0
-            unit_index_nonempty = dict()
-            for index, unit_name in enumerate(strat_solution.unit_names):
-                if strat_solution.unit_nonempty(unit_name):
-                    unit_index_nonempty[index] = counter
-                    counter += 1
-
-            print("Num nonempty units:", counter)
-            if (counter > 20):
-                print("Too many units! Adjust the color map.")
-                return
+        # Retrieve the unit colormap.
+        unit_colors = _get_unit_colors(strat_solution, unit_colors_filename)
 
     # Calculate the figure size.
     if (type == 'strat-seq'):
@@ -176,16 +185,12 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
             # Define the rectangle color.
             if (type == 'strat' or type == 'strat-seq'):
             # Draw stratigraphy log.
-                if (unit_colors_filename != ""):
-                    unit_name = strat_solution.unit_names[unit_index]
-                    if (unit_name in unit_colors):
-                        color = unit_colors[unit_name]
-                    else:
-                        print("WARNING: No color in the color map found for unit name =", unit_name)
-                        color = "#000000"
+                unit_name = strat_solution.unit_names[unit_index]
+                if (unit_name in unit_colors):
+                    color = unit_colors[unit_name]
                 else:
-                    color_index = unit_index_nonempty[unit_index]
-                    color = colors[color_index]
+                    print("WARNING: No color in the color map found for unit name =", unit_name)
+                    color = "#000000"
 
             elif (type == 'proba'):
             # Draw route probabilities.
