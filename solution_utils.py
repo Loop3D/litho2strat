@@ -92,8 +92,8 @@ def _get_unit_colors(strat_solution, unit_colors_filename):
 
     return unit_colors
 
-#==============================================================================
-def _get_rectangular_color(type, unit_colors, strat_solution, route, row, graph):
+#=========================================================================================
+def _get_rectangular_color(type, unit_colors, strat_solution, route, row, graph, cmap):
     '''
     Retrieve the rectangular color.
     '''
@@ -117,7 +117,7 @@ def _get_rectangular_color(type, unit_colors, strat_solution, route, row, graph)
     # Draw age alignment.
         # Find the next unit in the log.
         unit_index2 = unit_index
-        for j in range(row + 1, path_size):
+        for j in range(row + 1, len(route.path)):
             unit_index2 = route.path[j]
             # Returns the first unit change.
             if (unit_index2 != unit_index):
@@ -188,6 +188,7 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
     cmap = pl.get_cmap('viridis')
 
     # Retrieve the unit colormap.
+    unit_colors = None
     if (type == 'strat' or type == 'strat-seq'):
         unit_colors = _get_unit_colors(strat_solution, unit_colors_filename)
 
@@ -216,12 +217,11 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
         else:
             # Showing the top score routes.
             ind = i
-        # Select the route index.
+
         route_index = route_indexes[ind]
+        route = routes[route_index]
 
-        path_size = len(routes[route_index].path)
-
-        for row in range(path_size):
+        for row in range(len(route.path)):
             if (type == 'strat-seq'):
                 x1 = 0.5 + float(row)
                 x2 = 0.5 + float(row + 1)
@@ -235,7 +235,7 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
             dy = y2 - y1
 
             # Define the rectangle color.
-            color = _get_rectangular_color(type, unit_colors, strat_solution, routes[route_index], row, graph)
+            color = _get_rectangular_color(type, unit_colors, strat_solution, route, row, graph, cmap)
 
             # Adding rectangle.
             patches.append(Rectangle((x1, y1), dx, dy))

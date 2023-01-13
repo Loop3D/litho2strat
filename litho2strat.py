@@ -361,6 +361,9 @@ def main():
         # Draw full routes (corresponding to strata sequences).
         draw_solution_logs(solution, display_plots, 'strat', unit_colors_filename, False, None, route_indexes)
 
+        # Draw age alignment log (corresponding to strata sequences).
+        draw_solution_logs(solution, display_plots, 'age', '', False, graph, route_indexes)
+
 #=============================================================================
 if __name__ == "__main__":
     main()
