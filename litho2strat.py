@@ -189,9 +189,10 @@ def main():
     #collarID = 810340
 
     # Read topology data (the same for all collarIDs).
-    graph = None
+    map_graph = None
     if (spar.add_topology_constraints):
-        graph = read_topology_data(topology_filename)
+        map_graph = read_topology_data(topology_filename)
+        print("Number of units in the map graph =", map_graph.number_of_nodes())
 
     #====================================================================================
     # Process the list of CollarIDs.
@@ -275,7 +276,7 @@ def main():
         #--------------------------------------------------------------
         # Generating the stratigraphies.
         #--------------------------------------------------------------
-        strat_solution = generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, graph)
+        strat_solution = generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, map_graph)
         strat_solution.collarID = collarID
 
         print("Total number of routes = ", len(strat_solution.routes))
@@ -296,7 +297,7 @@ def main():
         #draw_solution_logs(strat_solution, display_plots, 'proba', '', True, None, [])
 
         # Draw the age-rule logs.
-        #draw_solution_logs(strat_solution, display_plots, 'age', '', True, graph, [])
+        #draw_solution_logs(strat_solution, display_plots, 'age', '', True, map_graph, [])
 
         # Plot unit probabilities.
         #plot_unit_probabilities(strat_solution, display_plots)
@@ -316,11 +317,11 @@ def main():
 
     # Loop over all solutipon pairs.
     for i in range(len(strat_solutions)):
-        graph = strat_solutions[i].graph
+        solution_graph = strat_solutions[i].graph
         for j in range(len(strat_solutions)):
             if (i != j):
-                # Calculate solution scores based on external graph.
-                graph_route_scores = strat_solutions[j].calculate_graph_route_scores(graph)
+                # Calculate solution scores based on external solution graph.
+                graph_route_scores = strat_solutions[j].calculate_graph_route_scores(solution_graph)
                 strat_solutions[j].external_graph_route_scores_list.append(graph_route_scores)
 
     for solution in strat_solutions:
@@ -362,7 +363,7 @@ def main():
         draw_solution_logs(solution, display_plots, 'strat', unit_colors_filename, False, None, route_indexes)
 
         # Draw age alignment log (corresponding to strata sequences).
-        draw_solution_logs(solution, display_plots, 'age', '', False, graph, route_indexes)
+        draw_solution_logs(solution, display_plots, 'age', '', False, map_graph, route_indexes)
 
 #=============================================================================
 if __name__ == "__main__":

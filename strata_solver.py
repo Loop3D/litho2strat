@@ -202,7 +202,7 @@ def apply_topology_constraints(graph, unit_names, strat0, strata_list):
                 strata_list.remove(strat)
 
 #=======================================================================================================
-def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, graph):
+def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, map_graph):
     '''
     Generating stratigraphic routes.
     '''
@@ -227,7 +227,7 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
     if (spar.add_topology_constraints):
         # Sanity check: check that strata units exist in the graph.
         for unit_name in unit_names:
-            if unit_name not in graph.nodes():
+            if unit_name not in map_graph.nodes():
                 print("WARNING: Not found graph unit: ", unit_name)
 
     # Extract strata thikcness to lists (faster data structures).
@@ -319,7 +319,7 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
 
                 # Apply unit topology constraints.
                 if (spar.add_topology_constraints):
-                    apply_topology_constraints(graph, unit_names, strat0, strata_list)
+                    apply_topology_constraints(map_graph, unit_names, strat0, strata_list)
 
                 if (len(strata_list) != 0):
                     # Copy the route to create references to it below.
@@ -333,7 +333,7 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, g
                         if (spar.add_topology_constraints):
                             # Processing age flips.
                             e = (unit_names[strat0], unit_names[strat])
-                            new_route.is_age_aligned = graph.has_edge(*e)
+                            new_route.is_age_aligned = map_graph.has_edge(*e)
                             if (route.num_contacts > 0):
                                 if (new_route.is_age_aligned != route.is_age_aligned):
                                     new_route.num_age_flips = route.num_age_flips + 1
