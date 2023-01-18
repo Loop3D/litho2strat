@@ -31,7 +31,7 @@ spar = StrataSolverParameters()
 # Unit contact topology constraints (extracted from map data).
 spar.add_topology_constraints = True
 # 'Age alignment' constraints: the maximum number of times the age direction can flip.
-spar.max_num_age_flips = 20
+spar.max_num_age_flips = 2
 #---------------------------------------------------------------------------
 # The number of nearest units (for distance constraints).
 number_nearest_units = 3
@@ -54,7 +54,7 @@ spar.max_num_returns_per_unit = 1
 spar.max_num_unit_contacts_inside_litho = 0
 #---------------------------------------------------------------------------
 # Use the single closest unit for the top (first) lithology.
-spar.single_top_unit = False
+spar.single_top_unit = True
 #---------------------------------------------------------------------------
 
 # The graph route score power (higher power favours smaller number of contacts).
@@ -218,10 +218,11 @@ def main():
     # No correlation example.
     #collarIDs = [2470303, 2182308]
 
-    collarIDs = [2470303]
+    #collarIDs = [2182030]
 
     # Strong correlation.
-    collarIDs = [2470303, 2182029]
+    #collarIDs = [2470303, 2182029]
+    collarIDs = [2182030, 2182029]
 
     display_plots = True
 
@@ -300,7 +301,7 @@ def main():
         print_unique_routes(strat_solution, 10)
 
         # Draw stratigraphy logs.
-        #draw_solution_logs(strat_solution, display_plots, 'strat', unit_colors_filename, True, None, [])
+        draw_solution_logs(strat_solution, display_plots, 'strat', unit_colors_filename, True, None, [])
 
         # Draw probability logs.
         #draw_solution_logs(strat_solution, display_plots, 'proba', '', True, None, [])
