@@ -154,22 +154,6 @@ class DrillsampleData:
                 print("Removed cover:", row.depth_to, row.lithos)
 
     #==============================================================================
-    @staticmethod
-    def __has_cover_litho(lithos, cover_lithos):
-        for litho in lithos:
-            if (litho in cover_lithos):
-                return True
-        return False
-
-    #==============================================================================
-    @staticmethod
-    def __all_cover_lithos(lithos, cover_lithos):
-        for litho in lithos:
-            if (litho not in cover_lithos):
-                return False
-        return True
-
-    #==============================================================================
     def identify_cover(self, cover_lithos_filename, threshold):
         '''
         Identifies the cover.
@@ -184,9 +168,11 @@ class DrillsampleData:
         for index, row in reversed(list(enumerate(self.rows))):
             print(index, row.depth_to, row.lithos)
 
-            found_cover_litho = self.__all_cover_lithos(row.lithos, cover_lithos)
+            # Adjusted condition: marking as cover if it has any conver litho - see an example with collarID=2182030
+            found_cover_litho = _is_cover(row.lithos, cover_lithos)
 
             if (found_cover_litho):
+                print("Found cover litho:", row.lithos)
                 cover_index = index
                 total_length = 0.
                 cover_length = 0.
@@ -197,7 +183,7 @@ class DrillsampleData:
                     thickness = row.depth_to - row.depth_from
                     total_length += thickness
 
-                    if (self.__all_cover_lithos(row.lithos, cover_lithos)):
+                    if (_is_cover(row.lithos, cover_lithos)):
                         cover_length += thickness
 
                 cover_ratio = cover_length / total_length
@@ -206,3 +192,21 @@ class DrillsampleData:
                 if (cover_ratio >= threshold):
                     return cover_index
         return -1
+
+#==============================================================================
+def _has_cover_litho(lithos, cover_lithos):
+    for litho in lithos:
+        if (litho in cover_lithos):
+            return True
+    return False
+
+#==============================================================================
+def _all_cover_lithos(lithos, cover_lithos):
+    for litho in lithos:
+        if (litho not in cover_lithos):
+            return False
+    return True
+
+#==============================================================================
+def _is_cover(lithos, cover_lithos):
+    return _has_cover_litho(lithos, cover_lithos)
