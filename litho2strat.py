@@ -226,7 +226,9 @@ def main():
 
     for collarID in collarIDs:
 
+        print('--------------------------------')
         print('collarID =', collarID)
+        print('--------------------------------')
 
         drillsample_filename = "data/real/dist_files/litho_tables_V3/litho_" + str(collarID) + ".csv"
         dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"

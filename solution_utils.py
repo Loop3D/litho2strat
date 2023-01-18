@@ -162,16 +162,16 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
         routes = strat_solution.routes
         route_scores = strat_solution.route_scores
 
-    num_routes = len(routes)
-    if (num_routes == 0):
-        return
-
     # Select routes to display.
     if (len(custom_route_indexes) == 0):
         # Top scores (a minus here to have the largest-to-smallest score order).
         route_indexes = np.argsort(-route_scores)
     else:
         route_indexes = custom_route_indexes
+
+    num_routes = len(route_indexes)
+    if (num_routes == 0):
+        return
 
     # Determine the number of routes to display (cannot show too many routes due to pixel size limitations).
     max_routes_displayed = 10
