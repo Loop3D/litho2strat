@@ -210,6 +210,8 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
     patches = []
     color_list = []
 
+    yticklabels = []
+
     for i in range(num_routes_displayed):
         if (sample_scores_uniformly):
             # Sample the index uniformly (to show high and low score routes).
@@ -220,6 +222,8 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
 
         route_index = route_indexes[ind]
         route = routes[route_index]
+
+        yticklabels.append(str(route_scores[route_index])[0:5])
 
         for row in range(len(route.path)):
             if (type == 'strat-seq'):
@@ -248,6 +252,9 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
 
     # Add rectangle collection to the figure.
     currentAxis.add_collection(patches_collection)
+
+    currentAxis.set_yticks([k + 1 for k in range(num_routes_displayed)])
+    currentAxis.set_yticklabels(yticklabels)
 
     xlabel = 'Depth'
     if (type == 'strat'):
