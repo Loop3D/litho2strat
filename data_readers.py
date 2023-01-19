@@ -105,11 +105,13 @@ def read_strat_data(header, filename, alternative_rock_names):
             #-----------------------------------------
             # Adding the alternative litho names.
             #-----------------------------------------
-            alt_lithos = []
+            alt_lithos = set()
             for litho in lithos:
-                for alt_names in alternative_rock_names:
-                    if litho in alt_names:
-                        alt_lithos.extend(alt_names)
+                if litho in alternative_rock_names:
+                    # An index defining a group of alternative rock names.
+                    group_index = alternative_rock_names[litho]
+                    alt_lithos_loc = [k for k, v in alternative_rock_names.items() if v == group_index]
+                    alt_lithos.update(alt_lithos_loc)
 
             lithos.extend(alt_lithos)
 
@@ -277,12 +279,13 @@ def read_alternative_rock_names(filename):
     with open(filename) as f:
         items = f.read().splitlines()
 
-    alternative_rock_names = []
+    alternative_rock_names = dict()
 
     # Building a dictionary.
-    for item in items:
-        names_list = item.split(", ")
-        alternative_rock_names.append(names_list)
+    for index, item in enumerate(items):
+        lithos = item.split(", ")
+        for litho in lithos:
+            alternative_rock_names[litho] = index
 
     return alternative_rock_names
 
