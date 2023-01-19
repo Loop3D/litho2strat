@@ -201,8 +201,29 @@ def apply_topology_constraints(graph, unit_names, strat0, strata_list):
                 # Units are not connected. Skip this unit.
                 strata_list.remove(strat)
 
-#=======================================================================================================
-def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, map_graph):
+#==================================================================================================================
+def _same_lithos(lithos1, lithos2, alternative_rock_names):
+    '''
+    Test if two litho lists are the same considering their alternative rock names.
+    '''
+    def _build_litho_group(lithos, alternative_rock_names):
+        group = set()
+        for litho in lithos:
+            if (litho in alternative_rock_names):
+                # Adding group id.
+                group.add(alternative_rock_names[litho])
+            else:
+                # Addding litho name - it has no alternative names.
+                group.add(litho)
+        return group
+
+    group1 = _build_litho_group(lithos1, alternative_rock_names)
+    group2 = _build_litho_group(lithos2, alternative_rock_names)
+
+    return (group1 == group2)
+
+#==================================================================================================================
+def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, map_graph, alternative_rock_names):
     '''
     Generating stratigraphic routes.
     '''
@@ -254,8 +275,6 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, m
     row_max = num_rows
     print("row_max = ", row_max)
 
-    litho_sequence_length = 1
-
     # Print the starting info.
     row = 0
     print("Processed row =", row, drillsample_data.rows[row].depth_from, drillsample_data.rows[row].lithos, len(all_routes))
@@ -278,11 +297,8 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, m
         strata_allowed = [strat for strat in range(num_units) if (strata_table[row, strat].path_exists)]
 
         same_lithos = False
-        if (set(current_lithos) == set(previous_lithos)):
-            litho_sequence_length = litho_sequence_length + 1
+        if (_same_lithos(current_lithos, previous_lithos, alternative_rock_names)):
             same_lithos = True
-        else:
-            litho_sequence_length = 1
 
         # Iterate over all routes.
         for route in all_routes:

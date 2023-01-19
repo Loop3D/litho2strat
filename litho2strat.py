@@ -283,7 +283,7 @@ def main():
         #--------------------------------------------------------------
         # Generating the stratigraphies.
         #--------------------------------------------------------------
-        strat_solution = generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, map_graph)
+        strat_solution = generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, map_graph, alternative_rock_names)
         strat_solution.collarID = collarID
 
         # Calculate the route scores based on its own solution graph.
