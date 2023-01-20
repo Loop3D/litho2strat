@@ -147,7 +147,7 @@ def _get_rectangular_color(type, unit_colors, strat_solution, route, row, graph,
 
 #==============================================================================
 def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
-                       sample_scores_uniformly, graph, custom_route_indexes):
+                       sample_scores_uniformly, graph, custom_route_indexes, custom_route_scores = []):
     '''
     Drawing solution logs.
     '''
@@ -223,7 +223,13 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
         route_index = route_indexes[ind]
         route = routes[route_index]
 
-        yticklabels.append(str(route_scores[route_index])[0:5])
+        # Display route score on the y-axis.
+        if (len(custom_route_scores) == 0):
+            route_score = route_scores[route_index]
+        else:
+            route_score = custom_route_scores[ind]
+
+        yticklabels.append(str(route_score)[0:5])
 
         for row in range(len(route.path)):
             if (type == 'strat-seq'):

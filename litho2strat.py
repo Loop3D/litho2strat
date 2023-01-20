@@ -356,6 +356,7 @@ def main():
         unique_route_indexes = np.argsort(-solution.unique_route_scores)
         # Retrieve corresponding full route indexes.
         route_indexes = []
+        route_scores = []
         for unique_route_index in unique_route_indexes:
             # Select a corresponding full route.
             #route_index = solution.unique_routes[unique_route_index].route_indexes[0]
@@ -368,12 +369,13 @@ def main():
                     route_index = index
 
             route_indexes.append(route_index)
+            route_scores.append(solution.unique_route_scores[unique_route_index])
 
         # Draw full routes (corresponding to strata sequences).
-        draw_solution_logs(solution, display_plots, 'strat', unit_colors_filename, False, None, route_indexes)
+        draw_solution_logs(solution, display_plots, 'strat', unit_colors_filename, False, None, route_indexes, route_scores)
 
         # Draw age alignment log (corresponding to strata sequences).
-        draw_solution_logs(solution, display_plots, 'age', '', False, map_graph, route_indexes)
+        draw_solution_logs(solution, display_plots, 'age', '', False, map_graph, route_indexes, route_scores)
 
 #=============================================================================
 if __name__ == "__main__":
