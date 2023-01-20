@@ -321,9 +321,22 @@ def main():
         # Write the best routes to file.
         write_best_routes_to_file(strat_solution, 10)
 
-    #-------------------------------------------------------------------------
-    # Analyze solution correletion between different drillholes.
-    #-------------------------------------------------------------------------
+    #--------------------------------------------------------------------
+    # Solution correlation.
+    #--------------------------------------------------------------------
+    correlate_solutions(strat_solutions)
+
+    for solution in strat_solutions:
+        plot_solution_correlation(solution)
+
+    draw_correlated_solution_logs(strat_solutions, display_plots, unit_colors_filename, map_graph)
+
+#=====================================================================================================
+def correlate_solutions(strat_solutions):
+    '''
+    Correlete solutions from different drillholes.
+    Build the correlated solution score.
+    '''
 
     # Loop over all solutipon pairs.
     for i in range(len(strat_solutions)):
@@ -334,18 +347,18 @@ def main():
                 graph_route_scores = strat_solutions[j].calculate_graph_route_scores(solution_graph, graph_score_power)
                 strat_solutions[j].external_graph_route_scores_list.append(graph_route_scores)
 
-    for solution in strat_solutions:
-        plot_solution_correlation(solution)
-
-    #-------------------------------------------------------------------------
     # Calculate a correlated route score (as the sum of graph scores ovel all drillholes).
-    #-------------------------------------------------------------------------
     for solution in strat_solutions:
         solution.unique_route_scores = solution.graph_route_scores
         for external_graph_route_scores in solution.external_graph_route_scores_list:
             solution.unique_route_scores = solution.unique_route_scores + external_graph_route_scores
 
-    #-------------------------------------------------------------------------
+#====================================================================================================
+def draw_correlated_solution_logs(strat_solutions, display_plots, unit_colors_filename, map_graph):
+    '''
+    Draw correlated solution logs.
+    '''
+
     # Draw the most correlated strata sequences.
     for solution in strat_solutions:
         draw_solution_logs(solution, display_plots, 'strat-seq', unit_colors_filename, False, None, [])
