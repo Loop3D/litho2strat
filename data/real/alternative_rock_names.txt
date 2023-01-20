@@ -14,7 +14,7 @@ obsidian, igneous felsic volcanic, volcanic, carbonatite, volcanic_rock, fine_gr
 volcanic, volcanoclastic, pyroclastic_sediment, volcaniclastic_sandstone, volcaniclastic_siltstone, volcaniclastic_breccia, volcaniclastic_mud
 volcanosediment, tuffaceous_sediment, tuffaceous_sedimentary_rock
 # Added chert to BIFs as they commonly contain chert/jaspilite.
-banded_iron_formation, iron-formation, ironstone, ferruginous_deposits, ilmenitite, ironstone, chert
+banded_iron_formation, iron-formation, ironstone, ferruginous_deposits, ilmenitite, chert, jaspilite
 ultramafic, ultramafic-rock, ultramafic_rock, fine_grained_ultramafic_rock, hornblendite, lamproite, lamprophyre, serpentinite
 amphibolite, chlorite_amphibolite, glaucophanite
 trachyte, comenditic_trachyte, foid_bearing_trachyte, quartz_trachyte, trachytic_rock
