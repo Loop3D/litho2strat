@@ -48,8 +48,8 @@ class StrataSolution:
         # Build the solution topology graph.
         self.graph = _build_solution_graph(self)
 
-        # Route scores based on its own solution graph.
-        self.graph_route_scores = []
+        # Calculate the route scores based on its own solution graph.
+        self.graph_route_scores = self.calculate_graph_route_scores(self.graph)
 
         # Scores calculated using graphs from other drillholes.
         self.external_graph_route_scores_list = []
@@ -68,7 +68,7 @@ class StrataSolution:
             return False
 
     #=============================================================================
-    def calculate_graph_route_scores(self, graph, graph_score_power):
+    def calculate_graph_route_scores(self, graph):
         '''
         Calculate the route scores based on the solution topology graph.
         Note: it can use the external solution graph from other drillholes.
@@ -92,7 +92,7 @@ class StrataSolution:
 
             if (num_contacts > 0):
                 # Normalize the score with the number of contacts.
-                graph_route_scores[route_index] = float(score) / float(num_contacts)**graph_score_power
+                graph_route_scores[route_index] = float(score) / float(num_contacts)
             else:
                 graph_route_scores[route_index] = 0.
 

@@ -57,9 +57,6 @@ spar.max_num_unit_contacts_inside_litho = 0
 spar.single_top_unit = True
 #---------------------------------------------------------------------------
 
-# The graph route score power (higher power favours smaller number of contacts).
-graph_score_power = 1.0
-
 #---------------------------------------------------------------------------
 # Adding thickness constraints. (Requires unit thickness data).
 add_thickness_constraints = False
@@ -286,9 +283,6 @@ def main():
         strat_solution = generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, map_graph, alternative_rock_names)
         strat_solution.collarID = collarID
 
-        # Calculate the route scores based on its own solution graph.
-        strat_solution.graph_route_scores = strat_solution.calculate_graph_route_scores(strat_solution.graph, graph_score_power)
-
         print("Total number of routes = ", len(strat_solution.routes))
 
         strat_solutions.append(strat_solution)
@@ -344,7 +338,7 @@ def correlate_solutions(strat_solutions):
         for j in range(len(strat_solutions)):
             if (i != j):
                 # Calculate solution scores based on external solution graph.
-                graph_route_scores = strat_solutions[j].calculate_graph_route_scores(solution_graph, graph_score_power)
+                graph_route_scores = strat_solutions[j].calculate_graph_route_scores(solution_graph)
                 strat_solutions[j].external_graph_route_scores_list.append(graph_route_scores)
 
     # Calculate a correlated route score (as the sum of graph scores ovel all drillholes).
