@@ -13,7 +13,7 @@ def correlate_solutions(strat_solutions):
     Build the correlated solution score.
     '''
 
-    # Loop over all solutipon pairs.
+    # Loop over all solution pairs.
     for i in range(len(strat_solutions)):
         solution_graph = strat_solutions[i].graph
         for j in range(len(strat_solutions)):
