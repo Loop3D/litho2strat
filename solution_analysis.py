@@ -64,3 +64,23 @@ def draw_correlated_solution_logs(strat_solutions, display_plots, unit_colors_fi
 
         # Draw age alignment log (corresponding to strata sequences).
         draw_solution_logs(solution, display_plots, 'age', '', False, map_graph, route_indexes, route_scores)
+
+#===========================================================================================================================
+def compare_solution_graphs(G1, G2):
+    '''
+    Compare solution graphs using weighted Jaccard index.
+    '''
+    # Union of all graph edges.
+    edges = set(G1.edges()).union(G2.edges())
+
+    mins = 0.
+    maxs = 0.
+    for edge in edges:
+        weight1 = G1.get_edge_data(*edge, {}).get('weight', 0.)
+        weight2 = G2.get_edge_data(*edge, {}).get('weight', 0.)
+        mins += min(weight1, weight2)
+        maxs += max(weight1, weight2)
+
+    Jw = mins / maxs
+
+    print("Jaccard weighted =", Jw)

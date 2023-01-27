@@ -336,7 +336,7 @@ def plot_solution_correlation(solution):
 
     # Pearson correlation coefficient.
     rho = np.corrcoef(x, y)[0][1]
-    print("Correlation coeff rho = ", rho)
+    print("Correlation coeff rho =", rho)
 
     pl.scatter(x, y, s=5)
 
