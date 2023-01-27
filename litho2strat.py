@@ -319,7 +319,7 @@ def main():
     #--------------------------------------------------------------------
     # Solution correlation.
     #--------------------------------------------------------------------
-    compare_solution_graphs(strat_solutions[0].graph, strat_solutions[0].graph)
+    compare_solution_graphs(strat_solutions[0].graph, strat_solutions[1].graph)
 
     correlate_solutions(strat_solutions)
 
