@@ -34,7 +34,7 @@ def build_solution_graph(solution):
                         G.add_edge(*e, weight=1)
                     else:
                         # Increase the edge weight.
-                        G[e[0]][e[1]]['weight'] = G[e[0]][e[1]]['weight'] + 1
+                        G[e[0]][e[1]]['weight'] += 1
 
     # Normalize the edge weight.
     for u, v, d in G.edges(data=True):
