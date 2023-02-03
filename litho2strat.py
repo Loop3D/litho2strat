@@ -219,9 +219,11 @@ def main():
     #collarIDs = [2182030]
 
     # Strong correlation.
-    collarIDs = [2470303, 2182029]
-    #collarIDs = [2182030, 2182029]
-    #collarIDs = [2470303, 2182029, 2182030]
+    #collarIDs = [2470303, 2182029]
+    collarIDs = [2182030, 2182029]
+
+    # Another location.
+    #collarIDs = [2182301]
 
     display_plots = True
 
@@ -283,6 +285,7 @@ def main():
         # Generating the stratigraphies.
         #--------------------------------------------------------------
         strat_solution = generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, map_graph, alternative_rock_names)
+        strat_solution.analyze_solution()
         strat_solution.collarID = collarID
 
         print("Total number of routes = ", len(strat_solution.routes))
@@ -297,7 +300,7 @@ def main():
         print_unique_routes(strat_solution, 10)
 
         # Draw stratigraphy logs.
-        #draw_solution_logs(strat_solution, display_plots, 'strat', unit_colors_filename, True, None, [])
+        draw_solution_logs(strat_solution, display_plots, 'strat', unit_colors_filename, True, None, [])
 
         # Draw probability logs.
         #draw_solution_logs(strat_solution, display_plots, 'proba', '', True, None, [])
