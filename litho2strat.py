@@ -219,8 +219,9 @@ def main():
     #collarIDs = [2182030]
 
     # Strong correlation.
-    #collarIDs = [2470303, 2182029]
-    collarIDs = [2182030, 2182029]
+    collarIDs = [2470303, 2182029]
+    #collarIDs = [2182030, 2182029]
+    #collarIDs = [2470303, 2182029, 2182030]
 
     display_plots = True
 
@@ -296,7 +297,7 @@ def main():
         print_unique_routes(strat_solution, 10)
 
         # Draw stratigraphy logs.
-        draw_solution_logs(strat_solution, display_plots, 'strat', unit_colors_filename, True, None, [])
+        #draw_solution_logs(strat_solution, display_plots, 'strat', unit_colors_filename, True, None, [])
 
         # Draw probability logs.
         #draw_solution_logs(strat_solution, display_plots, 'proba', '', True, None, [])
@@ -319,7 +320,8 @@ def main():
     #--------------------------------------------------------------------
     # Solution correlation.
     #--------------------------------------------------------------------
-    compare_solution_graphs(strat_solutions[0].graph, strat_solutions[1].graph)
+    if (len(strat_solutions) > 1):
+        compare_solution_graphs(strat_solutions[0].graph, strat_solutions[1].graph)
 
     correlate_solutions(strat_solutions)
 
