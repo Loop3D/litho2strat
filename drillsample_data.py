@@ -26,8 +26,8 @@ class DepthData:
     '''
     Contains the drillsample depth data.
     '''
-    depth_from: List[int] = field(default_factory=list)
-    depth_to: List[int] = field(default_factory=list)
+    depth_from: List[float] = field(default_factory=list)
+    depth_to: List[float] = field(default_factory=list)
 
 #========================================================================================================
 @dataclass

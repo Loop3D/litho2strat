@@ -136,8 +136,8 @@ def _get_rectangular_color(type, unit_colors, strat_solution, route, row, graph,
         if (last_unit):
         # Mark the last unit with black color.
             color = "#000000"
-        elif (graph.has_edge(*e)):
-        # Unit contact is aligned with the age.
+        elif (graph.has_edge(*e) or unit_name == "cover"):
+        # Unit contact is aligned with the age, or a cover.
             color = '#00FF00'
         else:
         # Not aligned - draw with red color.

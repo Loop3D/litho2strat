@@ -1,4 +1,5 @@
 UNITNAME,code,colour
+cover,0,#808080
 Hart_Dolerite,P___ha_od,#8EE4B4
 Broome__Mowla_and_Melligo_Sandstones,K__bm_st,#DFFEB8
 King_Leopold_Sandstone,P__KMl_st,#ECCBA7
@@ -1125,4 +1126,3 @@ MacDougall_Formation,P__KRd_sg,#EDF2CF
 Yilgarn_Craton_granites,A_jgm_mn_Y,#FECFCB
 Scotty_Creek_Formation,A__sc_xsta_sc,#E3DDDB
 Jones_Creek_Conglomerate,A__jc_s,#FEC57A
-cover,cover,#FFFFC0

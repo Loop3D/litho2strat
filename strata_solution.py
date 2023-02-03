@@ -37,17 +37,21 @@ class StrataSolution:
         # Drillhole collar ID.
         self.collarID = 0
 
+        # Adding the cover unit.
+        # Do this to be able to correlate solutions made of one unit only and thus have zero contacts.
+        self.add_cover_unit()
+
         num_units = len(self.unit_names)
-        num_rows = len(depth_data.depth_from)
+        num_rows = len(self.depth_data.depth_from)
 
         # Building the distribution of unit presence at every depth.
-        self.strat_distr = _calculate_strat_distr(routes, num_rows, num_units)
+        self.strat_distr = _calculate_strat_distr(self.routes, num_rows, num_units)
 
         # Calculate the route scores (based on path probability).
-        self.route_scores = _calculate_route_scores(routes, self.strat_distr, self.depth_data)
+        self.route_scores = _calculate_route_scores(self.routes, self.strat_distr, self.depth_data)
 
         # Calcualte unique routes (e.g. two routes A-A-B-B-C and A-B-B-B-C become one route A-B-C).
-        self.unique_routes = _calculate_unique_routes(routes)
+        self.unique_routes = _calculate_unique_routes(self.routes)
 
         # The solution topology graph.
         self.graph = None
@@ -59,6 +63,23 @@ class StrataSolution:
         self.external_graph_route_scores_list = []
 
         self.unique_route_scores = []
+
+    #=====================================================================
+    def add_cover_unit(self):
+        '''
+        Adding the cover contact.
+        '''
+        # Adjust unit names list.
+        self.unit_names.append("cover")
+        cover_index = self.unit_names.index("cover")
+
+        # Adjust solution routes.
+        for route in self.routes:
+            route.path.insert(0, cover_index)
+
+        # Adjust depth data.
+        self.depth_data.depth_to.insert(0, self.depth_data.depth_from[0])
+        self.depth_data.depth_from.insert(0, 0.)
 
     #=====================================================================
     def unit_nonempty(self, unit_name):
