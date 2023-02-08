@@ -54,6 +54,9 @@ def draw_solution_graph(strat_solution):
     # Set margins for the axes so that nodes aren't clipped.
     ax = pl.gca()
     ax.margins(0.20)
+
+    ax.set_title(str(strat_solution.collarID))
+
     pl.axis("off")
     pl.show()
 
