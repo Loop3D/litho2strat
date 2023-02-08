@@ -341,7 +341,14 @@ def plot_solution_correlation(solution):
     rho = np.corrcoef(x, y)[0][1]
     print("Correlation coeff rho =", rho)
 
+    # Set figure size.
+    pl.rcParams["figure.figsize"] = (6.4, 6.4)
+
     pl.scatter(x, y, s=5)
+
+    # Define figure dimensions.
+    pl.xlim(0., 1.03)
+    pl.ylim(0., 1.03)
 
     pl.show()
 
