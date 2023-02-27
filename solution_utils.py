@@ -337,9 +337,12 @@ def plot_solution_correlation(solution):
     x = solution.graph_route_scores
     y = solution.external_graph_route_scores_list[0]
 
-    # Pearson correlation coefficient.
-    rho = np.corrcoef(x, y)[0][1]
-    print("Correlation coeff rho =", rho)
+    if (np.std(x) != 0. and np.std(y) != 0.):
+        # Pearson correlation coefficient.
+        rho = np.corrcoef(x, y)[0][1]
+        print("Correlation coeff rho =", rho)
+    else:
+        print("Correlation coeff rho is undefined!")
 
     # Set figure size.
     pl.rcParams["figure.figsize"] = (6.4, 6.4)
