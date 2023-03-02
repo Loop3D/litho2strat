@@ -21,3 +21,16 @@ min_drillhole_litho_score = 80
 group_drillhole_lithos = False
 cover_ratio_threshold = 0.65
 
+[CollarIDs]
+# No correlation example.
+#collarIDs = 2470303, 2182308
+
+# Strong correlation.
+#collarIDs = 2470303, 2182029
+#collarIDs = 2182030, 2182029
+
+# Another location.
+#collarIDs = 2182301
+
+collarIDs = 2182030, 2182029
+

@@ -139,7 +139,7 @@ def main():
     # Units near the collar with distances data file. The $collarID$ in the file name will be replaced with the actual value.
     dist_table_filename_collarID = config.get(section, 'dist_table_filename')
 
-    ################################
+    #---------------------------------
     section = 'SolverParameters'
     print(config.items(section))
 
@@ -160,7 +160,7 @@ def main():
     # Use the single closest unit for the top (first) lithology.
     spar.single_top_unit = config.getboolean(section, 'single_top_unit')
 
-    ################################
+    #---------------------------------
     section = 'DataPreprocessing'
     print(config.items(section))
 
@@ -177,8 +177,13 @@ def main():
     # The cover ration threshold (relative length) for removing the cover.
     cover_ratio_threshold = config.getfloat(section, 'cover_ratio_threshold')
 
-    #-----------------------------------------------------------------
-    #exit()
+    #---------------------------------
+    section = 'CollarIDs'
+    print(config.items(section))
+
+    collarIDs = config.get(section, 'collarIDs').split(",")
+    collarIDs = [c.strip() for c in collarIDs]
+    #-----------------------------------------------------------------------------------
 
     # Adding thickness constraints (requires unit thickness data which we do not have).
     add_thickness_constraints = False
@@ -189,28 +194,6 @@ def main():
     # Strata data csv file column names.
     strata_data_header = StrataDataHeader('UNITNAME', 'lithos', 'distance', 'DESCRIPTN')
 
-    #----------------------------------------------------------------------------
-    # Mark's data with known solutions.
-    #----------------------------------------------------------------------------
-
-    # (!) Cannot pass topo constraints for row = 5 for mudstone-granite contact when both sanstone and mudstone are excluded from Cover.
-    #collarID = 1209855
-
-    # (!) Gravel issue for CollarId=1209857, at depth=244m
-    #collarID = 1209857
-
-    # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, max_num_unit_contacts_inside_litho = 0)
-    #collarID = 353386
-
-    # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, max_num_unit_contacts_inside_litho = 0)
-    #collarID = 2182301
-
-    # Looks good using (number_nearest_units = 2, max_num_returns_per_unit = 2, add_topology_constraints = True, single_top_unit = True, max_num_unit_contacts_inside_litho = 0)
-    #collarID = 2182076
-
-    # (!) Has wacke at row = 28 which is not passing topology constraints! To discuss with Mark.
-    #collarID = 810340
-
     # Read topology data (the same for all collarIDs).
     map_graph = None
     if (spar.add_topology_constraints):
@@ -220,32 +203,6 @@ def main():
     #====================================================================================
     # Process the list of CollarIDs.
     #====================================================================================
-    # First small cluster of 6.
-    #collarIDs = [2182334, 2182335, 2182336, 2182338, 2182339, 2182340]
-
-    # Second cluster of 14 (crossing the boundary of two units on the map).
-    #collarIDs = [2182301, 2182306, 2182307, 2182308, 2182309, 2182310]
-    #collarIDs.extend(list(range(2182312, 2182319 + 1)))
-
-    # Third cluster of 18 (in the area with several units touching).
-    collarIDs = [2182009, 2182013, 2182016, 2182029, 2182047, 2470197, 2470200, 2470301, 2470303, 2470304, 2470305]
-    # Empty ones: 2182010, 2182035, 2470196
-    # No solutions found: 2182017, 2182018
-    # Solution number blows: 2182030
-    # No data files: 2470193 
-
-    # No correlation example.
-    #collarIDs = [2470303, 2182308]
-
-    #collarIDs = [2182030]
-
-    # Strong correlation.
-    #collarIDs = [2470303, 2182029]
-    collarIDs = [2182030, 2182029]
-
-    # Another location.
-    #collarIDs = [2182301]
-
     display_plots = True
 
     # Stores solutions for different drillholes.
@@ -259,12 +216,6 @@ def main():
 
         drillsample_filename = drillsample_filename_collarID.replace("$collarID$", str(collarID))
         dist_table_filename = dist_table_filename_collarID.replace("$collarID$", str(collarID))
-
-        # Synthetic test.
-        # Note: The tests #1 and #2 show very different probabilities for max_num_unit_contacts_inside_litho = 0 and 1, i.e., a constant and linear increasing transition.
-        # IMPORTANT: For these tests, set max_num_returns_per_unit = 0.
-        #drillsample_filename = "data/tests/litho_2.csv"
-        #dist_table_filename = "data/tests/map_2.csv"
 
         #--------------------------------------------------------------
         # Reading the input data.
@@ -316,7 +267,6 @@ def main():
         #--------------------------------------------------------------
         # Plot the results.
         #--------------------------------------------------------------
-
         # Print all unique routes (i.e., unique strata sequence).
         print_unique_routes(strat_solution, 10)
 
