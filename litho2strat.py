@@ -228,7 +228,7 @@ if __name__ == "__main__":
     # Read command line arguments.
     parser = ArgumentParser()
     parser.add_argument("-p", "--parfile", dest="parfile_path",
-                    help="path to the parameters file", default="Parfile.txt")
+                    help="path to the parameters file", default="parfiles/Parfile.txt")
 
     args = parser.parse_args()
 
