@@ -11,9 +11,7 @@ import configparser
 
 from strata_solver import \
     generate_strat_routes, \
-    generate_strata_table, \
     StrataSolverParameters
-
 import data_readers as dr
 from solution_utils import *
 from solution_analysis import *
