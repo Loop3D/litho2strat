@@ -14,16 +14,7 @@ from strata_solver import \
     generate_strata_table, \
     StrataSolverParameters
 
-from data_readers import \
-    read_strat_data, \
-    read_drillsample_data, \
-    read_thickness_data, \
-    read_topology_data, \
-    read_ignore_list, \
-    read_alternative_rock_names, \
-    DrillSampleDataHeader, \
-    StrataDataHeader
-
+import data_readers as dr
 from solution_utils import *
 from solution_analysis import *
 
@@ -111,15 +102,15 @@ def main():
     add_thickness_constraints = False
 
     # Drillsample data csv file column names.
-    drillsample_header = DrillSampleDataHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
+    drillsample_header = dr.DrillSampleDataHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
 
     # Strata data csv file column names.
-    strata_data_header = StrataDataHeader('UNITNAME', 'lithos', 'distance', 'DESCRIPTN')
+    strata_data_header = dr.StrataDataHeader('UNITNAME', 'lithos', 'distance', 'DESCRIPTN')
 
     # Read topology data (the same for all collarIDs).
     map_graph = None
     if (spar.add_topology_constraints):
-        map_graph = read_topology_data(topology_filename)
+        map_graph = dr.read_topology_data(topology_filename)
         print("Number of units in the map graph =", map_graph.number_of_nodes())
 
     #====================================================================================
@@ -143,10 +134,10 @@ def main():
         # Reading the input data.
         #--------------------------------------------------------------
         # Read the drillhole ignore items list.
-        ignore_list = read_ignore_list(ignore_list_filename)
+        ignore_list = dr.read_ignore_list(ignore_list_filename)
 
         # Read drill sample data.
-        drillsample_data = read_drillsample_data(drillsample_header, drillsample_filename, ignore_list, min_drillhole_litho_score)
+        drillsample_data = dr.read_drillsample_data(drillsample_header, drillsample_filename, ignore_list, min_drillhole_litho_score)
 
         # Remove the Cover.
         drillsample_data.remove_cover(cover_unit_filename, cover_ratio_threshold)
@@ -156,10 +147,10 @@ def main():
             drillsample_data.group_drillhole_litho_sequence(spar.max_num_unit_contacts_inside_litho)
 
         # Read the alternative rock names.
-        alternative_rock_names = read_alternative_rock_names(alternative_rock_names_filename)
+        alternative_rock_names = dr.read_alternative_rock_names(alternative_rock_names_filename)
 
         # Read unit lithologies and distance data.
-        strata_data = read_strat_data(strata_data_header, dist_table_filename, alternative_rock_names)
+        strata_data = dr.read_strat_data(strata_data_header, dist_table_filename, alternative_rock_names)
 
         # Filter strat data.
         drillhole_lithos = drillsample_data.get_drillhole_lithos()
@@ -173,7 +164,7 @@ def main():
         # Read thickness data.
         thickness_data = []
         if (add_thickness_constraints):
-            thickness_data = read_thickness_data(thickness_filename)
+            thickness_data = dr.read_thickness_data(thickness_filename)
 
         #--------------------------------------------------------------
         # Generating the stratigraphies.
