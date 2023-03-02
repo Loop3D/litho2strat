@@ -356,10 +356,6 @@ def plot_solution_correlation(solution):
 
     pl.scatter(x, y, s=5)
 
-    # Define figure dimensions.
-    pl.xlim(0., 1.03)
-    pl.ylim(0., 1.03)
-
     pl.show()
 
 #==============================================================================
