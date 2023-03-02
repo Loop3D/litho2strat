@@ -137,11 +137,11 @@ class DrillsampleData:
         self.rows = data_grouped
 
     #==============================================================================
-    def remove_cover(self, cover_lithos_filename, threshold):
+    def remove_cover(self, cover_lithos, threshold):
         '''
         Removes the cover.
         '''
-        cover_index = self.identify_cover(cover_lithos_filename, threshold)
+        cover_index = self.identify_cover(cover_lithos, threshold)
 
         if (cover_index >= 0):
             print("REMOVING THE COVER until depth =", self.rows[cover_index].depth_to)
@@ -154,15 +154,11 @@ class DrillsampleData:
                 print("Removed cover:", row.depth_to, row.lithos)
 
     #==============================================================================
-    def identify_cover(self, cover_lithos_filename, threshold):
+    def identify_cover(self, cover_lithos, threshold):
         '''
         Identifies the cover.
         '''
         print("Identifying the Cover...")
-
-        # Read the Cover lithologies.
-        with open(cover_lithos_filename) as f:
-            cover_lithos = f.read().splitlines()
 
         # Iterate from the bottom to top, and search for the Cover.
         for index, row in reversed(list(enumerate(self.rows))):

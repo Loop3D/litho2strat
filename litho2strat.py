@@ -35,13 +35,13 @@ def main(parfile_path):
     topology_filename = config.get(section, 'topology_filename', fallback = '')
 
     # The Cover unit data file.
-    cover_unit_filename = config.get(section, 'cover_unit_filename')
+    cover_unit_filename = config.get(section, 'cover_unit_filename', fallback = '')
 
     # The ignore items list file.
     ignore_list_filename = config.get(section, 'ignore_list_filename', fallback = '')
 
     # Alternative rock names file.
-    alternative_rock_names_filename = config.get(section, 'alternative_rock_names_filename')
+    alternative_rock_names_filename = config.get(section, 'alternative_rock_names_filename', fallback = '')
 
     # Unit colours for drawing stratigraphy logs.
     unit_colors_filename = config.get(section, 'unit_colors_filename')
@@ -117,13 +117,16 @@ def main(parfile_path):
         print("Number of units in the map graph =", map_graph.number_of_nodes())
 
     # Read the drillhole ignore items list.
-    if (ignore_list_filename != ''):
-        ignore_list = dr.read_ignore_list(ignore_list_filename)
-    else:
-        ignore_list = []
+    ignore_list = dr.read_ignore_list(ignore_list_filename)
 
     # Read the alternative rock names.
     alternative_rock_names = dr.read_alternative_rock_names(alternative_rock_names_filename)
+
+    # Read cover lithologies.
+    cover_lithos = []
+    if (cover_unit_filename != ''):
+        with open(cover_unit_filename) as f:
+            cover_lithos = f.read().splitlines()
 
     # Read thickness data.
     thickness_data = []
@@ -154,7 +157,7 @@ def main(parfile_path):
         drillsample_data = dr.read_drillsample_data(drillsample_header, drillsample_filename, ignore_list, min_drillhole_litho_score)
 
         # Remove the Cover.
-        drillsample_data.remove_cover(cover_unit_filename, cover_ratio_threshold)
+        drillsample_data.remove_cover(cover_lithos, cover_ratio_threshold)
 
         if (group_drillhole_lithos):
             # Group the drillsample lithologies.

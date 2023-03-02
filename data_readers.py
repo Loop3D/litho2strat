@@ -265,8 +265,10 @@ def read_ignore_list(filename):
     '''
     Read the drillhole items to ignore.
     '''
-    with open(filename) as f:
-        items = f.read().splitlines()
+    items = []
+    if (filename != ''):
+        with open(filename) as f:
+            items = f.read().splitlines()
 
     return items
 
@@ -276,16 +278,17 @@ def read_alternative_rock_names(filename):
     Read the alternative rock names (synonyms).
     Returns a list with lists of alternative names.
     '''
-    with open(filename) as f:
-        items = f.read().splitlines()
-
     alternative_rock_names = dict()
 
-    # Building a dictionary.
-    for index, item in enumerate(items):
-        lithos = item.split(", ")
-        for litho in lithos:
-            alternative_rock_names[litho] = index
+    if (filename != ''):
+        with open(filename) as f:
+            items = f.read().splitlines()
+
+        # Building a dictionary.
+        for index, item in enumerate(items):
+            lithos = item.split(", ")
+            for litho in lithos:
+                alternative_rock_names[litho] = index
 
     return alternative_rock_names
 

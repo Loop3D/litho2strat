@@ -1,6 +1,4 @@
 [FilePaths]
-cover_unit_filename = data/real/cover_unit.txt
-alternative_rock_names_filename = data/real/alternative_rock_names.txt
 unit_colors_filename = data/real/500kibg_colours.csv
 
 # Note: The tests #1 and #2 show very different probabilities for max_num_unit_contacts_inside_litho = 0 and 1, i.e., a constant and linear increasing transition.
