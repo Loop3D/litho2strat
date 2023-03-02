@@ -16,10 +16,7 @@ max_num_unit_contacts_inside_litho = 0
 single_top_unit = True
 
 [DataPreprocessing]
-number_nearest_units = 3
-min_drillhole_litho_score = 80
-group_drillhole_lithos = False
-cover_ratio_threshold = 0.65
+number_nearest_units = 1
 
 [CollarIDs]
 collarIDs = 
