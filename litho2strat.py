@@ -32,13 +32,13 @@ def main(parfile_path):
     print(config.items(section))
 
     # Topology file.
-    topology_filename = config.get(section, 'topology_filename')
+    topology_filename = config.get(section, 'topology_filename', fallback = '')
 
     # The Cover unit data file.
     cover_unit_filename = config.get(section, 'cover_unit_filename')
 
     # The ignore items list file.
-    ignore_list_filename = config.get(section, 'ignore_list_filename')
+    ignore_list_filename = config.get(section, 'ignore_list_filename', fallback = '')
 
     # Alternative rock names file.
     alternative_rock_names_filename = config.get(section, 'alternative_rock_names_filename')
@@ -117,7 +117,10 @@ def main(parfile_path):
         print("Number of units in the map graph =", map_graph.number_of_nodes())
 
     # Read the drillhole ignore items list.
-    ignore_list = dr.read_ignore_list(ignore_list_filename)
+    if (ignore_list_filename != ''):
+        ignore_list = dr.read_ignore_list(ignore_list_filename)
+    else:
+        ignore_list = []
 
     # Read the alternative rock names.
     alternative_rock_names = dr.read_alternative_rock_names(alternative_rock_names_filename)
