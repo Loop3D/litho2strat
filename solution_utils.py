@@ -254,7 +254,10 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
             patches.append(Rectangle((x1, y1), dx, dy))
             color_list.append(color)
 
-            display_unit_name = True
+            if (type == 'strat-seq'):
+                display_unit_name = True
+            else:
+                display_unit_name = False
             if (display_unit_name):
                 pl.text(x1, y1, strat_solution.unit_names[route.path[row]])
 
