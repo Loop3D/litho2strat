@@ -44,7 +44,7 @@ def main(parfile_path):
     alternative_rock_names_filename = config.get(section, 'alternative_rock_names_filename', fallback = '')
 
     # Unit colours for drawing stratigraphy logs.
-    unit_colors_filename = config.get(section, 'unit_colors_filename')
+    unit_colors_filename = config.get(section, 'unit_colors_filename', fallback = '')
 
     # Drillhole lithology data file. The $collarID$ in the file name will be replaced with the actual value.
     drillsample_filename_collarID = config.get(section, 'drillsample_filename')
