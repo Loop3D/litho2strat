@@ -328,8 +328,11 @@ def plot_route_scores(scores):
     '''
     Plot distribution of the route scores.
     '''
+    # Set figure size.
+    pl.rcParams["figure.figsize"] = (6.4, 4.8)
+
     pl.hist(scores, bins = 50)
-    pl.xlabel('Route score')
+    pl.xlabel('Score')
     pl.ylabel('Frequency')
     pl.show()
 
