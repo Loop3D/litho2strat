@@ -7,6 +7,7 @@
 '''
 
 import os
+import configparser
 
 from strata_solver import \
     generate_strat_routes, \
@@ -25,42 +26,6 @@ from data_readers import \
 
 from solution_utils import *
 from solution_analysis import *
-
-spar = StrataSolverParameters()
-
-#==============================================================================
-# Unit contact topology constraints (extracted from map data).
-spar.add_topology_constraints = True
-# 'Age alignment' constraints: the maximum number of times the age direction can flip.
-spar.max_num_age_flips = 2
-#---------------------------------------------------------------------------
-# The number of nearest units (for distance constraints).
-number_nearest_units = 3
-#---------------------------------------------------------------------------
-# Minimum score for drillhole lithologies to use them.
-min_drillhole_litho_score = 80
-#---------------------------------------------------------------------------
-# Group drillhole lithology sequence.
-# Note: use this for max_num_unit_contacts_inside_litho > 0 to avoid the solution number to blow.
-group_drillhole_lithos = False
-#---------------------------------------------------------------------------
-# The cover ration threshold (relative length) for removing the cover.
-cover_ratio_threshold = 0.65
-#---------------------------------------------------------------------------
-
-# 'Returning to the same unit' constraints.
-spar.max_num_returns_per_unit = 1
-#---------------------------------------------------------------------------
-# The maximum number of unit contacts inside the same litholgy sequence.
-spar.max_num_unit_contacts_inside_litho = 0
-#---------------------------------------------------------------------------
-# Use the single closest unit for the top (first) lithology.
-spar.single_top_unit = True
-#---------------------------------------------------------------------------
-
-#---------------------------------------------------------------------------
-# Adding thickness constraints. (Requires unit thickness data).
-add_thickness_constraints = False
 
 #=============================================================================
 def generate_missing_lithos():
@@ -143,6 +108,53 @@ def generate_missing_lithos():
 #=============================================================================
 def main():
     print('Started litho2strat')
+
+    #-----------------------------------------------------------------
+    # Read input parameters.
+    config = configparser.ConfigParser()
+    config.read('Parfile.txt')
+
+    section = 'SolverParameters'
+    print(config.items(section))
+
+    spar = StrataSolverParameters()
+
+    # Unit contact topology constraints (extracted from map data).
+    spar.add_topology_constraints = config.getboolean(section, 'add_topology_constraints')
+
+    # 'Age alignment' constraints: the maximum number of times the age direction can flip.
+    spar.max_num_age_flips = config.getint(section, 'max_num_age_flips')
+
+    # 'Returning to the same unit' constraints.
+    spar.max_num_returns_per_unit = config.getint(section, 'max_num_returns_per_unit')
+
+    # The maximum number of unit contacts inside the same litholgy sequence.
+    spar.max_num_unit_contacts_inside_litho = config.getint(section, 'max_num_unit_contacts_inside_litho')
+
+    # Use the single closest unit for the top (first) lithology.
+    spar.single_top_unit = config.getboolean(section, 'single_top_unit')
+
+    section = 'DataPreprocessing'
+    print(config.items(section))
+
+    # The number of nearest units (for distance constraints).
+    number_nearest_units = config.getint(section, 'number_nearest_units')
+
+    # Minimum score for drillhole lithologies to use them.
+    min_drillhole_litho_score = config.getint(section, 'min_drillhole_litho_score')
+
+    # Group drillhole lithology sequence.
+    # Note: use this for max_num_unit_contacts_inside_litho > 0 to avoid the solution number to blow.
+    group_drillhole_lithos = config.getboolean(section, 'group_drillhole_lithos')
+
+    # The cover ration threshold (relative length) for removing the cover.
+    cover_ratio_threshold = config.getfloat(section, 'cover_ratio_threshold')
+
+    # Adding thickness constraints (requires unit thickness data which we do not have).
+    add_thickness_constraints = False
+
+    #-----------------------------------------------------------------
+    #exit()
 
     #generate_missing_lithos()
     #exit()
