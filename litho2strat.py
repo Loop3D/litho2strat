@@ -74,6 +74,13 @@ def main(parfile_path):
     spar.single_top_unit = config.getboolean(section, 'single_top_unit', fallback = True)
 
     #---------------------------------
+    section = 'Correlation'
+    print(config.items(section))
+
+    # Correlation score normalization power. Higher power leads to shorter strata sequence.
+    correlation_power = config.getfloat(section, 'correlation_power', fallback = 1.0)
+
+    #---------------------------------
     section = 'DataPreprocessing'
     print(config.items(section))
 
@@ -176,7 +183,7 @@ def main(parfile_path):
         # Generating the stratigraphies.
         #--------------------------------------------------------------
         strat_solution = generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, map_graph, alternative_rock_names)
-        strat_solution.analyze_solution()
+        strat_solution.analyze_solution(correlation_power)
         strat_solution.collarID = collarID
 
         print("Total number of routes = ", len(strat_solution.routes))
@@ -210,13 +217,13 @@ def main(parfile_path):
         # Write the best routes to file.
         write_best_routes_to_file(strat_solution, 10)
 
-    #--------------------------------------------------------------------
+    #====================================================================================
     # Solution correlation.
-    #--------------------------------------------------------------------
+    #====================================================================================
     if (len(strat_solutions) > 1):
         compare_solution_graphs(strat_solutions[0].graph, strat_solutions[1].graph)
 
-    correlate_solutions(strat_solutions)
+    correlate_solutions(strat_solutions, correlation_power)
 
     for solution in strat_solutions:
         plot_solution_correlation(solution)

@@ -14,6 +14,9 @@ max_num_returns_per_unit = 1
 max_num_unit_contacts_inside_litho = 0
 single_top_unit = False
 
+[Correlation]
+correlation_power = 1.5
+
 [DataPreprocessing]
 number_nearest_units = 3
 cover_ratio_threshold = 0.65

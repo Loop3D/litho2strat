@@ -104,12 +104,12 @@ class StrataSolution:
         return counter
 
     #=====================================================================
-    def analyze_solution(self):
+    def analyze_solution(self, correlation_power):
         '''
         Generates the solution graph and graph scores.
         '''
         self.graph = build_solution_graph(self)
-        self.graph_route_scores = calculate_graph_route_scores(self, self.graph)
+        self.graph_route_scores = calculate_graph_route_scores(self, self.graph, correlation_power)
 
 #=============================================================================
 def _calculate_unique_routes(routes):

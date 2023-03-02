@@ -15,6 +15,9 @@ max_num_returns_per_unit = 1
 max_num_unit_contacts_inside_litho = 0
 single_top_unit = True
 
+[Correlation]
+correlation_power = 1.0
+
 [DataPreprocessing]
 number_nearest_units = 3
 min_drillhole_litho_score = 80

@@ -43,7 +43,7 @@ def build_solution_graph(solution):
     return G
 
 #=============================================================================
-def calculate_graph_route_scores(solution, graph):
+def calculate_graph_route_scores(solution, graph, correlation_power):
     '''
     Calculate the route scores based on the solution topology graph.
     Note: the graph can be external, i.e., from another drillhole.
@@ -67,7 +67,7 @@ def calculate_graph_route_scores(solution, graph):
 
         if (num_contacts > 0):
             # Normalize the score with the number of contacts.
-            graph_route_scores[route_index] = float(score) / float(num_contacts)
+            graph_route_scores[route_index] = float(score) / float(num_contacts)**correlation_power
         else:
             graph_route_scores[route_index] = 0.
 
@@ -94,7 +94,7 @@ def compare_solution_graphs(G1, G2):
     print("Jaccard weighted =", Jw)
 
 #=============================================================================
-def correlate_solutions(strat_solutions):
+def correlate_solutions(strat_solutions, correlation_power):
     '''
     Correlete solutions from different drillholes.
     Build the correlated solution score.
@@ -106,7 +106,7 @@ def correlate_solutions(strat_solutions):
         for j in range(len(strat_solutions)):
             if (i != j):
                 # Calculate solution scores based on external solution graph.
-                graph_route_scores = calculate_graph_route_scores(strat_solutions[j], solution_graph)
+                graph_route_scores = calculate_graph_route_scores(strat_solutions[j], solution_graph, correlation_power)
                 strat_solutions[j].external_graph_route_scores_list.append(graph_route_scores)
 
     # Calculate a correlated route score (as the sum of graph scores ovel all drillholes).
