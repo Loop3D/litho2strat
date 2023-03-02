@@ -123,10 +123,7 @@ def main(parfile_path):
     alternative_rock_names = dr.read_alternative_rock_names(alternative_rock_names_filename)
 
     # Read cover lithologies.
-    cover_lithos = []
-    if (cover_unit_filename != ''):
-        with open(cover_unit_filename) as f:
-            cover_lithos = f.read().splitlines()
+    cover_lithos = dr.read_cover_lithos(cover_unit_filename)
 
     # Read thickness data.
     thickness_data = []

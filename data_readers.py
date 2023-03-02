@@ -292,3 +292,14 @@ def read_alternative_rock_names(filename):
 
     return alternative_rock_names
 
+#=============================================================================
+def read_cover_lithos(filename):
+    '''
+    Read conver lithologies.
+    '''
+    cover_lithos = []
+    if (filename != ''):
+        with open(filename) as f:
+            cover_lithos = f.read().splitlines()
+
+    return cover_lithos
