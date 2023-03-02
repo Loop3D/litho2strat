@@ -111,9 +111,35 @@ def main():
 
     #-----------------------------------------------------------------
     # Read input parameters.
+    #-----------------------------------------------------------------
     config = configparser.ConfigParser()
     config.read('Parfile.txt')
 
+    section = 'FilePaths'
+    print(config.items(section))
+
+    # Topology file.
+    topology_filename = config.get(section, 'topology_filename')
+
+    # The Cover unit data file.
+    cover_unit_filename = config.get(section, 'cover_unit_filename')
+
+    # The ignore items list file.
+    ignore_list_filename = config.get(section, 'ignore_list_filename')
+
+    # Alternative rock names file.
+    alternative_rock_names_filename = config.get(section, 'alternative_rock_names_filename')
+
+    # Unit colours for drawing stratigraphy logs.
+    unit_colors_filename = config.get(section, 'unit_colors_filename')
+
+    # Drillhole lithology data file. The $collarID$ in the file name will be replaced with the actual value.
+    drillsample_filename_collarID = config.get(section, 'drillsample_filename')
+
+    # Units near the collar with distances data file. The $collarID$ in the file name will be replaced with the actual value.
+    dist_table_filename_collarID = config.get(section, 'dist_table_filename')
+
+    ################################
     section = 'SolverParameters'
     print(config.items(section))
 
@@ -134,6 +160,7 @@ def main():
     # Use the single closest unit for the top (first) lithology.
     spar.single_top_unit = config.getboolean(section, 'single_top_unit')
 
+    ################################
     section = 'DataPreprocessing'
     print(config.items(section))
 
@@ -150,29 +177,11 @@ def main():
     # The cover ration threshold (relative length) for removing the cover.
     cover_ratio_threshold = config.getfloat(section, 'cover_ratio_threshold')
 
-    # Adding thickness constraints (requires unit thickness data which we do not have).
-    add_thickness_constraints = False
-
     #-----------------------------------------------------------------
     #exit()
 
-    #generate_missing_lithos()
-    #exit()
-
-    # Topology file.
-    topology_filename = "data/real/ASUD_strat4.gml"
-
-    # The Cover unit data file.
-    cover_unit_filename = "data/real/cover_unit.txt"
-
-    # The Ignore items list file.
-    ignore_list_filename = "data/real/ignore_list.txt"
-
-    # Alternative rock names file.
-    alternative_rock_names_filename = "data/real/alternative_rock_names.txt"
-
-    # Unit colours for drawing stratigraphy logs.
-    unit_colors_filename = "data/real/500kibg_colours.csv"
+    # Adding thickness constraints (requires unit thickness data which we do not have).
+    add_thickness_constraints = False
 
     # Drillsample data csv file column names.
     drillsample_header = DrillSampleDataHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
@@ -248,8 +257,8 @@ def main():
         print('collarID =', collarID)
         print('--------------------------------')
 
-        drillsample_filename = "data/real/dist_files/litho_tables_V3/litho_" + str(collarID) + ".csv"
-        dist_table_filename = "data/real/dist_files/dist_tables/100_500k_map_near_" + str(collarID) + ".csv"
+        drillsample_filename = drillsample_filename_collarID.replace("$collarID$", str(collarID))
+        dist_table_filename = dist_table_filename_collarID.replace("$collarID$", str(collarID))
 
         # Synthetic test.
         # Note: The tests #1 and #2 show very different probabilities for max_num_unit_contacts_inside_litho = 0 and 1, i.e., a constant and linear increasing transition.

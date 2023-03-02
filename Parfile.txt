@@ -1,3 +1,13 @@
+[FilePaths]
+topology_filename = data/real/ASUD_strat4.gml
+cover_unit_filename = data/real/cover_unit.txt
+ignore_list_filename = data/real/ignore_list.txt
+alternative_rock_names_filename = data/real/alternative_rock_names.txt
+unit_colors_filename = data/real/500kibg_colours.csv
+
+drillsample_filename = data/real/dist_files/litho_tables_V3/litho_$collarID$.csv
+dist_table_filename = data/real/dist_files/dist_tables/100_500k_map_near_$collarID$.csv
+
 [SolverParameters]
 add_topology_constraints = True
 max_num_age_flips = 2
@@ -10,5 +20,4 @@ number_nearest_units = 3
 min_drillhole_litho_score = 80
 group_drillhole_lithos = False
 cover_ratio_threshold = 0.65
-
 
