@@ -8,6 +8,7 @@
 
 import os
 import configparser
+from argparse import ArgumentParser
 
 from strata_solver import \
     generate_strat_routes, \
@@ -17,14 +18,15 @@ from solution_utils import *
 from solution_analysis import *
 
 #=============================================================================
-def main():
+def main(parfile_path):
     print('Started litho2strat')
 
     #=================================================================
     # Read input parameters.
     #=================================================================
     config = configparser.ConfigParser()
-    config.read('Parfile.txt')
+    if (len(config.read(parfile_path)) == 0):
+        raise ValueError("Failed to open/find a parameters file!")
 
     section = 'FilePaths'
     print(config.items(section))
@@ -220,5 +222,13 @@ def main():
 
 #=============================================================================
 if __name__ == "__main__":
-    main()
+    # Read command line arguments.
+    parser = ArgumentParser()
+    parser.add_argument("-p", "--parfile", dest="parfile_path",
+                    help="path to the parameters file", default="Parfile.txt")
+
+    args = parser.parse_args()
+
+    # The main program.
+    main(args.parfile_path)
 
