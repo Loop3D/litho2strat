@@ -9,6 +9,8 @@
 import os
 import configparser
 from argparse import ArgumentParser
+from dataclasses import dataclass, field, fields
+from typing import List
 
 from strata_solver import \
     generate_strat_routes, \
@@ -18,123 +20,161 @@ from solution_utils import *
 from solution_analysis import *
 
 #=============================================================================
-def main(parfile_path):
-    print('Started litho2strat')
+@dataclass
+class InputParameters:
+    '''
+    Contains all input parameters.
+    Note: actual default values are set when reading parameters.
+    '''
+    #-------------------------------
+    # Section 'FilePaths'.
+    #-------------------------------
+    # Topology file.
+    topology_filename: str = ""
+    # The Cover unit data file.
+    cover_unit_filename: str = ""
+    # The ignore items list file.
+    ignore_list_filename: str = ""
+    # Alternative rock names file.
+    alternative_rock_names_filename: str = ""
+    # Unit colours for drawing stratigraphy logs.
+    unit_colors_filename: str = ""
+    # Drillhole lithology data file. The $collarID$ in the file name will be replaced with the actual value.
+    drillsample_filename_collarID: str = ""
+    # Units near the collar with distances data file. The $collarID$ in the file name will be replaced with the actual value.
+    dist_table_filename_collarID: str = ""
 
-    #=================================================================
-    # Read input parameters.
-    #=================================================================
+    #-------------------------------
+    # Section 'SolverParameters'.
+    #-------------------------------
+    # Unit contact topology constraints (extracted from map data).
+    add_topology_constraints: bool = True
+    # 'Age alignment' constraints: the maximum number of times the age direction can flip.
+    max_num_age_flips: int = 0
+    # 'Returning to the same unit' constraints.
+    max_num_returns_per_unit: int = 0
+    # The maximum number of unit contacts inside the same litholgy sequence.
+    max_num_unit_contacts_inside_litho: int = 0
+    # Use the single closest unit for the top (first) lithology.
+    single_top_unit: bool = True
+
+    #-------------------------------
+    # Section 'Correlation'.
+    #-------------------------------
+    # Correlation score normalization power. Higher power leads to shorter strata sequence.
+    correlation_power: float = 0.
+
+    #-------------------------------
+    # Section 'DataPreprocessing'.
+    #-------------------------------
+    # The number of nearest units (for distance constraints).
+    number_nearest_units: int = 0
+    # Minimum score for drillhole lithologies to use them.
+    min_drillhole_litho_score: int = 0
+    # Group drillhole lithology sequence.
+    # Note: use this for max_num_unit_contacts_inside_litho > 0 to avoid the solution number to blow.
+    group_drillhole_lithos: bool = 0
+    # The cover ration threshold (relative length) for removing the cover.
+    cover_ratio_threshold: float = 0.
+
+    #-------------------------------
+    # Section 'CollarIDs'.
+    #-------------------------------
+    collarIDs: List[str] = field(default_factory=list)
+
+    #-------------------------------
+    # Other.
+    #-------------------------------
+    # Adding thickness constraints (requires unit thickness data which we do not have).
+    add_thickness_constraints: bool = False
+
+#=============================================================================
+def read_input_parameters(parfile_path):
+    '''
+    Read input parameters from Parfile.
+    '''
     config = configparser.ConfigParser()
     if (len(config.read(parfile_path)) == 0):
         raise ValueError("Failed to open/find a parameters file!")
 
+    par = InputParameters()
+
     section = 'FilePaths'
     print(config.items(section))
 
-    # Topology file.
-    topology_filename = config.get(section, 'topology_filename', fallback = '')
+    par.topology_filename = config.get(section, 'topology_filename', fallback = '')
+    par.cover_unit_filename = config.get(section, 'cover_unit_filename', fallback = '')
+    par.ignore_list_filename = config.get(section, 'ignore_list_filename', fallback = '')
+    par.alternative_rock_names_filename = config.get(section, 'alternative_rock_names_filename', fallback = '')
+    par.unit_colors_filename = config.get(section, 'unit_colors_filename', fallback = '')
+    par.drillsample_filename_collarID = config.get(section, 'drillsample_filename')
+    par.dist_table_filename_collarID = config.get(section, 'dist_table_filename')
 
-    # The Cover unit data file.
-    cover_unit_filename = config.get(section, 'cover_unit_filename', fallback = '')
-
-    # The ignore items list file.
-    ignore_list_filename = config.get(section, 'ignore_list_filename', fallback = '')
-
-    # Alternative rock names file.
-    alternative_rock_names_filename = config.get(section, 'alternative_rock_names_filename', fallback = '')
-
-    # Unit colours for drawing stratigraphy logs.
-    unit_colors_filename = config.get(section, 'unit_colors_filename', fallback = '')
-
-    # Drillhole lithology data file. The $collarID$ in the file name will be replaced with the actual value.
-    drillsample_filename_collarID = config.get(section, 'drillsample_filename')
-
-    # Units near the collar with distances data file. The $collarID$ in the file name will be replaced with the actual value.
-    dist_table_filename_collarID = config.get(section, 'dist_table_filename')
-
-    #---------------------------------
     section = 'SolverParameters'
     print(config.items(section))
 
-    spar = StrataSolverParameters()
+    par.add_topology_constraints = config.getboolean(section, 'add_topology_constraints', fallback = True)
+    par.max_num_age_flips = config.getint(section, 'max_num_age_flips', fallback = 2)
+    par.max_num_returns_per_unit = config.getint(section, 'max_num_returns_per_unit', fallback = 1)
+    par.max_num_unit_contacts_inside_litho = config.getint(section, 'max_num_unit_contacts_inside_litho', fallback = 0)
+    par.single_top_unit = config.getboolean(section, 'single_top_unit', fallback = True)
 
-    # Unit contact topology constraints (extracted from map data).
-    spar.add_topology_constraints = config.getboolean(section, 'add_topology_constraints', fallback = True)
-
-    # 'Age alignment' constraints: the maximum number of times the age direction can flip.
-    spar.max_num_age_flips = config.getint(section, 'max_num_age_flips', fallback = 2)
-
-    # 'Returning to the same unit' constraints.
-    spar.max_num_returns_per_unit = config.getint(section, 'max_num_returns_per_unit', fallback = 1)
-
-    # The maximum number of unit contacts inside the same litholgy sequence.
-    spar.max_num_unit_contacts_inside_litho = config.getint(section, 'max_num_unit_contacts_inside_litho', fallback = 0)
-
-    # Use the single closest unit for the top (first) lithology.
-    spar.single_top_unit = config.getboolean(section, 'single_top_unit', fallback = True)
-
-    #---------------------------------
     section = 'Correlation'
     print(config.items(section))
 
-    # Correlation score normalization power. Higher power leads to shorter strata sequence.
-    correlation_power = config.getfloat(section, 'correlation_power', fallback = 1.0)
+    par.correlation_power = config.getfloat(section, 'correlation_power', fallback = 1.0)
 
-    #---------------------------------
     section = 'DataPreprocessing'
     print(config.items(section))
 
-    # The number of nearest units (for distance constraints).
-    number_nearest_units = config.getint(section, 'number_nearest_units', fallback = 3)
+    par.number_nearest_units = config.getint(section, 'number_nearest_units', fallback = 3)
+    par.min_drillhole_litho_score = config.getint(section, 'min_drillhole_litho_score', fallback = 80)
+    par.group_drillhole_lithos = config.getboolean(section, 'group_drillhole_lithos', fallback = False)
+    par.cover_ratio_threshold = config.getfloat(section, 'cover_ratio_threshold', fallback = 0.65)
 
-    # Minimum score for drillhole lithologies to use them.
-    min_drillhole_litho_score = config.getint(section, 'min_drillhole_litho_score', fallback = 80)
-
-    # Group drillhole lithology sequence.
-    # Note: use this for max_num_unit_contacts_inside_litho > 0 to avoid the solution number to blow.
-    group_drillhole_lithos = config.getboolean(section, 'group_drillhole_lithos', fallback = False)
-
-    # The cover ration threshold (relative length) for removing the cover.
-    cover_ratio_threshold = config.getfloat(section, 'cover_ratio_threshold', fallback = 0.65)
-
-    #---------------------------------
     section = 'CollarIDs'
     print(config.items(section))
 
     collarIDs = config.get(section, 'collarIDs').split(",")
-    collarIDs = [c.strip() for c in collarIDs]
-    #-----------------------------------------------------------------------------------
+    par.collarIDs = [c.strip() for c in collarIDs]
 
-    # Adding thickness constraints (requires unit thickness data which we do not have).
-    add_thickness_constraints = False
+    # Hardcoded as we don't have the thickness data.
+    par.add_thickness_constraints = False
 
-    # Drillsample data csv file column names.
-    drillsample_header = dr.DrillSampleDataHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
+    return par
 
-    # Strata data csv file column names.
-    strata_data_header = dr.StrataDataHeader('UNITNAME', 'lithos', 'distance', 'DESCRIPTN')
+#=============================================================================
+def read_and_solve(par, drillsample_header, strata_data_header):
+    '''
+    Read data from files and run the solver.
+    '''
+    spar = StrataSolverParameters()
+
+    # Copy solver parameters.
+    for field in fields(StrataSolverParameters):
+        setattr(spar, field.name, getattr(par, field.name))
 
     #====================================================================================
     # Read data common for all collarIDs.
     #====================================================================================
     # Read topology data (graph).
     map_graph = None
-    if (spar.add_topology_constraints):
-        map_graph = dr.read_topology_data(topology_filename)
+    if (par.add_topology_constraints):
+        map_graph = dr.read_topology_data(par.topology_filename)
         print("Number of units in the map graph =", map_graph.number_of_nodes())
 
     # Read the drillhole ignore items list.
-    ignore_list = dr.read_ignore_list(ignore_list_filename)
+    ignore_list = dr.read_ignore_list(par.ignore_list_filename)
 
     # Read the alternative rock names.
-    alternative_rock_names = dr.read_alternative_rock_names(alternative_rock_names_filename)
+    alternative_rock_names = dr.read_alternative_rock_names(par.alternative_rock_names_filename)
 
     # Read cover lithologies.
-    cover_lithos = dr.read_cover_lithos(cover_unit_filename)
+    cover_lithos = dr.read_cover_lithos(par.cover_unit_filename)
 
     # Read thickness data.
     thickness_data = []
-    if (add_thickness_constraints):
+    if (par.add_thickness_constraints):
         thickness_data = dr.read_thickness_data(thickness_filename)
 
     #====================================================================================
@@ -145,25 +185,25 @@ def main(parfile_path):
     # Stores solutions for different drillholes.
     strat_solutions = []
 
-    for collarID in collarIDs:
+    for collarID in par.collarIDs:
 
         print('--------------------------------')
         print('collarID =', collarID)
         print('--------------------------------')
 
-        drillsample_filename = drillsample_filename_collarID.replace("$collarID$", str(collarID))
-        dist_table_filename = dist_table_filename_collarID.replace("$collarID$", str(collarID))
+        drillsample_filename = par.drillsample_filename_collarID.replace("$collarID$", str(collarID))
+        dist_table_filename = par.dist_table_filename_collarID.replace("$collarID$", str(collarID))
 
         #--------------------------------------------------------------
         # Read and preprocess the drillsample and unit data.
         #--------------------------------------------------------------
         # Read drill sample data.
-        drillsample_data = dr.read_drillsample_data(drillsample_header, drillsample_filename, ignore_list, min_drillhole_litho_score)
+        drillsample_data = dr.read_drillsample_data(drillsample_header, drillsample_filename, ignore_list, par.min_drillhole_litho_score)
 
         # Remove the Cover.
-        drillsample_data.remove_cover(cover_lithos, cover_ratio_threshold)
+        drillsample_data.remove_cover(cover_lithos, par.cover_ratio_threshold)
 
-        if (group_drillhole_lithos):
+        if (par.group_drillhole_lithos):
             # Group the drillsample lithologies.
             drillsample_data.group_drillhole_litho_sequence(spar.max_num_unit_contacts_inside_litho)
 
@@ -173,7 +213,7 @@ def main(parfile_path):
         # Filter strat data.
         drillhole_lithos = drillsample_data.get_drillhole_lithos()
         strata_data.filter_strat_data_based_on_drillhole_lithos(drillhole_lithos)
-        strata_data.filter_strat_data_based_on_distance(number_nearest_units)
+        strata_data.filter_strat_data_based_on_distance(par.number_nearest_units)
 
         filtered_lithos = strata_data.get_unique_lithos()
         print("The number of filtered unit lithologies:", len(filtered_lithos))
@@ -183,7 +223,7 @@ def main(parfile_path):
         # Generating the stratigraphies.
         #--------------------------------------------------------------
         strat_solution = generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, map_graph, alternative_rock_names)
-        strat_solution.analyze_solution(correlation_power)
+        strat_solution.analyze_solution(par.correlation_power)
         strat_solution.collarID = collarID
 
         print("Total number of routes = ", len(strat_solution.routes))
@@ -197,7 +237,7 @@ def main(parfile_path):
         print_unique_routes(strat_solution, 10)
 
         # Draw stratigraphy logs.
-        draw_solution_logs(strat_solution, display_plots, 'strat', unit_colors_filename, True, None, [])
+        draw_solution_logs(strat_solution, display_plots, 'strat', par.unit_colors_filename, True, None, [])
 
         # Draw probability logs.
         #draw_solution_logs(strat_solution, display_plots, 'proba', '', True, None, [])
@@ -223,12 +263,28 @@ def main(parfile_path):
     if (len(strat_solutions) > 1):
         compare_solution_graphs(strat_solutions[0].graph, strat_solutions[1].graph)
 
-    correlate_solutions(strat_solutions, correlation_power)
+    correlate_solutions(strat_solutions, par.correlation_power)
 
     for solution in strat_solutions:
         plot_solution_correlation(solution)
 
-    draw_correlated_solution_logs(strat_solutions, display_plots, unit_colors_filename, map_graph)
+    draw_correlated_solution_logs(strat_solutions, display_plots, par.unit_colors_filename, map_graph)
+
+#=============================================================================
+def main(parfile_path):
+    print('Started litho2strat')
+
+    # Read input parameters.
+    par = read_input_parameters(parfile_path)
+
+    # Drillsample data csv file column names.
+    drillsample_header = dr.DrillSampleDataHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
+
+    # Strata data csv file column names.
+    strata_data_header = dr.StrataDataHeader('UNITNAME', 'lithos', 'distance', 'DESCRIPTN')
+
+    # Run the solver.
+    read_and_solve(par, drillsample_header, strata_data_header)
 
 #=============================================================================
 if __name__ == "__main__":
