@@ -50,9 +50,9 @@ class InputParameters:
     # Unit contact topology constraints (extracted from map data).
     add_topology_constraints: bool = True
     # 'Age alignment' constraints: the maximum number of times the age direction can flip.
-    max_num_age_flips: int = 0
+    max_num_age_flips: int = 2
     # 'Returning to the same unit' constraints.
-    max_num_returns_per_unit: int = 0
+    max_num_returns_per_unit: int = 1
     # The maximum number of unit contacts inside the same litholgy sequence.
     max_num_unit_contacts_inside_litho: int = 0
     # Use the single closest unit for the top (first) lithology.
@@ -62,20 +62,20 @@ class InputParameters:
     # Section 'Correlation'.
     #-------------------------------
     # Correlation score normalization power. Higher power leads to shorter strata sequence.
-    correlation_power: float = 0.
+    correlation_power: float = 1.0
 
     #-------------------------------
     # Section 'DataPreprocessing'.
     #-------------------------------
     # The number of nearest units (for distance constraints).
-    number_nearest_units: int = 0
+    number_nearest_units: int = 3
     # Minimum score for drillhole lithologies to use them.
-    min_drillhole_litho_score: int = 0
+    min_drillhole_litho_score: int = 80
     # Group drillhole lithology sequence.
     # Note: use this for max_num_unit_contacts_inside_litho > 0 to avoid the solution number to blow.
-    group_drillhole_lithos: bool = 0
+    group_drillhole_lithos: bool = False
     # The cover ration threshold (relative length) for removing the cover.
-    cover_ratio_threshold: float = 0.
+    cover_ratio_threshold: float = 0.65
 
     #-------------------------------
     # Section 'CollarIDs'.
@@ -113,24 +113,24 @@ def read_input_parameters(parfile_path):
     section = 'SolverParameters'
     print(config.items(section))
 
-    par.add_topology_constraints = config.getboolean(section, 'add_topology_constraints', fallback = True)
-    par.max_num_age_flips = config.getint(section, 'max_num_age_flips', fallback = 2)
-    par.max_num_returns_per_unit = config.getint(section, 'max_num_returns_per_unit', fallback = 1)
-    par.max_num_unit_contacts_inside_litho = config.getint(section, 'max_num_unit_contacts_inside_litho', fallback = 0)
-    par.single_top_unit = config.getboolean(section, 'single_top_unit', fallback = True)
+    par.add_topology_constraints = config.getboolean(section, 'add_topology_constraints', fallback = par.add_topology_constraints)
+    par.max_num_age_flips = config.getint(section, 'max_num_age_flips', fallback = par.max_num_age_flips)
+    par.max_num_returns_per_unit = config.getint(section, 'max_num_returns_per_unit', fallback = par.max_num_returns_per_unit)
+    par.max_num_unit_contacts_inside_litho = config.getint(section, 'max_num_unit_contacts_inside_litho', fallback = par.max_num_unit_contacts_inside_litho)
+    par.single_top_unit = config.getboolean(section, 'single_top_unit', fallback = par.single_top_unit)
 
     section = 'Correlation'
     print(config.items(section))
 
-    par.correlation_power = config.getfloat(section, 'correlation_power', fallback = 1.0)
+    par.correlation_power = config.getfloat(section, 'correlation_power', fallback = par.correlation_power)
 
     section = 'DataPreprocessing'
     print(config.items(section))
 
-    par.number_nearest_units = config.getint(section, 'number_nearest_units', fallback = 3)
-    par.min_drillhole_litho_score = config.getint(section, 'min_drillhole_litho_score', fallback = 80)
-    par.group_drillhole_lithos = config.getboolean(section, 'group_drillhole_lithos', fallback = False)
-    par.cover_ratio_threshold = config.getfloat(section, 'cover_ratio_threshold', fallback = 0.65)
+    par.number_nearest_units = config.getint(section, 'number_nearest_units', fallback = par.number_nearest_units)
+    par.min_drillhole_litho_score = config.getint(section, 'min_drillhole_litho_score', fallback = par.min_drillhole_litho_score)
+    par.group_drillhole_lithos = config.getboolean(section, 'group_drillhole_lithos', fallback = par.group_drillhole_lithos)
+    par.cover_ratio_threshold = config.getfloat(section, 'cover_ratio_threshold', fallback = par.cover_ratio_threshold)
 
     section = 'CollarIDs'
     print(config.items(section))
