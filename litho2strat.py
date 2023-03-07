@@ -23,8 +23,7 @@ from solution_analysis import *
 @dataclass
 class InputParameters:
     '''
-    Contains all input parameters.
-    Note: actual default values are set when reading parameters.
+    Contains all input parameters used in the Parfile.
     '''
     #-------------------------------
     # Section 'FilePaths'.
