@@ -79,6 +79,7 @@ class InputParameters:
     #-------------------------------
     # Section 'CollarIDs'.
     #-------------------------------
+    # List of collar IDs used.
     collarIDs: List[str] = field(default_factory=list)
 
     #-------------------------------
