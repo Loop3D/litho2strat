@@ -143,7 +143,7 @@ def read_input_parameters(parfile_path):
     return par
 
 #=============================================================================
-def read_and_solve(par, drillsample_header, strata_data_header):
+def solve(par, drillsample_header, strata_data_header):
     '''
     Read data from files and run the solver.
     '''
@@ -283,7 +283,7 @@ def main(parfile_path):
     strata_data_header = dr.StrataDataHeader('UNITNAME', 'lithos', 'distance', 'DESCRIPTN')
 
     # Run the solver.
-    read_and_solve(par, drillsample_header, strata_data_header)
+    solve(par, drillsample_header, strata_data_header)
 
 #=============================================================================
 if __name__ == "__main__":
