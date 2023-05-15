@@ -154,6 +154,7 @@ def read_drillsample_data(header, filename, ignore_list, min_litho_score):
     '''
     all_lithos = set()
     drillsample_data = DrillsampleData()
+    read_scores = (header.scores != '')
 
     with open(filename, 'r') as csvfile:
         reader = csv.DictReader(csvfile, delimiter=',')
@@ -165,7 +166,8 @@ def read_drillsample_data(header, filename, ignore_list, min_litho_score):
         test_column_exist(header.depth_from, fieldnames)
         test_column_exist(header.depth_to, fieldnames)
         test_column_exist(header.lithos, fieldnames)
-        test_column_exist(header.scores, fieldnames)
+        if read_scores:
+            test_column_exist(header.scores, fieldnames)
 
         # Extracting the data for every csv row.
         for row in reader:
@@ -179,7 +181,11 @@ def read_drillsample_data(header, filename, ignore_list, min_litho_score):
                 continue
 
             lithos = row[header.lithos].split(", ")
-            scores = [int(s) for s in row[header.scores].split(", ")]
+            if read_scores:
+                scores = [int(s) for s in row[header.scores].split(", ")]
+            else:
+                # Set all scores to maximum, when scores are not provided in the input data.
+                scores = [100] * len(lithos)
 
             # Sanity check.
             if (len(lithos) != len(scores)):
