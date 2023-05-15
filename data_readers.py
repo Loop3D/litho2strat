@@ -61,6 +61,9 @@ def read_strat_data(header, filename, alternative_rock_names):
     # Create the object with strata data.
     strata_data = StrataData()
 
+    # Flag for reading distance data.
+    read_distance = (header.distance != '')
+
     with open(filename, 'r') as csvfile:
         reader = csv.DictReader(csvfile, delimiter=',')
 
@@ -70,7 +73,8 @@ def read_strat_data(header, filename, alternative_rock_names):
         # Sanity check.
         test_column_exist(header.unitname, fieldnames)
         test_column_exist(header.lithos, fieldnames)
-        test_column_exist(header.distance, fieldnames)
+        if read_distance:
+            test_column_exist(header.distance, fieldnames)
         test_column_exist(header.description, fieldnames)
 
         # Extracting the data for every csv row.
@@ -78,7 +82,11 @@ def read_strat_data(header, filename, alternative_rock_names):
             # Extract the list of lithologies.
             lithos = str2list2(row[header.lithos])
             # Distance to the unit code.
-            distance = float(row[header.distance])
+            if read_distance:
+                distance = float(row[header.distance])
+            else:
+                # No distance data - set arbitrary value.
+                distance = 1000.
             # Unit name.
             unit_name = row[header.unitname]
 
