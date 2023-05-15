@@ -16,10 +16,12 @@ from drillsample_data import DrillSampleDataRow, DrillsampleData
 #==============================================================================
 def fix_litho_name(litho):
     '''
-    Convert the map lithology name to the 'CET lithology' name.
+    Fix lithology name.
     '''
     # Stripping the whitespaces.
     litho = litho.strip()
+    # Convert to lowercase.
+    litho = litho.lower()
 
     # Convert things like metagranite to granite.
     if (litho[0:4] == 'meta'):
@@ -200,11 +202,11 @@ def read_drillsample_data(header, filename, ignore_list, min_litho_score):
                 print("Error: number of lithos differs from the number of scores for:", row)
                 exit()
 
+            # Fixing the litho names.
+            lithos = [fix_litho_name(l) for l in lithos]
+
             # Filter the lithos and scores based on the ignore list and based on the minimum score.
             for index, litho in enumerate(lithos):
-                # Stripping the whitespaces.
-                litho = litho.strip()
-
                 if (litho not in ignore_list
                     and scores[index] >= min_litho_score):
                     # Adding lithology and its score.
