@@ -50,6 +50,14 @@ class StrataDataHeader:
     description: str
 
 #====================================================================================
+def align_unit_name(unit_name):
+    '''
+    Convert the unitname to align it with format used in the topology graph.
+    '''
+    unit_name = unit_name.replace(" ", "_").replace(",", "_").replace("-", "_").lower()
+    return unit_name
+
+#====================================================================================
 def read_strat_data(header, filename, alternative_rock_names):
     '''
     Building lithologies list for every unit from csv file data.
@@ -83,17 +91,18 @@ def read_strat_data(header, filename, alternative_rock_names):
         for row in reader:
             # Extract the list of lithologies.
             lithos = str2list2(row[header.lithos])
-            # Distance to the unit code.
+
+            # Distance to the unit.
             if read_distance:
                 distance = float(row[header.distance])
             else:
                 # No distance data - set arbitrary value.
                 distance = 1000.
+
             # Unit name.
             unit_name = row[header.unitname]
-
             # Convert the unitname to align it with format used in the topology graph.
-            unit_name = unit_name.replace(" ", "_").replace(",", "_").replace("-", "_").lower()
+            unit_name = align_unit_name(unit_name)
 
             #-----------------------------------------
             # Hard fixes for "coal".
@@ -268,8 +277,10 @@ def read_topology_data(topology_filename):
     # Modify the graph to have node names = unit names.
     for node in Gf.nodes():
         unit_name = Gf.nodes[node]['LabelGraphics']['text']
-        # Convert to lowercase.
-        unit_name = unit_name.lower()
+
+        # Convert the unitname to align the format.
+        unit_name = align_unit_name(unit_name)
+
         mapping = {node:unit_name}
         Gf = nx.relabel_nodes(Gf, mapping)
 
@@ -286,6 +297,7 @@ def read_ignore_list(filename):
         with open(filename) as f:
             items = f.read().splitlines()
 
+    items = [i.lower() for i in items]
     return items
 
 #=============================================================================
