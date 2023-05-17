@@ -246,7 +246,7 @@ def solve(par, drillsample_header, strata_data_header):
         #draw_solution_logs(strat_solution, display_plots, 'age', '', True, map_graph, [])
 
         # Plot unit probabilities.
-        #plot_unit_probabilities(strat_solution, display_plots)
+        plot_unit_probabilities(strat_solution, display_plots)
 
         # Draw the topology graph of all solution routes.
         draw_solution_graph(strat_solution)
@@ -277,11 +277,21 @@ def main(parfile_path):
     # Read input parameters.
     par = read_input_parameters(parfile_path)
 
-    # Drillsample data csv file column names.
-    drillsample_header = dr.DrillSampleDataHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
+    # TODO: Define headers in the Parfile parameters.
+    use_SA_data = True
 
-    # Strata data csv file column names.
-    strata_data_header = dr.StrataDataHeader('UNITNAME', 'lithos', 'distance', 'DESCRIPTN')
+    if use_SA_data:
+        # Drillsample data csv file column names.
+        drillsample_header = dr.DrillSampleDataHeader('DEPTH_FROM_M', 'DEPTH_TO_M', 'MAJOR_LITHOLOGY', '')
+
+        # Strata data csv file column names.
+        strata_data_header = dr.StrataDataHeader('strat', 'summary', '', 'description')
+    else:
+        # Drillsample data csv file column names.
+        drillsample_header = dr.DrillSampleDataHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
+
+        # Strata data csv file column names.
+        strata_data_header = dr.StrataDataHeader('UNITNAME', 'lithos', 'distance', 'DESCRIPTN')
 
     # Run the solver.
     solve(par, drillsample_header, strata_data_header)
