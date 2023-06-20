@@ -1,0 +1,33 @@
+[FilePaths]
+topology_filename = data/SA_test_data/newpairs_20_06_2023.gml
+cover_unit_filename = 
+ignore_list_filename = data/SA_test_data/ignore_list.txt
+alternative_rock_names_filename = data/SA_test_data/alternative_rock_names.txt
+unit_colors_filename = 
+
+drillsample_filename = data/SA_test_data/litho_tables/litho_$collarID$.csv
+dist_table_filename = data/SA_test_data/dh_asud_strat2.csv
+
+[SolverParameters]
+add_topology_constraints = True
+max_num_age_flips = 0
+max_num_returns_per_unit = 0
+max_num_unit_contacts_inside_litho = 0
+single_top_unit = False
+
+[Correlation]
+correlation_power = 1.0
+
+[DataPreprocessing]
+number_nearest_units = 10
+min_drillhole_litho_score = 80
+group_drillhole_lithos = False
+cover_ratio_threshold = 0.65
+
+[CollarIDs]
+# This one only has the strata answer starting from 300m - cannot validate the solution.
+#collarIDs = 205821
+#collarIDs = 205822
+#collarIDs = 265033
+# Has correct strata-order as the most probable solution (when not using strata jumps).
+collarIDs = 265020
