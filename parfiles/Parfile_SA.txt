@@ -29,7 +29,13 @@ cover_ratio_threshold = 0.65
 [CollarIDs]
 # This one only has the strata answer starting from 300m - cannot validate the solution.
 #collarIDs = 205821
+
+# TODO: Fix the diamictite & dolomite issues (missing in Whyalla Sandstone unit).
 #collarIDs = 205822
+
+# TODO: Fix the diamictite issue (missing in Whyalla Sandstone unit).
 #collarIDs = 265033
-# Has correct strata-order as the most probable solution (when not using strata jumps).
+
+# Has correct strata-order among the top 10 solutions (num_jumps=0).
+# Note: it has much better solution when we do not use siltstone as synonim for sandstone.
 collarIDs = 265020
