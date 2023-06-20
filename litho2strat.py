@@ -48,6 +48,8 @@ class InputParameters:
     #-------------------------------
     # Unit contact topology constraints (extracted from map data).
     add_topology_constraints: bool = True
+    # Jumps over units in topology graph to allow skipping units: i.e., one jump would allow contact A->C for the graph A->B->C.
+    max_num_strata_jumps: int = 0
     # 'Age alignment' constraints: the maximum number of times the age direction can flip.
     max_num_age_flips: int = 2
     # 'Returning to the same unit' constraints.
@@ -114,6 +116,7 @@ def read_input_parameters(parfile_path):
     print(config.items(section))
 
     par.add_topology_constraints = config.getboolean(section, 'add_topology_constraints', fallback = par.add_topology_constraints)
+    par.max_num_strata_jumps = config.getint(section, 'max_num_strata_jumps', fallback = par.max_num_strata_jumps)
     par.max_num_age_flips = config.getint(section, 'max_num_age_flips', fallback = par.max_num_age_flips)
     par.max_num_returns_per_unit = config.getint(section, 'max_num_returns_per_unit', fallback = par.max_num_returns_per_unit)
     par.max_num_unit_contacts_inside_litho = config.getint(section, 'max_num_unit_contacts_inside_litho', fallback = par.max_num_unit_contacts_inside_litho)

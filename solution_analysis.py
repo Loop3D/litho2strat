@@ -150,4 +150,4 @@ def draw_correlated_solution_logs(strat_solutions, display_plots, unit_colors_fi
         draw_solution_logs(solution, display_plots, 'strat', unit_colors_filename, False, None, route_indexes, route_scores)
 
         # Draw age alignment log (corresponding to strata sequences).
-        draw_solution_logs(solution, display_plots, 'age', '', False, map_graph, route_indexes, route_scores)
+        #draw_solution_logs(solution, display_plots, 'age', '', False, map_graph, route_indexes, route_scores)

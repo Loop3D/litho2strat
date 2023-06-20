@@ -9,10 +9,11 @@
 import numpy as np
 from dataclasses import dataclass, field
 from typing import List
+import networkx as nx
 
 from strata_solution import StrataSolution
 
-#========================================================================================================
+#==================================================================================================================
 @dataclass
 class StrataSolverParameters:
     '''
@@ -20,6 +21,8 @@ class StrataSolverParameters:
     '''
     # Unit contact topology constraints.
     add_topology_constraints: bool = False
+    # Jumps over units in topology graph to allow skipping units: i.e., one jump would allow contact A->C for the graph A->B->C.
+    max_num_strata_jumps: int = 0
     # 'Age alignment' constraints: the maximum number of times the age direction can flip.
     max_num_age_flips: int = 0
     # 'Returning to the same unit' constraints.
@@ -29,7 +32,7 @@ class StrataSolverParameters:
     # Use the single closest unit for the top (first) lithology.
     single_top_unit: bool = False
 
-#========================================================================================================
+#==================================================================================================================
 @dataclass
 class StrataTableElement:
     '''
@@ -38,7 +41,7 @@ class StrataTableElement:
     path_exists: bool = False
     lithos: List[str] = field(default_factory=list)
 
-#=======================================================================================
+#==================================================================================================================
 def generate_strata_table(drillsample_data, strata_data, single_top_unit):
     '''
     Generates the stratigraphic table, and unit names list.
@@ -124,7 +127,7 @@ def generate_strata_table(drillsample_data, strata_data, single_top_unit):
 
     return strata_table, missing_lithos
 
-#==============================================================================
+#==================================================================================================================
 '''
 A class for storing the stratigraphic route.
 '''
@@ -162,7 +165,7 @@ class StrataRoute:
         '''
         return tuple([v for i, v in enumerate(self.path) if i == 0 or v != self.path[i - 1]])
 
-#==============================================================================
+#==================================================================================================================
 def flatten(S):
     '''
     Flattens the multilevel list of lists.
@@ -174,7 +177,7 @@ def flatten(S):
         return flatten(S[0]) + flatten(S[1:])
     return S[:1] + flatten(S[1:])
 
-#==============================================================================
+#==================================================================================================================
 def apply_max_num_returns_constraint(route, strata_list, max_num_returns):
     '''
     Apply the "maximum number of returns to a unit" constraint:
@@ -186,20 +189,22 @@ def apply_max_num_returns_constraint(route, strata_list, max_num_returns):
         # Reached the maximum numer of local returns (to this unit).
             strata_list.remove(strat)
 
-#==============================================================================
-def apply_topology_constraints(graph, unit_names, strat0, strata_list):
+#==================================================================================================================
+def apply_topology_constraints(graph, unit_names, strat0, strata_list, max_num_jumps):
     '''
     Apply unit topology (connectivity) constraints:
         remove from the input unit list the units not connected to a given one (strat0).
     '''
     if (unit_names[strat0] in graph.nodes()):
         for strat in strata_list[:]:
-            # NOTE: We test both edges here instead of converting graph to undirected, as we need to keep the age info in the graph.
-            e = (unit_names[strat0], unit_names[strat])
-            e2 = (unit_names[strat], unit_names[strat0])
-            if (not graph.has_edge(*e) and not graph.has_edge(*e2)):
-                # Units are not connected. Skip this unit.
+            if (not nx.has_path(graph, unit_names[strat0], unit_names[strat])):
+                # Units are not connected (via any path). Skip this unit.
                 strata_list.remove(strat)
+            else:
+                path_length = len(nx.shortest_path(graph, unit_names[strat0], unit_names[strat]))
+                if (path_length - 2 > max_num_jumps):
+                    # The number of jumps to connect these units exceeded the limit. Skip this unit.
+                    strata_list.remove(strat)
 
 #==================================================================================================================
 def _same_lithos(lithos1, lithos2, alternative_rock_names):
@@ -335,7 +340,7 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, m
 
                 # Apply unit topology constraints.
                 if (spar.add_topology_constraints):
-                    apply_topology_constraints(map_graph, unit_names, strat0, strata_list)
+                    apply_topology_constraints(map_graph, unit_names, strat0, strata_list, spar.max_num_strata_jumps)
 
                 if (len(strata_list) != 0):
                     # Copy the route to create references to it below.
@@ -346,20 +351,21 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, m
                         # Making the new route.
                         new_route = StrataRoute(num_units)
 
-                        if (spar.add_topology_constraints):
-                            # Processing age flips.
-                            e = (unit_names[strat0], unit_names[strat])
-                            new_route.is_age_aligned = map_graph.has_edge(*e)
-                            if (route.num_contacts > 0):
-                                if (new_route.is_age_aligned != route.is_age_aligned):
-                                    new_route.num_age_flips = route.num_age_flips + 1
-                                else:
-                                    new_route.num_age_flips = route.num_age_flips
-    
-                            # Apply the age alignment constraints.
-                            if (new_route.num_age_flips > spar.max_num_age_flips):
-                                # Skip this route. 
-                                continue
+                        # Disabled age flips as it is incompatible with strata jumps (Can make a second graph with reversed age directions to allow this).
+                        # if (spar.add_topology_constraints):
+                        #     # Processing age flips.
+                        #     e = (unit_names[strat0], unit_names[strat])
+                        #     new_route.is_age_aligned = map_graph.has_edge(*e)
+                        #     if (route.num_contacts > 0):
+                        #         if (new_route.is_age_aligned != route.is_age_aligned):
+                        #             new_route.num_age_flips = route.num_age_flips + 1
+                        #         else:
+                        #             new_route.num_age_flips = route.num_age_flips
+                        #
+                        #     # Apply the age alignment constraints.
+                        #     if (new_route.num_age_flips > spar.max_num_age_flips):
+                        #         # Skip this route. 
+                        #         continue
 
                         # New path contains the reference to the old path, and the new route position.
                         # Note: we are not copying the full old path, but only store a reference to it to save memory.

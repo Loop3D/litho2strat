@@ -10,6 +10,8 @@ dist_table_filename = data/SA_test_data/dh_asud_strat2.csv
 
 [SolverParameters]
 add_topology_constraints = True
+max_num_strata_jumps = 0
+# Age flips currenly not supported.
 max_num_age_flips = 0
 max_num_returns_per_unit = 0
 max_num_unit_contacts_inside_litho = 0
