@@ -177,7 +177,7 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
         return
 
     # Determine the number of routes to display (cannot show too many routes due to pixel size limitations).
-    max_routes_displayed = 10
+    max_routes_displayed = 20
     if (num_routes > max_routes_displayed):
         num_routes_displayed = max_routes_displayed
     else:
@@ -259,7 +259,7 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
             else:
                 display_unit_name = False
             if (display_unit_name):
-                pl.text(x1, y1, strat_solution.unit_names[route.path[row]])
+                pl.text(x1, y1, strat_solution.unit_names[route.path[row]][0:12])
 
     # Define patches collection with colormap.
     patches_cmap = ListedColormap(color_list)
