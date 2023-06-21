@@ -302,7 +302,9 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, m
         strata_allowed = [strat for strat in range(num_units) if (strata_table[row, strat].path_exists)]
 
         same_lithos = False
-        if (_same_lithos(current_lithos, previous_lithos, alternative_rock_names)):
+        # Avoid using alternative names here as this led to missing a contact (when changing from Quartzite to Sandstone in SA collarID=265020).
+        #if (_same_lithos(current_lithos, previous_lithos, alternative_rock_names)):
+        if (set(current_lithos) == set(previous_lithos)):
             same_lithos = True
 
         # Iterate over all routes.
