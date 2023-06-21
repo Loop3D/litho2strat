@@ -41,9 +41,11 @@ def draw_solution_graph(strat_solution):
 
     nx.draw_networkx_edges(G, pos,
                            edgelist=edges.keys(),
-                           width = 10.0,
+                           width=10.0,
                            edge_color=list(edges.values()),
                            edge_cmap=pl.cm.Blues,
+                           edge_vmin=0.0,
+                           edge_vmax=1.0,
                            alpha=0.8,
                            arrowsize=20)
 
