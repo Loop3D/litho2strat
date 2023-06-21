@@ -120,11 +120,6 @@ def draw_correlated_solution_logs(strat_solutions, display_plots, unit_colors_fi
     '''
     Draw correlated solution logs.
     '''
-
-    # Draw the most correlated strata sequences.
-    for solution in strat_solutions:
-        draw_solution_logs(solution, display_plots, 'strat-seq', unit_colors_filename, False, None, [])
-
     # Draw full routes (corresponding to the most correlated strata sequences).
     for solution in strat_solutions:
         # Sorted indexes by score.
