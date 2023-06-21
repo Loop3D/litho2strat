@@ -289,7 +289,7 @@ def main(parfile_path):
         drillsample_header = dr.DrillSampleDataHeader('DEPTH_FROM_M', 'DEPTH_TO_M', 'MAJOR_LITHOLOGY', '')
 
         # Strata data csv file column names.
-        strata_data_header = dr.StrataDataHeader('strat', 'summary', '', 'description')
+        strata_data_header = dr.StrataDataHeader('strat', 'summary', 'distance', 'description')
     else:
         # Drillsample data csv file column names.
         drillsample_header = dr.DrillSampleDataHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
