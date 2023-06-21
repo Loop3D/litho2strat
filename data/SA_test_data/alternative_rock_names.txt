@@ -1,5 +1,5 @@
-diamictite, carbonate rock, limestone
-dolomite rock, dolomite
-# Added siltstone as they are neighbours in grain size range so easy for one person to call them one thing and another person another (silt vs sand).
-grit, sandstone, quartzite, siltstone222
+dolomite, dolomite rock, carbonate rock, limestone
+conglomerate, diamictite
+# Added siltstone as sandstone and siltstone are neighbours in grain size range so easy for one person to call them one thing and another person another (silt vs sand).
+grit, sandstone, quartzite, siltstone
 gabbro, gabbronorite
