@@ -204,7 +204,8 @@ def solve(par, drillsample_header, strata_data_header):
         drillsample_data = dr.read_drillsample_data(drillsample_header, drillsample_filename, ignore_list, par.min_drillhole_litho_score)
 
         # Remove the Cover.
-        drillsample_data.remove_cover(cover_lithos, par.cover_ratio_threshold)
+        if (len(cover_lithos) > 0):
+            drillsample_data.remove_cover(cover_lithos, par.cover_ratio_threshold)
 
         if (par.group_drillhole_lithos):
             # Group the drillsample lithologies.
