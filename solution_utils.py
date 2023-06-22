@@ -277,28 +277,29 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
     currentAxis.set_yticklabels(yticklabels)
 
     # Define labels and other things.
-    xlabel = 'Depth'
+    skip_zero_cover = False
+    add_colorbar = False
+    add_legend = False
     if (type == 'strat'):
-        ylabel = 'Stratigraphy'
+        xlabel = 'Depth'
+        ylabel = 'Score'
         file_prefix = "strata_logs_"
-        add_colorbar = False
         add_legend = True
+        skip_zero_cover = True
     elif (type == 'strat-seq'):
         xlabel = 'Strata sequence'
-        ylabel = 'Stratigraphy sequence'
+        ylabel = 'Score'
         file_prefix = "strata_seq_"
-        add_colorbar = False
         add_legend = True
     elif (type == 'proba'):
+        xlabel = 'Depth'
         ylabel = 'Probability'
         file_prefix = "proba_logs_"
         add_colorbar = True
-        add_legend = False
     elif (type == 'age'):
+        xlabel = 'Depth'
         ylabel = 'Age alignment'
         file_prefix = "age_logs_"
-        add_colorbar = False
-        add_legend = False
 
     pl.xlabel(xlabel)
     pl.ylabel(ylabel)
@@ -312,8 +313,14 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
     # Adding legend.
     #-----------------------------------------------------------------
     if (add_legend):
+        # Flag if the cover width is zero.
+        zero_cover = strat_solution.depth_data.depth_to[0] == 0.0
+
         legend_patches = []
         for unit_name, unit_color in unit_colors.items():
+            if (skip_zero_cover and zero_cover and unit_name == 'cover'):
+                # Skip the Cover unit when it has zero width.
+                continue
             patch = mpatches.Patch(color=unit_color, label=unit_name)
             legend_patches.append(patch)
 
