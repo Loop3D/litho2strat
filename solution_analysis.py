@@ -13,8 +13,9 @@ def build_solution_graph(solution):
     Builds the solution topology graph, with edges weighted by unit contact frequency (among all solution routes).
     '''
     G = nx.DiGraph()
-    #routes = solution.unique_routes
-    routes = solution.routes
+    # Use unique routes here, as using all routes favours inclusion of units when it should not (SA collarID=265020 with diamictite added to Angepena Formation).
+    routes = solution.unique_routes
+    #routes = solution.routes
 
     for route in routes:
         route_edges = set()
