@@ -8,6 +8,7 @@
 
 import numpy as np
 import matplotlib.pyplot as pl
+import matplotlib.patches as mpatches
 from matplotlib.patches import Rectangle
 from matplotlib.collections import PatchCollection
 from matplotlib.colors import ListedColormap
@@ -271,27 +272,33 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
     # Add rectangle collection to the figure.
     currentAxis.add_collection(patches_collection)
 
+    # Add y-ticks.
     currentAxis.set_yticks([k + 1 for k in range(num_routes_displayed)])
     currentAxis.set_yticklabels(yticklabels)
 
+    # Define labels and other things.
     xlabel = 'Depth'
     if (type == 'strat'):
         ylabel = 'Stratigraphy'
         file_prefix = "strata_logs_"
         add_colorbar = False
+        add_legend = True
     elif (type == 'strat-seq'):
         xlabel = 'Strata sequence'
         ylabel = 'Stratigraphy sequence'
         file_prefix = "strata_seq_"
         add_colorbar = False
+        add_legend = True
     elif (type == 'proba'):
         ylabel = 'Probability'
         file_prefix = "proba_logs_"
         add_colorbar = True
+        add_legend = False
     elif (type == 'age'):
         ylabel = 'Age alignment'
         file_prefix = "age_logs_"
         add_colorbar = False
+        add_legend = False
 
     pl.xlabel(xlabel)
     pl.ylabel(ylabel)
@@ -300,6 +307,24 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
         # Show the colorbar.
         cax, _ = cbar.make_axes(currentAxis) 
         cb2 = cbar.ColorbarBase(cax, cmap=cmap)
+
+    #-----------------------------------------------------------------
+    # Adding legend.
+    #-----------------------------------------------------------------
+    if (add_legend):
+        legend_patches = []
+        for unit_name, unit_color in unit_colors.items():
+            patch = mpatches.Patch(color=unit_color, label=unit_name)
+            legend_patches.append(patch)
+
+        # Shrink current axis's height by 10% on the bottom.
+        box = currentAxis.get_position()
+        currentAxis.set_position([box.x0, box.y0 + box.height * 0.1,
+                                  box.width, box.height * 0.9])
+
+        pl.legend(handles=legend_patches, loc='upper center', bbox_to_anchor=(0.5, -0.1),
+                  fancybox=True, shadow=False, ncol=4)
+    #-----------------------------------------------------------------
 
     # Save image.
     filename = output_folder + "/" + file_prefix + str(strat_solution.collarID) + ".png"
