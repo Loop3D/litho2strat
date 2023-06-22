@@ -85,6 +85,7 @@ class DrillsampleData:
         '''
         N = max_num_unit_contacts_inside_litho + 1
         current_litho = self.rows[0].lithos
+        current_scores = self.rows[0].scores
         from_depth = self.rows[0].depth_from
         to_depth = self.rows[0].depth_to
 
@@ -99,6 +100,9 @@ class DrillsampleData:
             prev_litho = current_litho
             current_litho = row.lithos
 
+            prev_scores = current_scores
+            current_scores = row.scores
+
             if (set(current_litho) != set(prev_litho) and index > 0):
             # Detected a change of lithology name.
                 if (num_same_lithos == 1):
@@ -110,6 +114,8 @@ class DrillsampleData:
                 total_thickness = to_depth - from_depth
                 local_thickness = total_thickness / float(N_adj)
                 litho = prev_litho
+                # Use the last scores.
+                scores = prev_scores
 
                 print("Grouping lithos for:", from_depth, to_depth, litho, num_same_lithos, N_adj)
 
@@ -122,6 +128,7 @@ class DrillsampleData:
                     row_grouped.depth_from = from_depth_local
                     row_grouped.depth_to = to_depth_local
                     row_grouped.lithos = litho
+                    row_grouped.scores = scores
 
                     data_grouped.append(row_grouped)
 
