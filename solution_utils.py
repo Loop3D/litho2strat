@@ -14,10 +14,30 @@ from matplotlib.collections import PatchCollection
 from matplotlib.colors import ListedColormap
 import matplotlib.colorbar as cbar
 import networkx as nx
+from dataclasses import dataclass
 import csv
 import os
 
 output_folder = "output"
+
+@dataclass
+class StrataLog:
+    collarID: int
+    routes: list
+    route_scores: list
+    unit_names: list
+    depth_data: object
+
+    def unit_nonempty(self, unit_name) -> bool:
+        '''
+        Returns if the unit exist in the routes.
+        '''
+        unit_names_nonempty = set()
+        for r in self.routes:
+            for p in r.path:
+                unit_names_nonempty.add(self.unit_names[p])
+
+        return unit_name in unit_names_nonempty
 
 #==============================================================================
 def draw_solution_graph(strat_solution):

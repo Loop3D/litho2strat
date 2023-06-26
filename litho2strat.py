@@ -197,11 +197,18 @@ def solve(par, drillsample_header, strata_data_header):
         drillsample_filename = par.drillsample_filename_collarID.replace("$collarID$", str(collarID))
         dist_table_filename = par.dist_table_filename_collarID.replace("$collarID$", str(collarID))
 
+        stratasample_header = dr.DrillSampleDataHeader('DEPTH_FROM_M', 'DEPTH_TO_M', 'STRAT_UNIT_NAME', '')
+        stratasample_filename = 'data/SA_test_data/strat_tables/strat_265020.csv'
+
         #--------------------------------------------------------------
         # Read and preprocess the drillsample and unit data.
         #--------------------------------------------------------------
         # Read drill sample data.
         drillsample_data = dr.read_drillsample_data(drillsample_header, drillsample_filename, ignore_list, par.min_drillhole_litho_score)
+
+        # Read the drillhole stratigraphy data.
+        strata_sample_log = read_strata_sample_data(stratasample_header, stratasample_filename)
+        strata_sample_log.collarID = collarID
 
         # Remove the Cover.
         if (len(cover_lithos) > 0):
@@ -240,6 +247,9 @@ def solve(par, drillsample_header, strata_data_header):
         # Print all unique routes (i.e., unique strata sequence).
         print_unique_routes(strat_solution, 10)
 
+        # Draw strata sample log (known strata solution).
+        draw_solution_logs(strata_sample_log, display_plots, 'strat', par.unit_colors_filename, True, None, [0])
+
         # Draw stratigraphy logs.
         draw_solution_logs(strat_solution, display_plots, 'strat', par.unit_colors_filename, True, None, [])
 
@@ -277,6 +287,36 @@ def solve(par, drillsample_header, strata_data_header):
         draw_solution_logs(solution, display_plots, 'strat-seq', par.unit_colors_filename, False, None, [])
 
     #draw_correlated_solution_logs(strat_solutions, display_plots, par.unit_colors_filename, map_graph)
+
+#=========================================================================================================
+def read_strata_sample_data(drillsample_header, drillsample_filename):
+    '''
+    Reads the drillhole stratigraphy sample data.
+    '''
+
+    drillsample_data = dr.read_drillsample_data(drillsample_header, drillsample_filename, [], 0)
+    depth_data = drillsample_data.get_depth_data()
+
+    # Create route object.
+    class Object(object):
+        pass
+    route = Object()
+    route.path = []
+
+    unit_names = []
+
+    for row in drillsample_data.rows:
+        unit_name = dr.align_unit_name(row.lithos[0])
+        if unit_name not in unit_names:
+            unit_names.append(unit_name)
+        route.path.append(unit_names.index(unit_name))
+
+    routes = [route]
+    route_scores = [1.]
+
+    strata_log = StrataLog(0, routes, route_scores, unit_names, depth_data)
+
+    return strata_log
 
 #=============================================================================
 def main(parfile_path):
