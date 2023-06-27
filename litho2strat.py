@@ -24,8 +24,12 @@ def solve(par):
     '''
     # Create csv headers.
     drillsample_header = dr.DrillSampleDataHeader(*par.drillsample_header)
-    stratasample_header = dr.DrillSampleDataHeader(*par.stratasample_header)
     strata_data_header = dr.StrataDataHeader(*par.strata_data_header)
+
+    stratasample_present = par.stratasample_filename != ''
+
+    if (stratasample_present):
+        stratasample_header = dr.DrillSampleDataHeader(*par.stratasample_header)
 
     # Solver parameters.
     spar = StrataSolverParameters()
@@ -81,9 +85,10 @@ def solve(par):
         # Read drill sample data.
         drillsample_data = dr.read_drillsample_data(drillsample_header, drillsample_filename, ignore_list, par.min_drillhole_litho_score)
 
-        # Read the drillhole stratigraphy data.
-        strata_sample_log = dr.read_strata_sample_data(stratasample_header, stratasample_filename)
-        strata_sample_log.collarID = collarID
+        if (stratasample_present):
+            # Read the drillhole stratigraphy data.
+            strata_sample_log = dr.read_strata_sample_data(stratasample_header, stratasample_filename)
+            strata_sample_log.collarID = collarID
 
         # Remove the Cover.
         if (len(cover_lithos) > 0):
@@ -122,8 +127,9 @@ def solve(par):
         # Print all unique routes (i.e., unique strata sequence).
         print_unique_routes(strat_solution, 10)
 
-        # Draw strata sample log (known strata solution).
-        draw_solution_logs(strata_sample_log, display_plots, 'strat', par.unit_colors_filename, True, None, [0])
+        if (stratasample_present):
+            # Draw strata sample log (known strata solution).
+            draw_solution_logs(strata_sample_log, display_plots, 'strat', par.unit_colors_filename, True, None, [0])
 
         # Draw stratigraphy logs.
         draw_solution_logs(strat_solution, display_plots, 'strat', par.unit_colors_filename, True, None, [])
@@ -169,22 +175,6 @@ def main(parfile_path):
 
     # Read input parameters.
     par = read_input_parameters(parfile_path)
-
-    # TODO: Define headers in the Parfile parameters.
-    use_SA_data = True
-
-    if use_SA_data:
-        # Drillsample data csv file column names.
-        drillsample_header = dr.DrillSampleDataHeader('DEPTH_FROM_M', 'DEPTH_TO_M', 'MAJOR_LITHOLOGY', '')
-
-        # Strata data csv file column names.
-        strata_data_header = dr.StrataDataHeader('strat', 'summary', 'distance', 'description')
-    else:
-        # Drillsample data csv file column names.
-        drillsample_header = dr.DrillSampleDataHeader('Fromdepth', 'Todepth', 'Lithologies', 'Scores')
-
-        # Strata data csv file column names.
-        strata_data_header = dr.StrataDataHeader('UNITNAME', 'lithos', 'distance', 'DESCRIPTN')
 
     # Run the solver.
     solve(par)
