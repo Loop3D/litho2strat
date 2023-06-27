@@ -3,7 +3,7 @@ topology_filename = data/SA_test_data/newpairs_20_06_2023.gml
 cover_unit_filename = 
 ignore_list_filename = data/SA_test_data/ignore_list.txt
 alternative_rock_names_filename = data/SA_test_data/alternative_rock_names.txt
-unit_colors_filename = 
+unit_colors_filename = data/SA_test_data/unit_colors.csv
 
 drillsample_filename = data/SA_test_data/litho_tables/litho_$collarID$.csv
 stratasample_filename = data/SA_test_data/strat_tables/strat_$collarID$.csv
