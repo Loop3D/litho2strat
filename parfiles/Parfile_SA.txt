@@ -6,6 +6,7 @@ alternative_rock_names_filename = data/SA_test_data/alternative_rock_names.txt
 unit_colors_filename = 
 
 drillsample_filename = data/SA_test_data/litho_tables/litho_$collarID$.csv
+stratasample_filename = data/SA_test_data/strat_tables/strat_$collarID$.csv
 dist_table_filename = data/SA_test_data/dh_asud_strat2.csv
 
 [SolverParameters]

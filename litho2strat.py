@@ -39,9 +39,11 @@ class InputParameters:
     # Unit colours for drawing stratigraphy logs.
     unit_colors_filename: str = ""
     # Drillhole lithology data file. The $collarID$ in the file name will be replaced with the actual value.
-    drillsample_filename_collarID: str = ""
+    drillsample_filename: str = ""
+    # Drillhole stratigraphy data file. The $collarID$ in the file name will be replaced with the actual value.
+    stratasample_filename: str = ""
     # Units near the collar with distances data file. The $collarID$ in the file name will be replaced with the actual value.
-    dist_table_filename_collarID: str = ""
+    dist_table_filename: str = ""
 
     #-------------------------------
     # Section 'SolverParameters'.
@@ -109,8 +111,9 @@ def read_input_parameters(parfile_path):
     par.ignore_list_filename = config.get(section, 'ignore_list_filename', fallback = '')
     par.alternative_rock_names_filename = config.get(section, 'alternative_rock_names_filename', fallback = '')
     par.unit_colors_filename = config.get(section, 'unit_colors_filename', fallback = '')
-    par.drillsample_filename_collarID = config.get(section, 'drillsample_filename')
-    par.dist_table_filename_collarID = config.get(section, 'dist_table_filename')
+    par.drillsample_filename = config.get(section, 'drillsample_filename')
+    par.stratasample_filename = config.get(section, 'stratasample_filename', fallback = '')
+    par.dist_table_filename = config.get(section, 'dist_table_filename')
 
     section = 'SolverParameters'
     print(config.items(section))
@@ -194,11 +197,11 @@ def solve(par, drillsample_header, strata_data_header):
         print('collarID =', collarID)
         print('--------------------------------')
 
-        drillsample_filename = par.drillsample_filename_collarID.replace("$collarID$", str(collarID))
-        dist_table_filename = par.dist_table_filename_collarID.replace("$collarID$", str(collarID))
+        drillsample_filename = par.drillsample_filename.replace("$collarID$", str(collarID))
+        stratasample_filename = par.stratasample_filename.replace("$collarID$", str(collarID))
+        dist_table_filename = par.dist_table_filename.replace("$collarID$", str(collarID))
 
         stratasample_header = dr.DrillSampleDataHeader('DEPTH_FROM_M', 'DEPTH_TO_M', 'STRAT_UNIT_NAME', '')
-        stratasample_filename = 'data/SA_test_data/strat_tables/strat_265020.csv'
 
         #--------------------------------------------------------------
         # Read and preprocess the drillsample and unit data.
@@ -289,13 +292,13 @@ def solve(par, drillsample_header, strata_data_header):
     #draw_correlated_solution_logs(strat_solutions, display_plots, par.unit_colors_filename, map_graph)
 
 #=========================================================================================================
-def read_strata_sample_data(drillsample_header, drillsample_filename):
+def read_strata_sample_data(stratasample_header, stratasample_filename):
     '''
     Reads the drillhole stratigraphy sample data.
     '''
 
-    drillsample_data = dr.read_drillsample_data(drillsample_header, drillsample_filename, [], 0)
-    depth_data = drillsample_data.get_depth_data()
+    stratasample_data = dr.read_drillsample_data(stratasample_header, stratasample_filename, [], 0)
+    depth_data = stratasample_data.get_depth_data()
 
     # Create route object.
     class Object(object):
@@ -305,7 +308,7 @@ def read_strata_sample_data(drillsample_header, drillsample_filename):
 
     unit_names = []
 
-    for row in drillsample_data.rows:
+    for row in stratasample_data.rows:
         unit_name = dr.align_unit_name(row.lithos[0])
         if unit_name not in unit_names:
             unit_names.append(unit_name)
