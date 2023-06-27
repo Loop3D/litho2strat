@@ -8,6 +8,10 @@ unit_colors_filename = data/real/500kibg_colours.csv
 drillsample_filename = data/real/dist_files/litho_tables_V3/litho_$collarID$.csv
 dist_table_filename = data/real/dist_files/dist_tables/100_500k_map_near_$collarID$.csv
 
+[DataHeaders]
+drillsample_header = Fromdepth, Todepth, Lithologies, Scores
+strata_data_header = UNITNAME, lithos, distance, DESCRIPTN
+
 [SolverParameters]
 add_topology_constraints = True
 max_num_age_flips = 2
