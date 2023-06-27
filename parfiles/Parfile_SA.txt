@@ -9,6 +9,11 @@ drillsample_filename = data/SA_test_data/litho_tables/litho_$collarID$.csv
 stratasample_filename = data/SA_test_data/strat_tables/strat_$collarID$.csv
 dist_table_filename = data/SA_test_data/dh_asud_strat2.csv
 
+[DataHeaders]
+drillsample_header = DEPTH_FROM_M, DEPTH_TO_M, MAJOR_LITHOLOGY,
+stratasample_header = DEPTH_FROM_M, DEPTH_TO_M, STRAT_UNIT_NAME,
+strata_data_header = strat, summary, distance, description
+
 [SolverParameters]
 add_topology_constraints = True
 max_num_strata_jumps = 0

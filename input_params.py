@@ -35,6 +35,16 @@ class InputParameters:
     dist_table_filename: str = ""
 
     #-------------------------------
+    # Section 'DataHeaders'.
+    #-------------------------------
+    # Drillsample lithology data csv file column names.
+    drillsample_header: str = ""
+    # Drillsample stratigraphy data csv file column names.
+    stratasample_header: str = ""
+    # Unit composition and distance data csv file column names.
+    strata_data_header: str = ""
+
+    #-------------------------------
     # Section 'SolverParameters'.
     #-------------------------------
     # Unit contact topology constraints (extracted from map data).
@@ -103,6 +113,17 @@ def read_input_parameters(parfile_path):
     par.drillsample_filename = config.get(section, 'drillsample_filename')
     par.stratasample_filename = config.get(section, 'stratasample_filename', fallback = '')
     par.dist_table_filename = config.get(section, 'dist_table_filename')
+
+    section = 'DataHeaders'
+    print(config.items(section))
+
+    drillsample_header = config.get(section, 'drillsample_header')
+    stratasample_header = config.get(section, 'stratasample_header', fallback = '')
+    strata_data_header = config.get(section, 'strata_data_header')
+
+    par.drillsample_header = drillsample_header.replace(" ","").split(",")
+    par.stratasample_header = stratasample_header.replace(" ","").split(",")
+    par.strata_data_header = strata_data_header.replace(" ","").split(",")
 
     section = 'SolverParameters'
     print(config.items(section))

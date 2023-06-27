@@ -18,10 +18,16 @@ from solution_analysis import *
 from input_params import *
 
 #=============================================================================
-def solve(par, drillsample_header, strata_data_header):
+def solve(par):
     '''
     Read data from files and run the solver.
     '''
+    # Create csv headers.
+    drillsample_header = dr.DrillSampleDataHeader(*par.drillsample_header)
+    stratasample_header = dr.DrillSampleDataHeader(*par.stratasample_header)
+    strata_data_header = dr.StrataDataHeader(*par.strata_data_header)
+
+    # Solver parameters.
     spar = StrataSolverParameters()
 
     # Copy solver parameters.
@@ -68,8 +74,6 @@ def solve(par, drillsample_header, strata_data_header):
         drillsample_filename = par.drillsample_filename.replace("$collarID$", str(collarID))
         stratasample_filename = par.stratasample_filename.replace("$collarID$", str(collarID))
         dist_table_filename = par.dist_table_filename.replace("$collarID$", str(collarID))
-
-        stratasample_header = dr.DrillSampleDataHeader('DEPTH_FROM_M', 'DEPTH_TO_M', 'STRAT_UNIT_NAME', '')
 
         #--------------------------------------------------------------
         # Read and preprocess the drillsample and unit data.
@@ -183,7 +187,7 @@ def main(parfile_path):
         strata_data_header = dr.StrataDataHeader('UNITNAME', 'lithos', 'distance', 'DESCRIPTN')
 
     # Run the solver.
-    solve(par, drillsample_header, strata_data_header)
+    solve(par)
 
 #=============================================================================
 if __name__ == "__main__":
