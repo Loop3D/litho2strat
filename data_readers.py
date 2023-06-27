@@ -14,6 +14,48 @@ from strata_data import StrataData
 from drillsample_data import DrillSampleDataRow, DrillsampleData
 
 #==============================================================================
+@dataclass
+class StrataDataHeader:
+    '''
+    Contains the names of strata data header columns in a csv file.
+    '''
+    unitname: str
+    lithos: str
+    distance: str
+    description: str
+
+#==============================================================================
+@dataclass
+class DrillSampleDataHeader:
+    '''
+    Contains the names of drillsample header data columns in a csv file.
+    '''
+    depth_from: str
+    depth_to: str
+    lithos: str
+    scores: str
+
+#==============================================================================
+@dataclass
+class StrataLog:
+    collarID: int
+    routes: list
+    route_scores: list
+    unit_names: list
+    depth_data: object
+
+    def unit_nonempty(self, unit_name) -> bool:
+        '''
+        Returns if the unit exist in the routes.
+        '''
+        unit_names_nonempty = set()
+        for r in self.routes:
+            for p in r.path:
+                unit_names_nonempty.add(self.unit_names[p])
+
+        return unit_name in unit_names_nonempty
+
+#==============================================================================
 def fix_litho_name(litho):
     '''
     Fix lithology name.
@@ -37,17 +79,6 @@ def test_column_exist(column_name, fieldnames):
     if (column_name not in fieldnames):
         print("Error: The column name is not found in the csv file:", column_name)
         exit()
-
-#========================================================================================================
-@dataclass
-class StrataDataHeader:
-    '''
-    Contains the names of strata data header columns in a csv file.
-    '''
-    unitname: str
-    lithos: str
-    distance: str
-    description: str
 
 #====================================================================================
 def align_unit_name(unit_name):
@@ -156,20 +187,9 @@ def read_strat_data(header, filename, alternative_rock_names):
     return strata_data
 
 #========================================================================================================
-@dataclass
-class DrillSampleDataHeader:
-    '''
-    Contains the names of drillsample header data columns in a csv file.
-    '''
-    depth_from: str
-    depth_to: str
-    lithos: str
-    scores: str
-
-#========================================================================================================
 def read_drillsample_data(header, filename, ignore_list, min_litho_score):
     '''
-    Reading drill sample data from csv file.
+    Reading drillhole lithology sample data (from csv file).
     '''
     all_lithos = set()
     drillsample_data = DrillsampleData()
@@ -233,6 +253,35 @@ def read_drillsample_data(header, filename, ignore_list, min_litho_score):
     print(sorted(all_lithos))
 
     return drillsample_data
+
+#========================================================================================================
+def read_strata_sample_data(stratasample_header, stratasample_filename):
+    '''
+    Reads the drillhole stratigraphy sample data (from csv file).
+    '''
+    stratasample_data = read_drillsample_data(stratasample_header, stratasample_filename, [], 0)
+    depth_data = stratasample_data.get_depth_data()
+
+    # Create route object.
+    class Object(object):
+        pass
+    route = Object()
+    route.path = []
+
+    unit_names = []
+
+    for row in stratasample_data.rows:
+        unit_name = align_unit_name(row.lithos[0])
+        if unit_name not in unit_names:
+            unit_names.append(unit_name)
+        route.path.append(unit_names.index(unit_name))
+
+    routes = [route]
+    route_scores = [1.]
+
+    strata_log = StrataLog(0, routes, route_scores, unit_names, depth_data)
+
+    return strata_log
 
 #==============================================================================
 @dataclass

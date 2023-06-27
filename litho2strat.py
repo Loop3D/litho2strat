@@ -78,7 +78,7 @@ def solve(par, drillsample_header, strata_data_header):
         drillsample_data = dr.read_drillsample_data(drillsample_header, drillsample_filename, ignore_list, par.min_drillhole_litho_score)
 
         # Read the drillhole stratigraphy data.
-        strata_sample_log = read_strata_sample_data(stratasample_header, stratasample_filename)
+        strata_sample_log = dr.read_strata_sample_data(stratasample_header, stratasample_filename)
         strata_sample_log.collarID = collarID
 
         # Remove the Cover.
@@ -160,36 +160,6 @@ def solve(par, drillsample_header, strata_data_header):
     #draw_correlated_solution_logs(strat_solutions, display_plots, par.unit_colors_filename, map_graph)
 
 #=========================================================================================================
-def read_strata_sample_data(stratasample_header, stratasample_filename):
-    '''
-    Reads the drillhole stratigraphy sample data.
-    '''
-
-    stratasample_data = dr.read_drillsample_data(stratasample_header, stratasample_filename, [], 0)
-    depth_data = stratasample_data.get_depth_data()
-
-    # Create route object.
-    class Object(object):
-        pass
-    route = Object()
-    route.path = []
-
-    unit_names = []
-
-    for row in stratasample_data.rows:
-        unit_name = dr.align_unit_name(row.lithos[0])
-        if unit_name not in unit_names:
-            unit_names.append(unit_name)
-        route.path.append(unit_names.index(unit_name))
-
-    routes = [route]
-    route_scores = [1.]
-
-    strata_log = StrataLog(0, routes, route_scores, unit_names, depth_data)
-
-    return strata_log
-
-#=============================================================================
 def main(parfile_path):
     print('Started litho2strat')
 
