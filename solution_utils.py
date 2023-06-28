@@ -154,7 +154,7 @@ def _get_rectangular_color(type, unit_colors, strat_solution, route, row, graph,
 
 #==============================================================================
 def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
-                       sample_scores_uniformly, graph, custom_route_indexes, custom_route_scores = []):
+                       sample_scores_uniformly, graph, custom_route_indexes, custom_route_scores=[], title=''):
     '''
     Drawing solution logs.
     '''
@@ -290,31 +290,34 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
     add_colorbar = False
     add_legend = False
     if (type == 'strat'):
-        title = "Most probable stratigraphies for collarID=" + str(strat_solution.collarID)
+        default_title = "Most probable stratigraphies for collarID=" + str(strat_solution.collarID)
         xlabel = 'Depth'
         ylabel = 'Score'
         file_prefix = "strata_logs_"
         add_legend = True
         skip_zero_cover = True
     elif (type == 'strat-seq'):
-        title = "Most probable strata sequences for collarID=" + str(strat_solution.collarID)
+        default_title = "Most probable strata sequences for collarID=" + str(strat_solution.collarID)
         xlabel = 'Unit number'
         ylabel = 'Score'
         file_prefix = "strata_seq_"
         add_legend = True
     elif (type == 'proba'):
-        title = "Unit probability for collarID=" + str(strat_solution.collarID)
+        default_title = "Unit probability for collarID=" + str(strat_solution.collarID)
         xlabel = 'Depth'
         ylabel = 'Score'
         file_prefix = "proba_logs_"
         add_colorbar = True
     elif (type == 'age'):
-        title = "Age alignment for collarID=" + str(strat_solution.collarID)
+        default_title = "Age alignment for collarID=" + str(strat_solution.collarID)
         xlabel = 'Depth'
         ylabel = 'Score'
         file_prefix = "age_logs_"
 
-    currentAxis.set_title(title)
+    if (title != ''):
+        currentAxis.set_title(title)
+    else:
+        currentAxis.set_title(default_title)
 
     pl.xlabel(xlabel)
     pl.ylabel(ylabel)
