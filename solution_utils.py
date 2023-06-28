@@ -71,7 +71,7 @@ def _get_unit_colors(strat_solution, unit_colors_filename):
     '''
     unit_colors = dict()
     if (unit_colors_filename != ""):
-        # Define colors using the colormap from a file.
+    # Use custom colors from a file.
         with open(unit_colors_filename, 'r') as csvfile:
             reader = csv.DictReader(csvfile, delimiter=',')
             # Extracting the data for every csv row.
@@ -79,10 +79,11 @@ def _get_unit_colors(strat_solution, unit_colors_filename):
                 unit_name = row['UNITNAME']
                 # Convert the unitname to align it with format used in the topology graph.
                 unit_name = unit_name.replace(" ", "_").replace(",", "_").replace("-", "_").lower()
-                # Add colour to dictionary.
-                unit_colors[unit_name] = row['colour']
+                if strat_solution.unit_nonempty(unit_name):
+                    # Add colour to dictionary.
+                    unit_colors[unit_name] = row['colour']
     else:
-        # Qualitative palette.
+    # Use qualitative palette.
         colors = [pl.cm.tab20(i) for i in range(20)]
 
         # Define qualitative color map for nonempty units.
@@ -92,7 +93,6 @@ def _get_unit_colors(strat_solution, unit_colors_filename):
                 unit_colors[unit_name] = colors[color_index]
                 color_index += 1
 
-        print("Num nonempty units:", color_index)
         if (color_index > 20):
             print("Too many units! Adjust the color map.")
             exit(0)

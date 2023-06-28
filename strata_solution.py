@@ -86,9 +86,12 @@ class StrataSolution:
         '''
         Checks if the unit has nonzero probability.
         '''
-        unit_index = self.unit_names.index(unit_name)
-        if (sum(self.strat_distr[:, unit_index]) != 0):
-            return True
+        if (unit_name in self.unit_names):
+            unit_index = self.unit_names.index(unit_name)
+            if (sum(self.strat_distr[:, unit_index]) != 0):
+                return True
+            else:
+                return False
         else:
             return False
 
