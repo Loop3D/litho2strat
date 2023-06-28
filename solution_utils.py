@@ -189,7 +189,11 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
 
     print("Drawing solution logs, type =", type)
 
-    pl.rcParams["figure.figsize"] = (12.8, 9.6) # Default size = (6.4, 4.8)
+    if (num_routes_displayed == 1):
+        fig_height = 4.8
+    else:
+        fig_height = 9.6
+    pl.rcParams["figure.figsize"] = (12.8, fig_height) # Default size = (6.4, 4.8)
 
     # Gradient palette.
     cmap = pl.get_cmap('viridis')
@@ -212,6 +216,11 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
     pl.ylim(0.5, y_max)
 
     currentAxis = pl.gca()
+
+    if (num_routes_displayed == 1):
+    # Adjust figure aspect ratio for a single route.
+        aspect = np.diff(currentAxis.get_xlim()) / np.diff(currentAxis.get_ylim())
+        pl.gca().set_aspect(aspect / 20.)
 
     patches = []
     color_list = []
@@ -335,7 +344,11 @@ def draw_solution_logs(strat_solution, display_plot, type, unit_colors_filename,
         currentAxis.set_position([box.x0, box.y0 + box.height * 0.1,
                                   box.width, box.height * 0.9])
 
-        pl.legend(handles=legend_patches, loc='upper center', bbox_to_anchor=(0.5, -0.1),
+        if (num_routes_displayed == 1):
+            by = -1.0
+        else:
+            by = -0.1
+        pl.legend(handles=legend_patches, loc='upper center', bbox_to_anchor=(0.5, by),
                   fancybox=True, shadow=False, ncol=4)
     #-----------------------------------------------------------------
 
