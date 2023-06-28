@@ -228,6 +228,16 @@ def _same_lithos(lithos1, lithos2, alternative_rock_names):
     return (group1 == group2)
 
 #==================================================================================================================
+def print_info(row, drillsample_data, num_routes):
+    '''
+    Print progress info.
+    '''
+    if (num_routes >= 0):
+        print(row, drillsample_data.rows[row].depth_from, drillsample_data.rows[row].depth_to, drillsample_data.rows[row].lithos, num_routes)
+    else:
+        print(row, drillsample_data.rows[row].depth_from, drillsample_data.rows[row].depth_to, drillsample_data.rows[row].lithos, end = "\r")
+
+#==================================================================================================================
 def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, map_graph, alternative_rock_names):
     '''
     Generating stratigraphic routes.
@@ -281,13 +291,12 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, m
     print("row_max = ", row_max)
 
     # Print the starting info.
-    row = 0
-    print("Processed row =", row, drillsample_data.rows[row].depth_from, drillsample_data.rows[row].lithos, len(all_routes))
+    print_info(0, drillsample_data, len(all_routes))
 
     # Going through the strata table and generating the routes.
     for row in range(1, row_max):
         # Print the info.
-        print("Processing row =", row, drillsample_data.rows[row].depth_from, drillsample_data.rows[row].lithos, end = "\r")
+        print_info(row, drillsample_data, -1)
 
         # The drillhole lithos.
         # Note: we deliberately consider the full list of drillsample lithos instead of lithos on the route.
@@ -423,7 +432,7 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, m
         all_routes_number.append(num_routes)
 
         # Print the info.
-        print("Processed row =", row, drillsample_data.rows[row].depth_from, drillsample_data.rows[row].lithos, num_routes)
+        print_info(row, drillsample_data, num_routes)
 
         if (num_routes == 0):
             break
