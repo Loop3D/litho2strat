@@ -50,7 +50,7 @@ cover_ratio_threshold = 0.65
 #collarIDs = 265003
 
 # Has 5 unique routes, and the most probable strata sequence is the correct one!
-#collarIDs = 265010
+collarIDs = 265010
 
-# Has 6 unique routes, and none is correct!
-collarIDs = 265018
+# Has 6 unique routes, and none is correct! Needs "conglomerate" in Tregolana to obtain correct solution, but no external evidence of conglomerate in Tregolana.
+#collarIDs = 265018
