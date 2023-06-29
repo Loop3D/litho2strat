@@ -168,7 +168,7 @@ def solve(par):
     for solution in strat_solutions:
         draw_solution_logs(solution, display_plots, 'strat-seq', par.unit_colors_filename, False, None, [])
 
-    #draw_correlated_solution_logs(strat_solutions, display_plots, par.unit_colors_filename, map_graph)
+    draw_correlated_solution_logs(strat_solutions, display_plots, par.unit_colors_filename, map_graph)
 
 #=========================================================================================================
 def main(parfile_path):

@@ -123,24 +123,16 @@ def draw_correlated_solution_logs(strat_solutions, display_plots, unit_colors_fi
     '''
     # Draw full routes (corresponding to the most correlated strata sequences).
     for solution in strat_solutions:
-        # Sorted indexes by score.
+        # Sorted indexes by the unique score.
         unique_route_indexes = np.argsort(-solution.unique_route_scores)
+
         # Retrieve corresponding full route indexes.
         route_indexes = []
         route_scores = []
         for unique_route_index in unique_route_indexes:
-            # Select a corresponding full route.
-            #route_index = solution.unique_routes[unique_route_index].route_indexes[0]
-
-            # Choose the full route with the highest own route score.
-            best_score = -1.
-            for index in solution.unique_routes[unique_route_index].route_indexes:
-                route_score = solution.route_scores[index]
-                if (route_score > best_score):
-                    route_index = index
-
-            route_indexes.append(route_index)
-            route_scores.append(solution.unique_route_scores[unique_route_index])
+            for route_index in solution.unique_routes[unique_route_index].route_indexes:
+                route_indexes.append(route_index)
+                route_scores.append(solution.unique_route_scores[unique_route_index])
 
         # Draw full routes (corresponding to strata sequences).
         draw_solution_logs(solution, display_plots, 'strat', unit_colors_filename, False, None, route_indexes, route_scores)
