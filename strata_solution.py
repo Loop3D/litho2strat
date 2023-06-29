@@ -57,12 +57,12 @@ class StrataSolution:
         self.graph = None
 
         # The route scores based on its own solution graph.
-        self.graph_route_scores = []
+        self.graph_route_scores = None
 
         # Scores calculated using graphs from other drillholes.
         self.external_graph_route_scores_list = []
 
-        self.unique_route_scores = []
+        self.unique_route_scores = None
 
     #=====================================================================
     def add_cover_unit(self):

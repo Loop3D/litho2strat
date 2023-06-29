@@ -113,9 +113,11 @@ def correlate_solutions(strat_solutions, correlation_power):
 
     # Calculate a correlated route score (as the sum of graph scores ovel all drillholes).
     for solution in strat_solutions:
-        solution.unique_route_scores = solution.graph_route_scores
+        solution.unique_route_scores = np.copy(solution.graph_route_scores)
         for external_graph_route_scores in solution.external_graph_route_scores_list:
-            solution.unique_route_scores = solution.unique_route_scores + external_graph_route_scores
+            solution.unique_route_scores += external_graph_route_scores
+
+        solution.unique_route_scores /= float(len(strat_solutions))
 
 #====================================================================================================
 def get_correlated_solution_logs(solution):
