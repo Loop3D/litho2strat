@@ -164,11 +164,14 @@ def solve(par):
     for solution in strat_solutions:
         plot_solution_correlation(solution)
 
-    # Draw the most correlated strata sequences.
+    # Draw the most correlated strata sequences, and corresponding 
     for solution in strat_solutions:
         draw_solution_logs(solution, display_plots, 'strat-seq', par.unit_colors_filename, False, None, [])
 
-    draw_correlated_solution_logs(strat_solutions, display_plots, par.unit_colors_filename, map_graph)
+        # Draw the most correlated solution logs (corresponding to strata sequences).
+        route_indexes, route_scores = get_correlated_solution_logs(solution)
+        draw_solution_logs(solution, display_plots, 'strat', par.unit_colors_filename, False, None, route_indexes, route_scores)
+
 
 #=========================================================================================================
 def main(parfile_path):

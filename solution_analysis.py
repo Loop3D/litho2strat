@@ -5,7 +5,8 @@
   Author: Vitaliy Ogarko, vogarko@gmail.com
   The University of Western Australia
 '''
-from solution_utils import *
+import numpy as np
+import networkx as nx
 
 #=============================================================================
 def build_solution_graph(solution):
@@ -117,25 +118,19 @@ def correlate_solutions(strat_solutions, correlation_power):
             solution.unique_route_scores = solution.unique_route_scores + external_graph_route_scores
 
 #====================================================================================================
-def draw_correlated_solution_logs(strat_solutions, display_plots, unit_colors_filename, map_graph):
+def get_correlated_solution_logs(solution):
     '''
-    Draw correlated solution logs.
+    Retrieve the most correlated solution logs (corresponding to most correlated strata sequences).
     '''
-    # Draw full routes (corresponding to the most correlated strata sequences).
-    for solution in strat_solutions:
-        # Sorted indexes by the unique score.
-        unique_route_indexes = np.argsort(-solution.unique_route_scores)
+    # Sorted indexes by the unique score.
+    unique_route_indexes = np.argsort(-solution.unique_route_scores)
 
-        # Retrieve corresponding full route indexes.
-        route_indexes = []
-        route_scores = []
-        for unique_route_index in unique_route_indexes:
-            for route_index in solution.unique_routes[unique_route_index].route_indexes:
-                route_indexes.append(route_index)
-                route_scores.append(solution.unique_route_scores[unique_route_index])
+    # Retrieve the corresponding full routes.
+    route_indexes = []
+    route_scores = []
+    for unique_route_index in unique_route_indexes:
+        for route_index in solution.unique_routes[unique_route_index].route_indexes:
+            route_indexes.append(route_index)
+            route_scores.append(solution.unique_route_scores[unique_route_index])
 
-        # Draw full routes (corresponding to strata sequences).
-        draw_solution_logs(solution, display_plots, 'strat', unit_colors_filename, False, None, route_indexes, route_scores)
-
-        # Draw age alignment log (corresponding to strata sequences).
-        #draw_solution_logs(solution, display_plots, 'age', '', False, map_graph, route_indexes, route_scores)
+    return route_indexes, route_scores
