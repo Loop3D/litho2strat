@@ -46,7 +46,7 @@ cover_ratio_threshold = 0.65
 # Has 1 unique route, and stratigrapy is correct.
 #collarIDs = 265020
 
-# Has 5 unique routes, and the most probable strata sequence is the correct one.
+# Has 5 unique routes, and the most probable strata sequence and strata route (!!!) is the correct one.
 #collarIDs = 265003
 
 # Has 5 unique routes, and the most probable strata sequence is the correct one.
@@ -94,5 +94,7 @@ cover_ratio_threshold = 0.65
 #collarIDs = 265043,265044
 
 # Correlate 10 and 2 unique routes. Improves the score of the true route making it the most probable after correlation.
-collarIDs = 265043,265031
+#collarIDs = 265043,265031
+
+collarIDs = 265043,265051,265044,265031
 
