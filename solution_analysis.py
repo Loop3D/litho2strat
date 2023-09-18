@@ -76,9 +76,9 @@ def calculate_graph_route_scores(solution, graph, correlation_power):
     return graph_route_scores
 
 #=============================================================================
-def compare_solution_graphs(G1, G2):
+def calculate_weighted_Jaccard_index(G1, G2):
     '''
-    Compare solution graphs using weighted Jaccard index.
+    Calculate the weighted Jaccard index.
     '''
     # Union of all graph edges.
     edges = set(G1.edges()).union(G2.edges())
@@ -93,7 +93,19 @@ def compare_solution_graphs(G1, G2):
 
     Jw = mins / maxs
 
-    print("Jaccard weighted =", Jw)
+    return Jw
+
+#=============================================================================
+def calculate_correlation_matrix(solutions):
+    '''
+    Calculate correlatoin matrix between different drillholes (using weighted Jaccard index).
+    '''
+    num_solutions = len(solutions)
+    Jw = np.zeros((num_solutions, num_solutions))
+    for i in range(num_solutions):
+        for j in range(num_solutions):
+            Jw[i, j] = calculate_weighted_Jaccard_index(solutions[i].graph, solutions[j].graph)
+    return Jw
 
 #=============================================================================
 def correlate_solutions(strat_solutions, correlation_power):

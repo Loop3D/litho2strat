@@ -69,6 +69,8 @@ def solve(par):
     # Stores solutions for different drillholes.
     strat_solutions = []
 
+    print("Number of drillholes:", len(par.collarIDs))
+
     for collarID in par.collarIDs:
 
         print('--------------------------------')
@@ -156,22 +158,23 @@ def solve(par):
     #====================================================================================
     # Solution correlation.
     #====================================================================================
-    if (len(strat_solutions) > 1):
-        compare_solution_graphs(strat_solutions[0].graph, strat_solutions[1].graph)
+    # Plot the correlation matrix based on the weighted Jaccard index between the drillhole graphs.
+    corr_matrix = calculate_correlation_matrix(strat_solutions)
+    plot_correlation_matrix(corr_matrix)
 
+    # Calculate the solution correlation score.
     correlate_solutions(strat_solutions, par.correlation_power)
 
-    for solution in strat_solutions:
-        plot_solution_correlation(solution)
+    #for solution in strat_solutions:
+    #    plot_solution_correlation(solution)
 
-    # Draw the most correlated strata sequences, and corresponding 
+    # Draw the most correlated strata sequences, and corresponding solution logs.
     for solution in strat_solutions:
         draw_solution_logs(solution, display_plots, 'strat-seq', par.unit_colors_filename, False, None, [])
 
         # Draw the most correlated solution logs (corresponding to strata sequences).
         route_indexes, route_scores = get_correlated_solution_logs(solution)
         draw_solution_logs(solution, display_plots, 'strat', par.unit_colors_filename, False, None, route_indexes, route_scores)
-
 
 #=========================================================================================================
 def main(parfile_path):

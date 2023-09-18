@@ -417,6 +417,15 @@ def plot_solution_correlation(solution):
 
     pl.show()
 
+#=============================================================================
+def plot_correlation_matrix(corr_matrix):
+    '''
+    Plot the correlation matrix.
+    '''
+    pl.matshow(corr_matrix, vmin=0., vmax=1.)
+    pl.colorbar()
+    pl.show()
+
 #==============================================================================
 def write_best_routes_to_file(strat_solution, ntop):
     '''
