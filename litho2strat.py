@@ -47,6 +47,9 @@ def solve(par):
         map_graph = dr.read_topology_data(par.topology_filename)
         print("Number of units in the map graph =", map_graph.number_of_nodes())
 
+    # Draw the global topology graph.
+    draw_topology_graph(map_graph, "Global topology")
+
     # Read the drillhole ignore items list.
     ignore_list = dr.read_ignore_list(par.ignore_list_filename)
 
@@ -147,7 +150,7 @@ def solve(par):
         plot_unit_probabilities(strat_solution, display_plots)
 
         # Draw the topology graph of all solution routes.
-        draw_solution_graph(strat_solution)
+        draw_topology_graph(strat_solution.graph, strat_solution.collarID)
 
         # Plot histogram of solution scores.
         plot_route_scores(strat_solution.graph_route_scores)

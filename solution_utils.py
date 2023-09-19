@@ -21,12 +21,10 @@ import os
 output_folder = "output"
 
 #==============================================================================
-def draw_solution_graph(strat_solution):
+def draw_topology_graph(G, title):
     '''
-    Drawing solution topology graph, with edges weighted by unit contact frequency (among all solutions).
+    Drawing topology graph, with edges weighted by unit contact frequency.
     '''
-    G = strat_solution.graph
-
     pos = nx.circular_layout(G)
 
     edges = nx.get_edge_attributes(G, 'weight')
@@ -59,7 +57,7 @@ def draw_solution_graph(strat_solution):
     ax = pl.gca()
     ax.margins(0.20)
 
-    ax.set_title(str(strat_solution.collarID))
+    ax.set_title(title)
 
     pl.axis("off")
     pl.show()

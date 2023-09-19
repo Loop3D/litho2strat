@@ -333,6 +333,9 @@ def read_topology_data(topology_filename):
         mapping = {node:unit_name}
         Gf = nx.relabel_nodes(Gf, mapping)
 
+    # Adding weight to all edges.
+    nx.set_edge_attributes(Gf, values=1, name='weight')
+
     print('Importing completed.')
     return Gf
 
