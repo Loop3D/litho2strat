@@ -135,7 +135,7 @@ def solve(par):
         if (stratasample_present):
             # Draw strata sample log (known strata solution).
             draw_solution_logs(strata_sample_log, display_plots, 'strat', par.unit_colors_filename, True, None, [0],
-                               title="True stratigraphy for collarID=" + str(collarID))
+                               title="Recorded stratigraphy for collarID=" + str(collarID))
 
         # Draw stratigraphy logs.
         draw_solution_logs(strat_solution, display_plots, 'strat', par.unit_colors_filename, True, None, [])
