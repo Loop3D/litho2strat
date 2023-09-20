@@ -91,7 +91,10 @@ def calculate_weighted_Jaccard_index(G1, G2):
         mins += min(weight1, weight2)
         maxs += max(weight1, weight2)
 
-    Jw = mins / maxs
+    if (maxs != 0.):
+        Jw = mins / maxs
+    else:
+        Jw = 0.
 
     return Jw
 
