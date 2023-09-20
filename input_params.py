@@ -152,7 +152,7 @@ def read_input_parameters(parfile_path):
     print(config.items(section))
 
     collarIDs = config.get(section, 'collarIDs').split(",")
-    par.collarIDs = [c.strip() for c in collarIDs]
+    par.collarIDs = [int(c.strip()) for c in collarIDs]
 
     # Hardcoded as we don't have the thickness data.
     par.add_thickness_constraints = False
