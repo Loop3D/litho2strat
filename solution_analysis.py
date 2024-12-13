@@ -33,7 +33,7 @@ def build_solution_graph(solution):
                     route_edges.add(e)
                     if (not G.has_edge(*e)):
                         # Adding a new graph edge.
-                        G.add_edge(*e, weight=1)
+                        G.add_edge(*e, weight=1, graphics={"width": 1})
                     else:
                         # Increase the edge weight.
                         G[e[0]][e[1]]['weight'] += 1

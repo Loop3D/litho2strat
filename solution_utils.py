@@ -62,6 +62,40 @@ def draw_topology_graph(G, title):
     pl.axis("off")
     pl.show()
 
+    # Write to graph to GML format.
+    export_graph_to_GML(G, title)
+
+#==============================================================================
+def export_graph_to_GML(G, title):
+    '''
+    Write graph to file in GML format. For nicer visualisation in yEd.
+    '''
+    edges = nx.get_edge_attributes(G, 'weight')
+
+    # Determine if all edge weights are the same.
+    if len(set(edges.values())) == 1:
+        all_weights_equal = True
+    else:
+        all_weights_equal = False
+
+    # Define graph edge width.
+    for u, v in G.edges:
+        if (not all_weights_equal):
+            G[u][v]["graphics"]["width"] = G[u][v]["weight"] * 7
+        else:
+            G[u][v]["graphics"]["width"] = 3
+
+        G[u][v]["graphics"]["arrow"] = "last"
+
+    # Form a file name.
+    filename = output_folder + "/GML/" + str(title).replace(" ", "_") + ".gml"
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+
+    print("Write graph to:", filename)
+
+    # Export the graph.
+    nx.write_gml(G, filename)
+
 #==============================================================================
 def _get_unit_colors(strat_solution, unit_colors_filename):
     '''
