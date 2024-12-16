@@ -87,9 +87,13 @@ def export_graph_to_GML(G, title):
 
         G[u][v]["graphics"]["arrow"] = "last"
 
-    # Increase the node width.
+    # Adjust node style.
     for v in G.nodes():
+        # Increase the node width.
         G.nodes[v]["graphics"] = {'w': 200., "fill": "#FFCC00"}
+        # Adjust the node label.
+        nodeLabel = v.replace("_", " ").title()
+        G.nodes[v]["LabelGraphics"] = {'text': nodeLabel}
 
     # Form a file name.
     filename = output_folder + "/GML/" + str(title).replace(" ", "_") + ".gml"
