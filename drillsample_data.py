@@ -60,6 +60,17 @@ class DrillsampleData:
         return all_lithos
 
     #==============================================================================
+    def get_drillhole_lithos_sequence(self):
+        '''
+        Returns the drillhole lithologies.
+        '''
+        all_lithos = []
+        for row in self.rows:
+            lithos = row.lithos
+            all_lithos.append(lithos)
+        return all_lithos
+
+    #==============================================================================
     def get_depth_data(self):
         '''
         Returns the depth data.

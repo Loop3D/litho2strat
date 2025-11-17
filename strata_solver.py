@@ -447,6 +447,7 @@ def generate_strat_routes(spar, strata_data, drillsample_data, thickness_data, m
 
     # Create the solution object.
     depth_data = drillsample_data.get_depth_data()
-    solution = StrataSolution(all_routes, all_routes_number, unit_names, depth_data, strata_data.unit2dist)
+    lithos_data = drillsample_data.get_drillhole_lithos_sequence()
+    solution = StrataSolution(all_routes, all_routes_number, unit_names, depth_data, lithos_data, strata_data.unit2dist)
 
     return solution

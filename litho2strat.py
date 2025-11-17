@@ -158,6 +158,9 @@ def solve(par):
         # Write the best routes to file.
         write_best_routes_to_file(strat_solution, 10)
 
+    # Generate plot with the number of lithology changes vs the average number of solutions (used in Appendix B of the paper).
+    plot_number_litho_changes_vs_number_solutions(strat_solutions, trend_type='linear')
+
     #====================================================================================
     # Solution correlation.
     #====================================================================================

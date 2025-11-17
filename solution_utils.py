@@ -606,5 +606,106 @@ def plot_unit_probabilities(strat_solution, display_plot):
 
     pl.close(pl.gcf())
 
+
+#=============================================================================
+def plot_number_litho_changes_vs_number_solutions(strat_solutions, figsize=(10, 7), save_path=None, trend_type='linear'):
+    """
+    Generate a scatter plot showing the relationship between number of lithology changes
+    and average number of solutions.
+
+    Inputs:
+    -----------
+    strat_solutions : list
+        List of solution objects. Each solution should have:
+        - collarID: identifier for the drillhole
+        - routes_number: list of running numbers of solutions for current drillhole
+        - lithos_data: list of lithologies at each drillhole lithology index
+    figsize : tuple, optional
+        Figure size as (width, height). Default is (10, 7)
+    save_path : str, optional
+        Path to save the figure. If None, figure is displayed but not saved.
+    trend_type : str, optional
+        Type of trend line to fit. Options: 'linear' or 'log'. Default is 'linear'.
+        - 'linear': fits y = mx + b (linear regression)
+        - 'log': fits on log scale, appropriate for exponential growth
+    """
+
+    # Extract data for each drillhole.
+    num_lithology_changes = []
+    avg_solutions = []
+
+    for solution in strat_solutions:
+        # Count the number of lithology changes.
+        changes = 0
+        lithos = solution.lithos_data
+        for i in range(1, len(lithos)):
+            if lithos[i] != lithos[i-1]:
+                changes += 1
+        num_lithology_changes.append(changes)
+
+        # Average number of solutions across all lithology indices.
+        avg_sol = np.mean(solution.routes_number)
+        avg_solutions.append(avg_sol)
+
+    # Create the figure.
+    fig, ax = pl.subplots(figsize=figsize)
+
+    # Create scatter plot.
+    scatter = ax.scatter(num_lithology_changes, avg_solutions,
+                        s=100, alpha=0.6, edgecolors='black',
+                        linewidth=1.5, c='steelblue')
+
+    # Customize the plot.
+    ax.set_xlabel('Number of Lithology Changes', fontsize=12, fontweight='bold')
+    ax.set_ylabel('Average Number of Solutions', fontsize=12, fontweight='bold')
+    ax.set_title('Average Solutions vs Number of Lithology Changes', fontsize=14, fontweight='bold')
+    ax.grid(True, alpha=0.3, linestyle='--')
+    ax.set_axisbelow(True)
+
+    # Add trend line.
+    if len(num_lithology_changes) > 1 and len(set(num_lithology_changes)) > 1:
+        x_trend = np.linspace(min(num_lithology_changes), max(num_lithology_changes), 100)
+
+        if trend_type == 'log':
+            # Use log scale for y-axis and fit in log space.
+            ax.set_yscale('log')
+
+            # Fit on log-transformed data.
+            log_solutions = np.log10(np.array(avg_solutions) + 1)  # +1 to avoid log(0)
+            z = np.polyfit(num_lithology_changes, log_solutions, 1)
+            p = np.poly1d(z)
+            y_trend = 10 ** p(x_trend) - 1
+
+            # Calculate R² on log scale.
+            correlation = np.corrcoef(num_lithology_changes, log_solutions)[0, 1]
+            r_squared = correlation ** 2
+
+            ax.plot(x_trend, y_trend, "r--", alpha=0.8, linewidth=2,
+                   label=f'Log trend (R² = {r_squared:.3f})')
+
+        else:  # linear
+            # Standard linear fit.
+            z = np.polyfit(num_lithology_changes, avg_solutions, 1)
+            p = np.poly1d(z)
+            y_trend = p(x_trend)
+
+            # Calculate R².
+            correlation = np.corrcoef(num_lithology_changes, avg_solutions)[0, 1]
+            r_squared = correlation ** 2
+
+            ax.plot(x_trend, y_trend, "r--", alpha=0.8, linewidth=2,
+                   label=f'Linear trend (R² = {r_squared:.3f})')
+
+        ax.legend(fontsize=10)
+
+    pl.tight_layout()
+
+    # Save figure if path is provided.
+    if save_path:
+        pl.savefig(save_path, dpi=300, bbox_inches='tight')
+        print(f"Figure saved to: {save_path}")
+
+    # Show the plot.
+    pl.show()
 #=============================================================================
 

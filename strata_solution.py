@@ -24,7 +24,7 @@ class StrataSolution:
     '''
     Stores solutions of the Strata Solver, with their metadata and calculated scores.
     '''
-    def __init__(self, routes, routes_number, unit_names, depth_data, unit2dist):
+    def __init__(self, routes, routes_number, unit_names, depth_data, lithos_data, unit2dist):
         # The strata solution paths.
         self.routes = routes
         # The number of solutions for every drillsample raw.
@@ -33,6 +33,8 @@ class StrataSolution:
         self.unit_names = unit_names
         # Depth data.
         self.depth_data = depth_data
+        # Lithology data.
+        self.lithos_data = lithos_data
         # Drillhole collar ID.
         self.collarID = 0
 
